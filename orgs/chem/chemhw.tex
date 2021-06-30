@@ -1,0 +1,174 @@
+% Created 2021-06-30 Wed 14:25
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{chemfig}
+\author{Shaurya Singh}
+\date{\today}
+\title{Ap Chem Summer HW}
+\hypersetup{
+ pdfauthor={Shaurya Singh},
+ pdftitle={Ap Chem Summer HW},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Summer Assignment 1}
+\label{sec:org3c137eb}
+\subsection{How many significant figures are there each of the following values}
+\label{sec:org98e3662}
+\begin{enumerate}
+\item 4 significant figures
+\item 4 significant figures
+\item 7 significant figures
+\item 6 significant figures
+\item 1 significant figures
+\item 5 significant figures
+\item 6 significant figures
+\end{enumerate}
+
+\subsection{Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.}
+\label{sec:orgc065584}
+\begin{enumerate}
+\item \(16.81 + 3.2257 = 20.0357 \approx 20.04\)
+\item \(324.6 * 815.991 = 264870.6786 \approx 264900\)
+\item \(2.85 + 3.4621 + 1.3 = 7.6121 \approx 7.6\)
+\item \(7.442 - 7.429 = 0.013\)
+\item \(1.65 * 14 = 23.1 \approx 23\)
+\item \(\frac{27}{4.148} = 6.509161 \approx 6.5\)
+\item \([\frac{(3.901 - 3.887)}{3.901}] * 1.00 = [\frac{0.014}{3.901}] * 1.00 = 0.0036 * 1.00 = 0.0036\)
+\item \(6.404 * 2.91 * (18.7 - 17.1) = 6.404 * 2.91 * 1.6 \approx 30\)
+\end{enumerate}
+
+\subsection{A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?}
+\label{sec:org257ff7f}
+We can utilize the formula \(d=\frac{m}{v}\) (density = mass/volume)
+\begin{align}
+d&=\frac{m}{v} &&\\\nonumber
+            &=\frac{440g}{500mL}&&\\\nonumber
+            &=0.88\frac{g}{mL}&&\\\nonumber
+            &\approx0.9\frac{g}{mL}&&
+\end{align}
+
+\subsection{The density of an object is 16.3 g/mL. Its volume is 0.125 L. What is the mass of the object?}
+\label{sec:org2e6f4db}
+We can apply vector analysis to solve for the correct units
+
+\begin{center}
+\begin{tabular}{ll}
+16.3g & 1000 mL\\
+\hline
+1mL & 1L\\
+\end{tabular}
+\end{center}
+\begin{align*}
+=16300{g}/{L}
+\end{align*}
+
+We can apply the same \(d=\frac{m}{v}\) to calculate for mass
+\begin{align*}
+16300{g}/{L}=\frac{m}{0.125mL}
+\end{align*}
+
+Re-arranging the equation in terms of mass, we get the following
+\begin{align}
+m &= 16300 * 0.125&&\\\nonumber
+            &= 2037.5g&&\\\nonumber
+            &\approx 2040g&&
+\end{align}
+
+\subsection{A sample of uranium weighing 30.923 g was dropped in a graduated cylinder containing 22.30 mL of water. The volume of the water plus the sample was 23.90 mL. What is the density of uranium?}
+\label{sec:org31552e2}
+
+The volume of the object is going to be the difference between the volume of the water and the volume of the water + object.
+\begin{align*}
+23.90mL - 22.30mL = 1.60mL
+\end{align*}
+
+We can apply the same \(d=\frac{m}{v}\) to calculate for density
+\begin{align}
+d&=\frac{m}{v} &&\\\nonumber
+            &=\frac{30.923g}{1.60mL}&&\\\nonumber
+            &=19.33\frac{g}{mL}&&\\\nonumber
+            &\approx19.3\frac{g}{mL}&&
+\end{align}
+
+\subsection{How many protons, neutrons and electrons are in each of the following ions?}
+\label{sec:org89c8e73}
+\begin{enumerate}
+\item Protons = 26. Neutrons = 30. Electrons = 23
+\item Protons = 20. Neutrons = 20. Electrons = 18
+\item Protons = 9. Neutrons = 10. Electrons = 10
+\item Protons = 15. Neutrons = 16. Electrons = 18
+\item Protons = 53. Neutrons = 74. Electrons = 54
+\item Protons = 53. Neutrons = 74. Electrons = 46
+\end{enumerate}
+
+\subsection{Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?}
+\label{sec:org2a366a8}
+\begin{enumerate}
+\item \(Be\) is in Group 2, therefore it will lose 2 electrons (and have a +2 charge)
+\item \(Cl\) is in Group 17, therefore it will gain 1 electron (and have a -1 charge)
+\item \(Al\) is in group 13, therefore it will gain 5 electrons (and have a -5 charge)
+\item \(O\) is in group 16, therefore it will gain 8 electrons (and have a -2 charge)
+\item \(F\) is in group 17, therefore it will gain 1 electron (and have a -1 charge)
+\item \(Li\) is in group 1, therefore it will lose 1 electron (and have a +1 charge)
+\end{enumerate}
+
+\subsection{Name each of the following compounds:}
+\label{sec:orgb941bd3}
+\begin{enumerate}
+\item \(PbI_2\) is named as Lead(II) iodide
+\item \(NH_4Cl\) is named as Ammonium chloride
+\item \(Fe_2O_3\) is named as Iron(III) oxide
+\item \(LiH\) is named as Lithium hydride
+\item \(CsCl\) is named as Caesium chloride
+\item \(Cr(OH)_1\) is named as Chromium hydroxide
+\item \(NaC_2H_2O_2\) is named as Sodium acetate
+\item \(K_2Cr_2O_7\) is named as Potassium dichromate
+\item \(Na_2SO_4\) is named as Sodium sulfate
+\end{enumerate}
+
+\subsection{Which of the following particulate diagrams best shows the formation of water vapor from hydrogen gas and oxygen gas in a rigid container at 125\textdegree{} C?}
+\label{sec:org95f7518}
+The correct answer would be \textbf{C}. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is \(H_2O\), there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
+
+\subsection{Name each of the following compounds. In addition, for the compounds in letters a-c, draw Lewis structures, predict VSEPR geometry and hybridization.}
+\label{sec:org871f8fb}
+\(NI_3\) is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
+\begin{align}
+\chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{I})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{I})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{I})}
+\end{align}
+
+\(NH_3\) is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
+\begin{align}
+\chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
+\end{align}
+
+\(CO\) is named as Carbon monoxide, and has the following Lewis Structure. It has a linear shape with 180\textdegree{} Bond angles, and has a SP hybridization
+\begin{align}
+\chemfig{\charge{180=\:}{C}(~\charge{0=\:}{O})}
+\end{align}
+
+\begin{enumerate}
+\item \(P_4O_1_0\) is named as Tetraphosphorus decoxide
+\item \(N_2O_4\) is named as Dinitrogen tetroxide
+\item \(PCl_3\) is named as Phosphorus trichloride
+\end{enumerate}
+\end{document}

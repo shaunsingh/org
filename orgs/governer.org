@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       658e62f1-19e5-41f8-a40f-0342f987c005
+:END:
+
+Before you begin, review all of the application questions and requirements here. It is suggested you save your answers in a Word document in case of loss of internet connection.
+Beyond the written portion of the application, you will need to upload the following:
+1. 60 second video statement;
+2. Current school transcript;
+3. Resume; and
+4. Optional Letter of recommendation.
+
+
+Governor's STEM Scholars Eligibility Requirements
+To be considered for the Governor's STEM Scholars, applicants must:
+• Be a sophomore in high school through doctoral level as of Fall 2021;
+• Be enrolled in a high school, college or university, or be certified as a home-schooled student in New Jersey;
+• Have a 3.5 cumulative GPA or higher; and
+• Show a strong commitment to STEM in New Jersey.
+
+Essay Question: What impact do you hope to have on the world and how will STEM play a role in making that impact?* (4000 characters or less)
+
+In the future, many of our problems will be solved through stem and machine learning, and I wish to be a part of that change. I have always been interested in computer science and programming and particular machine learning. I learned python as my first language, and believe that in the future self-learning computers would be utilized more. I believe that many of our current issues will be solved in the future through Machine Learning, and I wish to be a part of that change. I hope that through this program, I can expand my knowledge in python and machine learning techniques, and apply better skills to my future stem projects. Based on the self-study I implemented a machine learning stem project in 9th grade.
+
+
+I took honors stem classes in middle and high school, and like to participate in math competitions. Recently, I earned a perfect score on the PSAT 8/9 in the math section. I also secured a high score in the math olympiad conducted by the Stevens Institute of Technology. I am keen and self-learning new technical topics and utilize these frameworks and solutions while coding for our school robotics competition. I try to use my knowledge of algebra and geometry to formulate equations for situations, then apply them to solve problems with our robot. I have also taken part in the Science Research program, where I created a machine learning project from scratch. I learned ML, data analysis, and python and used them to show the direct correlation between COVID and Obesity rates, and how we can predict COVID rates in a region based on these factors.
+
+According to the U. S. Department of Commerce, STEM occupations are growing at 24%, while other occupations are growing at 4%. STEM degree holders have a higher income even in non-STEM careers. Science, technology, engineering and mathematics workers play a key role in the sustained growth and stability of the U.S. economy, and are a critical component to helping the U.S. win the future. STEM education creates critical thinkers, increases science literacy, and enables the next generation of innovators. I would like to persue an education in STEM, and in the future educated others about the importance of STEM
+
+In previous years I have attended multiple STEM programs and activities which increased my interest in both codings for robotics and machine learning. I attended and competed in CoderZ, a virtual robotics program, and was a state finalist. Later that summer I attended NJCU Proyecto science on a full scholarship, a summer program for talented students where we are taught advanced topics, such as physics and precalculus. I am also part of the JHU CTY program. While still a freshman based on my proficiency I was selected as the head of the First Tech Challenge robotics programming team at our school, where we build robots and code using computer vision and machine learning techniques such as OpenCV and Model Predictive Control/LQR, to autonomously complete given tasks under given amounts of time.
+
+In my robotics team, I provide help to other peers and showcase how we can use stem and robotics to solve issues around us. I also tutored younger middle school kids over a 10-week program as part of the robotics outreach program that was hosted by the Jersey City Board of Education. I taught and trained over 150 kids on how to program a robot using java, as well as basic computer-aided design skills. This helped them overcome the initial hesitation and fear that many kids may feel working with robots and programming.
+
+Speach:
+
+
+
+In the future, many of our problems will be solved through stem and machine learning, and I wish to be a part of that change. I have always been interested in computer science and programming. I learned python as my first language, and believe that in the future self-learning computers would be utilized more. I hope that through this program, I can expand my knowledge in the applied sciences, and apply better skills to my future stem projects.
+
+Science, technology, engineering and mathematics workers play a key role in the sustained growth and stability of the U.S. economy, and are a critical component to helping the U.S. win the future.
+
+In previous years I have attended multiple STEM programs and activities which increased my interest in both coding for robotics and machine learning. I attended and competed in CoderZ, wehre I was a state finalist. Later that summer I attended NJCU Proyecto science on a full scholarship, a summer program for talented students where we are taught advanced topics, such as physics and precalculus. I am also part of the JHU CTY program. While still a freshman based on my proficiency I was selected as the head of the First Tech Challenge robotics programming team at our school, where we build robots and code using computer vision and machine learning techniques such as OpenCV and Model Predictive Control/LQR, to autonomously complete given tasks.
+
+I have also taken part in the Science Research program, where I created a machine learning project from scratch. I learned ML, data analysis, and python and used them to show the direct correlation between COVID and Obesity rates, and how we can predict COVID rates in a region based on these factors.
+
+* Cooper Union
+
+** Students at The Cooper Union work to address the critical challenges of our time. What is a current problem that you think could be solved through engineering? Why are you inspired to address this problem? (300-500 words) *
+
+In the future, many of our problems will be solved through stem and machine learning, and I wish to be a part of that change. I believe In the future self-learning computers would be utilized more, and I wish to be a part of that change.
+
+Science, technology, engineering and mathematics workers play a key role in the sustained growth and stability of the U.S. economy, and are a critical component to helping our nation succeed.
+
+I believe in the future, we can utilize data, analytics, as well as computer science to study diseases such as COVID-19, how they spread, as well as how the spread can be controlled by external factors. Earlier this year, I created a research project where I learned ML, data analysis, and python and used them to show the direct correlation between COVID and Obesity rates, and how we can predict COVID rates in a region based on these factors.
+
+Although my research was observing just one external factor, there are many more diseases to analyze. By finding several factors that correlate with the spread of a disease, we can prevent an outbreak from occurring.
+
+I was inspired to address this problem since it affects those around me, especially my loved ones. Earlier this year, multiple of my family members, including my grandparents were infected with COVID-19, due to the uncontrolled spread of the coronavirus in India. I believe that had these varients been identified earlier, proper precautions would have been taken.
+
+I hope that through this program, I can expand my knowledge in python and data techniques, and apply better skills to my future stem projects.
+
+** Please tell us about something you do or did outside of school that makes you proud and why it makes you feel that way. (200 words or less) *
+
+Earlier this year, I provided help to other peers and showcase how we can use stem and robotics to solve issues around us. I also tutored younger middle school kids over a 10-week program as part of the robotics outreach program that was hosted by the Jersey City Board of Education. I taught and trained over 150 kids on how to program a robot using java, as well as basic computer-aided design skills. I feel proud as this helped them overcome the initial hesitation and fear that many kids may feel working with robots and programming.
+
+In previous years I have attended multiple STEM programs and activities which increased my interest in both coding for robotics and machine learning. I attended and competed in CoderZ, wehre I was a state finalist. Later that summer I attended NJCU Proyecto science on a full scholarship, a summer program for talented students where we are taught advanced topics, such as physics and precalculus. I am also part of the JHU CTY program. I loved working in these programs, and am proud of the skills I learnt along the way.
+
+While still a freshman based on my proficiency I was selected as the head of the First Tech Challenge robotics programming team at our school, where we build robots and code using computer vision and machine learning techniques such as OpenCV and Model Predictive Control/LQR, to autonomously complete given tasks. I was proud as I was chosen by my team members due to my hard work and dedication for the club
+
+** Are you involved in activities, clubs, sports, jobs, etc. outside of school? If you are, please tell us about them. If you are not, leave this section blank and know that we do not expect students to have experience in engineering or activities outside school.
+
+Model UN, NYC — Spokesperson
+2019 - 2020
+Directed multiple discussions about civil rights topics, related to deforestation in 3rd world nations, and presented our research and findings to a 1k+ audience in NYC, consisting of multiple United Nations representatives.
+
+JC Citywide STUCO, Jersey City — Treasurer
+2018-2020
+Led student body to successfully fundraise and organize large-scale annual events.

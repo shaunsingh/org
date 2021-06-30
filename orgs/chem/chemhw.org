@@ -1,0 +1,145 @@
+#+title: Ap Chem Summer HW
+#+author: Shaurya Singh
+#+startup: preview
+#+OPTIONS: toc:nil
+#+latex_header: \usepackage{chemfig}
+
+* Summer Assignment 1
+** How many significant figures are there each of the following values
+a. 4 significant figures
+b. 4 significant figures
+c. 7 significant figures
+d. 6 significant figures
+e. 1 significant figures
+f. 5 significant figures
+g. 6 significant figures
+
+** Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.
+a. $16.81 + 3.2257 = 20.0357 \approx 20.04$
+b. $324.6 * 815.991 = 264870.6786 \approx 264900$
+c. $2.85 + 3.4621 + 1.3 = 7.6121 \approx 7.6$
+d. $7.442 - 7.429 = 0.013$
+e. $1.65 * 14 = 23.1 \approx 23$
+f. $\frac{27}{4.148} = 6.509161 \approx 6.5$
+g. $[\frac{(3.901 - 3.887)}{3.901}] * 1.00 = [\frac{0.014}{3.901}] * 1.00 = 0.0036 * 1.00 = 0.0036$
+h. $6.404 * 2.91 * (18.7 - 17.1) = 6.404 * 2.91 * 1.6 \approx 30$
+
+** A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?
+We can utilize the formula $d=\frac{m}{v}$ (density = mass/volume)
+#+begin_src latex
+\begin{align}
+d&=\frac{m}{v} &&\\\nonumber
+            &=\frac{440g}{500mL}&&\\\nonumber
+            &=0.88\frac{g}{mL}&&\\\nonumber
+            &\approx0.9\frac{g}{mL}&&
+\end{align}
+#+end_src
+
+** The density of an object is 16.3 g/mL. Its volume is 0.125 L. What is the mass of the object?
+We can apply vector analysis to solve for the correct units
+
+| 16.3g | 1000 mL |
+|-------+---------|
+| 1mL   | 1L      |
+#+begin_src latex
+\begin{align*}
+=16300{g}/{L}
+\end{align*}
+#+end_src
+
+#+RESULTS:
+#+begin_export latex
+\begin{align*}
+=16300{g}/{L}
+\end{align*}
+#+end_export
+
+We can apply the same $d=\frac{m}{v}$ to calculate for mass
+#+begin_src latex
+\begin{align*}
+16300{g}/{L}=\frac{m}{0.125mL}
+\end{align*}
+#+end_src
+
+Re-arranging the equation in terms of mass, we get the following
+#+begin_src latex
+\begin{align}
+m &= 16300 * 0.125&&\\\nonumber
+            &= 2037.5g&&\\\nonumber
+            &\approx 2040g&&
+\end{align}
+#+end_src
+
+** A sample of uranium weighing 30.923 g was dropped in a graduated cylinder containing 22.30 mL of water. The volume of the water plus the sample was 23.90 mL. What is the density of uranium?
+
+The volume of the object is going to be the difference between the volume of the water and the volume of the water + object.
+#+begin_src latex
+\begin{align*}
+23.90mL - 22.30mL = 1.60mL
+\end{align*}
+#+end_src
+
+We can apply the same $d=\frac{m}{v}$ to calculate for density
+#+begin_src latex
+\begin{align}
+d&=\frac{m}{v} &&\\\nonumber
+            &=\frac{30.923g}{1.60mL}&&\\\nonumber
+            &=19.33\frac{g}{mL}&&\\\nonumber
+            &\approx19.3\frac{g}{mL}&&
+\end{align}
+#+end_src
+
+** How many protons, neutrons and electrons are in each of the following ions?
+a. Protons = 26. Neutrons = 30. Electrons = 23
+b. Protons = 20. Neutrons = 20. Electrons = 18
+c. Protons = 9. Neutrons = 10. Electrons = 10
+d. Protons = 15. Neutrons = 16. Electrons = 18
+e. Protons = 53. Neutrons = 74. Electrons = 54
+f. Protons = 53. Neutrons = 74. Electrons = 46
+
+** Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?
+a. $Be$ is in Group 2, therefore it will lose 2 electrons (and have a +2 charge)
+b. $Cl$ is in Group 17, therefore it will gain 1 electron (and have a -1 charge)
+c. $Al$ is in group 13, therefore it will gain 5 electrons (and have a -5 charge)
+d. $O$ is in group 16, therefore it will gain 8 electrons (and have a -2 charge)
+e. $F$ is in group 17, therefore it will gain 1 electron (and have a -1 charge)
+f. $Li$ is in group 1, therefore it will lose 1 electron (and have a +1 charge)
+
+**  Name each of the following compounds:
+a. $PbI_2$ is named as Lead(II) iodide
+b. $NH_4Cl$ is named as Ammonium chloride
+c. $Fe_2O_3$ is named as Iron(III) oxide
+d. $LiH$ is named as Lithium hydride
+e. $CsCl$ is named as Caesium chloride
+f. $Cr(OH)_1$ is named as Chromium hydroxide
+g. $NaC_2H_2O_2$ is named as Sodium acetate
+h. $K_2Cr_2O_7$ is named as Potassium dichromate
+i. $Na_2SO_4$ is named as Sodium sulfate
+
+** Which of the following particulate diagrams best shows the formation of water vapor from hydrogen gas and oxygen gas in a rigid container at 125\deg C?
+The correct answer would be *C*. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is $H_2O$, there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
+
+** Name each of the following compounds. In addition, for the compounds in letters a-c, draw Lewis structures, predict VSEPR geometry and hybridization.
+$NI_3$ is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
+   #+begin_src latex
+\begin{align}
+\chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{I})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{I})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{I})}
+\end{align}
+   #+end_src
+
+$NH_3$ is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
+   #+begin_src latex
+\begin{align}
+\chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
+\end{align}
+   #+end_src
+
+$CO$ is named as Carbon monoxide, and has the following Lewis Structure. It has a linear shape with 180\deg Bond angles, and has a SP hybridization
+   #+begin_src latex
+\begin{align}
+\chemfig{\charge{180=\:}{C}(~\charge{0=\:}{O})}
+\end{align}
+   #+end_src
+d. $P_4O_1_0$ is named as Tetraphosphorus decoxide
+e. $N_2O_4$ is named as Dinitrogen tetroxide
+f. $PCl_3$ is named as Phosphorus trichloride
