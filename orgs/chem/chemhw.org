@@ -120,21 +120,21 @@ i. $Na_2SO_4$ is named as Sodium sulfate
 The correct answer would be *C*. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is $H_2O$, there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
 
 ** Name each of the following compounds. In addition, for the compounds in letters a-c, draw Lewis structures, predict VSEPR geometry and hybridization.
-$NI_3$ is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
+a. $NI_3$ is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
    #+begin_src latex
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{I})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{I})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{I})}
 \end{align}
    #+end_src
 
-$NH_3$ is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
+b. $NH_3$ is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
    #+begin_src latex
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
 \end{align}
    #+end_src
 
-$CO$ is named as Carbon monoxide, and has the following Lewis Structure. It has a linear shape with 180\deg Bond angles, and has a SP hybridization
+c. $CO$ is named as Carbon monoxide, and has the following Lewis Structure. It has a linear shape with 180\deg Bond angles, and has a SP hybridization
    #+begin_src latex
 \begin{align}
 \chemfig{\charge{180=\:}{C}(~\charge{0=\:}{O})}
@@ -143,3 +143,26 @@ $CO$ is named as Carbon monoxide, and has the following Lewis Structure. It has 
 d. $P_4O_1_0$ is named as Tetraphosphorus decoxide
 e. $N_2O_4$ is named as Dinitrogen tetroxide
 f. $PCl_3$ is named as Phosphorus trichloride
+
+** Molecules that have geometries in one plane include which of the following? Draw the Lewis structures to prove your point
+The lewis structure for $BCl_3$ is
+   #+begin_src latex
+\begin{align}
+\chemfig{{B}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})}
+\end{align}
+   #+end_src
+
+The lewis structure for $CHCl_3$ is
+   #+begin_src latex
+\begin{align}
+\chemfig{{C}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})(-[:-270]{H})}
+\end{align}
+   #+end_src
+
+The lewis structure for $NCl_3$ is
+   #+begin_src latex
+\begin{align}
+\chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})}
+\end{align}
+   #+end_src
+Therefore, the correct option is *undecided*
