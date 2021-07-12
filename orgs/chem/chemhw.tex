@@ -1,4 +1,4 @@
-% Created 2021-06-30 Wed 16:34
+% Created 2021-07-11 Sun 20:24
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -15,12 +15,13 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage{chemfig}
+\usepackage{mhchem}
 \author{Shaurya Singh}
 \date{\today}
-\title{Ap Chem Summer HW}
+\title{Ap Chem Summer Assignment \#1}
 \hypersetup{
  pdfauthor={Shaurya Singh},
- pdftitle={Ap Chem Summer HW},
+ pdftitle={Ap Chem Summer Assignment \#1},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
@@ -30,9 +31,9 @@
 \maketitle
 
 \section{Summer Assignment 1}
-\label{sec:org560dc34}
+\label{sec:orgb6860af}
 \subsection{How many significant figures are there each of the following values}
-\label{sec:org945ef9f}
+\label{sec:org57c8cdf}
 \begin{enumerate}
 \item 4 significant figures
 \item 4 significant figures
@@ -44,7 +45,7 @@
 \end{enumerate}
 
 \subsection{Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.}
-\label{sec:org441ffd1}
+\label{sec:org5bf841e}
 \begin{enumerate}
 \item \(16.81 + 3.2257 = 20.0357 \approx 20.04\)
 \item \(324.6 * 815.991 = 264870.6786 \approx 264900\)
@@ -57,19 +58,18 @@
 \end{enumerate}
 
 \subsection{A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?}
-\label{sec:orga4395e7}
+\label{sec:org6796d25}
 We can utilize the formula \(d=\frac{m}{v}\) (density = mass/volume)
-\begin{align}
-d&=\frac{m}{v} &&\\\nonumber
-            &=\frac{440g}{500mL}&&\\\nonumber
-            &=0.88\frac{g}{mL}&&\\\nonumber
-            &\approx0.9\frac{g}{mL}&&
-\end{align}
+\begin{align*}
+d&=\frac{m}{v}\\
+&=\frac{440g}{500mL}\\
+&=0.88\frac{g}{mL}\\
+&\approx0.9\frac{g}{mL}
+\end{align*}
 
 \subsection{The density of an object is 16.3 g/mL. Its volume is 0.125 L. What is the mass of the object?}
-\label{sec:orge82f47b}
+\label{sec:org99d3a1c}
 We can apply vector analysis to solve for the correct units
-
 \begin{center}
 \begin{tabular}{ll}
 16.3g & 1000 mL\\
@@ -80,37 +80,33 @@ We can apply vector analysis to solve for the correct units
 \begin{align*}
 =16300{g}/{L}
 \end{align*}
-
 We can apply the same \(d=\frac{m}{v}\) to calculate for mass
-\begin{align*}
+\begin{equation}
 16300{g}/{L}=\frac{m}{0.125mL}
-\end{align*}
-
+\end{equation}
 Re-arranging the equation in terms of mass, we get the following
-\begin{align}
-m &= 16300 * 0.125&&\\\nonumber
-            &= 2037.5g&&\\\nonumber
-            &\approx 2040g&&
-\end{align}
+\begin{align*}
+m &= 16300 * 0.125\\
+&= 2037.5g\\
+&\approx 2040g
+\end{align*}
 
 \subsection{A sample of uranium weighing 30.923 g was dropped in a graduated cylinder containing 22.30 mL of water. The volume of the water plus the sample was 23.90 mL. What is the density of uranium?}
-\label{sec:org6a6468e}
-
+\label{sec:orgfe9e23e}
 The volume of the object is going to be the difference between the volume of the water and the volume of the water + object.
-\begin{align*}
+\begin{equation}
 23.90mL - 22.30mL = 1.60mL
+\end{equation}
+We can apply the same \(d=\frac{m}{v}\) to calculate for density
+\begin{align*}
+d&=\frac{m}{v} \\
+            &=\frac{30.923g}{1.60mL}\\
+            &=19.33\frac{g}{mL}\\
+            &\approx19.3\frac{g}{mL}
 \end{align*}
 
-We can apply the same \(d=\frac{m}{v}\) to calculate for density
-\begin{align}
-d&=\frac{m}{v} &&\\\nonumber
-            &=\frac{30.923g}{1.60mL}&&\\\nonumber
-            &=19.33\frac{g}{mL}&&\\\nonumber
-            &\approx19.3\frac{g}{mL}&&
-\end{align}
-
 \subsection{How many protons, neutrons and electrons are in each of the following ions?}
-\label{sec:org806c6d5}
+\label{sec:orga9fe8a4}
 \begin{enumerate}
 \item Protons = 26. Neutrons = 30. Electrons = 23
 \item Protons = 20. Neutrons = 20. Electrons = 18
@@ -121,72 +117,191 @@ d&=\frac{m}{v} &&\\\nonumber
 \end{enumerate}
 
 \subsection{Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?}
-\label{sec:orgc1d8595}
+\label{sec:orgb624440}
 \begin{enumerate}
-\item \(Be\) is in Group 2, therefore it will lose 2 electrons (and have a +2 charge)
-\item \(Cl\) is in Group 17, therefore it will gain 1 electron (and have a -1 charge)
-\item \(Al\) is in group 13, therefore it will gain 5 electrons (and have a -5 charge)
-\item \(O\) is in group 16, therefore it will gain 8 electrons (and have a -2 charge)
-\item \(F\) is in group 17, therefore it will gain 1 electron (and have a -1 charge)
-\item \(Li\) is in group 1, therefore it will lose 1 electron (and have a +1 charge)
+\item \(\ce{Be}\) is in Group 2, therefore it will lose 2 electrons (and have a +2 charge)
+\item \(\ce{Cl}\) is in Group 17, therefore it will gain 1 electron (and have a -1 charge)
+\item \(\ce{Al}\) is in group 13, therefore it will gain 5 electrons (and have a -5 charge)
+\item \(\ce{O}\) is in group 16, therefore it will gain 8 electrons (and have a -2 charge)
+\item \(\ce{F}\) is in group 17, therefore it will gain 1 electron (and have a -1 charge)
+\item \(\ce{Li}\) is in group 1, therefore it will lose 1 electron (and have a +1 charge)
 \end{enumerate}
 
+\subsection{Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?}
+\label{sec:org73a6150}
+
 \subsection{Name each of the following compounds:}
-\label{sec:org576f9fc}
+\label{sec:org508a5b5}
 \begin{enumerate}
-\item \(PbI_2\) is named as Lead(II) iodide
-\item \(NH_4Cl\) is named as Ammonium chloride
-\item \(Fe_2O_3\) is named as Iron(III) oxide
-\item \(LiH\) is named as Lithium hydride
-\item \(CsCl\) is named as Caesium chloride
-\item \(Cr(OH)_1\) is named as Chromium hydroxide
-\item \(NaC_2H_2O_2\) is named as Sodium acetate
-\item \(K_2Cr_2O_7\) is named as Potassium dichromate
-\item \(Na_2SO_4\) is named as Sodium sulfate
+\item \(\ce{PbI2}\) is named as Lead(II) iodide
+\item \(\ce{NH4Cl}\) is named as Ammonium chloride
+\item \(\ce{Fe2O3}\) is named as Iron(III) oxide
+\item \(\ce{LiH}\) is named as Lithium hydride
+\item \(\ce{CsCl}\) is named as Caesium chloride
+\item \(\ce{Cr(OH)1}\) is named as Chromium hydroxide
+\item \(\ce{NaC2H2O2}\) is named as Sodium acetate
+\item \(\ce{K2Cr2O7}\) is named as Potassium dichromate
+\item \(\ce{Na2SO4}\) is named as Sodium sulfate
 \end{enumerate}
 
 \subsection{Which of the following particulate diagrams best shows the formation of water vapor from hydrogen gas and oxygen gas in a rigid container at 125\textdegree{} C?}
-\label{sec:org2c7458c}
-The correct answer would be \textbf{C}. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is \(H_2O\), there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
+\label{sec:org4e70f4a}
+The correct answer would be \textbf{C}. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is \(\ce{H2O}\), there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
 
 \subsection{Name each of the following compounds. In addition, for the compounds in letters a-c, draw Lewis structures, predict VSEPR geometry and hybridization.}
-\label{sec:org25931cc}
-\begin{enumerate}
-\item \(NI_3\) is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
+\label{sec:orgb31d9c5}
+\(\ce{NI3}\) is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{I})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{I})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{I})}
 \end{align}
-
-\item \(NH_3\) is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
+\(\ce{NH3}\) is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
 \end{align}
-
-\item \(CO\) is named as Carbon monoxide, and has the following Lewis Structure. It has a linear shape with 180\textdegree{} Bond angles, and has a SP hybridization
+\(\ce{CO}\) is named as Carbon monoxide, and has the following Lewis Structure. It has a linear shape with 180\textdegree{} Bond angles, and has a SP hybridization
 \begin{align}
 \chemfig{\charge{180=\:}{C}(~\charge{0=\:}{O})}
 \end{align}
-
-\item \(P_4O_1_0\) is named as Tetraphosphorus decoxide
-\item \(N_2O_4\) is named as Dinitrogen tetroxide
-\item \(PCl_3\) is named as Phosphorus trichloride
-\end{enumerate}
+\(\ce{P4O10}\) is named as Tetraphosphorus decoxide,
+\(\ce{N2O4}\) is named as Dinitrogen tetroxide,
+\(\ce{PCl3}\) is named as Phosphorus trichloride
 
 \subsection{Molecules that have geometries in one plane include which of the following? Draw the Lewis structures to prove your point}
-\label{sec:org3762890}
-The lewis structure for \(BCl_3\) is
-\url{https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCm7h4j6Bfc6g3PhfI2mKHDPc-u6bHMvB5jNimNlpRFFU1Rx50MBSIBQiCsnY0rtGHsXI\&usqp=CAU}
+\label{sec:org71c8c4b}
+The lewis structure for \(\ce{BCl3}\) is \textbf{Note} convert this to a triangle
 \begin{align}
 \chemfig{{B}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})}
 \end{align}
-
-The lewis structure for \(CHCl_3\) is
+The lewis structure for \(\ce{CHCl3}\) is
 \begin{align}
 \chemfig{{C}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})(-[:-270]{H})}
 \end{align}
-
-The lewis structure for \(NCl_3\) is
+The lewis structure for \(\ce{NCl3}\) is
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})}
 \end{align}
+Therefore, the correct option is \textbf{A}. Both options II and III are tetrahedral and trigonal pyramidal respectively. Option I (\(\ce{BCL3}\)) is the only one that has a geometry in one plane (trigonal planar)
+
+\subsection{{\bfseries\sffamily TODO} The electron-dot structure (Lewis structure) for which of the following molecules would have two lone pairs of electrons on the central atom? Again, draw the Lewis structures to prove your point.}
+\label{sec:orgf1ffc4b}
+
+\subsection{{\bfseries\sffamily TODO} Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4}
+\label{sec:org8ab0b12}
+
+\subsection{{\bfseries\sffamily TODO} Give the VSEPR geometry for each for each of the molecules listed in \#14.}
+\label{sec:orgc8ff50f}
+
+\subsection{{\bfseries\sffamily TODO} Tell whether each of the molecules listed in \#14 is polar or nonpolar.}
+\label{sec:orga667990}
+
+\subsection{{\bfseries\sffamily TODO} What primary type of intermolecular force (IMFs) would attract the molecules in \#14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)}
+\label{sec:orgebb8b16}
+
+\subsection{Name each of the following compounds:}
+\label{sec:orge545716}
+\begin{enumerate}
+\item \(\ce{P4O6}\) is named as Phosphorus trioxide
+\item \(\ce{KOH}\) is named as Potassium hydroxide
+\item \(\ce{N2}\) is named as Dinitrogen (or Nitrogen Gas)
+\item \(\ce{PH3}\) is named as Phosphane
+\item \(\ce{BF3}\) is named as Boron trifluoride
+\item \(\ce{AgCl}\) is named as Silver(I) chloride
+\item \(\ce{KHCO3}\) is named as Potassium hydrogen carbonate
+\item \(\ce{AgNO3}\) is named as Silver nitrate
+\end{enumerate}
+
+\subsection{Write formulas for each of the following compounds:}
+\label{sec:org485da3f}
+\begin{enumerate}
+\item The formula for sodium cyanide is \(\ce{NaCN}\)
+\item The formula for tin(II) fluoride is \(\ce{SnF2}\)
+\item The formula for lead(II) nitrate is \(\ce{PbF2}\)
+\item The formula for iron(III) oxide is \(\ce{FeF3}\)
+\item The formula for calcium phosphate is \(\ce{Ca3(PO4)2}\)
+\item The formula for sodium bromate is \(\ce{NaBrO3}\)
+\item The formula for hydrogen iodide is \(\ce{HI}\)
+\item The formula for sodium sulfate is \(\ce{Na2SO4}\)
+\item The formula for manganese dioxide is \(\ce{MnO2}\)
+\item The formula for potassium chlorate is \(\ce{KClO3}\)
+\item The formula for potassium hypochlorite is \(\ce{KclO}\)
+\item The formula for lithium hydride is \(\ce{LiH}\)
+\item The formula for barium chloride is \(\ce{BaCl2}\)
+\item The formula for magnesium oxide is \(\ce{MgO}\)
+\item The formula for copper(I) oxide is \(\ce{Cu2O}\)
+\end{enumerate}
+
+\subsection{Give the names of the following acids}
+\label{sec:org0e541c9}
+\begin{enumerate}
+\item \(\ce{H2SO3}\) is named as Sulfurous acid
+\item \(\ce{HI}\) is named as Hydroiodic acid
+\item \(\ce{HBr}\) is named as Hydrobromic acid
+\item \(\ce{HNO2}\) is named as Nitrous acid
+\item \(\ce{H3PO4}\) is named as Phosphoric Acid
+\item \(\ce{HCl}\) is named as Hydrochloric acid
+\end{enumerate}
+
+\subsection{Give the names and formulas of the seven diatomic elements.}
+\label{sec:org73b7a34}
+\begin{enumerate}
+\item \(\ce{H2}\), or Hydrogen
+\item \(\ce{N2}\), or Nitrogen
+\item \(\ce{O2}\), or Oxygen
+\item \(\ce{F2}\), or Fluorine
+\item \(\ce{Cl2}\), or Chlorine
+\item \(\ce{Br2}\), or Bromine
+\item \(\ce{I2}\), or Iodine
+\end{enumerate}
+
+\subsection{Solve the following problems involving scientific notation without a calculator.}
+\label{sec:orgf9d43d5}
+The solution is \(8*10^7\)
+\begin{align*}
+(2*10^3)(4*10^4)&=(2*4)(10^3*10^4)\\
+&=8(10^3*10^4)\\
+&=8*10^{^}{3+4}\\
+&=8*10^7
+\end{align*}
+The solution is \(42*10^{11}\)
+\begin{align*}
+(6*10^5)(7*10^6)&=(6*7)(10^5*10^6)\\
+&=42(10^5*10^6)\\
+&=42*10^{^}{5+6}\\
+&=42*10^{11}
+\end{align*}
+The solution is \(105*10^{12}\)
+\begin{align*}
+(7*10^4)(5*10^6)(3*10^2)&=(7*5*3)(10^4*10^6*10^2)\\
+&=105(10^4*10^6*10^2)\\
+&=105*10^{^}{4+6+2}\\
+&=105*10^{12}^{}^{}
+\end{align*}
+The solution is \(2.5*10^3\)
+\begin{align*}
+\frac{(2*10^7)}{(8*10^3)}&=\frac{(20000000)}{(8*10^3)}\\
+&=\frac{(20000000)}{(8000)}\\
+&=2500\\
+&=2.5*10^3
+\end{align*}
+The solution is \(2*10^2\)
+\begin{align*}
+\frac{(4*10^6)}{(2*10^4)}&=\frac{(4000000)}{(2*10^4)}\\
+&=\frac{(4000000)}{(20000)}\\
+&=200\\
+&=2*10^2
+\end{align*}
+The solution is \(5*10^{10}\)
+\begin{align*}
+\frac{(2*10^3)}{(4*10^{-8})}&=\frac{(2000)}{(4*10^{-8})}\\
+&=\frac{(2000)}{(0.00000004)}\\
+&=50000000000\\
+&=5*10^{10}
+\end{align*}
+The solution is \(5*10^{10}\)
+\begin{align*}
+\frac{(5*10^6)(2*10^3)(3*10^3)}{(5*10^4)}&=\frac{(5*2*3)(10^6*10^3*10^3)}{(5*10^4)}\\
+&=\frac{(30)(10^{6+3+3})}{(5*10^4)}\\
+&=\frac{(30)(10^{12}^{})}{(5*10^4)}\\
+&=\frac{(3*10^{13}^{}^{})}{(5*10^4)}
+\end{align*}
 \end{document}
