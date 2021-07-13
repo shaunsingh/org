@@ -5,13 +5,13 @@
                      '(("article" "11pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -33,28 +33,31 @@
     "chemfig"
     "mhchem")
    (LaTeX-add-labels
-    "sec:orgb6860af"
-    "sec:org57c8cdf"
-    "sec:org5bf841e"
-    "sec:org6796d25"
-    "sec:org99d3a1c"
-    "sec:orgfe9e23e"
-    "sec:orga9fe8a4"
-    "sec:orgb624440"
-    "sec:org73a6150"
-    "sec:org508a5b5"
-    "sec:org4e70f4a"
-    "sec:orgb31d9c5"
-    "sec:org71c8c4b"
-    "sec:orgf1ffc4b"
-    "sec:org8ab0b12"
-    "sec:orgc8ff50f"
-    "sec:orga667990"
-    "sec:orgebb8b16"
-    "sec:orge545716"
-    "sec:org485da3f"
-    "sec:org0e541c9"
-    "sec:org73b7a34"
-    "sec:orgf9d43d5"))
+    "sec:org254ad55"
+    "sec:orgbaa55c0"
+    "sec:org3278ffb"
+    "sec:org332e230"
+    "sec:org080cc14"
+    "sec:orgbdfb8e6"
+    "sec:org13a51c6"
+    "sec:orgd8c4bf8"
+    "sec:org1def4ac"
+    "sec:org66137d1"
+    "sec:org7e5f371"
+    "sec:org68373e8"
+    "sec:orga451956"
+    "sec:orgeb741f2"
+    "sec:org103b5e8"
+    "sec:orge3657e3"
+    "sec:org49b2d7c"
+    "sec:org6e616b2"
+    "sec:org45db427"
+    "sec:orgd941c46"
+    "sec:org148f0a7"
+    "sec:orgab02a76"
+    "sec:orgdcc7786"
+    "sec:orgbb1fbff"
+    "sec:orgc0ac46a"
+    "sec:orge10d78a"))
  :latex)
 

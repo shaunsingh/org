@@ -74,7 +74,9 @@ d. Protons = 15. Neutrons = 16. Electrons = 18
 e. Protons = 53. Neutrons = 74. Electrons = 54
 f. Protons = 53. Neutrons = 74. Electrons = 46
 
-** Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?
+** TODO Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?
+
+** Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?
 a. $\ce{Be}$ is in Group 2, therefore it will lose 2 electrons (and have a +2 charge)
 b. $\ce{Cl}$ is in Group 17, therefore it will gain 1 electron (and have a -1 charge)
 c. $\ce{Al}$ is in group 13, therefore it will gain 5 electrons (and have a -5 charge)
@@ -82,9 +84,7 @@ d. $\ce{O}$ is in group 16, therefore it will gain 8 electrons (and have a -2 ch
 e. $\ce{F}$ is in group 17, therefore it will gain 1 electron (and have a -1 charge)
 f. $\ce{Li}$ is in group 1, therefore it will lose 1 electron (and have a +1 charge)
 
-** Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?
-
-**  Name each of the following compounds:
+** Name each of the following compounds:
 a. $\ce{PbI2}$ is named as Lead(II) iodide
 b. $\ce{NH4Cl}$ is named as Ammonium chloride
 c. $\ce{Fe2O3}$ is named as Iron(III) oxide
@@ -116,10 +116,10 @@ $\ce{N2O4}$ is named as Dinitrogen tetroxide,
 $\ce{PCl3}$ is named as Phosphorus trichloride
 
 ** Molecules that have geometries in one plane include which of the following? Draw the Lewis structures to prove your point
-The lewis structure for $\ce{BCl3}$ is *Note* convert this to a triangle
-\begin{align}
-\chemfig{{B}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})}
-\end{align}
+The lewis structure for $\ce{BCl3}$
+#+attr_html: :width 75px
+#+attr_latex: :width 75px
+[[/Users/shauryasingh/Documents/notes/class/orgs/chem/images/BCL3.png]]
 The lewis structure for $\ce{CHCl3}$ is
 \begin{align}
 \chemfig{{C}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})(-[:-270]{H})}
@@ -130,13 +130,63 @@ The lewis structure for $\ce{NCl3}$ is
 \end{align}
 Therefore, the correct option is *A*. Both options II and III are tetrahedral and trigonal pyramidal respectively. Option I ($\ce{BCL3}$) is the only one that has a geometry in one plane (trigonal planar)
 
-** TODO The electron-dot structure (Lewis structure) for which of the following molecules would have two lone pairs of electrons on the central atom? Again, draw the Lewis structures to prove your point.
+** The electron-dot structure (Lewis structure) for which of the following molecules would have two lone pairs of electrons on the central atom? Again, draw the Lewis structures to prove your point.
+The lewis structure for $\ce{H2S}$ is
+#+attr_html: :width 75px
+#+attr_latex: :width 75px
+[[/Users/shauryasingh/Documents/notes/class/orgs/chem/images/H2S.png]]
+The lewis structure for $\ce{NH3}$ is
+\begin{align}
+\chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
+\end{align}
+The lewis structure for $\ce{CH4}$ is
+\begin{align}
+\chemfig{{C}(-{H})(-[:-90]{H})(-[:-180]{H})(-[:-270]{H})}
+\end{align}
+The lewis structure for $\ce{HCN}$ is
+\begin{align}
+\chemfig{{H}-{C}(~\charge{0=\:}{N})}
+\end{align}
+The lewis structure for $\ce{CO2}$ is
+\begin{align}
+\chemfig{(\charge{90=\:,-90=\:}{O})={C}=(\charge{90=\:,-90=\:}{O})}
+\end{align}
 
-** TODO Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4
+** Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4
+The lewis structure for $\ce{C2H2}$ is
+\begin{align}
+\chemfig{{H}-{C}~{C}-{H}}
+\end{align}
+The lewis structure for $\ce{H2O}$ is
+#+attr_html: :width 75px
+#+attr_latex: :width 75px
+[[/Users/shauryasingh/Documents/notes/class/orgs/chem/images/H2O.png]]
+The lewis structure for $\ce{NH3}$ is
+\begin{align}
+\chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
+\end{align}
+The lewis structure for $\ce{HCL}$ is
+\begin{align}
+\chemfig{{H}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})}
+\end{align}
+The lewis structure for $\ce{CCl4}$ is
+\begin{align}
+\chemfig{{C}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})(-[:-270]\charge{90=\:, 180:2pt=\:, 0=\:}{Cl})}
+\end{align}
 
-** TODO Give the VSEPR geometry for each for each of the molecules listed in #14.
+** Give the VSEPR geometry for each for each of the molecules listed in #14.
+1. $\ce{C2H2}$ has a linear VSEPR geometry
+2. $\ce{H2O}$ has a tetrahedral VSEPR geometry
+3. $\ce{NH3}$ has a trigonal pyramidal VSEPR geometry
+4. $\ce{HCl}$ has a linear VSEPR geometry
+5. $\ce{CCl4}$ has a tetrahedral VSEPR geometry
 
-** TODO Tell whether each of the molecules listed in #14 is polar or nonpolar.
+** Tell whether each of the molecules listed in #14 is polar or nonpolar.
+1. $\ce{C2H2}$ is nonpolar
+2. $\ce{H2O}$ is polar
+3. $\ce{NH3}$ is polar
+4. $\ce{HCl}$ is polar
+5. $\ce{CCl4}$ is nonpolar
 
 ** TODO What primary type of intermolecular force (IMFs) would attract the molecules in #14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)
 
@@ -185,52 +235,70 @@ Therefore, the correct option is *A*. Both options II and III are tetrahedral an
 7. $\ce{I2}$, or Iodine
 
 ** Solve the following problems involving scientific notation without a calculator.
-The solution is $8*10^7$
-\begin{align*}
-(2*10^3)(4*10^4)&=(2*4)(10^3*10^4)\\
-&=8(10^3*10^4)\\
-&=8*10^{^}{3+4}\\
-&=8*10^7
-\end{align*}
-The solution is $42*10^{11}$
-\begin{align*}
-(6*10^5)(7*10^6)&=(6*7)(10^5*10^6)\\
-&=42(10^5*10^6)\\
-&=42*10^{^}{5+6}\\
-&=42*10^{11}
-\end{align*}
-The solution is $105*10^{12}$
-\begin{align*}
-(7*10^4)(5*10^6)(3*10^2)&=(7*5*3)(10^4*10^6*10^2)\\
-&=105(10^4*10^6*10^2)\\
-&=105*10^{^}{4+6+2}\\
-&=105*10^{12}^{}^{}
-\end{align*}
-The solution is $2.5*10^3$
-\begin{align*}
-\frac{(2*10^7)}{(8*10^3)}&=\frac{(20000000)}{(8*10^3)}\\
-&=\frac{(20000000)}{(8000)}\\
-&=2500\\
-&=2.5*10^3
-\end{align*}
-The solution is $2*10^2$
-\begin{align*}
-\frac{(4*10^6)}{(2*10^4)}&=\frac{(4000000)}{(2*10^4)}\\
-&=\frac{(4000000)}{(20000)}\\
-&=200\\
-&=2*10^2
-\end{align*}
-The solution is $5*10^{10}$
-\begin{align*}
-\frac{(2*10^3)}{(4*10^{-8})}&=\frac{(2000)}{(4*10^{-8})}\\
-&=\frac{(2000)}{(0.00000004)}\\
-&=50000000000\\
-&=5*10^{10}
-\end{align*}
-The solution is $5*10^{10}$
-\begin{align*}
-\frac{(5*10^6)(2*10^3)(3*10^3)}{(5*10^4)}&=\frac{(5*2*3)(10^6*10^3*10^3)}{(5*10^4)}\\
-&=\frac{(30)(10^{6+3+3})}{(5*10^4)}\\
-&=\frac{(30)(10^{12}^{})}{(5*10^4)}\\
-&=\frac{(3*10^{13}^{}^{})}{(5*10^4)}
-\end{align*}
+1. The solution is $8*10^7$
+   \begin{align*}
+   (2*10^3)(4*10^4)&=(2*4)(10^3*10^4)\\
+   &=8(10^3*10^4)\\
+   &=8*10^{^}{3+4}\\
+   &=8*10^7
+   \end{align*}
+2. The solution is $42*10^{11}$
+   \begin{align*}
+   (6*10^5)(7*10^6)&=(6*7)(10^5*10^6)\\
+   &=42(10^5*10^6)\\
+   &=42*10^{^}{5+6}\\
+   &=42*10^{11}
+   \end{align*}
+3. The solution is $105*10^{12}$
+    \begin{align*}
+    (7*10^4)(5*10^6)(3*10^2)&=(7*5*3)(10^4*10^6*10^2)\\
+    &=105(10^4*10^6*10^2)\\
+    &=105*10^{^}{4+6+2}\\
+    &=105*10^{12}^{}^{}
+    \end{align*}
+4. The solution is $2.5*10^3$
+    \begin{align*}
+    \frac{(2*10^7)}{(8*10^3)}&=\frac{(20000000)}{(8*10^3)}\\
+    &=\frac{(20000000)}{(8000)}\\
+    &=2500\\
+    &=2.5*10^3
+    \end{align*}
+5. The solution is $2*10^2$
+    \begin{align*}
+    \frac{(4*10^6)}{(2*10^4)}&=\frac{(4000000)}{(2*10^4)}\\
+    &=\frac{(4000000)}{(20000)}\\
+    &=200\\
+    &=2*10^2
+    \end{align*}
+6. The solution is $5*10^{10}$
+    \begin{align*}
+    \frac{(2*10^3)}{(4*10^{-8})}&=\frac{(2000)}{(4*10^{-8})}\\
+    &=\frac{(2000)}{(0.00000004)}\\
+    &=50000000000\\
+    &=5*10^{10}
+    \end{align*}
+7. The solution is $6*10^8$
+    \begin{align*}
+    \frac{(5*10^6)(2*10^3)(3*10^3)}{(5*10^4)}&=\frac{(5*2*3)(10^6*10^3*10^3)}{(5*10^4)}\\
+    &=\frac{(30)(10^{6+3+3})}{(5*10^4)}\\
+    &=\frac{(30)(10^{12}^{})}{(5*10^4)}\\
+    &=\frac{(3*10^{13}^{}^{})}{(5*10^4)}\\
+    &=\frac{(3*10^9^{}^{}^{})}{5}\\
+    &=600000000\\
+    &=6*10^8
+    \end{align*}
+8. The solution is $5*10^2^{}$
+    \begin{align*}
+    \frac{(4*10^6)(5*10^{-3})}{(8*10^{-4})(5*10^3)}&=\frac{(4*5)(10^6*10^{-3})}{(8*5)(10^{-4}*10^3)}\\
+    &=\frac{(20)(10^{6-3}^{})}{(40)(10^{-4+3})}\\
+    &=\frac{(20)(10^3^{})}{(40)(10^{-1})}^{}\\
+    &=\frac{2000}{4}\\
+    &=500\\
+    &=5*10^2
+    \end{align*}
+
+** The structures and normal boiling points of dimethyl ether and ethanol are given in the table above.
+*** Which of the following diagrams best helps to explain the difference in boiling point of the two compounds?
+
+
+*** Describe your reasoning for selecting the answer you did and specifically identify the type of intermolecular forces represented.

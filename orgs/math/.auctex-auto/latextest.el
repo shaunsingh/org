@@ -29,6 +29,9 @@
     "textcomp"
     "amssymb"
     "capt-of"
-    "hyperref"))
+    "hyperref")
+   (LaTeX-add-labels
+    "sec:orgee27c09"
+    "sec:orgba3db10"))
  :latex)
 
