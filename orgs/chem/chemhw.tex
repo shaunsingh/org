@@ -1,4 +1,4 @@
-% Created 2021-07-12 Mon 14:41
+% Created 2021-07-14 Wed 14:32
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -31,9 +31,9 @@
 \maketitle
 
 \section{Summer Assignment 1}
-\label{sec:org254ad55}
+\label{sec:orgaf382f2}
 \subsection{How many significant figures are there each of the following values}
-\label{sec:orgbaa55c0}
+\label{sec:org35d85c0}
 \begin{enumerate}
 \item 4 significant figures
 \item 4 significant figures
@@ -45,7 +45,7 @@
 \end{enumerate}
 
 \subsection{Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.}
-\label{sec:org3278ffb}
+\label{sec:org6f8e3ff}
 \begin{enumerate}
 \item \(16.81 + 3.2257 = 20.0357 \approx 20.04\)
 \item \(324.6 * 815.991 = 264870.6786 \approx 264900\)
@@ -58,7 +58,13 @@
 \end{enumerate}
 
 \subsection{A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?}
-\label{sec:org332e230}
+\label{sec:org4ee03ed}
+We have the following values:
+\begin{align*}
+&d = ?\\
+&m = 440g\\
+&v = 500mL
+\end{align*}
 We can utilize the formula \(d=\frac{m}{v}\) (density = mass/volume)
 \begin{align*}
 d&=\frac{m}{v}\\
@@ -68,7 +74,7 @@ d&=\frac{m}{v}\\
 \end{align*}
 
 \subsection{The density of an object is 16.3 g/mL. Its volume is 0.125 L. What is the mass of the object?}
-\label{sec:org080cc14}
+\label{sec:org520fb6f}
 We can apply vector analysis to solve for the correct units
 \begin{center}
 \begin{tabular}{ll}
@@ -77,26 +83,42 @@ We can apply vector analysis to solve for the correct units
 1mL & 1L\\
 \end{tabular}
 \end{center}
+We are left with
 \begin{align*}
-=16300{g}/{L}
+&= \frac{16.3g * 1000mL}{(mL)(L)}\\
+&= \frac{16.3g * 1000\xout{mL}}{\xout{(mL)}(L)}\\
+&= \frac{16300g}{(L)}\\
+&\approx 16300g/L
 \end{align*}
-We can apply the same \(d=\frac{m}{v}\) to calculate for mass
-\begin{equation}
-16300{g}/{L}=\frac{m}{0.125mL}
-\end{equation}
+Now we have the following values:
+\begin{align*}
+&d = 16300g/L\\
+&m = ?\\
+&v = 0.125L
+\end{align*}
+We can plug these variables into \(d=\frac{m}{v}\) to calculate for mass
+\begin{align*}
+16300{g}/{L} &=\frac{m}{0.125L}\\
+\end{align*}
 Re-arranging the equation in terms of mass, we get the following
 \begin{align*}
-m &= 16300 * 0.125\\
+m &= 16300 * 0.125\ \frac{g\xout{L}}{\xout{L}}\\
 &= 2037.5g\\
 &\approx 2040g
 \end{align*}
 
 \subsection{A sample of uranium weighing 30.923 g was dropped in a graduated cylinder containing 22.30 mL of water. The volume of the water plus the sample was 23.90 mL. What is the density of uranium?}
-\label{sec:orgbdfb8e6}
+\label{sec:org4e678c1}
 The volume of the object is going to be the difference between the volume of the water and the volume of the water + object.
 \begin{equation}
 23.90mL - 22.30mL = 1.60mL
 \end{equation}
+Now we have the following values:
+\begin{align*}
+&d = ?\\
+&m = 30.923g\\
+&v = 1.60mL
+\end{align*}
 We can apply the same \(d=\frac{m}{v}\) to calculate for density
 \begin{align*}
 d&=\frac{m}{v} \\
@@ -106,7 +128,7 @@ d&=\frac{m}{v} \\
 \end{align*}
 
 \subsection{How many protons, neutrons and electrons are in each of the following ions?}
-\label{sec:org13a51c6}
+\label{sec:orgeaf2006}
 \begin{enumerate}
 \item Protons = 26. Neutrons = 30. Electrons = 23
 \item Protons = 20. Neutrons = 20. Electrons = 18
@@ -116,22 +138,30 @@ d&=\frac{m}{v} \\
 \item Protons = 53. Neutrons = 74. Electrons = 46
 \end{enumerate}
 
-\subsection{{\bfseries\sffamily TODO} Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?}
-\label{sec:orgd8c4bf8}
+\subsection{Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?}
+\label{sec:orgb86a179}
+\begin{enumerate}
+\item \(\ce{Cs}\) has a 1+ oxidation state
+\item \(\ce{N}\) has a 3- oxidation state
+\item \(\ce{Br}\) has a 1- oxidation state
+\item \(\ce{K}\) has a 1+ oxidation state
+\item \(\ce{Al}\) has a 3+ oxidation state
+\item \(\ce{S}\) has a 2- oxidation state
+\end{enumerate}
 
 \subsection{Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?}
-\label{sec:org1def4ac}
+\label{sec:org4246ea0}
 \begin{enumerate}
-\item \(\ce{Be}\) is in Group 2, therefore it will lose 2 electrons (and have a +2 charge)
-\item \(\ce{Cl}\) is in Group 17, therefore it will gain 1 electron (and have a -1 charge)
-\item \(\ce{Al}\) is in group 13, therefore it will gain 5 electrons (and have a -5 charge)
-\item \(\ce{O}\) is in group 16, therefore it will gain 8 electrons (and have a -2 charge)
-\item \(\ce{F}\) is in group 17, therefore it will gain 1 electron (and have a -1 charge)
-\item \(\ce{Li}\) is in group 1, therefore it will lose 1 electron (and have a +1 charge)
+\item \(\ce{Be}\) is in Group 2, therefore it will lose 2 electrons
+\item \(\ce{Cl}\) is in Group 17, therefore it will gain 1 electron
+\item \(\ce{Al}\) is in group 13, therefore it will lose 3 electrons
+\item \(\ce{O}\) is in group 16, therefore it will gain 2 electrons
+\item \(\ce{F}\) is in group 17, therefore it will gain 1 electron
+\item \(\ce{Li}\) is in group 1, therefore it will lose 1 electron
 \end{enumerate}
 
 \subsection{Name each of the following compounds:}
-\label{sec:org66137d1}
+\label{sec:org1aa5924}
 \begin{enumerate}
 \item \(\ce{PbI2}\) is named as Lead(II) iodide
 \item \(\ce{NH4Cl}\) is named as Ammonium chloride
@@ -145,16 +175,16 @@ d&=\frac{m}{v} \\
 \end{enumerate}
 
 \subsection{Which of the following particulate diagrams best shows the formation of water vapor from hydrogen gas and oxygen gas in a rigid container at 125\textdegree{} C?}
-\label{sec:org7e5f371}
+\label{sec:org4a12eb7}
 The correct answer would be \textbf{C}. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is \(\ce{H2O}\), there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
 
 \subsection{Name each of the following compounds. In addition, for the compounds in letters a-c, draw Lewis structures, predict VSEPR geometry and hybridization.}
-\label{sec:org68373e8}
+\label{sec:org90e66ff}
 \(\ce{NI3}\) is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{I})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{I})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{I})}
 \end{align}
-\(\ce{NH3}\) is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
+\(\ce{NH3}\) is named as Ammonia, and has the following Lewis Structure. It has a trigonal pyramid shape with 107° bond angles, and has a SP3 hybridization
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
 \end{align}
@@ -167,7 +197,7 @@ The correct answer would be \textbf{C}. Both Oxygen and Hydrogen exist freely as
 \(\ce{PCl3}\) is named as Phosphorus trichloride
 
 \subsection{Molecules that have geometries in one plane include which of the following? Draw the Lewis structures to prove your point}
-\label{sec:orga451956}
+\label{sec:orgca627a0}
 The lewis structure for \(\ce{BCl3}\)
 \begin{center}
 \includegraphics[width=75px]{/Users/shauryasingh/Documents/notes/class/orgs/chem/images/BCL3.png}
@@ -183,7 +213,7 @@ The lewis structure for \(\ce{NCl3}\) is
 Therefore, the correct option is \textbf{A}. Both options II and III are tetrahedral and trigonal pyramidal respectively. Option I (\(\ce{BCL3}\)) is the only one that has a geometry in one plane (trigonal planar)
 
 \subsection{The electron-dot structure (Lewis structure) for which of the following molecules would have two lone pairs of electrons on the central atom? Again, draw the Lewis structures to prove your point.}
-\label{sec:orgeb741f2}
+\label{sec:org7d80d91}
 The lewis structure for \(\ce{H2S}\) is
 \begin{center}
 \includegraphics[width=75px]{/Users/shauryasingh/Documents/notes/class/orgs/chem/images/H2S.png}
@@ -204,9 +234,10 @@ The lewis structure for \(\ce{CO2}\) is
 \begin{align}
 \chemfig{(\charge{90=\:,-90=\:}{O})={C}=(\charge{90=\:,-90=\:}{O})}
 \end{align}
+Therefore, \(\ce{H2S}\)
 
 \subsection{Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4}
-\label{sec:org103b5e8}
+\label{sec:orge056c97}
 The lewis structure for \(\ce{C2H2}\) is
 \begin{align}
 \chemfig{{H}-{C}~{C}-{H}}
@@ -225,33 +256,52 @@ The lewis structure for \(\ce{HCL}\) is
 \end{align}
 The lewis structure for \(\ce{CCl4}\) is
 \begin{align}
-\chemfig{{C}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})(-[:-270]\charge{90=\:, 180:2pt=\:, 0=\:}{CL})}
+\chemfig{{C}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{Cl})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{Cl})(-[:-270]\charge{90=\:, 180:2pt=\:, 0=\:}{Cl})}
 \end{align}
 
-\subsection{{\bfseries\sffamily TODO} Give the VSEPR geometry for each for each of the molecules listed in \#14.}
-\label{sec:orge3657e3}
+\subsection{Give the VSEPR geometry for each for each of the molecules listed in \#14.}
+\label{sec:orga482973}
+\begin{enumerate}
+\item \(\ce{C2H2}\) has a linear VSEPR geometry
+\item \(\ce{H2O}\) has a bent VSEPR geometry
+\item \(\ce{NH3}\) has a trigonal pyramidal VSEPR geometry
+\item \(\ce{HCl}\) has a linear VSEPR geometry
+\item \(\ce{CCl4}\) has a tetrahedral VSEPR geometry
+\end{enumerate}
 
-\subsection{{\bfseries\sffamily TODO} Tell whether each of the molecules listed in \#14 is polar or nonpolar.}
-\label{sec:org49b2d7c}
+\subsection{Tell whether each of the molecules listed in \#14 is polar or nonpolar.}
+\label{sec:org1ad73db}
+\begin{enumerate}
+\item \(\ce{C2H2}\) is nonpolar
+\item \(\ce{H2O}\) is polar
+\item \(\ce{NH3}\) is polar
+\item \(\ce{HCl}\) is polar
+\item \(\ce{CCl4}\) is nonpolar
+\end{enumerate}
 
-\subsection{{\bfseries\sffamily TODO} What primary type of intermolecular force (IMFs) would attract the molecules in \#14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)}
-\label{sec:org6e616b2}
+\subsection{What is the type of bond for \(\ce{C2H2}\)?}
+\label{sec:org4914ae3}
+The lewis structure for \(\ce{C2H2}\) is,
+\begin{align}
+\chemfig{{H}-{C}~{C}-{H}}
+\end{align}
+Therefore it will have a covalent bond, and would be nonpolar.
 
 \subsection{Name each of the following compounds:}
-\label{sec:org45db427}
+\label{sec:org98e935a}
 \begin{enumerate}
-\item \(\ce{P4O6}\) is named as Phosphorus trioxide
+\item \(\ce{P4O6}\) is named as Tetraphosphorus hexoxide
 \item \(\ce{KOH}\) is named as Potassium hydroxide
 \item \(\ce{N2}\) is named as Dinitrogen (or Nitrogen Gas)
-\item \(\ce{PH3}\) is named as Phosphane
+\item \(\ce{PH3}\) is named as Monophosphorus Trihydride
 \item \(\ce{BF3}\) is named as Boron trifluoride
 \item \(\ce{AgCl}\) is named as Silver(I) chloride
-\item \(\ce{KHCO3}\) is named as Potassium hydrogen carbonate
-\item \(\ce{AgNO3}\) is named as Silver nitrate
+\item \(\ce{KHCO3}\) is named as Potassium bicarbonate
+\item \(\ce{AgNO3}\) is named as Silver(I) nitrate
 \end{enumerate}
 
 \subsection{Write formulas for each of the following compounds:}
-\label{sec:orgd941c46}
+\label{sec:org516c08b}
 \begin{enumerate}
 \item The formula for sodium cyanide is \(\ce{NaCN}\)
 \item The formula for tin(II) fluoride is \(\ce{SnF2}\)
@@ -271,7 +321,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Give the names of the following acids}
-\label{sec:org148f0a7}
+\label{sec:org6c2db06}
 \begin{enumerate}
 \item \(\ce{H2SO3}\) is named as Sulfurous acid
 \item \(\ce{HI}\) is named as Hydroiodic acid
@@ -281,8 +331,18 @@ The lewis structure for \(\ce{CCl4}\) is
 \item \(\ce{HCl}\) is named as Hydrochloric acid
 \end{enumerate}
 
+\subsection{Give formulas for the following acids:}
+\label{sec:orgb4358f1}
+\begin{enumerate}
+\item Nitric acid has a formula of \(\ce{HNO3}\)
+\item hydrofluoric acid has a formula of \(\ce{HF}\)
+\item sulfuric acid has a formula of \(\ce{H2SO4}\)
+\item hydrocyanic acid has a formula of \(\ce{HCN}\)
+\item acetic acid has a formula of \(\ce{C2H4O2}\)
+\end{enumerate}
+
 \subsection{Give the names and formulas of the seven diatomic elements.}
-\label{sec:orgab02a76}
+\label{sec:org9f361d1}
 \begin{enumerate}
 \item \(\ce{H2}\), or Hydrogen
 \item \(\ce{N2}\), or Nitrogen
@@ -294,7 +354,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Solve the following problems involving scientific notation without a calculator.}
-\label{sec:orgdcc7786}
+\label{sec:orgc820d7f}
 \begin{enumerate}
 \item The solution is \(8*10^7\)
 \begin{align*}
@@ -319,23 +379,24 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{align*}
 \item The solution is \(2.5*10^3\)
 \begin{align*}
-\frac{(2*10^7)}{(8*10^3)}&=\frac{(20000000)}{(8*10^3)}\\
-&=\frac{(20000000)}{(8000)}\\
-&=2500\\
-&=2.5*10^3
+\frac{(2*10^7)}{(8*10^3)}&=\frac{2}{8}*\frac{10^7}{10^3}\\
+&=\frac{2}{8}*\frac{10^{7-3}}{1}\\
+&=0.4*10^{7-3}\\
+&=0.4*10^4^{}\\
+&=4*10^3
 \end{align*}
 \item The solution is \(2*10^2\)
 \begin{align*}
-\frac{(4*10^6)}{(2*10^4)}&=\frac{(4000000)}{(2*10^4)}\\
-&=\frac{(4000000)}{(20000)}\\
-&=200\\
+\frac{(4*10^6)}{(2*10^4)}&=\frac{4}{2}*\frac{10^6}{10^4}\\
+&=2*10^{6-4}\\
 &=2*10^2
 \end{align*}
 \item The solution is \(5*10^{10}\)
 \begin{align*}
-\frac{(2*10^3)}{(4*10^{-8})}&=\frac{(2000)}{(4*10^{-8})}\\
-&=\frac{(2000)}{(0.00000004)}\\
-&=50000000000\\
+\frac{(2*10^3)}{(4*10^{-8})}&=\frac{2}{4}*\frac{10^3}{10^-8}\\
+&=0.5*10^{3-(-8)}\\
+&=0.5*10^{3+8}\\
+&=0.5*10^11\\
 &=5*10^{10}
 \end{align*}
 \item The solution is \(6*10^8\)
@@ -344,8 +405,9 @@ The lewis structure for \(\ce{CCl4}\) is
 &=\frac{(30)(10^{6+3+3})}{(5*10^4)}\\
 &=\frac{(30)(10^{12}^{})}{(5*10^4)}\\
 &=\frac{(3*10^{13}^{}^{})}{(5*10^4)}\\
-&=\frac{(3*10^9^{}^{}^{})}{5}\\
-&=600000000\\
+&=\frac{3}{5}*\frac{10^{13}}{10^4}\\
+&=0.6*10^{13-4}\\
+&=0.6*10^9\\
 &=6*10^8
 \end{align*}
 \item The solution is \(5*10^2^{}\)
@@ -353,18 +415,15 @@ The lewis structure for \(\ce{CCl4}\) is
 \frac{(4*10^6)(5*10^{-3})}{(8*10^{-4})(5*10^3)}&=\frac{(4*5)(10^6*10^{-3})}{(8*5)(10^{-4}*10^3)}\\
 &=\frac{(20)(10^{6-3}^{})}{(40)(10^{-4+3})}\\
 &=\frac{(20)(10^3^{})}{(40)(10^{-1})}^{}\\
-&=\frac{2000}{4}\\
-&=500\\
+&=\frac{(2)(10^4^{})}{(4)(10^1)}^{}\\
+&=\frac{2}{4}*\frac{10^4}{10^1}\\
+&=0.5*10^{4-1}\\
+&=0.5*10^3\\
 &=5*10^2
 \end{align*}
 \end{enumerate}
 
-\subsection{The structures and normal boiling points of dimethyl ether and ethanol are given in the table above.}
-\label{sec:orgbb1fbff}
-\subsubsection{Which of the following diagrams best helps to explain the difference in boiling point of the two compounds?}
-\label{sec:orgc0ac46a}
-
-
-\subsubsection{Describe your reasoning for selecting the answer you did and specifically identify the type of intermolecular forces represented.}
-\label{sec:orge10d78a}
+\subsection{What is the formula for nitric acid?}
+\label{sec:org8450154}
+Nitric acid has a formula of \(\ce{HNO3}\)
 \end{document}

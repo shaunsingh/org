@@ -26,6 +26,12 @@ g. $[\frac{(3.901 - 3.887)}{3.901}] * 1.00 = [\frac{0.014}{3.901}] * 1.00 = 0.00
 h. $6.404 * 2.91 * (18.7 - 17.1) = 6.404 * 2.91 * 1.6 \approx 30$
 
 ** A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?
+We have the following values:
+\begin{align*}
+&d = ?\\
+&m = 440g\\
+&v = 500mL
+\end{align*}
 We can utilize the formula $d=\frac{m}{v}$ (density = mass/volume)
 \begin{align*}
 d&=\frac{m}{v}\\
@@ -39,16 +45,26 @@ We can apply vector analysis to solve for the correct units
 | 16.3g | 1000 mL |
 |-------+---------|
 | 1mL   | 1L      |
+We are left with
 \begin{align*}
-=16300{g}/{L}
+&= \frac{16.3g * 1000mL}{(mL)(L)}\\
+&= \frac{16.3g * 1000\xout{mL}}{\xout{(mL)}(L)}\\
+&= \frac{16300g}{(L)}\\
+&\approx 16300g/L
 \end{align*}
-We can apply the same $d=\frac{m}{v}$ to calculate for mass
-\begin{equation}
-16300{g}/{L}=\frac{m}{0.125mL}
-\end{equation}
+Now we have the following values:
+\begin{align*}
+&d = 16300g/L\\
+&m = ?\\
+&v = 0.125L
+\end{align*}
+We can plug these variables into $d=\frac{m}{v}$ to calculate for mass
+\begin{align*}
+16300{g}/{L} &=\frac{m}{0.125L}\\
+\end{align*}
 Re-arranging the equation in terms of mass, we get the following
 \begin{align*}
-m &= 16300 * 0.125\\
+m &= 16300 * 0.125\ \frac{g\xout{L}}{\xout{L}}\\
 &= 2037.5g\\
 &\approx 2040g
 \end{align*}
@@ -58,6 +74,12 @@ The volume of the object is going to be the difference between the volume of the
 \begin{equation}
 23.90mL - 22.30mL = 1.60mL
 \end{equation}
+Now we have the following values:
+\begin{align*}
+&d = ?\\
+&m = 30.923g\\
+&v = 1.60mL
+\end{align*}
 We can apply the same $d=\frac{m}{v}$ to calculate for density
 \begin{align*}
 d&=\frac{m}{v} \\
@@ -74,15 +96,21 @@ d. Protons = 15. Neutrons = 16. Electrons = 18
 e. Protons = 53. Neutrons = 74. Electrons = 54
 f. Protons = 53. Neutrons = 74. Electrons = 46
 
-** TODO Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?
+** Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?
+a. $\ce{Cs}$ has a 1+ oxidation state
+b. $\ce{N}$ has a 3- oxidation state
+c. $\ce{Br}$ has a 1- oxidation state
+d. $\ce{K}$ has a 1+ oxidation state
+e. $\ce{Al}$ has a 3+ oxidation state
+f. $\ce{S}$ has a 2- oxidation state
 
 ** Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?
-a. $\ce{Be}$ is in Group 2, therefore it will lose 2 electrons (and have a +2 charge)
-b. $\ce{Cl}$ is in Group 17, therefore it will gain 1 electron (and have a -1 charge)
-c. $\ce{Al}$ is in group 13, therefore it will gain 5 electrons (and have a -5 charge)
-d. $\ce{O}$ is in group 16, therefore it will gain 8 electrons (and have a -2 charge)
-e. $\ce{F}$ is in group 17, therefore it will gain 1 electron (and have a -1 charge)
-f. $\ce{Li}$ is in group 1, therefore it will lose 1 electron (and have a +1 charge)
+a. $\ce{Be}$ is in Group 2, therefore it will lose 2 electrons
+b. $\ce{Cl}$ is in Group 17, therefore it will gain 1 electron
+c. $\ce{Al}$ is in group 13, therefore it will lose 3 electrons
+d. $\ce{O}$ is in group 16, therefore it will gain 2 electrons
+e. $\ce{F}$ is in group 17, therefore it will gain 1 electron
+f. $\ce{Li}$ is in group 1, therefore it will lose 1 electron
 
 ** Name each of the following compounds:
 a. $\ce{PbI2}$ is named as Lead(II) iodide
@@ -103,7 +131,7 @@ $\ce{NI3}$ is named as Nitrogen triiodide, and has the following Lewis Structure
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{I})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{I})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{I})}
 \end{align}
-$\ce{NH3}$ is named as Ammonia, and has the following Lewis Structure. It has a tetrahedral shape with 107° bond angles, and has a SP3 hybridization
+$\ce{NH3}$ is named as Ammonia, and has the following Lewis Structure. It has a trigonal pyramid shape with 107° bond angles, and has a SP3 hybridization
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
 \end{align}
@@ -151,6 +179,7 @@ The lewis structure for $\ce{CO2}$ is
 \begin{align}
 \chemfig{(\charge{90=\:,-90=\:}{O})={C}=(\charge{90=\:,-90=\:}{O})}
 \end{align}
+Therefore, $\ce{H2S}$
 
 ** Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4
 The lewis structure for $\ce{C2H2}$ is
@@ -176,7 +205,7 @@ The lewis structure for $\ce{CCl4}$ is
 
 ** Give the VSEPR geometry for each for each of the molecules listed in #14.
 1. $\ce{C2H2}$ has a linear VSEPR geometry
-2. $\ce{H2O}$ has a tetrahedral VSEPR geometry
+2. $\ce{H2O}$ has a bent VSEPR geometry
 3. $\ce{NH3}$ has a trigonal pyramidal VSEPR geometry
 4. $\ce{HCl}$ has a linear VSEPR geometry
 5. $\ce{CCl4}$ has a tetrahedral VSEPR geometry
@@ -188,17 +217,22 @@ The lewis structure for $\ce{CCl4}$ is
 4. $\ce{HCl}$ is polar
 5. $\ce{CCl4}$ is nonpolar
 
-** TODO What primary type of intermolecular force (IMFs) would attract the molecules in #14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)
+** What is the type of bond for $\ce{C2H2}$?
+The lewis structure for $\ce{C2H2}$ is,
+\begin{align}
+\chemfig{{H}-{C}~{C}-{H}}
+\end{align}
+Therefore it will have a covalent bond, and would be nonpolar.
 
 ** Name each of the following compounds:
-1. $\ce{P4O6}$ is named as Phosphorus trioxide
+1. $\ce{P4O6}$ is named as Tetraphosphorus hexoxide
 2. $\ce{KOH}$ is named as Potassium hydroxide
 3. $\ce{N2}$ is named as Dinitrogen (or Nitrogen Gas)
-4. $\ce{PH3}$ is named as Phosphane
+4. $\ce{PH3}$ is named as Monophosphorus Trihydride
 5. $\ce{BF3}$ is named as Boron trifluoride
 6. $\ce{AgCl}$ is named as Silver(I) chloride
-7. $\ce{KHCO3}$ is named as Potassium hydrogen carbonate
-8. $\ce{AgNO3}$ is named as Silver nitrate
+7. $\ce{KHCO3}$ is named as Potassium bicarbonate
+8. $\ce{AgNO3}$ is named as Silver(I) nitrate
 
 ** Write formulas for each of the following compounds:
 1. The formula for sodium cyanide is $\ce{NaCN}$
@@ -224,6 +258,13 @@ The lewis structure for $\ce{CCl4}$ is
 4. $\ce{HNO2}$ is named as Nitrous acid
 5. $\ce{H3PO4}$ is named as Phosphoric Acid
 6. $\ce{HCl}$ is named as Hydrochloric acid
+
+** Give formulas for the following acids:
+1. Nitric acid has a formula of $\ce{HNO3}$
+2. hydrofluoric acid has a formula of $\ce{HF}$
+3. sulfuric acid has a formula of $\ce{H2SO4}$
+4. hydrocyanic acid has a formula of $\ce{HCN}$
+5. acetic acid has a formula of $\ce{C2H4O2}$
 
 ** Give the names and formulas of the seven diatomic elements.
 1. $\ce{H2}$, or Hydrogen
@@ -258,23 +299,24 @@ The lewis structure for $\ce{CCl4}$ is
     \end{align*}
 4. The solution is $2.5*10^3$
     \begin{align*}
-    \frac{(2*10^7)}{(8*10^3)}&=\frac{(20000000)}{(8*10^3)}\\
-    &=\frac{(20000000)}{(8000)}\\
-    &=2500\\
-    &=2.5*10^3
+    \frac{(2*10^7)}{(8*10^3)}&=\frac{2}{8}*\frac{10^7}{10^3}\\
+    &=\frac{2}{8}*\frac{10^{7-3}}{1}\\
+    &=0.4*10^{7-3}\\
+    &=0.4*10^4^{}\\
+    &=4*10^3
     \end{align*}
 5. The solution is $2*10^2$
     \begin{align*}
-    \frac{(4*10^6)}{(2*10^4)}&=\frac{(4000000)}{(2*10^4)}\\
-    &=\frac{(4000000)}{(20000)}\\
-    &=200\\
+    \frac{(4*10^6)}{(2*10^4)}&=\frac{4}{2}*\frac{10^6}{10^4}\\
+    &=2*10^{6-4}\\
     &=2*10^2
     \end{align*}
 6. The solution is $5*10^{10}$
     \begin{align*}
-    \frac{(2*10^3)}{(4*10^{-8})}&=\frac{(2000)}{(4*10^{-8})}\\
-    &=\frac{(2000)}{(0.00000004)}\\
-    &=50000000000\\
+    \frac{(2*10^3)}{(4*10^{-8})}&=\frac{2}{4}*\frac{10^3}{10^-8}\\
+    &=0.5*10^{3-(-8)}\\
+    &=0.5*10^{3+8}\\
+    &=0.5*10^11\\
     &=5*10^{10}
     \end{align*}
 7. The solution is $6*10^8$
@@ -283,8 +325,9 @@ The lewis structure for $\ce{CCl4}$ is
     &=\frac{(30)(10^{6+3+3})}{(5*10^4)}\\
     &=\frac{(30)(10^{12}^{})}{(5*10^4)}\\
     &=\frac{(3*10^{13}^{}^{})}{(5*10^4)}\\
-    &=\frac{(3*10^9^{}^{}^{})}{5}\\
-    &=600000000\\
+    &=\frac{3}{5}*\frac{10^{13}}{10^4}\\
+    &=0.6*10^{13-4}\\
+    &=0.6*10^9\\
     &=6*10^8
     \end{align*}
 8. The solution is $5*10^2^{}$
@@ -292,13 +335,12 @@ The lewis structure for $\ce{CCl4}$ is
     \frac{(4*10^6)(5*10^{-3})}{(8*10^{-4})(5*10^3)}&=\frac{(4*5)(10^6*10^{-3})}{(8*5)(10^{-4}*10^3)}\\
     &=\frac{(20)(10^{6-3}^{})}{(40)(10^{-4+3})}\\
     &=\frac{(20)(10^3^{})}{(40)(10^{-1})}^{}\\
-    &=\frac{2000}{4}\\
-    &=500\\
+    &=\frac{(2)(10^4^{})}{(4)(10^1)}^{}\\
+    &=\frac{2}{4}*\frac{10^4}{10^1}\\
+    &=0.5*10^{4-1}\\
+    &=0.5*10^3\\
     &=5*10^2
     \end{align*}
 
-** The structures and normal boiling points of dimethyl ether and ethanol are given in the table above.
-*** Which of the following diagrams best helps to explain the difference in boiling point of the two compounds?
-
-
-*** Describe your reasoning for selecting the answer you did and specifically identify the type of intermolecular forces represented.
+** What is the formula for nitric acid?
+Nitric acid has a formula of $\ce{HNO3}$
