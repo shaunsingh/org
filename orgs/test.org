@@ -1,10 +1,10 @@
 * Summer HW
 
 ** Algebra II [0%]
-*** TODO Aleks: <2021-09-09 Thu> [66%]
+*** TODO Aleks: <2021-09-09 Thu> [0%]
 1. [x] Log into ALEKS
 2. [x] Leave Geometry Class
-3. [ ] Complete at least an 80% mastery rating on the topics
+3. [ ] Complete at least an 80% mastery rating on the topic
 **** Counts as a project grade
 **** Code: JCYLL-EHXK4
 **** rdally@jcboe.org for issues
@@ -13,7 +13,7 @@
 ** Biology [100%]
 *** None?
 
-** AP Chem [25%]
+** AP Chem [30%]
 *** Resources
 Textbook: Chemistry, The Molecular Nature of Matter and Change, 7 th ed., by Silberberg and Amateis.
 Review Book: Peterson’s AP Chemistry by Brett Barker.
@@ -23,7 +23,7 @@ Memorize the table of common ions, strong acids, bases, and diatomic elements. R
 1. Each assignment counts as a quiz grade
 2. Write all math work
 3. Include Units
-**** TODO Assignment 1 <2021-07-16 Fri> [80%]
+**** TODO Assignment 1 <2021-07-16 Fri> [90%]
 Pages 2-4
 **** TODO Assignment 2 <2021-08-06 Fri> [0%]
 Pages 5-8
