@@ -7,12 +7,12 @@
 
 * Summer Assignment 1
 ** How many significant figures are there each of the following values
-a. 4 significant figures
-b. 4 significant figures
-c. 7 significant figures
-d. 6 significant figures
-e. 1 significant figures
-f. 5 significant figures
+a. $0.002330$ has *4* significant figures. Since the leading zeroes (those before the 2) don't count, the significant figures consist of $2330$, or 4 significant figures.
+b. $13.00$ has *4* significant figures. Since all non-zero digits are significant (the 13) as well as all digits after the decimal, every digit in this number is significant, giving us 4 significant figures.
+c. $322.1221$ has *7* significant figures. Since all non-zero digits are significant, every digit in this number is significant. That gives us 7 significant figures.
+d. $1204.30$ has *6* significant figures. Since all non-zero digits are significant (the 12_4.3) as well as all digits after the decimal and zeroes between non-zero digits, every digit in this number is significant, giving us 6 significant figures.
+e. $0.0002$ has *1* significant figure. Since all leading zeroes (those before the 2) don't count, the significant figures consist of just the 2, which means it has only 1 significant figure.
+f. $2200.0$ has 5 significant figures. Since all non-zero digits (the 22) as well as zeroes before
 g. 6 significant figures
 
 ** Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.
@@ -22,7 +22,7 @@ c. $2.85 + 3.4621 + 1.3 = 7.6121 \approx 7.6$
 d. $7.442 - 7.429 = 0.013$
 e. $1.65 * 14 = 23.1 \approx 23$
 f. $\frac{27}{4.148} = 6.509161 \approx 6.5$
-g. $[\frac{(3.901 - 3.887)}{3.901}] * 1.00 = [\frac{0.014}{3.901}] * 1.00 = 0.0036 * 1.00 = 0.0036$
+g. $[\frac{(3.901 - 3.887)}{3.901}] * 1.00 = [\frac{0.014}{3.901}] * 1.00 \approx 0.0036 * 1.00 = 0.0036$
 h. $6.404 * 2.91 * (18.7 - 17.1) = 6.404 * 2.91 * 1.6 \approx 30$
 
 ** A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?
@@ -117,8 +117,8 @@ a. $\ce{PbI2}$ is named as Lead(II) iodide
 b. $\ce{NH4Cl}$ is named as Ammonium chloride
 c. $\ce{Fe2O3}$ is named as Iron(III) oxide
 d. $\ce{LiH}$ is named as Lithium hydride
-e. $\ce{CsCl}$ is named as Caesium chloride
-f. $\ce{Cr(OH)1}$ is named as Chromium hydroxide
+e. $\ce{CsCl}$ is named as Cesium chloride
+f. $\ce{Cr(OH)1}$ is named as Chromium(III) hydroxide
 g. $\ce{NaC2H2O2}$ is named as Sodium acetate
 h. $\ce{K2Cr2O7}$ is named as Potassium dichromate
 i. $\ce{Na2SO4}$ is named as Sodium sulfate
@@ -139,7 +139,7 @@ $\ce{CO}$ is named as Carbon monoxide, and has the following Lewis Structure. It
 \begin{align}
 \chemfig{\charge{180=\:}{C}(~\charge{0=\:}{O})}
 \end{align}
-$\ce{P4O10}$ is named as Tetraphosphorus decoxide,
+$\ce{P4O10}$ is named as Diphosphorus pentoxide,
 $\ce{N2O4}$ is named as Dinitrogen tetroxide,
 $\ce{PCl3}$ is named as Phosphorus trichloride
 
@@ -179,7 +179,7 @@ The lewis structure for $\ce{CO2}$ is
 \begin{align}
 \chemfig{(\charge{90=\:,-90=\:}{O})={C}=(\charge{90=\:,-90=\:}{O})}
 \end{align}
-Therefore, $\ce{H2S}$
+Therefore, the only correct answer is $\ce{H2S}$
 
 ** Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4
 The lewis structure for $\ce{C2H2}$ is
@@ -217,18 +217,23 @@ The lewis structure for $\ce{CCl4}$ is
 4. $\ce{HCl}$ is polar
 5. $\ce{CCl4}$ is nonpolar
 
-** What is the type of bond for $\ce{C2H2}$?
-The lewis structure for $\ce{C2H2}$ is,
-\begin{align}
-\chemfig{{H}-{C}~{C}-{H}}
-\end{align}
-Therefore it will have a covalent bond, and would be nonpolar.
+** What primary type of intermolecular force (IMFs) would attract the molecules in #14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)
+1. *The primary types of intermolecular forces (IMFs) that would attract the molecules in #14 are*
+   a. $\ce{C2H2}$ is dominated by London dispersion forces
+   b. $\ce{H2O}$ primarily has hydrogen bonds, a type of dipole-dipole force
+   c. $\ce{NH3}$ primarily has hydrogen bonds, a type of dipole-dipole force
+   d. $\ce{HCl}$ primarily has dipole-dipole forces
+   e. $\ce{CCl4}$ is dominated by London dispersion forces
+2. *The molecules that have the highest boiling points and lowest boiling points are*
+   a. $\ce{H2O}$ and $\ce{NH3}$  have the highest boiling points, since they have hydrogen bonds
+   b. $\ce{C2H2}$ and $\ce{CCl4}$ have the lowest boiling points, since they have London dispersion forces
+
 
 ** Name each of the following compounds:
-1. $\ce{P4O6}$ is named as Tetraphosphorus hexoxide
+1. $\ce{P4O6}$ is named as Phosphorus trioxide
 2. $\ce{KOH}$ is named as Potassium hydroxide
-3. $\ce{N2}$ is named as Dinitrogen (or Nitrogen Gas)
-4. $\ce{PH3}$ is named as Monophosphorus Trihydride
+3. $\ce{N2}$ is named as Nitrogen
+4. $\ce{PH3}$ is named as Phosphane
 5. $\ce{BF3}$ is named as Boron trifluoride
 6. $\ce{AgCl}$ is named as Silver(I) chloride
 7. $\ce{KHCO3}$ is named as Potassium bicarbonate
@@ -237,8 +242,8 @@ Therefore it will have a covalent bond, and would be nonpolar.
 ** Write formulas for each of the following compounds:
 1. The formula for sodium cyanide is $\ce{NaCN}$
 2. The formula for tin(II) fluoride is $\ce{SnF2}$
-3. The formula for lead(II) nitrate is $\ce{PbF2}$
-4. The formula for iron(III) oxide is $\ce{FeF3}$
+3. The formula for lead(II) nitrate is $\ce{Pb(NO3)2}$
+4. The formula for iron(III) oxide is $\ce{Fe2O3}$
 5. The formula for calcium phosphate is $\ce{Ca3(PO4)2}$
 6. The formula for sodium bromate is $\ce{NaBrO3}$
 7. The formula for hydrogen iodide is $\ce{HI}$
@@ -264,7 +269,7 @@ Therefore it will have a covalent bond, and would be nonpolar.
 2. hydrofluoric acid has a formula of $\ce{HF}$
 3. sulfuric acid has a formula of $\ce{H2SO4}$
 4. hydrocyanic acid has a formula of $\ce{HCN}$
-5. acetic acid has a formula of $\ce{C2H4O2}$
+5. acetic acid has a formula of $\ce{CH3COOH}$
 
 ** Give the names and formulas of the seven diatomic elements.
 1. $\ce{H2}$, or Hydrogen
@@ -283,19 +288,21 @@ Therefore it will have a covalent bond, and would be nonpolar.
    &=8*10^{^}{3+4}\\
    &=8*10^7
    \end{align*}
-2. The solution is $42*10^{11}$
+2. The solution is $4.2*10^{}^{12}$
    \begin{align*}
    (6*10^5)(7*10^6)&=(6*7)(10^5*10^6)\\
    &=42(10^5*10^6)\\
    &=42*10^{^}{5+6}\\
-   &=42*10^{11}
+   &=42*10^{11}\\
+   &=4.2*10^{12}
    \end{align*}
-3. The solution is $105*10^{12}$
+3. The solution is $1.05*10^{14}$
     \begin{align*}
     (7*10^4)(5*10^6)(3*10^2)&=(7*5*3)(10^4*10^6*10^2)\\
     &=105(10^4*10^6*10^2)\\
     &=105*10^{^}{4+6+2}\\
-    &=105*10^{12}^{}^{}
+    &=105*10^{12}^{}^{}\\
+    &=1.05*10^{14}
     \end{align*}
 4. The solution is $2.5*10^3$
     \begin{align*}
@@ -342,5 +349,21 @@ Therefore it will have a covalent bond, and would be nonpolar.
     &=5*10^2
     \end{align*}
 
-** What is the formula for nitric acid?
-Nitric acid has a formula of $\ce{HNO3}$
+** The structures and normal boiling points of dimethyl ether and ethanol are given in the table above.
+1. *Which of the following diagrams best helps to explain the difference in boiling point of the two compounds?*
+
+   The answer is *B*, since it best shows the difference between hydrogen bonds.
+
+2. *Describe your reasoning for selecting the answer you did and specifically identify the type of intermolecular forces represented.*
+
+    Dimethyl either consists of dipole-dipole interactions or dispersion forces, whereas Ethanol consists of hydrogen bonds, and diagram B best highlights that.
+
+** Shown below are three models that can be used to represent a molecule of ammonia. Select one of the models. Each model has its pros and cons.
+I chose to compare the benefits and drawbacks of the *lewis structure* model.
+1. *One aspect of the ammonia molecule that the model represents accurately/well*
+
+    The Lewis structure model allows the reader to easily see where all the electrons are, as well as if each atom obeys the octet rule. You can also which electrons are bonding, as well as which electrons are non-bonding and lone pairs.
+
+2. *One aspect of the ammonia molecule that the model does not represent accurately/well.*
+
+    It is difficult to show resonance structures with a lewis structure. There is also a lack of 3 dimensional modeling with the lewis structure. Lewis structures only imply shape, in order to find the 3 dimensional shape of a molecule, you have to use other knowledge, using VSEPR.
