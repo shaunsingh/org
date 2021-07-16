@@ -10,10 +10,10 @@
 a. $0.002330$ has *4* significant figures. Since the leading zeroes (those before the 2) don't count, the significant figures consist of $2330$, or 4 significant figures.
 b. $13.00$ has *4* significant figures. Since all non-zero digits are significant (the 13) as well as all digits after the decimal, every digit in this number is significant, giving us 4 significant figures.
 c. $322.1221$ has *7* significant figures. Since all non-zero digits are significant, every digit in this number is significant. That gives us 7 significant figures.
-d. $1204.30$ has *6* significant figures. Since all non-zero digits are significant (the 12_4.3) as well as all digits after the decimal and zeroes between non-zero digits, every digit in this number is significant, giving us 6 significant figures.
+d. $1204.30$ has *6* significant figures. Since all non-zero digits are significant (the 12 4.3) as well as all digits after the decimal and zeroes between non-zero digits, every digit in this number is significant, giving us 6 significant figures.
 e. $0.0002$ has *1* significant figure. Since all leading zeroes (those before the 2) don't count, the significant figures consist of just the 2, which means it has only 1 significant figure.
-f. $2200.0$ has 5 significant figures. Since all non-zero digits (the 22) as well as zeroes before
-g. 6 significant figures
+f. $2200.0$ has *5* significant figures. Since all non-zero digits (the 22) as well as zeroes before and after the decimal point are sig figs, all 5 digits are significant figures.
+g. $0.0331120$ has *6* significant figures. Since all non-zero digits (33112) as well as the zeroes after the non-zero digits are significant figures, there are 6 significant figures.
 
 ** Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.
 a. $16.81 + 3.2257 = 20.0357 \approx 20.04$
@@ -39,6 +39,7 @@ d&=\frac{m}{v}\\
 &=0.88\frac{g}{mL}\\
 &\approx0.9\frac{g}{mL}
 \end{align*}
+Therefore the density of the motor oil is $\approx0.9\frac{g}{mL}$
 
 ** The density of an object is 16.3 g/mL. Its volume is 0.125 L. What is the mass of the object?
 We can apply vector analysis to solve for the correct units
@@ -50,12 +51,12 @@ We are left with
 &= \frac{16.3g * 1000mL}{(mL)(L)}\\
 &= \frac{16.3g * 1000\xout{mL}}{\xout{(mL)}(L)}\\
 &= \frac{16300g}{(L)}\\
-&\approx 16300g/L
+&= 16300g/L
 \end{align*}
 Now we have the following values:
 \begin{align*}
 &d = 16300g/L\\
-&m = ?\\
+&m = \ ?\\
 &v = 0.125L
 \end{align*}
 We can plug these variables into $d=\frac{m}{v}$ to calculate for mass
@@ -68,6 +69,7 @@ m &= 16300 * 0.125\ \frac{g\xout{L}}{\xout{L}}\\
 &= 2037.5g\\
 &\approx 2040g
 \end{align*}
+The mass of the object is $\approx 2040g$
 
 ** A sample of uranium weighing 30.923 g was dropped in a graduated cylinder containing 22.30 mL of water. The volume of the water plus the sample was 23.90 mL. What is the density of uranium?
 The volume of the object is going to be the difference between the volume of the water and the volume of the water + object.
@@ -87,14 +89,15 @@ d&=\frac{m}{v} \\
             &=19.33\frac{g}{mL}\\
             &\approx19.3\frac{g}{mL}
 \end{align*}
+Uranium has a density of $\approx19.3\frac{g}{mL}$
 
 ** How many protons, neutrons and electrons are in each of the following ions?
-a. Protons = 26. Neutrons = 30. Electrons = 23
-b. Protons = 20. Neutrons = 20. Electrons = 18
-c. Protons = 9. Neutrons = 10. Electrons = 10
-d. Protons = 15. Neutrons = 16. Electrons = 18
-e. Protons = 53. Neutrons = 74. Electrons = 54
-f. Protons = 53. Neutrons = 74. Electrons = 46
+a. The ion will have *26 protons*, since the atomic number is 26. It will also have *30 neutrons* since the mass # is 56, and $56-26=30$. Since it has a 3+ charge, there will be 3 more protons than electrons. $26-3=23$, giving us *23 electrons*.
+b. The ion will have *20 protons*, since the atomic number is 20. It will also have *20 neutrons* since the mass # is 40, and $40-20 = 20$. Since the charge is 2+, there will be 2 more protons than electrons, and $20-2=18$, giving us *18 electrons*
+c. The ion will have *9 protons*, since the atomic number is 9. It will also have *10 neutrons* since the mass # is 19, and $18-9=10$. Since the charge is 1-, there will be one more electron than proton. $9+1=10$, giving us *10 electrons*
+d. The ion will have *15 protons* since the atomic number is 15. It will also have *16 neutrons*, since the mass # is 31, and $31-15=16$. Since the charge is 3-, there will be 3 more electrons than protons. $15+3=18$, giving us *18 electrons*
+e. The ion will have *53 protons*, since the atomic number is 53. It will also have *74 neutrons*, since the mass # is 127, and $127-53=74$. Since the charge is 1-, there will be 1 more electron than protons. $53+1=54$, giving us *54 electrons*.
+f. The ion will have *53 protons*, since the atomic number is 53. It will also have *74 neutrons*, since the mass # is 127, and $127-53=74$. Since the charge is 7+, there will be 7 more protons than electrons. $53-7=46$, giving us *46 electrons*.
 
 ** Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?
 a. $\ce{Cs}$ has a 1+ oxidation state
@@ -107,10 +110,10 @@ f. $\ce{S}$ has a 2- oxidation state
 ** Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?
 a. $\ce{Be}$ is in Group 2, therefore it will lose 2 electrons
 b. $\ce{Cl}$ is in Group 17, therefore it will gain 1 electron
-c. $\ce{Al}$ is in group 13, therefore it will lose 3 electrons
-d. $\ce{O}$ is in group 16, therefore it will gain 2 electrons
-e. $\ce{F}$ is in group 17, therefore it will gain 1 electron
-f. $\ce{Li}$ is in group 1, therefore it will lose 1 electron
+c. $\ce{Al}$ is in Group 13, therefore it will lose 3 electrons
+d. $\ce{O}$ is in Group 16, therefore it will gain 2 electrons
+e. $\ce{F}$ is in Group 17, therefore it will gain 1 electron
+f. $\ce{Li}$ is in Group 1, therefore it will lose 1 electron
 
 ** Name each of the following compounds:
 a. $\ce{PbI2}$ is named as Lead(II) iodide
@@ -139,9 +142,9 @@ $\ce{CO}$ is named as Carbon monoxide, and has the following Lewis Structure. It
 \begin{align}
 \chemfig{\charge{180=\:}{C}(~\charge{0=\:}{O})}
 \end{align}
-$\ce{P4O10}$ is named as Diphosphorus pentoxide,
-$\ce{N2O4}$ is named as Dinitrogen tetroxide,
-$\ce{PCl3}$ is named as Phosphorus trichloride
+- $\ce{P4O10}$ is named as tetraphosphorus decaoxide,
+- $\ce{N2O4}$ is named as Dinitrogen tetroxide,
+- $\ce{PCl3}$ is named as Phosphorus trichloride
 
 ** Molecules that have geometries in one plane include which of the following? Draw the Lewis structures to prove your point
 The lewis structure for $\ce{BCl3}$
@@ -187,14 +190,13 @@ The lewis structure for $\ce{C2H2}$ is
 \chemfig{{H}-{C}~{C}-{H}}
 \end{align}
 The lewis structure for $\ce{H2O}$ is
-#+attr_html: :width 75px
-#+attr_latex: :width 75px
+#+attr_latex: :width 83px
 [[/Users/shauryasingh/Documents/notes/class/orgs/chem/images/H2O.png]]
 The lewis structure for $\ce{NH3}$ is
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-{H})(-[:-90]{H})(-[:-180]{H})}
 \end{align}
-The lewis structure for $\ce{HCL}$ is
+The lewis structure for $\ce{HCl}$ is
 \begin{align}
 \chemfig{{H}(-\charge{90=\:, 0:2pt=\:, -90=\:}{Cl})}
 \end{align}
@@ -219,25 +221,24 @@ The lewis structure for $\ce{CCl4}$ is
 
 ** What primary type of intermolecular force (IMFs) would attract the molecules in #14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)
 1. *The primary types of intermolecular forces (IMFs) that would attract the molecules in #14 are*
-   a. $\ce{C2H2}$ is dominated by London dispersion forces
+   a. $\ce{C2H2}$ primarily has London dispersion forces
    b. $\ce{H2O}$ primarily has hydrogen bonds, a type of dipole-dipole force
    c. $\ce{NH3}$ primarily has hydrogen bonds, a type of dipole-dipole force
    d. $\ce{HCl}$ primarily has dipole-dipole forces
-   e. $\ce{CCl4}$ is dominated by London dispersion forces
+   e. $\ce{CCl4}$ primarily has London dispersion forces
 2. *The molecules that have the highest boiling points and lowest boiling points are*
    a. $\ce{H2O}$ and $\ce{NH3}$  have the highest boiling points, since they have hydrogen bonds
    b. $\ce{C2H2}$ and $\ce{CCl4}$ have the lowest boiling points, since they have London dispersion forces
 
-
 ** Name each of the following compounds:
-1. $\ce{P4O6}$ is named as Phosphorus trioxide
+1. $\ce{P4O6}$ is named as Tetraphosphorus hexoxide
 2. $\ce{KOH}$ is named as Potassium hydroxide
 3. $\ce{N2}$ is named as Nitrogen
-4. $\ce{PH3}$ is named as Phosphane
+4. $\ce{PH3}$ is named as Phosphorus trihydride
 5. $\ce{BF3}$ is named as Boron trifluoride
-6. $\ce{AgCl}$ is named as Silver(I) chloride
+6. $\ce{AgCl}$ is named as Silver chloride
 7. $\ce{KHCO3}$ is named as Potassium bicarbonate
-8. $\ce{AgNO3}$ is named as Silver(I) nitrate
+8. $\ce{AgNO3}$ is named as Silver nitrate
 
 ** Write formulas for each of the following compounds:
 1. The formula for sodium cyanide is $\ce{NaCN}$
@@ -250,7 +251,7 @@ The lewis structure for $\ce{CCl4}$ is
 8. The formula for sodium sulfate is $\ce{Na2SO4}$
 9. The formula for manganese dioxide is $\ce{MnO2}$
 10. The formula for potassium chlorate is $\ce{KClO3}$
-11. The formula for potassium hypochlorite is $\ce{KclO}$
+11. The formula for potassium hypochlorite is $\ce{KClO}$
 12. The formula for lithium hydride is $\ce{LiH}$
 13. The formula for barium chloride is $\ce{BaCl2}$
 14. The formula for magnesium oxide is $\ce{MgO}$
@@ -308,9 +309,9 @@ The lewis structure for $\ce{CCl4}$ is
     \begin{align*}
     \frac{(2*10^7)}{(8*10^3)}&=\frac{2}{8}*\frac{10^7}{10^3}\\
     &=\frac{2}{8}*\frac{10^{7-3}}{1}\\
-    &=0.4*10^{7-3}\\
-    &=0.4*10^4^{}\\
-    &=4*10^3
+    &=0.25*10^{7-3}\\
+    &=0.25*10^4^{}\\
+    &=2.5*10^3
     \end{align*}
 5. The solution is $2*10^2$
     \begin{align*}
@@ -320,10 +321,10 @@ The lewis structure for $\ce{CCl4}$ is
     \end{align*}
 6. The solution is $5*10^{10}$
     \begin{align*}
-    \frac{(2*10^3)}{(4*10^{-8})}&=\frac{2}{4}*\frac{10^3}{10^-8}\\
+    \frac{(2*10^3)}{(4*10^{-8})}&=\frac{2}{4}*\frac{10^3}{10^{-8}}\\
     &=0.5*10^{3-(-8)}\\
     &=0.5*10^{3+8}\\
-    &=0.5*10^11\\
+    &=0.5*10^{11}\\
     &=5*10^{10}
     \end{align*}
 7. The solution is $6*10^8$
@@ -337,16 +338,15 @@ The lewis structure for $\ce{CCl4}$ is
     &=0.6*10^9\\
     &=6*10^8
     \end{align*}
-8. The solution is $5*10^2^{}$
+8. The solution is $5*10^3^{}$
     \begin{align*}
     \frac{(4*10^6)(5*10^{-3})}{(8*10^{-4})(5*10^3)}&=\frac{(4*5)(10^6*10^{-3})}{(8*5)(10^{-4}*10^3)}\\
     &=\frac{(20)(10^{6-3}^{})}{(40)(10^{-4+3})}\\
     &=\frac{(20)(10^3)}{(40)(10^{-1})}^{}\\
-    &=\frac{(2)(10^4)}{(4)(10^1)}^{}\\
-    &=\frac{2}{4}*\frac{10^4}{10^1}\\
-    &=0.5*10^{4-1}\\
-    &=0.5*10^3\\
-    &=5*10^2
+    &=\frac{(2)(10^4)}{(4)(10^0)}^{}\\
+    &=\frac{2}{4}*\frac{10^4}{10^0}\\
+    &=0.5*10^4\\
+    &=5*10^3
     \end{align*}
 
 ** The structures and normal boiling points of dimethyl ether and ethanol are given in the table above.
