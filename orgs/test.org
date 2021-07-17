@@ -2,8 +2,8 @@
 
 ** Algebra II [0%]
 *** TODO Aleks: <2021-09-09 Thu> [0%]
-1. [x] Log into ALEKS
-2. [x] Leave Geometry Class
+1. [X] Log into ALEKS
+2. [X] Leave Geometry Class
 3. [ ] Complete at least an 80% mastery rating on the topic
 **** Counts as a project grade
 **** Code: JCYLL-EHXK4
@@ -13,7 +13,7 @@
 ** Biology [100%]
 *** None?
 
-** AP Chem [30%]
+** AP Chem [33%]
 *** Resources
 Textbook: Chemistry, The Molecular Nature of Matter and Change, 7 th ed., by Silberberg and Amateis.
 Review Book: Peterson’s AP Chemistry by Brett Barker.
@@ -23,7 +23,7 @@ Memorize the table of common ions, strong acids, bases, and diatomic elements. R
 1. Each assignment counts as a quiz grade
 2. Write all math work
 3. Include Units
-**** TODO Assignment 1 <2021-07-16 Fri> [90%]
+**** DONE Assignment 1 <2021-07-16 Fri> [100%]
 Pages 2-4
 **** TODO Assignment 2 <2021-08-06 Fri> [0%]
 Pages 5-8
@@ -39,7 +39,7 @@ Pages 8-15
 3. [ ] Explore a problem you can identify by citing two articles about the subject
 *** Link: https://docs.google.com/document/d/1AgheICzyVXinpNIlrc68NYpcnj3ixJpsZE4_Ji8mN5M/edit
 
-** AP CSP [0%]
+** AP CSP [50%]
 *** TODO Reading <2021-09-09 Thu> [0%]
 Read chapters 1-6 of the book: Blown to Bits: Your Life, Liberty, and Happiness After the Digital Explosion by Hal Abelson, Ken Ledeem and Harry Lewis.
 Book is available at http://www.bitsbook.com/excerpts/.
@@ -49,12 +49,12 @@ Vocabulary list should have a minimum of 10 words with their definitions and cor
 1. [ ] Write down four Ideas
 2. [ ] Critical for the chapter, page number should be included
 3. [ ] Complete a double entry journal explaining your opinion on those ideas, two paragraphs minimum.
-*** TODO Khan Academy <2021-08-31 Tue> [0%]
-**** [ ] Complete the assignment On Khanacademy
+*** DONE Khan Academy <2021-08-31 Tue> [0%]
+**** [X] Complete the assignment On Khanacademy
 **** Code: TN2B2XJS
 *** Link: https://drive.google.com/file/d/1cxUppiGJmv22fipQfyjXtoKX0wrBUBG-/view?usp=drive_web&authuser=0
 
-** AP Ush/ush2 [100%]
+** AP Ush/ush2 [0%]
 *** None
 
 ** Gym/Health [100%]

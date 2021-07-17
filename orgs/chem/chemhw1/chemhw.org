@@ -84,7 +84,7 @@ Now we have the following values:
 \end{align*}
 We can apply the same $d=\frac{m}{v}$ to calculate for density
 \begin{align*}
-d&=\frac{m}{v} \\
+d&=\frac{m}{v}\\
             &=\frac{30.923g}{1.60mL}\\
             &=19.33\frac{g}{mL}\\
             &\approx19.3\frac{g}{mL}
