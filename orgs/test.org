@@ -1,5 +1,4 @@
 * Summer HW
-
 ** Algebra II [0%]
 *** TODO Aleks: <2021-09-09 Thu> [0%]
 1. [X] Log into ALEKS
