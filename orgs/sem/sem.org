@@ -1,0 +1,46 @@
+#+title: Ap Sem Summer Assignment
+#+author: Shaurya Singh
+#+startup: preview
+#+OPTIONS: toc:2
+
+* Lens, Issues, and Articles
+- Theme: Technology
+
+#+attr_latex: :align |c|c|c|
+| Lens                       | Issue/Question | Article |
+|----------------------------+----------------+---------|
+| Enviornmental              |                |         |
+|----------------------------+----------------+---------|
+| Scientific                 |                |         |
+|----------------------------+----------------+---------|
+| Economic                   |                |         |
+|----------------------------+----------------+---------|
+| Political and Historical   |                |         |
+|----------------------------+----------------+---------|
+| Artistic and Philosophical |                |         |
+|----------------------------+----------------+---------|
+| Cultural and Social        |                |         |
+|----------------------------+----------------+---------|
+| Futuristic                 |                |         |
+|----------------------------+----------------+---------|
+| Ethical                    |                |         |
+
+* Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:
+** Article 1:
+1. Brief summary of the article
+2. Authors Thesis:
+3. To what extent are the authors claims valid?
+4. What is one weakness with the author's claim?
+5. Copy and paste 2 direct quotes that best represent this article
+6. Evaluate the article's effectiveness. Is it convincing?
+7. Do you agree with the author?
+8. Create an MLA works cited entry for each article
+** Article 2:
+ 1. Brief summary of the article
+ 2. Authors Thesis:
+ 3. To what extent are the authors claims valid?
+ 4. What is one weakness with the author's claim?
+ 5. Copy and paste 2 direct quotes that best represent this article
+ 6. Evaluate the article's effectiveness. Is it convincing?
+ 7. Do you agree with the author?
+ 8. Create an MLA works cited entry for each article
