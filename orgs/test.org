@@ -1,9 +1,10 @@
 * Summer HW
-** Algebra II [0%]
-*** TODO Aleks: <2021-09-09 Thu> [0%]
+** Algebra II [10%]
+*** TODO Aleks: <2021-09-09 Thu> [10%]
 1. [X] Log into ALEKS
 2. [X] Leave Geometry Class
-3. [ ] Complete at least an 80% mastery rating on the topic
+3. [ ] Complete Pretest
+4. [ ] Complete at least an 80% mastery rating on the topic
 **** Counts as a project grade
 **** Code: JCYLL-EHXK4
 **** rdally@jcboe.org for issues
@@ -33,7 +34,7 @@ Pages 8-15
 ** AP Sem [0%] <2021-09-09 Thu>
 *** TODO Themes/lenses
 **** Choose a theme, then come up with possible questions for each lens. Then, find an article which supports the question you want to explore. Use the table below.
-1. [ ] Choose a Theme
+1. [X] Choose a Theme
 2. [ ] Choose a Lens
 3. [ ] Explore a problem you can identify by citing two articles about the subject
 *** Link: https://docs.google.com/document/d/1AgheICzyVXinpNIlrc68NYpcnj3ixJpsZE4_Ji8mN5M/edit
@@ -53,7 +54,7 @@ Vocabulary list should have a minimum of 10 words with their definitions and cor
 **** Code: TN2B2XJS
 *** Link: https://drive.google.com/file/d/1cxUppiGJmv22fipQfyjXtoKX0wrBUBG-/view?usp=drive_web&authuser=0
 
-** AP Ush/ush2 [0%]
+** AP Ush/ush2 [100%]
 *** None
 
 ** Gym/Health [100%]
