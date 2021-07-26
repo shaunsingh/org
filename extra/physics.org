@@ -1,0 +1,35 @@
+#+title: Physics Midterm
+#+author: Shaurya Singh
+#+startup: preview
+#+OPTIONS: toc:nil
+
+1. Oscillation is movement or motion that happens at certain intervals that repeats itself.
+
+2. At the angle 0, the pendulum will have the most acceleration because all of the energy is kinetic and there is no more potential energy.
+
+3. We cannot find the maximum velocity in the pendulum due to needing string length.
+
+4. The potential energy of the spring is $-126\frac{N}{m}$
+    \begin{align*}
+    F&=kx\\
+    \frac{F}{x}&=k\\
+    \frac{-63N}{0.5m}&=-126 \frac{N}{m}
+    \end{align*}
+
+5. The answers are
+    \begin{align*}
+    \frac{0.03}{0.06}=0.5\frac{m}{s}\\
+    0.04*500=20\frac{m}{s}
+    \end{align*}
+
+6. The mass of the object is $0.22448979591 kg$
+     \begin{align*}
+     55\frac{N}{m}*0.04=2.2N\\
+     \frac{2.2}{9.8}=0.22448979591 kg
+     \end{align*}
+
+7. The periods are
+     \begin{align*}
+     0.9144s\\
+     8.421
+     \end{align*}
