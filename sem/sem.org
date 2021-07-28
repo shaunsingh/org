@@ -1,29 +1,29 @@
 #+title: Ap Sem Summer Assignment
 #+author: Shaurya Singh
 #+startup: preview
-#+OPTIONS: toc:2
+#+options: toc:1
 
 * Lens, Issues, and Articles
 - Theme: Technology
 
-#+attr_latex: :align |c|c|c|
-| Lens                       | Issue/Question | Article |
-|----------------------------+----------------+---------|
-| Enviornmental              |                |         |
-|----------------------------+----------------+---------|
-| Scientific                 |                |         |
-|----------------------------+----------------+---------|
-| Economic                   |                |         |
-|----------------------------+----------------+---------|
-| Political and Historical   |                |         |
-|----------------------------+----------------+---------|
-| Artistic and Philosophical |                |         |
-|----------------------------+----------------+---------|
-| Cultural and Social        |                |         |
-|----------------------------+----------------+---------|
-| Futuristic                 |                |         |
-|----------------------------+----------------+---------|
-| Ethical                    |                |         |
+#+attr_latex: :environment longtable :align |p{2.5cm}|p{6.5cm}|p{1cm}|
+| Lens                       | Issue/Question                                                      | Article                                                                                                                                                                  |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| environmental              | How can we use technology to efficiently generate and store energy? | https://energystorage.org/why-energy-storage/technologies/                                                                                                               |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Scientific                 | How can we use technology to                                        |                                                                                                                                                                          |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Economic                   | How can we use AI to predict and lower the cost of goods?           | https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence                                                                                                     |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Political and Historical   | How can we use AI to analyze and predict the results of elections?  | https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009                                                                |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Artistic and Philosophical | How will artificially-generated art affect art prices in the future | https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6 |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cultural and Social        | How does technology shape culture?                                  | https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula                                                                          |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Futuristic                 |                                                                     |                                                                                                                                                                          |
+|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ethical                    |                                                                     |                                                                                                                                                                          |
 
 * Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:
 ** Article 1:
@@ -31,7 +31,7 @@
 2. Authors Thesis:
 3. To what extent are the authors claims valid?
 4. What is one weakness with the author's claim?
-5. Copy and paste 2 direct quotes that best represent this article
+5. Copy and paste 2 direct quotes that best represent this article .
 6. Evaluate the article's effectiveness. Is it convincing?
 7. Do you agree with the author?
 8. Create an MLA works cited entry for each article

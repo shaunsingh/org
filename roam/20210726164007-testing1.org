@@ -4,7 +4,3 @@
 #+title: Testing1
 
 Testing org roam No. 1
-* Testing roamv2
-:PROPERTIES:
-:ID:       fe01ae57-70d5-4f2b-9319-e52c32eda71b
-:END:
