@@ -49,6 +49,27 @@
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=paradoxically&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
+8.  Word: expunge
+
+    Definition: (v)  *expunge* (remove by erasing or crossing out or as if by drawing a line)
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=expunge&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+9.  Word: database
+
+    Definition: (n) database (an organized body of related information)
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=database&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+10. Word: blacklist
+
+    Definition: (v) *blacklist* (put on a blacklist so as to banish or cause to be boycotted) "many books were blacklisted by the Nazis"
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=blacklist&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
 ** Ideas:
 1. Companies keep records of cellphone locations
 2. "Its all just bits"
@@ -67,3 +88,4 @@
 | "In fact, processors have hardly grown faster at all"      | Considering the next sentence is talking about "multiple processors on the same chip" I assume this statement is talking about the processor cores themselves. However, data shows that the fastest processors today (AMD Epyc) are about 80 times faster in terms of single core performance, something I wouldn't personally classify as "hardly." Still, its true that processor cores have increased over the years (from single core chips to server chips with over 128 cores in the span of just 20 years).                                                                     |    8 |
 |------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------|
 | "By 2011, we may be producing more bits than we can store" | I found this statement the most interesting in this chapter. We've made leaps and bounds in storage technology since then, nowadays you can buy tens of terabytes of strorage for quite cheap, compared to the expensive "high end" 80gb drives you could get in 2008, back when the book released.                                                                                                                                                                                                                                                                                    |   10 |
+
