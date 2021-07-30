@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.22)  24 JUL 2021 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.7.28)  29 JUL 2021 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -874,7 +874,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\mhchem@cee' on input line 257.
 
-[7] [8] (.//chemhw.aux)
+[7] [8] [9] (.//chemhw.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -884,14 +884,14 @@ Package rerunfilecheck Warning: File `chemhw.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `chemhw.out':
-(rerunfilecheck)             Before: D8DAEC6E146D815964F0ACBC5898F2B2;12593
-(rerunfilecheck)             After:  0BAEE90B2F54E8C3426C7BB3FB1A53E6;13912.
+(rerunfilecheck)             Before: 0BAEE90B2F54E8C3426C7BB3FB1A53E6;13912
+(rerunfilecheck)             After:  0635FB865997628B4D22418BAA0FB7DD;14534.
  ) 
 Here is how much of TeX's memory you used:
- 21888 strings out of 480445
- 402037 string characters out of 5892391
- 706966 words of memory out of 5000000
- 38698 multiletter control sequences out of 15000+600000
+ 21896 strings out of 480445
+ 402147 string characters out of 5892391
+ 707262 words of memory out of 5000000
+ 38703 multiletter control sequences out of 15000+600000
  417648 words of font info for 65 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  102i,19n,103p,1541b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -912,10 +912,10 @@ r10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm
 /cm/cmr8.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb>
-Output written on .//chemhw.pdf (8 pages, 149065 bytes).
+Output written on .//chemhw.pdf (9 pages, 151019 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

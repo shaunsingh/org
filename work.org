@@ -1,5 +1,5 @@
 * Summer HW
-** Algebra II [10%]
+** Algebra II [0%]
 *** TODO Aleks: <2021-09-09 Thu> [10%]
 1. [X] Log into ALEKS
 2. [X] Leave Geometry Class
@@ -13,7 +13,7 @@
 ** Biology [100%]
 *** None?
 
-** AP Chem [0%]
+** AP Chem [40%]
 *** Resources
 Textbook: Chemistry, The Molecular Nature of Matter and Change, 7 th ed., by Silberberg and Amateis.
 Review Book: Peterson’s AP Chemistry by Brett Barker.
@@ -25,7 +25,7 @@ Memorize the table of common ions, strong acids, bases, and diatomic elements. R
 3. Include Units
 **** DONE Assignment 1 <2021-07-16 Fri> [100%]
 Pages 2-4
-**** DONE Assignment 2 <2021-08-06 Fri> [50%]
+**** TODO Assignment 2 <2021-08-06 Fri> [50%]
 Pages 5-8
 **** TODO Assignment 3 <2021-08-27 Fri> [0%]
 Pages 8-15
@@ -35,11 +35,11 @@ Pages 8-15
 *** TODO Themes/lenses
 **** Choose a theme, then come up with possible questions for each lens. Then, find an article which supports the question you want to explore. Use the table below.
 1. [X] Choose a Theme
-2. [ ] Choose a Lens
+2. [ ] Write the prompts through each lens
 3. [ ] Explore a problem you can identify by citing two articles about the subject
 *** Link: https://docs.google.com/document/d/1AgheICzyVXinpNIlrc68NYpcnj3ixJpsZE4_Ji8mN5M/edit
 
-** AP CSP [50%]
+** AP CSP [0%]
 *** TODO Reading <2021-09-09 Thu> [0%]
 Read chapters 1-6 of the book: Blown to Bits: Your Life, Liberty, and Happiness After the Digital Explosion by Hal Abelson, Ken Ledeem and Harry Lewis.
 Book is available at http://www.bitsbook.com/excerpts/.
@@ -49,7 +49,7 @@ Vocabulary list should have a minimum of 10 words with their definitions and cor
 1. [ ] Write down four Ideas
 2. [ ] Critical for the chapter, page number should be included
 3. [ ] Complete a double entry journal explaining your opinion on those ideas, two paragraphs minimum.
-*** DONE Khan Academy <2021-08-31 Tue> [0%]
+*** TODO Khan Academy <2021-08-31 Tue> [50%]
 **** [X] Complete the assignment On Khanacademy
 **** Code: TN2B2XJS
 *** Link: https://drive.google.com/file/d/1cxUppiGJmv22fipQfyjXtoKX0wrBUBG-/view?usp=drive_web&authuser=0

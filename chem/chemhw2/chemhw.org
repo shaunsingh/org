@@ -1,7 +1,7 @@
 #+title: Ap Chem Summer Assignment #2
 #+author: Shaurya Singh
 #+startup: preview
-#+OPTIONS: toc:nil
+#+options: toc:nil
 #+latex_header: \usepackage{chemfig}
 #+latex_header: \usepackage{mhchem}
 
@@ -224,3 +224,17 @@ Therefore, we can substitute 4 for n.
 
 ** Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%
 $\ce{Cl3MoO}$
+
+** Aspartame is an artificial sweetener used in food and beverages that is 160 times sweeter than sucrose.
+1. Using the molecular structure, determine the molecular formula of aspartame, using this format $\ce{C_{W}H_{X}N_{Y}O_{Z}}$
+   There are 17 hydrogen atoms, 14 Carbon atoms, 2 Nitrogen atoms, and 5 Oxygen atoms. Therefore, the answer would be $\ce{C14H17N2O5}$
+2. How many molecules are present in 10.0 mg of aspartame? How many hydrogen atoms? O atoms?
+    $14\times6+17\times1+2\times7+5\times8=283\frac{g}{mol}$
+    \begin{align*}
+    mol&=\frac{g}{g/mol}\\
+    mol&=\frac{10g}{283g/mol}\\
+    mol&=035
+    \end{align*}
+    Therefore, there are $0.035mol$ of aspartame in 10 grams
+    Multiplied by Avogadro's number, that's $2.0475*10^{22}$ molecules.
+3. What is the mass in grams of 1.0 x 10 9 molecules of aspartame? Mass of one molecule of aspartame?
