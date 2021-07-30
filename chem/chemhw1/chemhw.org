@@ -1,7 +1,7 @@
 #+title: Ap Chem Summer Assignment #1
 #+author: Shaurya Singh
 #+startup: preview
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:1
 #+latex_header: \usepackage{chemfig}
 #+latex_header: \usepackage{mhchem}
 
