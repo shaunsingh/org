@@ -1,9 +1,11 @@
 #+title: Ap Chem Summer Assignment #2
 #+author: Shaurya Singh
 #+startup: preview
-#+options: toc:nil
+#+startup: fold
+#+options: toc:1
 #+latex_header: \usepackage{chemfig}
-#+latex_header: \usepackage{mhchem}
+#+latex_header: \usepackage[version=4]{mhchem}
+
 
 * Summer Assignment 2
 ** What is the charge on the following:
@@ -179,8 +181,7 @@ b. Write the complete electron configuration of element 3.
 c. What is the chemical symbol for element 2 and what is the expected ion charge for its most common ion?
     The symbol for element 2 is $\ce{Na}$, and the expect ion charge for its most common ion is 1+.
 
-d.  A neutral atom of which of the four elements above has the smallest radius? Write the symbol for this
-element and explain this using the first ionization values given.
+d.  A neutral atom of which of the four elements above has the smallest radius? Write the symbol for this element and explain this using the first ionization values given.
    Element 1, Atomic radius has a trend from right to left across a period, while ionization energy has a trend from left to right across a period. Since element 1 has the highest ionization energy, it would have the smallest atomic radius
 
 e. Which would have a higher electronegativity, element 1 or 4? Briefly explain.
@@ -237,4 +238,21 @@ $\ce{Cl3MoO}$
     \end{align*}
     Therefore, there are $0.035mol$ of aspartame in 10 grams
     Multiplied by Avogadro's number, that's $2.0475*10^{22}$ molecules.
-3. What is the mass in grams of 1.0 x 10 9 molecules of aspartame? Mass of one molecule of aspartame?
+
+** Watch the following video on making a solution and how to calculate molarity:
+1. Describe how you would make 100.0 mL of a 1.0 M solution of lithium chloride.
+We have a $1.0M$ solution, which translates to  a $1.0mol/L$
+We need to find the value for $100ml$, or $0.1L$
+$y = 100mL = 0.1L$
+We can plug that into this equation, and solve for x
+\begin{align*}
+x&= M * y(mol/L) * LiCl\frac{g}{mol}\\
+&1.0 * 0.1(mol/L) * 42.394\frac{g}{mol}\\
+&0.1mol * 42.394\frac{g}{mol}\\
+&4.2394g\\
+\end{align*}
+Therefore, in order to get 100mL of lithium chloride, we must need 4.2394g of lithium chloride
+1. First we must get our lithium chloride.
+2. Afterwards, using our electronic balance, lab scoop, and weighing paper we can measure out 4.2394g of LiCl.
+3. Once we calculate that out, we can use a 100.0mL volumetric flask to measure it.
+4. Since the molarity is $1.0mol/L$, 100% of the solution is $\ce{LiCL}$, and no water is required.

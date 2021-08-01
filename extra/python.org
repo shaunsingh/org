@@ -6,9 +6,6 @@ What python version are you running?
 python3 --version
 #+end_src
 
-#+RESULTS:
-: Python 3.9.6
-
 *Note:* I have multiple versions of python, hence why I specify python3. You may just use src_sh{python --version} instead.
 
 Test your editor
@@ -16,10 +13,6 @@ Test your editor
 print("Hello World")
 print("Welcome To the Robotics Team")
 #+end_src
-
-#+RESULTS:
-: Hello World
-: Welcome To the Robotics Team
 
 Task1: Simple solution (mine)
 #+begin_src python

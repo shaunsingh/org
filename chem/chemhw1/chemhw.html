@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2021-07-30 Fri 14:33 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ap Chem Summer Assignment #1</title>
+<meta name="author" content="Shaurya Singh" />
+<meta name="generator" content="org mode" />
+<meta name="theme-color" content="#77aa99" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Ap Chem Summer Assignment #1" />
+<meta property="og:image" content="https://tecosaur.com/resources/org/nib.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="Green fountain pen nib" />
+<meta property="og:article:author:first_name" content="Shaurya" />
+<meta property="og:article:author:last_name" content="Singh" />
+<meta property="og:article:published_time" content="2021-07-30T14:33:23-0400" />
+<meta property="og:article:modified_time" content="2021-07-30T14:33:23-0400" />
+<link rel="icon" href="https://tecosaur.com/resources/org/nib.ico" type="image/ico" />
+
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/etbookot-roman-webfont.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/etbookot-italic-webfont.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/Merriweather-TextRegular.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/Merriweather-TextItalic.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/Merriweather-TextBold.woff2">
+<script>
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+function copyPreToClipbord(btn) {
+    const pre = btn.parentElement.parentElement.getElementsByTagName("PRE")[0];
+    const range = document.createRange();
+    range.selectNodeContents(pre);
+    range.setEnd(pre.childNodes[pre.childNodes.length-1], 0);
+    window.getSelection().addRange(range);
+    var successful = document.execCommand('copy');
+    window.getSelection().removeRange(range);
+}
+window.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById("text-table-of-contents")) {
+        const sections = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        const activate = (entry) => {
+            entry.classList.add('active');
+            if (["LI", "UL"].includes(entry.parentElement.tagName)) {
+                activate(entry.parentElement);
+            }
+        };
+        const activateLast = () => {
+            document.querySelectorAll('#text-table-of-contents li.active, #text-table-of-contents ul.active').forEach(a => {
+                a.classList.remove('active')
+            });
+            let mostRecent = { section: sections[0], bottom: -Infinity };
+            const windowHeight = window.innerHeight;
+            sections.forEach((section) => {
+                const bounds = section.getBoundingClientRect()
+                if ( bounds.bottom > mostRecent.bottom && bounds.top < windowHeight ) {
+                    mostRecent = { section, bottom: bounds.bottom };
+                }
+            })
+            activate(document.querySelector(`#text-table-of-contents li a[href="#${mostRecent.section.getAttribute('id')}"]`).parentElement);
+        }
+        const observer = new IntersectionObserver(entries => {
+            activateLast();
+        });
+        sections.forEach((section) => {
+            observer.observe(section);
+        });}
+});
+// @license-end
+</script>
+<style>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}b{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring{outline:1px dotted ButtonText}details{display:block}summary{display:list-item}
+/*! end normalise.css */
+#page{--accent: #002642;--accent-dark: #00151c;--code-foreground: #2c3e50;--code-background: #efefef;--code-func: #6c3163;--code-const: #4e3163;--code-regex: #655370;--back-white: #fff;--back-light: #f0eeed;--back-medium: #c8c8c8;--text-light: #7b7b7b;--text-gray: #444;--text-medium: #222;--text-dark: #000;--switch-icon: "🌚";--switch-shadow-color: #373d4e;--switch-text: "dark mode?"}#theme-switch:checked~#page{--accent: #002642;--accent-dark: #daf1ff;--code-foreground: #a1a8ae;--code-background: #222;--code-func: #bd56ad;--code-const: #8755ab;--code-regex: #a184b3;--back-white: #000;--back-light: #181818;--back-medium: #444;--text-light: #7b7b7b;--text-gray: #c8c8c8;--text-medium: #ddd;--text-dark: #efefef;--switch-icon: "🌝";--switch-shadow-color: #fce477;--switch-text: "light mode?"}#theme-switch:checked~#page img.invertible,#theme-switch:checked~#page object.invertible[type="image/svg+xml"]{filter:invert(90%) hue-rotate(180deg) sepia(1%)}#theme-switch{display:none}#switch-label{position:fixed;bottom:4rem;left:3rem}#switch-label::before{content:var(--switch-icon);font-size:20px;transition:text-shadow .2s}#switch-label::after{content:var(--switch-text);color:var(--switch-shadow-color);font-size:12px;visibility:hidden;margin-left:.5em;z-index:1;position:fixed;bottom:calc(4rem - 25px);left:calc(3rem - 10px)}@media (max-width:1000px){#switch-label{left:auto;bottom:auto;right:1vw;top:1vh}#switch-label::after{position:fixed;top:calc(1vh + 3px);right:calc(1vw + 30px);left:auto;bottom:auto}}#switch-label:hover::before,#theme-switch:focus~#page #switch-label::before{text-shadow:0 0 15px var(--switch-shadow-color)}#switch-label:hover::after,#theme-switch:focus~#page #switch-label::after{visibility:visible}@font-face{font-family:"Merriweather";src:url(https://tecosaur.com/resources/org/Merriweather-TextRegular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:"Merriweather";src:url(https://tecosaur.com/resources/org/Merriweather-TextItalic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:fallback}@font-face{font-family:"Merriweather";src:url(https://tecosaur.com/resources/org/Merriweather-TextBold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:fallback}@font-face{font-family:"et-book";src:url(https://tecosaur.com/resources/org/etbookot-roman-webfont.woff2) format("woff2");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:"et-book";src:url(https://tecosaur.com/resources/org/etbookot-italic-webfont.woff2) format("woff2");font-weight:400;font-style:italic;font-display:fallback}::selection{background:var(--back-medium)}.pace .pace-progress{background-color:var(--accent)!important}body,html{height:100%}body{display:flex;flex-direction:column;font-size:16px;font-family:"Merriweather",serif}#page{color:var(--text-dark);background-color:var(--back-light);transition-property:color,background-color;transition-duration:100ms}#content,.page-header,header{margin:32px;flex:1 0 auto}#content{margin-top:4rem;min-height:calc(100vh - 4rem - 48px)}.clearfix::after{clear:both}.clearfix::after,.clearfix::before{content:" ";display:table}.page-header{margin-top:80px;margin-left:0!important}.page-header h1{font-size:40px;margin-bottom:10px;margin-top:10px;text-transform:none}.page-header h1 .subtitle{font-size:24px;color:var(--text-light);margin:0}.page-meta,figure figcaption .figure-number,header .site-nav{font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light)}header .site-nav{font-weight:700;line-height:2;margin-top:22px}header .site-nav a{color:var(--text-light);text-decoration:none;margin-left:10px}header .site-nav a:hover{color:var(--text-gray)}header .site-nav a.active{border-bottom:solid;border-bottom-width:2px}header .site-nav a:first-child{margin-left:0}header>div{display:inherit}.site-title{font-size:16px}.site-title span{display:none!important}.site-title ul{display:block!important;list-style:none;padding:0;margin:0}.site-title ul img{border-radius:2px;max-width:32px}.site-header nav a{color:var(--text-light);font-family:"Open Sans",sans;font-size:12px;font-weight:700;text-transform:uppercase}.site-header nav a:hover{border:0;color:var(--accent)}@media (max-width:1000px){header *{display:inline}}@media (min-width:1000px){#content,.page-header,header{max-width:720px;margin-left:164px}header .site-title{float:left}header .site-nav{float:right;margin-top:0}}@media (min-width:2800px){#content,.page-header,header{margin-left:auto;margin-right:auto}}#content .page-intro{font-family:"Open Sans",sans;font-weight:400;font-size:15px;line-height:1.6;color:var(--text-gray);margin-bottom:40px}#content dd,#content li,#content p{line-height:1.9}#footer{margin-top:70px;height:10px;background:var(--accent-dark)}.archive-item{margin:50px 0}.archive-item .archive-title{font-size:25px;margin:5px 0}.archive-item .archive-title,.archive-item .archive-title:hover{background:0 0;text-shadow:none;text-decoration:none}#postamble,details.code[open] summary .lang{display:none}aside{background-color:var(--code-background);border-radius:5px;margin:20px 0;padding:5px 20px 10px}#footnotes li,#footnotes p,.org-ref-bib,.org-ref-bib-h1,aside,aside p,blockquote footer{font-family:"Open Sans",sans;font-weight:400;color:var(--text-gray)}aside,aside p{font-size:15px;line-height:1.6!important}aside pre{font-size:12px;border:0;padding-left:0}@media (min-width:1280px){aside{float:right;clear:right;background-color:var(--back-white);max-width:45%!important;margin-right:-52%}aside::before{content:''}}blockquote{border-left-style:solid;border-width:0 0 0 1px;border-left-color:var(--back-medium);margin:20px 0;padding:0 0 0 15px}blockquote p{display:inline;font-size:13px}blockquote footer{font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light);text-transform:none}div.info{background:rgba(58,129,195,.15);border-left:4px solid rgba(58,129,195,.45);margin:1.8rem 0 1.25rem 15px;padding:.8em;line-height:1.4;text-align:center;position:relative;clear:both}div.error p,div.info p,div.success p,div.warning p{margin:0}div.error::before,div.info::before,div.success::before,div.warning::before{color:var(--back-white);align-items:flex-end;top:-1rem;font-weight:700;font-size:1.4rem;display:inline-flex;justify-content:center;position:absolute;left:-1.2rem;text-align:center}div.info::before{content:"i";background:rgba(58,129,195,.8);-webkit-clip-path:circle(50% at 50% 50%);clip-path:circle(50% at 50% 50%);width:30px;height:30px;line-height:1.3}div.success{background:rgba(45,149,116,.15);border-left:4px solid rgba(45,149,116,.45)}div.error::before,div.success::before,div.warning::before{width:35px}div.success::before{content:"✔";background:rgba(45,149,116,.8);-webkit-clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);height:35px;line-height:1.5}div.error,div.success,div.warning{margin:1.8rem 0 1.25rem 15px;padding:.8em;line-height:1.4;text-align:center;position:relative;clear:both}div.warning{background:rgba(220,117,47,.15);border-left:4px solid rgba(220,117,47,.45)}div.error::before,div.warning::before{content:"!";line-height:1.1}div.warning::before{background:rgba(220,117,47,.8);-webkit-clip-path:polygon(50% 0,0 100%,100% 100%);clip-path:polygon(50% 0,0 100%,100% 100%);height:35px}div.error{background:rgba(186,47,89,.15);border-left:4px solid rgba(186,47,89,.45)}div.error::before{background:rgba(186,47,89,.8);-webkit-clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);height:30px}#footnotes li,#footnotes p,.org-ref-bib,.org-ref-bib-h1{line-height:1.6}.org-ref-bib-h1{margin-top:70px;padding-top:30px;border-top-style:solid;border-width:1px 0 0;border-color:var(--back-light);font-size:20px}#footnotes li,#footnotes p,.org-ref-bib{font-size:15px}.org-ref-bib li>a:nth-child(2),.org-ref-bib li>a:nth-child(2):hover{background:0 0;text-shadow:none;text-decoration:none}.org-ref-bib .bib-link{font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light);background:0 0;text-shadow:none;text-decoration:none}pre.example,pre.src{border-left-style:solid;border-width:0 0 0 1px;border-left-color:var(--back-medium);margin:20px 0;padding:0 0 0 15px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:14px;line-height:1.9;overflow-x:visible;box-shadow:none;white-space:pre-wrap;position:relative}pre.example{border-left-style:dotted;border-width:0 0 0 2px}pre.src::before{display:inline-block;position:absolute;background-color:transparent;top:unset;bottom:-16px;left:20px;padding:0;border:0;font-size:80%;font-style:italic;color:var(--text-light)}pre.src:empty{display:none}code{color:var(--code-foreground);padding:0 5px}kbd{display:inline-block;padding:.25em .35em;font:80% SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:80%;color:var(--text-gray);vertical-align:middle;background-color:var(--back-light);border:1px solid #91959a88;border-radius:.35em;box-shadow:inset 0 -1px 0 #91959a88}li code{font-size:14px}code,dl li p,li p code,ol li p,ul li p{font-size:15px}details.code{position:relative}details.code summary{position:relative;left:-3px;padding-left:10px;padding-bottom:4px;margin-left:-10px;z-index:1;outline:0;font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light)}details.code summary .name{font-size:14px;color:var(--text-medium);margin-right:.7em}code,details.code summary .lang{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}details.code summary .lang{font-style:italic}details.code summary::marker{color:var(--back-medium)}details.code[open] summary{margin-bottom:-32px}details.code[open] summary.named{margin-bottom:-26px}details.code:not([open]) summary{margin-bottom:-5px}p+details.code{margin-top:-20px}li p+details.code{margin-top:-5px}.example,.src{color:var(--code-foreground)}.example .org-keyword,.src .org-keyword{color:#3a81c3}.example .org-variable-name,.src .org-variable-name{color:#715ab1}.example .org-rainbow-delimiters-depth-1,.example .org-rainbow-delimiters-depth-2,.example .org-rainbow-delimiters-depth-3,.example .org-rainbow-delimiters-depth-4,.example .org-rainbow-delimiters-depth-5,.example .org-rainbow-delimiters-depth-6,.example .org-rainbow-delimiters-depth-7,.example .org-rainbow-delimiters-depth-8,.example .org-rainbow-delimiters-depth-9,.src .org-rainbow-delimiters-depth-1,.src .org-rainbow-delimiters-depth-2,.src .org-rainbow-delimiters-depth-3,.src .org-rainbow-delimiters-depth-4,.src .org-rainbow-delimiters-depth-5,.src .org-rainbow-delimiters-depth-6,.src .org-rainbow-delimiters-depth-7,.src .org-rainbow-delimiters-depth-8,.src .org-rainbow-delimiters-depth-9{color:#555}.example .org-string,.src .org-string{color:#2d9574}.example .org-comment,.example .org-comment-delimiter,.src .org-comment,.src .org-comment-delimiter{color:#555}.example .org-function-name,.src .org-function-name{color:var(--code-func)}.example .org-constant,.example .org-highlight-numbers-number,.src .org-constant,.src .org-highlight-numbers-number{color:var(--code-const)}.gutter{position:absolute;top:0;left:-2.5rem;width:2rem;padding-right:.3rem;padding-top:5px;height:calc(100% - 10px);z-index:1;transition:opacity 200ms;opacity:0;font-size:15px}.gutter:hover{opacity:1}.gutter *{display:block;width:100%;text-align:right;padding:0;margin:0;color:var(--text-light)}#content .page-intro p a:hover:visited,#content .page-intro p a:visited,#footnotes a:hover:visited,#footnotes a:visited,.gutter :hover{color:var(--text-gray)}.gutter :active{font-weight:700}.gutter a{text-decoration:none;font-size:110%}.gutter button{background:0 0;border:0}pre.src-asymptote::before{content:'Asymptote'}pre.src-authinfo::before{content:'Authinfo'}pre.src-awk::before{content:'Awk'}pre.src-C::before{content:'C'}pre.src-clojure::before{content:'Clojure'}pre.src-css::before{content:'CSS'}pre.src-D::before{content:'D'}pre.src-ditaa::before{content:'ditaa'}pre.src-dot::before{content:'Graphviz'}pre.src-calc::before{content:'Emacs Calc'}pre.src-emacs-lisp::before{content:'Emacs Lisp'}pre.src-fortran::before{content:'Fortran'}pre.src-gnuplot::before{content:'gnuplot'}pre.src-haskell::before{content:'Haskell'}pre.src-hledger::before{content:'hledger'}pre.src-java::before{content:'Java'}pre.src-js::before{content:'Javascript'}pre.src-latex::before{content:'LaTeX'}pre.src-ledger::before{content:'Ledger'}pre.src-lisp::before{content:'Lisp'}pre.src-lilypond::before{content:'Lilypond'}pre.src-lua::before{content:'Lua'}pre.src-matlab::before{content:'MATLAB'}pre.src-mscgen::before{content:'Mscgen'}pre.src-ocaml::before{content:'Objective Caml'}pre.src-octave::before{content:'Octave'}pre.src-org::before{content:'Org mode'}pre.src-oz::before{content:'OZ'}pre.src-plantuml::before{content:'Plantuml'}pre.src-processing::before{content:'Processing.js'}pre.src-python::before{content:'Python'}pre.src-R::before{content:'R'}pre.src-ruby::before{content:'Ruby'}pre.src-sass::before{content:'Sass'}pre.src-scheme::before{content:'Scheme'}pre.src-screen::before{content:'Gnu Screen'}pre.src-sed::before{content:'Sed'}pre.src-sh::before{content:'shell'}pre.src-sql::before{content:'SQL'}pre.src-sqlite::before{content:'SQLite'}pre.src-forth::before{content:'Forth'}pre.src-io::before{content:'IO'}pre.src-J::before{content:'J'}pre.src-makefile::before{content:'Makefile'}pre.src-maxima::before{content:'Maxima'}pre.src-perl::before{content:'Perl'}pre.src-picolisp::before{content:'Pico Lisp'}pre.src-scala::before{content:'Scala'}pre.src-shell::before{content:'Shell Script'}pre.src-systemd::before{content:'Systemd'}pre.src-ebnf2ps::before{content:'ebfn2ps'}pre.src-cpp::before{content:'C++'}pre.src-abc::before{content:'ABC'}pre.src-coq::before{content:'Coq'}pre.src-groovy::before{content:'Groovy'}pre.src-bash::before{content:'bash'}pre.src-csh::before{content:'csh'}pre.src-ash::before{content:'ash'}pre.src-dash::before{content:'dash'}pre.src-ksh::before{content:'ksh'}pre.src-mksh::before{content:'mksh'}pre.src-posh::before{content:'posh'}pre.src-ada::before{content:'Ada'}pre.src-asm::before{content:'Assembler'}pre.src-caml::before{content:'Caml'}pre.src-delphi::before{content:'Delphi'}pre.src-html::before{content:'HTML'}pre.src-idl::before{content:'IDL'}pre.src-mercury::before{content:'Mercury'}pre.src-metapost::before{content:'MetaPost'}pre.src-modula-2::before{content:'Modula-2'}pre.src-pascal::before{content:'Pascal'}pre.src-ps::before{content:'PostScript'}pre.src-prolog::before{content:'Prolog'}pre.src-simula::before{content:'Simula'}pre.src-tcl::before{content:'tcl'}pre.src-tex::before{content:'LaTeX'}pre.src-plain-tex::before{content:'TeX'}pre.src-verilog::before{content:'Verilog'}pre.src-vhdl::before{content:'VHDL'}pre.src-nxml::before,pre.src-xml::before{content:'XML'}pre.src-conf::before{content:'Configuration File'}.dropcap{float:left;font-size:55px;font-style:normal;line-height:.1;margin-right:.2em;margin-top:.5em;padding:0}figure,th.org-center,th.org-left,th.org-right{text-align:center}#footnotes,figure figcaption{margin-top:10px;font-family:"Open Sans",sans;font-weight:400;font-size:15px;line-height:1.6;color:var(--text-gray)}img.zoomTarget:hover{cursor:default!important}img,object[type="image/svg+xml"]{filter:invert(7%) sepia(4%);max-width:100%}.org-svg{width:90%}#footnotes{margin-top:70px;padding-top:30px;border-top-style:solid;border-width:1px 0 0;border-color:var(--back-light)}#footnotes h2.footnotes{margin-top:0;margin-bottom:30px;font-family:"Open Sans",sans;font-size:18px;letter-spacing:5px;display:none}#footnotes .footnum{color:var(--text-dark)}h1,h2,h3,h4,h5,h6{font-family:"et-book",serif;font-weight:400;margin-bottom:0;margin-top:60px;padding-left:30px;margin-left:-30px;position:relative}h1>a[aria-hidden=true],h2>a[aria-hidden=true],h3>a[aria-hidden=true],h4>a[aria-hidden=true],h5>a[aria-hidden=true],h6>a[aria-hidden=true]{color:var(--back-medium);position:relative;top:.06em;line-height:1;font-size:110%;padding-left:.2em;text-decoration:none;visibility:hidden}h1>a[aria-hidden=true]:hover,h2>a[aria-hidden=true]:hover,h3>a[aria-hidden=true]:hover,h4>a[aria-hidden=true]:hover,h5>a[aria-hidden=true]:hover,h6>a[aria-hidden=true]:hover{color:var(--text-light)}h1:hover>a[aria-hidden=true],h2:hover>a[aria-hidden=true],h3:hover>a[aria-hidden=true],h4:hover>a[aria-hidden=true],h5:hover>a[aria-hidden=true],h6:hover>a[aria-hidden=true]{visibility:visible}h1{font-size:40px}.outline-2 h2,h2{font-size:30px}h3{font-size:24px}h4,h5,h6{font-size:20px}h4,h6{font-style:italic}h5{font-variant:small-caps}h6{font-size:18px}.section-number-1,.section-number-2,.section-number-3,.section-number-4,.section-number-5,.section-number-6{font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:inherit;color:var(--text-light);line-height:1}@media (min-width:1000px){.section-number-1,.section-number-2,.section-number-3,.section-number-4,.section-number-5,.section-number-6{position:absolute;transform:translateX(-100%) translateX(-10px)}}.outline-text-2:-moz-only-whitespace+.outline-3>h3,.outline-text-2:empty+.outline-3>h3{margin-top:20px}.outline-text-3:-moz-only-whitespace+.outline-4>h4,.outline-text-3:empty+.outline-4>h4,.outline-text-4:-moz-only-whitespace+.outline-5>h5,.outline-text-4:empty+.outline-5>h5{margin-top:15px}.outline-text-5:-moz-only-whitespace+.outline-6>h6,.outline-text-5:empty+.outline-6>h6{margin-top:10px}hr{border:0;border-top-style:solid;border-top-width:1px;color:var(--back-medium);margin-bottom:30px;margin-top:40px}a{color:inherit}dl a,figcaption a,li a,p a,table a{border-radius:1px}.page-tags a,dl a,figcaption a,li a,p a,table a{background-image:linear-gradient(var(--text-dark),var(--text-dark));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%;text-decoration:none}#content .page-intro p a::selection,#footnotes a::selection,.page-tags a::selection,dl a::selection,figcaption a::selection,li a::selection,p a::selection,table a::selection{background:var(--back-medium)}#content .page-intro p a *,#content .page-intro p a :after,#content .page-intro p a :before,#content .page-intro p a:after,#content .page-intro p a:before,#footnotes a *,#footnotes a :after,#footnotes a :before,#footnotes a:after,#footnotes a:before,.page-tags a *,.page-tags a :after,.page-tags a :before,.page-tags a:after,.page-tags a:before,dl a *,dl a :after,dl a :before,dl a:after,dl a:before,figcaption a *,figcaption a :after,figcaption a :before,figcaption a:after,figcaption a:before,li a *,li a :after,li a :before,li a:after,li a:before,p a *,p a :after,p a :before,p a:after,p a:before,table a *,table a :after,table a :before,table a:after,table a:before{text-shadow:none}.page-tags a:visited,dl a:visited,figcaption a:visited,li a:visited,p a:visited,table a:visited{color:var(--text-dark)}.page-tags a:hover,dl a:hover,figcaption a:hover,li a:hover,p a:hover,table a:hover{opacity:.9;filter:drop-shadow(1px 1px 1px var(--back-white));background-image:linear-gradient(var(--text-dark),var(--text-dark));background-repeat:repeat-x;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23000000' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E")!important;background-position:0 100%;background-size:.8em auto;text-decoration:none}.page-tags a:hover::selection,.page-tags a[href^="#"]::selection,.page-tags a[href^="#"]:hover::selection,dl a:hover::selection,dl a[href^="#"]::selection,dl a[href^="#"]:hover::selection,figcaption a:hover::selection,figcaption a[href^="#"]::selection,figcaption a[href^="#"]:hover::selection,li a:hover::selection,li a[href^="#"]::selection,li a[href^="#"]:hover::selection,p a:hover::selection,p a[href^="#"]::selection,p a[href^="#"]:hover::selection,table a:hover::selection,table a[href^="#"]::selection,table a[href^="#"]:hover::selection{background:var(--back-white)}.page-tags a[href^="#"],dl a[href^="#"],figcaption a[href^="#"],li a[href^="#"],p a[href^="#"],table a[href^="#"]{background-image:linear-gradient(var(--text-gray),var(--text-gray));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%}.page-tags a[href^="#"]:hover,dl a[href^="#"]:hover,figcaption a[href^="#"]:hover,li a[href^="#"]:hover,p a[href^="#"]:hover,table a[href^="#"]:hover{opacity:.9;filter:drop-shadow(1px 1px 1px var(--back-white));background-image:linear-gradient(var(--text-medium),var(--text-medium));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%}#theme-switch:checked~#page #breadcrumbs a:hover,#theme-switch:checked~#page #crosslinks a:not(.highlight):hover,#theme-switch:checked~#page .page-tags a:hover,#theme-switch:checked~#page dl a:hover,#theme-switch:checked~#page figcaption a:hover,#theme-switch:checked~#page li a:hover,#theme-switch:checked~#page p a:hover,#theme-switch:checked~#page table a:hover{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E")}:target::before{content:"🠖";position:absolute;left:-7rem;top:calc(.5em - 2rem);line-height:1;color:#e65353aa;font-size:3rem;font-style:normal}@media (max-width:1000px){:target::before{content:"🠔";left:unset;right:0}}#content .page-intro p a,#content .page-intro p a:hover,#footnotes a,#footnotes a:hover{background-image:linear-gradient(var(--text-gray),var(--text-gray));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%;border-radius:1px;text-decoration:none}#content .page-intro p a:hover::selection,#footnotes a:hover::selection{background:var(--back-medium)}#content .page-intro p a:hover *,#content .page-intro p a:hover :after,#content .page-intro p a:hover :before,#content .page-intro p a:hover:after,#content .page-intro p a:hover:before,#footnotes a:hover *,#footnotes a:hover :after,#footnotes a:hover :before,#footnotes a:hover:after,#footnotes a:hover:before{text-shadow:none}.btn,.btn:hover{background-image:none}.btn{padding:7px 14px;border-style:solid;border-width:1px;border-color:var(--back-light);border-radius:1px;font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:14px;font-style:normal;letter-spacing:2px;cursor:pointer}.btn:hover{background-color:var(--back-light)}.btn.disabled,div.link-preview small{color:var(--text-light)}.btn.disabled:hover{cursor:default}.btn.small{border-style:solid;border-width:1px;border-color:var(--back-light);border-radius:1px;font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:12px;font-style:normal;letter-spacing:2px;background-image:none;padding:3px 9px}.btn.small:hover{background-color:var(--back-light);background-image:none}.btn.highlight,.btn.primary{text-shadow:none;text-decoration:none}.btn.highlight{color:var(--text-dark);background-color:#ff0}.btn.primary{color:var(--back-white);background-color:var(--accent)}.btn.primary:hover,.done.active:hover,.page-tags a.active:hover,.tag>span.active:hover,.todo.active:hover{background-color:var(--back-light);background-image:none;color:var(--text-dark)}.image-link,.image-link:hover{background:0 0;text-shadow:none;text-decoration:none}div.link-preview{border:1px solid var(--back-medium);border-radius:.5em;overflow:hidden;position:relative;max-height:5em;padding-left:.5em}div.link-preview a{color:initial;text-decoration:none}div.link-preview img{border-right:1px solid var(--back-medium);float:left;height:5em;margin-left:-.5em;margin-right:.5em}div.link-preview p{margin:0;font-size:10pt}div.link-preview p b{font-size:11pt}div.link-preview small{float:right;font-family:sans;margin:.45em .6em}dl,ol,ul{list-style:none;list-style-position:outside;padding:0}dl dt::before,dl li::before,ol dt::before,ol li::before,ul dt::before,ul li::before{display:inline-block;width:1em;font-family:"Open Sans",sans;font-weight:400;font-size:15px;line-height:1.6;color:var(--text-gray)}dl li,ol li,ul li{margin:5px 0;font-size:14px}dl dt::before,ul li::before{content:"•";margin-left:-1em}ol{counter-reset:li}ol li::before{content:counter(li);margin-left:-1.5em;margin-right:.5em;text-align:right;direction:rtl}ol li{counter-increment:li}ol ol,ul ul{padding-left:20px}ol ol ol,ul ul ul{padding-left:30px}li p:first-child{display:inline-block;margin-bottom:0}dl dt{font-weight:400;margin-bottom:10px}dl dd{font-style:italic;margin-bottom:20px}li .checkbox{display:inline-block;width:.9em;height:.9em;border-radius:3px;margin:3px;top:4px;position:relative}li.on>.checkbox{background:#2d9574;box-shadow:0 0 2px #2d9574}li.trans>.checkbox{background:#dc752f;box-shadow:0 0 2px #dc752f}li.off>.checkbox{background:#ba2f59;box-shadow:0 0 2px #ba2f59;top:6px}li.on>.checkbox::after{content:'';height:.45em;width:.225em;-webkit-transform-origin:left top;transform-origin:left top;transform:scaleX(-1) rotate(135deg);border-right:2.8px solid #fff;border-top:2.8px solid #fff;opacity:.9;left:.1em;top:.45em;position:absolute}li.trans>.checkbox::after{content:'';font-weight:700;font-size:1.6em;position:absolute;top:.2em;left:.11em;width:.35em;height:.12em;background:#fff;opacity:.9;border-radius:.1em}li.off>.checkbox::after{content:'✖';color:#fff;opacity:.9;position:relative;top:-.5rem;left:.17em;font-size:.75em}#org-div-home-and-up{display:none!important}.outline-3 h3{font-style:normal}.outline-2 .section-number-2{font-size:30px}.outline-3 .section-number-3,.outline-3 h3{font-size:24px}.done,.timestamp,.timestamp-kwd,.todo{border-radius:1px;font-family:"Open Sans",sans;font-style:normal;background-color:var(--back-white)}.timestamp,.timestamp-kwd{font-weight:400;font-size:12px;line-height:1.9;color:var(--text-light)}.done,.todo{border-color:var(--back-light);font-variant:all-small-caps;font-size:max(.4em,10px);letter-spacing:2px;background-image:none;line-height:1;white-space:nowrap;vertical-align:middle;padding:.1em .5em;background-color:transparent;border:0;font-weight:700}.page-tags a:hover{background-color:var(--back-light)}.done:hover,.tag>span:hover,.todo:hover{background-color:var(--back-light);background-image:none}.done:not(.active),.page-tags a:not(.active),.tag>span:not(.active),.todo:not(.active){border-color:var(--back-white)}.done.active,.page-tags a.active,.tag>span.active,.todo.active{text-shadow:none;text-decoration:none;color:var(--back-white);background-color:var(--code-foreground)}.outline-2,.outline-3,.outline-4{contain:layout}.outline-2 .done,.outline-2 .todo,.outline-3 .done,.outline-3 .todo,.outline-4 .done,.outline-4 .todo{font-size:18px}.todo{color:#e33}.done,.priority{color:var(--text-light)}.tag>span{border-style:solid;border-width:1px;border-color:var(--back-light);font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:max(.4em,10px);font-style:normal;letter-spacing:2px;background-image:none;line-height:1;white-space:nowrap;vertical-align:middle;padding:.1em .5em;background-color:var(--back-white);border-radius:100px}.priority{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.footref{text-shadow:none}.footpara{display:inline}.footdef{margin-bottom:1em}td.org-right{text-align:right}td.org-left{text-align:left}div.org-center,td.org-center{text-align:center}span.acr{font-variant-caps:all-small-caps;letter-spacing:.1em}.music-track{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}.music-track img{height:6rem;margin-right:2rem}.music-track a{text-decoration:none}.music-track span{min-width:35%}div.table{position:relative}div.table .gutter{left:calc(20px - 2.5rem);padding-top:18px}div.table .tabular{max-width:100%;overflow-x:auto}table,table thead{font-family:"Open Sans",sans;font-size:15px}table{border-color:var(--text-light);border-left:transparent;border-right:transparent;border-style:solid;border-width:2px;border-collapse:collapse;margin:20px;padding:20px}table thead{font-weight:400;font-style:normal;line-height:1.9;color:var(--text-light)}table thead tr th{padding:4px 10px;background-color:#9991}table thead tr:last-of-type th{border-bottom:solid 1px var(--text-light)}table td,table th,table tr{border:0}table tbody tr td{border-top:0;padding:0 10px}table tr{line-height:1.9}table caption,table caption .table-number{font-family:"Open Sans",sans;font-weight:400}table caption{margin-bottom:10px;font-size:15px;line-height:1.6;color:var(--text-gray)}table caption .table-number{font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light)}::-webkit-scrollbar{width:10px;height:8px}::-webkit-scrollbar-track{background:#9992}::-webkit-scrollbar-thumb{background:#ccc}::-webkit-scrollbar-thumb:hover{background:#888}@media (min-width:1280px){#table-of-contents{position:fixed;width:18rem;right:1rem;top:0;padding:1em;line-height:1.5;margin-top:4rem}#table-of-contents h2{margin-top:0}#table-of-contents #text-table-of-contents{position:relative}#table-of-contents #text-table-of-contents::after,#table-of-contents #text-table-of-contents::before{position:absolute;content:'';width:calc(100% - 10px);height:.7rem;left:0;z-index:1}#table-of-contents #text-table-of-contents::before{top:0;background:linear-gradient(180deg,var(--back-light) 0%,var(--back-light) 35%,transparent 100%)}#table-of-contents #text-table-of-contents::after{bottom:0;background:linear-gradient(0deg,var(--back-light) 0%,var(--back-light) 35%,transparent 100%)}#table-of-contents #text-table-of-contents>ul{list-style:none;padding:0;margin:0;max-height:calc(100vh - 5rem - 50px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin}#table-of-contents #text-table-of-contents>ul ul{padding-left:2em}#table-of-contents #text-table-of-contents>ul li.active>ul,#table-of-contents #text-table-of-contents>ul ul.active{display:inline-block}#table-of-contents #text-table-of-contents>ul li.active>a,#table-of-contents #text-table-of-contents>ul li.active>label a{color:var(--text-dark)}#table-of-contents #text-table-of-contents>ul li.active>input:not(:checked)~label::after{transform:rotate(90deg);top:5px;opacity:.35}#table-of-contents #text-table-of-contents>ul>li:last-child{margin-bottom:2rem}}@media (min-width:1440px){#table-of-contents{width:20rem;right:2rem}}@media (min-width:1640px){#table-of-contents{right:5rem}}@media (min-width:2000px){#table-of-contents{width:25rem}}#table-of-contents #text-table-of-contents ul{width:100%}#table-of-contents #text-table-of-contents li input[type=checkbox],#table-of-contents #text-table-of-contents>ul ul{display:none}#table-of-contents #text-table-of-contents li label{display:inline-block;width:100%;position:relative}#table-of-contents #text-table-of-contents li a{display:inline-block;color:var(--text-gray);text-decoration:none!important;text-shadow:none;background:0 0!important}#table-of-contents #text-table-of-contents li label::after{content:"\25b6";color:var(--text-gray);margin-left:.5em;font-size:10px;display:inline-block;position:absolute;top:3.4px;left:-20px;opacity:.8}#table-of-contents #text-table-of-contents li input:checked~ul{display:inline-block!important}#table-of-contents #text-table-of-contents li input:checked~label a{font-weight:700}#table-of-contents #text-table-of-contents li input:checked~label::after{transform:rotate(90deg);top:5px}#table-of-contents #text-table-of-contents li::before{content:""!important}.page-tags a{border-style:solid;border-width:1px;border-color:var(--back-light);border-radius:1px;font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:max(.4em,10px);font-style:normal;letter-spacing:2px;background-image:none;white-space:nowrap;vertical-align:middle;padding:.1em .5em;background-color:var(--back-white);margin-right:5px;line-height:3em}@media print{h2{page-break-before:always}h1,h2,h3,h4,h5{page-break-after:avoid}#switch-label,#table-of-contents #text-table-of-contents li label::after{display:none}#content,#page-header{margin-top:0}#table-of-contents #text-table-of-contents>ul ul{display:inline-block}#table-of-contents #text-table-of-contents>ul a::after{content:leader(".") target-counter(attr(href),page)}img{filter:none}}@page{size:auto;margin-top:4mm;margin-bottom:4mm}</style>
+</head>
+<body>
+<input type='checkbox' id='theme-switch'><div id='page'><label id='switch-label' for='theme-switch'></label><div id="content">
+<header class="page-header"><div class="page-meta">, Shaurya Singh</div>
+
+<h1 class="title">Ap Chem Summer Assignment #1</h1>
+</header><nav id="table-of-contents">
+<h2><a href="#" style="color:inherit; text-decoration: none;">Table of Contents</a></h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org4acd7e1">1. Summer Assignment 1</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-org4acd7e1" class="outline-2">
+<h2 id="org4acd7e1"><span class="section-number-2">1.</span> Summer Assignment 1<a aria-hidden="true" href="#org4acd7e1">#</a> </h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgd03839a" class="outline-3">
+<h3 id="orgd03839a"><span class="section-number-3">1.1.</span> How many significant figures are there each of the following values<a aria-hidden="true" href="#orgd03839a">#</a> </h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4ffab016d217cdbaa089110a04d7505c1ab30fe0.svg" alt="chemhw_4ffab016d217cdbaa089110a04d7505c1ab30fe0.svg"> has <b>4</b> significant figures. Since the leading zeroes (those before the 2) don&rsquo;t count, the significant figures consist of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_8c8a27c576a9bff5ba012ee0334f0f9f8b417e70.svg" alt="chemhw_8c8a27c576a9bff5ba012ee0334f0f9f8b417e70.svg">, or 4 significant figures.</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_3e188bc9f3e28a1eba8ddba664e16672239a52b3.svg" alt="chemhw_3e188bc9f3e28a1eba8ddba664e16672239a52b3.svg"> has <b>4</b> significant figures. Since all non-zero digits are significant (the 13) as well as all digits after the decimal, every digit in this number is significant, giving us 4 significant figures.</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c91aa37efcff4791509f96b45657fa5ac4c099b8.svg" alt="chemhw_c91aa37efcff4791509f96b45657fa5ac4c099b8.svg"> has <b>7</b> significant figures. Since all non-zero digits are significant, every digit in this number is significant. That gives us 7 significant figures.</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_add2fa6f2b9c65f4aa930ead359d74895cbb2ce9.svg" alt="chemhw_add2fa6f2b9c65f4aa930ead359d74895cbb2ce9.svg"> has <b>6</b> significant figures. Since all non-zero digits are significant (the 12 4.3) as well as all digits after the decimal and zeroes between non-zero digits, every digit in this number is significant, giving us 6 significant figures.</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_71b45d0cf761f51342ce163928f880230d0e6c60.svg" alt="chemhw_71b45d0cf761f51342ce163928f880230d0e6c60.svg"> has <b>1</b> significant figure. Since all leading zeroes (those before the 2) don&rsquo;t count, the significant figures consist of just the 2, which means it has only 1 significant figure.</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a8b39d22c87da2b51f1897495989c418623cf52e.svg" alt="chemhw_a8b39d22c87da2b51f1897495989c418623cf52e.svg"> has <b>5</b> significant figures. Since all non-zero digits (the 22) as well as zeroes before and after the decimal point are sig figs, all 5 digits are significant figures.</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_123eefad0630976ab2588827fcbba336de23cb39.svg" alt="chemhw_123eefad0630976ab2588827fcbba336de23cb39.svg"> has <b>6</b> significant figures. Since all non-zero digits (33112) as well as the zeroes after the non-zero digits are significant figures, there are 6 significant figures.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1cf86ca" class="outline-3">
+<h3 id="org1cf86ca"><span class="section-number-3">1.2.</span> Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.<a aria-hidden="true" href="#org1cf86ca">#</a> </h3>
+<div class="outline-text-3" id="text-1-2">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5ff3af945366ec445c603951f2cb024880ebdb73.svg" alt="chemhw_5ff3af945366ec445c603951f2cb024880ebdb73.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_e349e50f877c443283dfcff5b04b2610a8c0dc96.svg" alt="chemhw_e349e50f877c443283dfcff5b04b2610a8c0dc96.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1c6876778ae790ccb4fd7d36d9b2279fa861003c.svg" alt="chemhw_1c6876778ae790ccb4fd7d36d9b2279fa861003c.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_84acc980ea25b9e981734a760d5557f5d4e5dbdd.svg" alt="chemhw_84acc980ea25b9e981734a760d5557f5d4e5dbdd.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_85831a3392085a819cf1ada18d7ac51451af2233.svg" alt="chemhw_85831a3392085a819cf1ada18d7ac51451af2233.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f431227b1d68718958752433a78b8eb28ced7620.svg" alt="chemhw_f431227b1d68718958752433a78b8eb28ced7620.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cee1f5f2bde67649aff1aed98e83e7273d8315bc.svg" alt="chemhw_cee1f5f2bde67649aff1aed98e83e7273d8315bc.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_ffbd7fd9651b3e7fbcca1d6cc007f19015f913da.svg" alt="chemhw_ffbd7fd9651b3e7fbcca1d6cc007f19015f913da.svg"></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4be3274" class="outline-3">
+<h3 id="org4be3274"><span class="section-number-3">1.3.</span> A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?<a aria-hidden="true" href="#org4be3274">#</a> </h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+We have the following values:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_ce7dfe7ad890bda85ee2d117512bb386ba2de28e.svg" alt="chemhw_ce7dfe7ad890bda85ee2d117512bb386ba2de28e.svg">
+</span>
+</div>
+<p>
+We can utilize the formula <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c0bf36f15a553dbae24422b1baff50f6fe116e34.svg" alt="chemhw_c0bf36f15a553dbae24422b1baff50f6fe116e34.svg"> (density = mass/volume)
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_18c90b9f551448dbb800c696d3f43d2bd0bfe542.svg" alt="chemhw_18c90b9f551448dbb800c696d3f43d2bd0bfe542.svg">
+</span>
+</div>
+<p>
+Therefore the density of the motor oil is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cd83dfb4fead1ab5ade8c83738d4e9d43cad7a75.svg" alt="chemhw_cd83dfb4fead1ab5ade8c83738d4e9d43cad7a75.svg">
+</p>
+</div>
+</div>
+
+<div id="outline-container-org41512de" class="outline-3">
+<h3 id="org41512de"><span class="section-number-3">1.4.</span> The density of an object is 16.3 g/mL. Its volume is 0.125 L. What is the mass of the object?<a aria-hidden="true" href="#org41512de">#</a> </h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+We can apply vector analysis to solve for the correct units
+</p>
+<div id='org266a29e' class='table'>
+<div class='gutter'><a href='#org266a29e'>#</a></div>
+<div class='tabular'>
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">16.3g</th>
+<th scope="col" class="org-left">1000 mL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1mL</td>
+<td class="org-left">1L</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<p>
+We are left with
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_8b274186bb71bd7d475d6767048e103fb4e24e42.svg" alt="chemhw_8b274186bb71bd7d475d6767048e103fb4e24e42.svg">
+</span>
+</div>
+<p>
+Now we have the following values:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_838f7520865190aa8b310b3ad459f257f671681d.svg" alt="chemhw_838f7520865190aa8b310b3ad459f257f671681d.svg">
+</span>
+</div>
+<p>
+We can plug these variables into <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c0bf36f15a553dbae24422b1baff50f6fe116e34.svg" alt="chemhw_c0bf36f15a553dbae24422b1baff50f6fe116e34.svg"> to calculate for mass
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0db893680c5ac214eabf02062eb02b5b132951ca.svg" alt="chemhw_0db893680c5ac214eabf02062eb02b5b132951ca.svg">
+</span>
+</div>
+<p>
+Re-arranging the equation in terms of mass, we get the following
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_17a728fba9f53f6570e15ef2496f781cf633eaea.svg" alt="chemhw_17a728fba9f53f6570e15ef2496f781cf633eaea.svg">
+</span>
+</div>
+<p>
+The mass of the object is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_3f178ee752e3395a9315a044540cce7ba5a72c33.svg" alt="chemhw_3f178ee752e3395a9315a044540cce7ba5a72c33.svg">
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc7cc993" class="outline-3">
+<h3 id="orgc7cc993"><span class="section-number-3">1.5.</span> A sample of uranium weighing 30.923 g was dropped in a graduated cylinder containing 22.30 mL of water. The volume of the water plus the sample was 23.90 mL. What is the density of uranium?<a aria-hidden="true" href="#orgc7cc993">#</a> </h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+The volume of the object is going to be the difference between the volume of the water and the volume of the water + object.
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c62102aac07c81f52b84cd4137841c97609df2a1.svg" alt="chemhw_c62102aac07c81f52b84cd4137841c97609df2a1.svg">
+</span>
+<span class="equation-label">
+1
+</span>
+</div>
+<p>
+Now we have the following values:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_447e99e0a7a0443ba3b2f998548d3913e7908c2d.svg" alt="chemhw_447e99e0a7a0443ba3b2f998548d3913e7908c2d.svg">
+</span>
+</div>
+<p>
+We can apply the same <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c0bf36f15a553dbae24422b1baff50f6fe116e34.svg" alt="chemhw_c0bf36f15a553dbae24422b1baff50f6fe116e34.svg"> to calculate for density
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_55d398b61c6ac8e665068c2add37083b4b9716ab.svg" alt="chemhw_55d398b61c6ac8e665068c2add37083b4b9716ab.svg">
+</span>
+</div>
+<p>
+Uranium has a density of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b72153abe8f56593ca5aa5ba148589c1525a638e.svg" alt="chemhw_b72153abe8f56593ca5aa5ba148589c1525a638e.svg">
+</p>
+</div>
+</div>
+
+<div id="outline-container-org601d0eb" class="outline-3">
+<h3 id="org601d0eb"><span class="section-number-3">1.6.</span> How many protons, neutrons and electrons are in each of the following ions?<a aria-hidden="true" href="#org601d0eb">#</a> </h3>
+<div class="outline-text-3" id="text-1-6">
+<ol class="org-ol">
+<li>The ion will have <b>26 protons</b>, since the atomic number is 26. It will also have <b>30 neutrons</b> since the mass # is 56, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_63e77669cc8e358f67652048fb9b060108abbb6f.svg" alt="chemhw_63e77669cc8e358f67652048fb9b060108abbb6f.svg">. Since it has a 3+ charge, there will be 3 more protons than electrons. <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_07aa82d5c86c2a362f84a692f0e3f24b7dbd52ab.svg" alt="chemhw_07aa82d5c86c2a362f84a692f0e3f24b7dbd52ab.svg">, giving us <b>23 electrons</b>.</li>
+<li>The ion will have <b>20 protons</b>, since the atomic number is 20. It will also have <b>20 neutrons</b> since the mass # is 40, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b28ac3b18383f59274a7651ecde383c3ba1358a5.svg" alt="chemhw_b28ac3b18383f59274a7651ecde383c3ba1358a5.svg">. Since the charge is 2+, there will be 2 more protons than electrons, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a852d57aafc2c2ee2fe92bb32e17abcf21e94989.svg" alt="chemhw_a852d57aafc2c2ee2fe92bb32e17abcf21e94989.svg">, giving us <b>18 electrons</b></li>
+<li>The ion will have <b>9 protons</b>, since the atomic number is 9. It will also have <b>10 neutrons</b> since the mass # is 19, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_12827220e463ff1a367112b8cd19dfe33bd0d488.svg" alt="chemhw_12827220e463ff1a367112b8cd19dfe33bd0d488.svg">. Since the charge is 1-, there will be one more electron than proton. <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_ce2dee7f841ef6278ce5c9f60322d935fbd9a219.svg" alt="chemhw_ce2dee7f841ef6278ce5c9f60322d935fbd9a219.svg">, giving us <b>10 electrons</b></li>
+<li>The ion will have <b>15 protons</b> since the atomic number is 15. It will also have <b>16 neutrons</b>, since the mass # is 31, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6dcf02cb4a03cd863ce3174a5bfb4d1cb7681784.svg" alt="chemhw_6dcf02cb4a03cd863ce3174a5bfb4d1cb7681784.svg">. Since the charge is 3-, there will be 3 more electrons than protons. <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a7e4dceaef21f2c7df4bf9144296ab7824f56236.svg" alt="chemhw_a7e4dceaef21f2c7df4bf9144296ab7824f56236.svg">, giving us <b>18 electrons</b></li>
+<li>The ion will have <b>53 protons</b>, since the atomic number is 53. It will also have <b>74 neutrons</b>, since the mass # is 127, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cc696067618d4600ccf8ae85ad45cfef77870b3c.svg" alt="chemhw_cc696067618d4600ccf8ae85ad45cfef77870b3c.svg">. Since the charge is 1-, there will be 1 more electron than protons. <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7167d0d1b39872389c35892032d5d724b18e194e.svg" alt="chemhw_7167d0d1b39872389c35892032d5d724b18e194e.svg">, giving us <b>54 electrons</b>.</li>
+<li>The ion will have <b>53 protons</b>, since the atomic number is 53. It will also have <b>74 neutrons</b>, since the mass # is 127, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cc696067618d4600ccf8ae85ad45cfef77870b3c.svg" alt="chemhw_cc696067618d4600ccf8ae85ad45cfef77870b3c.svg">. Since the charge is 7+, there will be 7 more protons than electrons. <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_909bbdccec5555b1e3cf7174f006774f1bcebe0e.svg" alt="chemhw_909bbdccec5555b1e3cf7174f006774f1bcebe0e.svg">, giving us <b>46 electrons</b>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org342d731" class="outline-3">
+<h3 id="org342d731"><span class="section-number-3">1.7.</span> Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?<a aria-hidden="true" href="#org342d731">#</a> </h3>
+<div class="outline-text-3" id="text-1-7">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b4af56fc50375461c1c750d265128147b6dc628c.svg" alt="chemhw_b4af56fc50375461c1c750d265128147b6dc628c.svg"> has a 1+ oxidation state</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c74c7316e987c860f686c52cb9436a4284d5606f.svg" alt="chemhw_c74c7316e987c860f686c52cb9436a4284d5606f.svg"> has a 3- oxidation state</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_fead372c9973b15eb13df2f61a5d71358e2337c0.svg" alt="chemhw_fead372c9973b15eb13df2f61a5d71358e2337c0.svg"> has a 1- oxidation state</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_2327fbcacb0581c8281b6de642a99443094657c9.svg" alt="chemhw_2327fbcacb0581c8281b6de642a99443094657c9.svg"> has a 1+ oxidation state</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b03b2cae5615d95bcbb6254d63388f1af089fa25.svg" alt="chemhw_b03b2cae5615d95bcbb6254d63388f1af089fa25.svg"> has a 3+ oxidation state</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1fd32e77b8cf16b63ccde16248b1aab79107c3df.svg" alt="chemhw_1fd32e77b8cf16b63ccde16248b1aab79107c3df.svg"> has a 2- oxidation state</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org068e5a4" class="outline-3">
+<h3 id="org068e5a4"><span class="section-number-3">1.8.</span> Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?<a aria-hidden="true" href="#org068e5a4">#</a> </h3>
+<div class="outline-text-3" id="text-1-8">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_217a7da3783fc7c7652f808538339d3712892de9.svg" alt="chemhw_217a7da3783fc7c7652f808538339d3712892de9.svg"> is in Group 2, therefore it will lose 2 electrons</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg" alt="chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg"> is in Group 17, therefore it will gain 1 electron</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b03b2cae5615d95bcbb6254d63388f1af089fa25.svg" alt="chemhw_b03b2cae5615d95bcbb6254d63388f1af089fa25.svg"> is in Group 13, therefore it will lose 3 electrons</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg" alt="chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg"> is in Group 16, therefore it will gain 2 electrons</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f46cec5d57c8f02deb3b39745ddf6f5f706b3cb1.svg" alt="chemhw_f46cec5d57c8f02deb3b39745ddf6f5f706b3cb1.svg"> is in Group 17, therefore it will gain 1 electron</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_3fc696d7e7907383555e2c45b3215b96a68c84a7.svg" alt="chemhw_3fc696d7e7907383555e2c45b3215b96a68c84a7.svg"> is in Group 1, therefore it will lose 1 electron</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1326bb1" class="outline-3">
+<h3 id="org1326bb1"><span class="section-number-3">1.9.</span> Name each of the following compounds:<a aria-hidden="true" href="#org1326bb1">#</a> </h3>
+<div class="outline-text-3" id="text-1-9">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b2d341016e2a77030d05391414bc9c392ab9660c.svg" alt="chemhw_b2d341016e2a77030d05391414bc9c392ab9660c.svg"> is named as Lead(II) iodide</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_30d4cec480dd7154d0a54ed3400a25abf14280d7.svg" alt="chemhw_30d4cec480dd7154d0a54ed3400a25abf14280d7.svg"> is named as Ammonium chloride</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_ab34da908b3c153203863c63dffab0229ca8e50b.svg" alt="chemhw_ab34da908b3c153203863c63dffab0229ca8e50b.svg"> is named as Iron(III) oxide</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_9add16152fe57c7c690e8c6ec7eb75037e3f1612.svg" alt="chemhw_9add16152fe57c7c690e8c6ec7eb75037e3f1612.svg"> is named as Lithium hydride</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c61f408249faf54c839930614911bf35d60d8492.svg" alt="chemhw_c61f408249faf54c839930614911bf35d60d8492.svg"> is named as Cesium chloride</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cd2b73f036adb23e34c0d19443ff353b05604cef.svg" alt="chemhw_cd2b73f036adb23e34c0d19443ff353b05604cef.svg"> is named as Chromium(III) hydroxide</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7af78eb48b43e4c209618232490d4c8ea4a36e3e.svg" alt="chemhw_7af78eb48b43e4c209618232490d4c8ea4a36e3e.svg"> is named as Sodium acetate</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_de2cf4821c246e087eca7e7d2ccf1892862e0a58.svg" alt="chemhw_de2cf4821c246e087eca7e7d2ccf1892862e0a58.svg"> is named as Potassium dichromate</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_596579b4b73e876396b57c7653cb879573fe5274.svg" alt="chemhw_596579b4b73e876396b57c7653cb879573fe5274.svg"> is named as Sodium sulfate</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2574102" class="outline-3">
+<h3 id="org2574102"><span class="section-number-3">1.10.</span> Which of the following particulate diagrams best shows the formation of water vapor from hydrogen gas and oxygen gas in a rigid container at 125&deg; C?<a aria-hidden="true" href="#org2574102">#</a> </h3>
+<div class="outline-text-3" id="text-1-10">
+<p>
+The correct answer would be <b>C</b>. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg" alt="chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg">, there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org465ea25" class="outline-3">
+<h3 id="org465ea25"><span class="section-number-3">1.11.</span> Name each of the following compounds. In addition, for the compounds in letters a-c, draw Lewis structures, predict VSEPR geometry and hybridization.<a aria-hidden="true" href="#org465ea25">#</a> </h3>
+<div class="outline-text-3" id="text-1-11">
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_8b283c5dff7fe11c51ec3fd70d1c8daa00abdde9.svg" alt="chemhw_8b283c5dff7fe11c51ec3fd70d1c8daa00abdde9.svg"> is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_271fb2150720f34900fe13811e448de6e54bb787.svg" alt="chemhw_271fb2150720f34900fe13811e448de6e54bb787.svg">
+</span>
+<span class="equation-label">
+2
+</span>
+</div>
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg" alt="chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg"> is named as Ammonia, and has the following Lewis Structure. It has a trigonal pyramid shape with 107° bond angles, and has a SP3 hybridization
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_fd86e1aac7643caef13674e177fb0bd79d1b1ff7.svg" alt="chemhw_fd86e1aac7643caef13674e177fb0bd79d1b1ff7.svg">
+</span>
+<span class="equation-label">
+3
+</span>
+</div>
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_84a84546c737e8c1998b6de419c4477880f68da5.svg" alt="chemhw_84a84546c737e8c1998b6de419c4477880f68da5.svg"> is named as Carbon monoxide, and has the following Lewis Structure. It has a linear shape with 180&deg; Bond angles, and has a SP hybridization
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_3191e04dc9392f5faaee9ae9a5773d0fe8743a64.svg" alt="chemhw_3191e04dc9392f5faaee9ae9a5773d0fe8743a64.svg">
+</span>
+<span class="equation-label">
+4
+</span>
+</div>
+<ul class="org-ul">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_84453654c154889feabd9bbc51d922f807ee4cb5.svg" alt="chemhw_84453654c154889feabd9bbc51d922f807ee4cb5.svg"> is named as tetraphosphorus decaoxide,</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c7a57293796cd34f46775a006d63d47b926505f8.svg" alt="chemhw_c7a57293796cd34f46775a006d63d47b926505f8.svg"> is named as Dinitrogen tetroxide,</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_408eef07b61c10bcd7858980003ff04186a0d658.svg" alt="chemhw_408eef07b61c10bcd7858980003ff04186a0d658.svg"> is named as Phosphorus trichloride</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3cd204d" class="outline-3">
+<h3 id="org3cd204d"><span class="section-number-3">1.12.</span> Molecules that have geometries in one plane include which of the following? Draw the Lewis structures to prove your point<a aria-hidden="true" href="#org3cd204d">#</a> </h3>
+<div class="outline-text-3" id="text-1-12">
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f282f2f4fd64e18acc1789517cb368b2af0214eb.svg" alt="chemhw_f282f2f4fd64e18acc1789517cb368b2af0214eb.svg">
+</p>
+<p width="75px">
+<img src="file:///Users/shauryasingh/Documents/notes/class/orgs/chem/images/BCL3.png" alt="BCL3.png" width="75px">
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_2e76d9e267b90b9ec65e7333c9e82f83acd4b9ea.svg" alt="chemhw_2e76d9e267b90b9ec65e7333c9e82f83acd4b9ea.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d247ffe7631d388b26cf6b769c3540373c7b22a0.svg" alt="chemhw_d247ffe7631d388b26cf6b769c3540373c7b22a0.svg">
+</span>
+<span class="equation-label">
+5
+</span>
+</div>
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0a942560d054beaa06ea70ff462df906d4f3be3a.svg" alt="chemhw_0a942560d054beaa06ea70ff462df906d4f3be3a.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4c131786c911b36c3d9677cae8abaa253a9d7806.svg" alt="chemhw_4c131786c911b36c3d9677cae8abaa253a9d7806.svg">
+</span>
+<span class="equation-label">
+6
+</span>
+</div>
+<p>
+Therefore, the correct option is <b>A</b>. Both options II and III are tetrahedral and trigonal pyramidal respectively. Option I (<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0966bc3f7179f5496a078ea41d0d018c4ad27799.svg" alt="chemhw_0966bc3f7179f5496a078ea41d0d018c4ad27799.svg">) is the only one that has a geometry in one plane (trigonal planar)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org761c714" class="outline-3">
+<h3 id="org761c714"><span class="section-number-3">1.13.</span> The electron-dot structure (Lewis structure) for which of the following molecules would have two lone pairs of electrons on the central atom? Again, draw the Lewis structures to prove your point.<a aria-hidden="true" href="#org761c714">#</a> </h3>
+<div class="outline-text-3" id="text-1-13">
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_42dce53f2e24ee7c6b78fb34937690041e47a395.svg" alt="chemhw_42dce53f2e24ee7c6b78fb34937690041e47a395.svg"> is
+</p>
+<p width="75px">
+<img src="file:///Users/shauryasingh/Documents/notes/class/orgs/chem/images/H2S.png" alt="H2S.png" width="75px">
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg" alt="chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_fd86e1aac7643caef13674e177fb0bd79d1b1ff7.svg" alt="chemhw_fd86e1aac7643caef13674e177fb0bd79d1b1ff7.svg">
+</span>
+<span class="equation-label">
+7
+</span>
+</div>
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cc291889c0a0d1c7a4e363a31ebbb09358226a59.svg" alt="chemhw_cc291889c0a0d1c7a4e363a31ebbb09358226a59.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c0d1af725a08457c38a4f6f05cf732b2b8ba62fb.svg" alt="chemhw_c0d1af725a08457c38a4f6f05cf732b2b8ba62fb.svg">
+</span>
+<span class="equation-label">
+8
+</span>
+</div>
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f583802c4329b4c1c56e22a93e06f919a7a49bef.svg" alt="chemhw_f583802c4329b4c1c56e22a93e06f919a7a49bef.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a3ee3b38f4cfb9a19c29bf2814af8447df5d28f2.svg" alt="chemhw_a3ee3b38f4cfb9a19c29bf2814af8447df5d28f2.svg">
+</span>
+<span class="equation-label">
+9
+</span>
+</div>
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0e90d3537717ad6def3974b8b475811fa1e15139.svg" alt="chemhw_0e90d3537717ad6def3974b8b475811fa1e15139.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7e52f0da8b64ab74fa566e9247e0fc21cb5803b3.svg" alt="chemhw_7e52f0da8b64ab74fa566e9247e0fc21cb5803b3.svg">
+</span>
+<span class="equation-label">
+10
+</span>
+</div>
+<p>
+Therefore, the only correct answer is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_42dce53f2e24ee7c6b78fb34937690041e47a395.svg" alt="chemhw_42dce53f2e24ee7c6b78fb34937690041e47a395.svg">
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d52a83" class="outline-3">
+<h3 id="org5d52a83"><span class="section-number-3">1.14.</span> Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4<a aria-hidden="true" href="#org5d52a83">#</a> </h3>
+<div class="outline-text-3" id="text-1-14">
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg" alt="chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_2d50ae6049cd3f39657557d906957dfe475186d2.svg" alt="chemhw_2d50ae6049cd3f39657557d906957dfe475186d2.svg">
+</span>
+<span class="equation-label">
+11
+</span>
+</div>
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg" alt="chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg"> is
+</p>
+<p>
+<img src="file:///Users/shauryasingh/Documents/notes/class/orgs/chem/images/H2O.png" alt="H2O.png">
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg" alt="chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_fd86e1aac7643caef13674e177fb0bd79d1b1ff7.svg" alt="chemhw_fd86e1aac7643caef13674e177fb0bd79d1b1ff7.svg">
+</span>
+<span class="equation-label">
+12
+</span>
+</div>
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg" alt="chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_8b9565ae67d88c3585bb04b1637b4a01c34a5a3e.svg" alt="chemhw_8b9565ae67d88c3585bb04b1637b4a01c34a5a3e.svg">
+</span>
+<span class="equation-label">
+13
+</span>
+</div>
+<p>
+The lewis structure for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg" alt="chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg"> is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_aacc3991e8a3b5a309f46fdaa40488da6af60cf8.svg" alt="chemhw_aacc3991e8a3b5a309f46fdaa40488da6af60cf8.svg">
+</span>
+<span class="equation-label">
+14
+</span>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2dfdd7c" class="outline-3">
+<h3 id="org2dfdd7c"><span class="section-number-3">1.15.</span> Give the VSEPR geometry for each for each of the molecules listed in #14.<a aria-hidden="true" href="#org2dfdd7c">#</a> </h3>
+<div class="outline-text-3" id="text-1-15">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg" alt="chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg"> has a linear VSEPR geometry</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg" alt="chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg"> has a bent VSEPR geometry</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg" alt="chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg"> has a trigonal pyramidal VSEPR geometry</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg" alt="chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg"> has a linear VSEPR geometry</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg" alt="chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg"> has a tetrahedral VSEPR geometry</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4670963" class="outline-3">
+<h3 id="org4670963"><span class="section-number-3">1.16.</span> Tell whether each of the molecules listed in #14 is polar or nonpolar.<a aria-hidden="true" href="#org4670963">#</a> </h3>
+<div class="outline-text-3" id="text-1-16">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg" alt="chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg"> is nonpolar</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg" alt="chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg"> is polar</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg" alt="chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg"> is polar</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg" alt="chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg"> is polar</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg" alt="chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg"> is nonpolar</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb89f757" class="outline-3">
+<h3 id="orgb89f757"><span class="section-number-3">1.17.</span> What primary type of intermolecular force (IMFs) would attract the molecules in #14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)<a aria-hidden="true" href="#orgb89f757">#</a> </h3>
+<div class="outline-text-3" id="text-1-17">
+<ol class="org-ol">
+<li><b>The primary types of intermolecular forces (IMFs) that would attract the molecules in #14 are</b>
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg" alt="chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg"> primarily has London dispersion forces</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg" alt="chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg"> primarily has hydrogen bonds, a type of dipole-dipole force</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg" alt="chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg"> primarily has hydrogen bonds, a type of dipole-dipole force</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg" alt="chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg"> primarily has dipole-dipole forces</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg" alt="chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg"> primarily has London dispersion forces</li>
+</ol></li>
+<li><b>The molecules that have the highest boiling points and lowest boiling points are</b>
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg" alt="chemhw_43aec56d275ea888f9bec85b5ae1cc15299a9c3c.svg"> and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg" alt="chemhw_d22e561fe3b201226fb562df8db4e5d5e0916f04.svg">  have the highest boiling points, since they have hydrogen bonds</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg" alt="chemhw_6127e4ac850e0e2cc84037e4881d2687954c6a18.svg"> and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg" alt="chemhw_7aa1cad80e07c55b3f1cfe688f539a18e3e64233.svg"> have the lowest boiling points, since they have London dispersion forces</li>
+</ol></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6e036f0" class="outline-3">
+<h3 id="org6e036f0"><span class="section-number-3">1.18.</span> Name each of the following compounds:<a aria-hidden="true" href="#org6e036f0">#</a> </h3>
+<div class="outline-text-3" id="text-1-18">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6ac44a162843e0fb26e6a10661006c68e2234f85.svg" alt="chemhw_6ac44a162843e0fb26e6a10661006c68e2234f85.svg"> is named as Tetraphosphorus hexoxide</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_679e6e9ca9b9dfa95b771272d23c306d97e58c83.svg" alt="chemhw_679e6e9ca9b9dfa95b771272d23c306d97e58c83.svg"> is named as Potassium hydroxide</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b2b5a9950b23c8c842cc89cd53fbb1d0170bc821.svg" alt="chemhw_b2b5a9950b23c8c842cc89cd53fbb1d0170bc821.svg"> is named as Nitrogen</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1a066ac4e60f9d8a92a0bd1bdd7d81c324f383dd.svg" alt="chemhw_1a066ac4e60f9d8a92a0bd1bdd7d81c324f383dd.svg"> is named as Phosphorus trihydride</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c85cd8f8416b54867beaf40828a39e5377f43776.svg" alt="chemhw_c85cd8f8416b54867beaf40828a39e5377f43776.svg"> is named as Boron trifluoride</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5ac8151efa4698fc20aacb42f62e1893cd338c75.svg" alt="chemhw_5ac8151efa4698fc20aacb42f62e1893cd338c75.svg"> is named as Silver chloride</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6f445407d9564d6495998654ffcf64df06760952.svg" alt="chemhw_6f445407d9564d6495998654ffcf64df06760952.svg"> is named as Potassium bicarbonate</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_275af5ad6494445e0c89f4c4fa5eb39096df5524.svg" alt="chemhw_275af5ad6494445e0c89f4c4fa5eb39096df5524.svg"> is named as Silver nitrate</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1072a1c" class="outline-3">
+<h3 id="org1072a1c"><span class="section-number-3">1.19.</span> Write formulas for each of the following compounds:<a aria-hidden="true" href="#org1072a1c">#</a> </h3>
+<div class="outline-text-3" id="text-1-19">
+<ol class="org-ol">
+<li>The formula for sodium cyanide is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0807cce133271a1d8f89fb7aea6c071d896d6980.svg" alt="chemhw_0807cce133271a1d8f89fb7aea6c071d896d6980.svg"></li>
+<li>The formula for tin(II) fluoride is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_66ed8b16d977fe0878519af066fbaa06c6a48aeb.svg" alt="chemhw_66ed8b16d977fe0878519af066fbaa06c6a48aeb.svg"></li>
+<li>The formula for lead(II) nitrate is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_29a6dae25767ba80b43738d43517d1d04c4c27a5.svg" alt="chemhw_29a6dae25767ba80b43738d43517d1d04c4c27a5.svg"></li>
+<li>The formula for iron(III) oxide is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_ab34da908b3c153203863c63dffab0229ca8e50b.svg" alt="chemhw_ab34da908b3c153203863c63dffab0229ca8e50b.svg"></li>
+<li>The formula for calcium phosphate is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_da0ac050f7f3a01e57e32eb25572c2c1db133b82.svg" alt="chemhw_da0ac050f7f3a01e57e32eb25572c2c1db133b82.svg"></li>
+<li>The formula for sodium bromate is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_ff8a3252db1424bb7d334728a5d095f319e95ffb.svg" alt="chemhw_ff8a3252db1424bb7d334728a5d095f319e95ffb.svg"></li>
+<li>The formula for hydrogen iodide is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_87fc4ff2a829941e0ed8ba5e2e62ab2969a83f8e.svg" alt="chemhw_87fc4ff2a829941e0ed8ba5e2e62ab2969a83f8e.svg"></li>
+<li>The formula for sodium sulfate is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_596579b4b73e876396b57c7653cb879573fe5274.svg" alt="chemhw_596579b4b73e876396b57c7653cb879573fe5274.svg"></li>
+<li>The formula for manganese dioxide is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4d3b814e2a4637cb2afec05e6de36efaf6c88230.svg" alt="chemhw_4d3b814e2a4637cb2afec05e6de36efaf6c88230.svg"></li>
+<li>The formula for potassium chlorate is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7fc8d1c0e53ffbaf9d59f833b5addba96bce77b9.svg" alt="chemhw_7fc8d1c0e53ffbaf9d59f833b5addba96bce77b9.svg"></li>
+<li>The formula for potassium hypochlorite is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0923d0131eec6698e81c2cdbde26b230b81284e9.svg" alt="chemhw_0923d0131eec6698e81c2cdbde26b230b81284e9.svg"></li>
+<li>The formula for lithium hydride is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_9add16152fe57c7c690e8c6ec7eb75037e3f1612.svg" alt="chemhw_9add16152fe57c7c690e8c6ec7eb75037e3f1612.svg"></li>
+<li>The formula for barium chloride is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_862b5eba0c71cc19375ec6337b6c3b50038dfa2b.svg" alt="chemhw_862b5eba0c71cc19375ec6337b6c3b50038dfa2b.svg"></li>
+<li>The formula for magnesium oxide is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1fadb9da2e50f881d5cd9b1f14fe7d1c527bb38c.svg" alt="chemhw_1fadb9da2e50f881d5cd9b1f14fe7d1c527bb38c.svg"></li>
+<li>The formula for copper(I) oxide is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4b5893075f60ddfa8c2f9a04688953c0d97de1e8.svg" alt="chemhw_4b5893075f60ddfa8c2f9a04688953c0d97de1e8.svg"></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4df85aa" class="outline-3">
+<h3 id="org4df85aa"><span class="section-number-3">1.20.</span> Give the names of the following acids<a aria-hidden="true" href="#org4df85aa">#</a> </h3>
+<div class="outline-text-3" id="text-1-20">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_08d700c86f4ad680f4e49de5681bbe6fe4f1d9aa.svg" alt="chemhw_08d700c86f4ad680f4e49de5681bbe6fe4f1d9aa.svg"> is named as Sulfurous acid</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_87fc4ff2a829941e0ed8ba5e2e62ab2969a83f8e.svg" alt="chemhw_87fc4ff2a829941e0ed8ba5e2e62ab2969a83f8e.svg"> is named as Hydroiodic acid</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_980a0f9e7f939f9e7a07d7804243ed7c2db526c0.svg" alt="chemhw_980a0f9e7f939f9e7a07d7804243ed7c2db526c0.svg"> is named as Hydrobromic acid</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d5b02d152b09ee8d5445f4c104cf8bcbf342e760.svg" alt="chemhw_d5b02d152b09ee8d5445f4c104cf8bcbf342e760.svg"> is named as Nitrous acid</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4902846f04078169a770013130737f219b68b6b9.svg" alt="chemhw_4902846f04078169a770013130737f219b68b6b9.svg"> is named as Phosphoric Acid</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg" alt="chemhw_5fffc604af3b4a3e87aed8e571f1cbdcc435199b.svg"> is named as Hydrochloric acid</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org822bd1a" class="outline-3">
+<h3 id="org822bd1a"><span class="section-number-3">1.21.</span> Give formulas for the following acids:<a aria-hidden="true" href="#org822bd1a">#</a> </h3>
+<div class="outline-text-3" id="text-1-21">
+<ol class="org-ol">
+<li>Nitric acid has a formula of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_9e8d77b41ae5fd595abab6807674945737cebd99.svg" alt="chemhw_9e8d77b41ae5fd595abab6807674945737cebd99.svg"></li>
+<li>hydrofluoric acid has a formula of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cd16301a7c7edc9634ca2e051c890bc3de384c6e.svg" alt="chemhw_cd16301a7c7edc9634ca2e051c890bc3de384c6e.svg"></li>
+<li>sulfuric acid has a formula of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cae9e2c7a04b2274e7873ba989fe7f141488da37.svg" alt="chemhw_cae9e2c7a04b2274e7873ba989fe7f141488da37.svg"></li>
+<li>hydrocyanic acid has a formula of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f583802c4329b4c1c56e22a93e06f919a7a49bef.svg" alt="chemhw_f583802c4329b4c1c56e22a93e06f919a7a49bef.svg"></li>
+<li>acetic acid has a formula of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_dc17b8e68d04ef72a35bc69f05d033e17331eb80.svg" alt="chemhw_dc17b8e68d04ef72a35bc69f05d033e17331eb80.svg"></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org7ff348d" class="outline-3">
+<h3 id="org7ff348d"><span class="section-number-3">1.22.</span> Give the names and formulas of the seven diatomic elements.<a aria-hidden="true" href="#org7ff348d">#</a> </h3>
+<div class="outline-text-3" id="text-1-22">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a4afaa0314a74c0cfdb4a9a2bb354aea4a035739.svg" alt="chemhw_a4afaa0314a74c0cfdb4a9a2bb354aea4a035739.svg">, or Hydrogen</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b2b5a9950b23c8c842cc89cd53fbb1d0170bc821.svg" alt="chemhw_b2b5a9950b23c8c842cc89cd53fbb1d0170bc821.svg">, or Nitrogen</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_78b84bb6fd6c4312c8da06e2f10557d75fa266d8.svg" alt="chemhw_78b84bb6fd6c4312c8da06e2f10557d75fa266d8.svg">, or Oxygen</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_004294bc9a0c7dc07bd5afd43c002f62034710d8.svg" alt="chemhw_004294bc9a0c7dc07bd5afd43c002f62034710d8.svg">, or Fluorine</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7389fad87db44d8d1fd47b89348bb95bafc3a3ff.svg" alt="chemhw_7389fad87db44d8d1fd47b89348bb95bafc3a3ff.svg">, or Chlorine</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1dcf94df96f44b96f360bdec28433a8766cd940a.svg" alt="chemhw_1dcf94df96f44b96f360bdec28433a8766cd940a.svg">, or Bromine</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4e82dac7545bf0d3c76c2ddba2f640c4e25178bf.svg" alt="chemhw_4e82dac7545bf0d3c76c2ddba2f640c4e25178bf.svg">, or Iodine</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org280d8db" class="outline-3">
+<h3 id="org280d8db"><span class="section-number-3">1.23.</span> Solve the following problems involving scientific notation without a calculator.<a aria-hidden="true" href="#org280d8db">#</a> </h3>
+<div class="outline-text-3" id="text-1-23">
+<ol class="org-ol">
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_15d4ce17ae446a715c7563faf84707009209c891.svg" alt="chemhw_15d4ce17ae446a715c7563faf84707009209c891.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_dba5d743eb40bdcafdbbb08858d0a3e5ae3013de.svg" alt="chemhw_dba5d743eb40bdcafdbbb08858d0a3e5ae3013de.svg">
+</span>
+</div></li>
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_9cd547035296550d6046dfeda63188d7ad4733d7.svg" alt="chemhw_9cd547035296550d6046dfeda63188d7ad4733d7.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_02fdc70d68164e32a55f9c41f3563ff6b80220fb.svg" alt="chemhw_02fdc70d68164e32a55f9c41f3563ff6b80220fb.svg">
+</span>
+</div></li>
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_efd3e306e725feb275c7d759fb7a243116ff0173.svg" alt="chemhw_efd3e306e725feb275c7d759fb7a243116ff0173.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7b797a37fa7782324ab9f52f5801b7600e0593fe.svg" alt="chemhw_7b797a37fa7782324ab9f52f5801b7600e0593fe.svg">
+</span>
+</div></li>
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1388cf60c3fc71fe399af2b4d5c724d3952aea9c.svg" alt="chemhw_1388cf60c3fc71fe399af2b4d5c724d3952aea9c.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_06e3e6e24c824b99ad2ee114a90e6eba164a8ebb.svg" alt="chemhw_06e3e6e24c824b99ad2ee114a90e6eba164a8ebb.svg">
+</span>
+</div></li>
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_72ef4e7fb4531193f27fc95262d171c815668e81.svg" alt="chemhw_72ef4e7fb4531193f27fc95262d171c815668e81.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_fa62258626c75cbbf49364f9a2295ce7335df284.svg" alt="chemhw_fa62258626c75cbbf49364f9a2295ce7335df284.svg">
+</span>
+</div></li>
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_182a081f5281631e51a50f6fcea65de254ccdf17.svg" alt="chemhw_182a081f5281631e51a50f6fcea65de254ccdf17.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5c5cbe8d3d180c982807556895ae9769f00f14ac.svg" alt="chemhw_5c5cbe8d3d180c982807556895ae9769f00f14ac.svg">
+</span>
+</div></li>
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b631ea4c3df306910b7f6acd021822418e698fea.svg" alt="chemhw_b631ea4c3df306910b7f6acd021822418e698fea.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_ff7e4e3a850c856ba810a60cfb05fb83dfe9d8bf.svg" alt="chemhw_ff7e4e3a850c856ba810a60cfb05fb83dfe9d8bf.svg">
+</span>
+</div></li>
+<li><p>
+The solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0c581e6edde1723089ef9b52f9c3452dd28e2e06.svg" alt="chemhw_0c581e6edde1723089ef9b52f9c3452dd28e2e06.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_67d1b667ad0eaaa3d1d2f0d5fd63b7f5d775657f.svg" alt="chemhw_67d1b667ad0eaaa3d1d2f0d5fd63b7f5d775657f.svg">
+</span>
+</div></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgba82f38" class="outline-3">
+<h3 id="orgba82f38"><span class="section-number-3">1.24.</span> The structures and normal boiling points of dimethyl ether and ethanol are given in the table above.<a aria-hidden="true" href="#orgba82f38">#</a> </h3>
+<div class="outline-text-3" id="text-1-24">
+<ol class="org-ol">
+<li><p>
+<b>Which of the following diagrams best helps to explain the difference in boiling point of the two compounds?</b>
+</p>
+
+<p>
+The answer is <b>B</b>, since it best shows the difference between hydrogen bonds.
+</p></li>
+
+<li><p>
+<b>Describe your reasoning for selecting the answer you did and specifically identify the type of intermolecular forces represented.</b>
+</p>
+
+<p>
+Dimethyl either consists of dipole-dipole interactions or dispersion forces, whereas Ethanol consists of hydrogen bonds, and diagram B best highlights that.
+</p></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1e95e4e" class="outline-3">
+<h3 id="org1e95e4e"><span class="section-number-3">1.25.</span> Shown below are three models that can be used to represent a molecule of ammonia. Select one of the models. Each model has its pros and cons.<a aria-hidden="true" href="#org1e95e4e">#</a> </h3>
+<div class="outline-text-3" id="text-1-25">
+<p>
+I chose to compare the benefits and drawbacks of the <b>lewis structure</b> model.
+</p>
+<ol class="org-ol">
+<li><p>
+<b>One aspect of the ammonia molecule that the model represents accurately/well</b>
+</p>
+
+<p>
+The Lewis structure model allows the reader to easily see where all the electrons are, as well as if each atom obeys the octet rule. You can also which electrons are bonding, as well as which electrons are non-bonding and lone pairs.
+</p></li>
+
+<li><p>
+<b>One aspect of the ammonia molecule that the model does not represent accurately/well.</b>
+</p>
+
+<p>
+It is difficult to show resonance structures with a lewis structure. There is also a lack of 3 dimensional modeling with the lewis structure. Lewis structures only imply shape, in order to find the 3 dimensional shape of a molecule, you have to use other knowledge, using VSEPR.
+</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Shaurya Singh</p>
+<p class="date">Created: 2021-07-30 Fri 14:33</p>
+</div>
+</div>
+</body>
+</html>

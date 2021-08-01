@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2021-07-31 Sat 23:49 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ap Chem Summer Assignment #2</title>
+<meta name="author" content="Shaurya Singh" />
+<meta name="generator" content="org mode" />
+<meta name="theme-color" content="#77aa99" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Ap Chem Summer Assignment #2" />
+<meta property="og:image" content="https://tecosaur.com/resources/org/nib.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="Green fountain pen nib" />
+<meta property="og:article:author:first_name" content="Shaurya" />
+<meta property="og:article:author:last_name" content="Singh" />
+<meta property="og:article:published_time" content="2021-07-30T01:00:00-0400" />
+<meta property="og:article:modified_time" content="2021-07-31T23:49:20-0400" />
+<link rel="icon" href="https://tecosaur.com/resources/org/nib.ico" type="image/ico" />
+
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/etbookot-roman-webfont.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/etbookot-italic-webfont.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/Merriweather-TextRegular.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/Merriweather-TextItalic.woff2">
+<link rel="preload" as="font" crossorigin="anonymous" type="font/woff2" href="https://tecosaur.com/resources/org/Merriweather-TextBold.woff2">
+<script>
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+function copyPreToClipbord(btn) {
+    const pre = btn.parentElement.parentElement.getElementsByTagName("PRE")[0];
+    const range = document.createRange();
+    range.selectNodeContents(pre);
+    range.setEnd(pre.childNodes[pre.childNodes.length-1], 0);
+    window.getSelection().addRange(range);
+    var successful = document.execCommand('copy');
+    window.getSelection().removeRange(range);
+}
+window.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById("text-table-of-contents")) {
+        const sections = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        const activate = (entry) => {
+            entry.classList.add('active');
+            if (["LI", "UL"].includes(entry.parentElement.tagName)) {
+                activate(entry.parentElement);
+            }
+        };
+        const activateLast = () => {
+            document.querySelectorAll('#text-table-of-contents li.active, #text-table-of-contents ul.active').forEach(a => {
+                a.classList.remove('active')
+            });
+            let mostRecent = { section: sections[0], bottom: -Infinity };
+            const windowHeight = window.innerHeight;
+            sections.forEach((section) => {
+                const bounds = section.getBoundingClientRect()
+                if ( bounds.bottom > mostRecent.bottom && bounds.top < windowHeight ) {
+                    mostRecent = { section, bottom: bounds.bottom };
+                }
+            })
+            activate(document.querySelector(`#text-table-of-contents li a[href="#${mostRecent.section.getAttribute('id')}"]`).parentElement);
+        }
+        const observer = new IntersectionObserver(entries => {
+            activateLast();
+        });
+        sections.forEach((section) => {
+            observer.observe(section);
+        });}
+});
+// @license-end
+</script>
+<style>
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}b{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring{outline:1px dotted ButtonText}details{display:block}summary{display:list-item}
+/*! end normalise.css */
+#page{--accent: #002642;--accent-dark: #00151c;--code-foreground: #2c3e50;--code-background: #efefef;--code-func: #6c3163;--code-const: #4e3163;--code-regex: #655370;--back-white: #fff;--back-light: #f0eeed;--back-medium: #c8c8c8;--text-light: #7b7b7b;--text-gray: #444;--text-medium: #222;--text-dark: #000;--switch-icon: "🌚";--switch-shadow-color: #373d4e;--switch-text: "dark mode?"}#theme-switch:checked~#page{--accent: #002642;--accent-dark: #daf1ff;--code-foreground: #a1a8ae;--code-background: #222;--code-func: #bd56ad;--code-const: #8755ab;--code-regex: #a184b3;--back-white: #000;--back-light: #181818;--back-medium: #444;--text-light: #7b7b7b;--text-gray: #c8c8c8;--text-medium: #ddd;--text-dark: #efefef;--switch-icon: "🌝";--switch-shadow-color: #fce477;--switch-text: "light mode?"}#theme-switch:checked~#page img.invertible,#theme-switch:checked~#page object.invertible[type="image/svg+xml"]{filter:invert(90%) hue-rotate(180deg) sepia(1%)}#theme-switch{display:none}#switch-label{position:fixed;bottom:4rem;left:3rem}#switch-label::before{content:var(--switch-icon);font-size:20px;transition:text-shadow .2s}#switch-label::after{content:var(--switch-text);color:var(--switch-shadow-color);font-size:12px;visibility:hidden;margin-left:.5em;z-index:1;position:fixed;bottom:calc(4rem - 25px);left:calc(3rem - 10px)}@media (max-width:1000px){#switch-label{left:auto;bottom:auto;right:1vw;top:1vh}#switch-label::after{position:fixed;top:calc(1vh + 3px);right:calc(1vw + 30px);left:auto;bottom:auto}}#switch-label:hover::before,#theme-switch:focus~#page #switch-label::before{text-shadow:0 0 15px var(--switch-shadow-color)}#switch-label:hover::after,#theme-switch:focus~#page #switch-label::after{visibility:visible}@font-face{font-family:"Merriweather";src:url(https://tecosaur.com/resources/org/Merriweather-TextRegular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:"Merriweather";src:url(https://tecosaur.com/resources/org/Merriweather-TextItalic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:fallback}@font-face{font-family:"Merriweather";src:url(https://tecosaur.com/resources/org/Merriweather-TextBold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:fallback}@font-face{font-family:"et-book";src:url(https://tecosaur.com/resources/org/etbookot-roman-webfont.woff2) format("woff2");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:"et-book";src:url(https://tecosaur.com/resources/org/etbookot-italic-webfont.woff2) format("woff2");font-weight:400;font-style:italic;font-display:fallback}::selection{background:var(--back-medium)}.pace .pace-progress{background-color:var(--accent)!important}body,html{height:100%}body{display:flex;flex-direction:column;font-size:16px;font-family:"Merriweather",serif}#page{color:var(--text-dark);background-color:var(--back-light);transition-property:color,background-color;transition-duration:100ms}#content,.page-header,header{margin:32px;flex:1 0 auto}#content{margin-top:4rem;min-height:calc(100vh - 4rem - 48px)}.clearfix::after{clear:both}.clearfix::after,.clearfix::before{content:" ";display:table}.page-header{margin-top:80px;margin-left:0!important}.page-header h1{font-size:40px;margin-bottom:10px;margin-top:10px;text-transform:none}.page-header h1 .subtitle{font-size:24px;color:var(--text-light);margin:0}.page-meta,figure figcaption .figure-number,header .site-nav{font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light)}header .site-nav{font-weight:700;line-height:2;margin-top:22px}header .site-nav a{color:var(--text-light);text-decoration:none;margin-left:10px}header .site-nav a:hover{color:var(--text-gray)}header .site-nav a.active{border-bottom:solid;border-bottom-width:2px}header .site-nav a:first-child{margin-left:0}header>div{display:inherit}.site-title{font-size:16px}.site-title span{display:none!important}.site-title ul{display:block!important;list-style:none;padding:0;margin:0}.site-title ul img{border-radius:2px;max-width:32px}.site-header nav a{color:var(--text-light);font-family:"Open Sans",sans;font-size:12px;font-weight:700;text-transform:uppercase}.site-header nav a:hover{border:0;color:var(--accent)}@media (max-width:1000px){header *{display:inline}}@media (min-width:1000px){#content,.page-header,header{max-width:720px;margin-left:164px}header .site-title{float:left}header .site-nav{float:right;margin-top:0}}@media (min-width:2800px){#content,.page-header,header{margin-left:auto;margin-right:auto}}#content .page-intro{font-family:"Open Sans",sans;font-weight:400;font-size:15px;line-height:1.6;color:var(--text-gray);margin-bottom:40px}#content dd,#content li,#content p{line-height:1.9}#footer{margin-top:70px;height:10px;background:var(--accent-dark)}.archive-item{margin:50px 0}.archive-item .archive-title{font-size:25px;margin:5px 0}.archive-item .archive-title,.archive-item .archive-title:hover{background:0 0;text-shadow:none;text-decoration:none}#postamble,details.code[open] summary .lang{display:none}aside{background-color:var(--code-background);border-radius:5px;margin:20px 0;padding:5px 20px 10px}#footnotes li,#footnotes p,.org-ref-bib,.org-ref-bib-h1,aside,aside p,blockquote footer{font-family:"Open Sans",sans;font-weight:400;color:var(--text-gray)}aside,aside p{font-size:15px;line-height:1.6!important}aside pre{font-size:12px;border:0;padding-left:0}@media (min-width:1280px){aside{float:right;clear:right;background-color:var(--back-white);max-width:45%!important;margin-right:-52%}aside::before{content:''}}blockquote{border-left-style:solid;border-width:0 0 0 1px;border-left-color:var(--back-medium);margin:20px 0;padding:0 0 0 15px}blockquote p{display:inline;font-size:13px}blockquote footer{font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light);text-transform:none}div.info{background:rgba(58,129,195,.15);border-left:4px solid rgba(58,129,195,.45);margin:1.8rem 0 1.25rem 15px;padding:.8em;line-height:1.4;text-align:center;position:relative;clear:both}div.error p,div.info p,div.success p,div.warning p{margin:0}div.error::before,div.info::before,div.success::before,div.warning::before{color:var(--back-white);align-items:flex-end;top:-1rem;font-weight:700;font-size:1.4rem;display:inline-flex;justify-content:center;position:absolute;left:-1.2rem;text-align:center}div.info::before{content:"i";background:rgba(58,129,195,.8);-webkit-clip-path:circle(50% at 50% 50%);clip-path:circle(50% at 50% 50%);width:30px;height:30px;line-height:1.3}div.success{background:rgba(45,149,116,.15);border-left:4px solid rgba(45,149,116,.45)}div.error::before,div.success::before,div.warning::before{width:35px}div.success::before{content:"✔";background:rgba(45,149,116,.8);-webkit-clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);height:35px;line-height:1.5}div.error,div.success,div.warning{margin:1.8rem 0 1.25rem 15px;padding:.8em;line-height:1.4;text-align:center;position:relative;clear:both}div.warning{background:rgba(220,117,47,.15);border-left:4px solid rgba(220,117,47,.45)}div.error::before,div.warning::before{content:"!";line-height:1.1}div.warning::before{background:rgba(220,117,47,.8);-webkit-clip-path:polygon(50% 0,0 100%,100% 100%);clip-path:polygon(50% 0,0 100%,100% 100%);height:35px}div.error{background:rgba(186,47,89,.15);border-left:4px solid rgba(186,47,89,.45)}div.error::before{background:rgba(186,47,89,.8);-webkit-clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);height:30px}#footnotes li,#footnotes p,.org-ref-bib,.org-ref-bib-h1{line-height:1.6}.org-ref-bib-h1{margin-top:70px;padding-top:30px;border-top-style:solid;border-width:1px 0 0;border-color:var(--back-light);font-size:20px}#footnotes li,#footnotes p,.org-ref-bib{font-size:15px}.org-ref-bib li>a:nth-child(2),.org-ref-bib li>a:nth-child(2):hover{background:0 0;text-shadow:none;text-decoration:none}.org-ref-bib .bib-link{font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light);background:0 0;text-shadow:none;text-decoration:none}pre.example,pre.src{border-left-style:solid;border-width:0 0 0 1px;border-left-color:var(--back-medium);margin:20px 0;padding:0 0 0 15px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:14px;line-height:1.9;overflow-x:visible;box-shadow:none;white-space:pre-wrap;position:relative}pre.example{border-left-style:dotted;border-width:0 0 0 2px}pre.src::before{display:inline-block;position:absolute;background-color:transparent;top:unset;bottom:-16px;left:20px;padding:0;border:0;font-size:80%;font-style:italic;color:var(--text-light)}pre.src:empty{display:none}code{color:var(--code-foreground);padding:0 5px}kbd{display:inline-block;padding:.25em .35em;font:80% SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:80%;color:var(--text-gray);vertical-align:middle;background-color:var(--back-light);border:1px solid #91959a88;border-radius:.35em;box-shadow:inset 0 -1px 0 #91959a88}li code{font-size:14px}code,dl li p,li p code,ol li p,ul li p{font-size:15px}details.code{position:relative}details.code summary{position:relative;left:-3px;padding-left:10px;padding-bottom:4px;margin-left:-10px;z-index:1;outline:0;font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light)}details.code summary .name{font-size:14px;color:var(--text-medium);margin-right:.7em}code,details.code summary .lang{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}details.code summary .lang{font-style:italic}details.code summary::marker{color:var(--back-medium)}details.code[open] summary{margin-bottom:-32px}details.code[open] summary.named{margin-bottom:-26px}details.code:not([open]) summary{margin-bottom:-5px}p+details.code{margin-top:-20px}li p+details.code{margin-top:-5px}.example,.src{color:var(--code-foreground)}.example .org-keyword,.src .org-keyword{color:#3a81c3}.example .org-variable-name,.src .org-variable-name{color:#715ab1}.example .org-rainbow-delimiters-depth-1,.example .org-rainbow-delimiters-depth-2,.example .org-rainbow-delimiters-depth-3,.example .org-rainbow-delimiters-depth-4,.example .org-rainbow-delimiters-depth-5,.example .org-rainbow-delimiters-depth-6,.example .org-rainbow-delimiters-depth-7,.example .org-rainbow-delimiters-depth-8,.example .org-rainbow-delimiters-depth-9,.src .org-rainbow-delimiters-depth-1,.src .org-rainbow-delimiters-depth-2,.src .org-rainbow-delimiters-depth-3,.src .org-rainbow-delimiters-depth-4,.src .org-rainbow-delimiters-depth-5,.src .org-rainbow-delimiters-depth-6,.src .org-rainbow-delimiters-depth-7,.src .org-rainbow-delimiters-depth-8,.src .org-rainbow-delimiters-depth-9{color:#555}.example .org-string,.src .org-string{color:#2d9574}.example .org-comment,.example .org-comment-delimiter,.src .org-comment,.src .org-comment-delimiter{color:#555}.example .org-function-name,.src .org-function-name{color:var(--code-func)}.example .org-constant,.example .org-highlight-numbers-number,.src .org-constant,.src .org-highlight-numbers-number{color:var(--code-const)}.gutter{position:absolute;top:0;left:-2.5rem;width:2rem;padding-right:.3rem;padding-top:5px;height:calc(100% - 10px);z-index:1;transition:opacity 200ms;opacity:0;font-size:15px}.gutter:hover{opacity:1}.gutter *{display:block;width:100%;text-align:right;padding:0;margin:0;color:var(--text-light)}#content .page-intro p a:hover:visited,#content .page-intro p a:visited,#footnotes a:hover:visited,#footnotes a:visited,.gutter :hover{color:var(--text-gray)}.gutter :active{font-weight:700}.gutter a{text-decoration:none;font-size:110%}.gutter button{background:0 0;border:0}pre.src-asymptote::before{content:'Asymptote'}pre.src-authinfo::before{content:'Authinfo'}pre.src-awk::before{content:'Awk'}pre.src-C::before{content:'C'}pre.src-clojure::before{content:'Clojure'}pre.src-css::before{content:'CSS'}pre.src-D::before{content:'D'}pre.src-ditaa::before{content:'ditaa'}pre.src-dot::before{content:'Graphviz'}pre.src-calc::before{content:'Emacs Calc'}pre.src-emacs-lisp::before{content:'Emacs Lisp'}pre.src-fortran::before{content:'Fortran'}pre.src-gnuplot::before{content:'gnuplot'}pre.src-haskell::before{content:'Haskell'}pre.src-hledger::before{content:'hledger'}pre.src-java::before{content:'Java'}pre.src-js::before{content:'Javascript'}pre.src-latex::before{content:'LaTeX'}pre.src-ledger::before{content:'Ledger'}pre.src-lisp::before{content:'Lisp'}pre.src-lilypond::before{content:'Lilypond'}pre.src-lua::before{content:'Lua'}pre.src-matlab::before{content:'MATLAB'}pre.src-mscgen::before{content:'Mscgen'}pre.src-ocaml::before{content:'Objective Caml'}pre.src-octave::before{content:'Octave'}pre.src-org::before{content:'Org mode'}pre.src-oz::before{content:'OZ'}pre.src-plantuml::before{content:'Plantuml'}pre.src-processing::before{content:'Processing.js'}pre.src-python::before{content:'Python'}pre.src-R::before{content:'R'}pre.src-ruby::before{content:'Ruby'}pre.src-sass::before{content:'Sass'}pre.src-scheme::before{content:'Scheme'}pre.src-screen::before{content:'Gnu Screen'}pre.src-sed::before{content:'Sed'}pre.src-sh::before{content:'shell'}pre.src-sql::before{content:'SQL'}pre.src-sqlite::before{content:'SQLite'}pre.src-forth::before{content:'Forth'}pre.src-io::before{content:'IO'}pre.src-J::before{content:'J'}pre.src-makefile::before{content:'Makefile'}pre.src-maxima::before{content:'Maxima'}pre.src-perl::before{content:'Perl'}pre.src-picolisp::before{content:'Pico Lisp'}pre.src-scala::before{content:'Scala'}pre.src-shell::before{content:'Shell Script'}pre.src-systemd::before{content:'Systemd'}pre.src-ebnf2ps::before{content:'ebfn2ps'}pre.src-cpp::before{content:'C++'}pre.src-abc::before{content:'ABC'}pre.src-coq::before{content:'Coq'}pre.src-groovy::before{content:'Groovy'}pre.src-bash::before{content:'bash'}pre.src-csh::before{content:'csh'}pre.src-ash::before{content:'ash'}pre.src-dash::before{content:'dash'}pre.src-ksh::before{content:'ksh'}pre.src-mksh::before{content:'mksh'}pre.src-posh::before{content:'posh'}pre.src-ada::before{content:'Ada'}pre.src-asm::before{content:'Assembler'}pre.src-caml::before{content:'Caml'}pre.src-delphi::before{content:'Delphi'}pre.src-html::before{content:'HTML'}pre.src-idl::before{content:'IDL'}pre.src-mercury::before{content:'Mercury'}pre.src-metapost::before{content:'MetaPost'}pre.src-modula-2::before{content:'Modula-2'}pre.src-pascal::before{content:'Pascal'}pre.src-ps::before{content:'PostScript'}pre.src-prolog::before{content:'Prolog'}pre.src-simula::before{content:'Simula'}pre.src-tcl::before{content:'tcl'}pre.src-tex::before{content:'LaTeX'}pre.src-plain-tex::before{content:'TeX'}pre.src-verilog::before{content:'Verilog'}pre.src-vhdl::before{content:'VHDL'}pre.src-nxml::before,pre.src-xml::before{content:'XML'}pre.src-conf::before{content:'Configuration File'}.dropcap{float:left;font-size:55px;font-style:normal;line-height:.1;margin-right:.2em;margin-top:.5em;padding:0}figure,th.org-center,th.org-left,th.org-right{text-align:center}#footnotes,figure figcaption{margin-top:10px;font-family:"Open Sans",sans;font-weight:400;font-size:15px;line-height:1.6;color:var(--text-gray)}img.zoomTarget:hover{cursor:default!important}img,object[type="image/svg+xml"]{filter:invert(7%) sepia(4%);max-width:100%}.org-svg{width:90%}#footnotes{margin-top:70px;padding-top:30px;border-top-style:solid;border-width:1px 0 0;border-color:var(--back-light)}#footnotes h2.footnotes{margin-top:0;margin-bottom:30px;font-family:"Open Sans",sans;font-size:18px;letter-spacing:5px;display:none}#footnotes .footnum{color:var(--text-dark)}h1,h2,h3,h4,h5,h6{font-family:"et-book",serif;font-weight:400;margin-bottom:0;margin-top:60px;padding-left:30px;margin-left:-30px;position:relative}h1>a[aria-hidden=true],h2>a[aria-hidden=true],h3>a[aria-hidden=true],h4>a[aria-hidden=true],h5>a[aria-hidden=true],h6>a[aria-hidden=true]{color:var(--back-medium);position:relative;top:.06em;line-height:1;font-size:110%;padding-left:.2em;text-decoration:none;visibility:hidden}h1>a[aria-hidden=true]:hover,h2>a[aria-hidden=true]:hover,h3>a[aria-hidden=true]:hover,h4>a[aria-hidden=true]:hover,h5>a[aria-hidden=true]:hover,h6>a[aria-hidden=true]:hover{color:var(--text-light)}h1:hover>a[aria-hidden=true],h2:hover>a[aria-hidden=true],h3:hover>a[aria-hidden=true],h4:hover>a[aria-hidden=true],h5:hover>a[aria-hidden=true],h6:hover>a[aria-hidden=true]{visibility:visible}h1{font-size:40px}.outline-2 h2,h2{font-size:30px}h3{font-size:24px}h4,h5,h6{font-size:20px}h4,h6{font-style:italic}h5{font-variant:small-caps}h6{font-size:18px}.section-number-1,.section-number-2,.section-number-3,.section-number-4,.section-number-5,.section-number-6{font-family:"Open Sans",sans;font-weight:400;font-style:normal;font-size:inherit;color:var(--text-light);line-height:1}@media (min-width:1000px){.section-number-1,.section-number-2,.section-number-3,.section-number-4,.section-number-5,.section-number-6{position:absolute;transform:translateX(-100%) translateX(-10px)}}.outline-text-2:-moz-only-whitespace+.outline-3>h3,.outline-text-2:empty+.outline-3>h3{margin-top:20px}.outline-text-3:-moz-only-whitespace+.outline-4>h4,.outline-text-3:empty+.outline-4>h4,.outline-text-4:-moz-only-whitespace+.outline-5>h5,.outline-text-4:empty+.outline-5>h5{margin-top:15px}.outline-text-5:-moz-only-whitespace+.outline-6>h6,.outline-text-5:empty+.outline-6>h6{margin-top:10px}hr{border:0;border-top-style:solid;border-top-width:1px;color:var(--back-medium);margin-bottom:30px;margin-top:40px}a{color:inherit}dl a,figcaption a,li a,p a,table a{border-radius:1px}.page-tags a,dl a,figcaption a,li a,p a,table a{background-image:linear-gradient(var(--text-dark),var(--text-dark));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%;text-decoration:none}#content .page-intro p a::selection,#footnotes a::selection,.page-tags a::selection,dl a::selection,figcaption a::selection,li a::selection,p a::selection,table a::selection{background:var(--back-medium)}#content .page-intro p a *,#content .page-intro p a :after,#content .page-intro p a :before,#content .page-intro p a:after,#content .page-intro p a:before,#footnotes a *,#footnotes a :after,#footnotes a :before,#footnotes a:after,#footnotes a:before,.page-tags a *,.page-tags a :after,.page-tags a :before,.page-tags a:after,.page-tags a:before,dl a *,dl a :after,dl a :before,dl a:after,dl a:before,figcaption a *,figcaption a :after,figcaption a :before,figcaption a:after,figcaption a:before,li a *,li a :after,li a :before,li a:after,li a:before,p a *,p a :after,p a :before,p a:after,p a:before,table a *,table a :after,table a :before,table a:after,table a:before{text-shadow:none}.page-tags a:visited,dl a:visited,figcaption a:visited,li a:visited,p a:visited,table a:visited{color:var(--text-dark)}.page-tags a:hover,dl a:hover,figcaption a:hover,li a:hover,p a:hover,table a:hover{opacity:.9;filter:drop-shadow(1px 1px 1px var(--back-white));background-image:linear-gradient(var(--text-dark),var(--text-dark));background-repeat:repeat-x;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23000000' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E")!important;background-position:0 100%;background-size:.8em auto;text-decoration:none}.page-tags a:hover::selection,.page-tags a[href^="#"]::selection,.page-tags a[href^="#"]:hover::selection,dl a:hover::selection,dl a[href^="#"]::selection,dl a[href^="#"]:hover::selection,figcaption a:hover::selection,figcaption a[href^="#"]::selection,figcaption a[href^="#"]:hover::selection,li a:hover::selection,li a[href^="#"]::selection,li a[href^="#"]:hover::selection,p a:hover::selection,p a[href^="#"]::selection,p a[href^="#"]:hover::selection,table a:hover::selection,table a[href^="#"]::selection,table a[href^="#"]:hover::selection{background:var(--back-white)}.page-tags a[href^="#"],dl a[href^="#"],figcaption a[href^="#"],li a[href^="#"],p a[href^="#"],table a[href^="#"]{background-image:linear-gradient(var(--text-gray),var(--text-gray));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%}.page-tags a[href^="#"]:hover,dl a[href^="#"]:hover,figcaption a[href^="#"]:hover,li a[href^="#"]:hover,p a[href^="#"]:hover,table a[href^="#"]:hover{opacity:.9;filter:drop-shadow(1px 1px 1px var(--back-white));background-image:linear-gradient(var(--text-medium),var(--text-medium));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%}#theme-switch:checked~#page #breadcrumbs a:hover,#theme-switch:checked~#page #crosslinks a:not(.highlight):hover,#theme-switch:checked~#page .page-tags a:hover,#theme-switch:checked~#page dl a:hover,#theme-switch:checked~#page figcaption a:hover,#theme-switch:checked~#page li a:hover,#theme-switch:checked~#page p a:hover,#theme-switch:checked~#page table a:hover{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E")}:target::before{content:"🠖";position:absolute;left:-7rem;top:calc(.5em - 2rem);line-height:1;color:#e65353aa;font-size:3rem;font-style:normal}@media (max-width:1000px){:target::before{content:"🠔";left:unset;right:0}}#content .page-intro p a,#content .page-intro p a:hover,#footnotes a,#footnotes a:hover{background-image:linear-gradient(var(--text-gray),var(--text-gray));background-size:1px 1px;background-repeat:repeat-x;background-position:0 95%;border-radius:1px;text-decoration:none}#content .page-intro p a:hover::selection,#footnotes a:hover::selection{background:var(--back-medium)}#content .page-intro p a:hover *,#content .page-intro p a:hover :after,#content .page-intro p a:hover :before,#content .page-intro p a:hover:after,#content .page-intro p a:hover:before,#footnotes a:hover *,#footnotes a:hover :after,#footnotes a:hover :before,#footnotes a:hover:after,#footnotes a:hover:before{text-shadow:none}.btn,.btn:hover{background-image:none}.btn{padding:7px 14px;border-style:solid;border-width:1px;border-color:var(--back-light);border-radius:1px;font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:14px;font-style:normal;letter-spacing:2px;cursor:pointer}.btn:hover{background-color:var(--back-light)}.btn.disabled,div.link-preview small{color:var(--text-light)}.btn.disabled:hover{cursor:default}.btn.small{border-style:solid;border-width:1px;border-color:var(--back-light);border-radius:1px;font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:12px;font-style:normal;letter-spacing:2px;background-image:none;padding:3px 9px}.btn.small:hover{background-color:var(--back-light);background-image:none}.btn.highlight,.btn.primary{text-shadow:none;text-decoration:none}.btn.highlight{color:var(--text-dark);background-color:#ff0}.btn.primary{color:var(--back-white);background-color:var(--accent)}.btn.primary:hover,.done.active:hover,.page-tags a.active:hover,.tag>span.active:hover,.todo.active:hover{background-color:var(--back-light);background-image:none;color:var(--text-dark)}.image-link,.image-link:hover{background:0 0;text-shadow:none;text-decoration:none}div.link-preview{border:1px solid var(--back-medium);border-radius:.5em;overflow:hidden;position:relative;max-height:5em;padding-left:.5em}div.link-preview a{color:initial;text-decoration:none}div.link-preview img{border-right:1px solid var(--back-medium);float:left;height:5em;margin-left:-.5em;margin-right:.5em}div.link-preview p{margin:0;font-size:10pt}div.link-preview p b{font-size:11pt}div.link-preview small{float:right;font-family:sans;margin:.45em .6em}dl,ol,ul{list-style:none;list-style-position:outside;padding:0}dl dt::before,dl li::before,ol dt::before,ol li::before,ul dt::before,ul li::before{display:inline-block;width:1em;font-family:"Open Sans",sans;font-weight:400;font-size:15px;line-height:1.6;color:var(--text-gray)}dl li,ol li,ul li{margin:5px 0;font-size:14px}dl dt::before,ul li::before{content:"•";margin-left:-1em}ol{counter-reset:li}ol li::before{content:counter(li);margin-left:-1.5em;margin-right:.5em;text-align:right;direction:rtl}ol li{counter-increment:li}ol ol,ul ul{padding-left:20px}ol ol ol,ul ul ul{padding-left:30px}li p:first-child{display:inline-block;margin-bottom:0}dl dt{font-weight:400;margin-bottom:10px}dl dd{font-style:italic;margin-bottom:20px}li .checkbox{display:inline-block;width:.9em;height:.9em;border-radius:3px;margin:3px;top:4px;position:relative}li.on>.checkbox{background:#2d9574;box-shadow:0 0 2px #2d9574}li.trans>.checkbox{background:#dc752f;box-shadow:0 0 2px #dc752f}li.off>.checkbox{background:#ba2f59;box-shadow:0 0 2px #ba2f59;top:6px}li.on>.checkbox::after{content:'';height:.45em;width:.225em;-webkit-transform-origin:left top;transform-origin:left top;transform:scaleX(-1) rotate(135deg);border-right:2.8px solid #fff;border-top:2.8px solid #fff;opacity:.9;left:.1em;top:.45em;position:absolute}li.trans>.checkbox::after{content:'';font-weight:700;font-size:1.6em;position:absolute;top:.2em;left:.11em;width:.35em;height:.12em;background:#fff;opacity:.9;border-radius:.1em}li.off>.checkbox::after{content:'✖';color:#fff;opacity:.9;position:relative;top:-.5rem;left:.17em;font-size:.75em}#org-div-home-and-up{display:none!important}.outline-3 h3{font-style:normal}.outline-2 .section-number-2{font-size:30px}.outline-3 .section-number-3,.outline-3 h3{font-size:24px}.done,.timestamp,.timestamp-kwd,.todo{border-radius:1px;font-family:"Open Sans",sans;font-style:normal;background-color:var(--back-white)}.timestamp,.timestamp-kwd{font-weight:400;font-size:12px;line-height:1.9;color:var(--text-light)}.done,.todo{border-color:var(--back-light);font-variant:all-small-caps;font-size:max(.4em,10px);letter-spacing:2px;background-image:none;line-height:1;white-space:nowrap;vertical-align:middle;padding:.1em .5em;background-color:transparent;border:0;font-weight:700}.page-tags a:hover{background-color:var(--back-light)}.done:hover,.tag>span:hover,.todo:hover{background-color:var(--back-light);background-image:none}.done:not(.active),.page-tags a:not(.active),.tag>span:not(.active),.todo:not(.active){border-color:var(--back-white)}.done.active,.page-tags a.active,.tag>span.active,.todo.active{text-shadow:none;text-decoration:none;color:var(--back-white);background-color:var(--code-foreground)}.outline-2,.outline-3,.outline-4{contain:layout}.outline-2 .done,.outline-2 .todo,.outline-3 .done,.outline-3 .todo,.outline-4 .done,.outline-4 .todo{font-size:18px}.todo{color:#e33}.done,.priority{color:var(--text-light)}.tag>span{border-style:solid;border-width:1px;border-color:var(--back-light);font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:max(.4em,10px);font-style:normal;letter-spacing:2px;background-image:none;line-height:1;white-space:nowrap;vertical-align:middle;padding:.1em .5em;background-color:var(--back-white);border-radius:100px}.priority{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.footref{text-shadow:none}.footpara{display:inline}.footdef{margin-bottom:1em}td.org-right{text-align:right}td.org-left{text-align:left}div.org-center,td.org-center{text-align:center}span.acr{font-variant-caps:all-small-caps;letter-spacing:.1em}.music-track{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}.music-track img{height:6rem;margin-right:2rem}.music-track a{text-decoration:none}.music-track span{min-width:35%}div.table{position:relative}div.table .gutter{left:calc(20px - 2.5rem);padding-top:18px}div.table .tabular{max-width:100%;overflow-x:auto}table,table thead{font-family:"Open Sans",sans;font-size:15px}table{border-color:var(--text-light);border-left:transparent;border-right:transparent;border-style:solid;border-width:2px;border-collapse:collapse;margin:20px;padding:20px}table thead{font-weight:400;font-style:normal;line-height:1.9;color:var(--text-light)}table thead tr th{padding:4px 10px;background-color:#9991}table thead tr:last-of-type th{border-bottom:solid 1px var(--text-light)}table td,table th,table tr{border:0}table tbody tr td{border-top:0;padding:0 10px}table tr{line-height:1.9}table caption,table caption .table-number{font-family:"Open Sans",sans;font-weight:400}table caption{margin-bottom:10px;font-size:15px;line-height:1.6;color:var(--text-gray)}table caption .table-number{font-style:normal;font-size:12px;line-height:1.9;color:var(--text-light)}::-webkit-scrollbar{width:10px;height:8px}::-webkit-scrollbar-track{background:#9992}::-webkit-scrollbar-thumb{background:#ccc}::-webkit-scrollbar-thumb:hover{background:#888}@media (min-width:1280px){#table-of-contents{position:fixed;width:18rem;right:1rem;top:0;padding:1em;line-height:1.5;margin-top:4rem}#table-of-contents h2{margin-top:0}#table-of-contents #text-table-of-contents{position:relative}#table-of-contents #text-table-of-contents::after,#table-of-contents #text-table-of-contents::before{position:absolute;content:'';width:calc(100% - 10px);height:.7rem;left:0;z-index:1}#table-of-contents #text-table-of-contents::before{top:0;background:linear-gradient(180deg,var(--back-light) 0%,var(--back-light) 35%,transparent 100%)}#table-of-contents #text-table-of-contents::after{bottom:0;background:linear-gradient(0deg,var(--back-light) 0%,var(--back-light) 35%,transparent 100%)}#table-of-contents #text-table-of-contents>ul{list-style:none;padding:0;margin:0;max-height:calc(100vh - 5rem - 50px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin}#table-of-contents #text-table-of-contents>ul ul{padding-left:2em}#table-of-contents #text-table-of-contents>ul li.active>ul,#table-of-contents #text-table-of-contents>ul ul.active{display:inline-block}#table-of-contents #text-table-of-contents>ul li.active>a,#table-of-contents #text-table-of-contents>ul li.active>label a{color:var(--text-dark)}#table-of-contents #text-table-of-contents>ul li.active>input:not(:checked)~label::after{transform:rotate(90deg);top:5px;opacity:.35}#table-of-contents #text-table-of-contents>ul>li:last-child{margin-bottom:2rem}}@media (min-width:1440px){#table-of-contents{width:20rem;right:2rem}}@media (min-width:1640px){#table-of-contents{right:5rem}}@media (min-width:2000px){#table-of-contents{width:25rem}}#table-of-contents #text-table-of-contents ul{width:100%}#table-of-contents #text-table-of-contents li input[type=checkbox],#table-of-contents #text-table-of-contents>ul ul{display:none}#table-of-contents #text-table-of-contents li label{display:inline-block;width:100%;position:relative}#table-of-contents #text-table-of-contents li a{display:inline-block;color:var(--text-gray);text-decoration:none!important;text-shadow:none;background:0 0!important}#table-of-contents #text-table-of-contents li label::after{content:"\25b6";color:var(--text-gray);margin-left:.5em;font-size:10px;display:inline-block;position:absolute;top:3.4px;left:-20px;opacity:.8}#table-of-contents #text-table-of-contents li input:checked~ul{display:inline-block!important}#table-of-contents #text-table-of-contents li input:checked~label a{font-weight:700}#table-of-contents #text-table-of-contents li input:checked~label::after{transform:rotate(90deg);top:5px}#table-of-contents #text-table-of-contents li::before{content:""!important}.page-tags a{border-style:solid;border-width:1px;border-color:var(--back-light);border-radius:1px;font-family:"Open Sans",sans;font-variant:all-small-caps;font-size:max(.4em,10px);font-style:normal;letter-spacing:2px;background-image:none;white-space:nowrap;vertical-align:middle;padding:.1em .5em;background-color:var(--back-white);margin-right:5px;line-height:3em}@media print{h2{page-break-before:always}h1,h2,h3,h4,h5{page-break-after:avoid}#switch-label,#table-of-contents #text-table-of-contents li label::after{display:none}#content,#page-header{margin-top:0}#table-of-contents #text-table-of-contents>ul ul{display:inline-block}#table-of-contents #text-table-of-contents>ul a::after{content:leader(".") target-counter(attr(href),page)}img{filter:none}}@page{size:auto;margin-top:4mm;margin-bottom:4mm}</style>
+</head>
+<body>
+<input type='checkbox' id='theme-switch'><div id='page'><label id='switch-label' for='theme-switch'></label><div id="content">
+<header class="page-header"><div class="page-meta"><!--<a href="https://github.com/shaunsingh/org/commit/44ca190" style="text-decoration: none"><code style="padding: 0; color: var(--text-light); font-size: inherit; opacity: 0.7">44ca190</code></a>--> 2021-07-30 10:37 EDT, <a href="https://github.com/shaunsingh/org/commit/44ca190" style="text-decoration: none"><code style="padding: 0; color: var(--text-light); font-size: inherit; opacity: 0.7">44ca190</code></a>, Shaurya Singh</div>
+
+<h1 class="title">Ap Chem Summer Assignment #2</h1>
+</header><nav id="table-of-contents">
+<h2><a href="#" style="color:inherit; text-decoration: none;">Table of Contents</a></h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org2ae3c1b">1. Summer Assignment 2</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-org2ae3c1b" class="outline-2">
+<h2 id="org2ae3c1b"><span class="section-number-2">1.</span> Summer Assignment 2<a aria-hidden="true" href="#org2ae3c1b">#</a> </h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org62ef0a5" class="outline-3">
+<h3 id="org62ef0a5"><span class="section-number-3">1.1.</span> What is the charge on the following:<a aria-hidden="true" href="#org62ef0a5">#</a> </h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li>The cation in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c61f408249faf54c839930614911bf35d60d8492.svg" alt="chemhw_c61f408249faf54c839930614911bf35d60d8492.svg"> has a charge of 1+, with <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b4af56fc50375461c1c750d265128147b6dc628c.svg" alt="chemhw_b4af56fc50375461c1c750d265128147b6dc628c.svg"> being the cation.</li>
+<li>The sulfate ion has a charge of 2-</li>
+<li>The barium ion has a charge of 2+</li>
+<li>The nitrate ion has a charge of 1-</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org38f3fae" class="outline-3">
+<h3 id="org38f3fae"><span class="section-number-3">1.2.</span> How many protons, neutrons, and electrons are in:<a aria-hidden="true" href="#org38f3fae">#</a> </h3>
+<div class="outline-text-3" id="text-1-2">
+<ol class="org-ol">
+<li>Uranium-235 has <b>92 protons</b>, since it has an atomic number of 92. It also has <b>143 neutrons</b>, since <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_390dfe604261d51aa3c32b3a8c902a06c4f3ee57.svg" alt="chemhw_390dfe604261d51aa3c32b3a8c902a06c4f3ee57.svg">. Lastly, it has <b>92 electrons</b>, since it has no charge so the number of protons must equal the number of electrons.</li>
+<li>Uranium-238 has <b>92 protons</b>, since it has an atomic number of 92. It also has <b>146 neutrons</b>, since <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d3288144ed745a82a513ca3e5e81b1a89772a180.svg" alt="chemhw_d3288144ed745a82a513ca3e5e81b1a89772a180.svg">. Lastly, it has <b>92 electrons</b>, since it has no charge so the number of protons must equal the number of electrons.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd04b89a" class="outline-3">
+<h3 id="orgd04b89a"><span class="section-number-3">1.3.</span> Elements in the same vertical column in the periodic table have similar what?<a aria-hidden="true" href="#orgd04b89a">#</a> </h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Elements in the same vertical column in the periodic table will be in the same group. Therefore, they will have the same amount of valence electrons.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org227d024" class="outline-3">
+<h3 id="org227d024"><span class="section-number-3">1.4.</span> An element “E” is present as 10 E with a mass value of 10.01 amu, and as 11 E with a mass value of 11.01 amu. The natural abundances of 10 E and 11 E are 19.78% and 80.22% respectively. What is the average atomic mass of the element? What is the element?<a aria-hidden="true" href="#org227d024">#</a> </h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+In order to calculate the average atomic mass of the element, we must take the weighted average of the two isotopes against their percentage abundance. Multiplying that out, we get
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f86d19400a7c5eb716ef195514ae09a20ef8700f.svg" alt="chemhw_f86d19400a7c5eb716ef195514ae09a20ef8700f.svg">
+</span>
+</div>
+<p>
+Where x is the average atomic mass. Solving for x we get
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_8393f9d0585f428dfdaacf0bf38bcf6960ed89ba.svg" alt="chemhw_8393f9d0585f428dfdaacf0bf38bcf6960ed89ba.svg">
+</span>
+</div>
+<p>
+Since we must round to 4 significant figures, the correct answer is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c776c5cb3e29da6228bddf0caae945c618cd843d.svg" alt="chemhw_c776c5cb3e29da6228bddf0caae945c618cd843d.svg">
+</span>
+</div>
+<p>
+Therefore, the element has an average atomic mass of <b>10.81 amu</b>. Looking at the periodic table, the element with an average atomic mass of 10.81 is <b>Boron</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org71630c1" class="outline-3">
+<h3 id="org71630c1"><span class="section-number-3">1.5.</span> Naturally occurring sulfur consists of four isotopes, 32 S (95.0%), 33 S (0.76%), 34 S(4.22%), and 36 S(0.014%). Using this data, calculate the atomic weight of naturally occurring sulfur. The masses of the isotopes are given in the table below.<a aria-hidden="true" href="#org71630c1">#</a> </h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+In order to calculate the atomic weight of Sulfur, we must take the weighted average of the 4 isotopes against their percentage abundance. Multiplying that out, we get
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f4ccebef283cea4b04fa0d13e60660241f4298bd.svg" alt="chemhw_f4ccebef283cea4b04fa0d13e60660241f4298bd.svg">
+</span>
+</div>
+<p>
+Where x is the atomic weight. Solving for x we get
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_fe23a4601cc02a8c57e69471ac1e485dfbb12ba4.svg" alt="chemhw_fe23a4601cc02a8c57e69471ac1e485dfbb12ba4.svg">
+</span>
+</div>
+<p>
+Since we must round to 5 significant figures, the correct answer is
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_cd24fcca4f28fd59b082f142223efee931e07439.svg" alt="chemhw_cd24fcca4f28fd59b082f142223efee931e07439.svg">
+</span>
+</div>
+<p>
+Therefore, the element has an atomic weight of <b>32.062 amu</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8d2d5e5" class="outline-3">
+<h3 id="org8d2d5e5"><span class="section-number-3">1.6.</span> Explain each of the following:<a aria-hidden="true" href="#org8d2d5e5">#</a> </h3>
+<div class="outline-text-3" id="text-1-6">
+<ol class="org-ol">
+<li>Alpha radiation penetrates a much shorter distance into a piece of material than does beta radiation of the same energy.
+<ol class="org-ol">
+<li>This is because when nucleons are combined in nuclei, some of their mass is converted into energy, which is called binding energy. This energy is released and stabilizes the nucleus</li>
+</ol></li>
+<li>Define the word isotope. Distinguish between isotope and isomer. Describe the differences between alpha, beta, and gamma particles.
+<ol class="org-ol">
+<li>An isotope in chemistry is two or more forms of the same element that contain equal numbers of protons but different numbers of neutrons in their nuclei. They differ in atomic mass, but share similar chemical properties</li>
+<li>An isomer is two or more compounds with the same formula but a different arrangement of atoms in the molecules. Unlike isotopes, isomers have different properties.</li>
+<li>Alpha particles are fully ionized helium nuclei, ejected by the decay of a radioactive isotope atom. Beta Particles are highly energetic electrons or positrons ejected by the decay of a neutron or proton in a radioactive isotope atom. Gamma radiation comprises of highly energetic photons above the x-ray energy range that may arise in nuclear decay</li>
+</ol></li>
+<li>Nuclear fusion requires large amounts of energy and to get started, whereas nuclear fission can occur spontaneously, although both processes release energy.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org523810b" class="outline-3">
+<h3 id="org523810b"><span class="section-number-3">1.7.</span> How many moles are in a sample of 300 atoms of Nitrogen (N)? How many grams?<a aria-hidden="true" href="#org523810b">#</a> </h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+One mole contains <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_aa448f8a1acfc16b4cdbcab860f847ae65c77af5.svg" alt="chemhw_aa448f8a1acfc16b4cdbcab860f847ae65c77af5.svg"> atoms, or Avogadro&rsquo;s number. As a result, 300 atoms of nitrogen contain:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_3dc7ccfb968d57f3baf4104428ffe9981717fb56.svg" alt="chemhw_3dc7ccfb968d57f3baf4104428ffe9981717fb56.svg">
+</span>
+</div>
+<p>
+Therefore, there are <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_e253f362555510d6f0c5cee9210cbbb668b5b8cb.svg" alt="chemhw_e253f362555510d6f0c5cee9210cbbb668b5b8cb.svg"> in 300 atoms of Nitrogen. Since 1 mol = 1 gram, 300 atoms of Nitrogen have a mass of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a822c239c5898447859ac52d52abeadf1c0948f7.svg" alt="chemhw_a822c239c5898447859ac52d52abeadf1c0948f7.svg">.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org641cb6f" class="outline-3">
+<h3 id="org641cb6f"><span class="section-number-3">1.8.</span> A sample of sulfur (S) has a mass of 5.37 g. How many moles are in the sample? How many atoms?<a aria-hidden="true" href="#org641cb6f">#</a> </h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+Sulfur has a molar mass of 32amu. Therefore, it has a molar mass of
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_834901c0c56d5f17cdc2eb0f688c5042283dc1e6.svg" alt="chemhw_834901c0c56d5f17cdc2eb0f688c5042283dc1e6.svg">.
+With that information we can make the following equation:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b475bcf5382e7ea7199dd5834ef71697f83619a2.svg" alt="chemhw_b475bcf5382e7ea7199dd5834ef71697f83619a2.svg">
+</span>
+</div>
+<p>
+To convert that to atoms, we can use Avogadro&rsquo;s number (<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_aa448f8a1acfc16b4cdbcab860f847ae65c77af5.svg" alt="chemhw_aa448f8a1acfc16b4cdbcab860f847ae65c77af5.svg">).
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_3bd4c09daa42ebedb2474f46a12135f0e21fe530.svg" alt="chemhw_3bd4c09daa42ebedb2474f46a12135f0e21fe530.svg">
+</span>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org49fb9b9" class="outline-3">
+<h3 id="org49fb9b9"><span class="section-number-3">1.9.</span> How many grams of zinc are in 1.16 x 10 22 atoms of zinc (Zn)?<a aria-hidden="true" href="#org49fb9b9">#</a> </h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f0c9b7bd57f6efdcfdb9eda2a1f2c61a0dde1a87.svg" alt="chemhw_f0c9b7bd57f6efdcfdb9eda2a1f2c61a0dde1a87.svg"> or <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c047e1a3c5a4a3d9be72a580d7ac01e56da7f6da.svg" alt="chemhw_c047e1a3c5a4a3d9be72a580d7ac01e56da7f6da.svg">
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga7157f9" class="outline-3">
+<h3 id="orga7157f9"><span class="section-number-3">1.10.</span> Calculate the number of grams per mole (gfm) for each of the following:<a aria-hidden="true" href="#orga7157f9">#</a> </h3>
+<div class="outline-text-3" id="text-1-10">
+<ol class="org-ol">
+<li><p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_287910e3e35feb341bb28a35e3b17c77e25a0aaa.svg" alt="chemhw_287910e3e35feb341bb28a35e3b17c77e25a0aaa.svg">
+To find the molar mass of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_287910e3e35feb341bb28a35e3b17c77e25a0aaa.svg" alt="chemhw_287910e3e35feb341bb28a35e3b17c77e25a0aaa.svg">, we must take the molar mass of
+each element in the molecule, and add it together.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_421565515c0115e23c93af76cea16129b3c4d151.svg" alt="chemhw_421565515c0115e23c93af76cea16129b3c4d151.svg"> (Copper) has a molar mass of 63.546 g/mol.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1fd32e77b8cf16b63ccde16248b1aab79107c3df.svg" alt="chemhw_1fd32e77b8cf16b63ccde16248b1aab79107c3df.svg"> (Sulfur) has a molar mass of 32.065 g/mol.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg" alt="chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg"> (Oxygen) has a molar mass of 16 g/mol. Since we have 4 oxygen
+atoms, the actual molar mass would be <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c169498545d2fc0f7bae35f5defcbb43bf79ce62.svg" alt="chemhw_c169498545d2fc0f7bae35f5defcbb43bf79ce62.svg"> g/mol
+</p>
+
+<p>
+Combining the molar mass of the 3 elements, we get
+</p>
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_71aaf8d45b34b929113b95666c056ad135c403df.svg" alt="chemhw_71aaf8d45b34b929113b95666c056ad135c403df.svg">
+</span>
+<span class="equation-label">
+1
+</span>
+</div>
+<p>
+With 4 significant figures, the answer is <b><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_d52bf496554609f3652114c0fd478676ae40677d.svg" alt="chemhw_d52bf496554609f3652114c0fd478676ae40677d.svg"></b>.
+</p></li>
+
+<li><p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg" alt="chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg">
+To find the molar mass of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg" alt="chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg"> we must take the molar mass of each element in the molecule, and add it together.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c74c7316e987c860f686c52cb9436a4284d5606f.svg" alt="chemhw_c74c7316e987c860f686c52cb9436a4284d5606f.svg"> (Nitrogen) has a molar mass of 14.0067 g/mol.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg" alt="chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg"> (Oxygen) has a molar mass of 15.9994 g/mol.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg" alt="chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg"> (Hydrogen) has a molar mass of 1.00794 g/mol. Since we have 5
+Hydrogen molecules, that means the molar mass for this element will be
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_9f0cc6c03ecb7a01bcfa6e54576bfa9cf98b977e.svg" alt="chemhw_9f0cc6c03ecb7a01bcfa6e54576bfa9cf98b977e.svg">.
+</p>
+
+<p>
+Combining the molar mass of the 3 elements, we get
+</p>
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4013163ec958fe29c464905864872210088bdf26.svg" alt="chemhw_4013163ec958fe29c464905864872210088bdf26.svg">
+</span>
+<span class="equation-label">
+2
+</span>
+</div>
+<p>
+With 6 significant figures, the answer is <b><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_dfa1a1c30bae1fde8798615621c54866e13f56c6.svg" alt="chemhw_dfa1a1c30bae1fde8798615621c54866e13f56c6.svg"></b>
+</p></li>
+
+<li><p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg" alt="chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg">
+To find the molar mass of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg" alt="chemhw_7fa5b514c9633589b00d3e728dc9e02597a26df9.svg"> we must take the molar mass of each element in the molecule, and add it together.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c74c7316e987c860f686c52cb9436a4284d5606f.svg" alt="chemhw_c74c7316e987c860f686c52cb9436a4284d5606f.svg"> (Nitrogen) has a molar mass of 14.0067 g/mol.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg" alt="chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg"> (Oxygen) has a molar mass of 15.9994 g/mol.
+</p>
+
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg" alt="chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg"> (Hydrogen) has a molar mass of 1.00794 g/mol. Since we have 5
+Hydrogen molecules, that means the molar mass for this element will be
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_9f0cc6c03ecb7a01bcfa6e54576bfa9cf98b977e.svg" alt="chemhw_9f0cc6c03ecb7a01bcfa6e54576bfa9cf98b977e.svg">.
+</p>
+
+<p>
+Combining the molar mass of the 3 elements, we get
+</p>
+
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_4013163ec958fe29c464905864872210088bdf26.svg" alt="chemhw_4013163ec958fe29c464905864872210088bdf26.svg">
+</span>
+<span class="equation-label">
+3
+</span>
+</div>
+<p>
+With 6 significant figures, the answer is <b><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_dfa1a1c30bae1fde8798615621c54866e13f56c6.svg" alt="chemhw_dfa1a1c30bae1fde8798615621c54866e13f56c6.svg"></b>
+</p></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org125f3d5" class="outline-3">
+<h3 id="org125f3d5"><span class="section-number-3">1.11.</span> How many moles of cadmium bromide (<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a236269ef975e1bac419ddeea9a54336314faf9c.svg" alt="chemhw_a236269ef975e1bac419ddeea9a54336314faf9c.svg">) are in a 39.25 g sample?<a aria-hidden="true" href="#org125f3d5">#</a> </h3>
+<div class="outline-text-3" id="text-1-11">
+<p>
+For this we can use Avogadro&rsquo;s number. One mole contains <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_acaf87d68874acc5df8a7adb82cc938b2975c7bd.svg" alt="chemhw_acaf87d68874acc5df8a7adb82cc938b2975c7bd.svg"> particles. From that we get the following
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_008f3a819b82fe40fcdac412503f0b88318a3305.svg" alt="chemhw_008f3a819b82fe40fcdac412503f0b88318a3305.svg">
+</span>
+</div>
+<p>
+Therefore, we can get
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_97bbfa23235b85b97be45096a066bfbdfcd505a7.svg" alt="chemhw_97bbfa23235b85b97be45096a066bfbdfcd505a7.svg">
+</span>
+</div>
+<p>
+Rounding to 4 significant figures, there will be <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_57de51ac4383275239a432130ced312a0d72c632.svg" alt="chemhw_57de51ac4383275239a432130ced312a0d72c632.svg"> moles of cadmium bromide in a 39.25 g sample
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf4f6bcf" class="outline-3">
+<h3 id="orgf4f6bcf"><span class="section-number-3">1.12.</span> <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f17636576e0baf0352e117dd461e6e7a423585b8.svg" alt="chemhw_f17636576e0baf0352e117dd461e6e7a423585b8.svg"> boils at 78 °C and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_16abf15ef221558d33beddab151304adda9830f8.svg" alt="chemhw_16abf15ef221558d33beddab151304adda9830f8.svg"> boils at - 24 °C, although both compounds have the same composition. This difference in boiling points may be attributed to a difference in<a aria-hidden="true" href="#orgf4f6bcf">#</a> </h3>
+<div class="outline-text-3" id="text-1-12">
+<p>
+The answer is D. Hydrogen bonding. The extra hydrogen bonds of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f17636576e0baf0352e117dd461e6e7a423585b8.svg" alt="chemhw_f17636576e0baf0352e117dd461e6e7a423585b8.svg"> make it harder to separate molecules, as more heat and energy is required, resulting in a higher boiling point compared to <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_16abf15ef221558d33beddab151304adda9830f8.svg" alt="chemhw_16abf15ef221558d33beddab151304adda9830f8.svg">
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc74688a" class="outline-3">
+<h3 id="orgc74688a"><span class="section-number-3">1.13.</span> Which of the following elements has the smallest ionization energy? Explain.<a aria-hidden="true" href="#orgc74688a">#</a> </h3>
+<div class="outline-text-3" id="text-1-13">
+<p>
+Ionization energy decreases down a group, and increases from left to right across a period. Therefore, Potassium has the smallest ionization energy
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6fe0ff2" class="outline-3">
+<h3 id="org6fe0ff2"><span class="section-number-3">1.14.</span> Which of the following represents the ground state electron configuration for the Mn 3+ ion? (Atomic number Mn = 25) (Hint: first write the e - config of Mn atom, then try the Mn 3+ ion.)<a aria-hidden="true" href="#org6fe0ff2">#</a> </h3>
+<div class="outline-text-3" id="text-1-14">
+<p>
+The electron configuration for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_a74a3063f86e1a692fb5681c29269fb3755be55e.svg" alt="chemhw_a74a3063f86e1a692fb5681c29269fb3755be55e.svg"> is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_96da5dc13680022ab381c2c1f10f6c12ed31bc7e.svg" alt="chemhw_96da5dc13680022ab381c2c1f10f6c12ed31bc7e.svg">. The 3+ ion will have 3 fewer electrons, since a positive charge indicates more protons than electrons. Therefore, the electron configuration of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_657fa2dcfac044b67716681af8c24c85cfccaf49.svg" alt="chemhw_657fa2dcfac044b67716681af8c24c85cfccaf49.svg"> is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_7aa6027e2789f5b10b8d3afc4a6246218b0f70be.svg" alt="chemhw_7aa6027e2789f5b10b8d3afc4a6246218b0f70be.svg">, and the correct option is <b>A</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2fe0a1b" class="outline-3">
+<h3 id="org2fe0a1b"><span class="section-number-3">1.15.</span> Which of the following represents an excited state?<a aria-hidden="true" href="#org2fe0a1b">#</a> </h3>
+<div class="outline-text-3" id="text-1-15">
+<p>
+Option <b>D</b>, <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_65ef6d23d2282172b5043999b6a51ca664dad0fd.svg" alt="chemhw_65ef6d23d2282172b5043999b6a51ca664dad0fd.svg"> is in an excited state, as it skips the final electron in the 3d orbital.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org534a50e" class="outline-3">
+<h3 id="org534a50e"><span class="section-number-3">1.16.</span> The table above shows the first three ionization energies for atoms of four elements from the third period of the periodic table. Answer the following questions.<a aria-hidden="true" href="#org534a50e">#</a> </h3>
+<div class="outline-text-3" id="text-1-16">
+<ol class="org-ol">
+<li>What is the chemical symbol for element 3, explain your reasoning.
+The third element is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_dae80870648f02cc7b8aad0d6d707633dd45f521.svg" alt="chemhw_dae80870648f02cc7b8aad0d6d707633dd45f521.svg">, or Magnesium. It has low first and second ionization energies relative to the third, which means it has two valence electrons. Magnesium is the element with two valence electrons in the third period of the periodic table</li>
+
+<li>Write the complete electron configuration of element 3.
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_dae80870648f02cc7b8aad0d6d707633dd45f521.svg" alt="chemhw_dae80870648f02cc7b8aad0d6d707633dd45f521.svg"> has an atomic number of 12, therefore the electron configuration of Magnesium is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_2a9fd5cba546a903d5aff4b8415d8acc316e46aa.svg" alt="chemhw_2a9fd5cba546a903d5aff4b8415d8acc316e46aa.svg"></li>
+
+<li>What is the chemical symbol for element 2 and what is the expected ion charge for its most common ion?
+The symbol for element 2 is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0857a4666be288288f1e79a5fdb1a66fd59707e1.svg" alt="chemhw_0857a4666be288288f1e79a5fdb1a66fd59707e1.svg">, and the expect ion charge for its most common ion is 1+.</li>
+
+<li>A neutral atom of which of the four elements above has the smallest radius? Write the symbol for this element and explain this using the first ionization values given.
+Element 1, Atomic radius has a trend from right to left across a period, while ionization energy has a trend from left to right across a period. Since element 1 has the highest ionization energy, it would have the smallest atomic radius</li>
+
+<li>Which would have a higher electronegativity, element 1 or 4? Briefly explain.
+Element 1 would have a higher electronegativity. Both electronegativity and ionization energy follow the same trend, this means that the element with the higher ionization energy will have a higher electronegativity. In this case, that is element 1.</li>
+
+<li>The elements are <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg" alt="chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg">, <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_0857a4666be288288f1e79a5fdb1a66fd59707e1.svg" alt="chemhw_0857a4666be288288f1e79a5fdb1a66fd59707e1.svg">, <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_dae80870648f02cc7b8aad0d6d707633dd45f521.svg" alt="chemhw_dae80870648f02cc7b8aad0d6d707633dd45f521.svg">, and <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_1fd32e77b8cf16b63ccde16248b1aab79107c3df.svg" alt="chemhw_1fd32e77b8cf16b63ccde16248b1aab79107c3df.svg"> respectively.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9afa006" class="outline-3">
+<h3 id="org9afa006"><span class="section-number-3">1.17.</span> Calculate the mass percent of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg" alt="chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg"> in each of the following compounds<a aria-hidden="true" href="#org9afa006">#</a> </h3>
+<div class="outline-text-3" id="text-1-17">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg" alt="chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg">  has a Mass Percent of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_fa2552582f09fe798e1c684b35d6551bcfe6f4f1.svg" alt="chemhw_fa2552582f09fe798e1c684b35d6551bcfe6f4f1.svg"> in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_eb9697d499488cc20ba841a3726aea2d431c162d.svg" alt="chemhw_eb9697d499488cc20ba841a3726aea2d431c162d.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg" alt="chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg">  has a Mass Percent of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b3b65244c8600331486f14bcac2b773c7c6b39f6.svg" alt="chemhw_b3b65244c8600331486f14bcac2b773c7c6b39f6.svg"> in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_2ef71fb17a25f4db507bfbf7a302ecd42697585f.svg" alt="chemhw_2ef71fb17a25f4db507bfbf7a302ecd42697585f.svg"></li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg" alt="chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg">  has a Mass Percent of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5d9984a48085d2acc87971b77a7da808c66fd0dd.svg" alt="chemhw_5d9984a48085d2acc87971b77a7da808c66fd0dd.svg"> in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_8ca3e5b26078fdb5e0990ad4769e8a8d27718644.svg" alt="chemhw_8ca3e5b26078fdb5e0990ad4769e8a8d27718644.svg"></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org15642db" class="outline-3">
+<h3 id="org15642db"><span class="section-number-3">1.18.</span> Calculate the mass percent of each element in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg" alt="chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg">, or barium hydroxide octahydrate<a aria-hidden="true" href="#org15642db">#</a> </h3>
+<div class="outline-text-3" id="text-1-18">
+<ol class="org-ol">
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_11c9e44be3b37163d65d30a5e0a6c3abfe1e7f22.svg" alt="chemhw_11c9e44be3b37163d65d30a5e0a6c3abfe1e7f22.svg">  has a Mass Percent of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_23b841bff274fc8048fc7504f92d28af682c6dcd.svg" alt="chemhw_23b841bff274fc8048fc7504f92d28af682c6dcd.svg"> in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg" alt="chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg">,</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg" alt="chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg">  has a Mass Percent of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_43574a702e8b10b37153fbde0eb8f75bcb4a5114.svg" alt="chemhw_43574a702e8b10b37153fbde0eb8f75bcb4a5114.svg"> in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg" alt="chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg">,</li>
+<li><img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg" alt="chemhw_80e53084bc06de8f0f51e0f6325d8317a6113eec.svg">  has a Mass Percent of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_14938137ef0c83e997b44af3ed696ea67e547cb3.svg" alt="chemhw_14938137ef0c83e997b44af3ed696ea67e547cb3.svg"> in <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg" alt="chemhw_92646bf496a6c88ff9adb45f940875e5d2dac2f2.svg">,</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6dbb743" class="outline-3">
+<h3 id="org6dbb743"><span class="section-number-3">1.19.</span> A compound is found, by mass spectral analysis, to contain the following percentages of elements by mass, C = 49.67%, Cl = 48.92%, H = 1.39%, The molar mass of the compound is 289.9 g/mole. Determine the empirical and molecular formulas of the compound.<a aria-hidden="true" href="#org6dbb743">#</a> </h3>
+<div class="outline-text-3" id="text-1-19">
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b74676c5a4e0e91ccdcfa1f48801b7c158155cf1.svg" alt="chemhw_b74676c5a4e0e91ccdcfa1f48801b7c158155cf1.svg">
+</span>
+</div>
+<p>
+From that we can calculate the following ratios:
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_083b7c2a49797b4c932b4193f78e6b261a475634.svg" alt="chemhw_083b7c2a49797b4c932b4193f78e6b261a475634.svg">
+</span>
+</div>
+<p>
+Since <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_27acc38f07f3eac7a2134dd4ec28a7d138f611b5.svg" alt="chemhw_27acc38f07f3eac7a2134dd4ec28a7d138f611b5.svg">, <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg" alt="chemhw_70c25d8bd7f70a78e4efa5ada3e6783de4fe45f1.svg">, and  <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg" alt="chemhw_c457637cb14b0e0143cfcfe9d77c6dc5156a3c31.svg"> have a ratio of <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_9b0785edcc47bcdfaba10d30f73c86cd7c98febe.svg" alt="chemhw_9b0785edcc47bcdfaba10d30f73c86cd7c98febe.svg">, the molecular formula will be <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_032e7c15d6cc6a162385393e224eda27b40304b7.svg" alt="chemhw_032e7c15d6cc6a162385393e224eda27b40304b7.svg"> To calculate the empirical formula we solve for n
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f3fe7dc7f888465fa31a0b5fcf7f89294d480df8.svg" alt="chemhw_f3fe7dc7f888465fa31a0b5fcf7f89294d480df8.svg">
+</span>
+</div>
+<p>
+Therefore, we can substitute 4 for n.
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_f3f0419c4e14918c0a0bcb083a92310c61f8ab74.svg" alt="chemhw_f3f0419c4e14918c0a0bcb083a92310c61f8ab74.svg">
+</span>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3ce52a8" class="outline-3">
+<h3 id="org3ce52a8"><span class="section-number-3">1.20.</span> Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%<a aria-hidden="true" href="#org3ce52a8">#</a> </h3>
+<div class="outline-text-3" id="text-1-20">
+<p>
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_18c59aa08df70da0b8dc6f4119c058455737b1a9.svg" alt="chemhw_18c59aa08df70da0b8dc6f4119c058455737b1a9.svg">
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6686bcd" class="outline-3">
+<h3 id="org6686bcd"><span class="section-number-3">1.21.</span> Aspartame is an artificial sweetener used in food and beverages that is 160 times sweeter than sucrose.<a aria-hidden="true" href="#org6686bcd">#</a> </h3>
+<div class="outline-text-3" id="text-1-21">
+<ol class="org-ol">
+<li>Using the molecular structure, determine the molecular formula of aspartame, using this format <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_b32f093451ee0a4b3447c4efac97d87f1124923f.svg" alt="chemhw_b32f093451ee0a4b3447c4efac97d87f1124923f.svg">
+There are 17 hydrogen atoms, 14 Carbon atoms, 2 Nitrogen atoms, and 5 Oxygen atoms. Therefore, the answer would be <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_36e8d3a9b358b6675a018a58ab8536886591dcfa.svg" alt="chemhw_36e8d3a9b358b6675a018a58ab8536886591dcfa.svg"></li>
+<li><p>
+How many molecules are present in 10.0 mg of aspartame? How many hydrogen atoms? O atoms?
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_301a6ffeb1c044da6ccfb241b336f89277259a1f.svg" alt="chemhw_301a6ffeb1c044da6ccfb241b336f89277259a1f.svg">
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_630081edfcaefa54a6e302f1d546381fcf81cc06.svg" alt="chemhw_630081edfcaefa54a6e302f1d546381fcf81cc06.svg">
+</span>
+</div>
+<p>
+Therefore, there are <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_334bb43e1ee319d3e8f4fdfd4685fe567f2f5179.svg" alt="chemhw_334bb43e1ee319d3e8f4fdfd4685fe567f2f5179.svg"> of aspartame in 10 grams
+Multiplied by Avogadro&rsquo;s number, that&rsquo;s <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_498e244548068a49032c5825e5dd1342142e098d.svg" alt="chemhw_498e244548068a49032c5825e5dd1342142e098d.svg"> molecules.
+</p></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4c0af9a" class="outline-3">
+<h3 id="org4c0af9a"><span class="section-number-3">1.22.</span> Watch the following video on making a solution and how to calculate molarity:<a aria-hidden="true" href="#org4c0af9a">#</a> </h3>
+<div class="outline-text-3" id="text-1-22">
+<ol class="org-ol">
+<li>Describe how you would make 100.0 mL of a 1.0 M solution of lithium chloride.</li>
+</ol>
+<p>
+We have a <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_03bbbf01e08e923779284ed17622438a5b3168b4.svg" alt="chemhw_03bbbf01e08e923779284ed17622438a5b3168b4.svg"> solution, which translates to  a <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6a846df84006468617e9d19b3ce573b097cd8def.svg" alt="chemhw_6a846df84006468617e9d19b3ce573b097cd8def.svg">
+We need to find the value for <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_bc5cc3472a903fc40ca2b0665595868a6239ba58.svg" alt="chemhw_bc5cc3472a903fc40ca2b0665595868a6239ba58.svg">, or <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_5500102ad6d090cba0cf5bb607761b804d87984f.svg" alt="chemhw_5500102ad6d090cba0cf5bb607761b804d87984f.svg">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_bdc3929b49463393df76308dca766cb84ed627b3.svg" alt="chemhw_bdc3929b49463393df76308dca766cb84ed627b3.svg">
+We can plug that into this equation, and solve for x
+</p>
+
+<div class="equation-container">
+<span class="equation">
+<img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_720d986ce99b1be0cb1277ec547a1ad3626a6aef.svg" alt="chemhw_720d986ce99b1be0cb1277ec547a1ad3626a6aef.svg">
+</span>
+</div>
+<p>
+Therefore, in order to get 100mL of lithium chloride, we must need 4.2394g of lithium chloride
+</p>
+<ol class="org-ol">
+<li>First we must get our lithium chloride.</li>
+<li>Afterwards, using our electronic balance, lab scoop, and weighing paper we can measure out 4.2394g of LiCl.</li>
+<li>Once we calculate that out, we can use a 100.0mL volumetric flask to measure it.</li>
+<li>Since the molarity is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_6a846df84006468617e9d19b3ce573b097cd8def.svg" alt="chemhw_6a846df84006468617e9d19b3ce573b097cd8def.svg">, 100% of the solution is <img src="file:///Users/shauryasingh/.emacs.d/.local/cache/org-latex/chemhw_8c9bf038cd3673f423a3278754512c984751c1e8.svg" alt="chemhw_8c9bf038cd3673f423a3278754512c984751c1e8.svg">, and no water is required.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: <!--<a href="https://github.com/shaunsingh/org/commit/44ca190" style="text-decoration: none"><code style="padding: 0; color: var(--text-light); font-size: inherit; opacity: 0.7">44ca190</code></a>--> 2021-07-30 10:37 EDT, <a href="https://github.com/shaunsingh/org/commit/44ca190" style="text-decoration: none"><code style="padding: 0; color: var(--text-light); font-size: inherit; opacity: 0.7">44ca190</code></a></p>
+<p class="author">Author: Shaurya Singh</p>
+<p class="date">Created: 2021-07-31 Sat 23:49</p>
+</div>
+</div>
+</body>
+</html>
