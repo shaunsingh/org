@@ -2,5 +2,49 @@
 :ID:       a419f03c-a515-4e36-ac78-a705d6b92b63
 :END:
 #+title: Testing1
-Testing org roam No. 1
-[[id:36ca0b99-19de-4bd6-b392-100811f1a9a1][History]]
+Testing org roam
+
+J+W = 50 hours
+Total water used = 1100L
+J used 24J
+W used 20W
+
+$24J + 20W = 1100$
+$J=50-w$
+
+$24(50-w)+20w=1100$
+$w=25$
+
+$J=50-25$
+$J = 25$
+
+27:
+\begin{align*}
+&y=mx+b\\
+&y=total\ weight\ of\ plane\\
+&x=gallons\ of\ fuel\\
+&m=slope\\
+&b=weight\ of\ plane\\
+&\\
+&x=47,\ m=5.5,\ b=2258.5\\
+&2258.5=5.5(47)+b\\
+&b=2000\\
+&\text{weight of plane}=2000\\
+&\\
+&y=5.5(13)+2000\\
+&y=2071.5\\
+\end{align*}
+
+28:
+\begin{align*}
+&\frac{f(b)-f(a)}{b-a}\\
+&a=2,\ b=5\\
+&f(a)=2(2)^{2}-8(2)=-8\\
+&f(b)=2(5)^{2}-8(5)=10\\
+&\\
+&\frac{f(b)-f(a)}{b-a}\\
+&=\frac{10-(-8)}{5-2}\\
+&=\frac{18}{3}\\
+&=6
+\end{align*}
+

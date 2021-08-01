@@ -1,16 +1,16 @@
 * Summer HW
-** Algebra II [0%]
-*** TODO Aleks: <2021-09-09 Thu> [0%]
+** Algebra II [100%]
+*** DONE Aleks: <2021-09-09 Thu>
 1. [X] Log into ALEKS
 2. [X] Leave Geometry Class
-3. [ ] Complete Pretest
-4. [ ] Complete at least an 80% mastery rating on the topic
+3. [X] Complete Pretest
+4. [X] Complete at least an 80% mastery rating on the topic
 **** Counts as a project grade
 **** Code: JCYLL-EHXK4
 **** rdally@jcboe.org for issues
 *** Link: https://drive.google.com/file/d/1e1bWj4ZUs8ZcnIBW3vRMDMqGXMOPECvA/view
 
-** Biology [100%]
+** Biology [0%]
 *** None?
 
 ** AP Chem [40%]
@@ -23,20 +23,20 @@ Memorize the table of common ions, strong acids, bases, and diatomic elements. R
 1. Each assignment counts as a quiz grade
 2. Write all math work
 3. Include Units
-**** DONE Assignment 1 <2021-07-16 Fri>
+**** DONE AP Chem Assignment 1 <2021-07-16 Fri>
 Pages 2-4
-**** TODO Assignment 2 <2021-08-06 Fri>
+**** TODO AP Chem Assignment 2 <2021-08-06 Fri>
 Pages 5-8
-**** TODO Assignment 3 <2021-08-27 Fri>
+**** TODO AP Chem Assignment 3 <2021-08-27 Fri>
 Pages 8-15
 *** Link: https://drive.google.com/file/d/15JhR1OkjivA5K3aASK7XAIeSh05AAdiH/view?usp=drive_web&authuser=0
 
 ** AP Sem [20%] <2021-09-09 Thu>
-*** TODO Themes/lenses
-**** Choose a theme, then come up with possible questions for each lens. Then, find an article which supports the question you want to explore. Use the table below.
-1. [X] Choose a Theme
-2. [ ] Write the prompts through each lens
-3. [ ] Explore a problem you can identify by citing two articles about the subject
+*** DONE Choose a theme,
+*** TODO Come up with possible questions for each lens.
+*** TODO Find an article which supports the question you want to explore. Use the table below.
+*** TODO Journal 1
+*** TODO Journal 2
 *** Link: https://docs.google.com/document/d/1AgheICzyVXinpNIlrc68NYpcnj3ixJpsZE4_Ji8mN5M/edit
 
 ** AP CSP [0%]
