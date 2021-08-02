@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5a730ce4-af6d-4a3f-a0eb-2a6d9eafd881
+:END:
+#+title: Niklas Luhmann
+Niklas Luhmann is the founder of the smart note-taking and knowledge management
+system, the Zettelkasten method. He was extremely productive in his career,
+writing 70 books and more than 400 scholarly articles.
+
+He used a paper-based system, as opposed to the digital system we used today,
+using[[id:c3e5542b-6483-4e98-ae02-8b3d9da08e54][ hyperlink]]s

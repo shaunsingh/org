@@ -1,5 +1,1 @@
-:PROPERTIES:
-:ID:       6300587e-7561-4e8b-8c6a-945d87fbef41
-:END:
-#+title:  testing2
-[[id:a419f03c-a515-4e36-ac78-a705d6b92b63][Testing1]]
+#+TITLE: 20210801150720 Testing2

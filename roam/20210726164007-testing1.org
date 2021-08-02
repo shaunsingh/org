@@ -1,50 +1,103 @@
 :PROPERTIES:
 :ID:       a419f03c-a515-4e36-ac78-a705d6b92b63
 :END:
-#+title: Testing1
-Testing org roam
+#+title: Zettelkasten Method
+Zettelkasten is a german word which translates to ‘note box’. The definition
+explains what material to work with and the filing system used. Let’s break it
+down into its parts:
 
-J+W = 50 hours
-Total water used = 1100L
-J used 24J
-W used 20W
+Created by [[id:5a730ce4-af6d-4a3f-a0eb-2a6d9eafd881][Niklas Luhmann]] it uses [[id:c3e5542b-6483-4e98-ae02-8b3d9da08e54][hyperlink]]s to link together multiple notes.
+Its composed of 3 main types of notes
 
-$24J + 20W = 1100$
-$J=50-w$
+[[id:5529a7f2-f1e8-46d4-bff9-f26d5550186f][Literature Notes]]
+[[id:b66ee28b-972d-43f2-a9b0-9d5b5937ce18][Reference Notes]]
+[[id:0b612f92-2f39-44d7-b1d0-26c9743f5bd8][Permanent Notes]]
 
-$24(50-w)+20w=1100$
-$w=25$
+There is also a 4th type of more minor note, [[id:6183efea-40fa-4a08-84de-395bc078c04c][Fleeting Notes]]
 
-$J=50-25$
-$J = 25$
+The Zettelkasten method is about optimizing your workflow of learning and
+producing knowledge. Figure out your learning and note-taking style and be
+consistent in applying the steps in the Zettelkasten method:
 
-27:
-\begin{align*}
-&y=mx+b\\
-&y=total\ weight\ of\ plane\\
-&x=gallons\ of\ fuel\\
-&m=slope\\
-&b=weight\ of\ plane\\
-&\\
-&x=47,\ m=5.5,\ b=2258.5\\
-&2258.5=5.5(47)+b\\
-&b=2000\\
-&\text{weight of plane}=2000\\
-&\\
-&y=5.5(13)+2000\\
-&y=2071.5\\
-\end{align*}
+* Steps to Mastering the Method
+:PROPERTIES:
+:ID:       060fa3af-7a3d-41ce-9c82-74e130905a9c
+:END:
+** Read and take smart notes
+When working, write down your thoughts and the reason why you are taking
+particular note of a piece of information. This way, you will better understand
+the focus and reasoning behind the information you jot down. Even better,
+summarize the information and write it in your own words as much as you can.
+** Rewrite your notes for zettelkasten
+Once you have collected and summarized the information, it’s time to highlight
+some key elements. Include index information like the author’s name, book
+location, or the link URL. For longer Zettels, highlighting the learning
+objectives or key points in a bullet list might be helpful. The main point is to
+write your notes in such a way that you will easily be able to quickly get the
+gist of the material when you come across it again.
+** Adding a structure to your Zettelkasten
+The objective of using the Zettelkasten method is to make knowledge relationships. Add a particular #category or number-ID to the individual Zettels to help you link them to another in your system. Doing so will allow you to jump from a related idea or piece of information to the next without having to search through your archive for particular keywords.
+** Ask questions and review as a habit
+Note-taking or note collecting is great, but having access to a significant
+amount of information doesn’t make you smarter. Ask yourself questions when
+analyzing the information to help you develop your own ideas to the content or
+material. Make it a regular habit to review information in your Zettelkasten to
+jog your memory and encourage you to see patterns create connections between
+ideas and information.
 
-28:
-\begin{align*}
-&\frac{f(b)-f(a)}{b-a}\\
-&a=2,\ b=5\\
-&f(a)=2(2)^{2}-8(2)=-8\\
-&f(b)=2(5)^{2}-8(5)=10\\
-&\\
-&\frac{f(b)-f(a)}{b-a}\\
-&=\frac{10-(-8)}{5-2}\\
-&=\frac{18}{3}\\
-&=6
-\end{align*}
+* Implementing the method into your workflow
+:PROPERTIES:
+:ID:       ae567ac0-2a68-47d4-a4df-2e5a3f82bcda
+:END:
+There are a few ways to implement Zettelkasten, but personally I use
+software-based Zettelkasten, using
+[org-roamv2][https://github.com/org-roam/org-roam] and
+[org-roami-ui][https://github.com/org-roam/org-roam-ui] to preview my notes
 
+* Principles and Policies
+:PROPERTIES:
+:ID:       91e20e6a-508c-41c7-a5ac-cbc5ae2ba5db
+:END:
+** Good Ideas to remember
+1. How many Zettelkästen should I have? The answer is, most likely, only one for the duration of your life. But there are exceptions to this rule.
+2. Don’t use categories. Use tags instead.
+3. “What should my first note be?” – it doesn’t matter. Just get started.
+4. Set links between notes. Full-text search on its own provides not enough information. Connections will do, especially in the long run.
+5. “When should I start a new note?”
+5. You have to interpret your sources and then rely on your own thoughts henceforth to get the maximum benefit. Collecting information does not increase your knowledge.
+6. Use outlines to start with the first draft of your writing project.
+7. Then ease into writing by adding Zettel notes to the outline, pasting their
+   contents in.
+** Principles
+1. Principle of Atomicity: put things that belong together into a single note,
+   give it an ID, but limit its content to that single topic.
+2. Use a real notebook to capture thoughts.
+3. Write notes for your note archive in a way you understand later.
+4. Set links between notes. Search alone is not enough.
+
+* Benefits of org mode
+:PROPERTIES:
+:ID:       63830d23-0684-4e39-a93a-3ec5e10f75a6
+:END:
+There are multiple note taking formats, which support zettelkasten,
+- Latex
+- Markdown
+- Plain text
+- Org
+** Latex
+Latex is the hardest and slowest. Although it has good math syntax, I dislike it
+for regular writing. If need be, we can export markdown and org to latex anyways
+** Markdown
+Markdown is quite nice, but it doesn't have as many features as org. Namely
+literate programming and emacs integration. However, its easy to get started
+with, and there are plenty of good editors for it (e.g. Obsidian)
+** Plain text
+Its a good option if you're stuck with stock vim I guess. Its pretty bad for
+everything else
+** Org
+There are several features which I like in org
+1. Org-roam + org-roam-ui
+2. Org-Agenda
+3. HTML and LaTeX exports (+ ox-pandoc)
+4. Latex previews $yay$
+5. Literate programming

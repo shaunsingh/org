@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       5529a7f2-f1e8-46d4-bff9-f26d5550186f
+:END:
+#+title: Literature Notes
+ Literature Notes are the notes you make as comments to the text you have
+ selected or marked down.
+
+ Taking literature notes adds context and helps you remember the thoughts you
+ had when reading or writing down the information. The whole point of adding
+ comments to the text you highlight is to help you summarize the point of the
+ text, to include your thoughts and your key takeaways from it.
+
+ For research purposes, make it a habit to include the book title, author, chapter, and page number. If you find yourself needing further context than your comment and notes provide, you won’t have to search the entire book to find the exact location you referenced to. Instead, you can immediately open to the right chapter your note addresses.

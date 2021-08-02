@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c3e5542b-6483-4e98-ae02-8b3d9da08e54
+:END:
+#+title: hyperlink
+A hyperlink, or simply a link, is a reference to data that the user can follow by clicking or tapping. A hyperlink points to a whole document or to a specific element within a document. Hypertext is text with hyperlinks

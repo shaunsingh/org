@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       0b612f92-2f39-44d7-b1d0-26c9743f5bd8
+:END:
+#+title: Permanent Notes
+Permanent notes are stand-alone ideas that can be made without any direct context to other sourced information such as books, videos, or other available data.
+
+Permanent notes can be made as a recap or summary of the information just researched or learned, but can also be thoughts that popped into your brain while thinking over a myriad of information or while analysing any given context.
+
+The aim of permanent notes is to process the notes you have made and analyze how they affect your interests, thinking, and research. You then cherry pick the notes that add value to your existing ideas and connect the new information to what you already know and have saved in your database.
