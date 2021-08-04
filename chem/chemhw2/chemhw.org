@@ -6,7 +6,6 @@
 #+latex_header: \usepackage{chemfig}
 #+latex_header: \usepackage[version=4]{mhchem}
 
-
 * Summer Assignment 2
 ** What is the charge on the following:
 1. The cation in $\ce{CsCl}$ has a charge of 1+, with $\ce{Cs}$ being the cation.

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       dd91f2ae-7cc6-40d0-b6ac-d83d00106126
+:END:
+#+title: Distillation
+the action of purifying a liquid by a process of heating and cooling.

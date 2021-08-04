@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9a5895bb-361f-4d37-8f34-d37b34e13fc9
+:END:
+#+title: Potential energy
+The energy due to the *position* of the object relative to other objects

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0cb7cdfc-63d5-4638-bdb3-dee7181f7a2e
+:END:
+#+title: Alchemy
+Alchemy was a form of speculative thought that, among other aims, tried to transform base metals such as lead or copper into silver or gold. It also sought to discover cures for diseases and a way of extending life.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       87d639ab-8317-4c61-9ecd-eb4a7c32685e
+:END:
+#+title: Combustion
+The process of burning a material in air
+*Google:* The process or burning something

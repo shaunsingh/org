@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       5e7c009d-d3c6-411e-b1b1-7fd1e5975aa3
+:END:
+#+title: The Phlogiston Fiasco and the Impact of Lavoisier
+-  Chemical investigation in the modern sense—inquiry into the causes of changes in
+matter—began in the late 17th century.
+- At the time, most scientists were starting to explain [[id:87d639ab-8317-4c61-9ecd-eb4a7c32685e][Combustion]], with
+  [[id:152a2bf3-b919-4f41-9f1b-dcbd8a91ad2b][Phlogiston Theory]]
+- Highly combustible materials like charcoal were
+thought to contain a lot of phlogiston, and slightly combustible materials like metals
+only a little.
+
+- There were both supports and *critics* to this theory
+  1. Phlogiston *critics*: Why is air needed for combustion, and why does charcoal
+stop burning in a closed vessel?
+      a.  Phlogiston *supporters*: Air “attracts” phlogiston out of the charcoal, and burning
+stops when the air in the vessel is “saturated” with phlogiston.
+ 2.  *Critics* also noted that when a metal burns, it forms a substance known as its calx,
+which weighs more than the metal, leading them to ask,
+ 3. *Critics*: How can the loss of phlogiston cause a gain in mass?
+   a. *Supporters*: Phlogiston has negative mass.

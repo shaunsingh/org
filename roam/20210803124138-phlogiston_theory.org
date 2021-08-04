@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       152a2bf3-b919-4f41-9f1b-dcbd8a91ad2b
+:END:
+#+title: Phlogiston Theory
+Proposes that combustible materials contain phlogiston, an undetectable substance
+released when the material burns.

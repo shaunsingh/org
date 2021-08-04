@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       de0357a7-6461-4db6-a70d-e1772bb40677
+:END:
+#+title: Importance of Energy in the Study of Matter
+Physical and chemical changes are accompanied by [[id:107fb868-0771-4604-9dc1-9733e6cec89a][Energy]] changes.
+
+The total energy an object possess is the sum of its [[id:9a5895bb-361f-4d37-8f34-d37b34e13fc9][Potential energy]] and its[[id:5c295ca3-b520-4f71-8fe4-15ef6393e605][ Kinetic energy]]

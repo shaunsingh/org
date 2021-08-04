@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       3f804386-658f-4264-b186-2b9a17e703e3
+:END:
+#+title: The Central Theme in Chemistry
+Understanding the properties of a substance and the changes it undergoes leads
+to the central theme in chemistry
+- [[id:2b2315bd-4f5c-44b0-be57-9dbf540bc0e7][Macroscopic]]-scale properties and behavior, those we can see, are the results
+  of atomic-scale properties, those we can't see
+- We study /observable/ changes in matter to understand their /unobservable/ causes

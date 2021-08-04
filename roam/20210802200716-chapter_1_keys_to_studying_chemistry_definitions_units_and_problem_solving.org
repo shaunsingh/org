@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       804e03e1-7700-4236-8a8f-f539b877b07c
+:END:
+#+title: Chapter 1: Keys to Studying, Chemistry: Definitions, Units, and Problem Solving
+
+Covers the following:
+1. Fundamental concepts about matter, energy, and their changes
+2. Chemistry and its origin
+3. Modern units for mass, length, volume, density, and temperature
+4. Accuracy, Precision. and uncertainty with data collection
+
+* Fundamental Definitions
+:PROPERTIES:
+:ID:       4fe6a58c-f559-4dae-8069-bd0b398897e4
+:END:
+1. [[id:ecd180f5-ec4c-4e14-bfd4-648ebfecb099][States of Matter]]
+   a. [[id:938ba597-b4fe-4ae1-9e33-26ab0d79da4c][Properties of Matter and Its Changes]]
+2. [[id:3f804386-658f-4264-b186-2b9a17e703e3][The Central Theme in Chemistry]]
+3. [[id:de0357a7-6461-4db6-a70d-e1772bb40677][Importance of Energy in the Study of Matter]]
+   a. [[id:107fb868-0771-4604-9dc1-9733e6cec89a][Energy]]
+   b. [[id:9a5895bb-361f-4d37-8f34-d37b34e13fc9][Potential energy]]
+   c. [[id:5c295ca3-b520-4f71-8fe4-15ef6393e605][Kinetic energy]]
+   d. [[id:95a7b42c-aad5-426c-9262-1e391a4acb0f][Concepts of Energy]]
+
+* Chemical Arts and the Origins of Modern Chemistry
+:PROPERTIES:
+:ID:       15ff9841-4c9c-4572-aa09-cfc702a38279
+:END:
+1. [[id:ccffc25f-e46b-4719-8abe-fa2eb0828b82][Prechemical Traditions]]
+2. [[id:5e7c009d-d3c6-411e-b1b1-7fd1e5975aa3][The Phlogiston Fiasco and the Impact of Lavoisier]]

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5c295ca3-b520-4f71-8fe4-15ef6393e605
+:END:
+#+title: Kinetic energy
+Energy due to the *motion* of the object

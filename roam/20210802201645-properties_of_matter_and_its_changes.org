@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       938ba597-b4fe-4ae1-9e33-26ab0d79da4c
+:END:
+#+title: Properties of Matter and Its Changes
+
+* Physical change
+:PROPERTIES:
+:ID:       637dabef-ee83-4838-a1b5-588b96cd447f
+:END:
+- No change in composition.
+- occurs when a substance alters only its physical properties
+** Physical properties
+    - characteristics a substance shows by itself, without changing into or
+      interacting with another substance
+
+* Chemical change
+:PROPERTIES:
+:ID:       2b0874b7-9dbb-49d2-90f6-035b47e4b4c5
+:END:
+    - change in composition
+    - also called a chemical reaction
+    - occurs when one or more substances are converted into one or more
+      substances with different composition and properties.
+** Chemical property
+    - characteristics a substance shows as it changes into or interacts with
+      another substance
+    - includes flammability, corrosiveness, and reactivity with acids
+
+* Temperature and Changes in Matter
+:PROPERTIES:
+:ID:       311fb0b7-e3a4-4378-8a8f-f4841078e4be
+:END:
+- Depending on the temperature and pressure of the surroundings, many substances
+  can exist in each of the three physical states, and undergo changes in state
+  as well.
+- For example, as the temperature increases, solid water melts to liquid water,
+  which boils into gaseous water, which is a [[id:637dabef-ee83-4838-a1b5-588b96cd447f][Physical change]]

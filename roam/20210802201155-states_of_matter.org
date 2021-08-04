@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       ecd180f5-ec4c-4e14-bfd4-648ebfecb099
+:END:
+#+title: States of Matter
+1. Solid: fixed shape and does not conform to the container
+  - particles lie next to each other in a regular array (3d pattern)
+2. Liquid: varying shape that conforms to the container, but only to the extend
+  of the liquids volume
+  - particles lie close together but move randomly around each other
+3. Gas: Varying shape but does not have a surface, and is not bound to its volume
+  - particles have large distances and move randomly throughout the container

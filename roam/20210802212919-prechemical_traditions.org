@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       ccffc25f-e46b-4719-8abe-fa2eb0828b82
+:END:
+#+title: Prechemical Traditions
+*  The alchemical tradition.
+:PROPERTIES:
+:ID:       a2775e3b-6905-4b4a-933c-7527a3412942
+:END:
+1. [[id:0cb7cdfc-63d5-4638-bdb3-dee7181f7a2e][Alchemy]] was an occult of study of nature.
+   Alchemists later became obsessed with converting baser metals into purer
+   ones, such as lead into gold
+2. Although these mistaken beliefs persisted for centuries, their legacy to
+   chemistry was in technical methods
+3. They invented[[id:dd91f2ae-7cc6-40d0-b6ac-d83d00106126][ Distillation]], percolation, and extraction methods still used
+   today
+4. Alchemists also encouraged observation and experimentation, which replaced
+   the Greek approach of explaining nature solely through reason
+* The medical tradition
+:PROPERTIES:
+:ID:       96571d31-53bb-434d-9dab-0e65ef23943a
+:END:
+1. Alchemists also influenced medical practice in medieval Europe.
+2. Distillates, extracts of roots, herbs, and other plant matter have been used
+   as sources of medicines
+3. Paracelsus, a medieval alchemist, considered the body to be a chemical system
+* The technological tradition
+:PROPERTIES:
+:ID:       a41a7463-5209-431e-a259-d490dd2aa47f
+:END:
+1. During the Middle Ages and Renaissance, books started to share knowledge of
+   alchemy
+2. Some of the books introduced [[id:c5f39bab-4a22-407e-9f84-0f6c78e6f2df][Quantitative]] measurement, which was previously
+   lacking
+3. Still, they showed little interest in why substances change, or how to
+   predict its behavior.

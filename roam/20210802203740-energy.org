@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       107fb868-0771-4604-9dc1-9733e6cec89a
+:END:
+#+title: Energy
+The ability to do work
+- All work involves moving something
+- Energy may be transferred when work is done, to the object on which work is
+  being done
+* Concepts of Energy
+:PROPERTIES:
+:ID:       95a7b42c-aad5-426c-9262-1e391a4acb0f
+:END:
+  1. When energy is converted from one form to the other, its conserved, not
+     destroyed
+  2. Situations of lower energy are more stable and are favored over situations
+     of higher energy, which are less stable
+  3. The energy you exert to lift a weight gives it potential energy
+  4. Due to electrostatic forces, opposite charges attract, and like charges repel
