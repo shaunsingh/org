@@ -1,8 +1,5 @@
 #+title: Ap CSP Summer Assignment
 #+author: Shaurya Singh
-#+date: @@html:<!--@@{{{git-rev}}}@@html:-->@@@@latex:\\\Large\bfseries@@ {{{modification-time(%Y-%m-%d, t)}}} @@latex:\\\normalsize\mdseries@@{{{modification-time(%H:%M, t)}}} @@latex:\acr{\lowercase{@@{{{timezone}}}@@latex:}}\iffalse@@, {{{git-rev}}}@@latex:\fi@@
-#+macro: timezone (eval (substring (shell-command-to-string "date +%Z") 0 -1))
-#+macro: git-rev (eval (format "@@html:<a href=\"https://github.com/shaunsingh/org/commit/%1$s\" style=\"text-decoration: none\"><code style=\"padding: 0; color: var(--text-light); font-size: inherit; opacity: 0.7\">%1$s</code></a>@@@@latex:\\href{https://github.com/shaunsingh/org/commit/%1$s}{\\normalsize\\texttt{%1$s}}@@" (substring (shell-command-to-string "git rev-parse --short HEAD") 0 -1)))
 #+startup: fold
 #+startup: preview
 #+options: toc:2
@@ -62,7 +59,7 @@
 
 9.  Word: database
 
-    Definition: (n) database (an organized body of related information)
+    Definition: (n) *database* (an organized body of related information)
 
     Ref: WordNet Search - 3.1.
     http://wordnetweb.princeton.edu/perl/webwn?s=database&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
@@ -132,3 +129,167 @@
    iCloud, Google Drive), we should focus on make data transfer to and from
    those drives quicker and more secure.
 
+* Chapter 2: Naked in the Sunlight
+** Vocabulary
+1. Word: pervasive
+
+   Definition: per·va·sive | pərˈvāsiv | adjective (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people: ageism is pervasive and entrenched in our society.
+
+   Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pervasive&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+2.  Word: cleric
+
+    Definition: cler·ic | ˈklerik | noun a priest or religious leader, especially a Christian or Muslim one.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=cleric&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+3.  Word: disseminate
+
+    Definition: dis·sem·i·nate | dəˈseməˌnāt | verb [with object ] spread (something, especially information) widely: health authorities should foster good practice by disseminating information.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=disseminate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
+
+4.  Word: encode
+
+    Definition: en·code | inˈkōd, enˈkōd | verb [with object ] convert into a
+   coded form: using this technique makes it possible to encode and transmit recorded video information.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=encode&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+5.  Word: RFID
+
+    Definition: RFID *(abbreviation)* radio frequency identification, denoting
+   technologies that use radio waves to identify people or objects carrying encoded microchips.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=RFID&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+6.  Word: exonerate
+
+    Definition:  ex·on·er·ate | iɡˈzänəˌrāt | verb [with object ] 1 (especially of an official body) absolve (someone) from blame for a fault or wrongdoing, especially after due consideration of the case: they should exonerate these men from this crime
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=exonerate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+7.  Word: discourse
+
+    Definition: noun | ˈdisˌkôrs | written or spoken communication or debate: an imagined discourse between two people
+   traveling in France.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=discourse&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+8.  Word: profilerate
+
+    Definition: (v)  *profilerate* increase rapidly in numbers; multiply.
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=profilerate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+9.  Word: prodigious
+
+    Definition: pro·di·gious | prəˈdijəs | adjective, remarkably or impressively great in extent, size, or degree: the stove consumed a prodigious amount of fuel.
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=prodigious&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+10. Word: clairvoyant
+
+    Definition: clair·voy·ant | ˌklerˈvoiənt | noun a person who claims to have a supernatural ability to perceive events in the future or beyond normal sensory contact
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=clairvoyant&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+** Ideas:
+1.
+2.
+3.
+4.
+
+** Journal Entry
+1.
+
+2.
+
+3.
+
+4.
+* Chapter 3: Ghosts in the Machine
+** Vocabulary
+1. Word: pervasive
+
+   Definition: per·va·sive | pərˈvāsiv | adjective (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people: ageism is pervasive and entrenched in our society.
+
+   Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pervasive&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+2.  Word: cleric
+
+    Definition: cler·ic | ˈklerik | noun a priest or religious leader, especially a Christian or Muslim one.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=cleric&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+3.  Word: disseminate
+
+    Definition: dis·sem·i·nate | dəˈseməˌnāt | verb [with object ] spread (something, especially information) widely: health authorities should foster good practice by disseminating information.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=disseminate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
+
+4.  Word: encode
+
+    Definition: en·code | inˈkōd, enˈkōd | verb [with object ] convert into a
+   coded form: using this technique makes it possible to encode and transmit recorded video information.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=encode&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+5.  Word: RFID
+
+    Definition: RFID *(abbreviation)* radio frequency identification, denoting
+   technologies that use radio waves to identify people or objects carrying encoded microchips.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=RFID&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+6.  Word: exonerate
+
+    Definition:  ex·on·er·ate | iɡˈzänəˌrāt | verb [with object ] 1 (especially of an official body) absolve (someone) from blame for a fault or wrongdoing, especially after due consideration of the case: they should exonerate these men from this crime
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=exonerate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+7.  Word: discourse
+
+    Definition: noun | ˈdisˌkôrs | written or spoken communication or debate: an imagined discourse between two people
+   traveling in France.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=discourse&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+8.  Word: profilerate
+
+    Definition: (v)  *profilerate* increase rapidly in numbers; multiply.
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=profilerate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+9.  Word: prodigious
+
+    Definition: pro·di·gious | prəˈdijəs | adjective, remarkably or impressively great in extent, size, or degree: the stove consumed a prodigious amount of fuel.
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=prodigious&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+10. Word: clairvoyant
+
+    Definition: clair·voy·ant | ˌklerˈvoiənt | noun a person who claims to have a supernatural ability to perceive events in the future or beyond normal sensory contact
+
+    Ref: WordNet Search - 3.1.
+    http://wordnetweb.princeton.edu/perl/webwn?s=clairvoyant&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+** Ideas:
+1.
+2.
+3.
+4.
+
+** Journal Entry
+1.
+
+2.
+
+3.
+
+4.
