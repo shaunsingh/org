@@ -2,25 +2,27 @@
 #+author: Shaurya Singh
 #+startup: preview
 #+startup: fold
-#+options: toc:1
+#+options: toc:nil
 #+latex_header: \usepackage{chemfig}
 #+latex_header: \usepackage[version=4]{mhchem}
+#+latex_header: \usepackage{enumerate}
 
-* Summer Assignment 2
-** What is the charge on the following:
-1. The cation in $\ce{CsCl}$ has a charge of 1+, with $\ce{Cs}$ being the cation.
-2. The sulfate ion has a charge of 2-
-3. The barium ion has a charge of 2+
-4. The nitrate ion has a charge of 1-
+* What is the charge on the following:
+#+attr_latex: :options [(a)]
+a. The cation in $\ce{CsCl}$ has a charge of 1+, with $\ce{Cs}$ being the cation.
+b. The sulfate ion has a charge of 2-
+c. The barium ion has a charge of 2+
+d. The nitrate ion has a charge of 1-
 
-** How many protons, neutrons, and electrons are in:
-1. Uranium-235 has *92 protons*, since it has an atomic number of 92. It also has *143 neutrons*, since $235-92=143$. Lastly, it has *92 electrons*, since it has no charge so the number of protons must equal the number of electrons.
-2. Uranium-238 has *92 protons*, since it has an atomic number of 92. It also has *146 neutrons*, since $238-92=146$. Lastly, it has *92 electrons*, since it has no charge so the number of protons must equal the number of electrons.
+* How many protons, neutrons, and electrons are in:
+#+attr_latex: :options [(a)]
+a. Uranium-235 has *92 protons*, since it has an atomic number of 92. It also has *143 neutrons*, since $235-92=143$. Lastly, it has *92 electrons*, since it has no charge so the number of protons must equal the number of electrons.
+b. Uranium-238 has *92 protons*, since it has an atomic number of 92. It also has *146 neutrons*, since $238-92=146$. Lastly, it has *92 electrons*, since it has no charge so the number of protons must equal the number of electrons.
 
-** Elements in the same vertical column in the periodic table have similar what?
-Elements in the same vertical column in the periodic table will be in the same group. Therefore, they will have the same amount of valence electrons.
+* Elements in the same vertical column in the periodic table have similar what?
+Elements in the same vertical column in the periodic table will be in the same group. Therefore, they will have the same number of valence electrons.
 
-** An element “E” is present as 10 E with a mass value of 10.01 amu, and as 11 E with a mass value of 11.01 amu. The natural abundances of 10 E and 11 E are 19.78% and 80.22% respectively. What is the average atomic mass of the element? What is the element?
+* An element “E” is present as 10 E with a mass value of 10.01 amu, and as 11 E with a mass value of 11.01 amu. The natural abundances of 10 E and 11 E are 19.78% and 80.22% respectively. What is the average atomic mass of the element? What is the element?
 In order to calculate the average atomic mass of the element, we must take the weighted average of the two isotopes against their percentage abundance. Multiplying that out, we get
 \begin{align*}
 x=(10.01*0.1978)+(11.01*0.8022)
@@ -35,7 +37,7 @@ x\approx10.81
 \end{align*}
 Therefore, the element has an average atomic mass of *10.81 amu*. Looking at the periodic table, the element with an average atomic mass of 10.81 is *Boron*.
 
-** Naturally occurring sulfur consists of four isotopes, 32 S (95.0%), 33 S (0.76%), 34 S(4.22%), and 36 S(0.014%). Using this data, calculate the atomic weight of naturally occurring sulfur. The masses of the isotopes are given in the table below.
+* Naturally occurring sulfur consists of four isotopes, 32 S (95.0%), 33 S (0.76%), 34 S(4.22%), and 36 S(0.014%). Using this data, calculate the atomic weight of naturally occurring sulfur. The masses of the isotopes are given in the table below.
 In order to calculate the atomic weight of Sulfur, we must take the weighted average of the 4 isotopes against their percentage abundance. Multiplying that out, we get
 \begin{align*}
 x=(31.97*0.950)+(32.97*0.0076)(33.97*0.0422)+(35.97*0.00014)
@@ -51,16 +53,30 @@ x\approx32.062
 \end{align*}
 Therefore, the element has an atomic weight of *32.062 amu*.
 
-** Explain each of the following:
-    1. Alpha radiation penetrates a much shorter distance into a piece of material than does beta radiation of the same energy.
-       a. This is because when nucleons are combined in nuclei, some of their mass is converted into energy, which is called binding energy. This energy is released and stabilizes the nucleus
-    2. Define the word isotope. Distinguish between isotope and isomer. Describe the differences between alpha, beta, and gamma particles.
-       a.  An isotope in chemistry is two or more forms of the same element that contain equal numbers of protons but different numbers of neutrons in their nuclei. They differ in atomic mass, but share similar chemical properties
-       b. An isomer is two or more compounds with the same formula but a different arrangement of atoms in the molecules. Unlike isotopes, isomers have different properties.
-       c. Alpha particles are fully ionized helium nuclei, ejected by the decay of a radioactive isotope atom. Beta Particles are highly energetic electrons or positrons ejected by the decay of a neutron or proton in a radioactive isotope atom. Gamma radiation comprises of highly energetic photons above the x-ray energy range that may arise in nuclear decay
-    3. Nuclear fusion requires large amounts of energy and to get started, whereas nuclear fission can occur spontaneously, although both processes release energy.
+* Explain each of the following:
+#+attr_latex: :options [(a)]
+    a. Alpha radiation penetrates a much shorter distance into a piece of material than does beta radiation of the same energy.
+       1. This is because when nucleons are combined in nuclei, some of their mass is converted into energy, which is called binding energy. This energy is released and stabilises the nucleus
 
-** How many moles are in a sample of 300 atoms of Nitrogen (N)? How many grams?
+    b. Define the word isotope. Distinguish between isotope and isomer. Describe the differences between alpha, beta, and gamma particles.
+       1. An isotope in chemistry is two or more forms of the same element that contain equal numbers of protons but different numbers of neutrons in their nuclei. They differ in atomic mass, but share similar chemical properties
+       2. An isomer is two or more compounds with the same formula but a different arrangement of atoms in the molecules. Unlike isotopes, isomers have different properties.
+       3. Alpha particles are fully ionized helium nuclei, ejected by the decay
+          of a radioactive isotope atom. Beta Particles are highly energetic
+          electrons or positrons ejected by the decay of a neutron or proton in a radioactive isotope atom. Gamma radiation comprises of highly energetic photons above the x-ray energy range that may arise in nuclear decay
+
+    c. Nuclear fusion requires large amounts of energy and to get started,
+whereas nuclear fission can occur spontaneously, although both processes release energy.
+
+    d. \alpha particles are positively charged, \beta are negatively charged, \gamma particles
+are electrically neutral. Therefore, \alpha rays will be attracted to the
+negative plate and \beta rays will be attracted to the positive plate. The
+electric field will have no affect on \gamma rays, as they are electrically neutral
+
+    e. Burning nuclear waste will contaminate the surrounding air, making it
+       deadly
+
+* How many moles are in a sample of 300 atoms of Nitrogen (N)? How many grams?
 One mole contains $6.022 *10^{23}$ atoms, or Avogadro's number. As a result, 300 atoms of nitrogen contain:
 \begin{align*}
 n&=300\ atoms\\
@@ -69,9 +85,9 @@ n&=300\ atoms\\
 \end{align*}
 Therefore, there are $4.98*10^{-22}\ mol$ in 300 atoms of Nitrogen. Since 1 mol = 1 gram, 300 atoms of Nitrogen have a mass of $4.98*10^{-22}\ g$.
 
-** A sample of sulfur (S) has a mass of 5.37 g. How many moles are in the sample? How many atoms?
+* A sample of sulfur (S) has a mass of 5.37 g. How many moles are in the sample? How many atoms?
 Sulfur has a molar mass of 32amu. Therefore, it has a molar mass of
-$32\frac{g}{mol}$.
+$32\frac{g}{mol}$
 With that information we can make the following equation:
 \begin{align*}
 \frac{5.37g}{32g/mol}&=0.1678mol\\
@@ -83,11 +99,22 @@ x&=(6.022*10^{23})*(0.17)\\
 &=1.02374*10^{23}\\
 &\approx1.0*10^{23}
 \end{align*}
+Therefore there are \(0.17mol\) and \(1.0\times10^{23}\) atoms in the sample of sulfur
 
-** How many grams of zinc are in 1.16 x 10 22 atoms of zinc (Zn)?
-$149100885.37375763$ or $149000000$
+* How many grams of zinc are in 1.16 x 10 22 atoms of zinc (Zn)?
+Zinc atoms have a mass of 65.4g. Using Avagadro's number, we know that there are \(6.022 *10^{23}\) atoms per mole of zinc.
+We also know Zinc has a molar mass of \(65.4\frac{g}{mol}\)
+From that we can get the following formula
+\begin{align*}
+x&=\frac{1.16*10^{22}}{6.022*10^{23}}\times65.4 \frac{g}{mol}\\
+&=0.0192mol\times65.4\frac{g}{mol}\\
+&=1.25568g\\
+&\approx1.26g
+\end{align*}
+Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
 
-** Calculate the number of grams per mole (gfm) for each of the following:
+** TODO Calculate the number of grams per mole (gfm) for each of the following:
+#+attr_latex: :options [(a)]
    a. $\ce{CuSO4}$
     To find the molar mass of $\ce{CuSO4}$, we must take the molar mass of
     each element in the molecule, and add it together.
@@ -142,7 +169,7 @@ $149100885.37375763$ or $149000000$
     \end{equation}
     With 6 significant figures, the answer is *$35.046\ g/mol$*
 
-** How many moles of cadmium bromide ($\ce{CdBr2}$) are in a 39.25 g sample?
+* How many moles of cadmium bromide ($\ce{CdBr2}$) are in a 39.25 g sample?
 For this we can use Avogadro's number. One mole contains $6.022*10^{23}$ particles. From that we get the following
 \begin{align*}
 &N = molar\ mass\\
@@ -158,19 +185,20 @@ n&= \frac{39.25}{272.219}\\
 \end{align*}
 Rounding to 4 significant figures, there will be $0.144$ moles of cadmium bromide in a 39.25 g sample
 
-** $\ce{CH3CH2OH}$ boils at 78 °C and $\ce{CH3OCH3}$ boils at - 24 °C, although both compounds have the same composition. This difference in boiling points may be attributed to a difference in
-The answer is D. Hydrogen bonding. The extra hydrogen bonds of $\ce{CH3CH2OH}$ make it harder to separate molecules, as more heat and energy is required, resulting in a higher boiling point compared to $\ce{CH3OCH3}$
+* $\ce{CH3CH2OH}$ boils at 78 °C and $\ce{CH3OCH3}$ boils at - 24 °C, although both compounds have the same composition. This difference in boiling points may be attributed to a difference in
+The answer is *D*. Hydrogen bonding. The extra hydrogen bonds of $\ce{CH3CH2OH}$ make it harder to separate molecules, as more heat and energy is required, resulting in a higher boiling point compared to $\ce{CH3OCH3}$
 
-** Which of the following elements has the smallest ionization energy? Explain.
-Ionization energy decreases down a group, and increases from left to right across a period. Therefore, Potassium has the smallest ionization energy
+* Which of the following elements has the smallest ionization energy? Explain.
+Ionization energy decreases down a group, and increases from left to right across a period. Therefore, Potassium has the smallest ionization energy.
 
-** Which of the following represents the ground state electron configuration for the Mn 3+ ion? (Atomic number Mn = 25) (Hint: first write the e - config of Mn atom, then try the Mn 3+ ion.)
+* Which of the following represents the ground state electron configuration for the Mn 3+ ion? (Atomic number Mn = 25) (Hint: first write the e - config of Mn atom, then try the Mn 3+ ion.)
 The electron configuration for $\ce{Mn}$ is $\ce{1s^2 2s^2 2p^6 3s^2 3p^6 3d^5 4s^2}$. The 3+ ion will have 3 fewer electrons, since a positive charge indicates more protons than electrons. Therefore, the electron configuration of $\ce{Mn^{3+}}$ is $\ce{1s^2 2s^2 2p^6 3s^2 3p^6 3d^4}$, and the correct option is *A*
 
-** Which of the following represents an excited state?
+* Which of the following represents an excited state?
 Option *D*, $\ce{1s^2 2s^2 2p^6 3s^2 3p^6 3d^4 4s^2}$ is in an excited state, as it skips the final electron in the 3d orbital.
 
-** The table above shows the first three ionization energies for atoms of four elements from the third period of the periodic table. Answer the following questions.
+* The table above shows the first three ionization energies for atoms of four elements from the third period of the periodic table. Answer the following questions.
+#+attr_latex: :options [(a)]
 a. What is the chemical symbol for element 3, explain your reasoning.
     The third element is $\ce{Mg}$, or Magnesium. It has low first and second ionization energies relative to the third, which means it has two valence electrons. Magnesium is the element with two valence electrons in the third period of the periodic table
 
@@ -188,17 +216,19 @@ e. Which would have a higher electronegativity, element 1 or 4? Briefly explain.
 
 f. The elements are $\ce{Cl}$, $\ce{Na}$, $\ce{Mg}$, and $\ce{S}$ respectively.
 
-** Calculate the mass percent of $\ce{Cl}$ in each of the following compounds
-1. $\ce{Cl}$  has a Mass Percent of $7.6059$ in $\ce{CIF}$
-2. $\ce{Cl}$  has a Mass Percent of $51.7866$ in $\ce{HClO2}$
-3. $\ce{Cl}$  has a Mass Percent of $52.7370$ in $\ce{CuCl2}$
+** TODO Show work Calculate the mass percent of $\ce{Cl}$ in each of the following compounds
+#+attr_latex: :options [(a)]
+a. $\ce{Cl}$  has a Mass Percent of $7.6059$ in $\ce{CIF}$
+b. $\ce{Cl}$  has a Mass Percent of $51.7866$ in $\ce{HClO2}$
+c. $\ce{Cl}$  has a Mass Percent of $52.7370$ in $\ce{CuCl2}$
 
-** Calculate the mass percent of each element in $\ce{Ba(OH)2*8H2O}$, or barium hydroxide octahydrate
+** TODO Show work Calculate the mass percent of each element in $\ce{Ba(OH)2*8H2O}$, or barium hydroxide octahydrate
+#+attr_latex: :options [(a)]
 1. $\ce{Ba}$  has a Mass Percent of $43.5318$ in $\ce{Ba(OH)2*8H2O}$,
 2. $\ce{H}$  has a Mass Percent of $5.7512$ in $\ce{Ba(OH)2*8H2O}$,
 3. $\ce{O}$  has a Mass Percent of $50.7171$ in $\ce{Ba(OH)2*8H2O}$,
 
-** A compound is found, by mass spectral analysis, to contain the following percentages of elements by mass, C = 49.67%, Cl = 48.92%, H = 1.39%, The molar mass of the compound is 289.9 g/mole. Determine the empirical and molecular formulas of the compound.
+* A compound is found, by mass spectral analysis, to contain the following percentages of elements by mass, C = 49.67%, Cl = 48.92%, H = 1.39%, The molar mass of the compound is 289.9 g/mole. Determine the empirical and molecular formulas of the compound.
 \begin{align*}
 &C:\ \frac{49.67g}{1}\times\frac{1mol\ce{S}}{12.01g}=4.135mol\\
 &Cl:\ \frac{48.92g}{1}\times\frac{1mol\ce{Cl}}{35.453g}=1.380mol\\
@@ -222,13 +252,16 @@ Therefore, we can substitute 4 for n.
 &=\ce{C12Cl4H4}
 \end{align*}
 
-** Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%
+** TODO show work Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%
 $\ce{Cl3MoO}$
 
-** Aspartame is an artificial sweetener used in food and beverages that is 160 times sweeter than sucrose.
-1. Using the molecular structure, determine the molecular formula of aspartame, using this format $\ce{C_{W}H_{X}N_{Y}O_{Z}}$
-   There are 17 hydrogen atoms, 14 Carbon atoms, 2 Nitrogen atoms, and 5 Oxygen atoms. Therefore, the answer would be $\ce{C14H17N2O5}$
-2. How many molecules are present in 10.0 mg of aspartame? How many hydrogen atoms? O atoms?
+* Aspartame is an artificial sweetener used in food and beverages that is 160 times sweeter than sucrose.
+#+attr_latex: :options [(a)]
+a. Using the molecular structure, determine the molecular formula of aspartame,
+   using this format $\ce{C_{W}H_{X}N_{Y}O_{Z}}$
+
+   *Answer:* There are 17 hydrogen atoms, 14 Carbon atoms, 2 Nitrogen atoms, and 5 Oxygen atoms. Therefore, the solution is $\ce{C14H17N2O5}$
+b. How many molecules are present in 10.0 mg of aspartame? How many hydrogen atoms? O atoms?
     $14\times6+17\times1+2\times7+5\times8=283\frac{g}{mol}$
     \begin{align*}
     mol&=\frac{g}{g/mol}\\
@@ -238,8 +271,9 @@ $\ce{Cl3MoO}$
     Therefore, there are $0.035mol$ of aspartame in 10 grams
     Multiplied by Avogadro's number, that's $2.0475*10^{22}$ molecules.
 
-** Watch the following video on making a solution and how to calculate molarity:
-1. Describe how you would make 100.0 mL of a 1.0 M solution of lithium chloride.
+* Watch the following video on making a solution and how to calculate molarity:
+#+attr_latex: :options [(a)]
+a. Describe how you would make 100.0 mL of a 1.0 M solution of lithium chloride.
 We have a $1.0M$ solution, which translates to  a $1.0mol/L$
 We need to find the value for $100ml$, or $0.1L$
 $y = 100mL = 0.1L$
@@ -255,3 +289,15 @@ Therefore, in order to get 100mL of lithium chloride, we must need 4.2394g of li
 2. Afterwards, using our electronic balance, lab scoop, and weighing paper we can measure out 4.2394g of LiCl.
 3. Once we calculate that out, we can use a 100.0mL volumetric flask to measure it.
 4. Since the molarity is $1.0mol/L$, 100% of the solution is $\ce{LiCL}$, and no water is required.
+
+b. Design an experiment to collect data that supports the claim that your 100.0
+   mL, 1.0 M LiCl solution is a homogeneous mixture. Describe the steps, the
+   data you would collect, and how the data support the claim. Laboratory
+   equipment for your experiment should be taken from the list in the prior
+   question. (Again, you may not need all of the equipment.)
+
+** TODO The structures of a water molecule and a crystal of LiCl(s) are represented above. A student prepares a 0.10 M solution by dissolving LiCl(s) in enough water to make 100.0 mL of solution.
+#+attr_latex: :options [(a)]
+a. How much LiCl(s) was dissolved to make the 0.10 M solution? Justify with a
+   calculation.
+b. Show the interactions of the components of LiCl(aq) by making a drawing.
