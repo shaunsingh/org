@@ -10,9 +10,9 @@
 * What is the charge on the following:
 #+attr_latex: :options [(a)]
 a. The cation in $\ce{CsCl}$ has a charge of 1+, with $\ce{Cs}$ being the cation.
-b. The sulfate ion has a charge of 2-
-c. The barium ion has a charge of 2+
-d. The nitrate ion has a charge of 1-
+b. The sulfate ion (\(\ce{SO^{2-}4}\)) has a charge of 2-
+c. The barium ion (\(\ce{Ba^{2+}}\)) has a charge of 2+
+d. The nitrate ion (\(\ce{NO^-3}\)) has a charge of 1-
 
 * How many protons, neutrons, and electrons are in:
 #+attr_latex: :options [(a)]
@@ -113,7 +113,7 @@ x&=\frac{1.16*10^{22}}{6.022*10^{23}}\times65.4 \frac{g}{mol}\\
 \end{align*}
 Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
 
-** TODO Calculate the number of grams per mole (gfm) for each of the following:
+* Calculate the number of grams per mole (gfm) for each of the following:
 #+attr_latex: :options [(a)]
    a. $\ce{CuSO4}$
     To find the molar mass of $\ce{CuSO4}$, we must take the molar mass of
@@ -127,11 +127,9 @@ Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
     atoms, the actual molar mass would be $16*4=64$ g/mol
 
     Combining the molar mass of the 3 elements, we get
-
     \begin{equation}
     63.546+64+32.065=159.611\ g/mol
     \end{equation}
-    With 4 significant figures, the answer is *$159.6\ g/mol$*.
 
    b. $\ce{NH4OH}$
     To find the molar mass of $\ce{NH4OH}$ we must take the molar mass of each element in the molecule, and add it together.
@@ -145,11 +143,9 @@ Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
     $1.0088*5=5.0397\ g/mol$.
 
     Combining the molar mass of the 3 elements, we get
-
-    \begin{equation}
+    \begin{align*}
     14.0067+15.9994+1.00794=35.04580\ g/mol
-    \end{equation}
-    With 6 significant figures, the answer is *$35.046\ g/mol$*
+    \end{align*}
 
    c. $\ce{NH4OH}$
     To find the molar mass of $\ce{NH4OH}$ we must take the molar mass of each element in the molecule, and add it together.
@@ -160,14 +156,42 @@ Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
 
     $\ce{H}$ (Hydrogen) has a molar mass of 1.00794 g/mol. Since we have 5
     Hydrogen molecules, that means the molar mass for this element will be
-    $1.0088*5=5.0397\ g/mol$.
+    $1.008*5=5.039\ g/mol$.
 
     Combining the molar mass of the 3 elements, we get
-
     \begin{equation}
-    14.0067+15.9994+1.00794=35.04580\ g/mol
+    14.0067+15.9994+1.0079=35.046\ g/mol
     \end{equation}
-    With 6 significant figures, the answer is *$35.046\ g/mol$*
+
+d. \(\ce{Ca2Fe(CN)6*12H2O}\)
+    To find the molar mass of \(\ce{Ca2Fe(CN)6*12H2O}\) we must take the molar
+   mass of each element in each molecule, and add it together.
+
+    $\ce{Ca}$ (Calcium) has a molar mass of 40.087 g/mol. Since there are two
+      \(\ce{Ca}\) atoms, we multiply that by two to get 80.174 g/mol
+
+    $\ce{Fe}$ (Iron) has a molar mass of 55.845 g/mol.
+
+    $\ce{C}$ (Carbon) has a molar mass of 12.0107 g/mol. Since we have 6
+    Carbon molecules, that means the molar mass for this element will be
+    $12.0107*6=72.0642\ g/mol$.
+
+    $\ce{N}$ (Nitrogen) has a molar mass of 14.0067 g/mol. Since we have 6
+    Nitrogen molecules, that means the molar mass for this element will be
+    $14.0067*6=84.0402\ g/mol$.
+
+    $\ce{H}$ (Hydrogen) has a molar mass of 1.00794 g/mol. Since we have 24
+    Hydrogen molecules, that means the molar mass for this element will be
+    $1.00794*24=24.19056\ g/mol$.
+
+    $\ce{O}$ (Oxygen) has a molar mass of 15.9994 g/mol. Since we have 12
+    Oxygen molecules, that means the molar mass for this element will be
+    $15.9994*12=191.9928\ g/mol$.
+
+    Combining the molar mass of the 2 molecules, we get
+    \begin{equation}
+    80.174+=35.04580\ g/mol
+    \end{equation}
 
 * How many moles of cadmium bromide ($\ce{CdBr2}$) are in a 39.25 g sample?
 For this we can use Avogadro's number. One mole contains $6.022*10^{23}$ particles. From that we get the following
@@ -216,13 +240,13 @@ e. Which would have a higher electronegativity, element 1 or 4? Briefly explain.
 
 f. The elements are $\ce{Cl}$, $\ce{Na}$, $\ce{Mg}$, and $\ce{S}$ respectively.
 
-** TODO Show work Calculate the mass percent of $\ce{Cl}$ in each of the following compounds
+* Calculate the mass percent of $\ce{Cl}$ in each of the following compounds
 #+attr_latex: :options [(a)]
 a. $\ce{Cl}$  has a Mass Percent of $7.6059$ in $\ce{CIF}$
 b. $\ce{Cl}$  has a Mass Percent of $51.7866$ in $\ce{HClO2}$
 c. $\ce{Cl}$  has a Mass Percent of $52.7370$ in $\ce{CuCl2}$
 
-** TODO Show work Calculate the mass percent of each element in $\ce{Ba(OH)2*8H2O}$, or barium hydroxide octahydrate
+* Calculate the mass percent of each element in $\ce{Ba(OH)2*8H2O}$, or barium hydroxide octahydrate
 #+attr_latex: :options [(a)]
 1. $\ce{Ba}$  has a Mass Percent of $43.5318$ in $\ce{Ba(OH)2*8H2O}$,
 2. $\ce{H}$  has a Mass Percent of $5.7512$ in $\ce{Ba(OH)2*8H2O}$,
@@ -252,8 +276,20 @@ Therefore, we can substitute 4 for n.
 &=\ce{C12Cl4H4}
 \end{align*}
 
-** TODO show work Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%
-$\ce{Cl3MoO}$
+** Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%
+\begin{align*}
+&Mo:\ \frac{43.95g}{1}\times\frac{1mol\ce{Mo}}{95.95g}=0.458mol\\
+&Cl:\ \frac{48.72g}{1}\times\frac{1mol\ce{Cl}}{35.45g}=1.374mol\\
+&O:\ \frac{7.33g}{1}\times\frac{1mol\ce{O}}{15.99g}=0.458mol
+\end{align*}
+From that we can calculate the following ratios:
+\begin{align*}
+&\frac{0.458mol}{0.458mol}=1\\
+&\frac{1.374mol}{0.458mol}=3\\
+&\frac{0.458mol}{0.458mol}=1
+\end{align*}
+ Since $\ce{Cl}$, $\ce{Mo}$, and  $\ce{O}$ have a ratio of $3:1:1$, the
+emperical formula will be  $\ce{Cl3MoO}$
 
 * Aspartame is an artificial sweetener used in food and beverages that is 160 times sweeter than sucrose.
 #+attr_latex: :options [(a)]
@@ -266,7 +302,7 @@ b. How many molecules are present in 10.0 mg of aspartame? How many hydrogen ato
     \begin{align*}
     mol&=\frac{g}{g/mol}\\
     mol&=\frac{10g}{283g/mol}\\
-    mol&=035
+    mol&=0.035
     \end{align*}
     Therefore, there are $0.035mol$ of aspartame in 10 grams
     Multiplied by Avogadro's number, that's $2.0475*10^{22}$ molecules.
