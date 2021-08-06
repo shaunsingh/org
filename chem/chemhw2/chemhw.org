@@ -65,13 +65,11 @@ Therefore, the element has an atomic weight of *32.062 amu*.
           of a radioactive isotope atom. Beta Particles are highly energetic
           electrons or positrons ejected by the decay of a neutron or proton in a radioactive isotope atom. Gamma radiation comprises of highly energetic photons above the x-ray energy range that may arise in nuclear decay
 
-    c. Nuclear fusion requires large amounts of energy and to get started,
-whereas nuclear fission can occur spontaneously, although both processes release energy.
+    c. Nuclear fusion requires large amounts of energy and to get started, whereas nuclear fission can occur spontaneously, although both processes release energy.
 
     d. \alpha particles are positively charged, \beta are negatively charged, \gamma particles
-are electrically neutral. Therefore, \alpha rays will be attracted to the
-negative plate and \beta rays will be attracted to the positive plate. The
-electric field will have no affect on \gamma rays, as they are electrically neutral
+       are electrically neutral. Therefore, \alpha rays will be attracted to the
+       negative plate and \beta rays will be attracted to the positive plate. The electric field will have no affect on \gamma rays, as they are electrically neutral
 
     e. Burning nuclear waste will contaminate the surrounding air, making it
        deadly
@@ -115,7 +113,8 @@ Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
 
 * Calculate the number of grams per mole (gfm) for each of the following:
 #+attr_latex: :options [(a)]
-   a. $\ce{CuSO4}$
+a. What is the gfm of $\ce{CuSO4}$
+
     To find the molar mass of $\ce{CuSO4}$, we must take the molar mass of
     each element in the molecule, and add it together.
 
@@ -127,11 +126,12 @@ Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
     atoms, the actual molar mass would be $16*4=64$ g/mol
 
     Combining the molar mass of the 3 elements, we get
-    \begin{equation}
+    \begin{align*}
     63.546+64+32.065=159.611\ g/mol
-    \end{equation}
+    \end{align*}
 
-   b. $\ce{NH4OH}$
+b. What is the gfm of $\ce{NH4OH}$
+
     To find the molar mass of $\ce{NH4OH}$ we must take the molar mass of each element in the molecule, and add it together.
 
     $\ce{N}$ (Nitrogen) has a molar mass of 14.0067 g/mol.
@@ -147,7 +147,8 @@ Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
     14.0067+15.9994+1.00794=35.04580\ g/mol
     \end{align*}
 
-   c. $\ce{NH4OH}$
+c. What is the gfm of $\ce{NH4OH}$
+
     To find the molar mass of $\ce{NH4OH}$ we must take the molar mass of each element in the molecule, and add it together.
 
     $\ce{N}$ (Nitrogen) has a molar mass of 14.0067 g/mol.
@@ -159,11 +160,12 @@ Therefore, there are 1.26 grams of zinc in $1.16\times10^{22}$ atoms  of zinc
     $1.008*5=5.039\ g/mol$.
 
     Combining the molar mass of the 3 elements, we get
-    \begin{equation}
+    \begin{align*}
     14.0067+15.9994+1.0079=35.046\ g/mol
-    \end{equation}
+    \end{align*}
 
-d. \(\ce{Ca2Fe(CN)6*12H2O}\)
+d. What is the gfm of \(\ce{Ca2Fe(CN)6*12H2O}\)
+
     To find the molar mass of \(\ce{Ca2Fe(CN)6*12H2O}\) we must take the molar
    mass of each element in each molecule, and add it together.
 
@@ -189,9 +191,9 @@ d. \(\ce{Ca2Fe(CN)6*12H2O}\)
     $15.9994*12=191.9928\ g/mol$.
 
     Combining the molar mass of the 2 molecules, we get
-    \begin{equation}
-    80.174+=35.04580\ g/mol
-    \end{equation}
+    \begin{align*}
+    80.174+55.845+72.0642+84.0402+24.19056+191.9928=508.307\ g/mol
+    \end{align*}
 
 * How many moles of cadmium bromide ($\ce{CdBr2}$) are in a 39.25 g sample?
 For this we can use Avogadro's number. One mole contains $6.022*10^{23}$ particles. From that we get the following
@@ -276,7 +278,7 @@ Therefore, we can substitute 4 for n.
 &=\ce{C12Cl4H4}
 \end{align*}
 
-** Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%
+* Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95%, O = 7.33%, Cl = 48.72%.
 \begin{align*}
 &Mo:\ \frac{43.95g}{1}\times\frac{1mol\ce{Mo}}{95.95g}=0.458mol\\
 &Cl:\ \frac{48.72g}{1}\times\frac{1mol\ce{Cl}}{35.45g}=1.374mol\\
@@ -307,7 +309,7 @@ b. How many molecules are present in 10.0 mg of aspartame? How many hydrogen ato
     Therefore, there are $0.035mol$ of aspartame in 10 grams
     Multiplied by Avogadro's number, that's $2.0475*10^{22}$ molecules.
 
-* Watch the following video on making a solution and how to calculate molarity:
+* Watch the following video on making a solution and how to calculate molarity and answer the following questions:
 #+attr_latex: :options [(a)]
 a. Describe how you would make 100.0 mL of a 1.0 M solution of lithium chloride.
 We have a $1.0M$ solution, which translates to  a $1.0mol/L$
@@ -321,18 +323,25 @@ x&= M * y(mol/L) * LiCl\frac{g}{mol}\\
 &4.2394g\\
 \end{align*}
 Therefore, in order to get 100mL of lithium chloride, we must need 4.2394g of lithium chloride
-1. First we must get our lithium chloride.
-2. Afterwards, using our electronic balance, lab scoop, and weighing paper we can measure out 4.2394g of LiCl.
-3. Once we calculate that out, we can use a 100.0mL volumetric flask to measure it.
-4. Since the molarity is $1.0mol/L$, 100% of the solution is $\ce{LiCL}$, and no water is required.
+   1. First we must get our lithium chloride.
+   2. Afterwards, using our electronic balance, lab scoop, and weighing paper we can measure out 4.2394g of LiCl.
+   3. Once we calculate that out, we can use a 100.0mL volumetric flask to measure it.
+   4. Since the molarity is $1.0mol/L$, 100% of the solution is $\ce{LiCL}$, and no
+      water is required.
 
-b. Design an experiment to collect data that supports the claim that your 100.0
-   mL, 1.0 M LiCl solution is a homogeneous mixture. Describe the steps, the
-   data you would collect, and how the data support the claim. Laboratory
-   equipment for your experiment should be taken from the list in the prior
-   question. (Again, you may not need all of the equipment.)
+b. Design an experiment to collect data that supports the claim that your 100.0 mL, 1.0 M LiCl solution is a homogeneous mixture.
+   1. First we transfer the solution to a 100mL beaker
+   2. Now, we will heat this solution until it boils and water starts
+      evaporating. We will place a cold surface above the steam coming out from
+      the boiling solution.
+   3. What we will observe is that when all the water evaporates, we can see
+      white precipitate of NaCl in the bottom of the container. We will also
+      see that water has condensed on the sides of the container
+   4. We used physical methods to restore the components of the solution
+     separately. Based on these observations, we prove that \(\ce{NaCl}\) is a
+     homogenous solution
 
-** TODO The structures of a water molecule and a crystal of LiCl(s) are represented above. A student prepares a 0.10 M solution by dissolving LiCl(s) in enough water to make 100.0 mL of solution.
+* The structures of a water molecule and a crystal of LiCl(s) are represented above. A student prepares a 0.10 M solution by dissolving LiCl(s) in enough water to make 100.0 mL of solution.
 #+attr_latex: :options [(a)]
 a. How much LiCl(s) was dissolved to make the 0.10 M solution? Justify with a
    calculation.
