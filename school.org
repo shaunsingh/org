@@ -39,7 +39,7 @@ Pages 8-15
 *** TODO Journal 2
 *** Link: https://docs.google.com/document/d/1AgheICzyVXinpNIlrc68NYpcnj3ixJpsZE4_Ji8mN5M/edit
 
-** AP CSP [0%]
+** AP CSP [50%]
 *** TODO Reading <2021-09-09 Thu>
 Read chapters 1-6 of the book: Blown to Bits: Your Life, Liberty, and Happiness After the Digital Explosion by Hal Abelson, Ken Ledeem and Harry Lewis.
 Book is available at http://www.bitsbook.com/excerpts/.
@@ -49,7 +49,8 @@ Vocabulary list should have a minimum of 10 words with their definitions and cor
 1. Write down four Ideas
 2. Critical for the chapter, page number should be included
 3. Complete a double entry journal explaining your opinion on those ideas, two paragraphs minimum.
-*** STRT Khan Academy <2021-08-31 Tue>
+*** DONE Khan Academy <2021-08-31 Tue>
+CLOSED: [2021-08-07 Sat 15:35]
 **** Complete the assignment On Khanacademy
 **** Code: TN2B2XJS
 *** Link: https://drive.google.com/file/d/1cxUppiGJmv22fipQfyjXtoKX0wrBUBG-/view?usp=drive_web&authuser=0
