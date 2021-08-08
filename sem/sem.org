@@ -6,44 +6,65 @@
 
 * Lens, Issues, and Articles
 - Theme: Technology
-
 #+attr_latex: :environment longtable :align |p{2.5cm}|p{6.5cm}|p{1cm}|
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lens                       | Issue/Question                                                      | Article                                                                                                                                                                  |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| environmental              | How can we use technology to efficiently generate and store energy? | https://energystorage.org/why-energy-storage/technologies/                                                                                                               |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Scientific                 | How can we use technology to                                        |                                                                                                                                                                          |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Economic                   | How can we use AI to predict and lower the cost of goods?           | https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence                                                                                                     |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Political and Historical   | How can we use AI to analyze and predict the results of elections?  | https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009                                                                |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Artistic and Philosophical | How will artificially-generated art affect art prices in the future | https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6 |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cultural and Social        | What are the effects of technology on a kids social life?           | https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula                                                                          |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Futuristic                 | How will technology affect transportation in the future?            |                                                                                                                                                                          |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ethical                    | How can we prevent unethical robotics in the future?                |                                                                                                                                                                          |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Lens                       | Issue/Question                                                      | Article                                                                                                                                                                                                                                             |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| environmental              | How can we use technology to efficiently generate and store energy? | https://energystorage.org/why-energy-storage/technologies/                                                                                                                                                                                          |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Scientific                 | How can we use technology to filter out artificial research papers? | https://www.nature.com/articles/d41586-021-00733-5                                                                                                                                                                                                  |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Economic                   | How can we use AI to predict demand and reduce cost of goods?       | https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence                                                                                                                                                                                |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Political and Historical   | How can we use AI to analyze and predict the results of elections?  | https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009                                                                                                                                           |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Artistic and Philosophical | How will artificially-generated art affect art prices in the future | https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6                                                                            |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cultural and Social        | What are the effects of technology on a kids social life?           | https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula                                                                                                                                                     |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Futuristic                 | How will technology affect transportation in the future?            | https://capgemini-engineering.com/us/en/insight/how-technologies-will-change-the-future-of-transport/                                                                                                                                               |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ethical                    | How can we prevent unethical robotics in the future?                | https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiq9c2RgKLyAhWTRjABHVk1BYMQFnoECAgQAQ&url=https%3A%2F%2Fwww.frontiersin.org%2Farticles%2F10.3389%2Ffrobt.2017.00075%2Ffull&usg=AOvVaw2guSvyvgU4OWgLh_aLAxnQ |
+|----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 * Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:
-** Article 1:
+** Article 1: [The fight against fake-paper factories that churn out sham science][https://www.nature.com/articles/d41586-021-00733-5]
 1. Brief summary of the article
+   - Since last January, journals have retracted at least 370 papers that have
+     been publicly linked to paper mills. Many more retractions are expected to
+     follow; 15 are still under investigation. Research-integrity sleuths have
+     warned that some scientists buy papers from third-party firms to help their
+     careers. Image detectives who work under pseudonyms posted a list of more
+     than 400 published papers they said probably came from a paper mill in
+     January 2020. By March 2021, they had collectively listed more than 1,300
+     articles as possibly coming from paper mills. Around 26% of the articles
+     that the sleuths alleged came from paper Mills have so far been retracted
+     or labelled with expressions of concern.
+
 2. Authors Thesis:
+   - research-integrity sleuths have repeatedly warned that some scientists buy
+     papers from third-party firms to help their careers
+
 3. To what extent are the authors claims valid?
 4. What is one weakness with the author's claim?
 5. Copy and paste 2 direct quotes that best represent this article .
 6. Evaluate the article's effectiveness. Is it convincing?
 7. Do you agree with the author?
 8. Create an MLA works cited entry for each article
-** Article 2:
+
+** Article 2:  https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx
  1. Brief summary of the article
+    - Christie's becomes the first auction house to offer a work of art created by an algorithm. Portrait of Edmond Belamy was created by Paris-based
+      collective Obvious. It is one of a group of portraits of the fictional
+      Belamy family created by Hugo Caselles-Dupré. The AI-generated artwork
+      sells for $432,500, nearly 45 times its high estimate.
+
  2. Authors Thesis:
- 3. To what extent are the authors claims valid?
- 4. What is one weakness with the author's claim?
- 5. Copy and paste 2 direct quotes that best represent this article
- 6. Evaluate the article's effectiveness. Is it convincing?
- 7. Do you agree with the author?
- 8. Create an MLA works cited entry for each article
+    - This portrait, however, is not the product of a human mind. It was created by an artificial intelligence, an algorithm defined by that algebraic formula with its many parentheses
+
+3. To what extent are the authors claims valid?
+4. What is one weakness with the author's claim?
+5. Copy and paste 2 direct quotes that best represent this article
+6. Evaluate the article's effectiveness. Is it convincing?
+7. Do you agree with the author?
+8. Create an MLA works cited entry for each article
