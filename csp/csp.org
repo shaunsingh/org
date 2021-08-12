@@ -88,8 +88,7 @@
    locations of users. These locations are often sold to advertising firms.
    Companies like Cuebiq make money by collecting location data from smartphone
    users who agree to share their locations for weather or maps, then analyse
-   and sell that data to advertisers and marketers. Location data shouldn't be
-   used to target people, and should be used as a last resort
+   and sell that data to advertisers and marketers. Location data shouldn't be  used to target people, and should be used as a last resort
 
 2. While technically it is all just bits, personally I believe we shouldn't
    think of it as such. Thinking of computers in terms of bits is like thinking
@@ -198,19 +197,51 @@
     http://wordnetweb.princeton.edu/perl/webwn?s=clairvoyant&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 ** Ideas:
-1.
-2.
-3.
-4.
+1. The notion of privacy has become fuzzier at the same time as the
+   secrecy-enhancing technology of encryption has become widespread (Page 21)
+2. His car had a black box-an EDR, that captured every detail about what was
+   going on before the crash (page 27)
+3. Bits mediate our daily lives. It is almost as hard to avoid leaving digital
+   footprints as it is to avoid touching the ground when we walk
+4. "There is no patient confidentiality" said Dr. Joseph Heyman. "It's gone"
 
 ** Journal Entry
-1.
+1. I agree with the notion that privacy has become fuzzier over time. As
+   encryption and security technologies are becoming more widespread, it seems
+   people are caring less and less about their privacy when really they should
+   be caring more. Companies give us a false sense of privacy, when really they
+   are breaching it more than ever.
 
-2.
+   The greatest example of this is google. When you open up www.google.com, you
+   can see multiple mentions of privacy. In reality, google is notorious for
+   using user information to target ads and search results. They have multiple
+   analytics and adsense services that companies can purchase.
 
-3.
+2.  I agree with the idea of having tracking devices in cars. If most people are
+   given the choice between getting an expensive ticket and facing criminal
+   charges or lying, most people will choose to lie. Devices like the EDR ensure
+   we can make a conclusion based on actual data rather than from the victims
+   point of view.
+
+   However, similar to the issue with cellphone locations  the key term is /as
+   long as that information is kept private and in the hands of the government/.
+   Private companies shouldn't be able to get the locations of users and use it
+   when it isn't needed. Examples of this can be determining how to price
+   billboard advertising, requiring cars to be serviced ever /x/ miles.  There can
+   be certain exceptions (e.g. An insurance company trying to determine who is
+   at fault), but for the most part this information should be for the
+   government, and even then only for when the government absolutely requires it
+
+3. Its true that now its extremely difficult to do anything without leaving
+   digital traces everywhere. I personally think this issue is linked to idea
+   #1, people value convenience over privacy. Companies create a false sense of
+   privacy, and justify all the analytics with improved convenience.
+
+   Most people don't want to put effort into maintaining their privacy, or
+   resist changes to their workflow and life .
 
 4.
+
 * Chapter 3: Ghosts in the Machine
 ** Vocabulary
 1. Word: pervasive
@@ -287,9 +318,6 @@
 
 ** Journal Entry
 1.
-
 2.
-
 3.
-
 4.
