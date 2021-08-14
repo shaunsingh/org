@@ -1,8 +1,9 @@
-% Created 2021-08-04 Wed 15:22
+% Created 2021-08-14 Sat 19:45
 % Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{article}
+\documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{fontspec}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -13,28 +14,223 @@
 \usepackage{textcomp}
 \usepackage{amssymb}
 \usepackage{capt-of}
-\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
+\setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
+% features: (acronym par-sep engraved-code-setup engraved-code)
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+
+\usepackage{fvextra}
+\fvset{
+  commandchars=\\\{\},
+  highlightcolor=white!95!black!80!blue,
+  breaklines=true,
+  breaksymbol=\color{white!60!black}\tiny\ensuremath{\hookrightarrow}}
+\renewcommand\theFancyVerbLine{\footnotesize\color{black!40!white}\arabic{FancyVerbLine}}
+
+\definecolor{codebackground}{HTML}{f7f7f7}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+% TODO have code boxes keep line vertical alignment
+\usepackage[breakable,xparse]{tcolorbox}
+\DeclareTColorBox[]{Code}{o}%
+{colback=codebackground, colframe=codeborder,
+  fontupper=\footnotesize,
+  colupper=EFD,
+  IfNoValueTF={#1}%
+  {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
+    boxrule=0.5pt, left=2pt}%
+  {boxsep=2.5pt, arc=0pt, outer arc=0pt,
+    boxrule=0pt, leftrule=1.5pt, left=0.5pt},
+  right=2pt, top=1pt, bottom=0.5pt,
+  breakable}
+
+\definecolor{EFD}{HTML}{605a52}
+\definecolor{EfD}{HTML}{f7f3ee}
+\newcommand{\EFD}[1]{\colorbox{EfD}{\textcolor{EFD}{#1}}} % default
+\definecolor{EFk}{HTML}{614c61}
+\definecolor{Efk}{HTML}{f1ddf1}
+\newcommand{\EFk}[1]{\colorbox{Efk}{\textcolor{EFk}{#1}}} % font-lock-keyword-face
+\definecolor{EFd}{HTML}{9d8f7c}
+\newcommand{\EFd}[1]{\textcolor{EFd}{\textit{#1}}} % font-lock-doc-face
+\newcommand{\EFt}[1]{#1} % font-lock-type-face
+\definecolor{EFs}{HTML}{525643}
+\definecolor{Efs}{HTML}{e2e9c1}
+\newcommand{\EFs}[1]{\colorbox{Efs}{\textcolor{EFs}{#1}}} % font-lock-string-face
+\definecolor{EFw}{HTML}{5b4343}
+\definecolor{Efw}{HTML}{f6cfcb}
+\newcommand{\EFw}[1]{\colorbox{Efw}{\textcolor{EFw}{#1}}} % font-lock-warning-face
+\newcommand{\EFb}[1]{\textit{#1}} % font-lock-builtin-face
+\definecolor{EFct}{HTML}{b9a992}
+\newcommand{\EFct}[1]{\textcolor{EFct}{#1}} % font-lock-comment-face
+\definecolor{EFc}{HTML}{465953}
+\definecolor{Efc}{HTML}{d2ebe3}
+\newcommand{\EFc}[1]{\colorbox{Efc}{\textcolor{EFc}{#1}}} % font-lock-constant-face
+\newcommand{\EFpp}[1]{#1} % font-lock-preprocessor-face
+\newcommand{\EFnc}[1]{#1} % font-lock-negation-char-face
+\definecolor{EFv}{HTML}{4c5361}
+\definecolor{Efv}{HTML}{dde4f2}
+\newcommand{\EFv}[1]{\colorbox{Efv}{\textcolor{EFv}{#1}}} % font-lock-variable-name-face
+\newcommand{\EFf}[1]{#1} % font-lock-function-name-face
+\definecolor{EFcd}{HTML}{b9a992}
+\newcommand{\EFcd}[1]{\textcolor{EFcd}{#1}} % font-lock-comment-delimiter-face
+\newcommand{\EFrc}[1]{#1} % font-lock-regexp-grouping-construct
+\newcommand{\EFrb}[1]{#1} % font-lock-regexp-grouping-backslash
+\definecolor{EFob}{HTML}{5b5143}
+\definecolor{Efob}{HTML}{f7e0c3}
+\newcommand{\EFob}[1]{\colorbox{Efob}{\textcolor{EFob}{#1}}} % org-block
+\definecolor{EFhn}{HTML}{465953}
+\definecolor{Efhn}{HTML}{d2ebe3}
+\newcommand{\EFhn}[1]{\colorbox{Efhn}{\textcolor{EFhn}{#1}}} % highlight-numbers-number
+\definecolor{EFhq}{HTML}{465953}
+\newcommand{\EFhq}[1]{\textcolor{EFhq}{#1}} % highlight-quoted-quote
+\definecolor{EFhs}{HTML}{4c5361}
+\definecolor{Efhs}{HTML}{dde4f2}
+\newcommand{\EFhs}[1]{\colorbox{Efhs}{\textcolor{EFhs}{#1}}} % highlight-quoted-symbol
+\definecolor{EFrdi}{HTML}{7382a0}
+\newcommand{\EFrdi}[1]{\textcolor{EFrdi}{#1}} % rainbow-delimiters-depth-1-face
+\definecolor{EFrdii}{HTML}{9c739c}
+\newcommand{\EFrdii}[1]{\textcolor{EFrdii}{#1}} % rainbow-delimiters-depth-2-face
+\definecolor{EFrdiii}{HTML}{81895d}
+\newcommand{\EFrdiii}[1]{\textcolor{EFrdiii}{#1}} % rainbow-delimiters-depth-3-face
+\definecolor{EFrdiv}{HTML}{957f5f}
+\newcommand{\EFrdiv}[1]{\textcolor{EFrdiv}{#1}} % rainbow-delimiters-depth-4-face
+\definecolor{EFrdv}{HTML}{5f8c7d}
+\newcommand{\EFrdv}[1]{\textcolor{EFrdv}{#1}} % rainbow-delimiters-depth-5-face
+\definecolor{EFrdvi}{HTML}{955f5f}
+\newcommand{\EFrdvi}[1]{\textcolor{EFrdvi}{#1}} % rainbow-delimiters-depth-6-face
+\definecolor{EFrdvii}{HTML}{81895d}
+\newcommand{\EFrdvii}[1]{\textcolor{EFrdvii}{#1}} % rainbow-delimiters-depth-7-face
+\definecolor{EFrdiix}{HTML}{81895d}
+\newcommand{\EFrdiix}[1]{\textcolor{EFrdiix}{#1}} % rainbow-delimiters-depth-8-face
+\definecolor{EFrdix}{HTML}{9c739c}
+\newcommand{\EFrdix}[1]{\textcolor{EFrdix}{#1}} % rainbow-delimiters-depth-9-face
+% end features
+% make document follow Emacs theme
+\definecolor{bg}{HTML}{f7f3ee}
+\definecolor{fg}{HTML}{605a52}
+
+\definecolor{red}{HTML}{955f5f}
+\definecolor{orange}{HTML}{957f5f}
+\definecolor{green}{HTML}{81895d}
+\definecolor{teal}{HTML}{5f8c7d}
+\definecolor{yellow}{HTML}{957f5f}
+\definecolor{blue}{HTML}{7382a0}
+\definecolor{dark-blue}{HTML}{7382a0}
+\definecolor{magenta}{HTML}{9c739c}
+\definecolor{violet}{HTML}{9c739c}
+\definecolor{cyan}{HTML}{5f8c7d}
+\definecolor{dark-cyan}{HTML}{5f8c7d}
+
+\definecolor{documentTitle}{HTML}{9c739c}
+\definecolor{documentInfo}{HTML}{9c739c}
+\definecolor{level1}{HTML}{955f5f}
+\definecolor{level2}{HTML}{957f5f}
+\definecolor{level3}{HTML}{9c739c}
+\definecolor{level4}{HTML}{96a1b7}
+\definecolor{level5}{HTML}{b496b4}
+\definecolor{level6}{HTML}{b9c0cf}
+\definecolor{level7}{HTML}{cdb9cd}
+\definecolor{level8}{HTML}{e3e6ec}
+
+\definecolor{link}{HTML}{7382a0}
+\definecolor{cite}{HTML}{957f5f}
+\definecolor{itemlabel}{HTML}{7382a0}
+\definecolor{code}{HTML}{957f5f}
+\definecolor{verbatim}{HTML}{81895d}
+
+\definecolor{codebackground}{HTML}{f7e0c3}
+\colorlet{EFD}{fg}
+\definecolor{codeborder}{HTML}{efebe6}
+
+\pagecolor{bg}
+\color{fg}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+% end customisations
 \author{Shaurya Singh}
 \date{\today}
 \title{Ap CSP Summer Assignment}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
 \hypersetup{
- pdfauthor={Shaurya Singh},
- pdftitle={Ap CSP Summer Assignment},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
- pdflang={English}}
+  pdfauthor={Shaurya Singh},
+  pdftitle={Ap CSP Summer Assignment},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
 \begin{document}
 
 \maketitle
 \setcounter{tocdepth}{2}
 \tableofcontents
 
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{7382a0}{(}\EFk{after!} ox
+  \textcolor[HTML]{9c739c}{(}\EFk{defvar} \EFv{ox-chameleon-base-class} \EFs{"cb-doc"}
+    \EFd{"The base class that chameleon builds on"}\textcolor[HTML]{9c739c}{)}
 
-\section{Chapter 1: Digital Explosion}
-\label{sec:orga50608e}
+  \textcolor[HTML]{9c739c}{(}\EFk{defvar} \EFv{ox-chameleon--p} nil
+    \EFd{"Used to indicate whether the current export is trying to blend in. Set just before being accessed."}\textcolor[HTML]{9c739c}{)}
+
+  \textcolor[HTML]{9c739c}{(}\EFk{defadvice!} ox-chameleon-org-latex-detect \textcolor[HTML]{81895d}{(}orig-fun info\textcolor[HTML]{81895d}{)}
+    \EFb{:around} \EFhq{\#'}\EFhs{org-export-install-filters}
+    \textcolor[HTML]{81895d}{(}\EFk{setq} \EFv{ox-chameleon--p} \textcolor[HTML]{957f5f}{(}\EFk{when} \textcolor[HTML]{7382a0}{(}\EFc{equal} \textcolor[HTML]{9c739c}{(}\EFc{plist-get} info \EFb{:latex-class}\textcolor[HTML]{9c739c}{)}
+                                       \EFs{"chameleon"}\textcolor[HTML]{7382a0}{)}
+                            \textcolor[HTML]{7382a0}{(}\EFc{plist-put} info \EFb{:latex-class} \EFv{ox-chameleon-base-class}\textcolor[HTML]{7382a0}{)}
+                            \textcolor[HTML]{7382a0}{(}\EFk{setq} \EFv{engrave-faces-preset-styles} \textcolor[HTML]{9c739c}{(}\EFf{engrave-faces-generate-preset}\textcolor[HTML]{9c739c}{)}\textcolor[HTML]{7382a0}{)}
+                            t\textcolor[HTML]{957f5f}{)}\textcolor[HTML]{81895d}{)}
+    \textcolor[HTML]{81895d}{(}\EFc{funcall} orig-fun info\textcolor[HTML]{81895d}{)}\textcolor[HTML]{9c739c}{)}
+\end{Verbatim}
+\end{Code}
+
+\section{Digital Explosion}
+\label{sec:org15c6345}
 \subsection{Vocabulary}
-\label{sec:orgaadc02e}
+\label{sec:org81c95e2}
 \begin{enumerate}
 \item Word: bit
 
@@ -89,7 +285,7 @@ Ref: WordNet Search - 3.1.
 
 \item Word: database
 
-Definition: (n) database (an organized body of related information)
+Definition: (n) \textbf{database} (an organized body of related information)
 
 Ref: WordNet Search - 3.1.
 \url{http://wordnetweb.princeton.edu/perl/webwn?s=database\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
@@ -103,7 +299,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Ideas:}
-\label{sec:orga58c2ab}
+\label{sec:org8645384}
 \begin{enumerate}
 \item Companies keep records of cellphone locations (Page 1)
 \item ``Its all just bits'' (Page 5)
@@ -112,7 +308,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:org718a555}
+\label{sec:orgd771c1c}
 \begin{enumerate}
 \item I support the idea of companies keeping track of cellphone locations, as long
 as that information is kept private and in the hands of only the government.
@@ -124,8 +320,7 @@ the hands of the government}. Private companies shouldn't be able to get the
 locations of users. These locations are often sold to advertising firms.
 Companies like Cuebiq make money by collecting location data from smartphone
 users who agree to share their locations for weather or maps, then analyse
-and sell that data to advertisers and marketers. Location data shouldn't be
-used to target people, and should be used as a last resort
+and sell that data to advertisers and marketers. Location data shouldn't be  used to target people, and should be used as a last resort
 
 \item While technically it is all just bits, personally I believe we shouldn't
 think of it as such. Thinking of computers in terms of bits is like thinking
@@ -166,138 +361,223 @@ iCloud, Google Drive), we should focus on make data transfer to and from
 those drives quicker and more secure.
 \end{enumerate}
 
-\section{Chapter 2: Naked in the Sunlight}
-\label{sec:org38d144b}
+\section{Naked in the Sunlight}
+\label{sec:orgce670e2}
 \subsection{Vocabulary}
-\label{sec:orgfad05dc}
+\label{sec:orgb790a04}
 \begin{enumerate}
-\item Word: bit
+\item Word: pervasive
 
-Definition: (n) \textbf{bit} (a unit of measurement of information (from binary + digit); the amount of information in a system having two equiprobable states) ``there are 8 bits in a byte''
+Definition: per·va·sive | pərˈvāsiv | adjective (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people: ageism is pervasive and entrenched in our society.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=bit\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pervasive\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
 
-\item Word: koan
+\item Word: cleric
 
-Definition: (n) \textbf{koan} (a paradoxical anecdote or a riddle that has no solution; used in Zen Buddhism to show the inadequacy of logical reasoning)
+Definition: cler·ic | ˈklerik | noun a priest or religious leader, especially a Christian or Muslim one.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=koan\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=cleric\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
 
-\item Word: ping
+\item Word: disseminate
 
-Definition: (v) \textbf{ping} (send a message from one computer to another to check whether it is reachable and active) ``ping your machine in the office''
+Definition: dis·sem·i·nate | dəˈseməˌnāt | verb [with object ] spread (something, especially information) widely: health authorities should foster good practice by disseminating information.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=Ping\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=disseminate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
 
-\item Word: benign
+\item Word: encode
 
-Definition: (adj) \textbf{benign} (not dangerous to health; not recurrent or progressive (especially of a tumor))
+ Definition: en·code | inˈkōd, enˈkōd | verb [with object ] convert into a
+coded form: using this technique makes it possible to encode and transmit recorded video information.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=benign\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=encode\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: utopian
+\item Word: RFID
 
-Definition: (n) \textbf{utopian} (an idealistic (but usually impractical) social reformer) ``a Utopian believes in the ultimate perfectibility of man''
+ Definition: RFID \textbf{(abbreviation)} radio frequency identification, denoting
+technologies that use radio waves to identify people or objects carrying encoded microchips.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=utopian\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=RFID\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: err
+\item Word: exonerate
 
-Definition: (v) \textbf{err}, mistake, slip (to make a mistake or be incorrect)
+Definition:  ex·on·er·ate | iɡˈzänəˌrāt | verb [with object ] 1 (especially of an official body) absolve (someone) from blame for a fault or wrongdoing, especially after due consideration of the case: they should exonerate these men from this crime
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=err\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=exonerate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: paradoxically
+\item Word: discourse
 
-Definition: (adv) \textbf{paradoxically} (in a paradoxical manner) ``paradoxically,  ice ages seem to occur when the sun gets hotter''
+ Definition: noun | ˈdisˌkôrs | written or spoken communication or debate: an imagined discourse between two people
+traveling in France.
 
-(adj) \textbf{paradoxical}, self-contradictory (seemingly contradictory but nonetheless possibly true) ``it is paradoxical that standing is more tiring than walking''
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=discourse\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=paradoxically\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+\item Word: profilerate
 
-\item Word: expunge
-
-Definition: (v)  \textbf{expunge} (remove by erasing or crossing out or as if by drawing a line)
-
-Ref: WordNet Search - 3.1.
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=expunge\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\item Word: database
-
-Definition: (n) database (an organized body of related information)
+Definition: (v)  \textbf{profilerate} increase rapidly in numbers; multiply.
 
 Ref: WordNet Search - 3.1.
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=database\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=profilerate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: blacklist
+\item Word: prodigious
 
-Definition: (v) \textbf{blacklist} (put on a blacklist so as to banish or cause to be boycotted) ``many books were blacklisted by the Nazis''
+Definition: pro·di·gious | prəˈdijəs | adjective, remarkably or impressively great in extent, size, or degree: the stove consumed a prodigious amount of fuel.
 
 Ref: WordNet Search - 3.1.
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=blacklist\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=prodigious\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: clairvoyant
+
+Definition: clair·voy·ant | ˌklerˈvoiənt | noun a person who claims to have a supernatural ability to perceive events in the future or beyond normal sensory contact
+
+Ref: WordNet Search - 3.1.
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=clairvoyant\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 \end{enumerate}
 
 \subsection{Ideas:}
-\label{sec:org432b79f}
+\label{sec:org2ee6fff}
 \begin{enumerate}
-\item Companies keep records of cellphone locations (Page 1)
-\item ``Its all just bits'' (Page 5)
-\item ``In fact, processors have hardly grown faster at all'' (Page 8)
-\item ``By 2011, we may be producing more bits than we can store'' (Page 10)
+\item The notion of privacy has become fuzzier at the same time as the
+secrecy-enhancing technology of encryption has become widespread (Page 21)
+\item His car had a black box-an EDR, that captured every detail about what was
+going on before the crash (page 27)
+\item Bits mediate our daily lives. It is almost as hard to avoid leaving digital
+footprints as it is to avoid touching the ground when we walk
+\item ``There is no patient confidentiality'' said Dr. Joseph Heyman. ``It's gone''
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:orga078be6}
+\label{sec:org13874b1}
 \begin{enumerate}
-\item I support the idea of companies keeping track of cellphone locations, as long
-as that information is kept private and in the hands of only the government.
-Cellular locations are incredibly useful for finding missing people, and
-quickly reacting to emergencies, such as in Tanya's case.
+\item I agree with the notion that privacy has become fuzzier over time. As
+encryption and security technologies are becoming more widespread, it seems
+people are caring less and less about their privacy when really they should
+be caring more. Companies give us a false sense of privacy, when really they
+are breaching it more than ever.
 
-However, the key term is \emph{as long as that information is kept private and in
-the hands of the government}. Private companies shouldn't be able to get the
-locations of users. These locations are often sold to advertising firms.
-Companies like Cuebiq make money by collecting location data from smartphone
-users who agree to share their locations for weather or maps, then analyse
-and sell that data to advertisers and marketers. Location data shouldn't be
-used to target people, and should be used as a last resort
+The greatest example of this is google. When you open up www.google.com, you
+can see multiple mentions of privacy. In reality, google is notorious for
+using user information to target ads and search results. They have multiple
+analytics and adsense services that companies can purchase.
 
-\item While technically it is all just bits, personally I believe we shouldn't
-think of it as such. Thinking of computers in terms of bits is like thinking
-of writing in terms of atoms on a piece of paper. While all handwritten work
-is technically just graphite on paper, we interpret it as much more than
-that. We think of writing in terms of words, phrases, paragraphs, and should
-think of the computer experience in terms of experiences. Similarly,
-copyright law is based on text, and so laws pertaining to computers should be
-based on the end user's experience, not what delivers that experience
+\item I agree with the idea of having tracking devices in cars. If most people are
+given the choice between getting an expensive ticket and facing criminal
+charges or lying, most people will choose to lie. Devices like the EDR ensure
+we can make a conclusion based on actual data rather than from the victims
+point of view.
 
-\item Considering the next sentence is talking about ``multiple processors on the
-same chip'' I assume this statement is talking about the processor cores
-themselves. However, data shows that the fastest processors today are about
-80 times faster in terms of single core performance with the same efficiency.
-Still, its true that processor cores have increased over the years (from
-single core chips to server chips with over 128 cores in the span of just 20
-years).
+However, similar to the issue with cellphone locations  the key term is \emph{as
+long as that information is kept private and in the hands of the government}.
+Private companies shouldn't be able to get the locations of users and use it
+when it isn't needed. Examples of this can be determining how to price
+billboard advertising, requiring cars to be serviced ever \emph{x} miles.  There can
+be certain exceptions (e.g. An insurance company trying to determine who is
+at fault), but for the most part this information should be for the
+government, and even then only for when the government absolutely requires it
 
-In my opinion we should focus more on processor efficiency and less on raw
-processor speed. Processor's these days, even budget ones, are more than fast
-enough for the majority of use cases. The market for large, high end HEDT
-processors is extremely small compared to the market share of their lower end
-counterparts. The future is about switching to arm-based processors in
-laptops, which should give much more performance at the same wattage.
+\item Its true that now its extremely difficult to do anything without leaving
+digital traces everywhere. I personally think this issue is linked to idea
+\#1, people value convenience over privacy. Companies create a false sense of
+privacy, and justify all the analytics with improved convenience.
 
-\item I found this statement the most interesting in this chapter. We've made leaps
-and bounds in storage technology since then, nowadays you can buy tens of
-terabytes of storage for quite cheap, compared to the expensive ``high end''
-80gb drives you could get in 2008, back when this textbook
-released.
+Most people don't want to put effort into maintaining their privacy, or
+resist changes to their workflow and life .
 
-Similar my opinion on processor speed, instead of focusing on storage size
-and how much data we can store, we should talk about how we store data.
-Companies are moving to cloud-based centralized storage, and as of 2020 50\%
-of all corporate data is stored in the cloud, up from 30\% just 5 years
-earlier. As more and more people start using cloud services (e.g. OneDrive,
-iCloud, Google Drive), we should focus on make data transfer to and from
-those drives quicker and more secure.
+\item 
+\end{enumerate}
+
+\section{Ghosts in the Machine}
+\label{sec:orgbfce3e7}
+\subsection{Vocabulary}
+\label{sec:orge60cb55}
+\begin{enumerate}
+\item Word: pervasive
+
+Definition: per·va·sive | pərˈvāsiv | adjective (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people: ageism is pervasive and entrenched in our society.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pervasive\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: cleric
+
+Definition: cler·ic | ˈklerik | noun a priest or religious leader, especially a Christian or Muslim one.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=cleric\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: disseminate
+
+Definition: dis·sem·i·nate | dəˈseməˌnāt | verb [with object ] spread (something, especially information) widely: health authorities should foster good practice by disseminating information.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=disseminate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
+
+\item Word: encode
+
+ Definition: en·code | inˈkōd, enˈkōd | verb [with object ] convert into a
+coded form: using this technique makes it possible to encode and transmit recorded video information.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=encode\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: RFID
+
+ Definition: RFID \textbf{(abbreviation)} radio frequency identification, denoting
+technologies that use radio waves to identify people or objects carrying encoded microchips.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=RFID\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: exonerate
+
+Definition:  ex·on·er·ate | iɡˈzänəˌrāt | verb [with object ] 1 (especially of an official body) absolve (someone) from blame for a fault or wrongdoing, especially after due consideration of the case: they should exonerate these men from this crime
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=exonerate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: discourse
+
+ Definition: noun | ˈdisˌkôrs | written or spoken communication or debate: an imagined discourse between two people
+traveling in France.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=discourse\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: profilerate
+
+Definition: (v)  \textbf{profilerate} increase rapidly in numbers; multiply.
+
+Ref: WordNet Search - 3.1.
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=profilerate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: prodigious
+
+Definition: pro·di·gious | prəˈdijəs | adjective, remarkably or impressively great in extent, size, or degree: the stove consumed a prodigious amount of fuel.
+
+Ref: WordNet Search - 3.1.
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=prodigious\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: clairvoyant
+
+Definition: clair·voy·ant | ˌklerˈvoiənt | noun a person who claims to have a supernatural ability to perceive events in the future or beyond normal sensory contact
+
+Ref: WordNet Search - 3.1.
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=clairvoyant\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+\end{enumerate}
+
+\subsection{Ideas:}
+\label{sec:org6f8dddd}
+\begin{enumerate}
+\item 
+
+\item 
+
+\item 
+
+\item 
+\end{enumerate}
+
+\subsection{Journal Entry}
+\label{sec:org24babdc}
+\begin{enumerate}
+\item 
+
+\item 
+
+\item 
+
+\item 
 \end{enumerate}
 \end{document}

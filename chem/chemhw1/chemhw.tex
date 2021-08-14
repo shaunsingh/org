@@ -1,39 +1,52 @@
-% Created 2021-07-16 Fri 18:51
+% Created 2021-08-14 Sat 17:28
 % Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{article}
+\documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{longtable}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{amssymb}
-\usepackage{capt-of}
+\usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{chemfig}
-\usepackage{mhchem}
+% features: (acronym underline par-sep table)
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\usepackage[normalem]{ulem}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+% end features
 \author{Shaurya Singh}
 \date{\today}
 \title{Ap Chem Summer Assignment \#1}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
 \hypersetup{
- pdfauthor={Shaurya Singh},
- pdftitle={Ap Chem Summer Assignment \#1},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
- pdflang={English}}
+  pdfauthor={Shaurya Singh},
+  pdftitle={Ap Chem Summer Assignment \#1},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
 \begin{document}
 
 \maketitle
+\setcounter{tocdepth}{1}
+\tableofcontents
+
 
 \section{Summer Assignment 1}
-\label{sec:orgca3dbeb}
+\label{sec:org997b19f}
 \subsection{How many significant figures are there each of the following values}
-\label{sec:org354d6b2}
+\label{sec:orgb81734e}
 \begin{enumerate}
 \item \(0.002330\) has \textbf{4} significant figures. Since the leading zeroes (those before the 2) don't count, the significant figures consist of \(2330\), or 4 significant figures.
 \item \(13.00\) has \textbf{4} significant figures. Since all non-zero digits are significant (the 13) as well as all digits after the decimal, every digit in this number is significant, giving us 4 significant figures.
@@ -45,7 +58,7 @@
 \end{enumerate}
 
 \subsection{Perform the indicated calculations on the following measured values, giving the final answer with the correct number of significant figures.}
-\label{sec:orgcff167b}
+\label{sec:org0fede97}
 \begin{enumerate}
 \item \(16.81 + 3.2257 = 20.0357 \approx 20.04\)
 \item \(324.6 * 815.991 = 264870.6786 \approx 264900\)
@@ -58,7 +71,7 @@
 \end{enumerate}
 
 \subsection{A sample of motor oil with a mass of 440 g occupies 500 mL. What is the density of the motor oil?}
-\label{sec:orgd660ba5}
+\label{sec:orge81487d}
 We have the following values:
 \begin{align*}
 &d = ?\\
@@ -75,13 +88,15 @@ d&=\frac{m}{v}\\
 Therefore the density of the motor oil is \(\approx0.9\frac{g}{mL}\)
 
 \subsection{The density of an object is 16.3 g/mL. Its volume is 0.125 L. What is the mass of the object?}
-\label{sec:orgc60a873}
+\label{sec:org5714fb5}
 We can apply vector analysis to solve for the correct units
 \begin{center}
 \begin{tabular}{ll}
+\toprule
 16.3g & 1000 mL\\
-\hline
+\midrule
 1mL & 1L\\
+\bottomrule
 \end{tabular}
 \end{center}
 We are left with
@@ -110,7 +125,7 @@ m &= 16300 * 0.125\ \frac{g\xout{L}}{\xout{L}}\\
 The mass of the object is \(\approx 2040g\)
 
 \subsection{A sample of uranium weighing 30.923 g was dropped in a graduated cylinder containing 22.30 mL of water. The volume of the water plus the sample was 23.90 mL. What is the density of uranium?}
-\label{sec:org12fd442}
+\label{sec:orgfec0ce8}
 The volume of the object is going to be the difference between the volume of the water and the volume of the water + object.
 \begin{equation}
 23.90mL - 22.30mL = 1.60mL
@@ -123,7 +138,7 @@ Now we have the following values:
 \end{align*}
 We can apply the same \(d=\frac{m}{v}\) to calculate for density
 \begin{align*}
-d&=\frac{m}{v} \\
+d&=\frac{m}{v}\\
             &=\frac{30.923g}{1.60mL}\\
             &=19.33\frac{g}{mL}\\
             &\approx19.3\frac{g}{mL}
@@ -131,7 +146,7 @@ d&=\frac{m}{v} \\
 Uranium has a density of \(\approx19.3\frac{g}{mL}\)
 
 \subsection{How many protons, neutrons and electrons are in each of the following ions?}
-\label{sec:org5d1a273}
+\label{sec:org4c6f44d}
 \begin{enumerate}
 \item The ion will have \textbf{26 protons}, since the atomic number is 26. It will also have \textbf{30 neutrons} since the mass \# is 56, and \(56-26=30\). Since it has a 3+ charge, there will be 3 more protons than electrons. \(26-3=23\), giving us \textbf{23 electrons}.
 \item The ion will have \textbf{20 protons}, since the atomic number is 20. It will also have \textbf{20 neutrons} since the mass \# is 40, and \(40-20 = 20\). Since the charge is 2+, there will be 2 more protons than electrons, and \(20-2=18\), giving us \textbf{18 electrons}
@@ -142,7 +157,7 @@ Uranium has a density of \(\approx19.3\frac{g}{mL}\)
 \end{enumerate}
 
 \subsection{Given the position in the periodic table, what is the most likely oxidation state (or common ion charge) that each element will have when forming an ion?}
-\label{sec:org5a49496}
+\label{sec:org298c5d1}
 \begin{enumerate}
 \item \(\ce{Cs}\) has a 1+ oxidation state
 \item \(\ce{N}\) has a 3- oxidation state
@@ -153,7 +168,7 @@ Uranium has a density of \(\approx19.3\frac{g}{mL}\)
 \end{enumerate}
 
 \subsection{Would you expect the following atoms to gain or lose electrons when forming an ion? If so, how many would be gained or lost?}
-\label{sec:orgf28d06e}
+\label{sec:orgdbd42c0}
 \begin{enumerate}
 \item \(\ce{Be}\) is in Group 2, therefore it will lose 2 electrons
 \item \(\ce{Cl}\) is in Group 17, therefore it will gain 1 electron
@@ -164,7 +179,7 @@ Uranium has a density of \(\approx19.3\frac{g}{mL}\)
 \end{enumerate}
 
 \subsection{Name each of the following compounds:}
-\label{sec:org296ce5f}
+\label{sec:org92f962d}
 \begin{enumerate}
 \item \(\ce{PbI2}\) is named as Lead(II) iodide
 \item \(\ce{NH4Cl}\) is named as Ammonium chloride
@@ -178,11 +193,11 @@ Uranium has a density of \(\approx19.3\frac{g}{mL}\)
 \end{enumerate}
 
 \subsection{Which of the following particulate diagrams best shows the formation of water vapor from hydrogen gas and oxygen gas in a rigid container at 125\textdegree{} C?}
-\label{sec:org9856277}
+\label{sec:org5290575}
 The correct answer would be \textbf{C}. Both Oxygen and Hydrogen exist freely as molecules with two atoms each, which eliminates options A and B. As the chemical composition of water is \(\ce{H2O}\), there need to be twice as many hydrogen molecules as oxygen molecules, and so C is the only answer that makes sense.
 
 \subsection{Name each of the following compounds. In addition, for the compounds in letters a-c, draw Lewis structures, predict VSEPR geometry and hybridization.}
-\label{sec:org58b7961}
+\label{sec:org2e1974b}
 \(\ce{NI3}\) is named as Nitrogen triiodide, and has the following Lewis Structure. It has a Trigonal pyramidal shape with 109.5° bond angles, and has a SP3 hybridization
 \begin{align}
 \chemfig{\charge{90=\:}{N}(-\charge{90=\:, 0:2pt=\:, -90=\:}{I})(-[:-90]\charge{0:2pt=\:, -90=\:, -180:2pt=\:}{I})(-[:-180]\charge{90=\:, -180:2pt=\:, -90=\:}{I})}
@@ -202,7 +217,7 @@ The correct answer would be \textbf{C}. Both Oxygen and Hydrogen exist freely as
 \end{itemize}
 
 \subsection{Molecules that have geometries in one plane include which of the following? Draw the Lewis structures to prove your point}
-\label{sec:org5b1e616}
+\label{sec:org7acb9d2}
 The lewis structure for \(\ce{BCl3}\)
 \begin{center}
 \includegraphics[width=75px]{/Users/shauryasingh/Documents/notes/class/orgs/chem/images/BCL3.png}
@@ -218,7 +233,7 @@ The lewis structure for \(\ce{NCl3}\) is
 Therefore, the correct option is \textbf{A}. Both options II and III are tetrahedral and trigonal pyramidal respectively. Option I (\(\ce{BCL3}\)) is the only one that has a geometry in one plane (trigonal planar)
 
 \subsection{The electron-dot structure (Lewis structure) for which of the following molecules would have two lone pairs of electrons on the central atom? Again, draw the Lewis structures to prove your point.}
-\label{sec:orge19c437}
+\label{sec:orgf314316}
 The lewis structure for \(\ce{H2S}\) is
 \begin{center}
 \includegraphics[width=75px]{/Users/shauryasingh/Documents/notes/class/orgs/chem/images/H2S.png}
@@ -242,7 +257,7 @@ The lewis structure for \(\ce{CO2}\) is
 Therefore, the only correct answer is \(\ce{H2S}\)
 
 \subsection{Draw Lewis structures for (a) C2H2, (b) H2O, (c) NH3, (d) HCl (e) CCl4}
-\label{sec:orgad49abf}
+\label{sec:orgb930fc1}
 The lewis structure for \(\ce{C2H2}\) is
 \begin{align}
 \chemfig{{H}-{C}~{C}-{H}}
@@ -265,7 +280,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{align}
 
 \subsection{Give the VSEPR geometry for each for each of the molecules listed in \#14.}
-\label{sec:orga96a92f}
+\label{sec:org1ee4212}
 \begin{enumerate}
 \item \(\ce{C2H2}\) has a linear VSEPR geometry
 \item \(\ce{H2O}\) has a bent VSEPR geometry
@@ -275,7 +290,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Tell whether each of the molecules listed in \#14 is polar or nonpolar.}
-\label{sec:org3adbc12}
+\label{sec:org9fb45ce}
 \begin{enumerate}
 \item \(\ce{C2H2}\) is nonpolar
 \item \(\ce{H2O}\) is polar
@@ -285,7 +300,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{What primary type of intermolecular force (IMFs) would attract the molecules in \#14. Which molecules would have the highest boiling points? The lowest? (Just estimate based on what you know.)}
-\label{sec:orgc05e1be}
+\label{sec:org0750987}
 \begin{enumerate}
 \item \textbf{The primary types of intermolecular forces (IMFs) that would attract the molecules in \#14 are}
 \begin{enumerate}
@@ -303,7 +318,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Name each of the following compounds:}
-\label{sec:org450820d}
+\label{sec:org8690028}
 \begin{enumerate}
 \item \(\ce{P4O6}\) is named as Tetraphosphorus hexoxide
 \item \(\ce{KOH}\) is named as Potassium hydroxide
@@ -316,7 +331,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Write formulas for each of the following compounds:}
-\label{sec:org3a5d347}
+\label{sec:org1ea0b5f}
 \begin{enumerate}
 \item The formula for sodium cyanide is \(\ce{NaCN}\)
 \item The formula for tin(II) fluoride is \(\ce{SnF2}\)
@@ -336,7 +351,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Give the names of the following acids}
-\label{sec:orgba4758f}
+\label{sec:orga40f88c}
 \begin{enumerate}
 \item \(\ce{H2SO3}\) is named as Sulfurous acid
 \item \(\ce{HI}\) is named as Hydroiodic acid
@@ -347,7 +362,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Give formulas for the following acids:}
-\label{sec:org882d10d}
+\label{sec:org00ee72b}
 \begin{enumerate}
 \item Nitric acid has a formula of \(\ce{HNO3}\)
 \item hydrofluoric acid has a formula of \(\ce{HF}\)
@@ -357,7 +372,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Give the names and formulas of the seven diatomic elements.}
-\label{sec:org8bd2728}
+\label{sec:org0495a8f}
 \begin{enumerate}
 \item \(\ce{H2}\), or Hydrogen
 \item \(\ce{N2}\), or Nitrogen
@@ -369,7 +384,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{Solve the following problems involving scientific notation without a calculator.}
-\label{sec:org5f538c1}
+\label{sec:org7958f43}
 \begin{enumerate}
 \item The solution is \(8*10^7\)
 \begin{align*}
@@ -440,7 +455,7 @@ The lewis structure for \(\ce{CCl4}\) is
 \end{enumerate}
 
 \subsection{The structures and normal boiling points of dimethyl ether and ethanol are given in the table above.}
-\label{sec:orgc9f9aff}
+\label{sec:orgfb62db9}
 \begin{enumerate}
 \item \textbf{Which of the following diagrams best helps to explain the difference in boiling point of the two compounds?}
 
@@ -452,7 +467,7 @@ Dimethyl either consists of dipole-dipole interactions or dispersion forces, whe
 \end{enumerate}
 
 \subsection{Shown below are three models that can be used to represent a molecule of ammonia. Select one of the models. Each model has its pros and cons.}
-\label{sec:org892926a}
+\label{sec:org85e7cd0}
 I chose to compare the benefits and drawbacks of the \textbf{lewis structure} model.
 \begin{enumerate}
 \item \textbf{One aspect of the ammonia molecule that the model represents accurately/well}

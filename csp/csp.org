@@ -3,8 +3,27 @@
 #+startup: fold
 #+startup: preview
 #+options: toc:2
+#+latex_class: chameleon
 
-* Chapter 1: Digital Explosion
+#+begin_src emacs-lisp
+(after! ox
+  (defvar ox-chameleon-base-class "cb-doc"
+    "The base class that chameleon builds on")
+
+  (defvar ox-chameleon--p nil
+    "Used to indicate whether the current export is trying to blend in. Set just before being accessed.")
+
+  (defadvice! ox-chameleon-org-latex-detect (orig-fun info)
+    :around #'org-export-install-filters
+    (setq ox-chameleon--p (when (equal (plist-get info :latex-class)
+                                       "chameleon")
+                            (plist-put info :latex-class ox-chameleon-base-class)
+                            (setq engrave-faces-preset-styles (engrave-faces-generate-preset))
+                            t))
+    (funcall orig-fun info))
+#+end_src
+
+* Digital Explosion
 ** Vocabulary
 1. Word: bit
 
@@ -128,7 +147,7 @@
    iCloud, Google Drive), we should focus on make data transfer to and from
    those drives quicker and more secure.
 
-* Chapter 2: Naked in the Sunlight
+* Naked in the Sunlight
 ** Vocabulary
 1. Word: pervasive
 
@@ -242,7 +261,7 @@
 
 4.
 
-* Chapter 3: Ghosts in the Machine
+* Ghosts in the Machine
 ** Vocabulary
 1. Word: pervasive
 

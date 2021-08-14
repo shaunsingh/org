@@ -1,38 +1,49 @@
-% Created 2021-08-06 Fri 22:46
+% Created 2021-08-14 Sat 17:29
 % Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{article}
+\documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{longtable}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{amssymb}
-\usepackage{capt-of}
+\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
 \usepackage{enumerate}
+
+% features: (acronym underline par-sep)
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\usepackage[normalem]{ulem}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+% end features
 \author{Shaurya Singh}
 \date{\today}
 \title{Ap Chem Summer Assignment \#2}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
 \hypersetup{
- pdfauthor={Shaurya Singh},
- pdftitle={Ap Chem Summer Assignment \#2},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 28.0.50 (Org mode 9.5)}, 
- pdflang={English}}
+  pdfauthor={Shaurya Singh},
+  pdftitle={Ap Chem Summer Assignment \#2},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
 \begin{document}
 
 \maketitle
 
 \section{What is the charge on the following:}
-\label{sec:org7699593}
+\label{sec:orgba6e02f}
 \begin{enumerate}[(a)]
 \item The cation in \(\ce{CsCl}\) has a charge of 1+, with \(\ce{Cs}\) being the cation.
 \item The sulfate ion (\(\ce{SO^{2-}4}\)) has a charge of 2-
@@ -41,20 +52,20 @@
 \end{enumerate}
 
 \section{How many protons, neutrons, and electrons are in:}
-\label{sec:org327104a}
+\label{sec:orgeb5944e}
 \begin{enumerate}[(a)]
 \item Uranium-235 has \textbf{92 protons}, since it has an atomic number of 92. It also has \textbf{143 neutrons}, since \(235-92=143\). Lastly, it has \textbf{92 electrons}, since it has no charge so the number of protons must equal the number of electrons.
 \item Uranium-238 has \textbf{92 protons}, since it has an atomic number of 92. It also has \textbf{146 neutrons}, since \(238-92=146\). Lastly, it has \textbf{92 electrons}, since it has no charge so the number of protons must equal the number of electrons.
 \end{enumerate}
 
 \section{Elements in the same vertical column in the periodic table have similar what?}
-\label{sec:org584f344}
+\label{sec:org52e5dca}
 Elements in the same vertical column in the periodic table will be in the same
 group. Therefore, they will have the \textbf{same number of valence electrons}. This
 means that they will have similar properties and reactivity
 
 \section{An element “E” is present as 10 E with a mass value of 10.01 amu, and as 11 E with a mass value of 11.01 amu. The natural abundances of 10 E and 11 E are 19.78\% and 80.22\% respectively. What is the average atomic mass of the element? What is the element?}
-\label{sec:orgf299fae}
+\label{sec:orge251566}
 In order to calculate the average atomic mass of the element, we must take the
  weighted average of the two isotopes against their percentage abundance. For
  this we have the following equation
@@ -83,7 +94,7 @@ x\approx10.812
 Therefore, the element has an average atomic mass of \textbf{10.81 amu}. Looking at the periodic table, the element with an average atomic mass of 10.812 is \textbf{Boron}.
 
 \section{Naturally occurring sulfur consists of four isotopes, 32 S (95.0\%), 33 S (0.76\%), 34 S(4.22\%), and 36 S(0.014\%). Using this data, calculate the atomic weight of naturally occurring sulfur. The masses of the isotopes are given in the table below.}
-\label{sec:org4d62ab1}
+\label{sec:org322421a}
 In order to calculate the atomic weight of Sulfur, we must take the weighted
 average of the 4 isotopes against their percentage abundance. The equation for
 this is
@@ -117,7 +128,7 @@ x\approx32.06
 Therefore, the element has an atomic weight of \textbf{32.06 amu}.
 
 \section{Explain each of the following:}
-\label{sec:org64b89e6}
+\label{sec:org5a1a779}
 \begin{enumerate}[(a)]
 \item Alpha radiation penetrates a much shorter distance into a piece of
 material than does beta radiation of the same energy.
@@ -159,7 +170,7 @@ the positive plate. The electric field will have no affect on \(\gamma\)
 rays, as they are electrically neutral
 \end{itemize}
 \begin{center}
-\includegraphics[width=150px]{/Users/shauryasingh/org/chem/images/rayplatediagram.png}
+\includegraphics[width=150px]{/home/shauryasingh/org/chem/images/rayplatediagram.png}
 \end{center}
 
 \item Why is it not possible to eliminate the hazard of nuclear waste by the
@@ -171,7 +182,7 @@ waste will contaminate the surrounding air
 \end{enumerate}
 
 \section{How many moles are in a sample of 300 atoms of Nitrogen (N)? How many grams?}
-\label{sec:orgf2c8ba5}
+\label{sec:orgd87494c}
 We have 3 variables
 \begin{align*}
 &x=\text{number of atoms}=300\\
@@ -207,7 +218,7 @@ Plugging in our variables, we get
 Therefore, 300 atoms of nitrogen contain \(7*10^{-21}g\) of nitrogen.
 
 \section{A sample of sulfur (S) has a mass of 5.37 g. How many moles are in the sample? How many atoms?}
-\label{sec:org5849b31}
+\label{sec:orgba7f43f}
 Sulfur has a molar mass of 32amu. Therefore, it has a molar mass of
 \(32\frac{g}{mol}\)
 We have the following variables
@@ -233,7 +244,7 @@ x&=\text{Avogadro's number}*\text{mol}\\
 Therefore there are \(0.17mol\) and \(1.01\times10^{23}\) atoms in the sample of sulfur
 
 \section{How many grams of zinc are in 1.16 x 10 22 atoms of zinc (Zn)?}
-\label{sec:orgfaf011a}
+\label{sec:org4c6dfb5}
 Zinc atoms have a mass of 65.4g. Using Avogadro's number, we know that there are \(6.022 *10^{23}\) atoms per mole of zinc.
 We also know Zinc has a molar mass of \(65.4\frac{g}{mol}\)
 From that we can get the following formula
@@ -247,7 +258,7 @@ x&=\frac{\text{atoms}}{\text{Avogadro's number}}\times\text{molar mass}\\
 Therefore, there are 1.26 grams of zinc in \(1.16\times10^{22}\) atoms  of zinc
 
 \section{Calculate the number of grams per mole (gfm) for each of the following:}
-\label{sec:org3248e99}
+\label{sec:org25f53ce}
 \begin{enumerate}[(a)]
 \item What is the gfm of \(\ce{CuSO4}\)
 
@@ -335,7 +346,7 @@ Combining the molar mass of the 2 molecules, we get
 \end{enumerate}
 
 \section{How many moles of cadmium bromide (\(\ce{CdBr2}\)) are in a 39.25 g sample?}
-\label{sec:org0a784a0}
+\label{sec:orga651a5a}
 For this we can use Avogadro's number. One mole contains \(6.022*10^{23}\) particles. From that we get the following
 \begin{align*}
 &N = molar\ mass\\
@@ -352,24 +363,24 @@ n&= \frac{39.25}{272.219}\\
 Rounding to 4 significant figures, there will be \(1.442*10^-1\) moles of cadmium bromide in a 39.25 g sample
 
 \section{\(\ce{CH3CH2OH}\) boils at 78 °C and \(\ce{CH3OCH3}\) boils at - 24 °C, although both compounds have the same composition. This difference in boiling points may be attributed to a difference in}
-\label{sec:orgb6ff638}
+\label{sec:org68f6f86}
 The answer is \textbf{D}. Hydrogen bonding. The extra hydrogen bonds of \(\ce{CH3CH2OH}\) make it harder to separate molecules, as more heat and energy is required, resulting in a higher boiling point compared to \(\ce{CH3OCH3}\)
 
 \section{Which of the following elements has the smallest ionization energy? Explain.}
-\label{sec:org0ea8d20}
+\label{sec:org997f6d0}
 Ionization energy decreases down a group, and increases from left to right
 across a period. Therefore, Potassium has the smallest ionization energy, which is \textbf{D}.
 
 \section{Which of the following represents the ground state electron configuration for the Mn 3+ ion? (Atomic number Mn = 25) (Hint: first write the e - config of Mn atom, then try the Mn 3+ ion.)}
-\label{sec:org03ee867}
+\label{sec:orgcad13c2}
 The electron configuration for \(\ce{Mn}\) is \(\ce{1s^2 2s^2 2p^6 3s^2 3p^6 3d^5 4s^2}\). The 3+ ion will have 3 fewer electrons, since a positive charge indicates more protons than electrons. Therefore, the electron configuration of \(\ce{Mn^{3+}}\) is \(\ce{1s^2 2s^2 2p^6 3s^2 3p^6 3d^4}\), and the correct option is \textbf{B}
 
 \section{Which of the following represents an excited state?}
-\label{sec:org64797bd}
+\label{sec:orge569a27}
 Option \textbf{A}, \(\ce{1s^2 2s^2 2p^6 3s^2 3p^6 3d^4 4s^2}\) is in an excited state, as it skips the final electron in the 3d orbital.
 
 \section{The table above shows the first three ionization energies for atoms of four elements from the third period of the periodic table. Answer the following questions.}
-\label{sec:org621a44b}
+\label{sec:org92c8d50}
 \begin{enumerate}[(a)]
 \item What is the chemical symbol for element 3, explain your reasoning.
 \begin{itemize}
@@ -404,7 +415,7 @@ of Magnesium is \(\ce{1s^2 2s^2 2p^6 3s^2}\)
 \end{enumerate}
 
 \section{Calculate the mass percent of \(\ce{Cl}\) in each of the following compounds}
-\label{sec:orgf037b0b}
+\label{sec:orgdb26462}
 \begin{enumerate}[(a)]
 \item \(\ce{Cl}\)  has a Mass Percent of \%\(65.110\) in \(\ce{CIF}\)
 \item \(\ce{Cl}\)  has a Mass Percent of \%\(51.787\) in \(\ce{HClO2}\)
@@ -412,7 +423,7 @@ of Magnesium is \(\ce{1s^2 2s^2 2p^6 3s^2}\)
 \end{enumerate}
 
 \section{Calculate the mass percent of each element in \(\ce{Ba(OH)2*8H2O}\), or barium hydroxide octahydrate}
-\label{sec:orgb0e9c94}
+\label{sec:org644f74f}
 \begin{itemize}
 \item \(\ce{Ba}\)  has a Mass Percent of \%\(43.532\) in \(\ce{Ba(OH)2*8H2O}\),
 \item \(\ce{H}\)  has a Mass Percent of \%\(5.751\) in \(\ce{Ba(OH)2*8H2O}\),
@@ -420,7 +431,7 @@ of Magnesium is \(\ce{1s^2 2s^2 2p^6 3s^2}\)
 \end{itemize}
 
 \section{A compound is found, by mass spectral analysis, to contain the following percentages of elements by mass, C = 49.67\%, Cl = 48.92\%, H = 1.39\%, The molar mass of the compound is 289.9 g/mole. Determine the empirical and molecular formulas of the compound.}
-\label{sec:orgda785c2}
+\label{sec:org057611d}
 First we must calculate the quantity of each element
 \begin{align*}
 &C:\ \frac{49.67g}{1}\times\frac{1mol\ce{S}}{12.01g}=4.135mol\\
@@ -446,7 +457,7 @@ Therefore, we can substitute 4 for n.
 \end{align*}
 
 \section{Determine the empirical formula of a compound that contains the following percentages of elements by mass: Mo = 43.95\%, O = 7.33\%, Cl = 48.72\%.}
-\label{sec:org010357a}
+\label{sec:org67896a1}
 First we must calculate the quantity of each element
 \begin{align*}
 &Mo:\ \frac{43.95g}{1}\times\frac{1mol\ce{Mo}}{95.95g}=0.458mol\\
@@ -463,7 +474,7 @@ From that we can calculate the following ratios:
 emperical formula will be  \(\ce{Cl3MoO}\)
 
 \section{Aspartame is an artificial sweetener used in food and beverages that is 160 times sweeter than sucrose.}
-\label{sec:org3c5f773}
+\label{sec:org2203d72}
 \begin{enumerate}[(a)]
 \item Using the molecular structure, determine the molecular formula of aspartame,
 using this format \(\ce{C_{W}H_{X}N_{Y}O_{Z}}\)
@@ -505,7 +516,7 @@ Multiplied by Avogadro's number, that's \(2.05*10^{18}\) molecules.
 \end{enumerate}
 
 \section{Watch the following video on making a solution and how to calculate molarity and answer the following questions:}
-\label{sec:org23c5c75}
+\label{sec:org42dd7d0}
 \begin{enumerate}[(a)]
 \item Describe how you would make 100.0 mL of a 1.0 M solution of lithium chloride.
 
@@ -546,7 +557,7 @@ homogenous solution
 \end{enumerate}
 
 \section{The structures of a water molecule and a crystal of LiCl(s) are represented above. A student prepares a 0.10 M solution by dissolving LiCl(s) in enough water to make 100.0 mL of solution.}
-\label{sec:org7c71885}
+\label{sec:org4a64b96}
 \begin{enumerate}[(a)]
 \item How much LiCl(s) was dissolved to make the 0.10 M solution? Justify with a
 calculation.

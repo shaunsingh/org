@@ -1,5 +1,6 @@
 #+title: Ap Chem Summer Assignment #2
 #+author: Shaurya Singh
+#+latex_class: cb-doc
 #+startup: preview
 #+startup: fold
 #+options: toc:nil

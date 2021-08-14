@@ -1,15 +1,16 @@
 #+title: Python 1
 #+author: Shaurya Singh
+#+latex_class: cb-doc
 
 What python version are you running?
-#+begin_src bash :results output
+#+begin_src bash
 python3 --version
 #+end_src
 
 *Note:* I have multiple versions of python, hence why I specify python3. You may just use src_sh{python --version} instead.
 
 Test your editor
-#+begin_src python :results output
+#+begin_src python
 print("Hello World")
 print("Welcome To the Robotics Team")
 #+end_src

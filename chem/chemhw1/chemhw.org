@@ -1,9 +1,8 @@
 #+title: Ap Chem Summer Assignment #1
 #+author: Shaurya Singh
+#+latex_class: cb-doc
 #+startup: preview
 #+OPTIONS: toc:1
-#+latex_header: \usepackage{chemfig}
-#+latex_header: \usepackage{mhchem}
 
 * Summer Assignment 1
 ** How many significant figures are there each of the following values
