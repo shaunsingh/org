@@ -5,24 +5,6 @@
 #+options: toc:2
 #+latex_class: chameleon
 
-#+begin_src emacs-lisp
-(after! ox
-  (defvar ox-chameleon-base-class "cb-doc"
-    "The base class that chameleon builds on")
-
-  (defvar ox-chameleon--p nil
-    "Used to indicate whether the current export is trying to blend in. Set just before being accessed.")
-
-  (defadvice! ox-chameleon-org-latex-detect (orig-fun info)
-    :around #'org-export-install-filters
-    (setq ox-chameleon--p (when (equal (plist-get info :latex-class)
-                                       "chameleon")
-                            (plist-put info :latex-class ox-chameleon-base-class)
-                            (setq engrave-faces-preset-styles (engrave-faces-generate-preset))
-                            t))
-    (funcall orig-fun info))
-#+end_src
-
 * Digital Explosion
 ** Vocabulary
 1. Word: bit
@@ -263,80 +245,124 @@
 
 * Ghosts in the Machine
 ** Vocabulary
-1. Word: pervasive
+1. Word: metadata
 
-   Definition: per·va·sive | pərˈvāsiv | adjective (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people: ageism is pervasive and entrenched in our society.
+   Definition: noun  Data that describes other data, as in describing the origin, structure, or characteristics of computer files,
 
-   Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pervasive&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+   Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=metadata&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
-2.  Word: cleric
+2.  Word: open source software
 
-    Definition: cler·ic | ˈklerik | noun a priest or religious leader, especially a Christian or Muslim one.
+    Definition: Programs for which the source code is freely available and freely redistributable, with no commercial strings attached.
 
-    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=cleric&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
-3.  Word: disseminate
+3.  Word: ascii
 
-    Definition: dis·sem·i·nate | dəˈseməˌnāt | verb [with object ] spread (something, especially information) widely: health authorities should foster good practice by disseminating information.
+    Definition: noun  (computer science) a code for information exchange between computers made by different companies; a string of 7 binary
 
-    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=disseminate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=ascii&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
 
-4.  Word: encode
+4.  Word: steganography
 
-    Definition: en·code | inˈkōd, enˈkōd | verb [with object ] convert into a
-   coded form: using this technique makes it possible to encode and transmit recorded video information.
+    Definition:  noun   The deliberate concealment of data within other data, as by embedding digitized text in a digitized image.
 
-    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=encode&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=steganography&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-5.  Word: RFID
+5.  Word: blocks
 
-    Definition: RFID *(abbreviation)* radio frequency identification, denoting
-   technologies that use radio waves to identify people or objects carrying encoded microchips.
+    Definition: noun (Computer Science) a block is a segment of a large area
+   that can be used to assign data
 
-    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=RFID&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=block&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-6.  Word: exonerate
+6.  Word: algorithm
 
-    Definition:  ex·on·er·ate | iɡˈzänəˌrāt | verb [with object ] 1 (especially of an official body) absolve (someone) from blame for a fault or wrongdoing, especially after due consideration of the case: they should exonerate these men from this crime
+    Definition:  noun   A finite set of unambiguous instructions that, given some set of initial conditions, can be performed in a prescribed
 
-    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=exonerate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=algorithm&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-7.  Word: discourse
+7.  Word: pixel
 
-    Definition: noun | ˈdisˌkôrs | written or spoken communication or debate: an imagined discourse between two people
-   traveling in France.
+    Definition:  noun   One of the tiny dots that make up the representation of an image in a computer's memory.
 
-    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=discourse&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pixel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-8.  Word: profilerate
+8.  Word: raster
 
-    Definition: (v)  *profilerate* increase rapidly in numbers; multiply.
+    Definition: (v)  noun  A bitmap image, consisting of a grid of pixels, stored as a sequence of lines.
 
     Ref: WordNet Search - 3.1.
-    http://wordnetweb.princeton.edu/perl/webwn?s=profilerate&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-9.  Word: prodigious
+9.  Word: render
 
-    Definition: pro·di·gious | prəˈdijəs | adjective, remarkably or impressively great in extent, size, or degree: the stove consumed a prodigious amount of fuel.
-
-    Ref: WordNet Search - 3.1.
-    http://wordnetweb.princeton.edu/perl/webwn?s=prodigious&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
-
-10. Word: clairvoyant
-
-    Definition: clair·voy·ant | ˌklerˈvoiənt | noun a person who claims to have a supernatural ability to perceive events in the future or beyond normal sensory contact
+    Definition: transitive verb (Computers)  To convert (graphics) from a file into visual form, as on a video display.
 
     Ref: WordNet Search - 3.1.
-    http://wordnetweb.princeton.edu/perl/webwn?s=clairvoyant&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+10. Word: spam
+
+    Definition:  noun   Unsolicited e-mail, often of a commercial nature, sent indiscriminately to multiple mailing lists, individuals, or
+
+    Ref: WordNet Search - 3.1.
+http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 ** Ideas:
-1.
-2.
-3.
-4.
+1. Metadata can help or refute claims (Page 78)
+2. With some clever programming, the process could be made unnoticeable, but so
+   far neither Microsoft nor Apple has made the necessary software investment (Page 102)
+3. Free software is a matter of the users freedom to run, copy, distribute,
+   study, change, and improve the software (page 94)
+4. If google holds your documents, they are accessible from anywhere the internet reaches
 
 ** Journal Entry
-1.
-2.
-3.
+1. As the text after that statement mentioned,  metadata can be easily altered
+   to match a criminals statement. Although most people won't know about
+   metadata and how to alter it, this makes it ineffective for most purposes.
+
+   Personally, I think we should remove most metadata. It ends up doing more
+   harm than good, especially in the case of images, where metadata can help
+   trace the location where the image was taken. In the case of documents, it
+   provides easily forge-able data that serves no purpose.
+
+2. In my opinion, there isn't a need to zero all abandoned blocks by default.
+   This is for several reasons. Firstly, the majority of people have no
+   intention to sell their storage. The majority of laptops nowadays have
+   storage soldered down, which would make those drives impossible to resell.
+   Secondly, those who care about their privacy will likely have other methods
+   to zero their storage anyways.
+
+   Additionally, making this zero-ing behavior the default will bring
+   performance implications as mentioned in the textbook. It's a slow process
+   writing to all of the abandoned blocks. The author mentions this issue could
+   be solved "with some clever programming," but programming isn't magic, in the
+   end to properly erase these blocks you will have to write to then. A better
+   solution would be to incorporate this behavior into the filesystem itself,
+   prioritizing writing to abandoned blocks before free ones. This system
+   increases drive longevity, reduces the chance of abandoned blocks, and is
+   already incorporated in many filesystems today
+
+3. I support the Free and Open Source movement. Open source software gives power
+   to the users. With the open source model come better security, more
+   features, and more support for users. Compared to commercial (paid) software,
+   users can not only identify and report bugs, but also fix those bugs
+   themselves. Since the source code for open source applications is available,
+   you can clone the repository, change the insecure code, and submit your
+   changes.  On the other hand, with commercial software, you will have to wait
+   until the company updates the application.
+
+   Additionally, you can add features to open source software. If Microsoft Word is
+   missing a feature, you can only request Microsoft to add it. However, if
+   there is an open source editor missing a feature, you can simply fork it and
+   add the feature yourself. Likewise, most open source editors will never die,
+   since there is always a community of people working on it, whereas most
+   commercial software is dependant on the future of the company producing it.
+
+   However, there are also drawbacks with open source software. Since there is
+   no financial backing for most projects, maintainers don't have an incentive
+   to keep working. Similarly, since coders aren't paid the quality work may not
+   be as good as that of a commercial project.
+
 4.

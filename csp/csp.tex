@@ -1,4 +1,4 @@
-% Created 2021-08-14 Sat 19:45
+% Created 2021-08-15 Sun 03:48
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -17,115 +17,39 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
 \usepackage{indentfirst}
+\setmainfont[Ligatures=TeX]{SF Pro}
 \setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
-% features: (acronym par-sep engraved-code-setup engraved-code)
+% features: (acronym par-sep)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
 \newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
 
-
-\usepackage{fvextra}
-\fvset{
-  commandchars=\\\{\},
-  highlightcolor=white!95!black!80!blue,
-  breaklines=true,
-  breaksymbol=\color{white!60!black}\tiny\ensuremath{\hookrightarrow}}
-\renewcommand\theFancyVerbLine{\footnotesize\color{black!40!white}\arabic{FancyVerbLine}}
-
-\definecolor{codebackground}{HTML}{f7f7f7}
-\definecolor{codeborder}{HTML}{f0f0f0}
-
-% TODO have code boxes keep line vertical alignment
-\usepackage[breakable,xparse]{tcolorbox}
-\DeclareTColorBox[]{Code}{o}%
-{colback=codebackground, colframe=codeborder,
-  fontupper=\footnotesize,
-  colupper=EFD,
-  IfNoValueTF={#1}%
-  {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
-    boxrule=0.5pt, left=2pt}%
-  {boxsep=2.5pt, arc=0pt, outer arc=0pt,
-    boxrule=0pt, leftrule=1.5pt, left=0.5pt},
-  right=2pt, top=1pt, bottom=0.5pt,
-  breakable}
-
-\definecolor{EFD}{HTML}{605a52}
-\definecolor{EfD}{HTML}{f7f3ee}
-\newcommand{\EFD}[1]{\colorbox{EfD}{\textcolor{EFD}{#1}}} % default
-\definecolor{EFk}{HTML}{614c61}
-\definecolor{Efk}{HTML}{f1ddf1}
-\newcommand{\EFk}[1]{\colorbox{Efk}{\textcolor{EFk}{#1}}} % font-lock-keyword-face
-\definecolor{EFd}{HTML}{9d8f7c}
-\newcommand{\EFd}[1]{\textcolor{EFd}{\textit{#1}}} % font-lock-doc-face
-\newcommand{\EFt}[1]{#1} % font-lock-type-face
-\definecolor{EFs}{HTML}{525643}
-\definecolor{Efs}{HTML}{e2e9c1}
-\newcommand{\EFs}[1]{\colorbox{Efs}{\textcolor{EFs}{#1}}} % font-lock-string-face
-\definecolor{EFw}{HTML}{5b4343}
-\definecolor{Efw}{HTML}{f6cfcb}
-\newcommand{\EFw}[1]{\colorbox{Efw}{\textcolor{EFw}{#1}}} % font-lock-warning-face
-\newcommand{\EFb}[1]{\textit{#1}} % font-lock-builtin-face
-\definecolor{EFct}{HTML}{b9a992}
-\newcommand{\EFct}[1]{\textcolor{EFct}{#1}} % font-lock-comment-face
-\definecolor{EFc}{HTML}{465953}
-\definecolor{Efc}{HTML}{d2ebe3}
-\newcommand{\EFc}[1]{\colorbox{Efc}{\textcolor{EFc}{#1}}} % font-lock-constant-face
-\newcommand{\EFpp}[1]{#1} % font-lock-preprocessor-face
-\newcommand{\EFnc}[1]{#1} % font-lock-negation-char-face
-\definecolor{EFv}{HTML}{4c5361}
-\definecolor{Efv}{HTML}{dde4f2}
-\newcommand{\EFv}[1]{\colorbox{Efv}{\textcolor{EFv}{#1}}} % font-lock-variable-name-face
-\newcommand{\EFf}[1]{#1} % font-lock-function-name-face
-\definecolor{EFcd}{HTML}{b9a992}
-\newcommand{\EFcd}[1]{\textcolor{EFcd}{#1}} % font-lock-comment-delimiter-face
-\newcommand{\EFrc}[1]{#1} % font-lock-regexp-grouping-construct
-\newcommand{\EFrb}[1]{#1} % font-lock-regexp-grouping-backslash
-\definecolor{EFob}{HTML}{5b5143}
-\definecolor{Efob}{HTML}{f7e0c3}
-\newcommand{\EFob}[1]{\colorbox{Efob}{\textcolor{EFob}{#1}}} % org-block
-\definecolor{EFhn}{HTML}{465953}
-\definecolor{Efhn}{HTML}{d2ebe3}
-\newcommand{\EFhn}[1]{\colorbox{Efhn}{\textcolor{EFhn}{#1}}} % highlight-numbers-number
-\definecolor{EFhq}{HTML}{465953}
-\newcommand{\EFhq}[1]{\textcolor{EFhq}{#1}} % highlight-quoted-quote
-\definecolor{EFhs}{HTML}{4c5361}
-\definecolor{Efhs}{HTML}{dde4f2}
-\newcommand{\EFhs}[1]{\colorbox{Efhs}{\textcolor{EFhs}{#1}}} % highlight-quoted-symbol
-\definecolor{EFrdi}{HTML}{7382a0}
-\newcommand{\EFrdi}[1]{\textcolor{EFrdi}{#1}} % rainbow-delimiters-depth-1-face
-\definecolor{EFrdii}{HTML}{9c739c}
-\newcommand{\EFrdii}[1]{\textcolor{EFrdii}{#1}} % rainbow-delimiters-depth-2-face
-\definecolor{EFrdiii}{HTML}{81895d}
-\newcommand{\EFrdiii}[1]{\textcolor{EFrdiii}{#1}} % rainbow-delimiters-depth-3-face
-\definecolor{EFrdiv}{HTML}{957f5f}
-\newcommand{\EFrdiv}[1]{\textcolor{EFrdiv}{#1}} % rainbow-delimiters-depth-4-face
-\definecolor{EFrdv}{HTML}{5f8c7d}
-\newcommand{\EFrdv}[1]{\textcolor{EFrdv}{#1}} % rainbow-delimiters-depth-5-face
-\definecolor{EFrdvi}{HTML}{955f5f}
-\newcommand{\EFrdvi}[1]{\textcolor{EFrdvi}{#1}} % rainbow-delimiters-depth-6-face
-\definecolor{EFrdvii}{HTML}{81895d}
-\newcommand{\EFrdvii}[1]{\textcolor{EFrdvii}{#1}} % rainbow-delimiters-depth-7-face
-\definecolor{EFrdiix}{HTML}{81895d}
-\newcommand{\EFrdiix}[1]{\textcolor{EFrdiix}{#1}} % rainbow-delimiters-depth-8-face
-\definecolor{EFrdix}{HTML}{9c739c}
-\newcommand{\EFrdix}[1]{\textcolor{EFrdix}{#1}} % rainbow-delimiters-depth-9-face
 % end features
-% make document follow Emacs theme
-\definecolor{bg}{HTML}{f7f3ee}
-\definecolor{fg}{HTML}{605a52}
 
-\definecolor{red}{HTML}{955f5f}
-\definecolor{orange}{HTML}{957f5f}
-\definecolor{green}{HTML}{81895d}
-\definecolor{teal}{HTML}{5f8c7d}
-\definecolor{yellow}{HTML}{957f5f}
-\definecolor{blue}{HTML}{7382a0}
-\definecolor{dark-blue}{HTML}{7382a0}
-\definecolor{magenta}{HTML}{9c739c}
-\definecolor{violet}{HTML}{9c739c}
-\definecolor{cyan}{HTML}{5f8c7d}
-\definecolor{dark-cyan}{HTML}{5f8c7d}
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{f7f3ee}
+\definecolor{ofg}{HTML}{605a52}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{7382a0}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
 
 \definecolor{documentTitle}{HTML}{9c739c}
 \definecolor{documentInfo}{HTML}{9c739c}
@@ -137,19 +61,6 @@
 \definecolor{level6}{HTML}{b9c0cf}
 \definecolor{level7}{HTML}{cdb9cd}
 \definecolor{level8}{HTML}{e3e6ec}
-
-\definecolor{link}{HTML}{7382a0}
-\definecolor{cite}{HTML}{957f5f}
-\definecolor{itemlabel}{HTML}{7382a0}
-\definecolor{code}{HTML}{957f5f}
-\definecolor{verbatim}{HTML}{81895d}
-
-\definecolor{codebackground}{HTML}{f7e0c3}
-\colorlet{EFD}{fg}
-\definecolor{codeborder}{HTML}{efebe6}
-
-\pagecolor{bg}
-\color{fg}
 
 \addtokomafont{title}{\color{documentTitle}}
 \addtokomafont{author}{\color{documentInfo}}
@@ -165,6 +76,14 @@
 \addtokomafont{subparagraph}{\color{level5}}
 \newkomafont{subparagraphprefix}{\color{level5}}
 
+% textual elements
+
+\definecolor{link}{HTML}{7382a0}
+\definecolor{cite}{HTML}{800080}
+\definecolor{itemlabel}{HTML}{7382a0}
+\definecolor{code}{HTML}{957f5f}
+\definecolor{verbatim}{HTML}{81895d}
+
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
 \renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
@@ -179,7 +98,15 @@
 \makeatletter
 \def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
 \makeatother
-% end customisations
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{f7f3ee}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{efebe6}
+
+%% end customisations
+
 \author{Shaurya Singh}
 \date{\today}
 \title{Ap CSP Summer Assignment}
@@ -207,30 +134,11 @@
 \setcounter{tocdepth}{2}
 \tableofcontents
 
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{7382a0}{(}\EFk{after!} ox
-  \textcolor[HTML]{9c739c}{(}\EFk{defvar} \EFv{ox-chameleon-base-class} \EFs{"cb-doc"}
-    \EFd{"The base class that chameleon builds on"}\textcolor[HTML]{9c739c}{)}
-
-  \textcolor[HTML]{9c739c}{(}\EFk{defvar} \EFv{ox-chameleon--p} nil
-    \EFd{"Used to indicate whether the current export is trying to blend in. Set just before being accessed."}\textcolor[HTML]{9c739c}{)}
-
-  \textcolor[HTML]{9c739c}{(}\EFk{defadvice!} ox-chameleon-org-latex-detect \textcolor[HTML]{81895d}{(}orig-fun info\textcolor[HTML]{81895d}{)}
-    \EFb{:around} \EFhq{\#'}\EFhs{org-export-install-filters}
-    \textcolor[HTML]{81895d}{(}\EFk{setq} \EFv{ox-chameleon--p} \textcolor[HTML]{957f5f}{(}\EFk{when} \textcolor[HTML]{7382a0}{(}\EFc{equal} \textcolor[HTML]{9c739c}{(}\EFc{plist-get} info \EFb{:latex-class}\textcolor[HTML]{9c739c}{)}
-                                       \EFs{"chameleon"}\textcolor[HTML]{7382a0}{)}
-                            \textcolor[HTML]{7382a0}{(}\EFc{plist-put} info \EFb{:latex-class} \EFv{ox-chameleon-base-class}\textcolor[HTML]{7382a0}{)}
-                            \textcolor[HTML]{7382a0}{(}\EFk{setq} \EFv{engrave-faces-preset-styles} \textcolor[HTML]{9c739c}{(}\EFf{engrave-faces-generate-preset}\textcolor[HTML]{9c739c}{)}\textcolor[HTML]{7382a0}{)}
-                            t\textcolor[HTML]{957f5f}{)}\textcolor[HTML]{81895d}{)}
-    \textcolor[HTML]{81895d}{(}\EFc{funcall} orig-fun info\textcolor[HTML]{81895d}{)}\textcolor[HTML]{9c739c}{)}
-\end{Verbatim}
-\end{Code}
 
 \section{Digital Explosion}
-\label{sec:org15c6345}
+\label{sec:orga54d71f}
 \subsection{Vocabulary}
-\label{sec:org81c95e2}
+\label{sec:org8b21d24}
 \begin{enumerate}
 \item Word: bit
 
@@ -299,7 +207,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Ideas:}
-\label{sec:org8645384}
+\label{sec:orge8672b9}
 \begin{enumerate}
 \item Companies keep records of cellphone locations (Page 1)
 \item ``Its all just bits'' (Page 5)
@@ -308,7 +216,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:orgd771c1c}
+\label{sec:orge1a351c}
 \begin{enumerate}
 \item I support the idea of companies keeping track of cellphone locations, as long
 as that information is kept private and in the hands of only the government.
@@ -362,9 +270,9 @@ those drives quicker and more secure.
 \end{enumerate}
 
 \section{Naked in the Sunlight}
-\label{sec:orgce670e2}
+\label{sec:org9edf3ff}
 \subsection{Vocabulary}
-\label{sec:orgb790a04}
+\label{sec:org9ffe377}
 \begin{enumerate}
 \item Word: pervasive
 
@@ -434,7 +342,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Ideas:}
-\label{sec:org2ee6fff}
+\label{sec:org585326b}
 \begin{enumerate}
 \item The notion of privacy has become fuzzier at the same time as the
 secrecy-enhancing technology of encryption has become widespread (Page 21)
@@ -446,7 +354,7 @@ footprints as it is to avoid touching the ground when we walk
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:org13874b1}
+\label{sec:org82eea66}
 \begin{enumerate}
 \item I agree with the notion that privacy has become fuzzier over time. As
 encryption and security technologies are becoming more widespread, it seems
@@ -486,97 +394,139 @@ resist changes to their workflow and life .
 \end{enumerate}
 
 \section{Ghosts in the Machine}
-\label{sec:orgbfce3e7}
+\label{sec:orgbf532ea}
 \subsection{Vocabulary}
-\label{sec:orge60cb55}
+\label{sec:org8d5580b}
 \begin{enumerate}
-\item Word: pervasive
+\item Word: metadata
 
-Definition: per·va·sive | pərˈvāsiv | adjective (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people: ageism is pervasive and entrenched in our society.
+Definition: noun  Data that describes other data, as in describing the origin, structure, or characteristics of computer files,
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pervasive\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=metadata\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
 
-\item Word: cleric
+\item Word: open source software
 
-Definition: cler·ic | ˈklerik | noun a priest or religious leader, especially a Christian or Muslim one.
+Definition: Programs for which the source code is freely available and freely redistributable, with no commercial strings attached.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=cleric\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
 
-\item Word: disseminate
+\item Word: ascii
 
-Definition: dis·sem·i·nate | dəˈseməˌnāt | verb [with object ] spread (something, especially information) widely: health authorities should foster good practice by disseminating information.
+Definition: noun  (computer science) a code for information exchange between computers made by different companies; a string of 7 binary
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=disseminate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=ascii\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
 
-\item Word: encode
+\item Word: steganography
 
- Definition: en·code | inˈkōd, enˈkōd | verb [with object ] convert into a
-coded form: using this technique makes it possible to encode and transmit recorded video information.
+Definition:  noun   The deliberate concealment of data within other data, as by embedding digitized text in a digitized image.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=encode\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=steganography\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: RFID
+\item Word: blocks
 
- Definition: RFID \textbf{(abbreviation)} radio frequency identification, denoting
-technologies that use radio waves to identify people or objects carrying encoded microchips.
+ Definition: noun (Computer Science) a block is a segment of a large area
+that can be used to assign data
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=RFID\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=block\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: exonerate
+\item Word: algorithm
 
-Definition:  ex·on·er·ate | iɡˈzänəˌrāt | verb [with object ] 1 (especially of an official body) absolve (someone) from blame for a fault or wrongdoing, especially after due consideration of the case: they should exonerate these men from this crime
+Definition:  noun   A finite set of unambiguous instructions that, given some set of initial conditions, can be performed in a prescribed
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=exonerate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=algorithm\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: discourse
+\item Word: pixel
 
- Definition: noun | ˈdisˌkôrs | written or spoken communication or debate: an imagined discourse between two people
-traveling in France.
+Definition:  noun   One of the tiny dots that make up the representation of an image in a computer's memory.
 
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=discourse\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pixel\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
-\item Word: profilerate
+\item Word: raster
 
-Definition: (v)  \textbf{profilerate} increase rapidly in numbers; multiply.
+Definition: (v)  noun  A bitmap image, consisting of a grid of pixels, stored as a sequence of lines.
 
 Ref: WordNet Search - 3.1.
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=profilerate\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\item Word: prodigious
-
-Definition: pro·di·gious | prəˈdijəs | adjective, remarkably or impressively great in extent, size, or degree: the stove consumed a prodigious amount of fuel.
-
-Ref: WordNet Search - 3.1.
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=prodigious\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\item Word: clairvoyant
-
-Definition: clair·voy·ant | ˌklerˈvoiənt | noun a person who claims to have a supernatural ability to perceive events in the future or beyond normal sensory contact
-
-Ref: WordNet Search - 3.1.
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=clairvoyant\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 \end{enumerate}
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=raster\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\begin{enumerate}
+\item Word: render
+
+Definition: transitive verb (Computers)  To convert (graphics) from a file into visual form, as on a video display.
+
+Ref: WordNet Search - 3.1.
+\end{enumerate}
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=render\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\begin{enumerate}
+\item Word: spam
+
+Definition:  noun   Unsolicited e-mail, often of a commercial nature, sent indiscriminately to multiple mailing lists, individuals, or
+
+Ref: WordNet Search - 3.1.
+\end{enumerate}
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=spam\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 
 \subsection{Ideas:}
-\label{sec:org6f8dddd}
+\label{sec:org1450e03}
 \begin{enumerate}
-\item 
-
-\item 
-
-\item 
-
-\item 
+\item Metadata can help or refute claims (Page 78)
+\item With some clever programming, the process could be made unnoticeable, but so
+far neither Microsoft nor Apple has made the necessary software investment (Page 102)
+\item Free software is a matter of the users freedom to run, copy, distribute,
+study, change, and improve the software (page 94)
+\item If google holds your documents, they are accessible from anywhere the internet reaches
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:org24babdc}
+\label{sec:org043f9b1}
 \begin{enumerate}
-\item 
+\item As the text after that statement mentioned,  metadata can be easily altered
+to match a criminals statement. Although most people won't know about
+metadata and how to alter it, this makes it ineffective for most purposes.
 
-\item 
+Personally, I think we should remove most metadata. It ends up doing more
+harm than good, especially in the case of images, where metadata can help
+trace the location where the image was taken. In the case of documents, it
+provides easily forge-able data that serves no purpose.
 
-\item 
+\item In my opinion, there isn't a need to zero all abandoned blocks by default.
+This is for several reasons. Firstly, the majority of people have no
+intention to sell their storage. The majority of laptops nowadays have
+storage soldered down, which would make those drives impossible to resell.
+Secondly, those who care about their privacy will likely have other methods
+to zero their storage anyways.
+
+Additionally, making this zero-ing behavior the default will bring
+performance implications as mentioned in the textbook. It's a slow process
+writing to all of the abandoned blocks. The author mentions this issue could
+be solved ``with some clever programming,'' but programming isn't magic, in the
+end to properly erase these blocks you will have to write to then. A better
+solution would be to incorporate this behavior into the filesystem itself,
+prioritizing writing to abandoned blocks before free ones. This system
+increases drive longevity, reduces the chance of abandoned blocks, and is
+already incorporated in many filesystems today
+
+\item I support the Free and Open Source movement. Open source software gives power
+to the users. With the open source model come better security, more
+features, and more support for users. Compared to commercial (paid) software,
+users can not only identify and report bugs, but also fix those bugs
+themselves. Since the source code for open source applications is available,
+you can clone the repository, change the insecure code, and submit your
+changes.  On the other hand, with commercial software, you will have to wait
+until the company updates the application.
+
+Additionally, you can add features to open source software. If Microsoft Word is
+missing a feature, you can only request Microsoft to add it. However, if
+there is an open source editor missing a feature, you can simply fork it and
+add the feature yourself. Likewise, most open source editors will never die,
+since there is always a community of people working on it, whereas most
+commercial software is dependant on the future of the company producing it.
+
+However, there are also drawbacks with open source software. Since there is
+no financial backing for most projects, maintainers don't have an incentive
+to keep working. Similarly, since coders aren't paid the quality work may not
+be as good as that of a commercial project.
 
 \item 
 \end{enumerate}
