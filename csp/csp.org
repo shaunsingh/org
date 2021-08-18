@@ -292,15 +292,13 @@
 
     Definition: (v)  noun  A bitmap image, consisting of a grid of pixels, stored as a sequence of lines.
 
-    Ref: WordNet Search - 3.1.
-http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 9.  Word: render
 
     Definition: transitive verb (Computers)  To convert (graphics) from a file into visual form, as on a video display.
 
-    Ref: WordNet Search - 3.1.
-http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 10. Word: spam
 
@@ -365,4 +363,84 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    to keep working. Similarly, since coders aren't paid the quality work may not
    be as good as that of a commercial project.
 
+4.  I support the idea of using cloud-based storage solutions. As of 2020 50% of all
+   corporate data is stored in the cloud, up from 30% just 5 years earlier. As
+   more and more people start using cloud services,  we should focus on make
+   data transfer to and from those drives quicker and more secure. Otherwise,
+   cloud storage is superior to offline storage except for solutions which
+   require speed (e.g. boot drives) or high security.
+
+* Needles in the Haystack
+** Vocabulary
+1. Word: metadata
+
+   Definition: noun  Data that describes other data, as in describing the origin, structure, or characteristics of computer files,
+
+   Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=metadata&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+2.  Word: open source software
+
+    Definition: Programs for which the source code is freely available and freely redistributable, with no commercial strings attached.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+3.  Word: ascii
+
+    Definition: noun  (computer science) a code for information exchange between computers made by different companies; a string of 7 binary
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=ascii&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
+
+4.  Word: steganography
+
+    Definition:  noun   The deliberate concealment of data within other data, as by embedding digitized text in a digitized image.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=steganography&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+5.  Word: blocks
+
+    Definition: noun (Computer Science) a block is a segment of a large area
+   that can be used to assign data
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=block&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+6.  Word: algorithm
+
+    Definition:  noun   A finite set of unambiguous instructions that, given some set of initial conditions, can be performed in a prescribed
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=algorithm&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+7.  Word: pixel
+
+    Definition:  noun   One of the tiny dots that make up the representation of an image in a computer's memory.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pixel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+8.  Word: raster
+
+    Definition: (v)  noun  A bitmap image, consisting of a grid of pixels, stored as a sequence of lines.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+9.  Word: render
+
+    Definition: transitive verb (Computers)  To convert (graphics) from a file into visual form, as on a video display.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+10. Word: spam
+
+    Definition:  noun   Unsolicited e-mail, often of a commercial nature, sent indiscriminately to multiple mailing lists, individuals, or
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+** Ideas:
+1.
+2.
+3.
+4.
+
+** Journal Entry
+1.
+2.
+3.
 4.

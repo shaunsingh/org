@@ -13,7 +13,7 @@
 a. The cation in $\ce{CsCl}$ has a charge of 1+, with $\ce{Cs}$ being the cation.
 b. The sulfate ion (\(\ce{SO^{2-}4}\)) has a charge of 2-
 c. The barium ion (\(\ce{Ba^{2+}}\)) has a charge of 2+
-d. The nitrate ion (\(\ce{NO^-3}\)) has a charge of 1-
+d. he nitrate ion (\(\ce{NO^-3}\)) has a charge of 1-
 
 * How many protons, neutrons, and electrons are in:
 #+attr_latex: :options [(a)]

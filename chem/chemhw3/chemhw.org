@@ -1,0 +1,11 @@
+#+title: Ap Chem Summer Assignment #3
+#+author: Shaurya Singh
+#+startup: preview
+#+startup: fold
+#+options: toc:nil
+#+latex_class: chameleon
+#+latex_header: \usepackage{chemfig}
+#+latex_header: \usepackage[version=4]{mhchem}
+#+latex_header: \usepackage{enumerate}
+
+*
