@@ -1,4 +1,6 @@
 * Inbox
-** [ ] Zoom meeting for UnGala
+** [ ] Discord meeting 2:30
 
+[[file:~/org/school.org::*None][None]]
+** [X] Zoom meeting for UnGala
 [[mu4e:msgid:eX6_65u2QyOd1-URR6Vdig@ismtpd0162p1iad2.sendgrid.net][Sundays Asia Initiatives UnGala on Zoom]]

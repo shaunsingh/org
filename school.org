@@ -13,7 +13,7 @@
 ** Biology [0%]
 *** None?
 
-** AP Chem [40%]
+** AP Chem [70%]
 *** Resources
 Textbook: Chemistry, The Molecular Nature of Matter and Change, 7 th ed., by Silberberg and Amateis.
 Review Book: Peterson’s AP Chemistry by Brett Barker.
@@ -25,16 +25,19 @@ Memorize the table of common ions, strong acids, bases, and diatomic elements. R
 3. Include Units
 **** DONE AP Chem Assignment 1 <2021-07-16 Fri>
 Pages 2-4
-**** STRT AP Chem Assignment 2 <2021-08-06 Fri>
+**** DONE AP Chem Assignment 2 <2021-08-06 Fri>
+CLOSED: [2021-08-19 Thu 13:46]
 Pages 5-8
 **** TODO AP Chem Assignment 3 <2021-08-27 Fri>
 Pages 8-15
 *** Link: https://drive.google.com/file/d/15JhR1OkjivA5K3aASK7XAIeSh05AAdiH/view?usp=drive_web&authuser=0
 
-** AP Sem [20%] <2021-09-09 Thu>
+** AP Sem [60%] <2021-09-09 Thu>
 *** DONE Choose a theme,
-*** STRT Come up with possible questions for each lens.
-*** TODO Find an article which supports the question you want to explore. Use the table below.
+*** DONE Come up with possible questions for each lens.
+CLOSED: [2021-08-19 Thu 13:46]
+*** DONE Find an article which supports the question you want to explore. Use the table below.
+CLOSED: [2021-08-19 Thu 13:46]
 *** TODO Journal 1
 *** TODO Journal 2
 *** Link: https://docs.google.com/document/d/1AgheICzyVXinpNIlrc68NYpcnj3ixJpsZE4_Ji8mN5M/edit
@@ -58,8 +61,8 @@ CLOSED: [2021-08-07 Sat 15:35]
 ** AP Ush/ush2 [100%]
 *** None
 
-** Gym/Health [0%]
+** Gym/Health [100%]
 *** None
 
-** Spanish II [100%]
+** Spanish II [0%]
 *** None

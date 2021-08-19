@@ -372,75 +372,188 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
 
 * Needles in the Haystack
 ** Vocabulary
-1. Word: metadata
+1. Word: bot
 
-   Definition: noun  Data that describes other data, as in describing the origin, structure, or characteristics of computer files,
+   Definition: noun   A software program, such as a spider, that performs automated tasks on the Internet.
 
    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=metadata&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
-2.  Word: open source software
+2.  Word: cache
 
-    Definition: Programs for which the source code is freely available and freely redistributable, with no commercial strings attached.
+    Definition: noun   A fast storage buffer in the central processing unit of a computer.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
-3.  Word: ascii
+3.  Word: HTML
 
-    Definition: noun  (computer science) a code for information exchange between computers made by different companies; a string of 7 binary
+    Definition: The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=ascii&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
 
-4.  Word: steganography
+4.  Word: URL
 
-    Definition:  noun   The deliberate concealment of data within other data, as by embedding digitized text in a digitized image.
+    Definition: the address of a resource (such as a document or website) on the
+   Internet that consists of a communications protocol followed by the name or
+   address of a computer on the network and that often includes additional
+   locating information (such as directory and file names)
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=steganography&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-5.  Word: blocks
+5.  Word: firewall
 
-    Definition: noun (Computer Science) a block is a segment of a large area
-   that can be used to assign data
+    Definition: noun Computers  A software program or hardware device that restricts communication between a private network or computer system and outside networks.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=block&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-6.  Word: algorithm
+6.  Word: Web 2.0
 
-    Definition:  noun   A finite set of unambiguous instructions that, given some set of initial conditions, can be performed in a prescribed
+    Definition:  Web 2.0 refers to websites that emphasize user-generated content, ease of use, participatory culture and interoperability for end users.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=algorithm&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-7.  Word: pixel
+7.  Word: index
 
-    Definition:  noun   One of the tiny dots that make up the representation of an image in a computer's memory.
+    Definition:   noun Computers  A list of keywords associated with a record or document, used especially as an aid in searching for information.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pixel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-8.  Word: raster
+8.  Word: background
 
-    Definition: (v)  noun  A bitmap image, consisting of a grid of pixels, stored as a sequence of lines.
+    Definition: noun Computers  The environment in which programs operate that the user does not engage with directly.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-9.  Word: render
+9.  Word: foreground
 
-    Definition: transitive verb (Computers)  To convert (graphics) from a file into visual form, as on a video display.
+    Definition: noun computing  the application the user is currently interacting with; the application window that appears in front of all others.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-10. Word: spam
+10. Word: spider/web crawler
 
-    Definition:  noun   Unsolicited e-mail, often of a commercial nature, sent indiscriminately to multiple mailing lists, individuals, or
+    Definition:  noun   A program that automatically retrieves webpages and follows the links on them to retrieve more webpages. Spiders are used by search engines to retrieve publicly accessible webpages for indexing, and they can also be used to check for links to webpages that no longer exist.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 ** Ideas:
-1.
-2.
+1. If you try another search engine instead of Google, you'll get different
+   results. Which is right? Which is better? Which is more authoritative? (page 114)
+2. Web 2.0 sites—Facebook and Wikipedia, for example—exploit what economists call
+“network effects.” (Page 110)
+3. Free software is a matter of the users freedom to run, copy, distribute,
+   study, change, and improve the software (page 94)
+4. If google holds your documents, they are accessible from anywhere the internet reaches
+
+** Journal Entry
+1. The reason google is so ahead in the search engine space is because of data.
+   Google is known to collect enormous amounts of data on their users, and this
+   is both a good and a bad thing. Although there are many privacy issues
+   surrounding the use of this data, google can use this data to predict what
+   each user likes, and can also tune the search engine's results to match that
+   users preference.
+
+   Other search engines such as DDG can't provide you "accurate" search engine
+   results, because they don't have the data google has. Neither result is more
+   accurate, or better, just calculated differently. If you were to disable
+   google's analytics, log out of gmail, and open an incognito tab, chances are
+   you would get different results than the ones you would get when logged in.
+
+2. I dislike the shift to Web 2.0 sites, and specifically the excessive use of
+   Javascript. Javascript originally started off as a scripting language, but
+   with the V8 engine, was performant enough to be usable elsewhere. Suddenly.
+   everyone started using Javascript, even when it wasn't required. While there
+   are benefits to using Javascript, its still quite slow and in most cases can
+   be substituted for Html5 + CSS
+
+   Static, read-only sites (Web 1.0) get a bad reputation for their bland look,
+   and their issues with ease-of-use. However, css solved many of these issues,
+   and you can still design user-friendly Web 1.0 sites, which perform much
+   better than their Web 2.0 counterparts. Web 1.0 sites also have the benefits and
+   drawbacks of being read-only. For websites like articles, that means there
+   are no comment sections or request popups. Lastly, javascript isn't a bad
+   language by nature, people are just using it for the wrong purpose. When used
+   tastefully, it can still vastly improve websites.
+
 3.
 4.
+
+* Secret Bits
+** Vocabulary
+1. Word: Cipher
+
+   Definition: noun   A software program, such as a spider, that performs automated tasks on the Internet.
+
+   Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=metadata&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+2.  Word: decryption
+
+    Definition: noun   A fast storage buffer in the central processing unit of a computer.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+3.  Word: encryption
+
+    Definition: The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=ascii&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
+
+4.  Word: packet
+
+    Definition: the address of a resource (such as a document or website) on the
+   Internet that consists of a communications protocol followed by the name or
+   address of a computer on the network and that often includes additional
+   locating information (such as directory and file names)
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=steganography&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+5.  Word: router
+
+    Definition: noun Computers  A software program or hardware device that restricts communication between a private network or computer system and outside networks.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=block&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+6.  Word: plain text
+
+    Definition:  Web 2.0 refers to websites that emphasize user-generated content, ease of use, participatory culture and interoperability for end users.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=algorithm&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+7.  Word: RSA
+
+    Definition:   noun Computers  A list of keywords associated with a record or document, used especially as an aid in searching for information.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pixel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+8.  Word: private key
+
+    Definition: noun Computers  The environment in which programs operate that the user does not engage with directly.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+9.  Word: digital signature
+
+    Definition: noun computing  the application the user is currently interacting with; the application window that appears in front of all others.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+10. Word: one-time pad
+
+    Definition:  noun   A program that automatically retrieves webpages and follows the links on them to retrieve more webpages. Spiders are used by search engines to retrieve publicly accessible webpages for indexing, and they can also be used to check for links to webpages that no longer exist.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+** Ideas:
+1. Breakthroughs Happen, but News Travels Slowly (Page 175)
+2. Having a good system doesn't mean people will use it (Page 175)
+3. Today, electronic mail is gradually replacing conventional paper mail, and is
+   soon to be the norm for everyone, not the novelty it is today (page 189)
+4. Overall, the public seems unconcerned about the privacy of communication
+   today, and the privacy fervor that permeated the crypto wards a decade ago is
+   nowhere to be seen
 
 ** Journal Entry
 1.
 2.
 3.
 4.
+
