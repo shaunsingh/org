@@ -8,4 +8,20 @@
 #+latex_header: \usepackage[version=4]{mhchem}
 #+latex_header: \usepackage{enumerate}
 
-*
+* The following reaction was performed, Identify element X.
+\begin{align*}
+  =&\ce{Fe2O_3(s)+2X(s)} \rightarrow \ce{2Fe(s)+X_2O_3(s)}\\
+   &79.947g+2x=55.847g+50.982g\\
+   &2x=106.829g-79.847g\\
+   &2x=26.982g\\
+\end{align*}
+Since the atomic weight of \(\ce{2Fe}\) is the same as the given weight
+(\(55.847g\)), the atomic weight of 2x is \(26.982g\) or Aluminium (\(\ce{Al}\))
+
+* Balance the following equations
+a. \(\ce{2AgI+Na2S\rightarrow2Ag2S+NaI}\)
+b. \(\ce{(NH4)2Cr2O7\rightarrowCr2O3+N2+4H2O}\)
+c. \(\ce{Na3PO4+3HCl\rightarrow3NaCl+H3PO4}\)
+d.  \(\ce{TiCl4+2H2O\righarrowTiO2+4HCl}\)
+e.  \(\ce{Ba3N2+6H2O\rightarrow3Ba(OH)2+2NH3}\)
+f.  \(\ce{3HNO2+HNO3\rightarrow2NO+H20}\)

@@ -1,4 +1,4 @@
-% Created 2021-08-18 Wed 02:19
+% Created 2021-08-20 Fri 17:56
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -22,7 +22,10 @@
 \usepackage[version=4]{mhchem}
 \usepackage{enumerate}
 
-% features: (par-sep)
+% features: (acronym underline par-sep)
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\usepackage[normalem]{ulem}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
 
@@ -30,15 +33,15 @@
 
 %% make document follow Emacs theme
 
-\definecolor{obg}{HTML}{f7f3ee}
-\definecolor{ofg}{HTML}{605a52}
+\definecolor{obg}{HTML}{242730}
+\definecolor{ofg}{HTML}{bbc2cf}
 
 \pagecolor{obg}
 \color{ofg}
 
 % list labels
 
-\definecolor{itemlabel}{HTML}{7382a0}
+\definecolor{itemlabel}{HTML}{51afef}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -52,16 +55,16 @@
 
 % structural elements
 
-\definecolor{documentTitle}{HTML}{9c739c}
-\definecolor{documentInfo}{HTML}{9c739c}
-\definecolor{level1}{HTML}{955f5f}
-\definecolor{level2}{HTML}{957f5f}
-\definecolor{level3}{HTML}{9c739c}
-\definecolor{level4}{HTML}{96a1b7}
-\definecolor{level5}{HTML}{b496b4}
-\definecolor{level6}{HTML}{b9c0cf}
-\definecolor{level7}{HTML}{cdb9cd}
-\definecolor{level8}{HTML}{e3e6ec}
+\definecolor{documentTitle}{HTML}{C57BDB}
+\definecolor{documentInfo}{HTML}{C57BDB}
+\definecolor{level1}{HTML}{51afef}
+\definecolor{level2}{HTML}{C57BDB}
+\definecolor{level3}{HTML}{a991f1}
+\definecolor{level4}{HTML}{7cc3f3}
+\definecolor{level5}{HTML}{d39ce3}
+\definecolor{level6}{HTML}{a8d7f7}
+\definecolor{level7}{HTML}{e2bded}
+\definecolor{level8}{HTML}{dceffb}
 
 \addtokomafont{title}{\color{documentTitle}}
 \addtokomafont{author}{\color{documentInfo}}
@@ -79,11 +82,11 @@
 
 % textual elements
 
-\definecolor{link}{HTML}{7382a0}
+\definecolor{link}{HTML}{51afef}
 \definecolor{cite}{HTML}{800080}
-\definecolor{itemlabel}{HTML}{7382a0}
-\definecolor{code}{HTML}{957f5f}
-\definecolor{verbatim}{HTML}{81895d}
+\definecolor{itemlabel}{HTML}{51afef}
+\definecolor{code}{HTML}{e69055}
+\definecolor{verbatim}{HTML}{7bc275}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -102,9 +105,9 @@
 
 % code blocks
 
-\definecolor{codebackground}{HTML}{f7f3ee}
+\definecolor{codebackground}{HTML}{242730}
 \colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{efebe6}
+\definecolor{codeborder}{HTML}{2b2e37}
 
 %% end customisations
 
@@ -133,6 +136,25 @@
 
 \maketitle
 
-\section{}
-\label{sec:orgcb17bc9}
+\section{The following reaction was performed, Identify element X.}
+\label{sec:orgf6f462e}
+\begin{align*}
+  =&\ce{Fe2O_3(s)+2X(s)} \rightarrow \ce{2Fe(s)+X_2O_3(s)}\\
+   &79.947g+2x=55.847g+50.982g\\
+   &2x=106.829g-79.847g\\
+   &2x=26.982g\\
+\end{align*}
+Since the atomic weight of \(\ce{2Fe}\) is the same as the given weight
+(\(55.847g\)), the atomic weight of 2x is \(26.982g\) or Aluminium (\(\ce{Al}\))
+
+\section{Balance the following equations}
+\label{sec:orgca7de5b}
+\begin{enumerate}
+\item \(\ce{2AgI+Na2S\rightarrow2Ag2S+NaI}\)
+\item \(\ce{(NH4)2Cr2O7\rightarrowCr2O3+N2+4H2O}\)
+\item \(\ce{Na3PO4+3HCl\rightarrow3NaCl+H3PO4}\)
+\item \(\ce{TiCl4+2H2O\righarrowTiO2+4HCl}\)
+\item \(\ce{Ba3N2+6H2O\rightarrow3Ba(OH)2+2NH3}\)
+\item \(\ce{3HNO2+HNO3\rightarrow2NO+H20}\)
+\end{enumerate}
 \end{document}

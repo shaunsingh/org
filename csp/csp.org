@@ -481,64 +481,61 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
 ** Vocabulary
 1. Word: Cipher
 
-   Definition: noun   A software program, such as a spider, that performs automated tasks on the Internet.
+   Definition: noun   a secret or disguised way of writing; a code
 
    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=metadata&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
 2.  Word: decryption
 
-    Definition: noun   A fast storage buffer in the central processing unit of a computer.
+    Definition: noun a text that has been decoded
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
 3.  Word: encryption
 
-    Definition: The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript
+    Definition: the process of converting information or data into a code, especially to prevent unauthorized access.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=ascii&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
 
 4.  Word: packet
 
-    Definition: the address of a resource (such as a document or website) on the
-   Internet that consists of a communications protocol followed by the name or
-   address of a computer on the network and that often includes additional
-   locating information (such as directory and file names)
+    Definition: a block of data transmitted across a network.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=steganography&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 5.  Word: router
 
-    Definition: noun Computers  A software program or hardware device that restricts communication between a private network or computer system and outside networks.
+    Definition: a device which forwards data packets to the appropriate parts of a computer network.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=block&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 6.  Word: plain text
 
-    Definition:  Web 2.0 refers to websites that emphasize user-generated content, ease of use, participatory culture and interoperability for end users.
+    Definition:  text that is not computationally tagged, specially formatted, or written in code.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=algorithm&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 7.  Word: RSA
 
-    Definition:   noun Computers  A list of keywords associated with a record or document, used especially as an aid in searching for information.
+    Definition:   An algorithm used in public key cryptography, commonly used in various protocols for secure online transmission of data.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pixel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 8.  Word: private key
 
-    Definition: noun Computers  The environment in which programs operate that the user does not engage with directly.
+    Definition: a cryptographic key that can be obtained and used by anyone to encrypt messages intended for a particular recipient, such that the encrypted messages can be deciphered only by using a second key that is known only to the recipient (the private key ).
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 9.  Word: digital signature
 
-    Definition: noun computing  the application the user is currently interacting with; the application window that appears in front of all others.
+    Definition: a type of electronic signature that encrypts documents with digital codes that are particularly difficult to duplicate.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 10. Word: one-time pad
 
-    Definition:  noun   A program that automatically retrieves webpages and follows the links on them to retrieve more webpages. Spiders are used by search engines to retrieve publicly accessible webpages for indexing, and they can also be used to check for links to webpages that no longer exist.
+    Definition:  In cryptography, the one-time pad (OTP) is an encryption technique that cannot be cracked, but requires the use of a single-use pre-shared key that is no smaller than the message being sent.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
@@ -553,7 +550,107 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
 
 ** Journal Entry
 1.
+2. I agree with this statement. The largest issue with creating new technologies
+   is that many people are reluctant to switch from the old ones. Every new idea
+   seems to follow the same cycle. A new technology is created, adopted, and
+   then either replaced by a newer one or deprecated and left unmaintained.
+
+   The issue is when you create a new technology, no one depends on it. You are
+   free to modify it to your liking. After others start to adopt a new
+   technology, you can't create breaking changes. This limitation creates a lack
+   of innovation, until another technology comes along and replaces it. With so
+   many new technologies popping up and fading away, sometimes within the same
+   year, it makes sense if people are more reluctant to switch.
+
+3. This statement aged very well. Over time, email has replaced almost all
+   physical mail,  and is used for communication around the world. Not only is
+   it secure, but its dependable, and a standard format that works just as well
+   with ancient technology and modern web browsers. Email's biggest benefit and
+   drawback is its standardized tried-and-true method of sending information.
+   While this means that you use several different email clients which all work
+   perfectly with each other, it also becomes impractical to use email for
+   things like instant messaging.
+
+4.
+
+* Balance Toppled
+** Vocabulary
+1. Word: driftnet
+
+   Definition: noun   a secret or disguised way of writing; a code
+
+   Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=metadata&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+2.  Word: copyright infringement
+
+    Definition: noun a text that has been decoded
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
+
+3.  Word: centralized systems
+
+    Definition: the process of converting information or data into a code, especially to prevent unauthorized access.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=ascii&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
+
+4.  Word: DRAM
+
+    Definition: a block of data transmitted across a network.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=steganography&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+5.  Word: digital rights management (DRM)
+
+    Definition: a device which forwards data packets to the appropriate parts of a computer network.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=block&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+6.  Word: DMCA
+
+    Definition:  text that is not computationally tagged, specially formatted, or written in code.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=algorithm&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+7.  Word: copyright
+
+    Definition:   An algorithm used in public key cryptography, commonly used in various protocols for secure online transmission of data.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pixel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+8.  Word: creative commons
+
+    Definition: a cryptographic key that can be obtained and used by anyone to encrypt messages intended for a particular recipient, such that the encrypted messages can be deciphered only by using a second key that is known only to the recipient (the private key ).
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+9.  Word: digital signature
+
+    Definition: a type of electronic signature that encrypts documents with digital codes that are particularly difficult to duplicate.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+10. Word: one-time pad
+
+    Definition:  In cryptography, the one-time pad (OTP) is an encryption technique that cannot be cracked, but requires the use of a single-use pre-shared key that is no smaller than the message being sent.
+
+    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
+
+** Ideas:
+1. The answer is to build a chip into every computer that checks the operating
+   system each time the system has been modified, the computer will not boot.
+   (211)
+2. A third DRM difficulty is that, in the name of security and virus protection,
+   we could easily slip into an unwinnable arms race if increase technology
+   lock-down that provides no real gain for content owners (Page 175)
+3. What is wrong is that we have invented the technology to eliminate scarcity,
+   but we are deliberately throwing it away to benefit those who profit from
+   scarcity (page 222)
+4. Universal has been talking to Sony and other labels about a subscription
+   service, where users would pay a fixed fee and then get as much music as they
+   would like. (page 224)
+
+** Journal Entry
+1.
 2.
 3.
 4.
-
