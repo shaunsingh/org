@@ -25,3 +25,121 @@ c. \(\ce{Na3PO4+3HCl} \rightarrow \ce{3NaCl+H3PO4}\)
 d.  \(\ce{TiCl4+2H2O} \rightarrow \ce{TiO2+4HCl}\)
 e.  \(\ce{Ba3N2+6H2O} \rightarrow \ce{3Ba(OH)2+2NH3}\)
 f.  \(\ce{3HNO2+HNO3} \rightarrow \ce{2NO+H2O}\)
+
+* Balance the following equation:
+\(\ce{4NH4OH(aq)+KAI(SO)4\cdot12H2O}=\ce{Al(OH)3(s)+2(NH4)2Cr2O7+KOH(aq)+12H2O}\)
+We can multiple \(\ce{NH4OH}\) by 4, and increase NH4 and H2O on the product
+side to compensate
+
+* Balance the following equation
+\(\ce{2Fe+6HC2H3O2}=\ce{2Fe(C2H3O2)3+3H2}\)
+
+* How many grams of potassium iodide are necessary to completely react with 20.61g of Mercury (II) chloride
+First we balance the equation
+\(\ce{HgCl2+2KL}=\ce{HgI2+2KCl}\)
+Next we to find the total atomic weight.
+\(200.59+2(35.45)+2(39.10+126.90)\)
+Afterwards, we calculate the ratio needed
+\(\frac{332}{271.49}=1.22\)
+Finally we multiply
+\(20.61*1.22=25.203\)
+
+* Reaction
+
+* The answers are
+a. 72g
+b. \(\ce{AgNO3}\) is the limiting reactant
+c. 47.3g
+d. 20.5%
+
+* The percent by mass of Bromine that Dibromoethane contains is
+C = 12.011
+H = 1.008
+Br = 79.90
+
+\(\ce{C2H4Br2}\)
+
+= 24.022 + 4.032 + 159.8
+= 187.9
+=159.8/187.9
+=.8505
+
+= %85.05
+
+* Xenon:
+
+moles = \(9.03*10^{20}/6.022*10^{23}\) = 1.5*10^-3
+= 0.31
+0.31/131+19n = 186,5 + 23.5n = 310
+n = 4
+therefore its \(\ce{XeF4}\)
+
+* Molar mass of KCIO
+
+k = 39.0983
+Cl = 35.45
+O = 16.00
+
+39.0983 + 35.45 + 3*16 = 122.55g
+6.32/122.55 = 6.052 moles
+2 mol KClO3 = 3 mol O2
+2 = 3
+0.052*3/2
+= 0.078 mol
+
+* The equation (balanced) is
+\(\ce{Ca(OH)2+2HCl}=\ce{CaCl2 + 2H2O}\)
+
+Therefore the coeffecient is 2
+
+* the answer is
+1
+
+* The answer is
+\(\ce{2CHCl3 + 2Cl2}=\ce{2CCl4+2HCl}\)
+
+\(\ce{CHCl3=}\) 119.378
+\(\ce{CCl4=}\) 153.823
+
+Theoretical mass = 153.823 * 0.097 = 15.336g
+% yield = 12.6/15.336 = %82.16
+
+* The answer is
+Ch4 is the limiting reactant
+8x 1 mol Ch4 / 16.04 g/mol = .499
+
+.499 * 153.82 = 76.72g
+
+* The answer is
+sodium carbonate + hydrohloric acid = sodium chloride + carbon doxide + water
+= \(\ce{Na2CO3+HCl}+\ce{NaCl + CO2 + H2O}\)
+= \(\ce{Na2CO3+2HCl}+\ce{2NaCl + 2CO2 + H2O}\)
+
+* The answer is
+a. \(\ce{NaOH + KNO3}=\ce{NaNO3+KOH}\) = double replacement
+b. \(\ce{CH4+2O2}=\ce{}\) = combustion
+c. \(\ce{Fe + 3NaBr}=\ce{FaBr2+3Na}\) = single replacement
+d. already balanced, double replacement
+e. already balanced, double replacement
+f. already balanced, synthesis
+g. already balanced, decomposition
+
+* The answers are
+a. Ba(OH)2 -> BaO+H2O
+b. Na2CO3 -> Na2O +CO2
+c. 2LiCLI3 -> 2LiCL + 3O2
+d. Al2O3 -> 2AL2 + O3
+e. H2SO4 -> H2O + SO3
+
+* The answers are
+a. 2Mg + O2 = 2MgO
+b. N2 + 3H2 = 2NH3
+c. S + O2 = SO2
+d. CaO + H2O -> Ca(OH)2
+
+* The answers are
+a. 2H2O2 -> 2H2O + O2
+b. Cu2+ + So42- + Ba2+ - 20H- -> Cu (OH)2 + BaSO4
+c. Al+3Ag+ -> Al3+ + 3Ag
+d. Cl2 + 2NaBr -> Br2 + 2NaCl
+e. C2H6 + 3O2 -> CO2 + CO + 3H2O
