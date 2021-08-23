@@ -1,0 +1,372 @@
+% Created 2021-08-23 Mon 12:43
+% Intended LaTeX compiler: pdflatex
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
+\setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
+% features: (acronym par-sep engraved-code-setup engraved-code)
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+
+\usepackage{fvextra}
+\fvset{
+  commandchars=\\\{\},
+  highlightcolor=white!95!black!80!blue,
+  breaklines=true,
+  breaksymbol=\color{white!60!black}\tiny\ensuremath{\hookrightarrow}}
+\renewcommand\theFancyVerbLine{\footnotesize\color{black!40!white}\arabic{FancyVerbLine}}
+
+\definecolor{codebackground}{HTML}{f7f7f7}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+% TODO have code boxes keep line vertical alignment
+\usepackage[breakable,xparse]{tcolorbox}
+\DeclareTColorBox[]{Code}{o}%
+{colback=codebackground, colframe=codeborder,
+  fontupper=\footnotesize,
+  colupper=EFD,
+  IfNoValueTF={#1}%
+  {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
+    boxrule=0.5pt, left=2pt}%
+  {boxsep=2.5pt, arc=0pt, outer arc=0pt,
+    boxrule=0pt, leftrule=1.5pt, left=0.5pt},
+  right=2pt, top=1pt, bottom=0.5pt,
+  breakable}
+
+\definecolor{EFD}{HTML}{383a42}
+\definecolor{EfD}{HTML}{fafafa}
+\newcommand{\EFD}[1]{\colorbox{EfD}{\textcolor{EFD}{#1}}} % default
+\definecolor{EFk}{HTML}{e45649}
+\newcommand{\EFk}[1]{\textcolor{EFk}{#1}} % font-lock-keyword-face
+\definecolor{EFd}{HTML}{84888b}
+\newcommand{\EFd}[1]{\textcolor{EFd}{\textit{#1}}} % font-lock-doc-face
+\definecolor{EFt}{HTML}{986801}
+\newcommand{\EFt}[1]{\textcolor{EFt}{#1}} % font-lock-type-face
+\definecolor{EFs}{HTML}{50a14f}
+\newcommand{\EFs}[1]{\textcolor{EFs}{#1}} % font-lock-string-face
+\definecolor{EFw}{HTML}{986801}
+\newcommand{\EFw}[1]{\textcolor{EFw}{#1}} % font-lock-warning-face
+\definecolor{EFb}{HTML}{a626a4}
+\newcommand{\EFb}[1]{\textcolor{EFb}{#1}} % font-lock-builtin-face
+\definecolor{EFct}{HTML}{9ca0a4}
+\newcommand{\EFct}[1]{\textcolor{EFct}{#1}} % font-lock-comment-face
+\definecolor{EFc}{HTML}{b751b6}
+\newcommand{\EFc}[1]{\textcolor{EFc}{#1}} % font-lock-constant-face
+\definecolor{EFpp}{HTML}{4078f2}
+\newcommand{\EFpp}[1]{\textcolor{EFpp}{\textbf{#1}}} % font-lock-preprocessor-face
+\definecolor{EFnc}{HTML}{4078f2}
+\newcommand{\EFnc}[1]{\textcolor{EFnc}{\textbf{#1}}} % font-lock-negation-char-face
+\definecolor{EFv}{HTML}{6a1868}
+\newcommand{\EFv}[1]{\textcolor{EFv}{#1}} % font-lock-variable-name-face
+\definecolor{EFf}{HTML}{a626a4}
+\newcommand{\EFf}[1]{\textcolor{EFf}{#1}} % font-lock-function-name-face
+\definecolor{EFcd}{HTML}{9ca0a4}
+\newcommand{\EFcd}[1]{\textcolor{EFcd}{#1}} % font-lock-comment-delimiter-face
+\definecolor{EFrc}{HTML}{4078f2}
+\newcommand{\EFrc}[1]{\textcolor{EFrc}{\textbf{#1}}} % font-lock-regexp-grouping-construct
+\definecolor{EFrb}{HTML}{4078f2}
+\newcommand{\EFrb}[1]{\textcolor{EFrb}{\textbf{#1}}} % font-lock-regexp-grouping-backslash
+\definecolor{Efob}{HTML}{e7e7e7}
+\newcommand{\EFob}[1]{\colorbox{Efob}{#1}} % org-block
+\definecolor{EFhn}{HTML}{da8548}
+\newcommand{\EFhn}[1]{\textcolor{EFhn}{\textbf{#1}}} % highlight-numbers-number
+\definecolor{EFhq}{HTML}{4078f2}
+\newcommand{\EFhq}[1]{\textcolor{EFhq}{#1}} % highlight-quoted-quote
+\definecolor{EFhs}{HTML}{986801}
+\newcommand{\EFhs}[1]{\textcolor{EFhs}{#1}} % highlight-quoted-symbol
+\definecolor{EFrdi}{HTML}{4078f2}
+\newcommand{\EFrdi}[1]{\textcolor{EFrdi}{#1}} % rainbow-delimiters-depth-1-face
+\definecolor{EFrdii}{HTML}{a626a4}
+\newcommand{\EFrdii}[1]{\textcolor{EFrdii}{#1}} % rainbow-delimiters-depth-2-face
+\definecolor{EFrdiii}{HTML}{50a14f}
+\newcommand{\EFrdiii}[1]{\textcolor{EFrdiii}{#1}} % rainbow-delimiters-depth-3-face
+\definecolor{EFrdiv}{HTML}{b751b6}
+\newcommand{\EFrdiv}[1]{\textcolor{EFrdiv}{#1}} % rainbow-delimiters-depth-4-face
+\definecolor{EFrdv}{HTML}{4db5bd}
+\newcommand{\EFrdv}[1]{\textcolor{EFrdv}{#1}} % rainbow-delimiters-depth-5-face
+\definecolor{EFrdvi}{HTML}{4078f2}
+\newcommand{\EFrdvi}[1]{\textcolor{EFrdvi}{#1}} % rainbow-delimiters-depth-6-face
+\definecolor{EFrdvii}{HTML}{a626a4}
+\newcommand{\EFrdvii}[1]{\textcolor{EFrdvii}{#1}} % rainbow-delimiters-depth-7-face
+\definecolor{EFrdiix}{HTML}{50a14f}
+\newcommand{\EFrdiix}[1]{\textcolor{EFrdiix}{#1}} % rainbow-delimiters-depth-8-face
+\definecolor{EFrdix}{HTML}{b751b6}
+\newcommand{\EFrdix}[1]{\textcolor{EFrdix}{#1}} % rainbow-delimiters-depth-9-face
+% end features
+
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{fafafa}
+\definecolor{ofg}{HTML}{383a42}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{4078f2}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
+
+\definecolor{documentTitle}{HTML}{a626a4}
+\definecolor{documentInfo}{HTML}{a626a4}
+\definecolor{level1}{HTML}{e45649}
+\definecolor{level2}{HTML}{da8548}
+\definecolor{level3}{HTML}{b751b6}
+\definecolor{level4}{HTML}{6f99f5}
+\definecolor{level5}{HTML}{bc5cba}
+\definecolor{level6}{HTML}{9fbbf8}
+\definecolor{level7}{HTML}{d292d1}
+\definecolor{level8}{HTML}{d8e4fc}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+% textual elements
+
+\definecolor{link}{HTML}{4078f2}
+\definecolor{cite}{HTML}{800080}
+\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{code}{HTML}{da8548}
+\definecolor{verbatim}{HTML}{50a14f}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{fafafa}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+%% end customisations
+
+\author{Shaurya Singh}
+\date{\today}
+\title{CoderZ Summer Assignment \#2}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
+\hypersetup{
+  pdfauthor={Shaurya Singh},
+  pdftitle={CoderZ Summer Assignment \#2},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
+\begin{document}
+
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+Hello everyone! This is the second assignment you will receive this summer. By this
+point, all of you should have received and submitted Assignment \#1, which had
+you set up VSCode for Python programming. If you still need help, feel free to
+email me at shaunsingh0207@gmail.com.
+
+In Assignment \#2, you will learn the basics of Python 3 and how to use variables
+
+\section{Basics}
+\label{sec:orge72a43f}
+Python is an interpreted programming language. You write \texttt{.py} files, in a text
+editor (such as VSCode), which are interpreted by the python interpreter, and
+executed. As with every language, Python has its own syntax.
+
+Firstly, before you get started with this guide, create a \texttt{robotics1.py} file,
+this is where you will be writing the examples below, and executing them
+
+\subsection{Indentation}
+\label{sec:org9edf772}
+Indentation refers to the spaces at the beginning of a code line. In other
+languages, you usually have brackets or parenthesis telling you where a block of
+code starts and ends. For example, in java we have the following
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{public} \textcolor[HTML]{e45649}{class} \textcolor[HTML]{986801}{Main} \{
+  \textcolor[HTML]{e45649}{public} \textcolor[HTML]{e45649}{static} \textcolor[HTML]{a626a4}{void} \textcolor[HTML]{a626a4}{main}(\textcolor[HTML]{986801}{String}[] args) \{
+    System.out.\textcolor[HTML]{a626a4}{println}(\textcolor[HTML]{50a14f}{"Hello World"});
+  \}
+\}
+\end{Verbatim}
+\end{Code}
+Notice the use of \texttt{\{\}} to tell you where each part of the code starts and ends.
+Instead of brackets, in python we rely on just indentation. For example, if we
+want to do an if statement, we would write something like
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
+  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"})
+\end{Verbatim}
+\end{Code}
+Notice the spaces in front of print. If we remove those spaces, and write
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
+\textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"})
+\end{Verbatim}
+\end{Code}
+It will result in an error. Remember the number of spaces can be any number (I
+choose 2), but it must remain the same throughout the python file.
+
+\subsection{Comments}
+\label{sec:org9686f44}
+As with any language, you can (and should) be commenting your code. Comments in
+python start with a \# character, which will mark the rest of the line as a comment
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\# Compare 5 to 2}
+\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
+  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"})
+\end{Verbatim}
+\end{Code}
+Comments can also be added to the ends of lines.
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
+  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"}) \textcolor[HTML]{9ca0a4}{\# Compare 5 to 2}
+\end{Verbatim}
+\end{Code}
+Lastly, you can have multiline comments if needed
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{84888b}{\textit{"""
+Line \#1
+Line \#2
+"""}}
+\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
+  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"}) \textcolor[HTML]{9ca0a4}{\# Compare 5 to 2}
+\end{Verbatim}
+\end{Code}
+
+\section{Variables}
+\label{sec:orgb9ae231}
+A variable is a term that represents an value. You can use variables for storing
+information for later usage. In Python, you assign a variable a value using the
+= sign. You can also assign multiple variables at once
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{5}
+\EFv{y} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"John"}
+\textcolor[HTML]{6a1868}{x}, \textcolor[HTML]{6a1868}{y}, \textcolor[HTML]{6a1868}{z} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"Orange"}, \textcolor[HTML]{50a14f}{"Banana"}, \textcolor[HTML]{50a14f}{"Grape"}
+\end{Verbatim}
+\end{Code}
+There are also different data types that we need to be aware of. If you want to
+specific the data type of a variable, you can cast it.
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{str}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#x is a string, and will be '3'}
+\EFv{y} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{int}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#y is a integer, and will be 3}
+\EFv{z} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{float}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#z is a float, and will be 3.0}
+\end{Verbatim}
+\end{Code}
+You can also get the data type of a variable, using \texttt{type()} .
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{str}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#x is a string, and will be '3'}
+\textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{a626a4}{\textbf{type}}(x))
+\end{Verbatim}
+\end{Code}
+Lastly, you can define values in a list and unpack them to variables later
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\EFv{fruits} \textcolor[HTML]{e45649}{=} [\textcolor[HTML]{50a14f}{"apple"}, \textcolor[HTML]{50a14f}{"banana"}, \textcolor[HTML]{50a14f}{"Grape"}]
+\textcolor[HTML]{6a1868}{x}, \textcolor[HTML]{6a1868}{y}, \textcolor[HTML]{6a1868}{z} \textcolor[HTML]{e45649}{=} fruits
+\end{Verbatim}
+\end{Code}
+Remember that variables are case sensitive, so \texttt{John} and \texttt{john} are two different
+variables. Also keep in mind you can use single quotes or double quotes. In
+robotics, we prefer to write variables in the camelCase format, where each word
+except the first starts with a capital letter, like \texttt{myVariableName}.
+
+\subsection{Global Variables}
+\label{sec:orgc42a379}
+Variables created outside of a function are called global variables. Global
+variables can be used both inside of functions and outside
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"global"}
+\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{myfunc}():
+    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"this variable is "} \textcolor[HTML]{e45649}{+} x)
+\textcolor[HTML]{4078f2}{\textbf{myfunc}}()
+\end{Verbatim}
+\end{Code}
+In this case, the variable x is a global variable
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{myfunc}():
+  \EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"global"}
+  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"this variable is "} \textcolor[HTML]{e45649}{+} x)
+
+\textcolor[HTML]{4078f2}{\textbf{myfunc}}()
+\textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"this variable is "} \textcolor[HTML]{e45649}{+} x)
+\end{Verbatim}
+\end{Code}
+In this case it isn't, and so the last print statement won't function
+
+\section{Assignment}
+\label{sec:orgdacfd43}
+\begin{enumerate}
+\item Create a file named \texttt{assignment2.py}
+\item Write some python code that defines a global variable, defines a function
+that prints \texttt{Hello World} + the variable, and call that function
+\end{enumerate}
+\end{document}
