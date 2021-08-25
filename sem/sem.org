@@ -28,7 +28,7 @@
 |----------------------------+---------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 * Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:
-** Article 1: [The fight against fake-paper factories that churn out sham science][https://www.nature.com/articles/d41586-021-00733-5]
+** Article 1: [[https://www.nature.com/articles/d41586-021-00733-5][The fight against fake-paper factories that churn out sham science]]
 1. Brief summary of the article
    - Since last January, journals have retracted at least 370 papers that have
      been publicly linked to paper mills. Many more retractions are expected to
@@ -39,7 +39,7 @@
      January 2020. By March 2021, they had collectively listed more than 1,300
      articles as possibly coming from paper mills. Around 26% of the articles
      that the sleuths alleged came from paper Mills have so far been retracted
-     or labelled with expressions of concern.
+     or labeled with expressions of concern.
 
 2. Authors Thesis:
    - research-integrity sleuths have repeatedly warned that some scientists buy
@@ -52,7 +52,7 @@
 7. Do you agree with the author?
 8. Create an MLA works cited entry for each article
 
-** Article 2:  https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx
+** Article 2:  [[https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx][A Collaboration Between two Artists: One Human, One a Machine]]
  1. Brief summary of the article
     - Christie's becomes the first auction house to offer a work of art created by an algorithm. Portrait of Edmond Belamy was created by Paris-based
       collective Obvious. It is one of a group of portraits of the fictional

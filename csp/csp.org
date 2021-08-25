@@ -474,8 +474,32 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    language by nature, people are just using it for the wrong purpose. When used
    tastefully, it can still vastly improve websites.
 
-3.
-4.
+3.  My favorite part of free software is that users can improve the software as
+   they please. If a piece of software that someone like, but doesn't have a
+   feature they need, the user is free to modify the software as they please,
+   and submit they're code upstream (back to the source of the software) if they
+   wish to. On the other hand, with commercial (paid) software, you are stuck
+   with requesting the company to update the application.
+
+   However, there are also drawbacks with open source software. Since there is
+   no financial backing for most projects, maintainers don't have an incentive
+   to keep working. Similarly, since coders aren't paid the quality work may not
+   be as good as that of a commercial project.
+
+4. If google holds your documents, they are accessible from anywhere the
+   internet reaches.
+
+   This is why I like cloud storage over local storage. With local storage you
+   have to deal with organizing files, keeping storage down, and most
+   importantly you have to deal with sharing files with others, and making sure
+   your assignments are accessible elsewhere when you need them. Additionally,
+   when you share files with others, you need to keep track of changes others do
+
+   With google drive, everything is instantly organized and searchable. You
+   don't have to deal much with keeping storage down, as cloud storage is
+   extremely cheap. Most importantly, all your files are available as long as
+   you have an internet connection, and collaborative work is much easier, as
+   google keeps track of changes, and everything is in one document
 
 * Secret Bits
 ** Vocabulary
@@ -550,6 +574,7 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
 
 ** Journal Entry
 1.
+
 2. I agree with this statement. The largest issue with creating new technologies
    is that many people are reluctant to switch from the old ones. Every new idea
    seems to follow the same cycle. A new technology is created, adopted, and

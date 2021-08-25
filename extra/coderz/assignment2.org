@@ -1,6 +1,7 @@
 #+title: CoderZ Summer Assignment #2
 #+author: Shaurya Singh
 #+startup: preview
+#+date: August 6th, 2021
 #+startup: fold
 #+options: toc:2
 #+latex_class: chameleon
