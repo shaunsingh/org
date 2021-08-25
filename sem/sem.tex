@@ -1,4 +1,4 @@
-% Created 2021-08-13 Fri 22:46
+% Created 2021-08-25 Wed 15:33
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -13,15 +13,11 @@
 \usepackage{amsmath}
 \usepackage{textcomp}
 \usepackage{amssymb}
-\usepackage{dvipng}
-\usepackage{chemfig}
-\usepackage{mhchem}
 \usepackage{capt-of}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
 \usepackage{indentfirst}
-\setmainfont[Ligatures=TeX]{IBM Plex Sans}
-\setmonofont[Ligatures=TeX]{Iosevka Nerd Font Mono}
+\setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
 % features: (acronym underline par-sep table)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
 \newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
@@ -32,6 +28,87 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 % end features
+
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{242730}
+\definecolor{ofg}{HTML}{bbc2cf}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{51afef}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
+
+\definecolor{documentTitle}{HTML}{C57BDB}
+\definecolor{documentInfo}{HTML}{C57BDB}
+\definecolor{level1}{HTML}{51afef}
+\definecolor{level2}{HTML}{C57BDB}
+\definecolor{level3}{HTML}{a991f1}
+\definecolor{level4}{HTML}{7cc3f3}
+\definecolor{level5}{HTML}{d39ce3}
+\definecolor{level6}{HTML}{a8d7f7}
+\definecolor{level7}{HTML}{e2bded}
+\definecolor{level8}{HTML}{dceffb}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+% textual elements
+
+\definecolor{link}{HTML}{51afef}
+\definecolor{cite}{HTML}{800080}
+\definecolor{itemlabel}{HTML}{51afef}
+\definecolor{code}{HTML}{e69055}
+\definecolor{verbatim}{HTML}{7bc275}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{242730}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{2b2e37}
+
+%% end customisations
+
 \author{Shaurya Singh}
 \date{\today}
 \title{Ap Sem Summer Assignment}
@@ -61,7 +138,7 @@
 
 
 \section{Lens, Issues, and Articles}
-\label{sec:org22e5037}
+\label{sec:org2fead8a}
 \begin{itemize}
 \item Theme: Technology
 \end{itemize}
@@ -99,9 +176,9 @@ Ethical & How can we prevent unethical robotics in the future? & \url{https://ww
 \end{longtable}
 
 \section{Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:}
-\label{sec:org644f31a}
-\subsection{Article 1: [The fight against fake-paper factories that churn out sham science][\url{https://www.nature.com/articles/d41586-021-00733-5}]}
-\label{sec:org857fe92}
+\label{sec:orgbaa476e}
+\subsection{Article 1: \href{https://www.nature.com/articles/d41586-021-00733-5}{The fight against fake-paper factories that churn out sham science}}
+\label{sec:orgcaa1464}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}
@@ -114,25 +191,59 @@ than 400 published papers they said probably came from a paper mill in
 January 2020. By March 2021, they had collectively listed more than 1,300
 articles as possibly coming from paper mills. Around 26\% of the articles
 that the sleuths alleged came from paper Mills have so far been retracted
-or labelled with expressions of concern.
+or labeled with expressions of concern.
 \end{itemize}
 
 \item Authors Thesis:
 \begin{itemize}
-\item research-integrity sleuths have repeatedly warned that some scientists buy
+\item Research-integrity sleuths have repeatedly warned that some scientists buy
 papers from third-party firms to help their careers
 \end{itemize}
 
 \item To what extent are the authors claims valid?
+
 \item What is one weakness with the author's claim?
-\item Copy and paste 2 direct quotes that best represent this article .
-\item Evaluate the article's effectiveness. Is it convincing?
-\item Do you agree with the author?
-\item Create an MLA works cited entry for each article
 \end{enumerate}
 
-\subsection{Article 2:  \url{https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx}}
-\label{sec:orgd80bbaf}
+
+\begin{enumerate}
+\item Copy and paste 2 direct quotes that best represent this article .
+\begin{itemize}
+\item In a statement this year to Nature, Elsevier said that its journal editors detect and prevent the publication of thousands of probable paper-mill submissions each year, although some do get through.
+
+\begin{itemize}
+\item We are one of a number of publishers to have been affected by such activity.” Since last January, journals have retracted at least 370 papers that have been publicly linked to paper mills, an analysis by Nature has found, and many more retractions are expected to follow.
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+
+
+\begin{enumerate}
+\item Evaluate the article's effectiveness. Is it convincing?
+\begin{itemize}
+\item The article is convincing. The write is objective, to the point, and makes
+sure to back up her writing with sources and citations. The site itself is
+trustworthy, \emph{nature.com} is a host to many research papers and is
+experienced on the topic.
+\end{itemize}
+
+\item Do you agree with the author?
+\begin{itemize}
+\item I completely agree with the author.  Companies who churn out fake
+manuscripts are a disgrace to science, and harm the work of other students
+and researchers who worked hard to produce original work.
+\end{itemize}
+
+\item Create an MLA works cited entry for each article:
+\begin{itemize}
+\item Else, Holly, and Richard Van Noorden. “The Fight against Fake-Paper
+\end{itemize}
+Factories That Churn out Sham Science.” Nature, vol. 591, no. 7851, Mar.
+2021, pp. 516–19. www.nature.com, \url{https://doi.org/10.1038/d41586-021-00733-5}.
+\end{enumerate}
+
+\subsection{Article 2:  \href{https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx}{A Collaboration Between two Artists: One Human, One a Machine}}
+\label{sec:orgfdb7d05}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}

@@ -1,8 +1,9 @@
 #+title: Ap Sem Summer Assignment
 #+author: Shaurya Singh
-#+startup: preview
 #+startup: fold
+#+startup: preview
 #+options: toc:2
+#+latex_class: chameleon
 
 * Lens, Issues, and Articles
 - Theme: Technology
@@ -42,15 +43,44 @@
      or labeled with expressions of concern.
 
 2. Authors Thesis:
-   - research-integrity sleuths have repeatedly warned that some scientists buy
+   - Research-integrity sleuths have repeatedly warned that some scientists buy
      papers from third-party firms to help their careers
 
 3. To what extent are the authors claims valid?
+   - The authors claims are valid, as the company publishing this article
+     (Nature), deals with peer-reviewing and publishing research papers like
+     these every day. The claims of the article are not only backed up by the
+     company's experience, but also anecdotes from other publishers and
+     researchers, who have been cited in the article
+
 4. What is one weakness with the author's claim?
+   -
+
 5. Copy and paste 2 direct quotes that best represent this article .
+   - In a statement this year to Nature, Elsevier said that its journal editors
+     detect and prevent the publication of thousands of probable paper-mill
+     submissions each year, although some do get through.
+
+     - We are one of a number of publishers to have been affected by such
+       activity.” Since last January, journals have retracted at least 370
+       papers that have been publicly linked to paper mills, an analysis by
+       Nature has found, and many more retractions are expected to follow.
+
 6. Evaluate the article's effectiveness. Is it convincing?
+   - The article is convincing. The write is objective, to the point, and makes
+     sure to back up her writing with sources and citations. The site itself is
+     trustworthy, /nature.com/ is a host to many research papers and is
+     experienced on the topic.
+
 7. Do you agree with the author?
-8. Create an MLA works cited entry for each article
+   - I completely agree with the author.  Companies who churn out fake
+     manuscripts are a disgrace to science, and harm the work of other students
+     and researchers who worked hard to produce original work.
+
+8. Create an MLA works cited entry for each article:
+   - Else, Holly, and Richard Van Noorden. “The Fight against Fake-Paper
+   Factories That Churn out Sham Science.” Nature, vol. 591, no. 7851, Mar.
+   2021, pp. 516–19. www.nature.com, https://doi.org/10.1038/d41586-021-00733-5.
 
 ** Article 2:  [[https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx][A Collaboration Between two Artists: One Human, One a Machine]]
  1. Brief summary of the article
@@ -60,11 +90,13 @@
       sells for $432,500, nearly 45 times its high estimate.
 
  2. Authors Thesis:
-    - This portrait, however, is not the product of a human mind. It was created by an artificial intelligence, an algorithm defined by that algebraic formula with its many parentheses
+    - This portrait, however, is not the product of a human mind. It was created
+      by an artificial intelligence, an algorithm defined by that algebraic
+      formula with its many parentheses
 
-3. To what extent are the authors claims valid?
-4. What is one weakness with the author's claim?
-5. Copy and paste 2 direct quotes that best represent this article
-6. Evaluate the article's effectiveness. Is it convincing?
-7. Do you agree with the author?
-8. Create an MLA works cited entry for each article
+ 3. To what extent are the authors claims valid?
+ 4. What is one weakness with the author's claim?
+ 5. Copy and paste 2 direct quotes that best represent this article
+ 6. Evaluate the article's effectiveness. Is it convincing?
+ 7. Do you agree with the author?
+ 8. Create an MLA works cited entry for each article
