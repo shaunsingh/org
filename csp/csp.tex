@@ -1,4 +1,4 @@
-% Created 2021-08-18 Wed 19:22
+% Created 2021-08-26 Thu 18:08
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -17,6 +17,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
 \usepackage{indentfirst}
+\setmainfont[Ligatures=TeX]{IBM Plex Sans}
 \setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
 % features: (acronym par-sep)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
@@ -28,15 +29,15 @@
 
 %% make document follow Emacs theme
 
-\definecolor{obg}{HTML}{242730}
-\definecolor{ofg}{HTML}{bbc2cf}
+\definecolor{obg}{HTML}{FDF6E3}
+\definecolor{ofg}{HTML}{556b72}
 
 \pagecolor{obg}
 \color{ofg}
 
 % list labels
 
-\definecolor{itemlabel}{HTML}{51afef}
+\definecolor{itemlabel}{HTML}{268bd2}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -50,16 +51,16 @@
 
 % structural elements
 
-\definecolor{documentTitle}{HTML}{C57BDB}
-\definecolor{documentInfo}{HTML}{C57BDB}
-\definecolor{level1}{HTML}{51afef}
-\definecolor{level2}{HTML}{C57BDB}
-\definecolor{level3}{HTML}{a991f1}
-\definecolor{level4}{HTML}{7cc3f3}
-\definecolor{level5}{HTML}{d39ce3}
-\definecolor{level6}{HTML}{a8d7f7}
-\definecolor{level7}{HTML}{e2bded}
-\definecolor{level8}{HTML}{dceffb}
+\definecolor{documentTitle}{HTML}{d33682}
+\definecolor{documentInfo}{HTML}{d33682}
+\definecolor{level1}{HTML}{268bd2}
+\definecolor{level2}{HTML}{d33682}
+\definecolor{level3}{HTML}{6c71c4}
+\definecolor{level4}{HTML}{5ca8dd}
+\definecolor{level5}{HTML}{de68a1}
+\definecolor{level6}{HTML}{92c4e8}
+\definecolor{level7}{HTML}{e99ac0}
+\definecolor{level8}{HTML}{d3e7f6}
 
 \addtokomafont{title}{\color{documentTitle}}
 \addtokomafont{author}{\color{documentInfo}}
@@ -77,11 +78,11 @@
 
 % textual elements
 
-\definecolor{link}{HTML}{51afef}
+\definecolor{link}{HTML}{268bd2}
 \definecolor{cite}{HTML}{800080}
-\definecolor{itemlabel}{HTML}{51afef}
-\definecolor{code}{HTML}{e69055}
-\definecolor{verbatim}{HTML}{7bc275}
+\definecolor{itemlabel}{HTML}{268bd2}
+\definecolor{code}{HTML}{cb4b16}
+\definecolor{verbatim}{HTML}{859900}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -100,9 +101,9 @@
 
 % code blocks
 
-\definecolor{codebackground}{HTML}{242730}
+\definecolor{codebackground}{HTML}{FDF6E3}
 \colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{2b2e37}
+\definecolor{codeborder}{HTML}{f4efdd}
 
 %% end customisations
 
@@ -135,9 +136,9 @@
 
 
 \section{Digital Explosion}
-\label{sec:org0ed0915}
+\label{sec:org609047e}
 \subsection{Vocabulary}
-\label{sec:org6854e02}
+\label{sec:orgcdb316f}
 \begin{enumerate}
 \item Word: bit
 
@@ -206,7 +207,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Ideas:}
-\label{sec:org96bb65a}
+\label{sec:orgbde356b}
 \begin{enumerate}
 \item Companies keep records of cellphone locations (Page 1)
 \item ``Its all just bits'' (Page 5)
@@ -215,7 +216,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:org3182605}
+\label{sec:org70c5424}
 \begin{enumerate}
 \item I support the idea of companies keeping track of cellphone locations, as long
 as that information is kept private and in the hands of only the government.
@@ -269,9 +270,9 @@ those drives quicker and more secure.
 \end{enumerate}
 
 \section{Naked in the Sunlight}
-\label{sec:orge7ec34a}
+\label{sec:orgde64a0a}
 \subsection{Vocabulary}
-\label{sec:orgef3142d}
+\label{sec:org71b1d15}
 \begin{enumerate}
 \item Word: pervasive
 
@@ -341,7 +342,7 @@ Ref: WordNet Search - 3.1.
 \end{enumerate}
 
 \subsection{Ideas:}
-\label{sec:orgd01695e}
+\label{sec:org669702b}
 \begin{enumerate}
 \item The notion of privacy has become fuzzier at the same time as the
 secrecy-enhancing technology of encryption has become widespread (Page 21)
@@ -353,7 +354,7 @@ footprints as it is to avoid touching the ground when we walk
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:orgf5cfb53}
+\label{sec:orgb47ace7}
 \begin{enumerate}
 \item I agree with the notion that privacy has become fuzzier over time. As
 encryption and security technologies are becoming more widespread, it seems
@@ -387,158 +388,18 @@ digital traces everywhere. I personally think this issue is linked to idea
 privacy, and justify all the analytics with improved convenience.
 
 Most people don't want to put effort into maintaining their privacy, or
-resist changes to their workflow and life .
+resist changes to their workflow and life, and unless you make privacy more
+convenient, that won't change.
 
-\item 
+\item As I stated in the previous two responses, I agree with this, and the issue
+is not many people care about it. The solution is to raise awareness and make
+privacy the default, instead of having to have users change it themselves.
 \end{enumerate}
 
 \section{Ghosts in the Machine}
-\label{sec:org6329d68}
+\label{sec:orge198f75}
 \subsection{Vocabulary}
-\label{sec:orgaa41935}
-\begin{enumerate}
-\item Word: metadata
-
-Definition: noun  Data that describes other data, as in describing the origin, structure, or characteristics of computer files,
-
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=metadata\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
-
-\item Word: open source software
-
-Definition: Programs for which the source code is freely available and freely redistributable, with no commercial strings attached.
-
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
-
-\item Word: ascii
-
-Definition: noun  (computer science) a code for information exchange between computers made by different companies; a string of 7 binary
-
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=ascii\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
-
-\item Word: steganography
-
-Definition:  noun   The deliberate concealment of data within other data, as by embedding digitized text in a digitized image.
-
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=steganography\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\item Word: blocks
-
- Definition: noun (Computer Science) a block is a segment of a large area
-that can be used to assign data
-
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=block\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\item Word: algorithm
-
-Definition:  noun   A finite set of unambiguous instructions that, given some set of initial conditions, can be performed in a prescribed
-
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=algorithm\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\item Word: pixel
-
-Definition:  noun   One of the tiny dots that make up the representation of an image in a computer's memory.
-
-Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pixel\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\item Word: raster
-
-Definition: (v)  noun  A bitmap image, consisting of a grid of pixels, stored as a sequence of lines.
-
-Ref: WordNet Search - 3.1.
-\end{enumerate}
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=raster\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\begin{enumerate}
-\item Word: render
-
-Definition: transitive verb (Computers)  To convert (graphics) from a file into visual form, as on a video display.
-
-Ref: WordNet Search - 3.1.
-\end{enumerate}
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=render\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\begin{enumerate}
-\item Word: spam
-
-Definition:  noun   Unsolicited e-mail, often of a commercial nature, sent indiscriminately to multiple mailing lists, individuals, or
-
-Ref: WordNet Search - 3.1.
-\end{enumerate}
-\url{http://wordnetweb.princeton.edu/perl/webwn?s=spam\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
-
-\subsection{Ideas:}
-\label{sec:orga82c324}
-\begin{enumerate}
-\item Metadata can help or refute claims (Page 78)
-\item With some clever programming, the process could be made unnoticeable, but so
-far neither Microsoft nor Apple has made the necessary software investment (Page 102)
-\item Free software is a matter of the users freedom to run, copy, distribute,
-study, change, and improve the software (page 94)
-\item If google holds your documents, they are accessible from anywhere the internet reaches
-\end{enumerate}
-
-\subsection{Journal Entry}
-\label{sec:org36ef9d6}
-\begin{enumerate}
-\item As the text after that statement mentioned,  metadata can be easily altered
-to match a criminals statement. Although most people won't know about
-metadata and how to alter it, this makes it ineffective for most purposes.
-
-Personally, I think we should remove most metadata. It ends up doing more
-harm than good, especially in the case of images, where metadata can help
-trace the location where the image was taken. In the case of documents, it
-provides easily forge-able data that serves no purpose.
-
-\item In my opinion, there isn't a need to zero all abandoned blocks by default.
-This is for several reasons. Firstly, the majority of people have no
-intention to sell their storage. The majority of laptops nowadays have
-storage soldered down, which would make those drives impossible to resell.
-Secondly, those who care about their privacy will likely have other methods
-to zero their storage anyways.
-
-Additionally, making this zero-ing behavior the default will bring
-performance implications as mentioned in the textbook. It's a slow process
-writing to all of the abandoned blocks. The author mentions this issue could
-be solved ``with some clever programming,'' but programming isn't magic, in the
-end to properly erase these blocks you will have to write to then. A better
-solution would be to incorporate this behavior into the filesystem itself,
-prioritizing writing to abandoned blocks before free ones. This system
-increases drive longevity, reduces the chance of abandoned blocks, and is
-already incorporated in many filesystems today
-
-\item I support the Free and Open Source movement. Open source software gives power
-to the users. With the open source model come better security, more
-features, and more support for users. Compared to commercial (paid) software,
-users can not only identify and report bugs, but also fix those bugs
-themselves. Since the source code for open source applications is available,
-you can clone the repository, change the insecure code, and submit your
-changes.  On the other hand, with commercial software, you will have to wait
-until the company updates the application.
-
-Additionally, you can add features to open source software. If Microsoft Word is
-missing a feature, you can only request Microsoft to add it. However, if
-there is an open source editor missing a feature, you can simply fork it and
-add the feature yourself. Likewise, most open source editors will never die,
-since there is always a community of people working on it, whereas most
-commercial software is dependant on the future of the company producing it.
-
-However, there are also drawbacks with open source software. Since there is
-no financial backing for most projects, maintainers don't have an incentive
-to keep working. Similarly, since coders aren't paid the quality work may not
-be as good as that of a commercial project.
-
-\item I support the idea of using cloud-based storage solutions. As of 2020 50\% of all
-corporate data is stored in the cloud, up from 30\% just 5 years earlier. As
-more and more people start using cloud services,  we should focus on make
-data transfer to and from those drives quicker and more secure. Otherwise,
-cloud storage is superior to offline storage except for solutions which
-require speed (e.g. boot drives) or high security.
-\end{enumerate}
-
-\section{Needles in the Haystack}
-\label{sec:org4466d64}
-\subsection{Vocabulary}
-\label{sec:orgf08049e}
+\label{sec:org9259352}
 \begin{enumerate}
 \item Word: metadata
 
@@ -599,30 +460,466 @@ Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=ren
 
 Definition:  noun   Unsolicited e-mail, often of a commercial nature, sent indiscriminately to multiple mailing lists, individuals, or
 
+Ref: WordNet Search - 3.1.
+\end{enumerate}
+\url{http://wordnetweb.princeton.edu/perl/webwn?s=spam\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\subsection{Ideas:}
+\label{sec:org6fe45ef}
+\begin{enumerate}
+\item Metadata can help or refute claims (Page 78)
+\item With some clever programming, the process could be made unnoticeable, but so
+far neither Microsoft nor Apple has made the necessary software investment (Page 102)
+\item Free software is a matter of the users freedom to run, copy, distribute,
+study, change, and improve the software (page 94)
+\item If google holds your documents, they are accessible from anywhere the internet reaches
+\end{enumerate}
+
+\subsection{Journal Entry}
+\label{sec:orge219258}
+\begin{enumerate}
+\item As the text after that statement mentioned,  metadata can be easily altered
+to match a criminals statement. Although most people won't know about
+metadata and how to alter it, this makes it ineffective for most purposes.
+
+Personally, I think we should remove most metadata. It ends up doing more
+harm than good, especially in the case of images, where metadata can help
+trace the location where the image was taken. In the case of documents, it
+provides easily forge-able data that serves no purpose.
+
+\item In my opinion, there isn't a need to zero all abandoned blocks by default.
+This is for several reasons. Firstly, the majority of people have no
+intention to sell their storage. The majority of laptops nowadays have
+storage soldered down, which would make those drives impossible to resell.
+Secondly, those who care about their privacy will likely have other methods
+to zero their storage anyways.
+
+Additionally, making this zero-ing behavior the default will bring
+performance implications as mentioned in the textbook. It's a slow process
+writing to all of the abandoned blocks. The author mentions this issue could
+be solved ``with some clever programming,'' but programming isn't magic, in the
+end to properly erase these blocks you will have to write to then. A better
+solution would be to incorporate this behavior into the filesystem itself,
+prioritizing writing to abandoned blocks before free ones. This system
+increases drive longevity, reduces the chance of abandoned blocks, and is
+already incorporated in many filesystems today
+
+\item I support the Free and Open Source movement. Open source software gives power
+to the users. With the open source model come better security, more
+features, and more support for users. Compared to commercial (paid) software,
+users can not only identify and report bugs, but also fix those bugs
+themselves. Since the source code for open source applications is available,
+you can clone the repository, change the insecure code, and submit your
+changes.  On the other hand, with commercial software, you will have to wait
+until the company updates the application.
+
+Additionally, you can add features to open source software. If Microsoft Word is
+missing a feature, you can only request Microsoft to add it. However, if
+there is an open source editor missing a feature, you can simply fork it and
+add the feature yourself. Likewise, most open source editors will never die,
+since there is always a community of people working on it, whereas most
+commercial software is dependant on the future of the company producing it.
+
+However, there are also drawbacks with open source software. Since there is
+no financial backing for most projects, maintainers don't have an incentive
+to keep working. Similarly, since coders aren't paid the quality work may not
+be as good as that of a commercial project.
+
+\item I support the idea of using cloud-based storage solutions. As of 2020 50\% of all
+corporate data is stored in the cloud, up from 30\% just 5 years earlier. As
+more and more people start using cloud services,  we should focus on make
+data transfer to and from those drives quicker and more secure. Otherwise,
+cloud storage is superior to offline storage except for solutions which
+require speed (e.g. boot drives) or high security.
+\end{enumerate}
+
+\section{Needles in the Haystack}
+\label{sec:org6d02570}
+\subsection{Vocabulary}
+\label{sec:org5e1de8b}
+\begin{enumerate}
+\item Word: bot
+
+Definition: noun   A software program, such as a spider, that performs automated tasks on the Internet.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=metadata\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: cache
+
+Definition: noun   A fast storage buffer in the central processing unit of a computer.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: HTML
+
+Definition: The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=ascii\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
+
+\item Word: URL
+
+ Definition: the address of a resource (such as a document or website) on the
+Internet that consists of a communications protocol followed by the name or
+address of a computer on the network and that often includes additional
+locating information (such as directory and file names)
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=steganography\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: firewall
+
+Definition: noun Computers  A software program or hardware device that restricts communication between a private network or computer system and outside networks.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=block\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: Web 2.0
+
+Definition:  Web 2.0 refers to websites that emphasize user-generated content, ease of use, participatory culture and interoperability for end users.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=algorithm\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: index
+
+Definition:   noun Computers  A list of keywords associated with a record or document, used especially as an aid in searching for information.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pixel\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: background
+
+Definition: noun Computers  The environment in which programs operate that the user does not engage with directly.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=raster\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: foreground
+
+Definition: noun computing  the application the user is currently interacting with; the application window that appears in front of all others.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=render\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: spider/web crawler
+
+Definition:  noun   A program that automatically retrieves webpages and follows the links on them to retrieve more webpages. Spiders are used by search engines to retrieve publicly accessible webpages for indexing, and they can also be used to check for links to webpages that no longer exist.
+
 Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=spam\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
 \end{enumerate}
 
 \subsection{Ideas:}
-\label{sec:orgae4e797}
+\label{sec:orgfe26fb4}
 \begin{enumerate}
-\item 
-
-\item 
-
-\item 
-
-\item 
+\item If you try another search engine instead of Google, you'll get different
+results. Which is right? Which is better? Which is more authoritative? (page 114)
+\item Web 2.0 sites—Facebook and Wikipedia, for example—exploit what economists call
+\end{enumerate}
+“network effects.” (Page 110)
+\begin{enumerate}
+\item Free software is a matter of the users freedom to run, copy, distribute,
+study, change, and improve the software (page 94)
+\item If google holds your documents, they are accessible from anywhere the internet reaches
 \end{enumerate}
 
 \subsection{Journal Entry}
-\label{sec:org8640ddd}
+\label{sec:orgc4f73de}
 \begin{enumerate}
-\item 
+\item The reason google is so ahead in the search engine space is because of data.
+Google is known to collect enormous amounts of data on their users, and this
+is both a good and a bad thing. Although there are many privacy issues
+surrounding the use of this data, google can use this data to predict what
+each user likes, and can also tune the search engine's results to match that
+users preference.
 
-\item 
+Other search engines such as DDG can't provide you ``accurate'' search engine
+results, because they don't have the data google has. Neither result is more
+accurate, or better, just calculated differently. If you were to disable
+google's analytics, log out of gmail, and open an incognito tab, chances are
+you would get different results than the ones you would get when logged in.
 
-\item 
+\item I dislike the shift to Web 2.0 sites, and specifically the excessive use of
+Javascript. Javascript originally started off as a scripting language, but
+with the V8 engine, was performant enough to be usable elsewhere. Suddenly.
+everyone started using Javascript, even when it wasn't required. While there
+are benefits to using Javascript, its still quite slow and in most cases can
+be substituted for Html5 + CSS
 
-\item 
+Static, read-only sites (Web 1.0) get a bad reputation for their bland look,
+and their issues with ease-of-use. However, css solved many of these issues,
+and you can still design user-friendly Web 1.0 sites, which perform much
+better than their Web 2.0 counterparts. Web 1.0 sites also have the benefits and
+drawbacks of being read-only. For websites like articles, that means there
+are no comment sections or request popups. Lastly, javascript isn't a bad
+language by nature, people are just using it for the wrong purpose. When used
+tastefully, it can still vastly improve websites.
+
+\item My favorite part of free software is that users can improve the software as
+they please. If a piece of software that someone like, but doesn't have a
+feature they need, the user is free to modify the software as they please,
+and submit they're code upstream (back to the source of the software) if they
+wish to. On the other hand, with commercial (paid) software, you are stuck
+with requesting the company to update the application.
+
+However, there are also drawbacks with open source software. Since there is
+no financial backing for most projects, maintainers don't have an incentive
+to keep working. Similarly, since coders aren't paid the quality work may not
+be as good as that of a commercial project.
+
+\item If google holds your documents, they are accessible from anywhere the
+internet reaches.
+
+This is why I like cloud storage over local storage. With local storage you
+have to deal with organizing files, keeping storage down, and most
+importantly you have to deal with sharing files with others, and making sure
+your assignments are accessible elsewhere when you need them. Additionally,
+when you share files with others, you need to keep track of changes others do
+
+With google drive, everything is instantly organized and searchable. You
+don't have to deal much with keeping storage down, as cloud storage is
+extremely cheap. Most importantly, all your files are available as long as
+you have an internet connection, and collaborative work is much easier, as
+google keeps track of changes, and everything is in one document
+\end{enumerate}
+
+\section{Secret Bits}
+\label{sec:orge79bed7}
+\subsection{Vocabulary}
+\label{sec:orgaf02d40}
+\begin{enumerate}
+\item Word: Cipher
+
+Definition: noun   a secret or disguised way of writing; a code
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=metadata\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: decryption
+
+Definition: noun a text that has been decoded
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: encryption
+
+Definition: the process of converting information or data into a code, especially to prevent unauthorized access.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=ascii\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
+
+\item Word: packet
+
+Definition: a block of data transmitted across a network.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=steganography\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: router
+
+Definition: a device which forwards data packets to the appropriate parts of a computer network.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=block\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: plain text
+
+Definition:  text that is not computationally tagged, specially formatted, or written in code.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=algorithm\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: RSA
+
+Definition:   An algorithm used in public key cryptography, commonly used in various protocols for secure online transmission of data.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pixel\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: private key
+
+Definition: a cryptographic key that can be obtained and used by anyone to encrypt messages intended for a particular recipient, such that the encrypted messages can be deciphered only by using a second key that is known only to the recipient (the private key ).
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=raster\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: digital signature
+
+Definition: a type of electronic signature that encrypts documents with digital codes that are particularly difficult to duplicate.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=render\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: one-time pad
+
+Definition:  In cryptography, the one-time pad (OTP) is an encryption technique that cannot be cracked, but requires the use of a single-use pre-shared key that is no smaller than the message being sent.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=spam\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+\end{enumerate}
+
+\subsection{Ideas:}
+\label{sec:org6fc2169}
+\begin{enumerate}
+\item If you try another search engine instead of Google, you'll get different
+results. Which is right? Which is better? Which is more authoritative? (page 114)
+\item Having a good system doesn't mean people will use it (Page 175)
+\item Today, electronic mail is gradually replacing conventional paper mail, and is
+soon to be the norm for everyone, not the novelty it is today (page 189)
+\item Overall, the public seems unconcerned about the privacy of communication
+today, and the privacy fervor that permeated the crypto wards a decade ago is
+nowhere to be seen
+\end{enumerate}
+
+\subsection{Journal Entry}
+\label{sec:orgc23a1b1}
+\begin{enumerate}
+\item The reason google is so ahead in the search engine space is because of data.
+Google is known to collect enormous amounts of data on their users, and this
+is both a good and a bad thing. Although there are many privacy issues
+surrounding the use of this data, google can use this data to predict what
+each user likes, and can also tune the search engine's results to match that
+users preference.
+
+Other search engines such as DDG can't provide you ``accurate'' search engine
+results, because they don't have the data google has. Neither result is more
+accurate, or better, just calculated differently. If you were to disable
+google's analytics, log out of gmail, and open an incognito tab, chances are
+you would get different results than the ones you would get when logged in.
+
+\item I agree with this statement. The largest issue with creating new technologies
+is that many people are reluctant to switch from the old ones. Every new idea
+seems to follow the same cycle. A new technology is created, adopted, and
+then either replaced by a newer one or deprecated and left unmaintained.
+
+The issue is when you create a new technology, no one depends on it. You are
+free to modify it to your liking. After others start to adopt a new
+technology, you can't create breaking changes. This limitation creates a lack
+of innovation, until another technology comes along and replaces it. With so
+many new technologies popping up and fading away, sometimes within the same
+year, it makes sense if people are more reluctant to switch.
+
+\item This statement aged very well. Over time, email has replaced almost all
+physical mail,  and is used for communication around the world. Not only is
+it secure, but its dependable, and a standard format that works just as well
+with ancient technology and modern web browsers. Email's biggest benefit and
+drawback is its standardized tried-and-true method of sending information.
+While this means that you use several different email clients which all work
+perfectly with each other, it also becomes impractical to use email for
+things like instant messaging.
+
+\item Its true that now its extremely difficult to do anything without leaving
+digital traces everywhere. I personally think this issue is linked to idea
+\#1, people value convenience over privacy. Companies create a false sense of
+privacy, and justify all the analytics with improved convenience.
+
+Most people don't want to put effort into maintaining their privacy, or
+resist changes to their workflow and life, and unless you make privacy more
+convenient, that won't change.
+\end{enumerate}
+
+\section{Balance Toppled}
+\label{sec:org6b2ee86}
+\subsection{Vocabulary}
+\label{sec:org56d26ad}
+\begin{enumerate}
+\item Word: driftnet
+
+Definition: noun Driftnet is a program which listens to network traffic and picks out images from TCP streams it observes.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=metadata\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: copyright infringement
+
+Definition: noun The unauthorized use of copyrighted material in a manner that violates one of the copyright owner's exclusive rights, such as the right to reproduce or perform the copyrighted work, or to make derivative works that build upon it.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 18 July 2021.
+
+\item Word: centralized systems
+
+Definition: A system where decisions for the system goal are made in a central mechanism and transmitted to executive components
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=ascii\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h}=. Accessed 23 July 2021.
+
+\item Word: DRAM
+
+Definition: DRAM is a type of RAM that stores each bit of data on a separate capacitor. This is an efficient way to store data in memory, because it requires less physical space to store the same amount of data than if it was stored statically.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=steganography\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: digital rights management (DRM)
+
+Definition: Digital rights management tools or technological protection measures are a set of access control technologies for restricting the use of proprietary hardware and copyrighted works. DRM technologies try to control the use, modification, and distribution of copyrighted works, as well as systems within devices that enforce these policies.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=block\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: DMCA
+
+Definition:  The Digital Millennium Copyright Act is a 1998 United States copyright law that implements two 1996 treaties of the World Intellectual Property Organization. It criminalizes production and dissemination of technology, devices, or services intended to circumvent measures that control access to copyrighted works.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=algorithm\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: copyright
+
+Definition: The legal right granted to an author, composer, playwright, publisher, or distributor to exclusive publication, production, sale, or distribution of a literary, musical, dramatic, or artistic work.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=pixel\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: creative commons
+
+Definition: Creative Commons licenses are free copyright licenses that creators can use to indicate how they'd like their work to be used. Creators can choose from a set of six licenses with varying permissions, from the most open license to the least open license.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=raster\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: digital signature
+
+Definition: A digital signature is a mathematical scheme for verifying the authenticity of digital messages or documents.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=render\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+
+\item Word: SHA-256
+
+Definition: Secure Hash Algorithm 256, also known as SHA-256, is a one-way function designed to secure digital information. The function uses a complex mathematical process that converts text of any length into 256 bit (64-character long) string of letters and numbers. SHA-256 is called a one-way function since it is not possible (or very difficult) to determine the original input based on the output.
+
+Ref: WordNet Search - 3.1. \url{http://wordnetweb.princeton.edu/perl/webwn?s=spam\&sub=Search+WordNet\&o2=\&o0=1\&o8=1\&o1=1\&o7=\&o5=\&o9=\&o6=\&o3=\&o4=\&h=0000000}. Accessed 23 July 2021.
+\end{enumerate}
+
+\subsection{Ideas:}
+\label{sec:org6d7ddd3}
+\begin{enumerate}
+\item The answer is to build a chip into every computer that checks the operating
+system each time the system has been modified, the computer will not boot.
+(211)
+\item A third DRM difficulty is that, in the name of security and virus protection,
+we could easily slip into an unwinnable arms race if increase technology
+lock-down that provides no real gain for content owners (Page 175)
+\item What is wrong is that we have invented the technology to eliminate scarcity,
+but we are deliberately throwing it away to benefit those who profit from
+scarcity (page 222)
+\item Universal has been talking to Sony and other labels about a subscription
+service, where users would pay a fixed fee and then get as much music as they
+would like. (page 224)
+\end{enumerate}
+
+\subsection{Journal Entry}
+\label{sec:orgd10b6f3}
+\begin{enumerate}
+\item The main purpose of a TPM chip is to generate RSA keys, SHA-256/SHA-1 hashes,
+as well as general purpose signatures. However, TPM's don't have a very
+strong track record. With the ROCA vulnerability, it was found you could
+easily derive a private key from the public key.
+
+That isn't to say the idea is bad. Apples implementation (via the T2 chip,
+and later build into their own chip) a 256-bit AES is generated and burnt
+into the chip. No one has access to this key, and theoretically no one can
+get access to this key. The key is then used to encrypt the storage. The idea
+of TPM is good, its just the implementation isn't.
+
+\item This issue with DRM is already occurring, companies are adding more and more
+complicated DRM to their products, while providing no real gain for content
+owners. Those who want to pirate their content usually find a way to
+circumvent this DRM regardless.
+
+In the case of video games, some reviewer
+found that a pirated (and therefore DRM-free) version of the game ran 5-6\%
+faster than a legally purchased copy. DRM isn't only \emph{not} helping consumers,
+its harming them as well.
+
+\item The issue is that companies are still stuck in the 20th century business
+model. They produce millions of copies of movies, sell years old music for
+over 2\$ each, and then wonder why people want to get it for free. They \emph{need}
+that scarcity to survive, because thats the only way their business model
+works. As soon as the entertainment industry moves to subscription services
+(which has already happened for the most part, e.g. disney+) , most of these
+issues with piracy will resolve themselves.
+
+\item I thought it was interesting how this turned out. Only a few years after
+that, we saw the launch of music subscriptions (especially apple music and
+spotify at the time), which proved that if you give consumers a cheap and
+convenient way to enjoy content, the need to pirate content goes away.
 \end{enumerate}
 \end{document}

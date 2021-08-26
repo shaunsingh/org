@@ -1,4 +1,4 @@
-% Created 2021-08-24 Tue 14:36
+% Created 2021-08-25 Wed 17:27
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -192,7 +192,7 @@
 %% end customisations
 
 \author{Shaurya Singh}
-\date{August 6th, 2021}
+\date{\today}
 \title{CoderZ Summer Assignment \#2}
 \colorlet{greenyblue}{blue!70!green}
 \colorlet{blueygreen}{blue!40!green}
@@ -218,6 +218,16 @@
 \setcounter{tocdepth}{2}
 \tableofcontents
 
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{public} \textcolor[HTML]{e45649}{class} \textcolor[HTML]{986801}{Main} \{
+  \textcolor[HTML]{e45649}{public} \textcolor[HTML]{e45649}{static} \textcolor[HTML]{a626a4}{void} \textcolor[HTML]{a626a4}{main}(\textcolor[HTML]{986801}{String}[] args) \{
+    System.out.\textcolor[HTML]{a626a4}{println}(\textcolor[HTML]{50a14f}{"Hello World"});
+  \}
+\}
+\end{Verbatim}
+\end{Code}
+
 Hello everyone! This is the second assignment you will receive this summer. By this
 point, all of you should have received and submitted Assignment \#1, which had
 you set up VSCode for Python programming. If you still need help, feel free to
@@ -226,7 +236,7 @@ email me at shaunsingh0207@gmail.com.
 In Assignment \#2, you will learn the basics of Python 3 and how to use variables
 
 \section{Basics}
-\label{sec:orgd1812b9}
+\label{sec:orgdd2e36f}
 Python is an interpreted programming language. You write \texttt{.py} files, in a text
 editor (such as VSCode), which are interpreted by the python interpreter, and
 executed. As with every language, Python has its own syntax.
@@ -235,7 +245,7 @@ Firstly, before you get started with this guide, create a \texttt{robotics1.py} 
 this is where you will be writing the examples below, and executing them
 
 \subsection{Indentation}
-\label{sec:org2c274f1}
+\label{sec:orge7764a0}
 Indentation refers to the spaces at the beginning of a code line. In other
 languages, you usually have brackets or parenthesis telling you where a block of
 code starts and ends. For example, in java we have the following
@@ -268,7 +278,7 @@ It will result in an error. Remember the number of spaces can be any number (I
 choose 2), but it must remain the same throughout the python file.
 
 \subsection{Comments}
-\label{sec:orga3bedae}
+\label{sec:orged7de6c}
 As with any language, you can (and should) be commenting your code. Comments in
 python start with a \# character, which will mark the rest of the line as a comment
 \begin{Code}
@@ -298,7 +308,7 @@ Line \#2
 \end{Code}
 
 \section{Variables}
-\label{sec:org5c4a7e6}
+\label{sec:orgf5ed2b4}
 A variable is a term that represents an value. You can use variables for storing
 information for later usage. In Python, you assign a variable a value using the
 = sign. You can also assign multiple variables at once
@@ -338,7 +348,7 @@ robotics, we prefer to write variables in the camelCase format, where each word
 except the first starts with a capital letter, like \texttt{myVariableName}.
 
 \subsection{Global Variables}
-\label{sec:orgf712ab1}
+\label{sec:orgd8407b1}
 Variables created outside of a function are called global variables. Global
 variables can be used both inside of functions and outside
 \begin{Code}
@@ -363,7 +373,7 @@ In this case, the variable x is a global variable
 In this case it isn't, and so the last print statement won't function
 
 \section{Assignment}
-\label{sec:org26386b6}
+\label{sec:org78aafc6}
 \begin{enumerate}
 \item Create a file named \texttt{assignment2.py}
 \item Write some python code that defines a global variable, defines a function

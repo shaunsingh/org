@@ -239,9 +239,12 @@
    privacy, and justify all the analytics with improved convenience.
 
    Most people don't want to put effort into maintaining their privacy, or
-   resist changes to their workflow and life .
+   resist changes to their workflow and life, and unless you make privacy more
+   convenient, that won't change.
 
-4.
+4. As I stated in the previous two responses, I agree with this, and the issue
+   is not many people care about it. The solution is to raise awareness and make
+   privacy the default, instead of having to have users change it themselves.
 
 * Ghosts in the Machine
 ** Vocabulary
@@ -564,7 +567,8 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 ** Ideas:
-1. Breakthroughs Happen, but News Travels Slowly (Page 175)
+1. If you try another search engine instead of Google, you'll get different
+   results. Which is right? Which is better? Which is more authoritative? (page 114)
 2. Having a good system doesn't mean people will use it (Page 175)
 3. Today, electronic mail is gradually replacing conventional paper mail, and is
    soon to be the norm for everyone, not the novelty it is today (page 189)
@@ -573,7 +577,18 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    nowhere to be seen
 
 ** Journal Entry
-1.
+1. The reason google is so ahead in the search engine space is because of data.
+   Google is known to collect enormous amounts of data on their users, and this
+   is both a good and a bad thing. Although there are many privacy issues
+   surrounding the use of this data, google can use this data to predict what
+   each user likes, and can also tune the search engine's results to match that
+   users preference.
+
+   Other search engines such as DDG can't provide you "accurate" search engine
+   results, because they don't have the data google has. Neither result is more
+   accurate, or better, just calculated differently. If you were to disable
+   google's analytics, log out of gmail, and open an incognito tab, chances are
+   you would get different results than the ones you would get when logged in.
 
 2. I agree with this statement. The largest issue with creating new technologies
    is that many people are reluctant to switch from the old ones. Every new idea
@@ -596,67 +611,74 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    perfectly with each other, it also becomes impractical to use email for
    things like instant messaging.
 
-4.
+4. Its true that now its extremely difficult to do anything without leaving
+   digital traces everywhere. I personally think this issue is linked to idea
+   #1, people value convenience over privacy. Companies create a false sense of
+   privacy, and justify all the analytics with improved convenience.
+
+   Most people don't want to put effort into maintaining their privacy, or
+   resist changes to their workflow and life, and unless you make privacy more
+   convenient, that won't change.
 
 * Balance Toppled
 ** Vocabulary
 1. Word: driftnet
 
-   Definition: noun   a secret or disguised way of writing; a code
+   Definition: noun Driftnet is a program which listens to network traffic and picks out images from TCP streams it observes.
 
    Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=metadata&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
 2.  Word: copyright infringement
 
-    Definition: noun a text that has been decoded
+    Definition: noun The unauthorized use of copyrighted material in a manner that violates one of the copyright owner's exclusive rights, such as the right to reproduce or perform the copyrighted work, or to make derivative works that build upon it.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=open-source-software&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 18 July 2021.
 
 3.  Word: centralized systems
 
-    Definition: the process of converting information or data into a code, especially to prevent unauthorized access.
+    Definition: A system where decisions for the system goal are made in a central mechanism and transmitted to executive components
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=ascii&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=. Accessed 23 July 2021.
 
 4.  Word: DRAM
 
-    Definition: a block of data transmitted across a network.
+    Definition: DRAM is a type of RAM that stores each bit of data on a separate capacitor. This is an efficient way to store data in memory, because it requires less physical space to store the same amount of data than if it was stored statically.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=steganography&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 5.  Word: digital rights management (DRM)
 
-    Definition: a device which forwards data packets to the appropriate parts of a computer network.
+    Definition: Digital rights management tools or technological protection measures are a set of access control technologies for restricting the use of proprietary hardware and copyrighted works. DRM technologies try to control the use, modification, and distribution of copyrighted works, as well as systems within devices that enforce these policies.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=block&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 6.  Word: DMCA
 
-    Definition:  text that is not computationally tagged, specially formatted, or written in code.
+    Definition:  The Digital Millennium Copyright Act is a 1998 United States copyright law that implements two 1996 treaties of the World Intellectual Property Organization. It criminalizes production and dissemination of technology, devices, or services intended to circumvent measures that control access to copyrighted works.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=algorithm&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 7.  Word: copyright
 
-    Definition:   An algorithm used in public key cryptography, commonly used in various protocols for secure online transmission of data.
+    Definition: The legal right granted to an author, composer, playwright, publisher, or distributor to exclusive publication, production, sale, or distribution of a literary, musical, dramatic, or artistic work.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=pixel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 8.  Word: creative commons
 
-    Definition: a cryptographic key that can be obtained and used by anyone to encrypt messages intended for a particular recipient, such that the encrypted messages can be deciphered only by using a second key that is known only to the recipient (the private key ).
+    Definition: Creative Commons licenses are free copyright licenses that creators can use to indicate how they'd like their work to be used. Creators can choose from a set of six licenses with varying permissions, from the most open license to the least open license.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=raster&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 9.  Word: digital signature
 
-    Definition: a type of electronic signature that encrypts documents with digital codes that are particularly difficult to duplicate.
+    Definition: A digital signature is a mathematical scheme for verifying the authenticity of digital messages or documents.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=render&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
-10. Word: one-time pad
+10. Word: SHA-256
 
-    Definition:  In cryptography, the one-time pad (OTP) is an encryption technique that cannot be cracked, but requires the use of a single-use pre-shared key that is no smaller than the message being sent.
+    Definition: Secure Hash Algorithm 256, also known as SHA-256, is a one-way function designed to secure digital information. The function uses a complex mathematical process that converts text of any length into 256 bit (64-character long) string of letters and numbers. SHA-256 is called a one-way function since it is not possible (or very difficult) to determine the original input based on the output.
 
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
@@ -675,7 +697,36 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    would like. (page 224)
 
 ** Journal Entry
-1.
-2.
-3.
-4.
+1. The main purpose of a TPM chip is to generate RSA keys, SHA-256/SHA-1 hashes,
+   as well as general purpose signatures. However, TPM's don't have a very
+   strong track record. With the ROCA vulnerability, it was found you could
+   easily derive a private key from the public key.
+
+   That isn't to say the idea is bad. Apples implementation (via the T2 chip,
+   and later build into their own chip) a 256-bit AES is generated and burnt
+   into the chip. No one has access to this key, and theoretically no one can
+   get access to this key. The key is then used to encrypt the storage. The idea
+   of TPM is good, its just the implementation isn't.
+
+2.  This issue with DRM is already occurring, companies are adding more and more
+   complicated DRM to their products, while providing no real gain for content
+   owners. Those who want to pirate their content usually find a way to
+   circumvent this DRM regardless.
+
+   In the case of video games, some reviewer
+   found that a pirated (and therefore DRM-free) version of the game ran 5-6%
+   faster than a legally purchased copy. DRM isn't only /not/ helping consumers,
+   its harming them as well.
+
+3.  The issue is that companies are still stuck in the 20th century business
+   model. They produce millions of copies of movies, sell years old music for
+   over 2$ each, and then wonder why people want to get it for free. They /need/
+   that scarcity to survive, because thats the only way their business model
+   works. As soon as the entertainment industry moves to subscription services
+   (which has already happened for the most part, e.g. disney+) , most of these
+   issues with piracy will resolve themselves.
+
+4. I thought it was interesting how this turned out. Only a few years after
+   that, we saw the launch of music subscriptions (especially apple music and
+   spotify at the time), which proved that if you give consumers a cheap and
+   convenient way to enjoy content, the need to pirate content goes away.

@@ -186,4 +186,13 @@ Part B:
       \(\ce{Al(OH)3(aq)\ KNO3(aq)}\)
       \(\ce{NH4(SO4)2(aq)\ CuBr2(aq)}\)
 
-*
+* The answers are
+1. \(\ce{CH4}\) - methane
+2. \(\ce{C3H8}\) - propane
+3. \(\ce{C4H8}\) - butene
+4. \(\ce{C4H8}\) - butyne
+
+5. Ethane \(\ce{C2H}\) (c-c)
+6. Methane \(\ce{CH4}\) (c-c)
+7. Propyne \(\ce{C3H4}\) (c---c)
+8. 2 \cdot Butene \(\ce{2C4H8}\) (c---c)
