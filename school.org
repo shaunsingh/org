@@ -64,5 +64,5 @@ CLOSED: [2021-08-07 Sat 15:35]
 ** Gym/Health [100%]
 *** None
 
-** Spanish II [0%]
+** Spanish II [100%]
 *** None

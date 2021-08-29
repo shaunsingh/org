@@ -441,8 +441,8 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
 ** Ideas:
 1. If you try another search engine instead of Google, you'll get different
    results. Which is right? Which is better? Which is more authoritative? (page 114)
-2. Web 2.0 sites—Facebook and Wikipedia, for example—exploit what economists call
-“network effects.” (Page 110)
+2. Web 2.0 sites—Facebook and Wikipedia, for example—exploit what economists
+   call “network effects.” (Page 110)
 3. Free software is a matter of the users freedom to run, copy, distribute,
    study, change, and improve the software (page 94)
 4. If google holds your documents, they are accessible from anywhere the internet reaches

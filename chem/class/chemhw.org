@@ -1,0 +1,19 @@
+#+title: Ap Chem Summer Assignment #3
+#+author: Shaurya Singh
+#+startup: preview
+#+startup: fold
+#+options: toc:nil
+#+latex_class: chameleon
+#+latex_header: \usepackage{chemfig}
+#+latex_header: \usepackage[version=4]{mhchem}
+#+latex_header: \usepackage{enumerate}
+
+* 1-5, use the following choices:
+1. What is the geometry of \(\ce{S2Cl2}\)
+   a. This molecule has a tetrahedral VSEPR geometry
+2. What is the geometry of \(\ce{OPN}\)
+3. What is the geometry of \(\ce{SeO4^{2-}}\)
+4. What is the geometry of \(\ce{SiO4^{2-}}\)
+5. What is the geometry of \(\ce{H3O^{+}}\)
+
+*
