@@ -1,4 +1,7 @@
 * Inbox
+** [2021-08-29 Sun] j
+Bio book: glenco mcgraw hill biology
+[[file:~/org/sem/sem.org::*Article 1: \[\[https://www.nature.com/articles/d41586-021-00733-5\]\[The fight against fake-paper factories that churn out sham science\]\]][Article 1: The fight against fake-paper factories that churn out sham science]]
 ** [2021-08-28 Sat]
 *** TODO Sem
 Finish part 2

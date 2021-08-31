@@ -1,16 +1,9 @@
 #+title: CoderZ Summer Assignment #2
+#+author: Shaurya Singh
 #+startup: preview
 #+startup: fold
 #+options: toc:2
 #+latex_class: chameleon
-
-#+begin_src java
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello World");
-  }
-}
-#+end_src
 
 Hello everyone! This is the second assignment you will receive this summer. By this
 point, all of you should have received and submitted Assignment #1, which had
