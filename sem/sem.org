@@ -118,7 +118,6 @@
  7. Do you agree with the author?
     -
 
-
  8. Create an MLA works cited entry for each article
     - Torresen, Jim. “A Review of Future and Ethical Perspectives of Robotics
       and AI.” Frontiers in Robotics and AI, vol. 4, 2018, p. 75. Frontiers,
