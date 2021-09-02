@@ -102,8 +102,11 @@
       author also cites all his sources, which are from reputable authors and firms
 
  4. What is one weakness with the author's claim?
-    - Recently, business leaders and academics have warned that current advances
-      in AI may have major consequences to present society:
+    - One weakness with the author's claim is that it does not reference
+      information that could be classified as coming from experts in the field.
+      For example, the United Nations has several policies and releases several
+      articles that concern the authors chosen subject. Something of a similar
+      nature would be ideal.
 
  5. Copy and paste 2 direct quotes that best represent this article
     - The technological transition from industrial robots to service robots
@@ -113,10 +116,15 @@
       robotic and AI systems, and the autonomous systems themselves must also be aware of ethical implications of their actions.
 
  6. Evaluate the article's effectiveness. Is it convincing?
-    -  The article is convincing. It uses claims from
+    - The article is convincing. The write is objective, to the point, and makes
+     sure to back up her writing with sources and citations. The site itself is
+     trustworthy experienced on the topic.
 
  7. Do you agree with the author?
-    -
+    -  I agree with the authors claim. The author takes into account several
+      ethical implications that prove the claim to be correct. Additionally, the
+      author's mention of transition from industrial to service robots connects
+      directly to the field of study. This helps support the claim made earlier.
 
  8. Create an MLA works cited entry for each article
     - Torresen, Jim. “A Review of Future and Ethical Perspectives of Robotics
