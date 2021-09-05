@@ -54,7 +54,10 @@
      researchers, who have been cited in the article
 
 4. What is one weakness with the author's claim?
-   -
+   - One weakness with the author's claim is that it does not reference
+     information that could be classified as coming from experts in the field.
+     For example, having statements from established peer-reviewers may be
+     beneficial.
 
 5. Copy and paste 2 direct quotes that best represent this article .
    - In a statement this year to Nature, Elsevier said that its journal editors

@@ -1,4 +1,4 @@
-% Created 2021-08-25 Wed 15:33
+% Created 2021-09-02 Thu 10:19
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -17,6 +17,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
 \usepackage{indentfirst}
+\setmainfont[Ligatures=TeX]{IBM Plex Sans}
 \setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
 % features: (acronym underline par-sep table)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
@@ -31,15 +32,15 @@
 
 %% make document follow Emacs theme
 
-\definecolor{obg}{HTML}{242730}
-\definecolor{ofg}{HTML}{bbc2cf}
+\definecolor{obg}{HTML}{fafafa}
+\definecolor{ofg}{HTML}{383a42}
 
 \pagecolor{obg}
 \color{ofg}
 
 % list labels
 
-\definecolor{itemlabel}{HTML}{51afef}
+\definecolor{itemlabel}{HTML}{4078f2}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -53,16 +54,16 @@
 
 % structural elements
 
-\definecolor{documentTitle}{HTML}{C57BDB}
-\definecolor{documentInfo}{HTML}{C57BDB}
-\definecolor{level1}{HTML}{51afef}
-\definecolor{level2}{HTML}{C57BDB}
-\definecolor{level3}{HTML}{a991f1}
-\definecolor{level4}{HTML}{7cc3f3}
-\definecolor{level5}{HTML}{d39ce3}
-\definecolor{level6}{HTML}{a8d7f7}
-\definecolor{level7}{HTML}{e2bded}
-\definecolor{level8}{HTML}{dceffb}
+\definecolor{documentTitle}{HTML}{a626a4}
+\definecolor{documentInfo}{HTML}{a626a4}
+\definecolor{level1}{HTML}{e45649}
+\definecolor{level2}{HTML}{da8548}
+\definecolor{level3}{HTML}{b751b6}
+\definecolor{level4}{HTML}{6f99f5}
+\definecolor{level5}{HTML}{bc5cba}
+\definecolor{level6}{HTML}{9fbbf8}
+\definecolor{level7}{HTML}{d292d1}
+\definecolor{level8}{HTML}{d8e4fc}
 
 \addtokomafont{title}{\color{documentTitle}}
 \addtokomafont{author}{\color{documentInfo}}
@@ -80,11 +81,11 @@
 
 % textual elements
 
-\definecolor{link}{HTML}{51afef}
+\definecolor{link}{HTML}{4078f2}
 \definecolor{cite}{HTML}{800080}
-\definecolor{itemlabel}{HTML}{51afef}
-\definecolor{code}{HTML}{e69055}
-\definecolor{verbatim}{HTML}{7bc275}
+\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{code}{HTML}{da8548}
+\definecolor{verbatim}{HTML}{50a14f}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -103,9 +104,9 @@
 
 % code blocks
 
-\definecolor{codebackground}{HTML}{242730}
+\definecolor{codebackground}{HTML}{fafafa}
 \colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{2b2e37}
+\definecolor{codeborder}{HTML}{f0f0f0}
 
 %% end customisations
 
@@ -138,7 +139,7 @@
 
 
 \section{Lens, Issues, and Articles}
-\label{sec:org2fead8a}
+\label{sec:orgde81ad7}
 \begin{itemize}
 \item Theme: Technology
 \end{itemize}
@@ -171,14 +172,14 @@ Cultural and Social & What are the effects of technology on a kids social life? 
 \midrule
 Futuristic & How will technology affect transportation in the future? & \url{https://capgemini-engineering.com/us/en/insight/how-technologies-will-change-the-future-of-transport/}\\
 \midrule
-Ethical & How can we prevent unethical robotics in the future? & \url{https://www.google.com/url?sa=t\&rct=j\&q=\&esrc=s\&source=web\&cd=\&cad=rja\&uact=8\&ved=2ahUKEwiq9c2RgKLyAhWTRjABHVk1BYMQFnoECAgQAQ\&url=https\%3A\%2F\%2Fwww.frontiersin.org\%2Farticles\%2F10.3389\%2Ffrobt.2017.00075\%2Ffull\&usg=AOvVaw2guSvyvgU4OWgLh\_aLAxnQ}\\
+Ethical & How can we prevent unethical robotics in the future? & \url{https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full}\\
 \bottomrule
 \end{longtable}
 
 \section{Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:}
-\label{sec:orgbaa476e}
+\label{sec:org21b5bca}
 \subsection{Article 1: \href{https://www.nature.com/articles/d41586-021-00733-5}{The fight against fake-paper factories that churn out sham science}}
-\label{sec:orgcaa1464}
+\label{sec:orge4e0b6c}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}
@@ -201,24 +202,34 @@ papers from third-party firms to help their careers
 \end{itemize}
 
 \item To what extent are the authors claims valid?
+\begin{itemize}
+\item The authors claims are valid, as the company publishing this article
+(Nature), deals with peer-reviewing and publishing research papers like
+these every day. The claims of the article are not only backed up by the
+company's experience, but also anecdotes from other publishers and
+researchers, who have been cited in the article
+\end{itemize}
 
 \item What is one weakness with the author's claim?
-\end{enumerate}
+\begin{itemize}
+\item One weakness with the author's claim is that it does not reference
+information that could be classified as coming from experts in the field.
+For example, having statements from established peer-reviewers may be
+beneficial.
+\end{itemize}
 
-
-\begin{enumerate}
 \item Copy and paste 2 direct quotes that best represent this article .
 \begin{itemize}
-\item In a statement this year to Nature, Elsevier said that its journal editors detect and prevent the publication of thousands of probable paper-mill submissions each year, although some do get through.
+\item In a statement this year to Nature, Elsevier said that its journal editors
+detect and prevent the publication of thousands of probable paper-mill
+submissions each year, although some do get through.
 
-\begin{itemize}
-\item We are one of a number of publishers to have been affected by such activity.” Since last January, journals have retracted at least 370 papers that have been publicly linked to paper mills, an analysis by Nature has found, and many more retractions are expected to follow.
+\item We are one of a number of publishers to have been affected by such
+activity.” Since last January, journals have retracted at least 370
+papers that have been publicly linked to paper mills, an analysis by
+Nature has found, and many more retractions are expected to follow.
 \end{itemize}
-\end{itemize}
-\end{enumerate}
 
-
-\begin{enumerate}
 \item Evaluate the article's effectiveness. Is it convincing?
 \begin{itemize}
 \item The article is convincing. The write is objective, to the point, and makes
@@ -242,28 +253,71 @@ Factories That Churn out Sham Science.” Nature, vol. 591, no. 7851, Mar.
 2021, pp. 516–19. www.nature.com, \url{https://doi.org/10.1038/d41586-021-00733-5}.
 \end{enumerate}
 
-\subsection{Article 2:  \href{https://www.christies.com/features/A-collaboration-between-two-artists-one-human-one-a-machine-9332-1.aspx}{A Collaboration Between two Artists: One Human, One a Machine}}
-\label{sec:orgfdb7d05}
+\subsection{Article 2:  \href{https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full}{A Review of Future and Ethical Perspectives of Robotics and AI}}
+\label{sec:orgf8710b7}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}
-\item Christie's becomes the first auction house to offer a work of art created by an algorithm. Portrait of Edmond Belamy was created by Paris-based
-collective Obvious. It is one of a group of portraits of the fictional
-Belamy family created by Hugo Caselles-Dupré. The AI-generated artwork
-sells for \$432,500, nearly 45 times its high estimate.
+\item Authors and movie makers have been actively predicting how the future
+would look with the appearance of advanced technology. Recently, business
+leaders and academics have warned that advances in AI may have major
+consequences for society. Both sides could do well to learn from each
+other
 \end{itemize}
 
 \item Authors Thesis:
 \begin{itemize}
-\item This portrait, however, is not the product of a human mind. It was created by an artificial intelligence, an algorithm defined by that algebraic formula with its many parentheses
+\item This article reviews work considering both the future potential of
+robotics and AI systems, and ethical considerations that need to be taken
+in order to avoid a dystopian future.
 \end{itemize}
-\end{enumerate}
-\begin{enumerate}
+
 \item To what extent are the authors claims valid?
+\begin{itemize}
+\item The author's claims are very valid. The author is experienced in the
+subject and researches the subject at a prestigious university. The paper
+is published under a well known publishing firm with a .org address. The
+author also cites all his sources, which are from reputable authors and firms
+\end{itemize}
+
 \item What is one weakness with the author's claim?
+\begin{itemize}
+\item One weakness with the author's claim is that it does not reference
+information that could be classified as coming from experts in the field.
+For example, the United Nations has several policies and releases several
+articles that concern the authors chosen subject. Something of a similar
+nature would be ideal.
+\end{itemize}
+
 \item Copy and paste 2 direct quotes that best represent this article
+\begin{itemize}
+\item The technological transition from industrial robots to service robots
+represents an evolution into more personalized systems with an increasing
+degree of autonomy.
+\item Ethical considerations should be taken into account by designers of
+robotic and AI systems, and the autonomous systems themselves must also be aware of ethical implications of their actions.
+\end{itemize}
+
 \item Evaluate the article's effectiveness. Is it convincing?
+\begin{itemize}
+\item The article is convincing. The write is objective, to the point, and makes
+sure to back up her writing with sources and citations. The site itself is
+trustworthy experienced on the topic.
+\end{itemize}
+
 \item Do you agree with the author?
+\begin{itemize}
+\item I agree with the authors claim. The author takes into account several
+ethical implications that prove the claim to be correct. Additionally, the
+author's mention of transition from industrial to service robots connects
+directly to the field of study. This helps support the claim made earlier.
+\end{itemize}
+
 \item Create an MLA works cited entry for each article
+\begin{itemize}
+\item Torresen, Jim. “A Review of Future and Ethical Perspectives of Robotics
+and AI.” Frontiers in Robotics and AI, vol. 4, 2018, p. 75. Frontiers,
+\url{https://doi.org/10.3389/frobt.2017.00075}.
+\end{itemize}
 \end{enumerate}
 \end{document}

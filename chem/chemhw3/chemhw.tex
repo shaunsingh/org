@@ -1,4 +1,4 @@
-% Created 2021-09-01 Wed 14:34
+% Created 2021-09-05 Sun 14:06
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -23,13 +23,15 @@
 \usepackage[version=4]{mhchem}
 \usepackage{enumerate}
 
-% features: (acronym underline par-sep)
+% features: (acronym underline par-sep table)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
 \newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
 \usepackage[normalem]{ulem}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
 
+\usepackage{longtable}
+\usepackage{booktabs}
 % end features
 
 %% make document follow Emacs theme
@@ -137,66 +139,93 @@
 
 \maketitle
 
+
 \section{The following reaction was performed, Identify element X.}
-\label{sec:org7e5c477}
+\label{sec:org47431d7}
 \begin{align*}
-  &\ce{Fe2O_3(s)+2X(s)} = \ce{2Fe(s)+X_2O_3(s)}\\
-  &79.947g+2x=55.847g+50.982g\\
-  &2x=106.829g-79.847g\\
-  &2x=26.982g\\
+  &\ce{Fe2O_3(s)}+\ce{2X(s)} = \ce{2Fe(s) + X_2O_3(s)}\\
+  &79.847g+2x=55.847g+50.982g\\
+  &\Rightarrow\ 2x=106.829g-79.847g\\
+  &\Rightarrow\ 2x=26.982g\\
 \end{align*}
-Since the atomic weight of \(\ce{2Fe}\) is the same as the given weight
-(\(55.847g\)), the atomic weight of 2x is \(26.982g\) or Aluminium (\(\ce{Al}\))
+
+Since the atomic weight of \(\ce{Fe}\) is proportional to the given weight
+(\(55.847g\)), the atomic weight of X is equally proportional to the derived
+weight (\(26.982g\)). Therefore, the element is Aluminium (\(\ce{Al}\)).
 
 \section{Fill in the blanks to balance the following chemical equations:}
-\label{sec:org93c2d7a}
-\begin{enumerate}
-\item \(\ce{2AgI+Na2S} \rightarrow \ce{2Ag2S+NaI}\)
-\item \(\ce{(NH4)2Cr2O7} \rightarrow \ce{Cr2O3+N2+4H2O}\)
-\item \(\ce{Na3PO4+3HCl} \rightarrow \ce{3NaCl+H3PO4}\)
-\item \(\ce{TiCl4+2H2O} \rightarrow \ce{TiO2+4HCl}\)
-\item \(\ce{Ba3N2+6H2O} \rightarrow \ce{3Ba(OH)2+2NH3}\)
-\item \(\ce{3HNO2+HNO3} \rightarrow \ce{2NO+H2O}\)
+\label{sec:org8db1ab5}
+\begin{enumerate}[a.]
+\item \(\ce{2AgI + Na2S} \rightarrow \ce{2Ag2S + NaI}\)
+\item \(\ce{(NH4)2Cr2O7} \rightarrow \ce{Cr2O3}+\ce{N2}+\ce{4H2O}\)
+\item \(\ce{Na3PO4}+\ce{3HCl} \rightarrow \ce{3NaCl}+\ce{H3PO4}\)
+\item \(\ce{TiCl4}+\ce{2H2O} \rightarrow \ce{TiO2}+\ce{4HCl}\)
+\item \(\ce{Ba3N2}+\ce{6H2O} \rightarrow \ce{3Ba(OH)2}+\ce{2NH3}\)
+\item \(\ce{3HNO2}+\ce{HNO3} \rightarrow \ce{2NO}+\ce{H2O}\)
 \end{enumerate}
 
 \section{Balance the following equation:}
-\label{sec:orgb067686}
-\(\ce{4NH4OH(aq)+KAI(SO)4\cdot12H2O}=\ce{Al(OH)3(s)+2(NH4)2Cr2O7+KOH(aq)+12H2O}\)
+\label{sec:org0bebcb0}
+\(\ce{4NH4OH(aq)+KAI(SO)} \cdot \ce{12H2O} = \ce{Al(OH)3(s)} +
+\ce{2(NH4)2Cr2O7+KOH(aq)}+\ce{12H2O}\)
 
-We can multiple \(\ce{NH4OH}\) by 4, and increase NH4 and H2O on the product
-side to compensate
+We can multiple \(\ce{NH4OH}\) by 4, and increase NH4 and H2O on the product side to compensate
 
 \section{Balance the following equation}
-\label{sec:org99f094f}
-\(\ce{2Fe+6HC2H3O2}=\ce{2Fe(C2H3O2)3+3H2}\)
+\label{sec:orgb58f11d}
+The balanced equation is:
+\(\ce{2Fe}+\ce{6HC2H3O2}=\ce{2Fe(C2H3O2)3}+\ce{3H2}\)
 
 \section{How many grams of water vapor can be generated from the combustion of 18.74 g of ethanol (C 2 H 6 O)?}
-\label{sec:org0720694}
+\label{sec:orgfa203ca}
+First we need to balance the reaction:
+\(\ce{2CH3CH2OH}+\ce{7O2}=\ce{4CO2}+\ce{6H2O}\)
+
+From that we can calculate the following:
+\begin{align*}
+&18.74=0.4068 mol\\
+&0.4068 mol * (6 mol \ce{H2O}/2 mol) = 1.22 mol \ce{H2O}\\
+&1.22 mol = 21.99 g
+\end{align*}
+
+Therefore, we will get 21.99g of water vapor
 
 \section{How many grams of potassium iodide are necessary to completely react with 20.61g of Mercury (II) chloride}
-\label{sec:org192a786}
+\label{sec:org7b0335c}
 First we balance the equation
-\(\ce{HgCl2+2KL}=\ce{HgI2+2KCl}\)
+
+\(\ce{HgCl2}+\ce{2KL}=\ce{HgI2}+\ce{2KCl}\)
+
 Next we to find the total atomic weight.
+
 \(200.59+2(35.45)+2(39.10+126.90)\)
+
 Afterwards, we calculate the ratio needed
+
 \(\frac{332}{271.49}=1.22\)
+
 Finally we multiply
-\(20.61*1.22=25.203\)
+
+\(20.61*1.22=25.20\)
 
 \section{A reaction combines 113.484 g of lead (II) nitrate with 45.010 g of sodium hydroxide (NaOH[aq]).}
-\label{sec:org2ae540f}
+\label{sec:org9a529b9}
+The equation for the reaction is
+\(\ce{Pb(NO3)2}+\ce{2NaOH}\rightarrow\ce{Pb(OH)2}+\ce{2NaNO3}\)
 
-Pb(NO3)2+ 2NaOH→ Pb(OH)2+ 2NaNO3
-83.4 grams of Pb(OH)2
-The limiting reactant is lead (II) nitrate (0.345837 mols) and the excess reactant left over is sodium hydroxide (1.7773 mols).   1.431463
-There is 57.256 grams of the excess reactant left over.
-The percent yield is 95.9\%.
-
+\begin{enumerate}[a.]
+\item 83.4 grams of \(\ce{Pb(OH)2}\)
+\item The limiting reactant is lead (II) nitrate (0.345837 mol) and the excess reactant left over is sodium hydroxide (1.7773 mol).
+\item There is 57.256 grams of the excess reactant left over.
+\item The percent yield is 95.9\%.
+\end{enumerate}
 
 \section{A reaction combines 64.81 grams of silver nitrate with 92.67 grams of potassium bromide}
-\label{sec:org393aa82}
-\begin{enumerate}
+\label{sec:orgaefd941}
+The equation for the reaction is
+\(\ce{AgNO3}+\ce{KBr}\rightarrow\ce{AgBr}+\ce{KNO3}\)
+
+\begin{enumerate}[a.]
 \item 72g
 \item \(\ce{AgNO3}\) is the limiting reactant
 \item 47.3g
@@ -204,7 +233,7 @@ The percent yield is 95.9\%.
 \end{enumerate}
 
 \section{The moleculer weight of an insecticide, dibromoethane, is 187.9. Its molecular formula is \(\ce{C2H4Br2}\), What percent by mass of bromine does dibromoethane contain?}
-\label{sec:org6f02154}
+\label{sec:org734e936}
 First we have the following variables
 \begin{align*}
 &\ce{C} = 12.011\\
@@ -224,8 +253,7 @@ Since the formula is  \(\ce{C2H4Br2}\), we can substitute and do the following:
 Therefore, dibromoethane contains \(85.05\) percent by mass of bromine.
 
 \section{A given sample of xenon fluoride contains molecules of a single type of \(\ce{XeFn}\), where n is some whole number.}
-\label{sec:org35fc056}
-
+\label{sec:org607852a}
 First, we need to calculate how many moles of xenon fluoride there are, and
 calculate its weight.
 
@@ -246,155 +274,171 @@ Now, we can calculate for \(n\)
 Therefore its formula is \(\ce{XeF4}\)
 
 \section{A 6.32 g sample of potassium chlorate was decomposed according to the following equation, how many moles were formed?}
-\label{sec:orga94a8da}
+\label{sec:orgb35c5f0}
+We have the following values:
+\begin{align*}
+&k = 39.0983g\\
+&Cl = 35.45g\\
+&O = 16.00g
+\end{align*}
 
-k = 39.0983
-Cl = 35.45
-O = 16.00
-39.0983 + 35.45 + 3*16 = 122.55g
+From there we can calculate the total molar mass
+\begin{align*}
+&39.0983 + 35.45 + 3*16 = 122.55g
+\end{align*}
 
-6.32/122.55 = 6.052 moles
-2 mol KClO3 = 3 mol O2
-2 = 3
-0.052*3/2
-= 0.078 mol
+We can then calculate the moles using the following equations
+\begin{align*}
+&6.32/122.55 = 6.052 moles\\
+&2 mol KClO3 = 3 mol O2\\
+&2 = 3\\
+&0.052*3/2\\
+&= 0.078 mol
+\end{align*}
 
 \section{What is the coefficient in front of water, when it is produced from the reaction of hydrochloric acid with calcium hydroxide? Calcium chloride is the other product.}
-\label{sec:org5dd384e}
-
+\label{sec:org89b307d}
+The equation is
 \(\ce{Ca(OH)2+2HCl}=\ce{CaCl2 + 2H2O}\)
 
 Therefore the coeffecient is 2
 
 \section{What is the subscript of aluminum in the formula of aluminum phosphate?}
-\label{sec:org43adacf}
-1
+\label{sec:org1f5335e}
+Aluminum has a subscript of \(1\) in \(\ce{AlPO4}\)
 
 \section{The reaction of 11.9 g of CHCl 3 with excess chlorine produced 12.6 g of CCl 4 , carbon tetrachloride, what is the percent yield?}
-\label{sec:org2934051}
+\label{sec:org365d74e}
+The equation for the reaction is
+\(\ce{2CHCl3 + 2Cl2}=\ce{2CCl4 + 2HCl}\)
 
-\(\ce{2CHCl3 + 2Cl2}=\ce{2CCl4+2HCl}\)
+The molar mass's for the two molecules are
+\(\ce{CHCl3}=\) 119.378
+\(\ce{CCl4}=\) 153.823
 
-\(\ce{CHCl3=}\) 119.378
-\(\ce{CCl4=}\) 153.823
+The theoretical mass is \(153.823 * 0.097 = 15.336g\)
+Therefore, the percent yield is \(12.6/15.336 = .8216\), or \%82.16
 
-Theoretical mass = 153.823 * 0.097 = 15.336g
-\% yield = 12.6/15.336 = \%82.16
+\section{What mass of CCl 4 is formed by the reaction of 8.00 g of methane with an excess of chlorine? Ch4 is the limiting reactant}
+\label{sec:org0b66e3a}
+We get the following equations
+\begin{align*}
+&8*1mol\ce{CH4}=8mol\ce{CH4}\\
+&8mol\ce{CH4}/16.04=.499\\
+&.499*153.82=76.72g\\
+\end{align*}
 
-\section{What mass of CCl 4 is formed by the reaction of 8.00 g of methane with an excess of chlorine?Ch4 is the limiting reactant}
-\label{sec:org335c59d}
-
-8x 1 mol Ch4 / 16.04 g/mol = .499
-
-.499 * 153.82 = 76.72g
+Therefore, the solution is \(76.72g\)
 
 \section{A reaction occurs between sodium carbonate and hydrochloric acid producing sodium chloride, carbon dioxide, and water. Write the balanced chemical equation for the reaction.}
-\label{sec:org00164c7}
+\label{sec:org46c75a2}
 
-sodium carbonate + hydrohloric acid = sodium chloride + carbon doxide + water
-= \(\ce{Na2CO3+HCl}+\ce{NaCl + CO2 + H2O}\)
-= \(\ce{Na2CO3+2HCl}+\ce{2NaCl + 2CO2 + H2O}\)
+The equation will be sodium carbonate + hydrohloric acid = sodium chloride +
+carbon doxide + water. In correct notation this is written as:
+
+\begin{align*}
+&\ce{Na2CO3 + HCl}+\ce{NaCl + CO2 + H2O}
+\end{align*}
+
+Balanced, this equation is
+\begin{align*}
+&\ce{Na2CO3 + 2HCl}+\ce{2NaCl + 2CO2 + H2O}
+\end{align*}
 
 \section{Classify the type of reaction from the five major type of reactions you learned in your first year chemistry course and write word equations. If necessary, balance.}
-\label{sec:orga67d425}
-
-\begin{enumerate}
-\item \(\ce{NaOH + KNO3}=\ce{NaNO3+KOH}\) = double replacement
-\item \(\ce{CH4+2O2}=\ce{}\) = combustion
-\item \(\ce{Fe + 3NaBr}=\ce{FaBr2+3Na}\) = single replacement
-\item already balanced, double replacement
-\item already balanced, double replacement
-\item already balanced, synthesis
-\item already balanced, decomposition
+\label{sec:org1ec6d49}
+\begin{enumerate}[a.]
+\item \(\ce{NaOH + KNO3}=\ce{NaNO3 + KOH}\) is a double replacement reaction
+\item \(\ce{CH4 + 2O2}=\ce{CO2 + 2H2O}\) is a combustion reaction
+\item \(\ce{Fe + 3NaBr}=\ce{FaBr2+3Na}\) is a single replacement
+\item This equation is already balanced, and is a double replacement reaction
+\item This equation is already balanced, and is a double replacement reaction
+\item This equation is already balanced, and is a synthesis reaction
+\item This equation is already balanced, and is a decomposition reaction
 \end{enumerate}
 
 \section{Now try these recation types, Rewrite as a balanced equation with the products predicted}
-\label{sec:org9979cde}
-\begin{enumerate}
-\item Ba(OH)2 -> BaO+H2O
-\item Na2CO3 -> Na2O +CO2
-\item 2LiCLI3 -> 2LiCL + 3O2
-\item Al2O3 -> 2AL2 + O3
-\item H2SO4 -> H2O + SO3
+\label{sec:orgc2ff63c}
+\begin{enumerate}[a.]
+\item \(\ce{Ba(OH)2}\rightarrow\ce{BaO + H2O}\)
+\item \(\ce{Na2CO3}\rightarrow\ce{Na2O + CO2}\)
+\item \(\ce{2LiClO3}\rightarrow\ce{2LiCl + 3O2}\)
+\item \(\ce{Al2O3}\rightarrow\ce{2Al2 + O3}\)
+\item \(\ce{H2SO4}\rightarrow\ce{H2O + SO3}\)
 \end{enumerate}
 
 \section{Now try these recation types, Rewrite as a balanced equation with the products predicted}
-\label{sec:org6c58713}
-
-\begin{enumerate}
-\item 2Mg + O2 = 2MgO
-\item N2 + 3H2 = 2NH3
-\item S + O2 = SO2
-\item CaO + H2O -> Ca(OH)2
+\label{sec:org1a6233b}
+\begin{enumerate}[a.]
+\item \(\ce{2Mg + O2}\rightarrow\ce{2MgO}\)
+\item \(\ce{N2 + 3H2}\rightarrow\ce{2NH3}\)
+\item \(\ce{S + O2}\rightarrow\ce{SO2}\)
+\item \(\ce{CaO + H2O}\rightarrow\ce{Ca(OH)2}\)
 \end{enumerate}
 
 \section{Attempt to write and predict products the following chemical reactions:}
-\label{sec:org2a1d301}
-\begin{enumerate}
-\item 2H2O2 -> 2H2O + O2
-\item Cu2+ + So42- + Ba2+ - 20H- -> Cu (OH)2 + BaSO4
-\item Al+3Ag+ -> Al3+ + 3Ag
-\item Cl2 + 2NaBr -> Br2 + 2NaCl
-\item C2H6 + 3O2 -> CO2 + CO + 3H2O
+\label{sec:org529d35e}
+\begin{enumerate}[a.]
+\item \(\ce{2H2O2}\rightarrow\ce{2H2O + O2}\)
+\item \(\ce{Cu^{2+} + So4^{2-} + Ba^{2+} + 2OH-}\rightarrow\ce{Cu(OH)2 + BaSO4}\)
+\item \(\ce{Al + 3Ag+}\rightarrow\ce{Al3+ + 3Ag}\)
+\item \(\ce{Cl2 + 2NaBr}\rightarrow\ce{Br2 + 2NaCl}\)
+\item \(\ce{C2H6 + 3O2}\rightarrow\ce{CO2 + CO + 3H2O}\)
 \end{enumerate}
 
 \section{Using the solubility rules table, classify each of the substances as being soluble or insoluble in water. Then, Identify the two new compounds that form if the solutions, as suggested by the following table, were mixed via a double displacement reaction.}
-\label{sec:org5a5d2db}
-
+\label{sec:org7ea08db}
 \subsection{Part A}
-\label{sec:orgfb83031}
-\begin{enumerate}
-\item Soluble
-\item Insoluble
-\item Insoluble
-\item Insoluble
-\item Soluble
-\item Insoluble
-\item Insoluble
-\item Insoluble
-\item Soluble
-\item Insoluble.
-\item Insoluble
-\item Soluble
-\item Soluble
-\item Soluble
-\item Insoluble
-\item Insoluble
+\label{sec:orgdc4fc40}
+\begin{enumerate}[a.]
+\item KBr = Soluble
+\item PbCO 3 = Insoluble
+\item BaSO 4 = Insoluble
+\item zinc hydroxide = Insoluble
+\item sodium acetate = Soluble
+\item silver iodide = Insoluble
+\item cadmium (II) sulfide = Insoluble
+\item zinc carbonate = Insoluble
+\item silver acetate = Soluble
+\item copper (II) sulfide = Insoluble
+\item Mg 3 (PO4) 2 = Insoluble
+\item KOH = Soluble
+\item NiCl 2 = Soluble
+\item NH 4 OH = Soluble
+\item Hg 2 SO 4 = Insoluble
+\item PbI 2 = Insoluble
 \end{enumerate}
 
 \subsection{Part B}
-\label{sec:org3ff7f14}
-\begin{enumerate}
-\item \(\ce{AgBr(s)\ KNO3(aq)}\)
-\(\ce{BaBr2(aq)\ KCl(aq)}\)
-\(\ce{AlBr3(aq)\ KNO3(aq)}\)
-\(\ce{K2SO4(aq)\ CuBr2(aq)}\)
-
-\item \(\ce{Ag2CO3(s)\ KNO3(aq)}\)
-\(\ce{NaCl(aq)\ KCl(aq)}\)
-\(\ce{Al2(CO3)3(s)\ KNO3(aq)}\)
-\(\ce{CuCO3(s)\ CuBr2(aq)}\)
-
-\item \(\ce{Ag2S(s)\ KNO3(aq)}\)
-\(\ce{CaCl(aq)\ KCl(aq)}\)
-\(\ce{AlBr3(aq)\ KNO3(aq)}\)
-\(\ce{K2SO4(aq)\ CuBr2(aq)}\)
-
-\item \(\ce{AgOH(s)\ KNO3(aq)}\)
-\(\ce{Ba(OH)2(aq)\ KCl(aq)}\)
-\(\ce{Al(OH)3(aq)\ KNO3(aq)}\)
-\(\ce{NH4(SO4)2(aq)\ CuBr2(aq)}\)
-\end{enumerate}
+\label{sec:orga859db9}
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+\(\ce{Kbr}\) & \(\ce{Na2Co3}\) & \(\ce{CaS}\) & \(\ce{NH4OH}\)\\
+\midrule
+\uline{\(\ce{AgBr(s)}\),} \(\ce{KNO3(aq)}\) & \uline{\(\ce{Ag2CO3(s)}\)}, \(\ce{NaNO3(aq)}\) & \uline{\(\ce{Ag2S(s)}\),}  \(\ce{Ca(NO3)2(aq)}\) & \uline{\(\ce{AgOH(s)}\)}, \(\ce{NH4NO3(aq)}\)\\
+\midrule
+\(\ce{BaBr2(aq), KCl(aq)}\) & \(\ce{NaCl(aq)}\), \uline{\(\ce{BaCO3(s)}\)} & \(\ce{CaCl(aq), BaS(aq)}\) & \(\ce{Ba(OH)2(aq), NH4Cl(aq)}\)\\
+\midrule
+\(\ce{AlBr3(aq), KNO3(aq)}\) & \uline{\(\ce{Al2(CO3)3(s)}\),} \(\ce{NaNO3(aq)}\) & \(\ce{AlBr3(aq)}\), \uline{\(\ce{Al2S3(s)}\)} & \uline{\(\ce{Al(OH)3(aq)}\),} \(\ce{NH4NO3(aq)}\)\\
+\midrule
+\(\ce{K2SO4(aq), CuBr2(aq)}\) & \uline{\(\ce{CuCO3(s)}\),} \(\ce{NaSO4(aq)}\) & \(\ce{K2SO4(aq)}\), \uline{\(\ce{CuS(s)}\)} & \(\ce{NH4(SO4)2(aq)}\), \uline{\(\ce{Cu(OH)2(s)}\)}\\
+\bottomrule
+\end{tabular}
+\end{center}
 
 \section{Name the following, then draw the Lewis Structure for the following hydrocarbons from their full names.}
-\label{sec:orgd8598a5}
-
-\begin{enumerate}
+\label{sec:orgdeffed8}
+\begin{enumerate}[a.]
 \item \(\ce{CH4}\) - methane
 \item \(\ce{C3H8}\) - propane
 \item \(\ce{C4H8}\) - butene
 \item \(\ce{C4H8}\) - butyne
+\end{enumerate}
 
+\subsection{Draw Lewis Structures for the following}
+\label{sec:org6392f6a}
+\begin{enumerate}[a.]
 \item Ethane \(\ce{C2H}\) (c-c)
 \item Methane \(\ce{CH4}\) (c-c)
 \item Propyne \(\ce{C3H4}\) (c---c)
