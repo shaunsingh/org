@@ -23,12 +23,12 @@ weight (\(26.982g\)). Therefore, the element is Aluminium (\(\ce{Al}\)).
 
 * Fill in the blanks to balance the following chemical equations:
 #+attr_latex: :options [a.]
-a. \(\ce{2AgI + Na2S} \rightarrow \ce{2Ag2S + NaI}\)
+a. \(\ce{2AgI + Na2S} \rightarrow \ce{Ag2S + 2NaI}\)
 b. \(\ce{(NH4)2Cr2O7} \rightarrow \ce{Cr2O3}+\ce{N2}+\ce{4H2O}\)
 c. \(\ce{Na3PO4}+\ce{3HCl} \rightarrow \ce{3NaCl}+\ce{H3PO4}\)
 d. \(\ce{TiCl4}+\ce{2H2O} \rightarrow \ce{TiO2}+\ce{4HCl}\)
 e. \(\ce{Ba3N2}+\ce{6H2O} \rightarrow \ce{3Ba(OH)2}+\ce{2NH3}\)
-f. \(\ce{3HNO2}+\ce{HNO3} \rightarrow \ce{2NO}+\ce{H2O}\)
+f. \(\ce{3HNO2} \rightarrow \ce{HNO3}+\ce{2NO}+\ce{H2O}\)
 
 * Balance the following equation:
 \(\ce{4NH4OH(aq)+KAI(SO)} \cdot \ce{12H2O} = \ce{Al(OH)3(s)} +
