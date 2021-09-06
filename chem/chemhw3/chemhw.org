@@ -3,7 +3,7 @@
 #+startup: preview
 #+startup: fold
 #+options: toc:nil
-#+latex_class: chameleon
+#+latex_class: cb-doc
 #+latex_header: \usepackage{chemfig}
 #+latex_header: \usepackage[version=4]{mhchem}
 #+latex_header: \usepackage{enumerate}

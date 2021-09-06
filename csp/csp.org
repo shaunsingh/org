@@ -89,7 +89,8 @@
    locations of users. These locations are often sold to advertising firms.
    Companies like Cuebiq make money by collecting location data from smartphone
    users who agree to share their locations for weather or maps, then analyse
-   and sell that data to advertisers and marketers. Location data shouldn't be  used to target people, and should be used as a last resort
+   and sell that data to advertisers and marketers. Location data shouldn't be
+   used to target people, and should be used as a last resort
 
 2. While technically it is all just bits, personally I believe we shouldn't
    think of it as such. Thinking of computers in terms of bits is like thinking
@@ -377,6 +378,12 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    data transfer to and from those drives quicker and more secure. Otherwise,
    cloud storage is superior to offline storage except for solutions which
    require speed (e.g. boot drives) or high security.
+
+   Another thing I'm looking forward to is using computers in the cloud.
+   Google's chromebooks already take a hybrid approach to this, where most of
+   the user data is stored in google drive and only the operating system is
+   installed directly on the laptop. Other services, such as Shadow PC, allow
+   you to stream a powerful computer to virtually any device
 
 * Needles in the Haystack
 ** Vocabulary
@@ -722,11 +729,17 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    model. They produce millions of copies of movies, sell years old music for
    over 2$ each, and then wonder why people want to get it for free. They /need/
    that scarcity to survive, because thats the only way their business model
-   works. As soon as the entertainment industry moves to subscription services
+   works.
+
+   As soon as the entertainment industry moves to subscription services
    (which has already happened for the most part, e.g. disney+) , most of these
-   issues with piracy will resolve themselves.
+   issues with piracy will resolve themselves. If you provide a cheap way for
+   people to access the media they want, people don't feel the need to pirate
+   media, and subscription services are a simple (and profitable) way to
+   accomplish this
 
 4. I thought it was interesting how this turned out. Only a few years after
-   that, we saw the launch of music subscriptions (especially apple music and
-   spotify at the time), which proved that if you give consumers a cheap and
-   convenient way to enjoy content, the need to pirate content goes away.
+   that, we saw the launch of music subscriptions such as apple music and
+   spotify. Afterwards, piracy also decreased, which proves the previous point I
+   made. If you give consumers a cheap and convenient way to enjoy content, the
+   need to pirate content goes away.
