@@ -104,7 +104,7 @@
   same chip" I assume this statement is talking about the processor cores
   themselves. However, data shows that the fastest processors today are about
   80 times faster in terms of single core performance with the same efficiency.
-  Still, its true that processor cores have increased over the years (from
+  Still, it's true that processor cores have increased over the years (from
   single core chips to server chips with over 128 cores in the span of just 20
   years).
 
@@ -242,9 +242,13 @@
    resist changes to their workflow and life, and unless you make privacy more
    convenient, that won't change.
 
-4. As I stated in the previous two responses, I agree with this, and the issue
-   is not many people care about it. The solution is to raise awareness and make
-   privacy the default, instead of having to have users change it themselves.
+4. Patient Confidentiality is another issue that's increased over the past few
+   years. Your insurence company knows more than your entire medical history,
+   and can make descisions on it. Is it fair to offer higher insurence rates to
+   those who are more likely to fall ill, or does everyone deserve the same
+   healthcare? In my opinion, targetting those who need good healthcare the most
+   should be illegal, everyone should have the same healthcare regardless of
+   their status.
 
 * Ghosts in the Machine
 ** Vocabulary
@@ -316,7 +320,8 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    far neither Microsoft nor Apple has made the necessary software investment (Page 102)
 3. Free software is a matter of the users freedom to run, copy, distribute,
    study, change, and improve the software (page 94)
-4. If google holds your documents, they are accessible from anywhere the internet reaches
+4. If google holds your documents, they are accessible from anywhere the
+   internet reaches
 
 ** Journal Entry
 1. As the text after that statement mentioned,  metadata can be easily altered
@@ -445,7 +450,8 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    call “network effects.” (Page 110)
 3. Free software is a matter of the users freedom to run, copy, distribute,
    study, change, and improve the software (page 94)
-4. If google holds your documents, they are accessible from anywhere the internet reaches
+4. If google holds your documents, they are accessible from anywhere the
+   internet reaches
 
 ** Journal Entry
 1. The reason google is so ahead in the search engine space is because of data.
@@ -489,10 +495,7 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    to keep working. Similarly, since coders aren't paid the quality work may not
    be as good as that of a commercial project.
 
-4. If google holds your documents, they are accessible from anywhere the
-   internet reaches.
-
-   This is why I like cloud storage over local storage. With local storage you
+4.  This is why I like cloud storage over local storage. With local storage you
    have to deal with organizing files, keeping storage down, and most
    importantly you have to deal with sharing files with others, and making sure
    your assignments are accessible elsewhere when you need them. Additionally,
@@ -567,8 +570,7 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
     Ref: WordNet Search - 3.1. http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000000. Accessed 23 July 2021.
 
 ** Ideas:
-1. If you try another search engine instead of Google, you'll get different
-   results. Which is right? Which is better? Which is more authoritative? (page 114)
+1. Breakthroughs Happen, but News Travels Slowly (Page 175)
 2. Having a good system doesn't mean people will use it (Page 175)
 3. Today, electronic mail is gradually replacing conventional paper mail, and is
    soon to be the norm for everyone, not the novelty it is today (page 189)
@@ -577,18 +579,16 @@ http://wordnetweb.princeton.edu/perl/webwn?s=spam&sub=Search+WordNet&o2=&o0=1&o8
    nowhere to be seen
 
 ** Journal Entry
-1. The reason google is so ahead in the search engine space is because of data.
-   Google is known to collect enormous amounts of data on their users, and this
-   is both a good and a bad thing. Although there are many privacy issues
-   surrounding the use of this data, google can use this data to predict what
-   each user likes, and can also tune the search engine's results to match that
-   users preference.
+1.  This is an extremely important issue, especially in the software industry.
+   People are naturally resistant to change, and companies dislike disrupting
+   their workflow. Because of this, you often see companies and people usingl
+   decade old software because it still works. The issue isn't creating new
+   technology, its getting people to switch on it.
 
-   Other search engines such as DDG can't provide you "accurate" search engine
-   results, because they don't have the data google has. Neither result is more
-   accurate, or better, just calculated differently. If you were to disable
-   google's analytics, log out of gmail, and open an incognito tab, chances are
-   you would get different results than the ones you would get when logged in.
+   Especially with so much new tech quickly popping up and fading away just as
+   fast as it came, it's easy to see why people are reluctant to change. There's
+   always a lingering fear that the tool you currently use may stop support the
+   next day.
 
 2. I agree with this statement. The largest issue with creating new technologies
    is that many people are reluctant to switch from the old ones. Every new idea

@@ -6,27 +6,61 @@
 #+latex_class: chameleon
 
 * Lens, Issues, and Articles
-- Theme: Technology
-#+attr_latex: :environment longtable :align |p{2.5cm}|p{6.5cm}|p{1cm}|
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lens                       | Issue/Question                                                      | Article                                                                                                                                                                  |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| environmental              | How can we use technology to efficiently generate and store energy? | https://energystorage.org/why-energy-storage/technologies/                                                                                                               |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Scientific                 | How can we use technology to filter out artificial research papers? | https://www.nature.com/articles/d41586-021-00733-5                                                                                                                       |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Economic                   | How can we use AI to predict demand and reduce cost of goods?       | https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence                                                                                                     |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Political and Historical   | How can we use AI to analyze and predict the results of elections?  | https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009                                                                |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Artistic and Philosophical | How will artificially-generated art affect art prices in the future | https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6 |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cultural and Social        | What are the effects of technology on a kids social life?           | https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula                                                                          |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Futuristic                 | How will technology affect transportation in the future?            | https://capgemini-engineering.com/us/en/insight/how-technologies-will-change-the-future-of-transport/                                                                    |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ethical                    | How can we prevent unethical robotics in the future?                | https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full                                                                                                       |
-|----------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+** Lens: Enviornmental
+*Theme:* Technology
+
+*Issue:* How can we use technology to efficiently generate and store energy?
+
+*Article:* [[https://energystorage.org/why-energy-storage/technologies/][Hydrogen Energy Storage]]
+
+** Lens: Scientific
+*Theme:* Technology
+
+*Issue:* How can we use technology to filter out artificial research papers?
+
+*Article:* [[https://www.nature.com/articles/d41586-021-00733-5][The fight against fake-paper factories that churn out sham science]]
+
+** Lens: Economic
+*Theme:* Technology
+
+*Issue:* How can we use AI to predict demand and reduce cost of goods?
+
+*Article:* [[https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence][The Simple Economics of Machine Intelligence]]
+
+** Lens: Political and Historical
+*Theme:* Technology
+
+*Issue:* How can we use AI to analyze and predict the results of elections?
+
+*Article:* [[https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009][Artificial Intelligence shows Potential to Gauge Voter Sentiment]]
+
+** Lens: Artistic and Philosophical
+*Theme:* Technology
+
+*Issue:* How will artificially-generated art affect art prices in the future
+
+*Article:* [[https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6][In this exhibition an ai dreams up imaginary artworks]]
+
+** Lens: Cultural and Social
+*Theme:* Technology
+
+*Issue:* What are the effects of technology on a kids social life?
+
+*Article:* [[https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula][Impacts of technology on culture, tradition and social values]]
+
+** Lens: Futuristic
+*Theme:* Technology
+
+*Issue:* How will technology affect transportation in the future?
+
+*Article:* [[https://capgemini-engineering.com/us/en/insight/how-technologies-will-change-the-future-of-transport/][How Technologies will change the future of transport]]
+
+** Lens: Ethical
+*Theme:* Technology
+
+*Issue:* How can we prevent unethical robotics in the future?
+
+*Article:* [[https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full][A Review of Future and Ethical Perspectives of Robotics and AI]]
 
 * Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:
 ** Article 1: [[https://www.nature.com/articles/d41586-021-00733-5][The fight against fake-paper factories that churn out sham science]]
@@ -51,7 +85,7 @@
      (Nature), deals with peer-reviewing and publishing research papers like
      these every day. The claims of the article are not only backed up by the
      company's experience, but also anecdotes from other publishers and
-     researchers, who have been cited in the article
+     researchers, who have been cited in the article.
 
 4. What is one weakness with the author's claim?
    - One weakness with the author's claim is that it does not reference
@@ -70,20 +104,21 @@
        Nature has found, and many more retractions are expected to follow.
 
 6. Evaluate the article's effectiveness. Is it convincing?
-   - The article is convincing. The write is objective, to the point, and makes
-     sure to back up her writing with sources and citations. The site itself is
-     trustworthy, /nature.com/ is a host to many research papers and is
-     experienced on the topic.
+   - The article is convincing. The write is objective, to the point, and backs
+     up her writing with sources and citations. The site itself is trustworthy,
+     /nature.com/ is a host to many research papers and is experienced on the topic.
 
 7. Do you agree with the author?
-   - I completely agree with the author.  Companies who churn out fake
-     manuscripts are a disgrace to science, and harm the work of other students
-     and researchers who worked hard to produce original work.
+   - I agree with the author.  Companies who churn out fake
+     manuscripts harm the work of other students and researchers who worked hard
+     to produce original work. Those who use fake research paper services may be
+     inexperienced and unfit for work.
 
 8. Create an MLA works cited entry for each article:
    - Else, Holly, and Richard Van Noorden. “The Fight against Fake-Paper
-   Factories That Churn out Sham Science.” Nature, vol. 591, no. 7851, Mar.
-   2021, pp. 516–19. www.nature.com, https://doi.org/10.1038/d41586-021-00733-5.
+     Factories That Churn out Sham Science.” Nature, vol. 591, no. 7851, Mar.
+     2021, pp. 516–19. www.nature.com,
+     https://doi.org/10.1038/d41586-021-00733-5.
 
 ** Article 2:  [[https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full][A Review of Future and Ethical Perspectives of Robotics and AI]]
  1. Brief summary of the article

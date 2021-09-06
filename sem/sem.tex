@@ -1,4 +1,4 @@
-% Created 2021-09-02 Thu 10:19
+% Created 2021-09-06 Mon 14:36
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -17,99 +17,15 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
 \usepackage{indentfirst}
-\setmainfont[Ligatures=TeX]{IBM Plex Sans}
+\setmainfont[Ligatures=TeX]{Alegreya}
 \setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
-% features: (acronym underline par-sep table)
+% features: (acronym par-sep)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
 \newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
-\usepackage[normalem]{ulem}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
 
-\usepackage{longtable}
-\usepackage{booktabs}
 % end features
-
-%% make document follow Emacs theme
-
-\definecolor{obg}{HTML}{fafafa}
-\definecolor{ofg}{HTML}{383a42}
-
-\pagecolor{obg}
-\color{ofg}
-
-% list labels
-
-\definecolor{itemlabel}{HTML}{4078f2}
-
-\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
-\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
-\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
-\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
-
-\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
-\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
-\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
-\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
-
-% structural elements
-
-\definecolor{documentTitle}{HTML}{a626a4}
-\definecolor{documentInfo}{HTML}{a626a4}
-\definecolor{level1}{HTML}{e45649}
-\definecolor{level2}{HTML}{da8548}
-\definecolor{level3}{HTML}{b751b6}
-\definecolor{level4}{HTML}{6f99f5}
-\definecolor{level5}{HTML}{bc5cba}
-\definecolor{level6}{HTML}{9fbbf8}
-\definecolor{level7}{HTML}{d292d1}
-\definecolor{level8}{HTML}{d8e4fc}
-
-\addtokomafont{title}{\color{documentTitle}}
-\addtokomafont{author}{\color{documentInfo}}
-\addtokomafont{date}{\color{documentInfo}}
-\addtokomafont{section}{\color{level1}}
-\newkomafont{sectionprefix}{\color{level1}}
-\addtokomafont{subsection}{\color{level2}}
-\newkomafont{subsectionprefix}{\color{level2}}
-\addtokomafont{subsubsection}{\color{level3}}
-\newkomafont{subsubsectionprefix}{\color{level3}}
-\addtokomafont{paragraph}{\color{level4}}
-\newkomafont{paragraphprefix}{\color{level4}}
-\addtokomafont{subparagraph}{\color{level5}}
-\newkomafont{subparagraphprefix}{\color{level5}}
-
-% textual elements
-
-\definecolor{link}{HTML}{4078f2}
-\definecolor{cite}{HTML}{800080}
-\definecolor{itemlabel}{HTML}{4078f2}
-\definecolor{code}{HTML}{da8548}
-\definecolor{verbatim}{HTML}{50a14f}
-
-\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
-\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
-\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
-\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
-
-\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
-\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
-\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
-\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
-
-\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
-\makeatletter
-\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
-\makeatother
-
-% code blocks
-
-\definecolor{codebackground}{HTML}{fafafa}
-\colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{f0f0f0}
-
-%% end customisations
-
 \author{Shaurya Singh}
 \date{\today}
 \title{Ap Sem Summer Assignment}
@@ -139,47 +55,75 @@
 
 
 \section{Lens, Issues, and Articles}
-\label{sec:orgde81ad7}
-\begin{itemize}
-\item Theme: Technology
-\end{itemize}
-\begin{longtable}{|p{2.5cm}|p{6.5cm}|p{1cm}|}
-\toprule
-Lens & Issue/Question & Article\\
-\midrule
-\endfirsthead
-\multicolumn{3}{l}{Continued from previous page} \\
-\toprule
+\label{sec:orga82cb3e}
+\subsection{Lens: Enviornmental}
+\label{sec:orgc6148d8}
+\textbf{Theme:} Technology
 
-Lens & Issue/Question & Article \\
+\textbf{Issue:} How can we use technology to efficiently generate and store energy?
 
-\midrule
-\endhead
-\midrule\multicolumn{3}{r}{Continued on next page} \\
-\endfoot
-\endlastfoot
-environmental & How can we use technology to efficiently generate and store energy? & \url{https://energystorage.org/why-energy-storage/technologies/}\\
-\midrule
-Scientific & How can we use technology to filter out artificial research papers? & \url{https://www.nature.com/articles/d41586-021-00733-5}\\
-\midrule
-Economic & How can we use AI to predict demand and reduce cost of goods? & \url{https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence}\\
-\midrule
-Political and Historical & How can we use AI to analyze and predict the results of elections? & \url{https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009}\\
-\midrule
-Artistic and Philosophical & How will artificially-generated art affect art prices in the future & \url{https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6}\\
-\midrule
-Cultural and Social & What are the effects of technology on a kids social life? & \url{https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula}\\
-\midrule
-Futuristic & How will technology affect transportation in the future? & \url{https://capgemini-engineering.com/us/en/insight/how-technologies-will-change-the-future-of-transport/}\\
-\midrule
-Ethical & How can we prevent unethical robotics in the future? & \url{https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full}\\
-\bottomrule
-\end{longtable}
+\textbf{Article:} \href{https://energystorage.org/why-energy-storage/technologies/}{Hydrogen Energy Storage}
+
+\subsection{Lens: Scientific}
+\label{sec:orgc91cc02}
+\textbf{Theme:} Technology
+
+\textbf{Issue:} How can we use technology to filter out artificial research papers?
+
+\textbf{Article:} \href{https://www.nature.com/articles/d41586-021-00733-5}{The fight against fake-paper factories that churn out sham science}
+
+\subsection{Lens: Economic}
+\label{sec:org01c6335}
+\textbf{Theme:} Technology
+
+\textbf{Issue:} How can we use AI to predict demand and reduce cost of goods?
+
+\textbf{Article:} \href{https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence}{The Simple Economics of Machine Intelligence}
+
+\subsection{Lens: Political and Historical}
+\label{sec:orgb34f653}
+\textbf{Theme:} Technology
+
+\textbf{Issue:} How can we use AI to analyze and predict the results of elections?
+
+\textbf{Article:} \href{https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009}{Artificial Intelligence shows Potential to Gauge Voter Sentiment}
+
+\subsection{Lens: Artistic and Philosophical}
+\label{sec:org04fbbc3}
+\textbf{Theme:} Technology
+
+\textbf{Issue:} How will artificially-generated art affect art prices in the future
+
+\textbf{Article:} \href{https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6}{In this exhibition an ai dreams up imaginary artworks}
+
+\subsection{Lens: Cultural and Social}
+\label{sec:orgbd9b930}
+\textbf{Theme:} Technology
+
+\textbf{Issue:} What are the effects of technology on a kids social life?
+
+\textbf{Article:} \href{https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula}{Impacts of technology on culture, tradition and social values}
+
+\subsection{Lens: Futuristic}
+\label{sec:orgb3d1775}
+\textbf{Theme:} Technology
+
+\textbf{Issue:} How will technology affect transportation in the future?
+
+\textbf{Article:} \href{https://capgemini-engineering.com/us/en/insight/how-technologies-will-change-the-future-of-transport/}{How Technologies will change the future of transport}
+
+\subsection{Lens: Ethical}
+\label{sec:org7b2d814}
+\textbf{Theme:} Technology
+
+\textbf{Issue:} How can we prevent unethical robotics in the future?
+
+\textbf{Article:} \href{https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full}{A Review of Future and Ethical Perspectives of Robotics and AI}
 
 \section{Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:}
-\label{sec:org21b5bca}
+\label{sec:org806c410}
 \subsection{Article 1: \href{https://www.nature.com/articles/d41586-021-00733-5}{The fight against fake-paper factories that churn out sham science}}
-\label{sec:orge4e0b6c}
+\label{sec:org9f2ac59}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}
@@ -207,7 +151,7 @@ papers from third-party firms to help their careers
 (Nature), deals with peer-reviewing and publishing research papers like
 these every day. The claims of the article are not only backed up by the
 company's experience, but also anecdotes from other publishers and
-researchers, who have been cited in the article
+researchers, who have been cited in the article.
 \end{itemize}
 
 \item What is one weakness with the author's claim?
@@ -232,29 +176,30 @@ Nature has found, and many more retractions are expected to follow.
 
 \item Evaluate the article's effectiveness. Is it convincing?
 \begin{itemize}
-\item The article is convincing. The write is objective, to the point, and makes
-sure to back up her writing with sources and citations. The site itself is
-trustworthy, \emph{nature.com} is a host to many research papers and is
-experienced on the topic.
+\item The article is convincing. The write is objective, to the point, and backs
+up her writing with sources and citations. The site itself is trustworthy,
+\emph{nature.com} is a host to many research papers and is experienced on the topic.
 \end{itemize}
 
 \item Do you agree with the author?
 \begin{itemize}
-\item I completely agree with the author.  Companies who churn out fake
-manuscripts are a disgrace to science, and harm the work of other students
-and researchers who worked hard to produce original work.
+\item I agree with the author.  Companies who churn out fake
+manuscripts harm the work of other students and researchers who worked hard
+to produce original work. Those who use fake research paper services may be
+inexperienced and unfit for work.
 \end{itemize}
 
 \item Create an MLA works cited entry for each article:
 \begin{itemize}
 \item Else, Holly, and Richard Van Noorden. “The Fight against Fake-Paper
-\end{itemize}
 Factories That Churn out Sham Science.” Nature, vol. 591, no. 7851, Mar.
-2021, pp. 516–19. www.nature.com, \url{https://doi.org/10.1038/d41586-021-00733-5}.
+2021, pp. 516–19. www.nature.com,
+\url{https://doi.org/10.1038/d41586-021-00733-5}.
+\end{itemize}
 \end{enumerate}
 
 \subsection{Article 2:  \href{https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full}{A Review of Future and Ethical Perspectives of Robotics and AI}}
-\label{sec:orgf8710b7}
+\label{sec:orgafa0e3f}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}

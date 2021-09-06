@@ -358,47 +358,97 @@ Balanced, this equation is
 * Using the solubility rules table, classify each of the substances as being soluble or insoluble in water. Then, Identify the two new compounds that form if the solutions, as suggested by the following table, were mixed via a double displacement reaction.
 ** Part A
 #+attr_latex: :options [a.]
-1.  \(\ce{KBr}\) = Soluble. Based on the soluble salt rules, bromine anions are
+1.  \(\ce{KBr}\) = Soluble
+
+   Based on the soluble salt rules, bromine anions are
    soluble when bonded with a cation that isn't \(\ce{Pb}\), \(\ce{Ag}\),
    or \(\ce{Hg2+}\). This means that \(\ce{Kbr}\) is soluble.
-2.  \(\ce{PbCO3}\) = Insoluble. Since \(\ce{Pb}\) isn't from group 1 and there
+
+2.  \(\ce{PbCO3}\) = Insoluble
+
+   Since \(\ce{Pb}\) isn't from group 1 and there
    aren't any rules for \(\ce{CO3}\), \(\ce{PBCO3}\) is insoluble.
-3.  \(\ce{BaSO4}\) = Insoluble. Based on the soluble salt rules, when
+
+3.  \(\ce{BaSO4}\) = Insoluble
+
+   Based on the soluble salt rules, when
    \(\ce{SO4}\) is bonded with Ba, it makes it insoluble
-4.  zinc hydroxide = Insoluble. \(\ce{Zn(OH)2}\) is amphateric but it isn't a
+
+4.  zinc hydroxide = Insoluble
+
+   \(\ce{Zn(OH)2}\) is amphateric but it isn't a
    strong acid or a strong base, so its insoluble
-5.  sodium acetate = Soluble. \(\ce{NaCH3COO}\) is soluble since the cation is
+
+5.  sodium acetate = Soluble
+
+   \(\ce{NaCH3COO}\) is soluble since the cation is
    from the first group of the periodic table and the anion is the polyatomic
    ion acetate, both of whitch are always soluble in a compound
-6.  silver iodide = Insoluble. \(\ce{AgI}\) is insoluble since the rules of
+
+6.  silver iodide = Insoluble
+
+   \(\ce{AgI}\) is insoluble since the rules of
    soluble salts state that when the anion I is in a compound with Ag, then it
    is insoluble
-7.  cadmium (II) sulfide = Insoluble. \(\ce{CdS}\) is insoluble since there is
+
+7.  cadmium (II) sulfide = Insoluble
+
+   \(\ce{CdS}\) is insoluble since there is
    no rule written about sulfur anions nor cadmium. Cadmium also isn't a group 1
    element, making the compound insoluble
-8.  zinc carbonate = Insoluble. \(\ce{ZNCO3}\) is insoluble since there is no
-   rule written about carbonate polyatomic anions. Zinc also isn't a group 1 element
-9.  silver acetate = Soluble. \(\ce{AgC2H3O2}\) is soluble since the compound
+
+8.  zinc carbonate = Insoluble
+
+   \(\ce{ZNCO3}\) is insoluble since there is no
+   rule written about carbonate polyatomic anions. Zinc also isn't a group 1
+   element
+
+9.  silver acetate = Soluble
+
+   \(\ce{AgC2H3O2}\) is soluble since the compound
    countains an acetate  polyatomic anion. The soluble salt rule states that any
    compound with acetate should be soluble
-10. copper (II) sulfide = Insoluble. \(\ce{CuS}\) is insoluble since neither or
+
+10. copper (II) sulfide = Insoluble
+
+    \(\ce{CuS}\) is insoluble since neither or
     copper nor sulfur is included in the soluble salt rules. Copper also isn't a
     group 1 element, so the compound is insoluble
-11. \(\ce{Mg3(PO4)2}\) = Insoluble. Phosphate is not mentioned in the soluble
-    salt rules, and magnesium isn't a group one element, so this compound is insoluble
-12. \(\ce{KOH}\) = Soluble. It is in the list of the 8 strong bases
-13. \(\ce{NiCl2}\) = Soluble. The soluble salt rule states that when a compound
+
+11. \(\ce{Mg3(PO4)2}\) = Insoluble
+
+    Phosphate is not mentioned in the soluble
+    salt rules, and magnesium isn't a group one element, so this compound is
+    insoluble
+
+12. \(\ce{KOH}\) = Soluble
+
+    It is in the list of the 8 strong bases
+
+13. \(\ce{NiCl2}\) = Soluble
+
+    The soluble salt rule states that when a compound
     contains chlorine as anion, as long as the cation it is bonded to isn't
     \(\ce{Pb}\),     \(\ce{Ag}\), or \(\ce{Hg2^{2+}}\) it will be a soluble
     compound.
-14. \(\ce{NH4OH}\) = Soluble. \(\ce{NH4OH}\) contains \(\ce{NH4}\), and based on
+
+14. \(\ce{NH4OH}\) = Soluble
+
+    \(\ce{NH4OH}\) contains \(\ce{NH4}\), and based on
     the soluble salt rules, the compound containing it is soluble.
-15. \(\ce{Hg2SO4}\) = Insoluble. The soluble salt rules state when sulfate is
+
+15. \(\ce{Hg2SO4}\) = Insoluble
+
+    The soluble salt rules state when sulfate is
     bonded with     \(\ce{Hg2}\) in a compound, it renders it insoluble
-16. \(\ce{PbI2}\) = Insoluble. The soluble salt rule states that when the anion
+
+16. \(\ce{PbI2}\) = Insoluble
+
+    The soluble salt rule states that when the anion
     iodine is bonded to the cation lead, it will be insoluble
 
 ** Part B
+Underlined compounds are precipitates of the reaction
 |-------------------------------------+-------------------------------------------+------------------------------------------+---------------------------------------------|
 | _\(\ce{AgBr(s)}\),_ \(\ce{KNO3(aq)}\) | _\(\ce{Ag2CO3(s)}\)_, \(\ce{NaNO3(aq)}\)    | _\(\ce{Ag2S(s)}\),_  \(\ce{Ca(NO3)2(aq)}\) | _\(\ce{AgOH(s)}\)_, \(\ce{NH4NO3(aq)}\)       |
 |-------------------------------------+-------------------------------------------+------------------------------------------+---------------------------------------------|
@@ -412,18 +462,25 @@ Balanced, this equation is
 * Name the following, then draw the Lewis Structure for the following hydrocarbons from their full names.
 #+attr_latex: :options [a.]
 1. \(\ce{CH4}\) - methane
+
    Since the compound contains one carbon atom (meth) and there are sigma bonds
    (ane), the name of this compound is methane. From the diagram we can see the
    molecular formula is    \(\ce{CH4}\)
+
 2. \(\ce{C3H8}\) - propane
+
    Since the compound has three carbon atoms (prop) and there are sigma bonds
    (ane), the name of the compound is propane. With the help of the diagram, we
    can see the molecular formula is    \(\ce{C3H8}\)
+
 3. \(\ce{C4H8}\) - 1-butene
+
    Since the compound contains four carbon atoms (but) and central double bond
    (ene), the name of the compound is 1-butene. With the help of the lewis
    diagram the molecular formula is \(\ce{C4H8}\)
+
 4. \(\ce{C4H8}\) - 2-butene
+
    Since the compound contains four carbon atoms (but) and a central double bond
    (ene), the name of this compound is 2-butene. The arrangement is different
    than 1-butene, hence the $2-$ at the start of the name
@@ -431,14 +488,21 @@ Balanced, this equation is
 ** Draw Lewis Structures for the following
 #+attr_latex: :options [a.]
 1. Ethane \(\ce{C2H}\)
+
    Based on the name, there are two carbon atoms and sigma bonds are present.
    The lewis diagram would be
+
 2. Methane \(\ce{CH4}\)
+
    Based on the name, there should be one carbon atom and sigma bonds are
    present. The lewis diagram would be
+
 3. Propyne \(\ce{C3H4}\)
+
    Based on the name, there shold be three carbon atoms and a triple bond. The
    lewis diagram woudl be
+
 4. 2 Butene \(\ce{2C4H8}\)
+
    Based on the name, there shuold be four carbon atoms and a double bond. The 2
    in front signifies this is an isomer of butene. It's lewis diagram would be
