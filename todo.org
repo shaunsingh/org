@@ -1,5 +1,5 @@
 * Inbox
-** [ ] Discord meeting 2:30
+** [X] Discord meeting 2:30
 
 [[file:~/org/school.org::*None][None]]
 ** [X] Zoom meeting for UnGala

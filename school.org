@@ -13,7 +13,7 @@
 ** Biology [0%]
 *** None?
 
-** AP Chem [70%]
+** AP Chem [90%]
 *** Resources
 Textbook: Chemistry, The Molecular Nature of Matter and Change, 7 th ed., by Silberberg and Amateis.
 Review Book: Peterson’s AP Chemistry by Brett Barker.
@@ -32,18 +32,18 @@ Pages 5-8
 Pages 8-15
 *** Link: https://drive.google.com/file/d/15JhR1OkjivA5K3aASK7XAIeSh05AAdiH/view?usp=drive_web&authuser=0
 
-** AP Sem [60%] <2021-09-09 Thu>
+** AP Sem [100%] <2021-09-09 Thu>
 *** DONE Choose a theme,
 *** DONE Come up with possible questions for each lens.
 CLOSED: [2021-08-19 Thu 13:46]
 *** DONE Find an article which supports the question you want to explore. Use the table below.
 CLOSED: [2021-08-19 Thu 13:46]
-*** TODO Journal 1
-*** TODO Journal 2
+*** DONE Journal 1
+*** DONE Journal 2
 *** Link: https://docs.google.com/document/d/1AgheICzyVXinpNIlrc68NYpcnj3ixJpsZE4_Ji8mN5M/edit
 
-** AP CSP [50%]
-*** TODO Reading <2021-09-09 Thu>
+** AP CSP [100%]
+*** DONE Reading <2021-09-09 Thu>
 Read chapters 1-6 of the book: Blown to Bits: Your Life, Liberty, and Happiness After the Digital Explosion by Hal Abelson, Ken Ledeem and Harry Lewis.
 Book is available at http://www.bitsbook.com/excerpts/.
 **** Create a vocabulary list and a journal entry for each chapter.
