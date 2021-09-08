@@ -194,14 +194,14 @@
 
 \author{Shaurya Singh}
 \date{}
-\title{CoderZ Summer Assignment \#2}
+\title{CoderZ Summer Assignment \#4}
 \colorlet{greenyblue}{blue!70!green}
 \colorlet{blueygreen}{blue!40!green}
 \providecolor{link}{named}{greenyblue}
 \providecolor{cite}{named}{blueygreen}
 \hypersetup{
   pdfauthor={Shaurya Singh},
-  pdftitle={CoderZ Summer Assignment \#2},
+  pdftitle={CoderZ Summer Assignment \#4},
   pdfkeywords={},
   pdfsubject={},
   pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
@@ -219,155 +219,166 @@
 \setcounter{tocdepth}{2}
 \tableofcontents
 
-Hello everyone! This is the second assignment you will receive this summer. By this
-point, all of you should have received and submitted Assignment \#1, which had
-you set up VSCode for Python programming. If you still need help, feel free to
-email me at shaunsingh0207@gmail.com.
+Hello everyone! This is the fourth and last assignment you will receive this
+summer. By this point, all of you should have received and submitted Assignment
+\#1, \#2, and Assignment \#3, which had you learn the basics of python and
+variables as well as loops, if/else statements, and operations If you still need help, feel free to email me at shaunsingh0207@gmail.com.
 
-In Assignment \#2, you will learn the basics of Python 3 and how to use variables
+In Assignment \#4, you will learn about functions and python modules
 
-\section{Basics}
-\label{sec:orgf38a3fe}
-Python is an interpreted programming language. You write \texttt{.py} files, in a text
-editor (such as VSCode), which are interpreted by the python interpreter, and
-executed. As with every language, Python has its own syntax.
+\section{Functions}
+\label{sec:org88f9c0f}
+A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
 
-Firstly, before you get started with this guide, create a \texttt{robotics1.py} file,
-this is where you will be writing the examples below, and executing them
+As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.
 
-\subsection{Indentation}
-\label{sec:orgdfd447c}
-Indentation refers to the spaces at the beginning of a code line. In other
-languages, you usually have brackets or parenthesis telling you where a block of
-code starts and ends. For example, in java we have the following
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{e45649}{public} \textcolor[HTML]{e45649}{class} \textcolor[HTML]{986801}{Main} \EFrdi{\{}
-  \textcolor[HTML]{e45649}{public} \textcolor[HTML]{e45649}{static} \textcolor[HTML]{a626a4}{void} \textcolor[HTML]{a626a4}{main}\EFrdii{(}\textcolor[HTML]{986801}{String}\EFrdiii{[}\EFrdiii{]} args\EFrdii{)} \EFrdii{\{}
-    System.out.\textcolor[HTML]{a626a4}{println}\EFrdiii{(}\textcolor[HTML]{50a14f}{"Hello World"}\EFrdiii{)};
-  \EFrdii{\}}
-\EFrdi{\}}
-\end{Verbatim}
-\end{Code}
-Notice the use of \texttt{\{\}} to tell you where each part of the code starts and ends.
-Instead of brackets, in python we rely on just indentation. For example, if we
-want to do an if statement, we would write something like
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
-  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"})
-\end{Verbatim}
-\end{Code}
-Notice the spaces in front of print. If we remove those spaces, and write
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
-\textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"})
-\end{Verbatim}
-\end{Code}
-It will result in an error. Remember the number of spaces can be any number (I
-choose 2), but it must remain the same throughout the python file.
+\subsection{Defining a function}
+\label{sec:orgff58c85}
+Functions begin with the keyword \texttt{def} followed by the function name and
+parenthesis. Any input parameters or arguments should be placed within these
+parenthesis.
 
-\subsection{Comments}
-\label{sec:orgd030fd0}
-As with any language, you can (and should) be commenting your code. Comments in
-python start with a \# character, which will mark the rest of the line as a comment
+The first statement of a function can be an optional statement - the documentation string of the function or docstring.
+
+The code block within every function starts with a colon (:) and is indented.
+
+The statement return [expression] exits a function, optionally passing back an
+expression to the caller. A return statement with no arguments is the same as
+return None.
+
+\subsection{Calling a function}
+\label{sec:orga642b1e}
+Defining a function gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code.
+
+Once the basic structure of a function is finalized, you can execute it by
+calling it from another function or directly from the Python prompt.
+
+\subsection{Example:}
+\label{sec:orgc2d09ca}
 \begin{Code}
 \begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{9ca0a4}{\# Compare 5 to 2}
-\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
-  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"})
-\end{Verbatim}
-\end{Code}
-Comments can also be added to the ends of lines.
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
-  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"}) \textcolor[HTML]{9ca0a4}{\# Compare 5 to 2}
-\end{Verbatim}
-\end{Code}
-Lastly, you can have multiline comments if needed
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{84888b}{\textit{"""
-Line \#1
-Line \#2
-"""}}
-\textcolor[HTML]{e45649}{if} \textcolor[HTML]{b751b6}{5} \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{2}:
-  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"Five is greater than two!"}) \textcolor[HTML]{9ca0a4}{\# Compare 5 to 2}
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\textcolor[HTML]{9ca0a4}{\# Function definition is here}
+\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{printme}( \textcolor[HTML]{6a1868}{str} ):
+   \textcolor[HTML]{50a14f}{"This prints a passed string into this function"}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\EFb{str})
+   \textcolor[HTML]{e45649}{return}
+
+\textcolor[HTML]{9ca0a4}{\# Now you can call printme function}
+\textcolor[HTML]{4078f2}{\textbf{printme}}(\textcolor[HTML]{50a14f}{"This is first call to the user defined function!"})
+\textcolor[HTML]{4078f2}{\textbf{printme}}(\textcolor[HTML]{50a14f}{"Again second call to the same function"})
 \end{Verbatim}
 \end{Code}
 
-\section{Variables}
-\label{sec:org59fcfbf}
-A variable is a term that represents an value. You can use variables for storing
-information for later usage. In Python, you assign a variable a value using the
-= sign. You can also assign multiple variables at once
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{5}
-\EFv{y} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"John"}
-\textcolor[HTML]{6a1868}{x}, \textcolor[HTML]{6a1868}{y}, \textcolor[HTML]{6a1868}{z} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"Orange"}, \textcolor[HTML]{50a14f}{"Banana"}, \textcolor[HTML]{50a14f}{"Grape"}
-\end{Verbatim}
-\end{Code}
-There are also different data types that we need to be aware of. If you want to
-specific the data type of a variable, you can cast it.
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{str}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#x is a string, and will be '3'}
-\EFv{y} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{int}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#y is a integer, and will be 3}
-\EFv{z} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{float}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#z is a float, and will be 3.0}
-\end{Verbatim}
-\end{Code}
-You can also get the data type of a variable, using \texttt{type()} .
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{str}}(\textcolor[HTML]{b751b6}{3}) \textcolor[HTML]{9ca0a4}{\#x is a string, and will be '3'}
-\textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{a626a4}{\textbf{type}}(x))
-\end{Verbatim}
-\end{Code}
-Lastly, you can define values in a list and unpack them to variables later
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\EFv{fruits} \textcolor[HTML]{e45649}{=} [\textcolor[HTML]{50a14f}{"apple"}, \textcolor[HTML]{50a14f}{"banana"}, \textcolor[HTML]{50a14f}{"Grape"}]
-\textcolor[HTML]{6a1868}{x}, \textcolor[HTML]{6a1868}{y}, \textcolor[HTML]{6a1868}{z} \textcolor[HTML]{e45649}{=} fruits
-\end{Verbatim}
-\end{Code}
-Remember that variables are case sensitive, so \texttt{John} and \texttt{john} are two different
-variables. Also keep in mind you can use single quotes or double quotes. In
-robotics, we prefer to write variables in the camelCase format, where each word
-except the first starts with a capital letter, like \texttt{myVariableName}.
+\begin{verbatim}
+This is first call to the user defined function!
+Again second call to the same function
+\end{verbatim}
 
-\subsection{Global Variables}
-\label{sec:orgeb9ac10}
-Variables created outside of a function are called global variables. Global
-variables can be used both inside of functions and outside
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"global"}
-\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{myfunc}():
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"this variable is "} \textcolor[HTML]{e45649}{+} x)
-\textcolor[HTML]{4078f2}{\textbf{myfunc}}()
-\end{Verbatim}
-\end{Code}
-In this case, the variable x is a global variable
-\begin{Code}
-\begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{myfunc}():
-  \EFv{x} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{50a14f}{"global"}
-  \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"this variable is "} \textcolor[HTML]{e45649}{+} x)
 
-\textcolor[HTML]{4078f2}{\textbf{myfunc}}()
-\textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"this variable is "} \textcolor[HTML]{e45649}{+} x)
+In the example, we input a string, but you can ask it to input anything. In the
+future we will likely use integers.
+
+\subsection{Global vs Local variables}
+\label{sec:org84bb3eb}
+Variables that are defined inside a function body have a local scope, and those defined outside have a global scope.
+
+This means that local variables can be accessed only inside the function in
+which they are declared, whereas global variables can be accessed throughout the
+program body by all functions. When you call a function, the variables declared
+inside it are brought into scope
+
+\section{Modules}
+\label{sec:org3c4933d}
+A module allows you to logically organize your Python code. Grouping related code into a module makes the code easier to understand and use. A module is a Python object with arbitrarily named attributes that you can bind and reference.
+
+Simply, a module is a file consisting of Python code. A module can define functions, classes and variables. A module can also include runnable code.
+
+\subsection{Example}
+\label{sec:orgdd6c46f}
+The Python code for a module named aname normally resides in a file namedaname.py. Here is an example of a simple module, support.py −
+
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{print\_func}( \textcolor[HTML]{6a1868}{par} ):
+   \textcolor[HTML]{e45649}{print} \textcolor[HTML]{50a14f}{"Hello : "}, par
+   \textcolor[HTML]{e45649}{return}
 \end{Verbatim}
 \end{Code}
-In this case it isn't, and so the last print statement won't function
+
+\subsection{The import Statement}
+\label{sec:org83e2fc3}
+You can use any Python source file as a module by executing an import statement in some other Python source file. The import has the following syntax −
+
+\texttt{import module1[, module2[,... moduleN]}
+
+When the interpreter encounters an import statement, it imports the module if the module is present in the search path. A search path is a list of directories that the interpreter searches before importing a module. For example, to import the module hello.py, you need to put the following command at the top of the script −
+
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\textcolor[HTML]{9ca0a4}{\# Import module support}
+\textcolor[HTML]{e45649}{import} support
+
+\textcolor[HTML]{9ca0a4}{\# Now you can call defined function that module as follows}
+support.\textcolor[HTML]{4078f2}{\textbf{\textit{print\_func}}}(\textcolor[HTML]{50a14f}{"Shaurya"})
+\end{Verbatim}
+\end{Code}
+
+When the above code is executed, it produces the following result −
+
+\texttt{Hello : Shaurya}
+
+A module is loaded only once, regardless of the number of times it is imported. This prevents the module execution from happening repeatedly, if multiple imports occur.
+
+\subsection{The from\ldots{}import Statement}
+\label{sec:orgce592e6}
+Python's from statement lets you import specific attributes from a module into the current namespace. The from\ldots{}import has the following syntax −
+
+\texttt{from modname import name1[, name2[, ... nameN]]}
+
+For example, to import the function fibonacci from the module fib, use the following statement −
+
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\textcolor[HTML]{9ca0a4}{\# Fibonacci numbers module}
+
+\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{fib}(\textcolor[HTML]{6a1868}{n}): \textcolor[HTML]{9ca0a4}{\# return Fibonacci series up to n}
+   \EFv{result} \textcolor[HTML]{e45649}{=} []
+   \textcolor[HTML]{6a1868}{a}, \textcolor[HTML]{6a1868}{b} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{0}, \textcolor[HTML]{b751b6}{1}
+   \textcolor[HTML]{e45649}{while} b \textcolor[HTML]{e45649}{<} \EFv{n}:
+      result.\textcolor[HTML]{4078f2}{\textbf{\textit{append}}}(b)
+      \textcolor[HTML]{6a1868}{a}, \textcolor[HTML]{6a1868}{b} \textcolor[HTML]{e45649}{=} b, a \textcolor[HTML]{e45649}{+} b
+   \textcolor[HTML]{e45649}{return} result
+\end{Verbatim}
+\end{Code}
+
+Now in a python interpreter, run the following
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{e45649}{>>}\textcolor[HTML]{e45649}{>} \textcolor[HTML]{e45649}{from} fib \textcolor[HTML]{e45649}{import} fib
+\textcolor[HTML]{e45649}{>>}\textcolor[HTML]{e45649}{>} \textcolor[HTML]{4078f2}{\textbf{fib}}(\textcolor[HTML]{b751b6}{100})
+[\textcolor[HTML]{b751b6}{1}, \textcolor[HTML]{b751b6}{1}, \textcolor[HTML]{b751b6}{2}, \textcolor[HTML]{b751b6}{3}, \textcolor[HTML]{b751b6}{5}, \textcolor[HTML]{b751b6}{8}, \textcolor[HTML]{b751b6}{13}, \textcolor[HTML]{b751b6}{21}, \textcolor[HTML]{b751b6}{34}, \textcolor[HTML]{b751b6}{55}, \textcolor[HTML]{b751b6}{89}]
+\end{Verbatim}
+\end{Code}
+
+This statement does not import the entire module fib into the current namespace; it just introduces the item fibonacci from the module fib into the global symbol table of the importing module.
+
+\subsection{The from\ldots{}import * Statement}
+\label{sec:org5c0a30e}
+It is also possible to import all the names from a module into the current
+namespace by using the \texttt{from ... import *} statement
+
+\subsection{From modname import *}
+\label{sec:orge3b63bf}
+This provides an easy way to import all the items from a module into the current namespace; however, this statement should be used sparingly.
 
 \section{Assignment}
-\label{sec:orgb3acef2}
-\begin{enumerate}
-\item Create a file named \texttt{assignment2.py}
-\item Write some python code that defines a global variable, defines a function
-that prints \texttt{Hello World} + the variable, and call that function
-\end{enumerate}
+\label{sec:orgd57ae55}
+This week, your assignment is to create a module which has a function to print a
+string, then import that module in another file and call the function
 \end{document}

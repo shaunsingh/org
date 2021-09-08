@@ -1,0 +1,690 @@
+% Created 2021-09-07 Tue 00:23
+% Intended LaTeX compiler: pdflatex
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
+\setmainfont[Ligatures=TeX]{Alegreya}
+\setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
+% features: (acronym par-sep engraved-code-setup engraved-code)
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+\usepackage{fvextra}
+\fvset{
+  commandchars=\\\{\},
+  highlightcolor=white!95!black!80!blue,
+  breaklines=true,
+  breaksymbol=\color{white!60!black}\tiny\ensuremath{\hookrightarrow}}
+\renewcommand\theFancyVerbLine{\footnotesize\color{black!40!white}\arabic{FancyVerbLine}}
+
+\definecolor{codebackground}{HTML}{f7f7f7}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+% TODO have code boxes keep line vertical alignment
+\usepackage[breakable,xparse]{tcolorbox}
+\DeclareTColorBox[]{Code}{o}%
+{colback=codebackground, colframe=codeborder,
+  fontupper=\footnotesize,
+  colupper=EFD,
+  IfNoValueTF={#1}%
+  {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
+    boxrule=0.5pt, left=2pt}%
+  {boxsep=2.5pt, arc=0pt, outer arc=0pt,
+    boxrule=0pt, leftrule=1.5pt, left=0.5pt},
+  right=2pt, top=1pt, bottom=0.5pt,
+  breakable}
+
+\definecolor{EFD}{HTML}{383a42}
+\definecolor{EfD}{HTML}{fafafa}
+\newcommand{\EFD}[1]{\colorbox{EfD}{\textcolor{EFD}{#1}}} % default
+\definecolor{EFk}{HTML}{e45649}
+\newcommand{\EFk}[1]{\textcolor{EFk}{#1}} % font-lock-keyword-face
+\definecolor{EFd}{HTML}{84888b}
+\newcommand{\EFd}[1]{\textcolor{EFd}{\textit{#1}}} % font-lock-doc-face
+\definecolor{EFt}{HTML}{986801}
+\newcommand{\EFt}[1]{\textcolor{EFt}{#1}} % font-lock-type-face
+\definecolor{EFs}{HTML}{50a14f}
+\newcommand{\EFs}[1]{\textcolor{EFs}{#1}} % font-lock-string-face
+\definecolor{EFw}{HTML}{986801}
+\newcommand{\EFw}[1]{\textcolor{EFw}{#1}} % font-lock-warning-face
+\definecolor{EFb}{HTML}{a626a4}
+\newcommand{\EFb}[1]{\textcolor{EFb}{#1}} % font-lock-builtin-face
+\definecolor{EFct}{HTML}{9ca0a4}
+\newcommand{\EFct}[1]{\textcolor{EFct}{#1}} % font-lock-comment-face
+\definecolor{EFc}{HTML}{b751b6}
+\newcommand{\EFc}[1]{\textcolor{EFc}{#1}} % font-lock-constant-face
+\definecolor{EFpp}{HTML}{4078f2}
+\newcommand{\EFpp}[1]{\textcolor{EFpp}{\textbf{#1}}} % font-lock-preprocessor-face
+\definecolor{EFnc}{HTML}{4078f2}
+\newcommand{\EFnc}[1]{\textcolor{EFnc}{\textbf{#1}}} % font-lock-negation-char-face
+\definecolor{EFv}{HTML}{6a1868}
+\newcommand{\EFv}[1]{\textcolor{EFv}{#1}} % font-lock-variable-name-face
+\definecolor{EFf}{HTML}{a626a4}
+\newcommand{\EFf}[1]{\textcolor{EFf}{#1}} % font-lock-function-name-face
+\definecolor{EFcd}{HTML}{9ca0a4}
+\newcommand{\EFcd}[1]{\textcolor{EFcd}{#1}} % font-lock-comment-delimiter-face
+\definecolor{EFrc}{HTML}{4078f2}
+\newcommand{\EFrc}[1]{\textcolor{EFrc}{\textbf{#1}}} % font-lock-regexp-grouping-construct
+\definecolor{EFrb}{HTML}{4078f2}
+\newcommand{\EFrb}[1]{\textcolor{EFrb}{\textbf{#1}}} % font-lock-regexp-grouping-backslash
+\definecolor{Efob}{HTML}{e7e7e7}
+\newcommand{\EFob}[1]{\colorbox{Efob}{#1}} % org-block
+\definecolor{EFhn}{HTML}{da8548}
+\newcommand{\EFhn}[1]{\textcolor{EFhn}{\textbf{#1}}} % highlight-numbers-number
+\definecolor{EFhq}{HTML}{4078f2}
+\newcommand{\EFhq}[1]{\textcolor{EFhq}{#1}} % highlight-quoted-quote
+\definecolor{EFhs}{HTML}{986801}
+\newcommand{\EFhs}[1]{\textcolor{EFhs}{#1}} % highlight-quoted-symbol
+\definecolor{EFrdi}{HTML}{4078f2}
+\newcommand{\EFrdi}[1]{\textcolor{EFrdi}{#1}} % rainbow-delimiters-depth-1-face
+\definecolor{EFrdii}{HTML}{a626a4}
+\newcommand{\EFrdii}[1]{\textcolor{EFrdii}{#1}} % rainbow-delimiters-depth-2-face
+\definecolor{EFrdiii}{HTML}{50a14f}
+\newcommand{\EFrdiii}[1]{\textcolor{EFrdiii}{#1}} % rainbow-delimiters-depth-3-face
+\definecolor{EFrdiv}{HTML}{b751b6}
+\newcommand{\EFrdiv}[1]{\textcolor{EFrdiv}{#1}} % rainbow-delimiters-depth-4-face
+\definecolor{EFrdv}{HTML}{4db5bd}
+\newcommand{\EFrdv}[1]{\textcolor{EFrdv}{#1}} % rainbow-delimiters-depth-5-face
+\definecolor{EFrdvi}{HTML}{4078f2}
+\newcommand{\EFrdvi}[1]{\textcolor{EFrdvi}{#1}} % rainbow-delimiters-depth-6-face
+\definecolor{EFrdvii}{HTML}{a626a4}
+\newcommand{\EFrdvii}[1]{\textcolor{EFrdvii}{#1}} % rainbow-delimiters-depth-7-face
+\definecolor{EFrdiix}{HTML}{50a14f}
+\newcommand{\EFrdiix}[1]{\textcolor{EFrdiix}{#1}} % rainbow-delimiters-depth-8-face
+\definecolor{EFrdix}{HTML}{b751b6}
+\newcommand{\EFrdix}[1]{\textcolor{EFrdix}{#1}} % rainbow-delimiters-depth-9-face
+% end features
+
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{fafafa}
+\definecolor{ofg}{HTML}{383a42}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{4078f2}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
+
+\definecolor{documentTitle}{HTML}{a626a4}
+\definecolor{documentInfo}{HTML}{a626a4}
+\definecolor{level1}{HTML}{e45649}
+\definecolor{level2}{HTML}{da8548}
+\definecolor{level3}{HTML}{b751b6}
+\definecolor{level4}{HTML}{6f99f5}
+\definecolor{level5}{HTML}{bc5cba}
+\definecolor{level6}{HTML}{9fbbf8}
+\definecolor{level7}{HTML}{d292d1}
+\definecolor{level8}{HTML}{d8e4fc}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+% textual elements
+
+\definecolor{link}{HTML}{4078f2}
+\definecolor{cite}{HTML}{800080}
+\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{code}{HTML}{da8548}
+\definecolor{verbatim}{HTML}{50a14f}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{fafafa}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+%% end customisations
+
+\author{Shaurya Singh}
+\date{}
+\title{CoderZ Summer Assignment \#3}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
+\hypersetup{
+  pdfauthor={Shaurya Singh},
+  pdftitle={CoderZ Summer Assignment \#3},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
+\begin{document}
+
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+Hello everyone! This is the third assignment you will receive this summer. By this
+point, all of you should have received and submitted Assignment \#1 as well as
+Assignment \#2, which had you learn the basics of python and variables . If you
+still need help, feel free to email me at shaunsingh0207@gmail.com.
+
+In Assignment \#3, you will learn how to use
+operators, descision making, and loops
+
+\section{Operators}
+\label{sec:org5f6c26d}
+Operators are constructs which manipulate the value of operands. Operands are
+the numbers or values you are acting on, and the operator is what you're doing
+to them
+
+Consider the expression 6 + 10 = 16. Here, 6 and 10 are called the operands and + is called the operator.
+
+\subsection{Types of Operator}
+\label{sec:org993bed8}
+You will need to know the following operators from the python language:
+\begin{itemize}
+\item Arithmetic Operators
+\item Comparison (Relational) Operators
+\item Assignment Operators
+\item Logical Operators
+\end{itemize}
+
+\subsection{Arithmetic Operators}
+\label{sec:org4111780}
+Arithmetic Operators are the ones you commonly use in math. This consists of
+addition, subtraction, multiplication, division, modulus, exponents, and floor
+division. An example is below:
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\EFv{a} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{21}
+\EFv{b} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{10}
+\EFv{c} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{0}
+
+\EFv{c} \textcolor[HTML]{e45649}{=} a \textcolor[HTML]{e45649}{+} b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 1 - Value of c is "}, c)
+
+\EFv{c} \textcolor[HTML]{e45649}{=} a \textcolor[HTML]{e45649}{-} b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 2 - Value of c is "}, c )
+
+\EFv{c} \textcolor[HTML]{e45649}{=} a \textcolor[HTML]{e45649}{*} b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 3 - Value of c is "}, c)
+
+\EFv{c} \textcolor[HTML]{e45649}{=} a \textcolor[HTML]{e45649}{/} b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 4 - Value of c is "}, c )
+
+\EFv{c} \textcolor[HTML]{e45649}{=} a \textcolor[HTML]{e45649}{\%} b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 5 - Value of c is "}, c)
+
+\EFv{a} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{2}
+\EFv{b} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{3}
+\EFv{c} \textcolor[HTML]{e45649}{=} a\textcolor[HTML]{e45649}{**}b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 6 - Value of c is "}, c)
+
+\EFv{a} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{10}
+\EFv{b} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{5}
+\EFv{c} \textcolor[HTML]{e45649}{=} a\textcolor[HTML]{e45649}{//}b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 7 - Value of c is "}, c)
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+Line 1 - Value of c is  31
+Line 2 - Value of c is  11
+Line 3 - Value of c is  210
+Line 4 - Value of c is  2.1
+Line 5 - Value of c is  1
+Line 6 - Value of c is  8
+Line 7 - Value of c is  2
+\end{verbatim}
+
+\subsection{Comparison Operators}
+\label{sec:org7165f22}
+Comparison operators compare values. These consist of equal, not equal, greater,
+less, greater/equal, less/equal. An example is below:
+
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\EFv{a} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{21}
+\EFv{b} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{10}
+
+\textcolor[HTML]{e45649}{if} ( a \textcolor[HTML]{e45649}{==} b ):
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 1 - a is equal to b"})
+\textcolor[HTML]{e45649}{else}:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 1 - a is not equal to b"})
+
+\textcolor[HTML]{e45649}{if} ( a \textcolor[HTML]{e45649}{!=} b ):
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 2 - a is not equal to b"})
+\textcolor[HTML]{e45649}{else}:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 2 - a is equal to b"})
+
+\textcolor[HTML]{e45649}{if} ( a \textcolor[HTML]{e45649}{<} b ):
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 3 - a is less than b"} )
+\textcolor[HTML]{e45649}{else}:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 3 - a is not less than b"})
+
+\textcolor[HTML]{e45649}{if} ( a \textcolor[HTML]{e45649}{>} b ):
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 4 - a is greater than b"})
+\textcolor[HTML]{e45649}{else}:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 4 - a is not greater than b"})
+
+\textcolor[HTML]{6a1868}{a},\textcolor[HTML]{6a1868}{b} \textcolor[HTML]{e45649}{=} b,a \textcolor[HTML]{9ca0a4}{\#values of a and b swapped. a becomes 10, b becomes 21}
+
+\textcolor[HTML]{e45649}{if} ( a \textcolor[HTML]{e45649}{<=} b ):
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 5 - a is either less than or equal to  b"})
+\textcolor[HTML]{e45649}{else}:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 5 - a is neither less than nor equal to  b"})
+
+\textcolor[HTML]{e45649}{if} ( b \textcolor[HTML]{e45649}{>=} a ):
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 6 - b is either greater than  or equal to b"})
+\textcolor[HTML]{e45649}{else}:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 6 - b is neither greater than  nor equal to b"})
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+Line 1 - a is not equal to b
+Line 2 - a is not equal to b
+Line 3 - a is not less than b
+Line 4 - a is greater than b
+Line 5 - a is either less than or equal to  b
+Line 6 - b is either greater than  or equal to b
+\end{verbatim}
+
+\subsection{Assignment operators}
+\label{sec:orgcc2aa28}
+Assignment operators assign values. These consist of assign, add and assign,
+subtract and assign, multiply and assign, divide and assign, modulus and assign,
+exponent and assign. The only one you need to know is assign, the rest are a
+combination of the arithmatic operators and assign. An example is below
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\EFv{a} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{21}
+\EFv{b} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{10}
+\EFv{c} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{0}
+
+\EFv{c} \textcolor[HTML]{e45649}{=} a \textcolor[HTML]{e45649}{+} b
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 1 - Value of c is "}, c)
+
+\EFv{c} \textcolor[HTML]{e45649}{+=} a
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 2 - Value of c is "}, c )
+
+\EFv{c} \textcolor[HTML]{e45649}{*=} a
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 3 - Value of c is "}, c )
+
+\EFv{c} \textcolor[HTML]{e45649}{/=} a
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 4 - Value of c is "}, c )
+
+\EFv{c}  \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{2}
+\EFv{c} \textcolor[HTML]{e45649}{\%=} a
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 5 - Value of c is "}, c)
+
+\EFv{c} \textcolor[HTML]{e45649}{**=} a
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 6 - Value of c is "}, c)
+
+\EFv{c} \textcolor[HTML]{e45649}{//=} a
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Line 7 - Value of c is "}, c)
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+Line 1 - Value of c is  31
+Line 2 - Value of c is  52
+Line 3 - Value of c is  1092
+Line 4 - Value of c is  52.0
+Line 5 - Value of c is  2
+Line 6 - Value of c is  2097152
+Line 7 - Value of c is  99864
+\end{verbatim}
+
+\subsection{Logical Operators}
+\label{sec:org95c2b49}
+A logical operator is a symbol or word used to connect two or more expressions
+such that the value of the compound expression produced depends only on that of
+the original expressions and on the meaning of the operator. These consist of
+AND, OR, and NOT.
+
+\section{Descision making}
+\label{sec:orgbb8c222}
+Decision-making is the anticipation of conditions occurring during the execution of a program and specified actions taken according to the conditions.
+
+Decision structures evaluate multiple expressions, which produce TRUE or FALSE
+as the outcome. You need to determine which action to take and which statements
+to execute if the outcome is TRUE or FALSE otherwise
+
+Python assumes any non-zero and non-null values are true, and any zero or null
+values as false. Python has the following types of decision making statements,
+as do many other languages:
+
+\subsection{If statement}
+\label{sec:orga5f8c92}
+An if statement consists of a bolean experission followed by one or more
+statements. It can execute code depending on the result of the statement
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\EFv{var1} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{100}
+\textcolor[HTML]{e45649}{if} var1:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"1 - Got a true expression value"})
+   \textcolor[HTML]{a626a4}{\textbf{print}} (var1)
+
+\EFv{var2} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{0}
+\textcolor[HTML]{e45649}{if} var2:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"2 - Got a true expression value"})
+   \textcolor[HTML]{a626a4}{\textbf{print}} (var2)
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Good bye!"})
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+1 - Got a true expression value
+100
+Good bye!
+\end{verbatim}
+
+\subsection{If else statement}
+\label{sec:org45e47ca}
+An if statement can also be followed by an else statement, which executes if the
+expression returns FALSE
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\EFv{amount} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{int}}(\textcolor[HTML]{b751b6}{100})
+
+\textcolor[HTML]{e45649}{if} amount\textcolor[HTML]{e45649}{<}\textcolor[HTML]{b751b6}{1000}:
+   \EFv{discount} \textcolor[HTML]{e45649}{=} amount\textcolor[HTML]{e45649}{*}\textcolor[HTML]{b751b6}{0.05}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Discount"},discount)
+\textcolor[HTML]{e45649}{else}:
+   discount \textcolor[HTML]{e45649}{=} amount\textcolor[HTML]{e45649}{*}\textcolor[HTML]{b751b6}{0.10}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Discount"},discount)
+
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Net payable:"},amount\textcolor[HTML]{e45649}{-}discount)
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+Discount 5.0
+Net payable: 95.0
+\end{verbatim}
+
+\subsection{Nested if statements}
+\label{sec:orgc64f3d8}
+You can use if statements (and if else statements) within other if and if else
+statements too!
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\# !/usr/bin/python3}
+
+\EFv{num} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{int}}(\textcolor[HTML]{b751b6}{100})
+\textcolor[HTML]{e45649}{if} num\textcolor[HTML]{e45649}{\%}\textcolor[HTML]{b751b6}{2} \textcolor[HTML]{e45649}{==} \textcolor[HTML]{b751b6}{0}:
+   \textcolor[HTML]{e45649}{if} num\textcolor[HTML]{e45649}{\%}\textcolor[HTML]{b751b6}{3} \textcolor[HTML]{e45649}{==} \textcolor[HTML]{b751b6}{0}:
+      \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Divisible by 3 and 2"})
+   \textcolor[HTML]{e45649}{else}:
+      \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"divisible by 2 not divisible by 3"})
+\textcolor[HTML]{e45649}{else}:
+   \textcolor[HTML]{e45649}{if} num\textcolor[HTML]{e45649}{\%}\textcolor[HTML]{b751b6}{3} \textcolor[HTML]{e45649}{==} \textcolor[HTML]{b751b6}{0}:
+      \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"divisible by 3 not divisible by 2"})
+   \textcolor[HTML]{e45649}{else}:
+      \textcolor[HTML]{a626a4}{\textbf{print}}  (\textcolor[HTML]{50a14f}{"not Divisible by 2 not divisible by 3"})
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+divisible by 2 not divisible by 3
+\end{verbatim}
+
+\section{Loops}
+\label{sec:org9c33d74}
+In general, statements are executed sequentially − The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.
+
+Programming languages provide various control structures that allow more complicated execution paths.
+
+A loop statement allows us to execute a statement or group of statements
+multiple times.
+
+Like If statements, we can also use loops inside other while or for loops!
+
+In python, we have the following types of loops
+
+\subsection{While loop}
+\label{sec:orgbcd286f}
+While loops repeat a statement or a group of statements while a given condition
+is true. An example is
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\EFv{count} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{0}
+\textcolor[HTML]{e45649}{while} (count \textcolor[HTML]{e45649}{<} \textcolor[HTML]{b751b6}{4}):
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'The count is:'}, count)
+   count \textcolor[HTML]{e45649}{=} count \textcolor[HTML]{e45649}{+} \textcolor[HTML]{b751b6}{1}
+
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Good bye!"})
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+The count is: 0
+The count is: 1
+The count is: 2
+The count is: 3
+Good bye!
+\end{verbatim}
+
+\subsection{For loop}
+\label{sec:org8103c30}
+For loops execute a sequence of statements multiple times and abbreviate the
+code that manages the loop variable. An example is traversing a sequence of
+strings or a list sequence
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{letter} \textcolor[HTML]{e45649}{in} \textcolor[HTML]{50a14f}{'Python'}:     \textcolor[HTML]{9ca0a4}{\# traversal of a string sequence}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'Current Letter :'}, letter)
+\textcolor[HTML]{a626a4}{\textbf{print}}()
+fruits \textcolor[HTML]{e45649}{=} [\textcolor[HTML]{50a14f}{'banana'}, \textcolor[HTML]{50a14f}{'apple'},  \textcolor[HTML]{50a14f}{'mango'}]
+
+\textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{fruit} \textcolor[HTML]{e45649}{in} fruits:        \textcolor[HTML]{9ca0a4}{\# traversal of List sequence}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'Current fruit :'}, fruit)
+
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Good bye!"})
+\end{Verbatim}
+\end{Code}
+
+\begin{Code}[alt]
+\begin{verbatim}
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : h
+Current Letter : o
+Current Letter : n
+
+Current fruit : banana
+Current fruit : apple
+Current fruit : mango
+Good bye!
+\end{verbatim}
+\end{Code}
+
+\subsection{Loop Control Statements}
+\label{sec:org1816013}
+Loop control statemenst change the execution of a loop. We can break, continue,
+or pass something to a loop. Examples of these are below:
+
+Break: Terminates the loop
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{letter} \textcolor[HTML]{e45649}{in} \textcolor[HTML]{50a14f}{'Python'}:     \textcolor[HTML]{9ca0a4}{\# First Example}
+   \textcolor[HTML]{e45649}{if} letter \textcolor[HTML]{e45649}{==} \textcolor[HTML]{50a14f}{'h'}:
+      \textcolor[HTML]{e45649}{break}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'Current Letter :'}, letter)
+
+var \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{10}                    \textcolor[HTML]{9ca0a4}{\# Second Example}
+\textcolor[HTML]{e45649}{while} var \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{0}:
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'Current variable value :'}, var)
+   var \textcolor[HTML]{e45649}{=} var \textcolor[HTML]{e45649}{-}\textcolor[HTML]{b751b6}{1}
+   \textcolor[HTML]{e45649}{if} var \textcolor[HTML]{e45649}{==} \textcolor[HTML]{b751b6}{5}:
+      \textcolor[HTML]{e45649}{break}
+
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Good bye!"})
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current variable value : 10
+Current variable value : 9
+Current variable value : 8
+Current variable value : 7
+Current variable value : 6
+Good bye!
+\end{verbatim}
+
+
+Continue: Causes the loop to skip the rest of its body and retest
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{letter} \textcolor[HTML]{e45649}{in} \textcolor[HTML]{50a14f}{'Python'}:     \textcolor[HTML]{9ca0a4}{\# First Example}
+   \textcolor[HTML]{e45649}{if} letter \textcolor[HTML]{e45649}{==} \textcolor[HTML]{50a14f}{'h'}:
+      \textcolor[HTML]{e45649}{continue}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'Current Letter :'}, letter)
+
+var \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{10}                    \textcolor[HTML]{9ca0a4}{\# Second Example}
+\textcolor[HTML]{e45649}{while} var \textcolor[HTML]{e45649}{>} \textcolor[HTML]{b751b6}{0}:
+   var \textcolor[HTML]{e45649}{=} var \textcolor[HTML]{e45649}{-}\textcolor[HTML]{b751b6}{1}
+   \textcolor[HTML]{e45649}{if} var \textcolor[HTML]{e45649}{==} \textcolor[HTML]{b751b6}{5}:
+      \textcolor[HTML]{e45649}{continue}
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'Current variable value :'}, var)
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Good bye!"})
+\end{Verbatim}
+\end{Code}
+
+\begin{Code}[alt]
+\begin{verbatim}
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : o
+Current Letter : n
+Current variable value : 9
+Current variable value : 8
+Current variable value : 7
+Current variable value : 6
+Current variable value : 4
+Current variable value : 3
+Current variable value : 2
+Current variable value : 1
+Current variable value : 0
+Good bye!
+\end{verbatim}
+\end{Code}
+
+Pass:
+\begin{Code}
+\begin{Verbatim}[]
+\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/python3}
+
+\textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{letter} \textcolor[HTML]{e45649}{in} \textcolor[HTML]{50a14f}{'Python'}:
+   \textcolor[HTML]{e45649}{if} letter \textcolor[HTML]{e45649}{==} \textcolor[HTML]{50a14f}{'h'}:
+      \textcolor[HTML]{e45649}{pass}
+      \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'This is pass block'})
+   \textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{'Current Letter :'}, letter)
+
+\textcolor[HTML]{a626a4}{\textbf{print}} (\textcolor[HTML]{50a14f}{"Good bye!"})
+\end{Verbatim}
+\end{Code}
+
+\begin{verbatim}
+Current Letter : P
+Current Letter : y
+Current Letter : t
+This is pass block
+Current Letter : h
+Current Letter : o
+Current Letter : n
+Good bye!
+\end{verbatim}
+\section{Assignment}
+\label{sec:org36c0360}
+This week, your assignment is to create a program which
+\begin{enumerate}
+\item Asks the user for input on three variables (x, y, and z)
+\item Multiplies the first two variables
+\item Compares the product of step 2 with the third value (if statement)
+\item Prints
+\texttt{Variable x+y is greater than z}
+if its greater, else it should print
+\texttt{Variable z is greater than x+y}
+if its less
+\end{enumerate}
+\end{document}

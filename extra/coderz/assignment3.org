@@ -1,126 +1,424 @@
 #+title: CoderZ Summer Assignment #3
 #+author: Shaurya Singh
+#+OPTIONS: date:nil
 #+startup: preview
 #+startup: fold
 #+options: toc:2
 #+latex_class: chameleon
 
-Hello everyone! This is the second assignment you will receive this summer. By this
-point, all of you should have received and submitted Assignment #1, which had
-you set up VSCode for Python programming. If you still need help, feel free to
-email me at shaunsingh0207@gmail.com.
+Hello everyone! This is the third assignment you will receive this summer. By this
+point, all of you should have received and submitted Assignment #1 as well as
+Assignment #2, which had you learn the basics of python and variables . If you
+still need help, feel free to email me at shaunsingh0207@gmail.com.
 
-In Assignment #2, you will learn the basics of Python 3 and how to use variables
+In Assignment #3, you will learn how to use
+operators, descision making, and loops
 
-* Basics
-Python is an interpreted programming language. You write =.py= files, in a text
-editor (such as VSCode), which are interpreted by the python interpreter, and
-executed. As with every language, Python has its own syntax.
+* Operators
+Operators are constructs which manipulate the value of operands. Operands are
+the numbers or values you are acting on, and the operator is what you're doing
+to them
 
-Firstly, before you get started with this guide, create a =robotics1.py= file,
-this is where you will be writing the examples below, and executing them
+Consider the expression 6 + 10 = 16. Here, 6 and 10 are called the operands and + is called the operator.
 
-** Indentation
-Indentation refers to the spaces at the beginning of a code line. In other
-languages, you usually have brackets or parenthesis telling you where a block of
-code starts and ends. For example, in java we have the following
-#+begin_src java
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello World");
-  }
-}
-#+end_src
-Notice the use of ={}= to tell you where each part of the code starts and ends.
-Instead of brackets, in python we rely on just indentation. For example, if we
-want to do an if statement, we would write something like
-#+begin_src python
-if 5 > 2:
-  print("Five is greater than two!")
-#+end_src
- Notice the spaces in front of print. If we remove those spaces, and write
-#+begin_src python
-if 5 > 2:
-print("Five is greater than two!")
-#+end_src
- It will result in an error. Remember the number of spaces can be any number (I
- choose 2), but it must remain the same throughout the python file.
+** Types of Operator
+You will need to know the following operators from the python language:
+- Arithmetic Operators
+- Comparison (Relational) Operators
+- Assignment Operators
+- Logical Operators
 
-** Comments
-As with any language, you can (and should) be commenting your code. Comments in
-python start with a # character, which will mark the rest of the line as a comment
-#+begin_src python
-# Compare 5 to 2
-if 5 > 2:
-  print("Five is greater than two!")
-#+end_src
-Comments can also be added to the ends of lines.
-#+begin_src python
-if 5 > 2:
-  print("Five is greater than two!") # Compare 5 to 2
-#+end_src
-Lastly, you can have multiline comments if needed
-#+begin_src python
-"""
-Line #1
-Line #2
-"""
-if 5 > 2:
-  print("Five is greater than two!") # Compare 5 to 2
+** Arithmetic Operators
+Arithmetic Operators are the ones you commonly use in math. This consists of
+addition, subtraction, multiplication, division, modulus, exponents, and floor
+division. An example is below:
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+a = 21
+b = 10
+c = 0
+
+c = a + b
+print ("Line 1 - Value of c is ", c)
+
+c = a - b
+print ("Line 2 - Value of c is ", c )
+
+c = a * b
+print ("Line 3 - Value of c is ", c)
+
+c = a / b
+print ("Line 4 - Value of c is ", c )
+
+c = a % b
+print ("Line 5 - Value of c is ", c)
+
+a = 2
+b = 3
+c = a**b
+print ("Line 6 - Value of c is ", c)
+
+a = 10
+b = 5
+c = a//b
+print ("Line 7 - Value of c is ", c)
 #+end_src
 
-* Variables
-A variable is a term that represents an value. You can use variables for storing
-information for later usage. In Python, you assign a variable a value using the
-= sign. You can also assign multiple variables at once
-#+begin_src python
-x = 5
-y = "John"
-x, y, z = "Orange", "Banana", "Grape"
-#+end_src
-There are also different data types that we need to be aware of. If you want to
-specific the data type of a variable, you can cast it.
-#+begin_src python
-x = str(3) #x is a string, and will be '3'
-y = int(3) #y is a integer, and will be 3
-z = float(3) #z is a float, and will be 3.0
-#+end_src
-You can also get the data type of a variable, using =type()= .
-#+begin_src python
-x = str(3) #x is a string, and will be '3'
-print(type(x))
-#+end_src
-Lastly, you can define values in a list and unpack them to variables later
-#+begin_src python
-fruits = ["apple", "banana", "Grape"]
-x, y, z = fruits
-#+end_src
- Remember that variables are case sensitive, so =John= and =john= are two different
- variables. Also keep in mind you can use single quotes or double quotes. In
- robotics, we prefer to write variables in the camelCase format, where each word
- except the first starts with a capital letter, like =myVariableName=.
+#+RESULTS:
+: Line 1 - Value of c is  31
+: Line 2 - Value of c is  11
+: Line 3 - Value of c is  210
+: Line 4 - Value of c is  2.1
+: Line 5 - Value of c is  1
+: Line 6 - Value of c is  8
+: Line 7 - Value of c is  2
 
-** Global Variables
-Variables created outside of a function are called global variables. Global
-variables can be used both inside of functions and outside
-#+begin_src python
-x = "global"
-def myfunc():
-    print("this variable is " + x)
-myfunc()
-#+end_src
-In this case, the variable x is a global variable
-#+begin_src python
-def myfunc():
-  x = "global"
-  print("this variable is " + x)
+** Comparison Operators
+Comparison operators compare values. These consist of equal, not equal, greater,
+less, greater/equal, less/equal. An example is below:
 
-myfunc()
-print("this variable is " + x)
-#+end_src
-In this case it isn't, and so the last print statement won't function
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
 
+a = 21
+b = 10
+
+if ( a == b ):
+   print ("Line 1 - a is equal to b")
+else:
+   print ("Line 1 - a is not equal to b")
+
+if ( a != b ):
+   print ("Line 2 - a is not equal to b")
+else:
+   print ("Line 2 - a is equal to b")
+
+if ( a < b ):
+   print ("Line 3 - a is less than b" )
+else:
+   print ("Line 3 - a is not less than b")
+
+if ( a > b ):
+   print ("Line 4 - a is greater than b")
+else:
+   print ("Line 4 - a is not greater than b")
+
+a,b = b,a #values of a and b swapped. a becomes 10, b becomes 21
+
+if ( a <= b ):
+   print ("Line 5 - a is either less than or equal to  b")
+else:
+   print ("Line 5 - a is neither less than nor equal to  b")
+
+if ( b >= a ):
+   print ("Line 6 - b is either greater than  or equal to b")
+else:
+   print ("Line 6 - b is neither greater than  nor equal to b")
+#+end_src
+
+#+RESULTS:
+: Line 1 - a is not equal to b
+: Line 2 - a is not equal to b
+: Line 3 - a is not less than b
+: Line 4 - a is greater than b
+: Line 5 - a is either less than or equal to  b
+: Line 6 - b is either greater than  or equal to b
+
+** Assignment operators
+Assignment operators assign values. These consist of assign, add and assign,
+subtract and assign, multiply and assign, divide and assign, modulus and assign,
+exponent and assign. The only one you need to know is assign, the rest are a
+combination of the arithmatic operators and assign. An example is below
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+a = 21
+b = 10
+c = 0
+
+c = a + b
+print ("Line 1 - Value of c is ", c)
+
+c += a
+print ("Line 2 - Value of c is ", c )
+
+c *= a
+print ("Line 3 - Value of c is ", c )
+
+c /= a
+print ("Line 4 - Value of c is ", c )
+
+c  = 2
+c %= a
+print ("Line 5 - Value of c is ", c)
+
+c **= a
+print ("Line 6 - Value of c is ", c)
+
+c //= a
+print ("Line 7 - Value of c is ", c)
+#+end_src
+
+#+RESULTS:
+: Line 1 - Value of c is  31
+: Line 2 - Value of c is  52
+: Line 3 - Value of c is  1092
+: Line 4 - Value of c is  52.0
+: Line 5 - Value of c is  2
+: Line 6 - Value of c is  2097152
+: Line 7 - Value of c is  99864
+
+** Logical Operators
+A logical operator is a symbol or word used to connect two or more expressions
+such that the value of the compound expression produced depends only on that of
+the original expressions and on the meaning of the operator. These consist of
+AND, OR, and NOT.
+
+* Descision making
+Decision-making is the anticipation of conditions occurring during the execution of a program and specified actions taken according to the conditions.
+
+Decision structures evaluate multiple expressions, which produce TRUE or FALSE
+as the outcome. You need to determine which action to take and which statements
+to execute if the outcome is TRUE or FALSE otherwise
+
+Python assumes any non-zero and non-null values are true, and any zero or null
+values as false. Python has the following types of decision making statements,
+as do many other languages:
+
+** If statement
+An if statement consists of a bolean experission followed by one or more
+statements. It can execute code depending on the result of the statement
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+var1 = 100
+if var1:
+   print ("1 - Got a true expression value")
+   print (var1)
+
+var2 = 0
+if var2:
+   print ("2 - Got a true expression value")
+   print (var2)
+print ("Good bye!")
+#+end_src
+
+#+RESULTS:
+: 1 - Got a true expression value
+: 100
+: Good bye!
+
+** If else statement
+An if statement can also be followed by an else statement, which executes if the
+expression returns FALSE
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+amount = int(100)
+
+if amount<1000:
+   discount = amount*0.05
+   print ("Discount",discount)
+else:
+   discount = amount*0.10
+   print ("Discount",discount)
+
+print ("Net payable:",amount-discount)
+#+end_src
+
+#+RESULTS:
+: Discount 5.0
+: Net payable: 95.0
+
+** Nested if statements
+You can use if statements (and if else statements) within other if and if else
+statements too!
+#+begin_src python :results output :exports both
+# !/usr/bin/python3
+
+num = int(100)
+if num%2 == 0:
+   if num%3 == 0:
+      print ("Divisible by 3 and 2")
+   else:
+      print ("divisible by 2 not divisible by 3")
+else:
+   if num%3 == 0:
+      print ("divisible by 3 not divisible by 2")
+   else:
+      print  ("not Divisible by 2 not divisible by 3")
+#+end_src
+
+#+RESULTS:
+: divisible by 2 not divisible by 3
+
+* Loops
+ In general, statements are executed sequentially − The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.
+
+Programming languages provide various control structures that allow more complicated execution paths.
+
+A loop statement allows us to execute a statement or group of statements
+multiple times.
+
+Like If statements, we can also use loops inside other while or for loops!
+
+In python, we have the following types of loops
+
+** While loop
+While loops repeat a statement or a group of statements while a given condition
+is true. An example is
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+count = 0
+while (count < 4):
+   print ('The count is:', count)
+   count = count + 1
+
+print ("Good bye!")
+#+end_src
+
+#+RESULTS:
+: The count is: 0
+: The count is: 1
+: The count is: 2
+: The count is: 3
+: Good bye!
+
+** For loop
+For loops execute a sequence of statements multiple times and abbreviate the
+code that manages the loop variable. An example is traversing a sequence of
+strings or a list sequence
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+for letter in 'Python':     # traversal of a string sequence
+   print ('Current Letter :', letter)
+print()
+fruits = ['banana', 'apple',  'mango']
+
+for fruit in fruits:        # traversal of List sequence
+   print ('Current fruit :', fruit)
+
+print ("Good bye!")
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : h
+Current Letter : o
+Current Letter : n
+
+Current fruit : banana
+Current fruit : apple
+Current fruit : mango
+Good bye!
+#+end_example
+
+** Loop Control Statements
+Loop control statemenst change the execution of a loop. We can break, continue,
+or pass something to a loop. Examples of these are below:
+
+Break: Terminates the loop
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      break
+   print ('Current Letter :', letter)
+
+var = 10                    # Second Example
+while var > 0:
+   print ('Current variable value :', var)
+   var = var -1
+   if var == 5:
+      break
+
+print ("Good bye!")
+#+end_src
+
+#+RESULTS:
+: Current Letter : P
+: Current Letter : y
+: Current Letter : t
+: Current variable value : 10
+: Current variable value : 9
+: Current variable value : 8
+: Current variable value : 7
+: Current variable value : 6
+: Good bye!
+
+Continue: Causes the loop to skip the rest of its body and retest
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      continue
+   print ('Current Letter :', letter)
+
+var = 10                    # Second Example
+while var > 0:
+   var = var -1
+   if var == 5:
+      continue
+   print ('Current variable value :', var)
+print ("Good bye!")
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : o
+Current Letter : n
+Current variable value : 9
+Current variable value : 8
+Current variable value : 7
+Current variable value : 6
+Current variable value : 4
+Current variable value : 3
+Current variable value : 2
+Current variable value : 1
+Current variable value : 0
+Good bye!
+#+end_example
+
+Pass:
+#+begin_src python :results output :exports both
+#!/usr/bin/python3
+
+for letter in 'Python':
+   if letter == 'h':
+      pass
+      print ('This is pass block')
+   print ('Current Letter :', letter)
+
+print ("Good bye!")
+#+end_src
+
+#+RESULTS:
+: Current Letter : P
+: Current Letter : y
+: Current Letter : t
+: This is pass block
+: Current Letter : h
+: Current Letter : o
+: Current Letter : n
+: Good bye!
 * Assignment
-1. Create a file named =assignment2.py=
-2. Write some python code that defines a global variable, defines a function
-   that prints =Hello World= + the variable, and call that function
+This week, your assignment is to create a program which
+1. Asks the user for input on three variables (x, y, and z)
+2. Multiplies the first two variables
+3. Compares the product of step 2 with the third value (if statement)
+4. Prints
+   =Variable x+y is greater than z=
+   if its greater, else it should print
+   =Variable z is greater than x+y=
+   if its less

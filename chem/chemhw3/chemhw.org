@@ -8,7 +8,6 @@
 #+latex_header: \usepackage[version=4]{mhchem}
 #+latex_header: \usepackage{enumerate}
 
-
 * The following reaction was performed, Identify element X.
 \begin{align*}
   &\ce{Fe2O_3(s)}+\ce{2X(s)} = \ce{2Fe(s) + X_2O_3(s)}\\
@@ -47,7 +46,7 @@ number of hydrogen atoms on the left.
 *Balanced equation*:
 \(\ce{2Fe(s)}+\ce{6HC2H3O2(aq)}=\ce{2Fe(C2H3O2)3(aq)}+\ce{3H2(g)}\)
 
-* How many grams of water vapor can be generated from the combustion of 18.74 g of ethanol (C 2 H 6 O)?
+* How many grams of water vapor can be generated from the combustion of 18.74 g of ethanol \(\ce{C2H6O}\)?
 Balanced reaction:
 \(\ce{C2H6O(g) + 3O2(g)} \rightarrow \ce{C2O2(g) + 3H2O(g)}\)
 
@@ -139,7 +138,8 @@ The molecules molar mass's are
    Similarly, we know that $331.207$ amu of  lead nitrate can produce $241.196$ amu of lead
    hydroxide. Therefore, $113.484g$ of lead nitrate will produce
    $\frac{113.484*241.196}{331.207}g$, or $82.643g$ of lead hydroxide
-2. From the above we can see the limiting reactant is lead (II) nitrate and the excess reactant left over is sodium hydroxide.
+2. Lead(II) nitrate is the limiting reactant since it produces the least amount
+   of Lead Hydroxide.
 3. There is $45.010-27.408=17.602$ grams of the excess reactant left over.
 4. From the above we get an experimental yield of $80.02$ percent. We know the
    limiting reactant gives us a theoretical yield of $82.463$ percent.
@@ -163,6 +163,8 @@ The molecules molar mass's are
   \(\ce{AgNO3}\): \(\frac{64.81\times187.772g}{169.872}=71.64g\)
 
   \(\ce{KBr}\): \(\frac{92.67\times187.772g}{119.002}=146.2g\)
+
+  Therefore,   \(71.64g\) of \(\ce{AgBr}\) will be made, since \(\ce{AgNO3}\) is the limiting reactant.
 
 2. \(\ce{AgNO3}\) is the limiting reactant since it produces the least amount of
    \(\ce{AgBr}\). Therefore the excessive reactant is  \(\ce{Kbr}\) since it
@@ -222,7 +224,11 @@ Now, we can calculate for $n$
 
 *Therefore its formula is \(\ce{XeF4}\)*
 
-* A 6.32 g sample of potassium chlorate was decomposed according to the following equation, how many moles were formed?
+* A 6.32 g sample of potassium chlorate was decomposed according to the following equation, how many moles of \(\ce{O2}\) were formed?
+We are given the following formula for the reaction:
+
+\(\ce{2KCIO3} \rightarrow\ce{2KCL}+ \ce{3O2}\)
+
 We have the following values:
 \begin{align*}
 &k = 39.0983g\\
@@ -247,14 +253,14 @@ grams of potassium chlorate to moles of oxygen
 
 * What is the coefficient in front of water, when it is produced from the reaction of hydrochloric acid with calcium hydroxide? Calcium chloride is the other product.
 The balanced equation is
-\(\ce{Ca(OH)2+2HCl}=\ce{CaCl2 + 2H2O}\)
+\(\ce{Ca(OH)2 + 2HCl}=\ce{CaCl2 + 2H2O}\)
 
-*Therefore the coeffecient of water (\(\ce{H2O}\) is 2*
+*Therefore the coeffecient of water (\(\ce{H2O}\)) is 2*
 
 * What is the subscript of aluminum in the formula of aluminum phosphate?
 *Aluminum has a subscript of $1$ in \(\ce{AlPO4}\)*
 
-* The reaction of 11.9 g of CHCl 3 with excess chlorine produced 12.6 g of CCl 4 , carbon tetrachloride, what is the percent yield?
+* The reaction of 11.9 g of $\ce{CHCl3}$ with excess chlorine produced 12.6 g of $\ce{CCl4}$, carbon tetrachloride, what is the percent yield?
 The equation for the reaction is
 \(\ce{2CHCl3 + 2Cl2}=\ce{2CCl4 + 2HCl}\)
 
@@ -281,7 +287,7 @@ yield, then multiply by 100
 
 *Therefore the percent yield is 82.4%*
 
-* What mass of CCl 4 is formed by the reaction of 8.00 g of methane with an excess of chlorine? Ch4 is the limiting reactant
+* What mass of $\ce{CCl}$ 4 is formed by the reaction of 8.00 g of methane with an excess of chlorine?
 The given equation is already balanced. The question is asking us to calculate
 the theoretical yield
 
@@ -291,7 +297,7 @@ We need to calculate the atomic weight of \(\ce{CCl4}\) and \(\ce{CH4}\)
 
 \(\ce{CH4}\): \(16.043g\)
 
-Using dimensional analysis, we can calculate the theoretical yield
+We already know \(\ce{CH4}\) is the limiting reactant. Using dimensional analysis, we can calculate the theoretical yield
 \begin{align*}
 &=\frac{8.00g}{1}\times\frac{1}{16.043g}\times \frac{1}{1}\times \frac{153.823g}{1}\\
 &=\frac{8 \times 153.823g}{16.043}\\
@@ -305,34 +311,43 @@ The equation will be sodium carbonate + hydrohloric acid = sodium chloride +
 carbon doxide + water. In correct notation this is written as:
 
 \begin{align*}
-&\ce{Na2CO3 + HCl}+\ce{NaCl + CO2 + H2O}
+&\ce{Na2CO3 + HCl}\rightarrow\ce{NaCl + CO2 + H2O}
 \end{align*}
 
 Balanced, this equation is
 \begin{align*}
-&\ce{Na2CO3 + 2HCl}+\ce{2NaCl + 2CO2 + H2O}
+&\ce{Na2CO3 + 2HCl}\rightarrow\ce{2NaCl + CO2 + H2O}
 \end{align*}
 
 * Classify the type of reaction from the five major type of reactions you learned in your first year chemistry course and write word equations. If necessary, balance.
 #+attr_latex: :options [a.]
-1. This equation is already balanced, and is a double replacement reaction since
-   the two positive ions switched the negative ions they are bonded with.
-2. \(\ce{CH4 + 2O2}=\ce{CO2 + 2H2O}\) is a combustion reaction. since
-   \(\ce{CH4}\) reacted with oxygen gas.
-3. \(\ce{Fe + 3NaBr}=\ce{FaBr2 + 3Na}\) is a single replacement reaction since
-   the negative ion in the reactants switches the positive ion its bonded with.
-4. This equation is already balanced, and is a double replacement reaction since
-   the two positive ions switched the negative ions they are bonded with. The
-   equation was already balanced out
-5. This equation is already balanced, and is a double replacement reaction since
-   the two positive ions switched the negative ions they are bonded with. The
-   equation was already balanced out
-6. This equation is already balanced, and is a synthesis reaction since the two
+1. The word equation is *Sodium Hydroxide + Potassium Nitrate \rightarrow Sodium
+   Nitrate + Potassium Hydroxide*. This equation is already balanced, and is a
+   double replacement reaction since the two positive ions switched the negative
+   ions they are bonded with.
+2. The balanced reaction is \(\ce{CH4 + 2O2}\rightarrow\ce{CO2 + 2H2O}\). The word
+   equation for this is *Methane + Oxygen Gas \rightarrow Carbon Dioxide + Water*.
+   This is a combustion reaction since \(\ce{CH4}\) reacted with oxygen gas.
+3. The balanced reaction is \(\ce{Fe + 3NaBr}\rightarrow\ce{FeBr3 + 3Na}\). The word
+   equation for this is *Iron + Sodium Bromide \rightarrow Iron(III)Bromide +
+   Sodium*. This is a single replacement reaction since the negative ion in the
+   reactants switches the positive ion its bonded with.
+4. The word equation is *Calcium Sulfate + Magnesium Hydroxide \rightarrow
+   Calcium Hydroxide + Magnesium Sulfate*. This equation is already balanced, and
+   is a double replacement reaction since the two positive ions switched the
+   negative ions they are bonded with.
+5. The word equation is *Ammonium Hydroxide + Hydrobromic Acid \rightarrow
+   Water + Ammonium Bromide*. This equation is already balanced, and is a double
+   replacement reaction since the two positive ions switched the negative ions
+   they are bonded with. 
+6. The word equation is *Lead + Oxygen Gas \rightarrow Lead(IV)Hydroxide*. This
+   equation is already balanced, and is a synthesis reaction since the two
    reactants combined to form one product.
-7. This equation is already balanced, and is a decomposition reaction since a
-   compound (in this case the reactant) breaks down
+7. The word equation is *Sodium Carbonate \rightarrow Sodium Oxide + Carbon
+   Dioxide*. This equation is already balanced, and is a decomposition reaction
+   since a compound (in this case the reactant) breaks down
 
-* Now try these recation types, Rewrite as a balanced equation with the products predicted
+* Now try these reaction types, Rewrite as a balanced equation with the products predicted
 #+attr_latex: :options [a.]
 1. \(\ce{Ba(OH)2}\rightarrow\ce{BaO + H2O}\)
 2. \(\ce{Na2CO3}\rightarrow\ce{Na2O + CO2}\)
@@ -340,7 +355,7 @@ Balanced, this equation is
 4. \(\ce{2Al2O3}\rightarrow\ce{4Al2 + 3O2}\)
 5. \(\ce{H2SO4}\rightarrow\ce{H2O + SO3}\)
 
-* Now try these recation types, Rewrite as a balanced equation with the products predicted
+* Now try these reaction types, Rewrite as a balanced equation with the products predicted
 #+attr_latex: :options [a.]
 1. \(\ce{2Mg + O2}\rightarrow\ce{2MgO}\)
 2. \(\ce{N2 + 3H2}\rightarrow\ce{2NH3}\)
@@ -355,8 +370,8 @@ Balanced, this equation is
 4. \(\ce{Cl2 + 2NaBr}\rightarrow\ce{Br2 + 2NaCl}\)
 5. \(\ce{2C2H6 + 7O2}\rightarrow\ce{4CO2 + 6H2O}\)
 
-* Using the solubility rules table, classify each of the substances as being soluble or insoluble in water. Then, Identify the two new compounds that form if the solutions, as suggested by the following table, were mixed via a double displacement reaction.
-** Part A
+* Review the next section and the video, then answer the following
+** Part A: Using the solubility rules table, classify each of the substances as being soluble or insoluble in water.
 #+attr_latex: :options [a.]
 1.  \(\ce{KBr}\) = Soluble
 
@@ -447,7 +462,8 @@ Balanced, this equation is
     The soluble salt rule states that when the anion
     iodine is bonded to the cation lead, it will be insoluble
 
-** Part B
+** Part B: Identify the two new compounds that form if the solutions, as suggested by the following table, were mixed via a double displacement reaction.
+
 Underlined compounds are precipitates of the reaction
 |-------------------------------------+-------------------------------------------+------------------------------------------+---------------------------------------------|
 | _\(\ce{AgBr(s)}\),_ \(\ce{KNO3(aq)}\) | _\(\ce{Ag2CO3(s)}\)_, \(\ce{NaNO3(aq)}\)    | _\(\ce{Ag2S(s)}\),_  \(\ce{Ca(NO3)2(aq)}\) | _\(\ce{AgOH(s)}\)_, \(\ce{NH4NO3(aq)}\)       |
@@ -460,7 +476,6 @@ Underlined compounds are precipitates of the reaction
 |-------------------------------------+-------------------------------------------+------------------------------------------+---------------------------------------------|
 
 * Name the following, then draw the Lewis Structure for the following hydrocarbons from their full names.
-#+attr_latex: :options [a.]
 1. \(\ce{CH4}\) - methane
 
    Since the compound contains one carbon atom (meth) and there are sigma bonds
@@ -473,36 +488,48 @@ Underlined compounds are precipitates of the reaction
    (ane), the name of the compound is propane. With the help of the diagram, we
    can see the molecular formula is    \(\ce{C3H8}\)
 
-3. \(\ce{C4H8}\) - 1-butene
+3. Question 3 is missing from the assignment paper
 
-   Since the compound contains four carbon atoms (but) and central double bond
-   (ene), the name of the compound is 1-butene. With the help of the lewis
-   diagram the molecular formula is \(\ce{C4H8}\)
-
-4. \(\ce{C4H8}\) - 2-butene
+4. \(\ce{C4H8}\) - 1-butene
 
    Since the compound contains four carbon atoms (but) and a central double bond
-   (ene), the name of this compound is 2-butene. The arrangement is different
-   than 1-butene, hence the $2-$ at the start of the name
+   (ene), the name of this compound is butene.
 
-** Draw Lewis Structures for the following
-#+attr_latex: :options [a.]
-1. Ethane \(\ce{C2H}\)
+5. \(\ce{C4H8}\) - 2-butene
+   Since the compound contains four carbon atoms (but) and a central double bond
+   (ene), the name of this compound is butene. The =2-= denotes that this is an
+   isonomer of butene (different arrangement than #4 Q. 22).
+
+   *Draw Lewis Structures for the following*
+
+6. Ethane \(\ce{C2H}\)
 
    Based on the name, there are two carbon atoms and sigma bonds are present.
    The lewis diagram would be
 
-2. Methane \(\ce{CH4}\)
+ #+attr_latex: :width 4cm
+   [[./images/6.JPG]]
+
+7. Methane \(\ce{CH4}\)
 
    Based on the name, there should be one carbon atom and sigma bonds are
    present. The lewis diagram would be
 
-3. Propyne \(\ce{C3H4}\)
+ #+attr_latex: :width 4cm
+   [[./images/7.JPG]]
+
+8. Propyne \(\ce{C3H4}\)
 
    Based on the name, there shold be three carbon atoms and a triple bond. The
    lewis diagram woudl be
 
-4. 2 Butene \(\ce{2C4H8}\)
+ #+attr_latex: :width 5cm
+   [[./images/8.JPG]]
+
+9. 2 \cdot Butene \(\ce{C4H8}\)
 
    Based on the name, there shuold be four carbon atoms and a double bond. The 2
    in front signifies this is an isomer of butene. It's lewis diagram would be
+
+ #+attr_latex: :width 6cm
+   [[./images/9.JPG]]

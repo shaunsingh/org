@@ -1,5 +1,6 @@
 #+title: CoderZ Summer Assignment #2
 #+author: Shaurya Singh
+#+OPTIONS: date:nil
 #+startup: preview
 #+startup: fold
 #+options: toc:2
