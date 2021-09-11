@@ -50,15 +50,11 @@ entropy levels, while being much easier to remember
 
 ** Formulas used to calculate
 Calculating entropy:
-\begin{align*}
-&\text{entropy}=\text{number of bits}\times\text{number of words}
-\end{align*}
+$\text{entropy}=\text{number of bits}\times\text{number of words}$
 
-Calaculating years need to crack code
-\begin{align*}
-\text{years}&=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}\\
-&=\text{entropy}/\text{crypts per second}/86400/365
-\end{align*}
+Calculating years need to crack code
+$\text{years}=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}$
+$\text{entropy}/\text{crypts per second}/86400/365$
 
 ** Sample:
 The following example runs the program, telling it to create a 5 word password.

@@ -60,15 +60,44 @@ CLOSED: [2021-08-07 Sat 15:35]
 *** Bio
 **** DONE Checkout textbook
 CLOSED: [2021-09-09 Thu 17:26]
-**** HOLD Getting to know sheet
-**** TODO Notebook + folder
+**** DONE Getting to know sheet
+CLOSED: [2021-09-11 Sat 13:57]
+**** DONE Notebook + folder
+CLOSED: [2021-09-11 Sat 13:56]
 *** Sem
-**** TODO Laptop + folder
+**** DONE Laptop + folder
+CLOSED: [2021-09-11 Sat 13:56]
 *** CSP
-**** TODO Laptop + folder
+**** DONE Laptop + folder
+CLOSED: [2021-09-11 Sat 13:56]
 *** Spanish
-**** TODO Notebook + folder
+**** DONE Notebook + folder
+CLOSED: [2021-09-11 Sat 13:56]
 *** Algebra 2
-**** TODO Notebook + graph paper in binder
+**** DONE Notebook + graph paper in binder
+CLOSED: [2021-09-11 Sat 13:57]
 *** USH 2
-**** TODO Notebook + folder
+**** DONE Notebook + folder
+
+** Friday
+*** Bio [66%]
+**** DONE Bring Home and Cover textbook   <2021-09-13 Mon>
+CLOCK: [2021-09-11 Sat 14:16]:END:
+CLOSED: [2021-09-11 Sat 15:10]
+**** DONE Get to know you worksheet <2021-09-10 Fri>
+CLOSED: [2021-09-11 Sat 14:09]
+**** TODO [[https://classroom.google.com/u/1/c/Mzg2ODE5MzE1NTE0/a/MzIwNjU4NjYyODE4/details][Safety Rules]] <2021-09-13 Mon>
+*** Sem [0%]
+**** TODO Make questions more descriptive (summer hw) <2021-09-13 Mon>
+*** Chem [50%]
+**** DONE Join College Board class <2021-09-10 Fri>
+CLOSED: [2021-09-11 Sat 14:09]
+**** TODO Watch videos (1.1) and take notes <2021-09-13 Mon>
+*** CSP [100%]
+**** DONE Random Password Algorithm Draft  <2021-09-13 Mon>
+CLOSED: [2021-09-11 Sat 14:09]
+*** Spanish [0%]
+**** TODO Tarea 1 <2021-09-13 Mon>
+*** Algebra 2 [100%]
+**** DONE Info sheet <2021-09-11 Fri>
+CLOSED: [2021-09-11 Sat 14:09]

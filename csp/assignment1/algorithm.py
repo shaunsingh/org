@@ -1,4 +1,4 @@
-# [[file:assignment1.org::*Sample:][Sample::2]]
+# [[file:assignment1.org::+begin_src python :exports code :tangle algorithm.py][No heading:1]]
 #!/usr/bin/env python3
 # Generate a random, memorizable password: http://xkcd.com/936/
 
@@ -90,4 +90,4 @@ def years(entropy, crypts_per_second):
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv))
-# Sample::2 ends here
+# No heading:1 ends here

@@ -1,27 +1,16 @@
-% Created 2021-09-10 Fri 19:17
+% Created 2021-09-11 Sat 00:45
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage{longtable}
-\usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{amssymb}
-\usepackage{capt-of}
-\usepackage[dvipsnames]{xcolor}
-\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
-\usepackage{indentfirst}
+\usepackage{xcolor}
+\usepackage{hyperref}
 \setmainfont[Ligatures=TeX]{Alegreya}
 \setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
 % features: (acronym underline par-sep engraved-code-setup engraved-code)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
-\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
 \usepackage[normalem]{ulem}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
@@ -187,7 +176,7 @@
 
 % code blocks
 
-\definecolor{codebackground}{HTML}{fafafa}
+\definecolor{codebackground}{HTML}{f6f6f6}
 \colorlet{EFD}{ofg}
 \definecolor{codeborder}{HTML}{f0f0f0}
 
@@ -225,16 +214,16 @@
 \end{center}
 
 \section{Entropy and Creating Passwords}
-\label{sec:org5048888}
+\label{sec:org74b30d4}
 \subsection{What is Entropy?}
-\label{sec:org53b6233}
+\label{sec:orgbe990a3}
 Entropy is a measure of ``uncertainty'' in an outcome. In this context, it can be
 thought of as a value representing how unpredictable the next character of of a
 password is. It is calculated as \(\log_{2}(a^{b})\) where a is the number of allowed
 symbols and b is its length.
 
 \subsection{Why \texttt{Tr0ub4dor\&3} is a Bad Password}
-\label{sec:org7af53d1}
+\label{sec:org6b924b0}
 A truly random string of length 11 (not like ``Tr0ub4dor\&3'', but more like
 ``J4I/tyJ\&Acy'') has \(\log_{2}(94^{11})=72.1\) bits, with \(94\) being the total number of
 letters, numbers, and symbols one can choose. However the comic shows that
@@ -245,7 +234,7 @@ with \(65000\) representing a rough estimate of all dictionary words people are
 likely to choose.
 
 \subsection{Creating High-Entropy Passwords You Can Remember}
-\label{sec:orga20097b}
+\label{sec:orgfdccae6}
 Another way of selecting a password is to have \(2048\) ``symbols'' (common words) and
 select only \(4\) of those symbols. \(\log_{2}(2048^{4})=44\) bits, much better than \(28\).
 
@@ -257,9 +246,9 @@ would do), it makes sense to link together common word. This offers similar
 entropy levels, while being much easier to remember
 
 \section{The Algorithm}
-\label{sec:org227820a}
+\label{sec:orgff93592}
 \subsection{Our algorithm is going to}
-\label{sec:orge100961}
+\label{sec:org60fd1c0}
 \begin{enumerate}
 \item Take an input (number of words in the password (\texttt{nwords}) + numbers of bits per
 word (\texttt{nbits}))
@@ -274,20 +263,16 @@ then with gpu)
 \end{enumerate}
 
 \subsection{Formulas used to calculate}
-\label{sec:org9d966bf}
+\label{sec:org6b95da9}
 Calculating entropy:
-\begin{align*}
-&\text{entropy}=\text{number of bits}\times\text{number of words}
-\end{align*}
+\(\text{entropy}=\text{number of bits}\times\text{number of words}\)
 
-Calaculating years need to crack code
-\begin{align*}
-\text{years}&=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}\\
-&=\text{entropy}/\text{crypts per second}/86400/365
-\end{align*}
+Calculating years need to crack code
+\(\text{years}=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}\)
+\(\text{entropy}/\text{crypts per second}/86400/365\)
 
 \subsection{Sample:}
-\label{sec:org6dc1fff}
+\label{sec:orgda8fe62}
 The following example runs the program, telling it to create a 5 word password.
 Since the wordlist we use has varied word legnths, we can't calculate entropy
 the conventional way. However, the author has estimated the list has 11 bits per
@@ -311,7 +296,7 @@ so that same iterated MD5 would fall in 1.3e+03 years.}
 \end{Code}
 
 \subsection{Code}
-\label{sec:orgab444fb}
+\label{sec:orgc87ddb9}
 The python code used to calculate this is below
 \begin{Code}
 \begin{Verbatim}[]
