@@ -11,7 +11,7 @@
 
 *Issue:* How can we use technology to efficiently generate and store energy?
 
-*Article:* [[https://energystorage.org/why-energy-storage/technologies/][Hydrogen Energy Storage]]
+*Article:* [[https://energystorage.org/why-energy-storage/technologies/][Hydrogen Energy Storage]] 
 
 ** Lens: Scientific
 *Theme:* Technology
