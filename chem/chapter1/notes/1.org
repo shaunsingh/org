@@ -1,0 +1,104 @@
+#+title: Ap Chem notes #3
+#+author: Shaurya Singh
+#+startup: preview
+#+startup: fold
+#+options: toc:nil
+#+latex_class: chameleon
+#+latex_header: \usepackage{chemfig}
+#+latex_header: \usepackage[version=4]{mhchem}
+
+* Key:
+- *Bold*: Important Notes
+- _underline_: definition
+- /Italic/: emphasis
+
+  #+begin_src
+┌─┬┐  ╔═╦╗  ╓─╥╖  ╒═╤╕
+│ ││  ║ ║║  ║ ║║  │ ││
+├─┼┤  ╠═╬╣  ╟─╫╢  ╞═╪╡
+└─┴┘  ╚═╩╝  ╙─╨╜  ╘═╧╛
+┌───────────────────┐
+│  ╔═══╗ Some Text  │▒
+│  ╚═╦═╝ in the box │▒
+╞═╤══╩══╤═══════════╡▒
+│ ├──┬──┤           │▒
+│ └──┴──┘           │▒
+└───────────────────┘▒
+ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+#+end_src
+
+* 1.1 Daily 1 - Moles and Molar Mass
+** What is a mole?
+According to the SI definition, _The mole, symbol mol, is the SI unit of amount of substance of a specified elementary entity, which may be an atom, molecule, ion, electron, any other particle or a specified group of such particles; its magnitude is set by fixing the numerical value of the Avogadro constant to be exactly \(6.02214129 × 10^{23}\) when it is expressed in the SI unit mol–1._
+
+In plain english, we can say a mole is a standard scientific unit for measuring
+large quantities of very small entities such as atoms, molecules, or other
+specified particles. 1 mole is equal to \(6.02214129 × 10^{23}\) particles, or
+Avogadro's constant
+
+** Why do chemists use moles?
+#+CAPTION: Compounds (\(\ce{C12H22O11},\ \ce{NaCl},\ \ce{C},\ \ce{CuSO4}\))
+#+NAME:   fig:1
+[[./images/Diagram1.png]]
+
+   All $4$ samples in figure 1 contain $1$ mol. That means each sample has
+   \(6.02214129 × 10^{23}\) particles. If we were to write that number every
+   time we do a calculation, it would be needlessly tedious. Moles help link
+   between the micro world of atoms and molecules to the macro world of grams
+   and kilograms.
+
+*** So if they have the same number of particles, why is their mass different?
+This is because the constituent particles in each sample are different. Those of
+
+** How do we find the mass of sucrose (\(\ce{C12H22O11}\))?
+   1. Count atoms in chemical formula
+      - We have $12$ carbon atoms, $22$ hydrogen atoms, and $11$ oxygen atoms
+   2. Find the atomic mass of each element 
+      - \(\text{Carbon}=12.01u,\ \text{Hydrogen} = 1.01u,\ \text{Oxygen} = 16.00u\)
+   3. Multiply atoms by atomic mass of each element, to find total mass
+      1. \(C = 12*12.01 = 144.12u\)
+      2. \(H = 22*1.01 = 22.22u\)
+      3. \(O = 11*16.00u = 176.00u\)
+   4. Find the total
+      - \(Total = 144.14 + 22.22 + 176.00 = 342.3u\)
+
+   However, we still don't have the correct answer. Thats because $1\
+   molecule\neq1\ mol$. The mass of each sample is equal to the formula mass of
+   one particle in the units of grams. This is the molar mass
+
+   (Above, u = g/mol)
+
+** Example 1
+   What is the molar mass of $\ce{H2SO4}$?
+   1. Count the atoms ($2$ hydrogen, $1$ Sulfur, $4$ Oxygen)
+   2. Find the atomic mass of each element 
+    1. \(H = 1.01u\)
+    2. \(S = 32.06u\)
+    3. \(O = 16.00u\)
+   3. Multiply it out 
+    1. \(H = 2*1.01 = 2.02u\)
+    2. \(S = 1*32.06 = 32.06u\)
+    3. \(O = 4*16.00 = 64.00u\)
+   4. Add the results 
+    - \(2.02u + 32.06u + 64.00y = 98.08u\)
+   5. Use the correct units for molar mass 
+    - \(= 98.08 g/mol\)
+
+** Example 2
+   What is the molar mass of $\ce{Al(NO3)3}$?
+   1. Count the atoms ($1$ Aluminium, $3$ Nitrogen, $9$ Oxygen)
+   2. Find the atomic mass of each element 
+    1. \(Al = 26.98u\)
+    2. \(N = 14.01u\)
+    3. \(O = 16.00u\)
+   3. Multiply it out 
+    1. \(Al = 26.98u * 1 = 26.98u\)
+    2. \(N = 14.01u * 3 = 42.03u\)
+    3. \(O = 16.00u * 9 = 144.0u\)
+   4. Add the results
+    - \(26.98 + 42.03 + 144.0u = 213.01u\)
+   5. Use the correct units for molar mass 
+    - \(= 213.01 g/mol\)
+
+* 1.1 Daily 2 - Moles and Molar Mass 
+
