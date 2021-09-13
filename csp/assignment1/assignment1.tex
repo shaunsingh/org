@@ -1,4 +1,4 @@
-% Created 2021-09-11 Sat 17:16
+% Created 2021-09-12 Sun 22:36
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -53,7 +53,8 @@
   breakable}
 
 \definecolor{EFD}{HTML}{383a42}
-\newcommand{\EFD}[1]{\textcolor{EFD}{#1}} % default
+\definecolor{EfD}{HTML}{fafafa}
+\newcommand{\EFD}[1]{\colorbox{EfD}{\textcolor{EFD}{#1}}} % default
 \definecolor{EFk}{HTML}{e45649}
 \newcommand{\EFk}[1]{\textcolor{EFk}{#1}} % font-lock-keyword-face
 \definecolor{EFd}{HTML}{84888b}
@@ -84,7 +85,8 @@
 \newcommand{\EFrc}[1]{\textcolor{EFrc}{\textbf{#1}}} % font-lock-regexp-grouping-construct
 \definecolor{EFrb}{HTML}{4078f2}
 \newcommand{\EFrb}[1]{\textcolor{EFrb}{\textbf{#1}}} % font-lock-regexp-grouping-backslash
-\newcommand{\EFob}[1]{#1} % org-block
+\definecolor{Efob}{HTML}{e7e7e7}
+\newcommand{\EFob}[1]{\colorbox{Efob}{#1}} % org-block
 \definecolor{EFhn}{HTML}{da8548}
 \newcommand{\EFhn}[1]{\textcolor{EFhn}{\textbf{#1}}} % highlight-numbers-number
 \definecolor{EFhq}{HTML}{4078f2}
@@ -97,31 +99,31 @@
 \newcommand{\EFrdii}[1]{\textcolor{EFrdii}{#1}} % rainbow-delimiters-depth-2-face
 \definecolor{EFrdiii}{HTML}{50a14f}
 \newcommand{\EFrdiii}[1]{\textcolor{EFrdiii}{#1}} % rainbow-delimiters-depth-3-face
-\definecolor{EFrdiv}{HTML}{da8548}
+\definecolor{EFrdiv}{HTML}{b751b6}
 \newcommand{\EFrdiv}[1]{\textcolor{EFrdiv}{#1}} % rainbow-delimiters-depth-4-face
-\definecolor{EFrdv}{HTML}{b751b6}
+\definecolor{EFrdv}{HTML}{4db5bd}
 \newcommand{\EFrdv}[1]{\textcolor{EFrdv}{#1}} % rainbow-delimiters-depth-5-face
-\definecolor{EFrdvi}{HTML}{986801}
+\definecolor{EFrdvi}{HTML}{4078f2}
 \newcommand{\EFrdvi}[1]{\textcolor{EFrdvi}{#1}} % rainbow-delimiters-depth-6-face
-\definecolor{EFrdvii}{HTML}{4db5bd}
+\definecolor{EFrdvii}{HTML}{a626a4}
 \newcommand{\EFrdvii}[1]{\textcolor{EFrdvii}{#1}} % rainbow-delimiters-depth-7-face
-\definecolor{EFrdiix}{HTML}{80a880}
+\definecolor{EFrdiix}{HTML}{50a14f}
 \newcommand{\EFrdiix}[1]{\textcolor{EFrdiix}{#1}} % rainbow-delimiters-depth-8-face
-\definecolor{EFrdix}{HTML}{887070}
+\definecolor{EFrdix}{HTML}{b751b6}
 \newcommand{\EFrdix}[1]{\textcolor{EFrdix}{#1}} % rainbow-delimiters-depth-9-face
 % end features
 
 %% make document follow Emacs theme
 
-\definecolor{obg}{HTML}{242730}
-\definecolor{ofg}{HTML}{bbc2cf}
+\definecolor{obg}{HTML}{fafafa}
+\definecolor{ofg}{HTML}{383a42}
 
 \pagecolor{obg}
 \color{ofg}
 
 % list labels
 
-\definecolor{itemlabel}{HTML}{51afef}
+\definecolor{itemlabel}{HTML}{4078f2}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -135,16 +137,16 @@
 
 % structural elements
 
-\definecolor{documentTitle}{HTML}{C57BDB}
-\definecolor{documentInfo}{HTML}{C57BDB}
-\definecolor{level1}{HTML}{51afef}
-\definecolor{level2}{HTML}{C57BDB}
-\definecolor{level3}{HTML}{a991f1}
-\definecolor{level4}{HTML}{7cc3f3}
-\definecolor{level5}{HTML}{d39ce3}
-\definecolor{level6}{HTML}{a8d7f7}
-\definecolor{level7}{HTML}{e2bded}
-\definecolor{level8}{HTML}{dceffb}
+\definecolor{documentTitle}{HTML}{a626a4}
+\definecolor{documentInfo}{HTML}{a626a4}
+\definecolor{level1}{HTML}{e45649}
+\definecolor{level2}{HTML}{da8548}
+\definecolor{level3}{HTML}{b751b6}
+\definecolor{level4}{HTML}{6f99f5}
+\definecolor{level5}{HTML}{bc5cba}
+\definecolor{level6}{HTML}{9fbbf8}
+\definecolor{level7}{HTML}{d292d1}
+\definecolor{level8}{HTML}{d8e4fc}
 
 \addtokomafont{title}{\color{documentTitle}}
 \addtokomafont{author}{\color{documentInfo}}
@@ -162,11 +164,11 @@
 
 % textual elements
 
-\definecolor{link}{HTML}{51afef}
+\definecolor{link}{HTML}{4078f2}
 \definecolor{cite}{HTML}{800080}
-\definecolor{itemlabel}{HTML}{51afef}
-\definecolor{code}{HTML}{e69055}
-\definecolor{verbatim}{HTML}{7bc275}
+\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{code}{HTML}{da8548}
+\definecolor{verbatim}{HTML}{50a14f}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -185,9 +187,9 @@
 
 % code blocks
 
-\definecolor{codebackground}{HTML}{272a33}
+\definecolor{codebackground}{HTML}{f6f6f6}
 \colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{2b2e37}
+\definecolor{codeborder}{HTML}{f0f0f0}
 
 %% end customisations
 
@@ -223,16 +225,16 @@
 \end{center}
 
 \section{Entropy and Creating Passwords}
-\label{sec:org8cecec5}
+\label{sec:orgcb24ff1}
 \subsection{What is Entropy?}
-\label{sec:org84fc06e}
+\label{sec:org34693a8}
 Entropy is a measure of ``uncertainty'' in an outcome. In this context, it can be
 thought of as a value representing how unpredictable the next character of of a
 password is. It is calculated as \(\log_{2}(a^{b})\) where a is the number of allowed
 symbols and b is its length.
 
 \subsection{Why \texttt{Tr0ub4dor\&3} is a Bad Password}
-\label{sec:orgb6c5b1e}
+\label{sec:orgc5f7878}
 A truly random string of length 11 (not like ``Tr0ub4dor\&3'', but more like
 ``J4I/tyJ\&Acy'') has \(\log_{2}(94^{11})=72.1\) bits, with \(94\) being the total number of
 letters, numbers, and symbols one can choose. However the comic shows that
@@ -243,7 +245,7 @@ with \(65000\) representing a rough estimate of all dictionary words people are
 likely to choose.
 
 \subsection{Creating High-Entropy Passwords You Can Remember}
-\label{sec:orga55b5e6}
+\label{sec:orge41e2f7}
 Another way of selecting a password is to have \(2048\) ``symbols'' (common words) and
 select only \(4\) of those symbols. \(\log_{2}(2048^{4})=44\) bits, much better than \(28\).
 
@@ -254,10 +256,53 @@ randomly generated string of letters (which is what a random password generator
 would do), it makes sense to link together common word. This offers similar
 entropy levels, while being much easier to remember
 
+\section{But Schneier Says that the XKCD method doesn't work?}
+\label{sec:org400c400}
+Althoguh Schneier is indeed a security genius, there are several mistakes that
+he makes in his analysis
+
+\begin{enumerate}
+\item In this case, it has always been assumed that the password generation method
+is known to the attacker. That's the whole point of entropy computations; see
+the analysis. That attackers are ``on to this trick'' changes nothing at all
+(when an attacker knows the password generation method, the entropy
+computation describes exactly the password strength; when the attacker is
+incompetent and does not know the password generation method, the password
+strength is only higher, by an amount which is nigh impossible to quantify).
+
+The quip about ``passwords in memory'' is just more incoherent ramblings.
+Passwords necessarily go to RAM at some point, whether you type them or
+copy-paste them from a password safe, or anything similar.
+
+\item Picking 4 random words from a 2048-word dictionary gives you
+2048*2048*2048*2048 possibilities. That's about 17.6 trillion unique phrases
+an attacker would have to search through. This
+4-common-word-prhase has the equivalent entropy as a totally random
+10-character lower case password (26 characters), 8 character upper-and-lower
+password with digits (52 characters), or a 7-character password with a
+completely random mix of letters, numbers, and digits. These are completely
+random characters, not the typical W0rd123! kind of pattern that people
+usually come up with, which crackers already have search algorithms for. An 8
+character password with completely random character distribution is actually
+considered quite strong and basically impossible to crack with today's
+technology. And this is the point: that 4-word xkcd passphrase is the same
+strength as the impossible to crack random character string. Don't rely on
+your intuition. Rely on the math
+\end{enumerate}
+
+Towards the end of the article, he also mentions you should use a personally
+memorable sentence. He isn’t explicit that it should be made up by you, and two
+of his sentences are quotations (and famous ones at that.) This is a terrible
+idea, because crackers can and will index famous quotations to use them in
+scanning programs. It seems that Schneier is disparaging other methods, only to
+recommend his own inferior method.
+
+\textbf{The XKCD method works because it's random, human generated text can (and will) always be easily cracked}
+
 \section{The Algorithm}
-\label{sec:org76d54f1}
+\label{sec:orga8a00c2}
 \subsection{Our algorithm is going to}
-\label{sec:orga6ec109}
+\label{sec:org0aebbcb}
 \begin{enumerate}
 \item Take an input (number of words in the password (\texttt{nwords}) + numbers of bits per
 word (\texttt{nbits}))
@@ -272,16 +317,20 @@ then with gpu)
 \end{enumerate}
 
 \subsection{Formulas used to calculate}
-\label{sec:orgc173721}
+\label{sec:org6339317}
 Calculating entropy:
-\(\text{entropy}=\text{number of bits}\times\text{number of words}\)
+\begin{align*}
+\text{entropy}&=\text{number of bits}\times\text{number of words}
+\end{align*}
 
 Calculating years need to crack code
-\(\text{years}=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}\)
-\(\text{entropy}/\text{crypts per second}/86400/365\)
+\begin{align*}
+\text{years}&=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}\\
+&=\text{entropy}/\text{crypts per second}/86400/365
+\end{align*}
 
 \subsection{Sample:}
-\label{sec:org2858264}
+\label{sec:org6afd505}
 The following example runs the program, telling it to create a 5 word password.
 Since the wordlist we use has varied word legnths, we can't calculate entropy
 the conventional way. However, the author has estimated the list has 11 bits per
@@ -305,7 +354,7 @@ so that same iterated MD5 would fall in 1.3e+03 years.}
 \end{Code}
 
 \subsection{Code}
-\label{sec:org992182f}
+\label{sec:orgf2fd844}
 The python code used to calculate this is below
 \begin{Code}
 \begin{Verbatim}[]
@@ -320,7 +369,7 @@ The python code used to calculate this is below
     \textcolor[HTML]{e45649}{try}:
         nwords \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{int}}(argv[\textcolor[HTML]{b751b6}{1}])
     \textcolor[HTML]{e45649}{except} \textcolor[HTML]{986801}{IndexError}:
-        \textcolor[HTML]{e45649}{return} \textcolor[HTML]{51afef}{\textbf{usage}}(argv[\textcolor[HTML]{b751b6}{0}])
+        \textcolor[HTML]{e45649}{return} \textcolor[HTML]{4078f2}{\textbf{usage}}(argv[\textcolor[HTML]{b751b6}{0}])
 
     \textcolor[HTML]{9ca0a4}{\# number of bits should be second input from the program}
     \textcolor[HTML]{e45649}{try}:
@@ -329,40 +378,40 @@ The python code used to calculate this is below
         nbits \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{11}
 
     \textcolor[HTML]{9ca0a4}{\# read the wordlist}
-    \EFv{filename} \textcolor[HTML]{e45649}{=} os.\textcolor[HTML]{b751b6}{\textit{path}}.\textcolor[HTML]{51afef}{\textbf{\textit{join}}}(os.\textcolor[HTML]{b751b6}{\textit{environ}}[\textcolor[HTML]{50a14f}{'HOME'}], \textcolor[HTML]{50a14f}{'org'}, \textcolor[HTML]{50a14f}{'csp'}, \textcolor[HTML]{50a14f}{'assignment1'}, \textcolor[HTML]{50a14f}{'wordlist'})
-    \EFv{wordlist} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{51afef}{\textbf{read\_file}}(filename, nbits)
+    \EFv{filename} \textcolor[HTML]{e45649}{=} os.\textcolor[HTML]{b751b6}{\textit{path}}.\textcolor[HTML]{4078f2}{\textbf{\textit{join}}}(os.\textcolor[HTML]{b751b6}{\textit{environ}}[\textcolor[HTML]{50a14f}{'HOME'}], \textcolor[HTML]{50a14f}{'org'}, \textcolor[HTML]{50a14f}{'csp'}, \textcolor[HTML]{50a14f}{'assignment1'}, \textcolor[HTML]{50a14f}{'wordlist'})
+    \EFv{wordlist} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{4078f2}{\textbf{read\_file}}(filename, nbits)
     \textcolor[HTML]{e45649}{if} \textcolor[HTML]{a626a4}{\textbf{len}}(wordlist) \textcolor[HTML]{e45649}{!=} \textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}nbits:
-        sys.\textcolor[HTML]{b751b6}{\textit{stderr}}.\textcolor[HTML]{51afef}{\textbf{\textit{write}}}(\textcolor[HTML]{50a14f}{"\%r contains only \%d words, not \%d.}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%}
+        sys.\textcolor[HTML]{b751b6}{\textit{stderr}}.\textcolor[HTML]{4078f2}{\textbf{\textit{write}}}(\textcolor[HTML]{50a14f}{"\%r contains only \%d words, not \%d.}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%}
                          (filename, \textcolor[HTML]{a626a4}{\textbf{len}}(wordlist), \textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}nbits))
         \textcolor[HTML]{e45649}{return} \textcolor[HTML]{b751b6}{2}
 
     \textcolor[HTML]{9ca0a4}{\# generate the password, then display it}
-    \textcolor[HTML]{51afef}{\textbf{display\_password}}(\textcolor[HTML]{51afef}{\textbf{generate\_password}}(nwords, wordlist), nwords, nbits)
+    \textcolor[HTML]{4078f2}{\textbf{display\_password}}(\textcolor[HTML]{4078f2}{\textbf{generate\_password}}(nwords, wordlist), nwords, nbits)
     \textcolor[HTML]{e45649}{return} \textcolor[HTML]{b751b6}{0}
 
 \textcolor[HTML]{9ca0a4}{\# Info about the usage of the program, if the user gives an incorrect input}
 \textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{usage}(\textcolor[HTML]{6a1868}{argv0}):
     \EFv{p} \textcolor[HTML]{e45649}{=} sys.\textcolor[HTML]{b751b6}{\textit{stderr}}.\textcolor[HTML]{b751b6}{\textit{write}}
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"Usage: \%s nwords [nbits]}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"Generates a password of nwords words, each with nbits bits}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"of entropy, choosing words from the first entries in}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"<http://canonical.org/\char126{}kragen/sw/wordlist>, which is a text file}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"with one word per line, preceded by its frequency, most frequent}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"words first.}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{Recommended:}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"    \%s 5 12}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
-    \textcolor[HTML]{51afef}{\textbf{p}}(\textcolor[HTML]{50a14f}{"    \%s 6}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"Usage: \%s nwords [nbits]}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"Generates a password of nwords words, each with nbits bits}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"of entropy, choosing words from the first entries in}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"<http://canonical.org/\char126{}kragen/sw/wordlist>, which is a text file}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"with one word per line, preceded by its frequency, most frequent}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"words first.}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{Recommended:}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"    \%s 5 12}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
+    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"    \%s 6}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
     \textcolor[HTML]{e45649}{return} \textcolor[HTML]{b751b6}{1}
 
 \textcolor[HTML]{9ca0a4}{\# function to read the wordlist file}
 \textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{read\_file}(\textcolor[HTML]{6a1868}{filename}, \textcolor[HTML]{6a1868}{nbits}):
-    \textcolor[HTML]{e45649}{return} [line.\textcolor[HTML]{51afef}{\textbf{\textit{split}}}()[\textcolor[HTML]{b751b6}{1}] \textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{line} \textcolor[HTML]{e45649}{in}
-            itertools.\textcolor[HTML]{51afef}{\textbf{\textit{islice}}}(\textcolor[HTML]{a626a4}{\textbf{open}}(filename), \textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}nbits)]
+    \textcolor[HTML]{e45649}{return} [line.\textcolor[HTML]{4078f2}{\textbf{\textit{split}}}()[\textcolor[HTML]{b751b6}{1}] \textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{line} \textcolor[HTML]{e45649}{in}
+            itertools.\textcolor[HTML]{4078f2}{\textbf{\textit{islice}}}(\textcolor[HTML]{a626a4}{\textbf{open}}(filename), \textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}nbits)]
 
 \textcolor[HTML]{9ca0a4}{\# function to generate the password (random words from wordlist)}
 \textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{generate\_password}(\textcolor[HTML]{6a1868}{nwords}, \textcolor[HTML]{6a1868}{wordlist}):
     \EFv{choice} \textcolor[HTML]{e45649}{=} random.\textcolor[HTML]{986801}{\textbf{\textit{SystemRandom}}}().\textcolor[HTML]{b751b6}{\textit{choice}}
-    \textcolor[HTML]{e45649}{return} \textcolor[HTML]{50a14f}{' '}.\textcolor[HTML]{51afef}{\textbf{\textit{join}}}(\textcolor[HTML]{51afef}{\textbf{choice}}(wordlist) \textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{ii} \textcolor[HTML]{e45649}{in} \textcolor[HTML]{a626a4}{\textbf{range}}(nwords))
+    \textcolor[HTML]{e45649}{return} \textcolor[HTML]{50a14f}{' '}.\textcolor[HTML]{4078f2}{\textbf{\textit{join}}}(\textcolor[HTML]{4078f2}{\textbf{choice}}(wordlist) \textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{ii} \textcolor[HTML]{e45649}{in} \textcolor[HTML]{a626a4}{\textbf{range}}(nwords))
 
 \textcolor[HTML]{9ca0a4}{\# function to display info about the password}
 \textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{display\_password}(\textcolor[HTML]{6a1868}{password}, \textcolor[HTML]{6a1868}{nwords}, \textcolor[HTML]{6a1868}{nbits}):
@@ -376,13 +425,13 @@ The python code used to calculate this is below
     \textcolor[HTML]{9ca0a4}{\# john --test (<http://www.openwall.com/john/>) reports that it}
     \textcolor[HTML]{9ca0a4}{\# can do 7303000 MD5 operations per second, but I’m pretty sure}
     \textcolor[HTML]{9ca0a4}{\# that’s a single-core number}
-    \EFv{t} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{51afef}{\textbf{years}}(entropy, \textcolor[HTML]{b751b6}{7303000})
+    \EFv{t} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{4078f2}{\textbf{years}}(entropy, \textcolor[HTML]{b751b6}{7303000})
     \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"That password would take \%.2g years to crack"} \textcolor[HTML]{e45649}{\%} t)
     \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"on my core 2 duo from 2009, assuming an attack on a MS-Cache hash,"})
     \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"(the worst password hashing algorithm in common use)"})
     \textcolor[HTML]{a626a4}{\textbf{print}}()
 
-    \EFv{t} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{51afef}{\textbf{years}}(entropy, \textcolor[HTML]{b751b6}{3539})
+    \EFv{t} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{4078f2}{\textbf{years}}(entropy, \textcolor[HTML]{b751b6}{3539})
     \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"The most common password-hashing algorithm is md5, cracking such a hash would take \%.2g years."} \textcolor[HTML]{e45649}{\%} t)
     \textcolor[HTML]{a626a4}{\textbf{print}}()
 
@@ -399,7 +448,7 @@ The python code used to calculate this is below
     \textcolor[HTML]{e45649}{return} \textcolor[HTML]{a626a4}{\textbf{float}}(\textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}entropy) \textcolor[HTML]{e45649}{/} crypts\_per\_second \textcolor[HTML]{e45649}{/} \textcolor[HTML]{b751b6}{86400} \textcolor[HTML]{e45649}{/} \textcolor[HTML]{b751b6}{365}
 
 \textcolor[HTML]{e45649}{if} \textcolor[HTML]{a626a4}{\_\_name\_\_} \textcolor[HTML]{e45649}{==} \textcolor[HTML]{50a14f}{'\_\_main\_\_'}:
-    sys.\textcolor[HTML]{51afef}{\textbf{\textit{exit}}}(\textcolor[HTML]{51afef}{\textbf{main}}(sys.\textcolor[HTML]{b751b6}{\textit{argv}}))
+    sys.\textcolor[HTML]{4078f2}{\textbf{\textit{exit}}}(\textcolor[HTML]{4078f2}{\textbf{main}}(sys.\textcolor[HTML]{b751b6}{\textit{argv}}))
 
 \end{Verbatim}
 \end{Code}

@@ -12,21 +12,6 @@
 - _underline_: definition
 - /Italic/: emphasis
 
-  #+begin_src
-┌─┬┐  ╔═╦╗  ╓─╥╖  ╒═╤╕
-│ ││  ║ ║║  ║ ║║  │ ││
-├─┼┤  ╠═╬╣  ╟─╫╢  ╞═╪╡
-└─┴┘  ╚═╩╝  ╙─╨╜  ╘═╧╛
-┌───────────────────┐
-│  ╔═══╗ Some Text  │▒
-│  ╚═╦═╝ in the box │▒
-╞═╤══╩══╤═══════════╡▒
-│ ├──┬──┤           │▒
-│ └──┴──┘           │▒
-└───────────────────┘▒
- ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-#+end_src
-
 * 1.1 Daily 1 - Moles and Molar Mass
 ** What is a mole?
 According to the SI definition, _The mole, symbol mol, is the SI unit of amount of substance of a specified elementary entity, which may be an atom, molecule, ion, electron, any other particle or a specified group of such particles; its magnitude is set by fixing the numerical value of the Avogadro constant to be exactly \(6.02214129 × 10^{23}\) when it is expressed in the SI unit mol–1._

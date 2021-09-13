@@ -82,7 +82,6 @@ CLOSED: [2021-09-11 Sat 13:57]
 ** Friday
 *** Bio [66%]
 **** DONE Bring Home and Cover textbook   <2021-09-13 Mon>
-CLOCK: [2021-09-11 Sat 14:16]:END:
 CLOSED: [2021-09-11 Sat 15:10]
 **** DONE Get to know you worksheet <2021-09-10 Fri>
 CLOSED: [2021-09-11 Sat 14:09]
@@ -93,6 +92,10 @@ CLOSED: [2021-09-11 Sat 14:09]
 **** DONE Join College Board class <2021-09-10 Fri>
 CLOSED: [2021-09-11 Sat 14:09]
 **** TODO Watch videos (1.1) and take notes <2021-09-13 Mon>
+:LOGBOOK:
+CLOCK: [2021-09-12 Sun 00:02]--[2021-09-12 Sun 00:27] =>  0:25
+CLOCK: [2021-09-11 Sat 23:32]--[2021-09-11 Sat 23:57] =>  0:25
+:END:
 *** CSP [100%]
 **** DONE Random Password Algorithm Draft  <2021-09-13 Mon>
 CLOSED: [2021-09-11 Sat 14:09]

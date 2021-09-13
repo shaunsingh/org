@@ -515,7 +515,7 @@ Underlined compounds are precipitates of the reaction
    Based on the name, there should be one carbon atom and sigma bonds are
    present. The lewis diagram would be
 
- #+attr_latex: :width 4cm
+ #+attr_latex: :width 5cm
    [[./images/7.JPG]]
 
 8. Propyne \(\ce{C3H4}\)
@@ -531,5 +531,5 @@ Underlined compounds are precipitates of the reaction
    Based on the name, there shuold be four carbon atoms and a double bond. The 2
    in front signifies this is an isomer of butene. It's lewis diagram would be
 
- #+attr_latex: :width 6cm
+ #+attr_latex: :width 5cm
    [[./images/9.JPG]]

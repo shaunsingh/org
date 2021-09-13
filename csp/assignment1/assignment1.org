@@ -35,6 +35,46 @@ randomly generated string of letters (which is what a random password generator
 would do), it makes sense to link together common word. This offers similar
 entropy levels, while being much easier to remember
 
+* But Schneier Says that the XKCD method doesn't work?
+Althoguh Schneier is indeed a security genius, there are several mistakes that
+he makes in his analysis
+
+1. In this case, it has always been assumed that the password generation method
+   is known to the attacker. That's the whole point of entropy computations; see
+   the analysis. That attackers are "on to this trick" changes nothing at all
+   (when an attacker knows the password generation method, the entropy
+   computation describes exactly the password strength; when the attacker is
+   incompetent and does not know the password generation method, the password
+   strength is only higher, by an amount which is nigh impossible to quantify).
+
+   The quip about "passwords in memory" is just more incoherent ramblings.
+   Passwords necessarily go to RAM at some point, whether you type them or
+   copy-paste them from a password safe, or anything similar.
+
+2. Picking 4 random words from a 2048-word dictionary gives you
+   2048*2048*2048*2048 possibilities. That's about 17.6 trillion unique phrases
+   an attacker would have to search through. This
+   4-common-word-prhase has the equivalent entropy as a totally random
+   10-character lower case password (26 characters), 8 character upper-and-lower
+   password with digits (52 characters), or a 7-character password with a
+   completely random mix of letters, numbers, and digits. These are completely
+   random characters, not the typical W0rd123! kind of pattern that people
+   usually come up with, which crackers already have search algorithms for. An 8
+   character password with completely random character distribution is actually
+   considered quite strong and basically impossible to crack with today's
+   technology. And this is the point: that 4-word xkcd passphrase is the same
+   strength as the impossible to crack random character string. Don't rely on
+   your intuition. Rely on the math
+
+Towards the end of the article, he also mentions you should use a personally
+memorable sentence. He isn’t explicit that it should be made up by you, and two
+of his sentences are quotations (and famous ones at that.) This is a terrible
+idea, because crackers can and will index famous quotations to use them in
+scanning programs. It seems that Schneier is disparaging other methods, only to
+recommend his own inferior method.
+
+*The XKCD method works because it's random, human generated text can (and will) always be easily cracked*
+
 * The Algorithm
 ** Our algorithm is going to
 1. Take an input (number of words in the password (=nwords=) + numbers of bits per
@@ -50,11 +90,15 @@ entropy levels, while being much easier to remember
 
 ** Formulas used to calculate
 Calculating entropy:
-$\text{entropy}=\text{number of bits}\times\text{number of words}$
+\begin{align*}
+\text{entropy}&=\text{number of bits}\times\text{number of words}
+\end{align*}
 
 Calculating years need to crack code
-$\text{years}=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}$
-$\text{entropy}/\text{crypts per second}/86400/365$
+\begin{align*}
+\text{years}&=\text{entropy}/\text{crypts per second}/\text{seconds in a day}/\text{days in a year}\\
+&=\text{entropy}/\text{crypts per second}/86400/365
+\end{align*}
 
 ** Sample:
 The following example runs the program, telling it to create a 5 word password.
