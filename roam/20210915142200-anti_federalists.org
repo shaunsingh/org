@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       327d652e-068a-4012-9269-78bf9f8099c3
+:END:
+#+title: Anti-Federalists
+Opposite of [[id:5e869593-8fdb-4504-9483-22203131ce05][Federalists]], dislike a unified government and prefer a
+state-run system

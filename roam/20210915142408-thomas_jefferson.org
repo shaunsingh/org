@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3e14a2be-5d0e-41e0-a25b-fce0bbfa14aa
+:END:
+
+#+title: Thomas Jefferson
+- Antifederalist
+- [[id:bc101e61-c21b-4ba3-a76b-dc25f77539a4][Louisiana Purchase]]
+- Supported farmers, was plantation owner
+- Supported Strict Construction, taking the Constitution litterally
+- Sent Lewis and Clark to explore it

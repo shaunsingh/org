@@ -1,0 +1,27 @@
+#+title: Louisiana Purchase Assignment #1
+#+author: Shaurya Singh
+#+startup: fold
+#+options: toc:nil
+#+latex_class: cb-doc
+
+* Did the Federalists have real concerns over the purchase of the Louisiana Territory, or did they just hate Jefferson?
+Based on the documents, Federalists opposed the Louisiana Purchase because they
+  believed that it would lead to a power shift towards Jefferson and
+  the Republican Party. Jefferson saw the purchase as an opportunity to create
+  economy and trade through the purchase of port cities (New Orleans) and vast
+  amounts of land. In document A, Alexander Hamilton (a Federalist) mentions
+
+  /"This purchase will probably make it seem like Mr. Jefferson is brilliant. Any man, however, who possesses any amount of intelligence, will easily see that the purchase is the result of lucky coincidences and unexpected circumstances and not the result of any wise or thoughtful actions on the part of Jefferson’s administration."/
+
+  As you can see, the federalists agree with the expansion, saying it was
+  "essential to the peace and prosperity of our" earlier in the document.
+  However, they feel like crediting Jefferson for the expansion is unjust, and
+  that it was just a matter of luck. This further supported by the following quote from
+  Document B:
+
+    /"I am disgusted with the men who now rule us. The coward at the head [Jefferson] is like a French revolutionary. While he talks about humanity, he enjoys the utter destruction of his opponents. We have too long witnesses his general wickedness—his cruel removals of faithful officers and the substitution of corruption and immorality for honesty.'"/
+
+The Federalists aren't evaluating the benefits and drawbacks of the Louisiana
+Purchase itself, but rather the man behind it. Similar to modern politics, it
+sounds like their goal is to discourage the rival political party regardless of
+his contributions to America

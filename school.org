@@ -141,7 +141,7 @@ CLOSED: [2021-09-15 Wed 01:28]
 *** Bio [50%]
 **** DONE CH-1 Guided Notes  <2021-09-15 Wed>
 CLOSED: [2021-09-15 Wed 01:28]
-**** TODO Great Monarch Migration  <2021-09-15 Wed>
+**** TODO Great Monarch Migration  <2021-09-16 Thu>
 :LOGBOOK:
 CLOCK: [2021-09-14 Tue 19:27]--[2021-09-14 Tue 19:52] =>  0:25
 :END:
@@ -160,3 +160,11 @@ CLOSED: [2021-09-14 Tue 17:22]
 *** Bio [100%]
 **** DONE Safety Scavenger hunt
 DEADLINE: <2021-09-15 Wed>
+*** Spanish [0%]
+**** TODO Tarea 3
+DEADLINE: <2021-09-17 Fri>
+*** Algebra [0%]
+**** TODO 1-3  <2021-09-15 Wed>
+*** History [100%]
+**** DONE Louisiana Purchase
+CLOSED: [2021-09-15 Wed 14:56] DEADLINE: <2021-09-15 Wed>
