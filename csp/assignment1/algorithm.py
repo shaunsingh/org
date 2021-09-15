@@ -90,4 +90,3 @@ def years(entropy, crypts_per_second):
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv))
-# No heading:1 ends here

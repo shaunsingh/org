@@ -13,9 +13,9 @@ only a little.
 - There were both supports and *critics* to this theory
   1. Phlogiston *critics*: Why is air needed for combustion, and why does charcoal
 stop burning in a closed vessel?
-      a.  Phlogiston *supporters*: Air “attracts” phlogiston out of the charcoal, and burning
-stops when the air in the vessel is “saturated” with phlogiston.
- 2.  *Critics* also noted that when a metal burns, it forms a substance known as its calx,
-which weighs more than the metal, leading them to ask,
+      a. Phlogiston *supporters*: Air “attracts” phlogiston out of the charcoal,
+        and burning stops when the air in the vessel is “saturated” with phlogiston.
+      b. *Critics* also noted that when a metal burns, it forms a substance known
+         as its calx, which weighs more than the metal, leading them to ask,
  3. *Critics*: How can the loss of phlogiston cause a gain in mass?
    a. *Supporters*: Phlogiston has negative mass.

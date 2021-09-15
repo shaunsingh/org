@@ -1,0 +1,19 @@
+#+title: European Interactions Assignment #1
+#+author: Shaurya Singh
+#+startup: fold
+#+options: toc:nil
+#+latex_class: cb-doc
+
+* What does the term, "manifest destiny" mean?
+Manifest Destiny, a phrase coined in the mid-19th Century by an American
+Journalist, is the idea that the United States is destined by God, to expand its
+dominion and spread democracy and capitalism across the entire North American
+continent. It led Americans to believe that American society was inherently of
+higher value than others, and that it was an imperative and inevitable mission
+to incorporate the rest of the North American continent into the United States.
+
+* Why did the United States fight/negotiate with dozens on Indian groups for the lands of the Louisiana territory?
+Through the fight with the Indian groups, the United States gained control of
+the Mississippi, which was crucial for trade at the time. The Louisiana
+territory also opened up new land for US settlement and aided them in their
+western expansion.

@@ -1,0 +1,28 @@
+#+title: Early Interactions Assignment #1
+#+author: Shaurya Singh
+#+startup: fold
+#+options: toc:nil
+#+latex_class: cb-doc
+
+* How does the term “the West” mask the different perspectives of people at the start of the nineteenth century?
+The definition of the term "The West" depends on where you live. For those on
+the East Coast of the United States, it was the western part of North America
+(towards New Spain). For the Spanish Colonists, this area was el Norte (the
+North). For those in Alaska it was the East.
+
+* List three ways that Indian groups on the Great Plains used horses.
+Indian groups used horses as a form of transportation, as a way to create
+quickly transport goods and trade them, and as a weapon in war.
+
+* What necessities did western Indian groups get from the buffalo?
+The Indian Groups were able to create clothing, tools, weapons, and bedding from the
+buffalo. The Buffalo also served as a food source.
+
+* What percentage of infected populations died from new European diseases?
+New epidemics killed anywhere from 15 to 90 percent of the populations they
+infected. An example is the Omaha Indians, whose population diminished from
+3,000 to just 300 after disease struck their tribe.
+
+* Give an example of how Indian groups and Europeans cooperated in the West.
+Some Indian groups in the West formed alliances with the Europeans to gain
+power, strengthening their position against their adversaries.

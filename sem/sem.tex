@@ -1,11 +1,22 @@
-% Created 2021-09-11 Sat 00:44
+% Created 2021-09-14 Tue 09:52
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
-\usepackage{xcolor}
-\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
 \setmainfont[Ligatures=TeX]{Alegreya}
 \setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
 % features: (acronym par-sep)
@@ -18,15 +29,15 @@
 
 %% make document follow Emacs theme
 
-\definecolor{obg}{HTML}{fafafa}
-\definecolor{ofg}{HTML}{383a42}
+\definecolor{obg}{HTML}{f7f3ee}
+\definecolor{ofg}{HTML}{605a52}
 
 \pagecolor{obg}
 \color{ofg}
 
 % list labels
 
-\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{itemlabel}{HTML}{7382a0}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -40,16 +51,16 @@
 
 % structural elements
 
-\definecolor{documentTitle}{HTML}{a626a4}
-\definecolor{documentInfo}{HTML}{a626a4}
-\definecolor{level1}{HTML}{e45649}
-\definecolor{level2}{HTML}{da8548}
-\definecolor{level3}{HTML}{b751b6}
-\definecolor{level4}{HTML}{6f99f5}
-\definecolor{level5}{HTML}{bc5cba}
-\definecolor{level6}{HTML}{9fbbf8}
-\definecolor{level7}{HTML}{d292d1}
-\definecolor{level8}{HTML}{d8e4fc}
+\definecolor{documentTitle}{HTML}{9c739c}
+\definecolor{documentInfo}{HTML}{9c739c}
+\definecolor{level1}{HTML}{955f5f}
+\definecolor{level2}{HTML}{957f5f}
+\definecolor{level3}{HTML}{9c739c}
+\definecolor{level4}{HTML}{96a1b7}
+\definecolor{level5}{HTML}{b496b4}
+\definecolor{level6}{HTML}{b9c0cf}
+\definecolor{level7}{HTML}{cdb9cd}
+\definecolor{level8}{HTML}{e3e6ec}
 
 \addtokomafont{title}{\color{documentTitle}}
 \addtokomafont{author}{\color{documentInfo}}
@@ -67,11 +78,11 @@
 
 % textual elements
 
-\definecolor{link}{HTML}{4078f2}
+\definecolor{link}{HTML}{7382a0}
 \definecolor{cite}{HTML}{800080}
-\definecolor{itemlabel}{HTML}{4078f2}
-\definecolor{code}{HTML}{da8548}
-\definecolor{verbatim}{HTML}{50a14f}
+\definecolor{itemlabel}{HTML}{7382a0}
+\definecolor{code}{HTML}{957f5f}
+\definecolor{verbatim}{HTML}{81895d}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -90,9 +101,9 @@
 
 % code blocks
 
-\definecolor{codebackground}{HTML}{f6f6f6}
+\definecolor{codebackground}{HTML}{f3efea}
 \colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{f0f0f0}
+\definecolor{codeborder}{HTML}{efebe6}
 
 %% end customisations
 
@@ -125,9 +136,9 @@
 
 
 \section{Lens, Issues, and Articles}
-\label{sec:org7cf06bc}
+\label{sec:orgafab19c}
 \subsection{Lens: Enviornmental}
-\label{sec:orga0875c4}
+\label{sec:org1acad1f}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} How can we use technology to efficiently generate and store energy?
@@ -135,7 +146,7 @@
 \textbf{Article:} \href{https://energystorage.org/why-energy-storage/technologies/}{Hydrogen Energy Storage} 
 
 \subsection{Lens: Scientific}
-\label{sec:orgece7f33}
+\label{sec:org4b255ea}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} How can we use technology to filter out artificial research papers?
@@ -143,7 +154,7 @@
 \textbf{Article:} \href{https://www.nature.com/articles/d41586-021-00733-5}{The fight against fake-paper factories that churn out sham science}
 
 \subsection{Lens: Economic}
-\label{sec:org2362c97}
+\label{sec:org2407403}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} How can we use AI to predict demand and reduce cost of goods?
@@ -151,7 +162,7 @@
 \textbf{Article:} \href{https://hbr.org/2016/11/the-simple-economics-of-machine-intelligence}{The Simple Economics of Machine Intelligence}
 
 \subsection{Lens: Political and Historical}
-\label{sec:orgbf6ef22}
+\label{sec:org9e805b0}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} How can we use AI to analyze and predict the results of elections?
@@ -159,7 +170,7 @@
 \textbf{Article:} \href{https://www.wsj.com/articles/artificial-intelligence-shows-potential-to-gauge-voter-sentiment-11604704009}{Artificial Intelligence shows Potential to Gauge Voter Sentiment}
 
 \subsection{Lens: Artistic and Philosophical}
-\label{sec:org702698b}
+\label{sec:orgdd12e23}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} How will artificially-generated art affect art prices in the future
@@ -167,7 +178,7 @@
 \textbf{Article:} \href{https://www.forbes.com/sites/jessedamiani/2020/09/21/in-this-exhibition-an-ai-dreams-up-imaginary-artworks-that-artist-alexander-reben-then-creates-irl/?sh=6c0d29e732e6}{In this exhibition an ai dreams up imaginary artworks}
 
 \subsection{Lens: Cultural and Social}
-\label{sec:org78c18da}
+\label{sec:org303e1e0}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} What are the effects of technology on a kids social life?
@@ -175,7 +186,7 @@
 \textbf{Article:} \href{https://www.linkedin.com/pulse/impacts-technology-culture-tradition-social-values-ashes-niroula}{Impacts of technology on culture, tradition and social values}
 
 \subsection{Lens: Futuristic}
-\label{sec:orgf9fe17a}
+\label{sec:orgfdb50db}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} How will technology affect transportation in the future?
@@ -183,7 +194,7 @@
 \textbf{Article:} \href{https://capgemini-engineering.com/us/en/insight/how-technologies-will-change-the-future-of-transport/}{How Technologies will change the future of transport}
 
 \subsection{Lens: Ethical}
-\label{sec:org8a6bad8}
+\label{sec:orgb4d8c74}
 \textbf{Theme:} Technology
 
 \textbf{Issue:} How can we prevent unethical robotics in the future?
@@ -191,9 +202,9 @@
 \textbf{Article:} \href{https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full}{A Review of Future and Ethical Perspectives of Robotics and AI}
 
 \section{Choose one of the lenses with the best question which you have created. Read a few articles on the topic, and for two articles do the following:}
-\label{sec:org46f4e9f}
+\label{sec:orga6d4481}
 \subsection{Article 1: \href{https://www.nature.com/articles/d41586-021-00733-5}{The fight against fake-paper factories that churn out sham science}}
-\label{sec:org1f94c38}
+\label{sec:org6debf35}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}
@@ -269,7 +280,7 @@ Factories That Churn out Sham Science.” Nature, vol. 591, no. 7851, Mar.
 \end{enumerate}
 
 \subsection{Article 2:  \href{https://www.frontiersin.org/articles/10.3389/frobt.2017.00075/full}{A Review of Future and Ethical Perspectives of Robotics and AI}}
-\label{sec:org9c24204}
+\label{sec:orgfe1af22}
 \begin{enumerate}
 \item Brief summary of the article
 \begin{itemize}

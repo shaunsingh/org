@@ -80,18 +80,19 @@ CLOSED: [2021-09-11 Sat 13:57]
 **** DONE Notebook + folder
 
 ** Friday
-*** Bio [66%]
+*** Bio [100%]
 **** DONE Bring Home and Cover textbook   <2021-09-13 Mon>
 CLOSED: [2021-09-11 Sat 15:10]
 **** DONE Get to know you worksheet <2021-09-10 Fri>
 CLOSED: [2021-09-11 Sat 14:09]
-**** TODO [[https://classroom.google.com/u/1/c/Mzg2ODE5MzE1NTE0/a/MzIwNjU4NjYyODE4/details][Safety Rules]] <2021-09-13 Mon>
+**** DONE [[https://classroom.google.com/u/1/c/Mzg2ODE5MzE1NTE0/a/MzIwNjU4NjYyODE4/details][Safety Rules]] <2021-09-13 Mon>
+CLOSED: [2021-09-12 Sun 23:03]
 *** Sem [0%]
-**** TODO Make questions more descriptive (summer hw) <2021-09-13 Mon>
+**** TODO Make questions more descriptive (summer hw) <2021-09-17 Fri>
 *** Chem [50%]
 **** DONE Join College Board class <2021-09-10 Fri>
 CLOSED: [2021-09-11 Sat 14:09]
-**** TODO Watch videos (1.1) and take notes <2021-09-13 Mon>
+**** TODO Watch videos (1.1) and take notes <2021-09-17 Fri>
 :LOGBOOK:
 CLOCK: [2021-09-12 Sun 00:02]--[2021-09-12 Sun 00:27] =>  0:25
 CLOCK: [2021-09-11 Sat 23:32]--[2021-09-11 Sat 23:57] =>  0:25
@@ -99,8 +100,63 @@ CLOCK: [2021-09-11 Sat 23:32]--[2021-09-11 Sat 23:57] =>  0:25
 *** CSP [100%]
 **** DONE Random Password Algorithm Draft  <2021-09-13 Mon>
 CLOSED: [2021-09-11 Sat 14:09]
-*** Spanish [0%]
-**** TODO Tarea 1 <2021-09-13 Mon>
+*** Spanish [100%]
+**** DONE Tarea 1 <2021-09-13 Mon>
 *** Algebra 2 [100%]
 **** DONE Info sheet <2021-09-11 Fri>
 CLOSED: [2021-09-11 Sat 14:09]
+*** MISC
+**** DONE Organize needed notebooks/textbooks/planners <2021-09-13 Mon>
+CLOSED: [2021-09-13 Mon 11:41]
+:LOGBOOK:
+CLOCK: [2021-09-12 Sun 23:04]--[2021-09-12 Sun 23:29] =>  0:25
+:END:
+
+* Week 2
+** Monday
+*** Algebra [100%]
+**** DONE 4-48 multiples of 4 <2021-09-14 Tues>
+CLOSED: [2021-09-13 Mon 18:29]
+:LOGBOOK:
+[2021-09-13 Mon 18:12]--[2021-09-13 Mon 18:29] =>  0:17
+:END:
+*** History [100%]
+**** DONE Early Interactions <2021-09-14 Tues>
+:LOGBOOK:
+CLOCK: [2021-09-13 Mon 19:06]--[2021-09-13 Mon 19:19] =>  0:13
+:END:
+*** CSP [75%]
+**** DONE CODIO Part 1 (into) <2021-09-14 Tue>
+CLOSED: [2021-09-13 Mon 18:29]
+**** DONE CODIO Part 2 <2021-09-14 Tue>
+CLOSED: [2021-09-13 Mon 18:29]
+**** TODO CODIO Vocab <2021-09-17 Fri>
+**** DONE Random Password Algorithm Draft <2021-09-14 Tue>
+CLOSED: [2021-09-13 Mon 18:29]
+
+** Tuesday
+*** Algebra [100%]
+**** DONE 1-2 Properties of Real Numbers 20-50 m5 + 59-62  <2021-09-15 Wed>
+CLOSED: [2021-09-15 Wed 01:28]
+*** Bio [50%]
+**** DONE CH-1 Guided Notes  <2021-09-15 Wed>
+CLOSED: [2021-09-15 Wed 01:28]
+**** TODO Great Monarch Migration  <2021-09-15 Wed>
+:LOGBOOK:
+CLOCK: [2021-09-14 Tue 19:27]--[2021-09-14 Tue 19:52] =>  0:25
+:END:
+*** Spanish [0%]
+**** TODO Tarea 2 <2021-09-15 Wed>
+*** History [100%]
+**** DONE European Interactions <2021-09-15 Wed>
+CLOSED: [2021-09-15 Wed 01:28]
+*** Other
+**** TODO Check Rutgers Application (premed) <2021-09-19 Sun>
+**** DONE Enroll in Assignments Classrooom <2021-09-14 Tue>
+CLOSED: [2021-09-14 Tue 17:22]
+**** TODO Check Chem Olympiad info <2021-09-14 Tue>
+
+** Wednesday
+*** Bio [100%]
+**** DONE Safety Scavenger hunt
+DEADLINE: <2021-09-15 Wed>
