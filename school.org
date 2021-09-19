@@ -151,7 +151,7 @@ CLOCK: [2021-09-14 Tue 19:27]--[2021-09-14 Tue 19:52] =>  0:25
 **** DONE European Interactions <2021-09-15 Wed>
 CLOSED: [2021-09-15 Wed 01:28]
 *** Other
-**** TODO Check Rutgers Application (premed) <2021-09-19 Sun>
+**** TODO Check Rutgers Summer Application (premed) <2021-09-19 Sun>
 **** DONE Enroll in Assignments Classrooom <2021-09-14 Tue>
 CLOSED: [2021-09-14 Tue 17:22]
 **** TODO Check Chem Olympiad info <2021-09-14 Tue>
