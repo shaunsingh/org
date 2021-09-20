@@ -1,0 +1,38 @@
+#+title: Lewis and Clark #1
+#+author: Shaurya Singh
+#+startup: fold
+#+options: toc:nil
+#+latex_class: cb-doc
+
+* Did Lewis and Clark Treat the Native Americans they Encountered Respectfully?
+
+Lewis and Clark did not treat the natives with respect based on their writing
+and their speech to the Otoe Tribe. Throughout Document E, you can see Lewis and
+Clark reffering to the Native Americans as children. He also instills fear in
+the Natives, forcing them to submit to the demands of white men.
+#+begin_quote
+Children . . . you are to live in peace with all the white men, for they are [the
+great chief’s] children; neither wage war against the red men your
+neighbors, for they are equally his children and he is bound to protect them.
+
+- Lewis and Clark to the Otoe Indians, August 4, 1804.
+#+end_quote
+
+It's clear from the text Lewis and Clark thing of themselves not as equals, but
+above the Native Americans. Additionally, Lewis and Clark killed a Native
+American stole their gun, leaving a medal over the Native's dead body to
+intimidate the tribe. We can see this in Document B
+#+begin_quote
+We left one of our horses and took four of the best of those of the Indians.
+While the men were preparing the horses, I put four shields and two bows
+and quivers of arrows which had been left [by the Indians] on the fire. . . . I
+also retook the flag but left the medal about the neck of the dead man that
+they might be informed who we were.
+
+-  Diary of Meriwether Lewis, July 27, 1806.
+#+end_quote
+
+Lewis and Clark were insensitive to the Native Americans and their needs. In addition
+to calling the blackfeet /“a vicious, lawless and rather an abandoned set of wretches.”/, the two exploreres brought diseases that killed up to 90% of some
+tribes. Times magazine agrees, calling Lewis, Clark's, and Jefferson's land-grab
+policy, a direct of what they call "Cultural Genocide" and "ethnic clensing"
