@@ -163,8 +163,9 @@ DEADLINE: <2021-09-15 Wed>
 *** Spanish [0%]
 **** TODO Tarea 3
 DEADLINE: <2021-09-17 Fri>
-*** Algebra [0%]
-**** TODO 1-3  <2021-09-15 Wed>
+*** Algebra [100%]
+**** DONE 1-3  <2021-09-15 Wed>
+CLOSED: [2021-09-19 Sun 18:18]
 *** History [100%]
 **** DONE Louisiana Purchase
 CLOSED: [2021-09-15 Wed 14:56] DEADLINE: <2021-09-15 Wed>
