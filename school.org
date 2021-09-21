@@ -88,7 +88,7 @@ CLOSED: [2021-09-11 Sat 14:09]
 **** DONE [[https://classroom.google.com/u/1/c/Mzg2ODE5MzE1NTE0/a/MzIwNjU4NjYyODE4/details][Safety Rules]] <2021-09-13 Mon>
 CLOSED: [2021-09-12 Sun 23:03]
 *** Sem [0%]
-**** TODO Make questions more descriptive (summer hw) <2021-09-17 Fri>
+**** DONE Make questions more descriptive (summer hw) <2021-09-17 Fri>
 *** Chem [50%]
 **** DONE Join College Board class <2021-09-10 Fri>
 CLOSED: [2021-09-11 Sat 14:09]
@@ -130,7 +130,7 @@ CLOCK: [2021-09-13 Mon 19:06]--[2021-09-13 Mon 19:19] =>  0:13
 CLOSED: [2021-09-13 Mon 18:29]
 **** DONE CODIO Part 2 <2021-09-14 Tue>
 CLOSED: [2021-09-13 Mon 18:29]
-**** TODO CODIO Vocab <2021-09-17 Fri>
+**** DONE CODIO Vocab <2021-09-17 Fri>
 **** DONE Random Password Algorithm Draft <2021-09-14 Tue>
 CLOSED: [2021-09-13 Mon 18:29]
 
@@ -141,17 +141,18 @@ CLOSED: [2021-09-15 Wed 01:28]
 *** Bio [50%]
 **** DONE CH-1 Guided Notes  <2021-09-15 Wed>
 CLOSED: [2021-09-15 Wed 01:28]
-**** TODO Great Monarch Migration  <2021-09-16 Thu>
+**** DONE Great Monarch Migration  <2021-09-16 Thu>
 :LOGBOOK:
 CLOCK: [2021-09-14 Tue 19:27]--[2021-09-14 Tue 19:52] =>  0:25
 :END:
-*** Spanish [0%]
-**** TODO Tarea 2 <2021-09-15 Wed>
+*** Spanish [100%]
+**** DONE Tarea 2 <2021-09-15 Wed>
+CLOSED: [2021-09-20 Mon 13:18]
 *** History [100%]
 **** DONE European Interactions <2021-09-15 Wed>
 CLOSED: [2021-09-15 Wed 01:28]
 *** Other
-**** TODO Check Rutgers Summer Application (premed) <2021-09-19 Sun>
+**** DONE Check Rutgers Summer Application (premed) <2021-09-19 Sun>
 **** DONE Enroll in Assignments Classrooom <2021-09-14 Tue>
 CLOSED: [2021-09-14 Tue 17:22]
 **** TODO Check Chem Olympiad info <2021-09-14 Tue>
@@ -160,12 +161,28 @@ CLOSED: [2021-09-14 Tue 17:22]
 *** Bio [100%]
 **** DONE Safety Scavenger hunt
 DEADLINE: <2021-09-15 Wed>
-*** Spanish [0%]
-**** TODO Tarea 3
-DEADLINE: <2021-09-17 Fri>
+*** Spanish [100%]
+**** DONE Tarea 3
+CLOSED: [2021-09-20 Mon 13:18] DEADLINE: <2021-09-17 Fri>
 *** Algebra [100%]
 **** DONE 1-3  <2021-09-15 Wed>
 CLOSED: [2021-09-19 Sun 18:18]
 *** History [100%]
 **** DONE Louisiana Purchase
 CLOSED: [2021-09-15 Wed 14:56] DEADLINE: <2021-09-15 Wed>
+
+* Week 3 
+** Monday
+*** Spanish [0%]
+**** DONE Tarea 6,7
+DEADLINE: <2021-09-21 Tue>
+*** Algebra [0%]
+**** DONE 1-4  pt1
+DEADLINE: <2021-09-20 Mon>
+**** DONE 1-4  pt2
+DEADLINE: <2021-09-21 Tue>
+**** TODO ALEKS Progress Test
+DEADLINE: <2021-09-23 Thu>
+*** History [0%]
+**** DONE Manifest Destiny
+DEADLINE: <2021-09-15 Wed>
