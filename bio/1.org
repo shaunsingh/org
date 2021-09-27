@@ -1,15 +1,12 @@
-#+title: The Great Monarch Migration
-#+subtitle: Biology
+#+title: Biology Notes
+#+subtitle:Chapter #1 
 #+author: Shaurya Singh
 #+startup: preview
 #+startup: fold
-#+options: toc:nil
-#+latex_class: cb-doc
+#+options: toc:2
+#+latex_class: chameleon
 
-* The number of North American monarchs have been decreasing for some time.  Describe two possible reasons for this.
-Genetically modified crops
-* There is a possibility that the east coast monarchs will disappear entirely.  Name the environmental issue and how it could lead to their demise.
-* Monarch caterpillars only eat milkweed.  This habit has traditionally given monarchs a survival advantage.  However, it is slowly turning into a disadvantage.  Explain .
-* The viceroy butterfly looks very similar to the monarch and actually benefits from this resemblance.  Explain why and how it benefits.
-* What measures can individuals like you take to reduce or halt the monarchs decreasing numbers?
-* What measures can local governments take to help the monarchs?
+* Characteristics of Living Things
+** All living things use energy
+ - Metabolism: all of the chemical reactions that occur in a living things
+ - Autotrophs: producers, organisms that can produce its own food by capturing energy from the sun 

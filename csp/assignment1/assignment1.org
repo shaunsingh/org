@@ -5,7 +5,7 @@
 #+options: toc:2
 #+latex_class: chameleon
 
-[[./password_strength_xkcd.png]]
+[[xkcd:936]]
 
 * Entropy and Creating Passwords
 ** What is Entropy?

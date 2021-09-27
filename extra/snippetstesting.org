@@ -1,3 +1,10 @@
 #+title: Testing
 #+author: Shaurya Singh
-#+latex_class: cb-doc
+#+latex_class: chameleon
+
+#+plot: transpose:yes type:radar min:0 max:4 ticks:4 file:"misc/editor-comparison.svg"
+| Editor   | Speed | Initial ease of use | Extensiblity | Keybindings (w/EVIL) | Visuals | Completion |
+|----------+-------+---------------------+--------------+----------------------+---------+----------------|
+| Emacs    |     3 |                   2 |            5 |                    3 |       4 |              3 |
+#+attr_html: :class invertible :alt Radar chart comparing my thoughts on a few editors.
+#+attr_latex: :options inkscapelatex=false

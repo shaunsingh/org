@@ -181,8 +181,42 @@ DEADLINE: <2021-09-21 Tue>
 DEADLINE: <2021-09-20 Mon>
 **** DONE 1-4  pt2
 DEADLINE: <2021-09-21 Tue>
-**** TODO ALEKS Progress Test
+**** DONE ALEKS Progress Test
 DEADLINE: <2021-09-23 Thu>
 *** History [0%]
 **** DONE Manifest Destiny
 DEADLINE: <2021-09-15 Wed>
+
+** Friday 
+*** Spanish [0%]
+**** DONE Tarea 10
+DEADLINE: <2021-09-27 Mon>
+*** History [0%]
+**** TODO Manifest Destiny (survival game)
+DEADLINE: <2021-09-28 Tue>
+*** Biology [0%]
+**** TODO Scientific Method Practice 
+DEADLINE: <2021-09-28 Tue>
+**** TODO Graphing Skills
+DEADLINE: <2021-09-28 Tue>
+*** CSP [0%]
+**** DONE CODIO Practice 
+DEADLINE: <2021-09-28 Tue>
+
+* Week 4 
+** Monday
+*** Algebra [0%]
+**** TODO Test study
+DEADLINE: <2021-09-28 Tue>
+*** History [0%]
+**** TODO Texas
+DEADLINE: <2021-09-28 Tue>
+*** Bio [0%]
+**** TODO Graphing
+DEADLINE: <2021-09-28 Tue>
+*** Chem [0%]
+**** TODO Notes on Lab Safety 
+DEADLINE: <2021-09-28 Tue>
+**** TODO Notes 
+DEADLINE: <2021-09-28 Tue>
+
