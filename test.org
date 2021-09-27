@@ -344,7 +344,5 @@ echo "more stuff"
 echo <<hi>>
 #+END_SRC
 
-#+RESULTS:
-
 To enter and edit a block of text with a native editor, use =C-c C-'=. You can
 also edit in org, but with limited lsp-mode and company support
