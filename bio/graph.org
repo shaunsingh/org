@@ -1,0 +1,127 @@
+#+title: Graphing HW #1
+#+subtitle: Biology I
+#+author: Shaurya Singh
+#+options: toc:2
+#+latex_class: chameleon
+
+* Pre-Lab Discussion
+1. Would a line graph or a bar graph be better for showing the number of birds
+   of each color in a population?
+   - A Bar Graph would be better, as the data is grouped data.
+2. How could you plot more than one responding variable on a line graph?
+   - You could plot two lines on one graph.
+3. Where do you place the manipulated variable on a line graph?
+   - The manipulated (independant) variable goes on the X-axis.
+4. Which type of graph would you use to show comparisons? Explain the reason for your answer.
+   - I would use a Pie Chart, as its effective in showing parts of a whole. If
+     you wan't a precise comparison (as opposed to a relative one), use a bar graph
+5. Why is it important to have all parts of a graph clearly labeled and drawn?
+   - Graphs that are clearly labeled are much less likely to be misread or misinterpreted.
+
+* Procedure
+** Part A: Interpreting Graphs
+1. No answer required
+2. Use the line graph in Figure 2 to answer the following questions
+   a. Which plant grew the tallest
+      - Plant 2
+   b. How many plants grew to be at least 6 cm tall?
+      - All 3 plants grew to be atleast 6cm tall
+   c. Which plant grew the fastest in the first five days?
+      - Plant 3 grew the fastest the first 5 days
+   d. Which line represents plant 2?
+      - The dotted (----) line represents plant 2
+   e. After 10 days, how much had plant 3 grown?
+      - After 10 days plant 3 was 6cm tall
+   f. How long did it take for plant 1 to grow 6 cm?
+      - It took 15 days for plant 1 to reach 6cm
+3. No answer required
+4. Use the bar graph to answer the following questions
+   a. At birth, what is the average number of red blood cells per mm of blood?
+      - At birth, there are 5.7 million blood cells/mm$^{3}$ on average
+   b. What appears to happen to the number of red blood cells between birth and 2 months?
+      - The number of red blood cells drastically decresaes between birth and 2 months
+   c. What happens to the number of red blood cells between the ages of 6 and 8 years?
+      - From 6 to 8 years, the number of red blood cells stays the same
+   d. Between what ages is a human likely to have 4.6 million red blood cells?
+      - Someone is likely to have 4.6 million red blood cells from 6-12 months of age
+   e. After 14 years of age, do males or females have a higher red blood cell count?
+      - After 14 years of age, males have a higher blood cell count
+
+** Part B: Constructing Graphs
+*** Data Table 1:
+Use the information recorded in Data Table 1 to construct a line
+graph on the grid provided below. You should label each axis, mark an appropriate scale on each axis, plot the data, connect the points,
+and give your graph a title
+
+#+plot: title:"Effect of temperature on rate of breathing"  file:"temperatureVSbreathing.jpeg" set:"xlabel 'Temperature (C\deg)'" set:"ylabel 'Breathing Rate (Per Minute)'" ind:1 type:2d deps:(2)
+| Temperature(C) | Breathing Rate (Per Minute) |
+|----------------+-----------------------------|
+|             10 |                          15 |
+|----------------+-----------------------------|
+|             15 |                          25 |
+|----------------+-----------------------------|
+|             18 |                          30 |
+|----------------+-----------------------------|
+|             38 |                          60 |
+|----------------+-----------------------------|
+|             57 |                          25 |
+
+#+attr_html: :width 600px
+[[file:./temperatureVSbreathing.jpeg]]
+
+*** Data Table 2:
+Use the information recorded in Data Table 2 to construct a bar graph
+on the grid provided below. You should label each axis, mark an appropriate
+scale on each axis, plot the data, darken the columns of the graph, and give
+your graph a title.
+
+#+plot: title:"Average Rainfall in Willamette Valley" ind:1 deps:(2) type:2d file:"averagerainfall.jpeg" with:histograms set:"yrange [0:]" set:"xlabel 'Month'" set:"ylabel 'Rainfall (mL)'"
+| Month | Rainfall (mL) |
+|-------+---------------|
+| Jan.  |            15 |
+| Feb.  |            21 |
+| Mar.  |            28 |
+| April |            24 |
+| May   |            16 |
+| June  |             8 |
+| July  |             2 |
+| Aug.  |             1 |
+| Sept  |             2 |
+| Oct.  |             3 |
+| Nov.  |             5 |
+| Dec.  |            10 |
+
+#+attr_html: :width 600px
+[[file:./averagerainfall.jpeg]]
+
+* Analysis and Conclusions
+1. *Comparing and Contrasting:* How is a graph similar to a data table?
+   - Graphs and table are similar because they both present the evidential and
+     statistic data given and yielded from a certain experiment or testing. They
+     both have a role in classification, categorization, interpretation and
+     organization of the data. A table presents the raw data, while a graph
+     visualizes it
+
+2. *Comparing and Contrasting:* How is a line graph different from a bar graph?
+   - Bar graphs show data with blocks of different lengths, whereas line graphs
+     show a series of points connected by straight lines. Bar graphs are more
+     versatile while line graphs are better for showing trends over time or
+     another measure with a logical progression of values. Bar graphs can also
+     show frequency distributions much more effectively than line graphs.
+
+3. *Using Graphs:* Does a steep curve on a line graph indicate a rapid or slow
+   rate of change?
+   - A steep curve on a line graph would indicate a rapid rate of change
+
+4. *Using Graphs:* You are conducting an experiment to measure the gain in mass of
+   a young mouse over a ten-week period. In constructing a graph to represent
+   your data, which variable should you place along the x-axis and which
+   variable should you place along the y-axis? Explain your answer.
+   - On the x-axis you would put the independent/manipulated variable, which is
+     the time. On the y-axis is the dependant variable, which is the gain in
+     mass.
+
+5. *Using Graphs:* What is an advantage of using multiple lines in a line graph?
+   (See Figure 2.)
+   - With multiple lines, you can display multiple sets of data, allowing the
+     reader to easily compare and contrast the datasets.

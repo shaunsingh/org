@@ -1,0 +1,52 @@
+#+title: Texan Revolt Outline #1
+#+subtitle: USH2
+#+author: Shaurya Singh
+#+startup: fold
+#+options: toc:2
+#+latex_class: chameleon
+
+* Start of the Texas Revolution
+** The Texas Revolution began in June 1832
+ 1. Armed colonists freed William B. Travis and Patrick Jack
+ 2. Were being held by COlonel Juan David Bradburn at the Anahuac
+ 3. They Explained their actions
+** Turtle Bayou Resolutions
+ 1. the colonists claimed they had acted in support of a Federalist revolution
+ 2. They claimed the revolution was being conducted in Mexico by Antonia Lopez de Santa Anna
+* Santa Anna’s revolution
+** Santa Anna’s revolution had succeeded but he still embraced Centralism the following years
+      1. Discarded Constitution of 1824 w/ its Federalist guarantees
+  2. By 1835, several states within the Mexican Federation revolted against
+     the Centralist government.
+  3. In may of 1835. Santa Anna led his army to Zacatecas, where beat the state militia
+      4. Now he focused on texas
+*  Texas
+** Mexican officials were concerned about the number of Anglo Colonists immigrating to Texas
+      1. One solution was to increase the number of troops
+      2. General Martin Perfecto de Cos was sent to texas to keep dissidents in check
+      3. William B. Travis and his supporters had already confronted them at Anahuac.
+      4. Orders were issued for the arrest of Williams and his supporters
+      5. Flying a flag bearing the words “Come and Take it,” the colonists fired
+         back and and drove away the Mexicans
+** The colonists, realizing that war with the government had begun, moved to consolidate their hold on Texas.
+      1. On the night of October 9, 1835, the colonists seized Presidio La Bahía at Goliad and captured its garrison.
+      2. That month several hundred colonists gathered at Gonzales and formed
+         themselves into The Army of the People and elected Stephen F. Austin as
+         their commanding general.
+      3. By the end of October, the army was outside San Antonio de Béxar,
+         looking to gain control of that important political seat.
+** Inside the city was General Cos and his Centralist garrison.
+      1. Cos had landed at Copano and marched to Béxar just as the revolution was beginning.
+      2. The Texans laid siege to the city.
+      3. In late November Austin had to leave the army and travel to the United
+         States at the orders of the Provisional Government, andof the colonists
+         began to leave the army as well.
+      4. The situation did not look favorable for the Texans.
+         1. Rallies in support of the revolution had turned out recruits for the
+            fight against Mexico's Centralist government.
+         2. One group, headed by exiled Federalist leader General Méxia, landed
+            at Tampico but was defeated. Other volunteers, called the New
+            Orleans Greys, arrived at Béxar in time to bolster the Texan cause.
+      5. On the morning of December 5, the Texans attacked the town, ultimately
+         forcing Cos and his garrison to surrender after several days of
+         fighting. By the end of 1835, no Centralist troops remained in Texas.

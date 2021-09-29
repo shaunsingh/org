@@ -1,0 +1,19 @@
+#+title: Indian Removal
+#+subtitle: Assignment #1
+#+author: Shaurya Singh
+#+startup: fold
+#+options: toc:nil
+#+latex_class: chameleon
+
+* How did the Cherokees assimilate to U.S. values and cultures
+Many indian groups rejected assimilation and resisted the enroachment of white
+settlers. Other groups adopted some parts of Anglo-American culture. For
+example, the Cherokees in Georgia created a rupublic with a government similar
+to that of the United State's. Cherokees also supported and participated in
+cotton trade, and eventually adopted a constitution considering themselves a
+nation.
+
+
+* Why didn't the U.S. government view the Cherokees as a success story of assimilation between U.S. and Native cultures?
+The Cherokee eventually declared independance and the American's disagreed with
+that. The Americans also wanted the Cherokee's land, which was now off limits.

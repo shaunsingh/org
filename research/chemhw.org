@@ -1,0 +1,20 @@
+#+title: Intro Topic #1
+#+subtitle: Science Research
+#+author: Shaurya Singh
+#+startup: preview
+#+startup: fold
+#+options: toc:2
+#+latex_class: chameleon
+#+latex_header: \usepackage{chemfig}
+#+latex_header: \usepackage[version=4]{mhchem}
+#+latex_header: \usepackage{enumerate}
+
+* Resources:
+1. [[https://www.sciencebuddies.org/science-fair-projects/project-ideas/Genom_p003/genetics-genomics/blasting-flu-viruses#procedure][BLASTing Flu Viruses | Science Project]]
+2. [[https://zfin.org/zf_info/zfbook/chapt9/9.3.html][ZFIN: Zebrafish Book: Molecular Methods]]
+3. [[https://www.frontiersin.org/articles/10.3389/fcell.2018.00178/full][Frontiers | The Zebrafish as an Emerging Model to Study DNA Damage in Aging, Cancer and Other Diseases | Cell and Developmental Biology]]
+4. [[https://www.hopkinsmedicine.org/research/advancements-in-research/fundamentals/in-depth/zebrafish-help-unlock-clues-to-human-disease][Zebrafish Help Unlock Clues to Human Disease]]
+5. [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3193057/][Danio rerio in K-12 Classrooms: Sparking Interest in the New Generation of Scientists]]
+6. [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5878548/][Using Zebrafish to Bring Hands-On Laboratory Experiences to Urban Classrooms]]
+7. [[https://www.societyforscience.org/blog/mary-fish-and-her-zebrafish/][Mary Fish and her zebrafish | Society for Science]]
+8. [[https://www.future-science.com/doi/10.2144/000112619][Method for isolation of PCR-ready genomic DNA from zebrafish tissues | BioTechniques]]
