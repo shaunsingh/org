@@ -1,0 +1,204 @@
+% Created 2021-09-29 Wed 09:46
+% Intended LaTeX compiler: pdflatex
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
+\setmainfont[Ligatures=TeX]{Alegreya}
+\setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
+% features: (acronym par-sep)
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+% end features
+
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{fafafa}
+\definecolor{ofg}{HTML}{383a42}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{4078f2}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
+
+\definecolor{documentTitle}{HTML}{a626a4}
+\definecolor{documentInfo}{HTML}{a626a4}
+\definecolor{level1}{HTML}{e45649}
+\definecolor{level2}{HTML}{da8548}
+\definecolor{level3}{HTML}{b751b6}
+\definecolor{level4}{HTML}{6f99f5}
+\definecolor{level5}{HTML}{bc5cba}
+\definecolor{level6}{HTML}{9fbbf8}
+\definecolor{level7}{HTML}{d292d1}
+\definecolor{level8}{HTML}{d8e4fc}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+% textual elements
+
+\definecolor{link}{HTML}{4078f2}
+\definecolor{cite}{HTML}{4aa8b0}
+\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{code}{HTML}{da8548}
+\definecolor{verbatim}{HTML}{50a14f}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{f6f6f6}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+%% end customisations
+
+\author{Shaurya Singh}
+\date{\today}
+\title{Scientific Method HW \#1\\\medskip
+\large Biology I}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
+\hypersetup{
+  pdfauthor={Shaurya Singh},
+  pdftitle={Scientific Method HW \#1},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
+\begin{document}
+
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+
+\section{Using Science Skills}
+\label{sec:org6c3227d}
+\begin{enumerate}
+\item \textbf{Interpreting Graphics:} In Figure 1-1, which rabbit is the control?
+\begin{itemize}
+\item Rabit 2 is the control, since it doesn't have an ice pack
+\end{itemize}
+\item \textbf{lnterpreting Graphics:} In Figure 1-1, what is the variable in this
+experiment?
+\begin{itemize}
+\item The independant variable is the temperature of the shaved patch on the
+rabbit, and the dependant variable would be the color of fur produced.
+\end{itemize}
+\item \textbf{Formulating Hypotheses:} Before completing the experiment in Figure 1-1, the
+scientist made a hypothesis. What is the hypothesis she is testing?
+\begin{itemize}
+\item She is testing the hypothesis ``If the patch of the rabbit is colder, then
+the produced fur will be darker''
+\end{itemize}
+\item \textbf{Applying Concepts:} Why is Rabbit B essential to this experiment?
+\begin{itemize}
+\item Its important to have a control so we the researcher accurately test the
+value of an independent variable on a dependent variable
+\end{itemize}
+\item \textbf{Drawing Conclusions:} Based on your observations of Figure 1-1, conclude what
+effect temperature has on Himalayan rabbits.
+\begin{itemize}
+\item The Figure confirms our hypothesis, the colder rabbit produced darker skin,
+so the enviornment does affect the color of rabbit fuduced darker skin, so
+the enviornment does affect the color of rabbit fur
+\end{itemize}
+\end{enumerate}
+
+\section{Bacteria Growth and Temperature}
+\label{sec:orgd67b2f1}
+\begin{enumerate}
+\item \textbf{Classifying:} What variable did the researcher change during this experiment?
+\begin{itemize}
+\item The only variable ``changed'' was the time.
+\end{itemize}
+\item \textbf{Inferring:} What do the shapes of the curves tell you about the changes in
+population size?
+\begin{itemize}
+\item As time increases, the rate of growth decreases
+\end{itemize}
+\item \textbf{Calculating:} For the bacteria kept at 15°C, how did population size change
+during the experiment?
+\begin{itemize}
+\item The population size increased from around 3750 bacteria/ml of broth to
+10000 bacteria/ml of broth
+\end{itemize}
+\item \textbf{Drawing Conclusions:} What effect did the different temperatures have on the
+growth of the bacterial populations?
+\begin{itemize}
+\item A higher temperature results in a faster rate of growth
+\end{itemize}
+\item \textbf{Going Further:} Suppose some bacteria used in this experiment were kept at a
+temperature of 700°C (the temperature of boiling water). Would you expect the
+population sizes to increase even faster than at 15°C? Explain your
+reasoning.
+\begin{itemize}
+\item The bacteria will likely \textbf{NOT} increase faster, as at temperatures over
+65\textdegree{} C bacteria is rapidly killed.
+\end{itemize}
+\end{enumerate}
+\end{document}

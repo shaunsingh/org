@@ -3,9 +3,11 @@
 #+latex_class: chameleon
 #+startup: preview
 
-\begin{align*}
-
-\end{align*}
+\(
+2x+2=\frac{3}{3}\\
+3x=\frac{2}{3*5}\\
+\sin\theta^{-1}=\frac{2}{3}\\
+\)
 
 #+plot: transpose:yes type:radar min:0 max:4 ticks:4 file:"misc/editor-comparison.svg"
 | Editor | Speed | Initial ease of use | Extensiblity | Keybindings (w/EVIL) | Visuals | Completion |

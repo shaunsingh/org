@@ -18,3 +18,8 @@
 6. [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5878548/][Using Zebrafish to Bring Hands-On Laboratory Experiences to Urban Classrooms]]
 7. [[https://www.societyforscience.org/blog/mary-fish-and-her-zebrafish/][Mary Fish and her zebrafish | Society for Science]]
 8. [[https://www.future-science.com/doi/10.2144/000112619][Method for isolation of PCR-ready genomic DNA from zebrafish tissues | BioTechniques]]
+
+* Summary:
+** Topic
+** Thesis
+** Abstract

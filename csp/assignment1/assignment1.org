@@ -7,6 +7,9 @@
 
 [[xkcd:936]]
 
+Correct Password:
+#+begin_src^(?=.*\d)(?=.*[\~\!\@\#\$\%\^\&\*\)\(\_\+\-\:\[\}\=\"\`])(?=.*[a-z])(?=.*[A-Z]).{8,}#+end_src
+
 * Entropy and Creating Passwords
 ** What is Entropy?
 Entropy is a measure of "uncertainty" in an outcome. In this context, it can be

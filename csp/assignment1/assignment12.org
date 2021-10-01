@@ -1,0 +1,6 @@
+#+title: Password Generating Algorithm (Assignment #2)
+#+author: Shaurya Singh
+#+startup: preview
+#+startup: fold
+#+options: toc:2
+#+latex_class: chameleon

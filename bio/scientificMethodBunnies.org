@@ -1,0 +1,45 @@
+#+title: Scientific Method HW #1
+#+subtitle: Biology I
+#+author: Shaurya Singh
+#+options: toc:2
+#+latex_class: chameleon
+
+* Using Science Skills
+1. *Interpreting Graphics:* In Figure 1-1, which rabbit is the control?
+   - Rabit 2 is the control, since it doesn't have an ice pack
+2. *lnterpreting Graphics:* In Figure 1-1, what is the variable in this
+   experiment?
+   - The independant variable is the temperature of the shaved patch on the
+     rabbit, and the dependant variable would be the color of fur produced.
+3. *Formulating Hypotheses:* Before completing the experiment in Figure 1-1, the
+   scientist made a hypothesis. What is the hypothesis she is testing?
+   - She is testing the hypothesis "If the patch of the rabbit is colder, then
+     the produced fur will be darker"
+4. *Applying Concepts:* Why is Rabbit B essential to this experiment?
+   - Its important to have a control so we the researcher accurately test the
+     value of an independent variable on a dependent variable
+5. *Drawing Conclusions:* Based on your observations of Figure 1-1, conclude what
+   effect temperature has on Himalayan rabbits.
+   - The Figure confirms our hypothesis, the colder rabbit produced darker skin,
+     so the enviornment does affect the color of rabbit fuduced darker skin, so
+     the enviornment does affect the color of rabbit fur
+
+* Bacteria Growth and Temperature
+1. *Classifying:* What variable did the researcher change during this experiment?
+   - The only variable "changed" was the time.
+2. *Inferring:* What do the shapes of the curves tell you about the changes in
+   population size?
+   - As time increases, the rate of growth decreases
+3. *Calculating:* For the bacteria kept at 15°C, how did population size change
+   during the experiment?
+   - The population size increased from around 3750 bacteria/ml of broth to
+     10000 bacteria/ml of broth
+4. *Drawing Conclusions:* What effect did the different temperatures have on the
+   growth of the bacterial populations?
+   - A higher temperature results in a faster rate of growth
+5. *Going Further:* Suppose some bacteria used in this experiment were kept at a
+   temperature of 700°C (the temperature of boiling water). Would you expect the
+   population sizes to increase even faster than at 15°C? Explain your
+   reasoning.
+   - The bacteria will likely *NOT* increase faster, as at temperatures over
+     65\deg C bacteria is rapidly killed.
