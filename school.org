@@ -92,11 +92,6 @@ CLOSED: [2021-09-12 Sun 23:03]
 *** Chem [50%]
 **** DONE Join College Board class <2021-09-10 Fri>
 CLOSED: [2021-09-11 Sat 14:09]
-**** TODO Watch videos (1.1) and take notes <2021-09-17 Fri>
-:LOGBOOK:
-CLOCK: [2021-09-12 Sun 00:02]--[2021-09-12 Sun 00:27] =>  0:25
-CLOCK: [2021-09-11 Sat 23:32]--[2021-09-11 Sat 23:57] =>  0:25
-:END:
 *** CSP [100%]
 **** DONE Random Password Algorithm Draft  <2021-09-13 Mon>
 CLOSED: [2021-09-11 Sat 14:09]
@@ -138,7 +133,7 @@ CLOSED: [2021-09-13 Mon 18:29]
 *** Algebra [100%]
 **** DONE 1-2 Properties of Real Numbers 20-50 m5 + 59-62  <2021-09-15 Wed>
 CLOSED: [2021-09-15 Wed 01:28]
-*** Bio [50%]
+*** Bio [100%]
 **** DONE CH-1 Guided Notes  <2021-09-15 Wed>
 CLOSED: [2021-09-15 Wed 01:28]
 **** DONE Great Monarch Migration  <2021-09-16 Thu>
@@ -155,7 +150,8 @@ CLOSED: [2021-09-15 Wed 01:28]
 **** DONE Check Rutgers Summer Application (premed) <2021-09-19 Sun>
 **** DONE Enroll in Assignments Classrooom <2021-09-14 Tue>
 CLOSED: [2021-09-14 Tue 17:22]
-**** TODO Check Chem Olympiad info <2021-09-14 Tue>
+**** DONE Check Chem Olympiad info <2021-09-14 Tue>
+CLOSED: [2021-10-04 Mon 17:55]
 
 ** Wednesday
 *** Bio [100%]
@@ -171,52 +167,115 @@ CLOSED: [2021-09-19 Sun 18:18]
 **** DONE Louisiana Purchase
 CLOSED: [2021-09-15 Wed 14:56] DEADLINE: <2021-09-15 Wed>
 
-* Week 3 
+* Week 3
 ** Monday
-*** Spanish [0%]
+*** Spanish [100%]
 **** DONE Tarea 6,7
 DEADLINE: <2021-09-21 Tue>
-*** Algebra [0%]
+*** Algebra [100%]
 **** DONE 1-4  pt1
 DEADLINE: <2021-09-20 Mon>
 **** DONE 1-4  pt2
 DEADLINE: <2021-09-21 Tue>
 **** DONE ALEKS Progress Test
 DEADLINE: <2021-09-23 Thu>
-*** History [0%]
+*** History [100%]
 **** DONE Manifest Destiny
 DEADLINE: <2021-09-15 Wed>
 
-** Friday 
-*** Spanish [0%]
+** Friday
+*** Spanish [100%]
 **** DONE Tarea 10
 DEADLINE: <2021-09-27 Mon>
-*** History [0%]
-**** TODO Manifest Destiny (survival game)
-DEADLINE: <2021-09-28 Tue>
-*** Biology [0%]
-**** TODO Scientific Method Practice 
-DEADLINE: <2021-09-28 Tue>
-**** TODO Graphing Skills
-DEADLINE: <2021-09-28 Tue>
-*** CSP [0%]
-**** DONE CODIO Practice 
+*** History [100%]
+**** DONE Manifest Destiny (survival game)
+CLOSED: [2021-10-02 Sat 23:14] DEADLINE: <2021-09-28 Tue>
+*** Biology [100%]
+**** DONE Scientific Method Practice
+CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
+**** DONE Graphing Skills
+CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
+*** CSP [100%]
+**** DONE CODIO Practice
 DEADLINE: <2021-09-28 Tue>
 
-* Week 4 
+* Week 4
+** Monday
+*** Algebra [100%]
+**** DONE Test study
+CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
+*** History [100%]
+**** DONE Texas
+CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
+*** Bio [100%]
+**** DONE Graphing
+CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
+*** Chem [100%]
+**** DONE Notes on Lab Safety
+CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
+**** DONE Notes
+CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
+
+** Weekend
+DEADLINE: <2021-10-04 Mon>
+*** Algebra [100%]
+**** DONE 2.2 Linear Functions
+CLOSED: [2021-10-03 Sun 18:24]
+*** History [50%]
+**** TODO Manifest Destiny Project
+**** DONE Study for history test
+CLOSED: [2021-10-03 Sun 23:33]
+*** Spanish [100%]
+**** DONE Tarea 12,13
+CLOSED: [2021-10-04 Mon 13:28]
+**** DONE Vocab Study
+CLOSED: [2021-10-03 Sun 23:33]
+*** Chem [100%]
+**** DONE Watch videos (1.1.1, 1.1.2) and take notes
+CLOSED: [2021-10-04 Mon 17:54]
+**** DONE Honors Chem Study
+CLOSED: [2021-10-03 Sun 23:33]
+*** CSP [100%]
+**** DONE Project workday 1234
+CLOSED: [2021-10-02 Sat 23:35]
+**** DONE 1.8 Decidability and Performance
+CLOSED: [2021-10-04 Mon 17:56]
+**** DONE 1.9 Heuristics
+CLOSED: [2021-10-03 Sun 17:56]
+**** DONE AP Classroom Test
+CLOSED: [2021-10-03 Sun 18:20]
+*** Other
+**** DONE Setup Robotics Programs
+CLOSED: [2021-10-03 Sun 23:33]
+**** STRT Register for Chem Olympiad
+**** DONE Finish Practice PSAT Test
+CLOSED: [2021-10-03 Sun 23:33]
+**** TODO Finish Aeronautics Club Stuff
+**** DONE Finalize Student Council Speech/Presentation
+CLOSED: [2021-10-04 Mon 13:27]
+
+* Week 5
 ** Monday
 *** Algebra [0%]
-**** TODO Test study
-DEADLINE: <2021-09-28 Tue>
+**** TODO Quiz study
+**** TODO 2.2 Linear Functions
 *** History [0%]
-**** TODO Texas
-DEADLINE: <2021-09-28 Tue>
+**** TODO Test Study
 *** Bio [0%]
-**** TODO Graphing
-DEADLINE: <2021-09-28 Tue>
-*** Chem [0%]
-**** TODO Notes on Lab Safety 
-DEADLINE: <2021-09-28 Tue>
-**** TODO Notes 
-DEADLINE: <2021-09-28 Tue>
-
+**** TODO Test Study
+*** Chem [50%]
+**** TODO Quiz study
+**** TODO Attempt 1.2.1 notes
+**** DONE Watch videos (1.1.1, 1.1.2) and take notes
+CLOSED: [2021-10-04 Mon 17:54]
+**** DONE Quiz
+CLOSED: [2021-10-04 Mon 17:57]
+*** CSP [33%]
+**** TODO Quiz study
+**** DONE Group Work
+CLOSED: [2021-10-04 Mon 17:52]
+**** TODO 1.8 Decidability and Performance
+*** Other
+**** TODO Finish Up Robotics Emails
+**** TODO PSAT Practice Test
+**** TODO

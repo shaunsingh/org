@@ -1,0 +1,6 @@
+#+title: Ap CSP Summer Assignment
+#+author: Shaurya Singh
+#+startup: fold
+#+startup: preview
+#+options: toc:2
+#+latex_class: chameleon
