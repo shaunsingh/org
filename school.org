@@ -256,26 +256,58 @@ CLOSED: [2021-10-04 Mon 13:27]
 
 * Week 5
 ** Monday
-*** Algebra [0%]
-**** TODO Quiz study
-**** TODO 2.2 Linear Functions
-*** History [0%]
-**** TODO Test Study
-*** Bio [0%]
-**** TODO Test Study
-*** Chem [50%]
-**** TODO Quiz study
+*** Algebra [100%]
+**** DONE Quiz study
+CLOSED: [2021-10-05 Tue 14:35]
+**** DONE 2.2 Linear Functions
+CLOSED: [2021-10-05 Tue 14:35]
+*** History [100%]
+**** DONE Test Study
+CLOSED: [2021-10-05 Tue 14:35]
+*** Bio [100%]
+**** DONE Test Study
+CLOSED: [2021-10-05 Tue 14:35]
+*** Chem [75%]
+**** DONE Quiz study
+CLOSED: [2021-10-05 Tue 14:35]
 **** TODO Attempt 1.2.1 notes
 **** DONE Watch videos (1.1.1, 1.1.2) and take notes
 CLOSED: [2021-10-04 Mon 17:54]
 **** DONE Quiz
 CLOSED: [2021-10-04 Mon 17:57]
-*** CSP [33%]
-**** TODO Quiz study
+*** CSP [100%]
+**** DONE Quiz study
+CLOSED: [2021-10-05 Tue 14:35]
 **** DONE Group Work
 CLOSED: [2021-10-04 Mon 17:52]
-**** TODO 1.8 Decidability and Performance
+**** DONE 1.8 Decidability and Performance
+CLOSED: [2021-10-05 Tue 14:35]
 *** Other
-**** TODO Finish Up Robotics Emails
+**** DONE Finish Up Robotics Emails
+CLOSED: [2021-10-05 Tue 14:35]
 **** TODO PSAT Practice Test
-**** TODO
+** Tuesday
+*** Algebra [0%]
+**** TODO Aleks Topic Goals
+DEADLINE: <2021-10-07 Thu>
+**** TODO 2.3 Slope and Rate of Change
+DEADLINE: <2021-10-07 Thu>
+*** Spanish [0%]
+**** TODO Tarea 14
+DEADLINE: <2021-10-07 Thu>
+*** Seminar [0%]
+**** TODO Group Topic Ideas
+DEADLINE: <2021-10-07 Thu>
+*** Bio [0%]
+**** TODO Chapter 1 Guided Notes
+DEADLINE: <2021-10-07 Thu>
+**** TODO Chapter 2 Guided Notes
+DEADLINE: <2021-10-07 Thu>
+*** Chem [0%]
+**** TODO Ask Mr. Black about Lockdown Browser
+*** CSP [75%]
+**** TODO Algorithmic Bias (1.10)
+DEADLINE: <2021-10-08 Fri>
+*** Other
+**** DONE Speak with Mr. Dally about Esports
+CLOSED: [2021-10-05 Tue 14:42]

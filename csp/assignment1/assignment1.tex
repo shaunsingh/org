@@ -1,4 +1,4 @@
-% Created 2021-09-12 Sun 22:36
+% Created 2021-10-05 Tue 18:01
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -19,12 +19,21 @@
 \usepackage{indentfirst}
 \setmainfont[Ligatures=TeX]{Alegreya}
 \setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
-% features: (acronym underline par-sep engraved-code-setup engraved-code)
+% features: (acronym underline par-sep image caption engraved-code-setup engraved-code)
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
 \newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
 \usepackage[normalem]{ulem}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
+
+\usepackage{graphicx}
+
+\usepackage{subcaption}
+\usepackage[hypcap=true]{caption}
+\setkomafont{caption}{\sffamily\small}
+\setkomafont{captionlabel}{\upshape\bfseries}
+\captionsetup{justification=raggedright,singlelinecheck=true}
+\usepackage{capt-of} % required by Org
 
 
 \usepackage{fvextra}
@@ -52,78 +61,66 @@
   right=2pt, top=1pt, bottom=0.5pt,
   breakable}
 
-\definecolor{EFD}{HTML}{383a42}
-\definecolor{EfD}{HTML}{fafafa}
+\definecolor{EFD}{HTML}{ECEFF4}
+\definecolor{EfD}{HTML}{2E3440}
 \newcommand{\EFD}[1]{\colorbox{EfD}{\textcolor{EFD}{#1}}} % default
-\definecolor{EFk}{HTML}{e45649}
+\definecolor{EFk}{HTML}{81A1C1}
 \newcommand{\EFk}[1]{\textcolor{EFk}{#1}} % font-lock-keyword-face
-\definecolor{EFd}{HTML}{84888b}
-\newcommand{\EFd}[1]{\textcolor{EFd}{\textit{#1}}} % font-lock-doc-face
-\definecolor{EFt}{HTML}{986801}
+\definecolor{EFd}{HTML}{78808f}
+\newcommand{\EFd}[1]{\textcolor{EFd}{#1}} % font-lock-doc-face
+\definecolor{EFt}{HTML}{8FBCBB}
 \newcommand{\EFt}[1]{\textcolor{EFt}{#1}} % font-lock-type-face
-\definecolor{EFs}{HTML}{50a14f}
+\definecolor{EFs}{HTML}{A3BE8C}
 \newcommand{\EFs}[1]{\textcolor{EFs}{#1}} % font-lock-string-face
-\definecolor{EFw}{HTML}{986801}
+\definecolor{EFw}{HTML}{EBCB8B}
 \newcommand{\EFw}[1]{\textcolor{EFw}{#1}} % font-lock-warning-face
-\definecolor{EFb}{HTML}{a626a4}
+\definecolor{EFb}{HTML}{81A1C1}
 \newcommand{\EFb}[1]{\textcolor{EFb}{#1}} % font-lock-builtin-face
-\definecolor{EFct}{HTML}{9ca0a4}
+\definecolor{EFct}{HTML}{6f7787}
 \newcommand{\EFct}[1]{\textcolor{EFct}{#1}} % font-lock-comment-face
-\definecolor{EFc}{HTML}{b751b6}
+\definecolor{EFc}{HTML}{81A1C1}
 \newcommand{\EFc}[1]{\textcolor{EFc}{#1}} % font-lock-constant-face
-\definecolor{EFpp}{HTML}{4078f2}
+\definecolor{EFpp}{HTML}{81A1C1}
 \newcommand{\EFpp}[1]{\textcolor{EFpp}{\textbf{#1}}} % font-lock-preprocessor-face
-\definecolor{EFnc}{HTML}{4078f2}
+\definecolor{EFnc}{HTML}{81A1C1}
 \newcommand{\EFnc}[1]{\textcolor{EFnc}{\textbf{#1}}} % font-lock-negation-char-face
-\definecolor{EFv}{HTML}{6a1868}
+\definecolor{EFv}{HTML}{D8DEE9}
 \newcommand{\EFv}[1]{\textcolor{EFv}{#1}} % font-lock-variable-name-face
-\definecolor{EFf}{HTML}{a626a4}
+\definecolor{EFf}{HTML}{88C0D0}
 \newcommand{\EFf}[1]{\textcolor{EFf}{#1}} % font-lock-function-name-face
-\definecolor{EFcd}{HTML}{9ca0a4}
+\definecolor{EFcd}{HTML}{6f7787}
 \newcommand{\EFcd}[1]{\textcolor{EFcd}{#1}} % font-lock-comment-delimiter-face
-\definecolor{EFrc}{HTML}{4078f2}
+\definecolor{EFrc}{HTML}{81A1C1}
 \newcommand{\EFrc}[1]{\textcolor{EFrc}{\textbf{#1}}} % font-lock-regexp-grouping-construct
-\definecolor{EFrb}{HTML}{4078f2}
+\definecolor{EFrb}{HTML}{81A1C1}
 \newcommand{\EFrb}[1]{\textcolor{EFrb}{\textbf{#1}}} % font-lock-regexp-grouping-backslash
-\definecolor{Efob}{HTML}{e7e7e7}
+\definecolor{Efob}{HTML}{373E4C}
 \newcommand{\EFob}[1]{\colorbox{Efob}{#1}} % org-block
-\definecolor{EFhn}{HTML}{da8548}
-\newcommand{\EFhn}[1]{\textcolor{EFhn}{\textbf{#1}}} % highlight-numbers-number
-\definecolor{EFhq}{HTML}{4078f2}
-\newcommand{\EFhq}[1]{\textcolor{EFhq}{#1}} % highlight-quoted-quote
-\definecolor{EFhs}{HTML}{986801}
-\newcommand{\EFhs}[1]{\textcolor{EFhs}{#1}} % highlight-quoted-symbol
-\definecolor{EFrdi}{HTML}{4078f2}
-\newcommand{\EFrdi}[1]{\textcolor{EFrdi}{#1}} % rainbow-delimiters-depth-1-face
-\definecolor{EFrdii}{HTML}{a626a4}
-\newcommand{\EFrdii}[1]{\textcolor{EFrdii}{#1}} % rainbow-delimiters-depth-2-face
-\definecolor{EFrdiii}{HTML}{50a14f}
-\newcommand{\EFrdiii}[1]{\textcolor{EFrdiii}{#1}} % rainbow-delimiters-depth-3-face
-\definecolor{EFrdiv}{HTML}{b751b6}
-\newcommand{\EFrdiv}[1]{\textcolor{EFrdiv}{#1}} % rainbow-delimiters-depth-4-face
-\definecolor{EFrdv}{HTML}{4db5bd}
-\newcommand{\EFrdv}[1]{\textcolor{EFrdv}{#1}} % rainbow-delimiters-depth-5-face
-\definecolor{EFrdvi}{HTML}{4078f2}
-\newcommand{\EFrdvi}[1]{\textcolor{EFrdvi}{#1}} % rainbow-delimiters-depth-6-face
-\definecolor{EFrdvii}{HTML}{a626a4}
-\newcommand{\EFrdvii}[1]{\textcolor{EFrdvii}{#1}} % rainbow-delimiters-depth-7-face
-\definecolor{EFrdiix}{HTML}{50a14f}
-\newcommand{\EFrdiix}[1]{\textcolor{EFrdiix}{#1}} % rainbow-delimiters-depth-8-face
-\definecolor{EFrdix}{HTML}{b751b6}
-\newcommand{\EFrdix}[1]{\textcolor{EFrdix}{#1}} % rainbow-delimiters-depth-9-face
+\newcommand{\EFhn}[1]{#1} % highlight-numbers-number
+\newcommand{\EFhq}[1]{#1} % highlight-quoted-quote
+\newcommand{\EFhs}[1]{#1} % highlight-quoted-symbol
+\newcommand{\EFrdi}[1]{#1} % rainbow-delimiters-depth-1-face
+\newcommand{\EFrdii}[1]{#1} % rainbow-delimiters-depth-2-face
+\newcommand{\EFrdiii}[1]{#1} % rainbow-delimiters-depth-3-face
+\newcommand{\EFrdiv}[1]{#1} % rainbow-delimiters-depth-4-face
+\newcommand{\EFrdv}[1]{#1} % rainbow-delimiters-depth-5-face
+\newcommand{\EFrdvi}[1]{#1} % rainbow-delimiters-depth-6-face
+\newcommand{\EFrdvii}[1]{#1} % rainbow-delimiters-depth-7-face
+\newcommand{\EFrdiix}[1]{#1} % rainbow-delimiters-depth-8-face
+\newcommand{\EFrdix}[1]{#1} % rainbow-delimiters-depth-9-face
 % end features
 
 %% make document follow Emacs theme
 
-\definecolor{obg}{HTML}{fafafa}
-\definecolor{ofg}{HTML}{383a42}
+\definecolor{obg}{HTML}{2E3440}
+\definecolor{ofg}{HTML}{ECEFF4}
 
 \pagecolor{obg}
 \color{ofg}
 
 % list labels
 
-\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{itemlabel}{HTML}{81A1C1}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -137,16 +134,16 @@
 
 % structural elements
 
-\definecolor{documentTitle}{HTML}{a626a4}
-\definecolor{documentInfo}{HTML}{a626a4}
-\definecolor{level1}{HTML}{e45649}
-\definecolor{level2}{HTML}{da8548}
-\definecolor{level3}{HTML}{b751b6}
-\definecolor{level4}{HTML}{6f99f5}
-\definecolor{level5}{HTML}{bc5cba}
-\definecolor{level6}{HTML}{9fbbf8}
-\definecolor{level7}{HTML}{d292d1}
-\definecolor{level8}{HTML}{d8e4fc}
+\definecolor{documentTitle}{HTML}{81A1C1}
+\definecolor{documentInfo}{HTML}{81A1C1}
+\definecolor{level1}{HTML}{81A1C1}
+\definecolor{level2}{HTML}{B48EAD}
+\definecolor{level3}{HTML}{5D80AE}
+\definecolor{level4}{HTML}{a0b8d0}
+\definecolor{level5}{HTML}{c6aac1}
+\definecolor{level6}{HTML}{c0d0e0}
+\definecolor{level7}{HTML}{d9c6d6}
+\definecolor{level8}{HTML}{e5ecf2}
 
 \addtokomafont{title}{\color{documentTitle}}
 \addtokomafont{author}{\color{documentInfo}}
@@ -164,11 +161,11 @@
 
 % textual elements
 
-\definecolor{link}{HTML}{4078f2}
-\definecolor{cite}{HTML}{800080}
-\definecolor{itemlabel}{HTML}{4078f2}
-\definecolor{code}{HTML}{da8548}
-\definecolor{verbatim}{HTML}{50a14f}
+\definecolor{link}{HTML}{81A1C1}
+\definecolor{cite}{HTML}{98c1c0}
+\definecolor{itemlabel}{HTML}{81A1C1}
+\definecolor{code}{HTML}{D08770}
+\definecolor{verbatim}{HTML}{A3BE8C}
 
 \renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
 \renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
@@ -187,9 +184,9 @@
 
 % code blocks
 
-\definecolor{codebackground}{HTML}{f6f6f6}
+\definecolor{codebackground}{HTML}{313743}
 \colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{f0f0f0}
+\definecolor{codeborder}{HTML}{373d49}
 
 %% end customisations
 
@@ -220,21 +217,26 @@
 \setcounter{tocdepth}{2}
 \tableofcontents
 
-\begin{center}
-\includegraphics[width=.9\linewidth]{./password_strength_xkcd.png}
-\end{center}
+\begin{figure}[!htb]
+	  \centering
+	  \includegraphics[scale=0.4]{/Users/shauryasingh/.emacs.d/.local/cache/xkcd/936.png}
+  \caption*{\label{xkcd:936} \textbf{Password Strength} To anyone who understands information theory and security and is in an infuriating argument with someone who does not (possibly involving mixed case), I sincerely apologize.}
+	\end{figure}
+
+Correct Password:
+\#+begin\_src\^{}(?=.*\d)(?=.*[$\backslash$~$\backslash$!$\backslash$@$\backslash$#$\backslash$$$\backslash$%$\backslash$^$\backslash$&$\backslash$*$\backslash$)$\backslash$($\backslash$_$\backslash$+\-$\backslash$:$\backslash$[$\backslash$}$\backslash$=$\backslash$``$\backslash$`])(?=.*[a-z])(?=.*[A-Z]).\{8,\}\#+end\_src
 
 \section{Entropy and Creating Passwords}
-\label{sec:orgcb24ff1}
+\label{sec:org254fba2}
 \subsection{What is Entropy?}
-\label{sec:org34693a8}
+\label{sec:orgafa3d35}
 Entropy is a measure of ``uncertainty'' in an outcome. In this context, it can be
 thought of as a value representing how unpredictable the next character of of a
 password is. It is calculated as \(\log_{2}(a^{b})\) where a is the number of allowed
 symbols and b is its length.
 
 \subsection{Why \texttt{Tr0ub4dor\&3} is a Bad Password}
-\label{sec:orgc5f7878}
+\label{sec:org56fe607}
 A truly random string of length 11 (not like ``Tr0ub4dor\&3'', but more like
 ``J4I/tyJ\&Acy'') has \(\log_{2}(94^{11})=72.1\) bits, with \(94\) being the total number of
 letters, numbers, and symbols one can choose. However the comic shows that
@@ -245,7 +247,7 @@ with \(65000\) representing a rough estimate of all dictionary words people are
 likely to choose.
 
 \subsection{Creating High-Entropy Passwords You Can Remember}
-\label{sec:orge41e2f7}
+\label{sec:org3490da3}
 Another way of selecting a password is to have \(2048\) ``symbols'' (common words) and
 select only \(4\) of those symbols. \(\log_{2}(2048^{4})=44\) bits, much better than \(28\).
 
@@ -257,7 +259,7 @@ would do), it makes sense to link together common word. This offers similar
 entropy levels, while being much easier to remember
 
 \section{But Schneier Says that the XKCD method doesn't work?}
-\label{sec:org400c400}
+\label{sec:org0c3e7d2}
 Althoguh Schneier is indeed a security genius, there are several mistakes that
 he makes in his analysis
 
@@ -300,9 +302,9 @@ recommend his own inferior method.
 \textbf{The XKCD method works because it's random, human generated text can (and will) always be easily cracked}
 
 \section{The Algorithm}
-\label{sec:orga8a00c2}
+\label{sec:org0745465}
 \subsection{Our algorithm is going to}
-\label{sec:org0aebbcb}
+\label{sec:org68f5f72}
 \begin{enumerate}
 \item Take an input (number of words in the password (\texttt{nwords}) + numbers of bits per
 word (\texttt{nbits}))
@@ -317,7 +319,7 @@ then with gpu)
 \end{enumerate}
 
 \subsection{Formulas used to calculate}
-\label{sec:org6339317}
+\label{sec:org910e0a0}
 Calculating entropy:
 \begin{align*}
 \text{entropy}&=\text{number of bits}\times\text{number of words}
@@ -330,7 +332,7 @@ Calculating years need to crack code
 \end{align*}
 
 \subsection{Sample:}
-\label{sec:org6afd505}
+\label{sec:org62ca31b}
 The following example runs the program, telling it to create a 5 word password.
 Since the wordlist we use has varied word legnths, we can't calculate entropy
 the conventional way. However, the author has estimated the list has 11 bits per
@@ -354,101 +356,101 @@ so that same iterated MD5 would fall in 1.3e+03 years.}
 \end{Code}
 
 \subsection{Code}
-\label{sec:orgf2fd844}
+\label{sec:org35cbaf7}
 The python code used to calculate this is below
 \begin{Code}
 \begin{Verbatim}[]
-\color{EFD}\textcolor[HTML]{9ca0a4}{\#!/usr/bin/env python3}
-\textcolor[HTML]{9ca0a4}{\# Insipred by http://xkcd.com/936/}
+\color{EFD}\EFcd{\#}\EFct{!/usr/bin/env python3}
+\EFcd{\# }\EFct{Insipred by http://xkcd.com/936/}
 
-\textcolor[HTML]{9ca0a4}{\# Import what we need}
-\textcolor[HTML]{e45649}{import} random, itertools, os, sys
+\EFcd{\# }\EFct{Import what we need}
+\EFk{import} random, itertools, os, sys
 
-\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{main}(\textcolor[HTML]{6a1868}{argv}):
-    \textcolor[HTML]{9ca0a4}{\# number of words should be first input from the program}
-    \textcolor[HTML]{e45649}{try}:
-        nwords \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{int}}(argv[\textcolor[HTML]{b751b6}{1}])
-    \textcolor[HTML]{e45649}{except} \textcolor[HTML]{986801}{IndexError}:
-        \textcolor[HTML]{e45649}{return} \textcolor[HTML]{4078f2}{\textbf{usage}}(argv[\textcolor[HTML]{b751b6}{0}])
+\EFk{def} \EFf{main}(argv):
+    \EFcd{\# }\EFct{number of words should be first input from the program}
+    \EFk{try}:
+        nwords = \EFb{int}(argv[\EFhn{1}])
+    \EFk{except} \EFt{IndexError}:
+        \EFk{return} usage(argv[\EFhn{0}])
 
-    \textcolor[HTML]{9ca0a4}{\# number of bits should be second input from the program}
-    \textcolor[HTML]{e45649}{try}:
-        nbits \textcolor[HTML]{e45649}{=} \textcolor[HTML]{a626a4}{\textbf{int}}(argv[\textcolor[HTML]{b751b6}{2}])
-    \textcolor[HTML]{e45649}{except} \textcolor[HTML]{986801}{IndexError}:
-        nbits \textcolor[HTML]{e45649}{=} \textcolor[HTML]{b751b6}{11}
+    \EFcd{\# }\EFct{number of bits should be second input from the program}
+    \EFk{try}:
+        nbits = \EFb{int}(argv[\EFhn{2}])
+    \EFk{except} \EFt{IndexError}:
+        nbits = \EFhn{11}
 
-    \textcolor[HTML]{9ca0a4}{\# read the wordlist}
-    \EFv{filename} \textcolor[HTML]{e45649}{=} os.\textcolor[HTML]{b751b6}{\textit{path}}.\textcolor[HTML]{4078f2}{\textbf{\textit{join}}}(os.\textcolor[HTML]{b751b6}{\textit{environ}}[\textcolor[HTML]{50a14f}{'HOME'}], \textcolor[HTML]{50a14f}{'org'}, \textcolor[HTML]{50a14f}{'csp'}, \textcolor[HTML]{50a14f}{'assignment1'}, \textcolor[HTML]{50a14f}{'wordlist'})
-    \EFv{wordlist} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{4078f2}{\textbf{read\_file}}(filename, nbits)
-    \textcolor[HTML]{e45649}{if} \textcolor[HTML]{a626a4}{\textbf{len}}(wordlist) \textcolor[HTML]{e45649}{!=} \textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}nbits:
-        sys.\textcolor[HTML]{b751b6}{\textit{stderr}}.\textcolor[HTML]{4078f2}{\textbf{\textit{write}}}(\textcolor[HTML]{50a14f}{"\%r contains only \%d words, not \%d.}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%}
-                         (filename, \textcolor[HTML]{a626a4}{\textbf{len}}(wordlist), \textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}nbits))
-        \textcolor[HTML]{e45649}{return} \textcolor[HTML]{b751b6}{2}
+    \EFcd{\# }\EFct{read the wordlist}
+    \EFv{filename} = os.path.join(os.environ[\EFs{'HOME'}], \EFs{'org'}, \EFs{'csp'}, \EFs{'assignment1'}, \EFs{'wordlist'})
+    \EFv{wordlist} = read\_file(filename, nbits)
+    \EFk{if} \EFb{len}(wordlist) != \EFhn{2}**nbits:
+        sys.stderr.write(\EFs{"\%r contains only \%d words, not \%d.\char92{}n"} \%
+                         (filename, \EFb{len}(wordlist), \EFhn{2}**nbits))
+        \EFk{return} \EFhn{2}
 
-    \textcolor[HTML]{9ca0a4}{\# generate the password, then display it}
-    \textcolor[HTML]{4078f2}{\textbf{display\_password}}(\textcolor[HTML]{4078f2}{\textbf{generate\_password}}(nwords, wordlist), nwords, nbits)
-    \textcolor[HTML]{e45649}{return} \textcolor[HTML]{b751b6}{0}
+    \EFcd{\# }\EFct{generate the password, then display it}
+    display\_password(generate\_password(nwords, wordlist), nwords, nbits)
+    \EFk{return} \EFhn{0}
 
-\textcolor[HTML]{9ca0a4}{\# Info about the usage of the program, if the user gives an incorrect input}
-\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{usage}(\textcolor[HTML]{6a1868}{argv0}):
-    \EFv{p} \textcolor[HTML]{e45649}{=} sys.\textcolor[HTML]{b751b6}{\textit{stderr}}.\textcolor[HTML]{b751b6}{\textit{write}}
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"Usage: \%s nwords [nbits]}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"Generates a password of nwords words, each with nbits bits}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"of entropy, choosing words from the first entries in}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"<http://canonical.org/\char126{}kragen/sw/wordlist>, which is a text file}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"with one word per line, preceded by its frequency, most frequent}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"words first.}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{Recommended:}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"})
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"    \%s 5 12}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
-    \textcolor[HTML]{4078f2}{\textbf{p}}(\textcolor[HTML]{50a14f}{"    \%s 6}\textcolor[HTML]{e45649}{\char92{}n}\textcolor[HTML]{50a14f}{"} \textcolor[HTML]{e45649}{\%} argv0)
-    \textcolor[HTML]{e45649}{return} \textcolor[HTML]{b751b6}{1}
+\EFcd{\# }\EFct{Info about the usage of the program, if the user gives an incorrect input}
+\EFk{def} \EFf{usage}(argv0):
+    \EFv{p} = sys.stderr.write
+    p(\EFs{"Usage: \%s nwords [nbits]\char92{}n"} \% argv0)
+    p(\EFs{"Generates a password of nwords words, each with nbits bits\char92{}n"})
+    p(\EFs{"of entropy, choosing words from the first entries in\char92{}n"})
+    p(\EFs{"<http://canonical.org/\char126{}kragen/sw/wordlist>, which is a text file\char92{}n"})
+    p(\EFs{"with one word per line, preceded by its frequency, most frequent\char92{}n"})
+    p(\EFs{"words first.\char92{}n"})
+    p(\EFs{"\char92{}nRecommended:\char92{}n"})
+    p(\EFs{"    \%s 5 12\char92{}n"} \% argv0)
+    p(\EFs{"    \%s 6\char92{}n"} \% argv0)
+    \EFk{return} \EFhn{1}
 
-\textcolor[HTML]{9ca0a4}{\# function to read the wordlist file}
-\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{read\_file}(\textcolor[HTML]{6a1868}{filename}, \textcolor[HTML]{6a1868}{nbits}):
-    \textcolor[HTML]{e45649}{return} [line.\textcolor[HTML]{4078f2}{\textbf{\textit{split}}}()[\textcolor[HTML]{b751b6}{1}] \textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{line} \textcolor[HTML]{e45649}{in}
-            itertools.\textcolor[HTML]{4078f2}{\textbf{\textit{islice}}}(\textcolor[HTML]{a626a4}{\textbf{open}}(filename), \textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}nbits)]
+\EFcd{\# }\EFct{function to read the wordlist file}
+\EFk{def} \EFf{read\_file}(filename, nbits):
+    \EFk{return} [line.split()[\EFhn{1}] \EFk{for} line \EFk{in}
+            itertools.islice(\EFb{open}(filename), \EFhn{2}**nbits)]
 
-\textcolor[HTML]{9ca0a4}{\# function to generate the password (random words from wordlist)}
-\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{generate\_password}(\textcolor[HTML]{6a1868}{nwords}, \textcolor[HTML]{6a1868}{wordlist}):
-    \EFv{choice} \textcolor[HTML]{e45649}{=} random.\textcolor[HTML]{986801}{\textbf{\textit{SystemRandom}}}().\textcolor[HTML]{b751b6}{\textit{choice}}
-    \textcolor[HTML]{e45649}{return} \textcolor[HTML]{50a14f}{' '}.\textcolor[HTML]{4078f2}{\textbf{\textit{join}}}(\textcolor[HTML]{4078f2}{\textbf{choice}}(wordlist) \textcolor[HTML]{e45649}{for} \textcolor[HTML]{6a1868}{ii} \textcolor[HTML]{e45649}{in} \textcolor[HTML]{a626a4}{\textbf{range}}(nwords))
+\EFcd{\# }\EFct{function to generate the password (random words from wordlist)}
+\EFk{def} \EFf{generate\_password}(nwords, wordlist):
+    \EFv{choice} = random.SystemRandom().choice
+    \EFk{return} \EFs{' '}.join(choice(wordlist) \EFk{for} ii \EFk{in} \EFb{range}(nwords))
 
-\textcolor[HTML]{9ca0a4}{\# function to display info about the password}
-\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{display\_password}(\textcolor[HTML]{6a1868}{password}, \textcolor[HTML]{6a1868}{nwords}, \textcolor[HTML]{6a1868}{nbits}):
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{'Your password is "\%s".'} \textcolor[HTML]{e45649}{\%} password)
+\EFcd{\# }\EFct{function to display info about the password}
+\EFk{def} \EFf{display\_password}(password, nwords, nbits):
+    \EFk{print}(\EFs{'Your password is "\%s".'} \% password)
 
-    \textcolor[HTML]{9ca0a4}{\# entropy value is equal the the number of words * the number of bits in each word}
-    \EFv{entropy} \textcolor[HTML]{e45649}{=} nwords \textcolor[HTML]{e45649}{*} nbits
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"That's equivalent to a \%d-bit key."} \textcolor[HTML]{e45649}{\%} entropy)
-    \textcolor[HTML]{a626a4}{\textbf{print}}()
+    \EFcd{\# }\EFct{entropy value is equal the the number of words * the number of bits in each word}
+    \EFv{entropy} = nwords * nbits
+    \EFk{print}(\EFs{"That's equivalent to a \%d-bit key."} \% entropy)
+    \EFk{print}()
 
-    \textcolor[HTML]{9ca0a4}{\# john --test (<http://www.openwall.com/john/>) reports that it}
-    \textcolor[HTML]{9ca0a4}{\# can do 7303000 MD5 operations per second, but I’m pretty sure}
-    \textcolor[HTML]{9ca0a4}{\# that’s a single-core number}
-    \EFv{t} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{4078f2}{\textbf{years}}(entropy, \textcolor[HTML]{b751b6}{7303000})
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"That password would take \%.2g years to crack"} \textcolor[HTML]{e45649}{\%} t)
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"on my core 2 duo from 2009, assuming an attack on a MS-Cache hash,"})
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"(the worst password hashing algorithm in common use)"})
-    \textcolor[HTML]{a626a4}{\textbf{print}}()
+    \EFcd{\# }\EFct{john --test (<http://www.openwall.com/john/>) reports that it}
+    \EFcd{\# }\EFct{can do 7303000 MD5 operations per second, but I’m pretty sure}
+    \EFcd{\# }\EFct{that’s a single-core number}
+    \EFv{t} = years(entropy, \EFhn{7303000})
+    \EFk{print}(\EFs{"That password would take \%.2g years to crack"} \% t)
+    \EFk{print}(\EFs{"on my core 2 duo from 2009, assuming an attack on a MS-Cache hash,"})
+    \EFk{print}(\EFs{"(the worst password hashing algorithm in common use)"})
+    \EFk{print}()
 
-    \EFv{t} \textcolor[HTML]{e45649}{=} \textcolor[HTML]{4078f2}{\textbf{years}}(entropy, \textcolor[HTML]{b751b6}{3539})
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"The most common password-hashing algorithm is md5, cracking such a hash would take \%.2g years."} \textcolor[HTML]{e45649}{\%} t)
-    \textcolor[HTML]{a626a4}{\textbf{print}}()
+    \EFv{t} = years(entropy, \EFhn{3539})
+    \EFk{print}(\EFs{"The most common password-hashing algorithm is md5, cracking such a hash would take \%.2g years."} \% t)
+    \EFk{print}()
 
-    \textcolor[HTML]{9ca0a4}{\# <https://en.bitcoin.it/wiki/Mining\_hardware\_comparison> says a}
-    \textcolor[HTML]{9ca0a4}{\# The same mining-hardware comparison says a Radeon 5870 card can}
-    \textcolor[HTML]{9ca0a4}{\# do 393.46 Mhash/s for US\$350.}
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"But a modern GPU can crack about 250 times as fast,"})
-    \textcolor[HTML]{a626a4}{\textbf{print}}(\textcolor[HTML]{50a14f}{"so that same iterated MD5 would fall in \%.2g years."} \textcolor[HTML]{e45649}{\%} (t \textcolor[HTML]{e45649}{/} \textcolor[HTML]{b751b6}{250}))
-    \textcolor[HTML]{a626a4}{\textbf{print}}()
+    \EFcd{\# }\EFct{<https://en.bitcoin.it/wiki/Mining\_hardware\_comparison> says a}
+    \EFcd{\# }\EFct{The same mining-hardware comparison says a Radeon 5870 card can}
+    \EFcd{\# }\EFct{do 393.46 Mhash/s for US\$350.}
+    \EFk{print}(\EFs{"But a modern GPU can crack about 250 times as fast,"})
+    \EFk{print}(\EFs{"so that same iterated MD5 would fall in \%.2g years."} \% (t / \EFhn{250}))
+    \EFk{print}()
 
-\textcolor[HTML]{9ca0a4}{\# function to calculate years of entropy}
-\textcolor[HTML]{e45649}{def} \textcolor[HTML]{a626a4}{years}(\textcolor[HTML]{6a1868}{entropy}, \textcolor[HTML]{6a1868}{crypts\_per\_second}):
-    \textcolor[HTML]{9ca0a4}{\# entropy divided by crypts/s for inputed hash, divided by seconds/day, divided by days/year}
-    \textcolor[HTML]{e45649}{return} \textcolor[HTML]{a626a4}{\textbf{float}}(\textcolor[HTML]{b751b6}{2}\textcolor[HTML]{e45649}{**}entropy) \textcolor[HTML]{e45649}{/} crypts\_per\_second \textcolor[HTML]{e45649}{/} \textcolor[HTML]{b751b6}{86400} \textcolor[HTML]{e45649}{/} \textcolor[HTML]{b751b6}{365}
+\EFcd{\# }\EFct{function to calculate years of entropy}
+\EFk{def} \EFf{years}(entropy, crypts\_per\_second):
+    \EFcd{\# }\EFct{entropy divided by crypts/s for inputed hash, divided by seconds/day, divided by days/year}
+    \EFk{return} \EFb{float}(\EFhn{2}**entropy) / crypts\_per\_second / \EFhn{86400} / \EFhn{365}
 
-\textcolor[HTML]{e45649}{if} \textcolor[HTML]{a626a4}{\_\_name\_\_} \textcolor[HTML]{e45649}{==} \textcolor[HTML]{50a14f}{'\_\_main\_\_'}:
-    sys.\textcolor[HTML]{4078f2}{\textbf{\textit{exit}}}(\textcolor[HTML]{4078f2}{\textbf{main}}(sys.\textcolor[HTML]{b751b6}{\textit{argv}}))
+\EFk{if} \EFb{\_\_name\_\_} == \EFs{'\_\_main\_\_'}:
+    sys.\EFc{exit}(main(sys.argv))
 
 \end{Verbatim}
 \end{Code}
