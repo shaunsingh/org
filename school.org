@@ -285,29 +285,53 @@ CLOSED: [2021-10-05 Tue 14:35]
 *** Other
 **** DONE Finish Up Robotics Emails
 CLOSED: [2021-10-05 Tue 14:35]
-**** TODO PSAT Practice Test
+**** DONE PSAT Practice Test
+CLOSED: [2021-10-13 Wed 22:37]
 ** Tuesday
-*** Algebra [0%]
-**** TODO Aleks Topic Goals
-DEADLINE: <2021-10-07 Thu>
-**** TODO 2.3 Slope and Rate of Change
-DEADLINE: <2021-10-07 Thu>
-*** Spanish [0%]
-**** TODO Tarea 14
-DEADLINE: <2021-10-07 Thu>
-*** Seminar [0%]
-**** TODO Group Topic Ideas
-DEADLINE: <2021-10-07 Thu>
-*** Bio [0%]
-**** TODO Chapter 1 Guided Notes
-DEADLINE: <2021-10-07 Thu>
-**** TODO Chapter 2 Guided Notes
-DEADLINE: <2021-10-07 Thu>
+*** Algebra [100%]
+**** DONE Aleks Topic Goals
+CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
+**** DONE 2.3 Slope and Rate of Change
+CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
+*** Spanish [100%]
+**** DONE Tarea 14
+CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
+*** Seminar [100%]
+**** DONE Group Topic Ideas
+CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
+*** Bio [100%]
+**** DONE Chapter 1 Guided Notes
+CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
+**** DONE Chapter 2 Guided Notes
+CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
 *** Chem [0%]
 **** TODO Ask Mr. Black about Lockdown Browser
-*** CSP [75%]
-**** TODO Algorithmic Bias (1.10)
-DEADLINE: <2021-10-08 Fri>
+*** CSP [100%]
+**** DONE Algorithmic Bias (1.10)
+CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-08 Fri>
 *** Other
 **** DONE Speak with Mr. Dally about Esports
 CLOSED: [2021-10-05 Tue 14:42]
+
+* Week 6
+** Thursday
+*** Algebra [40%]
+**** DONE Aleks Topic Goals <2021-10-14 Thu>
+CLOSED: [2021-10-14 Thu 01:39]
+**** DONE Some BS homework <2021-10-14 Thu>
+CLOSED: [2021-10-14 Thu 10:39]
+**** TODO 2.6 Piecewise hw <2021-10-14 Fri>
+**** TODO 2.6 Piecewise notes <2021-10-14 Fri>
+*** Spanish [0%]
+**** TODO Tarea 17 or smtg <2021-10-15 Fri>
+*** Seminar [0%]
+**** TODO Video and Notes <2021-10-15 Fri>
+*** Chem [0%]
+**** TODO MyAP Quiz <2021-10-15 Fri>
+**** TODO Chapter 1 notes <2021-10-15 Fri>
+*** CSP [66%]
+**** DONE Test Review <2021-10-14 Thu>
+CLOSED: [2021-10-14 Thu 00:58]
+**** DONE Pick Partner <2021-10-14 Thu>
+CLOSED: [2021-10-14 Thu 00:59]
+**** TODO Grade Previous Partner  and Column Chart <2021-10-14 Thu>

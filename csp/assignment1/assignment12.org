@@ -4,3 +4,23 @@
 #+startup: fold
 #+options: toc:2
 #+latex_class: chameleon
+
+Use Sequencing Selection and Iteration
+Easy to Read
+Easy to Remember, Hard to guess
+=>== 8 Characters
+=>== 1 number
+=>==  1 Uppercase
+=>== 1 Symbol
+Unique and Reproducible passwords for sites with as few as 3 letters in the
+name, and websites that include numbers
+Write Example passwords for at least four websites
+Write at least one documented case
+
+1. =netflix.com=
+2. =nxeitlf=
+3. =nXeItLf=
+4.
+4. =7nXeItLf=
+5. =(7nXeItLf)=
+6.
