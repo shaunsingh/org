@@ -1,25 +1,56 @@
-#+title: Intro Topic #1
-#+subtitle: Science Research
+#+title: Effect of common diabetic drug metformin on the aging process.
+#+subtitle: Science Research: Intro #1
 #+author: Shaurya Singh
 #+startup: preview
 #+startup: fold
 #+options: toc:2
-#+latex_class: chameleon
 #+latex_header: \usepackage{chemfig}
 #+latex_header: \usepackage[version=4]{mhchem}
 #+latex_header: \usepackage{enumerate}
 
-* Resources:
-1. [[https://www.sciencebuddies.org/science-fair-projects/project-ideas/Genom_p003/genetics-genomics/blasting-flu-viruses#procedure][BLASTing Flu Viruses | Science Project]]
-2. [[https://zfin.org/zf_info/zfbook/chapt9/9.3.html][ZFIN: Zebrafish Book: Molecular Methods]]
-3. [[https://www.frontiersin.org/articles/10.3389/fcell.2018.00178/full][Frontiers | The Zebrafish as an Emerging Model to Study DNA Damage in Aging, Cancer and Other Diseases | Cell and Developmental Biology]]
-4. [[https://www.hopkinsmedicine.org/research/advancements-in-research/fundamentals/in-depth/zebrafish-help-unlock-clues-to-human-disease][Zebrafish Help Unlock Clues to Human Disease]]
-5. [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3193057/][Danio rerio in K-12 Classrooms: Sparking Interest in the New Generation of Scientists]]
-6. [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5878548/][Using Zebrafish to Bring Hands-On Laboratory Experiences to Urban Classrooms]]
-7. [[https://www.societyforscience.org/blog/mary-fish-and-her-zebrafish/][Mary Fish and her zebrafish | Society for Science]]
-8. [[https://www.future-science.com/doi/10.2144/000112619][Method for isolation of PCR-ready genomic DNA from zebrafish tissues | BioTechniques]]
+* Proposal
+Diabetes is becoming one of the most widespread health burning problems in the elderly. Worldwide prevalence of diabetes among subjects over 65 years was 135.6 million in 2019, a number that is expected to double in 2045. Over 34 million Americans have diabetes, and over 88% of diabetic Americans take oral medications and insulin to treat and control it. While these drugs suppress type 2 diabetes, previous studies have shown a link between such drugs and (de)accelerated aging. Of these drugs, metformin is the most prevalent. In this study I will utilize the zebrafish model to test the effect of metformin on the aging process in a healthy individual. Zebrafish, who have a similar genetic structure to humans, will be subjected to metformin for different times and doses. The resulting zebrafish DNA will be assessed for DNA damage, and the resulting RNA will be assessed for damage on DNA repair genes such as PARP1 (Poly[ADP-Ribose]Polymerase 1) and PCNA (Proliferating Cell Nuclear Antigen). Such research will help us further improve our understanding of the aging of the human body in the long-term.
 
-* Summary:
-** Topic
-** Thesis
-** Abstract
+* Method
+1. We are going to take 2 Drugs. Each drug will have 5 fish per time/dose
+   - No drug
+   - Drug
+   - Vehicle
+   - postive/negative controls
+2. Euthanize zebrafish ($300mg/L$ using MS222 at PH 7.0)
+3. Asses DNA damage;
+   - Isolate DNA
+   - Run it on agarose gel to isolate DNA
+   - Run under ethidium bromide + UV Light (+buffer to maintain enviornment)
+   - Check for streaks/damage/etc with ladder
+4. Asses DNA Repair Mechanisms
+   - Transcribe/Isolate RNA
+   - Two step (cDNA, primer, operate on cDNA) OR One step (cDNA+primer \Rightarrow 3`/5` 5`/3`)
+   - Focus on repair genes i.e. PARP1 and PCNA
+   - Find Primer:
+     a. mRNA sequence \Rightarrow CDS
+     b. Blast
+   - PCR process to amplify Signal
+
+10 hours, 12 (maybe), 6, 24
+
+* Supplies/Cost
+Contact:
+| Supply                                 | Cost ($) | Notes |
+|----------------------------------------+----------+-------|
+| Eppendorf Tube                         | x        |       |
+| EDTA (Ethylenediaminetetraacetic acid) |          |       |
+| Triton X-100                           |          |       |
+| Proteinase K                           |          |       |
+| \(\ce{C2H6O}\) Ethanol                 | x        |       |
+| Agarose gel                            | x        |       |
+| Ladder + Loading Buffer                |          |       |
+| UV Light                               | x        |       |
+| Ethidium Bromide                       |          |       |
+| Micro Pipettes                         | x        |       |
+| *Subtotal*                               | $500-750 |       |
+| Inhibitors                             |          |       |
+| Zebrafish                              |          |       |
+| Zebrafish maintainence                 |          |       |
+| *Subtotal*                               |          |       |
+| *Total*                                  |          |       |

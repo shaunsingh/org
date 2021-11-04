@@ -1,4 +1,4 @@
-% Created 2021-09-07 Tue 22:19
+% Created 2021-10-23 Sat 20:15
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -17,15 +17,23 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
 \usepackage{indentfirst}
-\setmainfont[Ligatures=TeX]{Alegreya}
-\setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
 \usepackage{enumerate}
 
-% features: (acronym underline par-sep table)
+% features: (custom-font acronym .alegreya-tabular-figures underline par-sep alegreya-typeface table)
+\usepackage[osf]{Alegreya}
+\usepackage{AlegreyaSans}
+\usepackage[scale=0.88]{sourcecodepro}
+
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
-\newcommand{\acrs}{\protect\scalebox{.91}[.84]{\hspace{0.15ex}s}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
+
+\makeatletter
+% tabular lining figures in tables
+\renewcommand{\tabular}{\AlegreyaTLF\let\@halignto\@empty\@tabular}
+\makeatother
+
 \usepackage[normalem]{ulem}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
@@ -45,7 +53,7 @@
   pdftitle={Ap Chem Summer Assignment \#3},
   pdfkeywords={},
   pdfsubject={},
-  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdfcreator={Emacs 29.0.50 (Org mode 9.5)},
   pdflang={English},
   breaklinks=true,
   colorlinks=true,
@@ -59,7 +67,7 @@
 \maketitle
 
 \section{The following reaction was performed, Identify element X.}
-\label{sec:org107d6dd}
+\label{sec:orge87219d}
 \begin{align*}
   &\ce{Fe2O_3(s)}+\ce{2X(s)} = \ce{2Fe(s) + X_2O_3(s)}\\
   &79.847g+2x=55.847g+50.982g\\
@@ -72,7 +80,7 @@ Since the atomic weight of \(\ce{Fe}\) is proportional to the given weight
 weight (\(26.982g\)). \textbf{Therefore, the element is Aluminium (\(\ce{Al}\)).}
 
 \section{Fill in the blanks to balance the following chemical equations:}
-\label{sec:org5fb695a}
+\label{sec:orgb8d5c34}
 \begin{enumerate}[a.]
 \item \(\ce{2AgI + Na2S} \rightarrow \ce{Ag2S + 2NaI}\)
 \item \(\ce{(NH4)2Cr2O7} \rightarrow \ce{Cr2O3}+\ce{N2}+\ce{4H2O}\)
@@ -83,7 +91,7 @@ weight (\(26.982g\)). \textbf{Therefore, the element is Aluminium (\(\ce{Al}\)).
 \end{enumerate}
 
 \section{Balance the following equation:}
-\label{sec:orgcc89537}
+\label{sec:org718af5d}
 We can multiple \(\ce{NH4OH}\) by 4, and increase NH4 and H2O on the product
 side to compensate
 
@@ -93,7 +101,7 @@ side to compensate
 \ce{2(NH4)2Cr2O7 + KOH(aq)} + \ce{12H2O(l)}\)
 
 \section{Balance the following equation}
-\label{sec:org272fc2c}
+\label{sec:org5a12676}
 We need to increase the number of acetate ions on the right side to match the
 ones on the left. We also need to increase the right hand side to match the
 number of hydrogen atoms on the left.
@@ -102,7 +110,7 @@ number of hydrogen atoms on the left.
 \(\ce{2Fe(s)}+\ce{6HC2H3O2(aq)}=\ce{2Fe(C2H3O2)3(aq)}+\ce{3H2(g)}\)
 
 \section{How many grams of water vapor can be generated from the combustion of 18.74 g of ethanol \(\ce{C2H6O}\)?}
-\label{sec:orgb325ef7}
+\label{sec:orgdb858f2}
 Balanced reaction:
 \(\ce{C2H6O(g) + 3O2(g)} \rightarrow \ce{C2O2(g) + 3H2O(g)}\)
 
@@ -144,7 +152,7 @@ Mass(g) = \# of mol * molar mass(g/mol)
 \textbf{Therefore, we will get 21.99g of water vapor}
 
 \section{How many grams of potassium iodide are necessary to completely react with 20.61g of Mercury (II) chloride}
-\label{sec:orga18793d}
+\label{sec:org3b63d1c}
 Balance the equation:
 \(\ce{HgCl2 + 2KI(aq)} \rightarrow \ce{HgI2(s) + 2KCl(aq)}\)
 
@@ -174,7 +182,7 @@ needed
 \textbf{Therefore, 25.20g of Potassium Iodide is needed}
 
 \section{A reaction combines 113.484 g of lead (II) nitrate with 45.010 g of sodium hydroxide (NaOH[aq]).}
-\label{sec:org3858a5e}
+\label{sec:org76eba5a}
 The equation for the reaction is
 \(\ce{Pb(NO3)2}+\ce{2NaOH}\rightarrow\ce{Pb(OH)2}+\ce{2NaNO3}\)
 
@@ -205,7 +213,7 @@ Therefore, the percent yield is    \((\frac{80.02}{82.463}\times100=97.04)\), or
 \end{enumerate}
 
 \section{A reaction combines 64.81 grams of silver nitrate with 92.67 grams of potassium bromide}
-\label{sec:orgc1ae34f}
+\label{sec:orgd5cddc5}
 \textbf{The equation for the reaction is already balanced:}
 \(\ce{AgNO3}+\ce{KBr}\rightarrow\ce{AgBr}+\ce{KNO3}\)
 
@@ -240,7 +248,7 @@ theoretical yield, then multiply by 100:
 \end{enumerate}
 
 \section{The moleculer weight of an insecticide, dibromoethane, is 187.9. Its molecular formula is \(\ce{C2H4Br2}\), What percent by mass of bromine does dibromoethane contain?}
-\label{sec:org27b60ea}
+\label{sec:orgecc644d}
 \textbf{We must calculate the atomic weight for each element}
 \begin{align*}
 &\ce{C} = 12.011\\
@@ -267,7 +275,7 @@ find the percent by mass of bromine in \(\ce{C2H4Br2}\)
 \textbf{Therefore, dibromoethane contains 85.05\% by mass of bromine.}
 
 \section{A given sample of xenon fluoride contains molecules of a single type of \(\ce{XeFn}\), where n is some whole number.}
-\label{sec:org533ba7d}
+\label{sec:org79a7d50}
 First, we need to calculate how many moles of xenon fluoride there are, and
 calculate its weight
 
@@ -288,7 +296,7 @@ Now, we can calculate for \(n\)
 \textbf{Therefore its formula is \(\ce{XeF4}\)}
 
 \section{A 6.32 g sample of potassium chlorate was decomposed according to the following equation, how many moles of \(\ce{O2}\) were formed?}
-\label{sec:org2ee6d32}
+\label{sec:org555ddcf}
 We are given the following formula for the reaction:
 
 \(\ce{2KCIO3} \rightarrow\ce{2KCL}+ \ce{3O2}\)
@@ -316,18 +324,18 @@ grams of potassium chlorate to moles of oxygen
 \textbf{Therefore, \(7.74*10^{-2}\) moles of \(\ce{O2}\) is formed}
 
 \section{What is the coefficient in front of water, when it is produced from the reaction of hydrochloric acid with calcium hydroxide? Calcium chloride is the other product.}
-\label{sec:org3ce3e22}
+\label{sec:orgccc9176}
 The balanced equation is
 \(\ce{Ca(OH)2 + 2HCl}=\ce{CaCl2 + 2H2O}\)
 
 \textbf{Therefore the coeffecient of water (\(\ce{H2O}\)) is 2}
 
 \section{What is the subscript of aluminum in the formula of aluminum phosphate?}
-\label{sec:orga9b8d0e}
+\label{sec:org22d90a0}
 \textbf{Aluminum has a subscript of \(1\) in \(\ce{AlPO4}\)}
 
 \section{The reaction of 11.9 g of \(\ce{CHCl3}\) with excess chlorine produced 12.6 g of \(\ce{CCl4}\), carbon tetrachloride, what is the percent yield?}
-\label{sec:orgbed1fad}
+\label{sec:orgc763c7a}
 The equation for the reaction is
 \(\ce{2CHCl3 + 2Cl2}=\ce{2CCl4 + 2HCl}\)
 
@@ -355,7 +363,7 @@ yield, then multiply by 100
 \textbf{Therefore the percent yield is 82.4\%}
 
 \section{What mass of \(\ce{CCl}\) 4 is formed by the reaction of 8.00 g of methane with an excess of chlorine?}
-\label{sec:org1fdec8d}
+\label{sec:orgd0ddce4}
 The given equation is already balanced. The question is asking us to calculate
 the theoretical yield
 
@@ -375,7 +383,7 @@ We already know \(\ce{CH4}\) is the limiting reactant. Using dimensional analysi
 \textbf{Therefore, \(76.72g\) of \(\ce{CCl4}\) is formed by the reaction.}
 
 \section{A reaction occurs between sodium carbonate and hydrochloric acid producing sodium chloride, carbon dioxide, and water. Write the balanced chemical equation for the reaction.}
-\label{sec:orgfd6bfaa}
+\label{sec:org835cfaa}
 The equation will be sodium carbonate + hydrohloric acid = sodium chloride +
 carbon doxide + water. In correct notation this is written as:
 
@@ -389,7 +397,7 @@ Balanced, this equation is
 \end{align*}
 
 \section{Classify the type of reaction from the five major type of reactions you learned in your first year chemistry course and write word equations. If necessary, balance.}
-\label{sec:org069f7ad}
+\label{sec:org20d3acf}
 \begin{enumerate}[a.]
 \item The word equation is \textbf{Sodium Hydroxide + Potassium Nitrate \(\rightarrow\) Sodium
 Nitrate + Potassium Hydroxide}. This equation is already balanced, and is a
@@ -419,7 +427,7 @@ since a compound (in this case the reactant) breaks down
 \end{enumerate}
 
 \section{Now try these reaction types, Rewrite as a balanced equation with the products predicted}
-\label{sec:orgbd17dff}
+\label{sec:org1209d39}
 \begin{enumerate}[a.]
 \item \(\ce{Ba(OH)2}\rightarrow\ce{BaO + H2O}\)
 \item \(\ce{Na2CO3}\rightarrow\ce{Na2O + CO2}\)
@@ -429,7 +437,7 @@ since a compound (in this case the reactant) breaks down
 \end{enumerate}
 
 \section{Now try these reaction types, Rewrite as a balanced equation with the products predicted}
-\label{sec:orgfa30bf4}
+\label{sec:orgdf2f2cf}
 \begin{enumerate}[a.]
 \item \(\ce{2Mg + O2}\rightarrow\ce{2MgO}\)
 \item \(\ce{N2 + 3H2}\rightarrow\ce{2NH3}\)
@@ -438,7 +446,7 @@ since a compound (in this case the reactant) breaks down
 \end{enumerate}
 
 \section{Attempt to write and predict products the following chemical reactions:}
-\label{sec:org270d7a4}
+\label{sec:org5ac47e9}
 \begin{enumerate}[a.]
 \item \(\ce{2H2O2}\rightarrow\ce{2H2O + O2}\)
 \item \(\ce{Ba(OH)2 + CuSO4}\rightarrow\ce{Cu(OH)2 + BaSO4}\)
@@ -448,9 +456,9 @@ since a compound (in this case the reactant) breaks down
 \end{enumerate}
 
 \section{Review the next section and the video, then answer the following}
-\label{sec:org80269dd}
+\label{sec:org28f60ee}
 \subsection{Part A: Using the solubility rules table, classify each of the substances as being soluble or insoluble in water.}
-\label{sec:orgb112617}
+\label{sec:org446cc82}
 \begin{enumerate}[a.]
 \item \(\ce{KBr}\) = Soluble
 
@@ -543,7 +551,7 @@ iodine is bonded to the cation lead, it will be insoluble
 \end{enumerate}
 
 \subsection{Part B: Identify the two new compounds that form if the solutions, as suggested by the following table, were mixed via a double displacement reaction.}
-\label{sec:org1ac85cb}
+\label{sec:org85694bb}
 
 Underlined compounds are precipitates of the reaction
 \begin{center}
@@ -561,7 +569,7 @@ Underlined compounds are precipitates of the reaction
 \end{center}
 
 \section{Name the following, then draw the Lewis Structure for the following hydrocarbons from their full names.}
-\label{sec:orgc4225d2}
+\label{sec:org87b99fd}
 \begin{enumerate}
 \item \(\ce{CH4}\) - methane
 
@@ -604,7 +612,7 @@ Based on the name, there should be one carbon atom and sigma bonds are
 present. The lewis diagram would be
 
 \begin{center}
-\includegraphics[width=4cm]{./images/7.JPG}
+\includegraphics[width=5cm]{./images/7.JPG}
 \end{center}
 
 \item Propyne \(\ce{C3H4}\)
@@ -622,7 +630,7 @@ Based on the name, there shuold be four carbon atoms and a double bond. The 2
 in front signifies this is an isomer of butene. It's lewis diagram would be
 
 \begin{center}
-\includegraphics[width=6cm]{./images/9.JPG}
+\includegraphics[width=5cm]{./images/9.JPG}
 \end{center}
 \end{enumerate}
 \end{document}

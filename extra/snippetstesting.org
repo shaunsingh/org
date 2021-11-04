@@ -1,17 +1,22 @@
 #+title: Testing
 #+author: Shaurya Singh
-#+latex_class: chameleon
 #+startup: preview
 
-\(
-2x+2=\frac{3}{3}\\
-3x=\frac{2}{3*5}\\
-\sin\theta^{-1}=\frac{2}{3}\\
-\)
-
-#+plot: transpose:yes type:radar min:0 max:4 ticks:4 file:"misc/editor-comparison.svg"
-| Editor | Speed | Initial ease of use | Extensiblity | Keybindings (w/EVIL) | Visuals | Completion |
-|--------+-------+---------------------+--------------+----------------------+---------+------------|
-| Emacs  |     3 |                   2 |            5 |                    3 |       4 |          3 |
-#+attr_html: :class invertible :alt Radar chart comparing my thoughts on a few editors.
-#+attr_latex: :options inkscapelatex=false
+\(3x-1=1.03^{x}\)
+   a. =solve(3x-1=1.03^x)=
+      (dm42 gives 0.673368)
+      -> list[.673367783, 219.511509]
+   \begin{align}
+       &2x+4y+6z=18\\
+       &4x+5y+6z=24\\
+       &3x+y-2z=4\\
+ \end{align}
+   a. =linsolve([2x+4y+6z=18,4x+5y+6z=24,3x+y-2z=4],[x,y,z])=
+      (dm42 gives the same)
+      -> [4, -2, 3]
+\(f(x)=2x^{3}-3x-33\)
+find \(\frac{1}{2}(0.75)(f(7))^{2}\)
+   a. =2x^3-3x-33=>f(x)=
+      =(0.5)(0.75)(f(7))^2=
+      (dm42 gives the same)
+      -> [4, -2, 3]

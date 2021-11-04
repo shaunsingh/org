@@ -1,0 +1,4 @@
+#+title: Math Testing
+#+author: Shaurya Singh
+#+latex_class: chameleon
+#+startup: preview

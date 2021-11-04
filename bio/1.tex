@@ -1,0 +1,161 @@
+% Created 2021-10-24 Sun 23:48
+% Intended LaTeX compiler: pdflatex
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{chemfig}
+\DeclareSIUnit{\pH}{pH}
+
+% features: (custom-font acronym par-sep alegreya-typeface)
+\usepackage[osf]{Alegreya}
+\usepackage{AlegreyaSans}
+\usepackage[scale=0.88]{sourcecodepro}
+
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+% end features
+
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{ffffff}
+\definecolor{ofg}{HTML}{000000}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{4078f2}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
+
+\definecolor{documentTitle}{HTML}{a626a4}
+\definecolor{documentInfo}{HTML}{a626a4}
+\definecolor{level1}{HTML}{e45649}
+\definecolor{level2}{HTML}{da8548}
+\definecolor{level3}{HTML}{b751b6}
+\definecolor{level4}{HTML}{6f99f5}
+\definecolor{level5}{HTML}{bc5cba}
+\definecolor{level6}{HTML}{9fbbf8}
+\definecolor{level7}{HTML}{d292d1}
+\definecolor{level8}{HTML}{d8e4fc}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+% textual elements
+
+\definecolor{link}{HTML}{4078f2}
+\definecolor{cite}{HTML}{4aa8b0}
+\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{code}{HTML}{da8548}
+\definecolor{verbatim}{HTML}{50a14f}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{f6f6f6}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+%% end customisations
+
+\author{Shaurya Singh}
+\date{\today}
+\title{What is Ocean Acidification\\\medskip
+\large Chapter \#2}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
+\hypersetup{
+  pdfauthor={Shaurya Singh},
+  pdftitle={What is Ocean Acidification},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 29.0.50 (Org mode 9.5)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
+\begin{document}
+
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+
+\section{How are fossil fuels related to ocean acidification?}
+\label{sec:orgd97b153}
+The driving force for ocean acidity are fossil fuels. THe \(\ce{CO2}\) released into the atmosphere raises the global temperature but 25\% of that also gets asborbed into oceans.
+\section{Why weren’t scientists initially concerned that the ocean absorbs excess carbon dioxide?}
+\label{sec:orgb2ffb4a}
+Initially scientists believed that this was beneficial since more \(\ce{CO2}\) in the ocean means less in the air, reducing the warming effect. Scientists soon realized that the extra \(\ce{CO2}\) absorbed by the ocean is changing the waters chemistry, driving down the \(\SI{}{\pH}\).
+\section{Describe how carbonic acid is formed in the ocean.}
+\label{sec:org05339a1}
+\(\ce{CO2}\) Reacts with \(\ce{H2O}\) to form the week acid carbonic acid. This immediately breaks apart, releasing hydrogen ions increasing water's acidity
+\section{How are oysters affected by decreased availability of carbonate in the water?}
+\label{sec:org961bc55}
+Healthy baby oysters pull in the ingredients they need from the surrounding water, to form Calcium Carbonate which forms their shell. However, sometimes too much carbon dioxide is pulled into the mix. The floating hydrogen ions react with the carbonate and therefore less carbonate is available, making it harder for oysters to make their shell and killing them.
+\section{Besides oysters, what other animals do you think might be in danger from ocean acidification?}
+\label{sec:orgcff9c2d}
+Any other shelled animals, such as mussels, clams, urchins, and starfish, are all going to have trouble building their shells in more acidic water, as just like oysters, they are going to die trying to find carbonate.
+\end{document}

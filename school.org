@@ -221,8 +221,9 @@ DEADLINE: <2021-10-04 Mon>
 *** Algebra [100%]
 **** DONE 2.2 Linear Functions
 CLOSED: [2021-10-03 Sun 18:24]
-*** History [50%]
-**** TODO Manifest Destiny Project
+*** History [100%]
+**** DONE Manifest Destiny Project
+CLOSED: [2021-10-20 Wed 11:45]
 **** DONE Study for history test
 CLOSED: [2021-10-03 Sun 23:33]
 *** Spanish [100%]
@@ -267,10 +268,11 @@ CLOSED: [2021-10-05 Tue 14:35]
 *** Bio [100%]
 **** DONE Test Study
 CLOSED: [2021-10-05 Tue 14:35]
-*** Chem [75%]
+*** Chem [100%]
 **** DONE Quiz study
 CLOSED: [2021-10-05 Tue 14:35]
-**** TODO Attempt 1.2.1 notes
+**** DONE Attempt 1.2.1 notes
+CLOSED: [2021-10-21 Thu 00:40]
 **** DONE Watch videos (1.1.1, 1.1.2) and take notes
 CLOSED: [2021-10-04 Mon 17:54]
 **** DONE Quiz
@@ -304,8 +306,9 @@ CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
 CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
 **** DONE Chapter 2 Guided Notes
 CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-07 Thu>
-*** Chem [0%]
-**** TODO Ask Mr. Black about Lockdown Browser
+*** Chem [100%]
+**** DONE Ask Mr. Black about Lockdown Browser
+CLOSED: [2021-10-20 Wed 11:44]
 *** CSP [100%]
 **** DONE Algorithmic Bias (1.10)
 CLOSED: [2021-10-13 Wed 22:37] DEADLINE: <2021-10-08 Fri>
@@ -315,23 +318,90 @@ CLOSED: [2021-10-05 Tue 14:42]
 
 * Week 6
 ** Thursday
-*** Algebra [40%]
+*** Algebra [100%]
 **** DONE Aleks Topic Goals <2021-10-14 Thu>
 CLOSED: [2021-10-14 Thu 01:39]
 **** DONE Some BS homework <2021-10-14 Thu>
 CLOSED: [2021-10-14 Thu 10:39]
-**** TODO 2.6 Piecewise hw <2021-10-14 Fri>
-**** TODO 2.6 Piecewise notes <2021-10-14 Fri>
-*** Spanish [0%]
-**** TODO Tarea 17 or smtg <2021-10-15 Fri>
+**** DONE 2.6 Piecewise hw <2021-10-14 Fri>
+CLOSED: [2021-10-20 Wed 11:44]
+**** DONE 2.6 Piecewise notes <2021-10-14 Fri>
+CLOSED: [2021-10-20 Wed 11:44]
+*** Spanish [100%]
+**** DONE Tarea 17 or smtg <2021-10-21 Thu>
+CLOSED: [2021-10-20 Wed 11:44]
 *** Seminar [0%]
-**** TODO Video and Notes <2021-10-15 Fri>
-*** Chem [0%]
-**** TODO MyAP Quiz <2021-10-15 Fri>
-**** TODO Chapter 1 notes <2021-10-15 Fri>
-*** CSP [66%]
+**** HOLD Video and Notes <2021-10-21 Thu>
+*** Chem [100%]
+**** DONE MyAP Quiz <2021-10-21 Thu>
+CLOSED: [2021-10-14 Thu 13:25]
+**** DONE Chapter 1 notes <2021-10-21 Thu>
+CLOSED: [2021-10-20 Wed 11:44]
+**** DONE Practice Problems <2021-10-21 Thu>
+CLOSED: [2021-10-21 Thu 01:10]
+*** CSP [100%]
 **** DONE Test Review <2021-10-14 Thu>
 CLOSED: [2021-10-14 Thu 00:58]
 **** DONE Pick Partner <2021-10-14 Thu>
 CLOSED: [2021-10-14 Thu 00:59]
-**** TODO Grade Previous Partner  and Column Chart <2021-10-14 Thu>
+**** DONE Test <2021-10-14 Thu>
+CLOSED: [2021-10-14 Thu 14:50]
+**** DONE Grade Previous Partner  and Column Chart <2021-10-14 Thu>
+CLOSED: [2021-10-20 Wed 11:44]
+* Week 7
+** Thursday
+*** Algebra [100%]
+**** DONE Aleks Topic Goals <2021-10-21 Thu>
+CLOSED: [2021-10-22 Fri 03:51]
+**** DONE 2.7 Tranformations hw <2021-10-21 Thu>
+CLOSED: [2021-10-21 Thu 00:56]
+**** DONE 2.8 Graphing Inequalities hw <2021-10-21 Thu>
+CLOSED: [2021-10-21 Thu 01:18]
+**** DONE 2.4-6 Quiz <2021-10-21 Thu>
+*** Spanish [100%]
+**** DONE Tarea 18 <2021-10-21 Thu>
+CLOSED: [2021-10-21 Thu 00:32]
+**** DONE Tarea 19 <2021-10-21 Thu>
+CLOSED: [2021-10-29 Fri 14:09]
+**** DONE Tarea 20 <2021-10-21 Thu>
+CLOSED: [2021-10-29 Fri 14:09]
+*** Biology [66%]
+**** TODO pg 40-44 textbook (question 1-4) <2021-10-21 Thu>
+**** DONE Organic Molecules Notes <2021-10-21 Thu>
+CLOSED: [2021-10-29 Fri 14:09]
+**** DONE Ocean Acidification <2021-10-21 Thu>
+CLOSED: [2021-10-29 Fri 14:09]
+*** Seminar [50%]
+**** TODO Video and Notes <2021-10-21 Thu>
+**** DONE Question Review <2021-10-21 Thu>
+CLOSED: [2021-10-29 Fri 14:10]
+*** Chem [50%]
+**** TODO Chapter 2 Daily Vid notes <2021-10-21 Thu>
+**** DONE Chapter 1-2 Textbook notes <2021-10-21 Thu>
+CLOSED: [2021-10-29 Fri 14:10]
+*** CSP [100%]
+**** DONE Pair Programming <2021-10-21 Thu>
+CLOSED: [2021-10-29 Fri 14:10]
+**** DONE Welcome to Scratch  <2021-10-21 Thu>
+CLOSED: [2021-10-21 Thu 00:32]
+*** Other [100%]
+**** DONE Robotics Meeting <2021-10-21 Thu>
+**** DONE Esports Matches <2021-10-21 Thu>
+**** DONE Gym Participation <2021-10-21 Thu>
+* Week 8
+** Friday
+*** Algebra [75%]
+**** TODO Aleks Topic Goals <2021-10-21 Thu>
+*** Spanish [100%]
+**** DONE Tarea 20 <2021-10-21 Thu>
+*** Biology [66%]
+**** DONE Ocean Acidification <2021-10-21 Thu>
+*** Seminar [50%]
+**** TODO Video and Notes <2021-10-21 Thu>
+*** Chem [50%]
+**** TODO Chapter 2 Daily Vid notes <2021-10-21 Thu>
+*** CSP [100%]
+**** DONE Welcome to Scratch  <2021-10-21 Thu>
+CLOSED: [2021-10-21 Thu 00:32]
+*** Other [50%]
+**** TODO Robotics Meeting

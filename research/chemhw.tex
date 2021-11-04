@@ -1,4 +1,4 @@
-% Created 2021-09-27 Mon 15:44
+% Created 2021-10-24 Sun 22:15
 % Intended LaTeX compiler: pdflatex
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
@@ -17,114 +17,44 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
 \usepackage{indentfirst}
-\setmainfont[Ligatures=TeX]{Alegreya}
-\setmonofont[Ligatures=TeX]{Liga SFMono Nerd Font}
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
 \usepackage{enumerate}
 
-% features: (acronym par-sep)
+% features: (custom-font acronym .alegreya-tabular-figures underline par-sep alegreya-typeface table)
+\usepackage[osf]{Alegreya}
+\usepackage{AlegreyaSans}
+\usepackage[scale=0.88]{sourcecodepro}
+
 \newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
 \newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
+
+\makeatletter
+% tabular lining figures in tables
+\renewcommand{\tabular}{\AlegreyaTLF\let\@halignto\@empty\@tabular}
+\makeatother
+
+\usepackage[normalem]{ulem}
 \setlength{\parskip}{\baselineskip}
 \setlength{\parindent}{0pt}
 
+\usepackage{longtable}
+\usepackage{booktabs}
 % end features
-
-%% make document follow Emacs theme
-
-\definecolor{obg}{HTML}{fafafa}
-\definecolor{ofg}{HTML}{383a42}
-
-\pagecolor{obg}
-\color{ofg}
-
-% list labels
-
-\definecolor{itemlabel}{HTML}{4078f2}
-
-\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
-\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
-\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
-\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
-
-\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
-\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
-\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
-\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
-
-% structural elements
-
-\definecolor{documentTitle}{HTML}{a626a4}
-\definecolor{documentInfo}{HTML}{a626a4}
-\definecolor{level1}{HTML}{e45649}
-\definecolor{level2}{HTML}{da8548}
-\definecolor{level3}{HTML}{b751b6}
-\definecolor{level4}{HTML}{6f99f5}
-\definecolor{level5}{HTML}{bc5cba}
-\definecolor{level6}{HTML}{9fbbf8}
-\definecolor{level7}{HTML}{d292d1}
-\definecolor{level8}{HTML}{d8e4fc}
-
-\addtokomafont{title}{\color{documentTitle}}
-\addtokomafont{author}{\color{documentInfo}}
-\addtokomafont{date}{\color{documentInfo}}
-\addtokomafont{section}{\color{level1}}
-\newkomafont{sectionprefix}{\color{level1}}
-\addtokomafont{subsection}{\color{level2}}
-\newkomafont{subsectionprefix}{\color{level2}}
-\addtokomafont{subsubsection}{\color{level3}}
-\newkomafont{subsubsectionprefix}{\color{level3}}
-\addtokomafont{paragraph}{\color{level4}}
-\newkomafont{paragraphprefix}{\color{level4}}
-\addtokomafont{subparagraph}{\color{level5}}
-\newkomafont{subparagraphprefix}{\color{level5}}
-
-% textual elements
-
-\definecolor{link}{HTML}{4078f2}
-\definecolor{cite}{HTML}{4aa8b0}
-\definecolor{itemlabel}{HTML}{4078f2}
-\definecolor{code}{HTML}{da8548}
-\definecolor{verbatim}{HTML}{50a14f}
-
-\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
-\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
-\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
-\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
-
-\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
-\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
-\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
-\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
-
-\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
-\makeatletter
-\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
-\makeatother
-
-% code blocks
-
-\definecolor{codebackground}{HTML}{f6f6f6}
-\colorlet{EFD}{ofg}
-\definecolor{codeborder}{HTML}{f0f0f0}
-
-%% end customisations
-
 \author{Shaurya Singh}
 \date{\today}
-\title{Intro Topic \#1\\\medskip
-\large Science Research}
+\title{Effect of common diabetic drug metformin on the aging process.\\\medskip
+\large Science Research: Intro \#1}
 \colorlet{greenyblue}{blue!70!green}
 \colorlet{blueygreen}{blue!40!green}
 \providecolor{link}{named}{greenyblue}
 \providecolor{cite}{named}{blueygreen}
 \hypersetup{
   pdfauthor={Shaurya Singh},
-  pdftitle={Intro Topic \#1},
+  pdftitle={Effect of common diabetic drug metformin on the aging process.},
   pdfkeywords={},
   pdfsubject={},
-  pdfcreator={Emacs 28.0.50 (Org mode 9.5)},
+  pdfcreator={Emacs 29.0.50 (Org mode 9.5)},
   pdflang={English},
   breaklinks=true,
   colorlinks=true,
@@ -140,16 +70,67 @@
 \tableofcontents
 
 
-\section{Resources:}
-\label{sec:orgbe852c0}
+\section{Proposal}
+\label{sec:org3889c7e}
+Diabetes is becoming one of the most widespread health burning problems in the elderly. Worldwide prevalence of diabetes among subjects over 65 years was 135.6 million in 2019, a number that is expected to double in 2045. Over 34 million Americans have diabetes, and over 88\% of diabetic Americans take oral medications and insulin to treat and control it. While these drugs suppress type 2 diabetes, previous studies have shown a link between such drugs and (de)accelerated aging. Of these drugs, metformin is the most prevalent. In this study I will utilize the zebrafish model to test the effect of metformin on the aging process in a healthy individual. Zebrafish, who have a similar genetic structure to humans, will be subjected to metformin for different times and doses. The resulting zebrafish DNA will be assessed for DNA damage, and the resulting RNA will be assessed for damage on DNA repair genes such as PARP1 (Poly[ADP-Ribose]Polymerase 1) and PCNA (Proliferating Cell Nuclear Antigen). Such research will help us further improve our understanding of the aging of the human body in the long-term.
+
+\section{Method}
+\label{sec:org4e856a0}
 \begin{enumerate}
-\item \href{https://www.sciencebuddies.org/science-fair-projects/project-ideas/Genom\_p003/genetics-genomics/blasting-flu-viruses\#procedure}{BLASTing Flu Viruses | Science Project}
-\item \href{https://zfin.org/zf\_info/zfbook/chapt9/9.3.html}{ZFIN: Zebrafish Book: Molecular Methods}
-\item \href{https://www.frontiersin.org/articles/10.3389/fcell.2018.00178/full}{Frontiers | The Zebrafish as an Emerging Model to Study DNA Damage in Aging, Cancer and Other Diseases | Cell and Developmental Biology}
-\item \href{https://www.hopkinsmedicine.org/research/advancements-in-research/fundamentals/in-depth/zebrafish-help-unlock-clues-to-human-disease}{Zebrafish Help Unlock Clues to Human Disease}
-\item \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3193057/}{Danio rerio in K-12 Classrooms: Sparking Interest in the New Generation of Scientists}
-\item \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5878548/}{Using Zebrafish to Bring Hands-On Laboratory Experiences to Urban Classrooms}
-\item \href{https://www.societyforscience.org/blog/mary-fish-and-her-zebrafish/}{Mary Fish and her zebrafish | Society for Science}
-\item \href{https://www.future-science.com/doi/10.2144/000112619}{Method for isolation of PCR-ready genomic DNA from zebrafish tissues | BioTechniques}
+\item We are going to take 2 Drugs. Each drug will have 5 fish per time/dose
+\begin{itemize}
+\item No drug
+\item Drug
+\item Vehicle
+\item postive/negative controls
+\end{itemize}
+\item Euthanize zebrafish (\(300mg/L\) using MS222 at PH 7.0)
+\item Asses DNA damage;
+\begin{itemize}
+\item Isolate DNA
+\item Run it on agarose gel to isolate DNA
+\item Run under ethidium bromide + UV Light (+buffer to maintain enviornment)
+\item Check for streaks/damage/etc with ladder
+\end{itemize}
+\item Asses DNA Repair Mechanisms
+\begin{itemize}
+\item Transcribe/Isolate RNA
+\item Two step (cDNA, primer, operate on cDNA) OR One step (cDNA+primer \(\Rightarrow\) 3`/5` 5`/3`)
+\item Focus on repair genes i.e. PARP1 and PCNA
+\item Find Primer:
+\begin{enumerate}
+\item mRNA sequence \(\Rightarrow\) CDS
+\item Blast
 \end{enumerate}
+\item PCR process to amplify Signal
+\end{itemize}
+\end{enumerate}
+
+\section{Supplies/Cost}
+\label{sec:org3f63f83}
+Contact:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Supply & Cost (\$) & Notes\\
+\midrule
+Eppendorf Tube &  & \\
+EDTA &  & \\
+Triton X-100 &  & \\
+Proteinase K &  & \\
+\(\ce{C2H6O}\) Ethanol &  & \\
+Agarose gel &  & \\
+Ladder + Loading Buffer &  & \\
+UV Light &  & \\
+Ethidium Bromide &  & \\
+Micro Pipettes &  & \\
+\textbf{Subtotal} & \$1000-2000 & \\
+Inhibitors &  & \\
+Zebrafish &  & \\
+Zebrafish maintainence &  & \\
+\textbf{Subtotal} &  & \\
+\textbf{Total} &  & \\
+\bottomrule
+\end{tabular}
+\end{center}
 \end{document}

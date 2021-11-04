@@ -13,6 +13,17 @@ variables as well as loops, if/else statements, and operations If you still need
 
 In Assignment #4, you will learn about functions and python modules
 
+\begin{align*}
+  &\ce{Fe2O_3(s)}+\ce{2X(s)} = \ce{2Fe(s) + X_2O_3(s)}\\
+  &79.847g+2x=55.847g+50.982g\\
+  &\Rightarrow\ 2x=106.829g-79.847g\\
+  &\Rightarrow\ 2x=26.982g\\
+\end{align*}
+
+Since the atomic weight of \(\ce{Fe}\) is proportional to the given weight
+(\(55.847g\)), the atomic weight of X is equally proportional to the derived
+weight (\(26.982g\)). *Therefore, the element is Aluminium (\(\ce{Al}\)).*
+
 * Functions
 A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
 

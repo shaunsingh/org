@@ -1,0 +1,143 @@
+#+title: IRR 1 Bibliography
+#+author: Shaurya Singh
+#+startup: fold
+#+startup: preview
+#+options: toc:2
+#+latex_class: chameleon
+** Group Question (WIP)
+Does the caffeine in coffee present health risks for middle aged people in America?
+** Lens/Individual Question
+What is the influence of adolescent coffee consumption and coffee culture on future risk of type 2 diabetes mellitus in middle aged men and women?
+
+* Article 1: Adolescent dairy product consumption and risk of type 2 diabetes in middle-aged women
+** PDF
+[[./citations/AdolescentDairyConsumption.pdf]]
+** MLA Citation
+#+begin_quote
+Malik, V. S., et al. “Adolescent Dairy Product Consumption and Risk of Type 2 Diabetes in Middle-Aged Women.” American Journal of Clinical Nutrition, vol. 94, no. 3, Sept. 2011, pp. 854–61. DOI.org (Crossref), https://doi.org/10.3945/ajcn.110.009621.
+#+end_quote
+** A brief summary of the text
+The text examines the effect of adolescent dairy consumption on the future risk of type 2 diabetes, specifically on women. It does this on a global scale, providing statistics on the effect of dairy on adult height growth, insulin resistance, and resulting CI's at later ages. The study concludes that higher diary reduces the chances of T2D in adulthood.
+** Comment on the authority or credibility of the author;
+All the authors are credible. They are experts in their various fields. The article itself is published on pubmed NCBI, a non-profit and well known peer reviewed journal.
+** Comment on strengths and weaknesses of their argument;
+The study is very in depth, has taken care of any external factors they needed to control, and presents their data in a well thought out way. However, the sample size could be more descriptive (the research only gives the number of women, not where they were from etc.)
+** The author’s point of view; and
+The author is a neutral writer, in that this is a purely informative piece
+** How the text relates to your question or thesis.
+The text identifies dairy intake in adolescence and relates it risk of diabetes in elder women. Since coffee is a subset of dairy, the benefits of dairy apply to coffee as well
+* Article 2: Influence of Adolescent and Maternal Coffee Consumption on Risk of Obesity and Type 2 Diabetes Mellitus in Middle-Aged Women and Their Offspring: Results from Two Prospective Cohort Studies in the United States
+** PDF :ATTACH:
+:PROPERTIES:
+:ID:       33262aa9-0c25-4bd7-9725-6a4075ccd95d
+:END:
+
+[[attachment:_20211026_192803Mellitus.png]]
+
+** MLA Citation
+#+begin_quote
+Alperet, Derrick, et al. “1575-P: Influence of Adolescent and Maternal Coffee Consumption on Risk of Obesity and Type 2 Diabetes Mellitus in Middle-Aged Women and Their Offspring: Results from Two Prospective Cohort Studies in the United States.” Diabetes, vol. 68, no. Supplement 1, June 2019, pp. 1575-P. DOI.org (Crossref), https://doi.org/10.2337/db19-1575-P.
+#+end_quote
+** A brief summary of the text
+In a double-blind randomized trial, coffee intake was shown to decrease fat mass in healthy overweight adults. This suggests that coffee could be modulating lower type 2 diabetes mellitus (T2DM) risk among adults through pathways involving adiposity. It is not known if earlier-life exposure to coffee intake could modulate risk of developing childhood obesity and, ultimately, T2DM later in life. Adolescent caffeinated coffee intake was associated with 17% lower T2DM risk
+** Comment on the authority or credibility of the author;
+The authors are graduate students from reputable institutions (such as harvard) and years of experience in their respective fields. The journal itself is reputable, as it is the American Diabetes Association, one of the largest diabetic organizations and journals worldwide. Therefore, the source is trustworthy.
+** Comment on strengths and weaknesses of their argument;
+While they did a good job of keeping the experiment controlled and reporting results, even they mentioned there are/were possible factors that could play into this, one of the main issues being exposure to coffee in earlier life (pre-utero/pre-teen).
+** The author’s point of view; and
+The author is a neutral writer, in that this is a purely informative piece
+** How the text relates to your question or thesis.
+The text identifies Adolescent as well as Maternal Coffee intake and relates it risk with a risk of diabetes in elder women. While my research focuses on adolescents, the research paper provides insight and data that will be useful.
+* Article 3: Role of coffee in modulation of diabetes risk
+** PDF
+[[./citations/RoleOfCoffeeIn.pdf]]
+** MLA Citation
+#+begin_quote
+Natella, Fausta, and Cristina Scaccini. “Role of Coffee in Modulation of Diabetes Risk.” Nutrition Reviews, vol. 70, no. 4, Apr. 2012, pp. 207–17. DOI.org (Crossref), https://doi.org/10.1111/j.1753-4887.2012.00470.x.
+#+end_quote
+** A brief summary of the text
+Coffee consumption has been associated with a lower risk of type 2 diabetes. This review examines the strength of this relationship, examines the possibility that the pattern of coffee consumption could influence the association, and evaluates the possible relationship between coffee consumption and other risk factors associated with diabetes. Particular attention is paid to the identification of the possible mechanisms by which coffee components might affect diabetes development.
+** Comment on the authority or credibility of the author;
+The author has previous experience in the topic but not as much as some of the other articles. The publisher is also not the most reputable, and the writing is informal at times.
+** Comment on strengths and weaknesses of their argument;
+The author provides a good background as to why coffee is an issue and what are the effects of coffee. However, the author does not visualize data very well, and doesn't provide much original information. The article may be used as a reference for statistics on coffee, but should be used as a reputable source.
+** The author’s point of view; and
+The author is a neutral writer, in that this is a purely informative piece
+** How the text relates to your question or thesis.
+My research relates to coffee consumption and the risk of Diabetes. While this article doesn't focus on any age groups, it provides accurate data on the results of coffee on diabetes risk
+* Article 4:  Coffee Consumption and Risk of Type 2 Diabetes Mellitus Among Middle-aged Finnish Men and Women.
+** PDF :ATTACH:
+:PROPERTIES:
+:ID:       56e9ffbb-c7cf-4cda-8bf1-5be79084552e
+:END:
+
+[[attachment:_20211026_191341Finnish.png]]
+
+** MLA Citation
+#+begin_quote
+Tuomilehto, Jaakko, et al. “Coffee Consumption and Risk of Type 2 Diabetes Mellitus Among Middle-Aged Finnish Men and Women.” JAMA: Journal of the American Medical Association, vol. 291, no. 10, Mar. 2004, pp. 1213–1219. EBSCOhost, doi:10.1001/jama.291.10.1213.
+#+end_quote
+** A brief summary of the text
+Finnish individuals have the highest coffee consumption in the world. Coffee consumption and other study parameters were determined at baseline using standardized measurements. After adjustment for confounding factors (age, study year, body mass index, systolic blood pressure, education, occupational, commuting and leisure-time physical activity, alcohol and tea consumption, and smoking), the HRs of DM associated with the amount of coffee consumed daily (0-2, 3-4, 5-6, 7-9,  10 cups) were 1.00, 0.71 (95% confidence interval [CI], 0.48-1.05) (P for trend=.001). In both sexes, the multivariate-adjusted inverse association was significant. The author concluded Coffee drinking has a graded inverse association with the risk of type 2 DM; however, the reasons for this risk reduction associated with coffee remain unclear.
+** Comment on the authority or credibility of the author;
+Professor Jaakko Tuomilehto qualified as MD in 1973 and MA in sociology in 1975 and PhD in Epidemiology and Public Health in 1975. He is currently working as the Chief Scientific Officer at Dasman Diabetes Institute in Kuwait. He is well known for his expertise in the subject.
+** The author’s point of view; and
+The author is a neutral writer, in that this is a purely informative piece
+** How the text relates to your question or thesis.
+Once again, my research relates to coffee consumption and the risk of Diabetes. While this article doesn't focus on any age groups, it provides accurate data on the results of coffee on diabetes risk. Finland, a country very dependant on coffee, can also show us how socioconomic factors play into coffee consumption.
+* Article 5: Coffee consumption is inversely associated with type 2 diabetes in Chinese.
+** PDF
+[[./citations/CoffeeInverseChinese.pdf]]
+** MLA Citation
+#+begin_quote
+Lin, Wen-Yuan, et al. “Coffee Consumption Is Inversely Associated with Type 2 Diabetes in Chinese.” European Journal of Clinical Investigation, vol. 41, no. 6, June 2011, pp. 659–666. EBSCOhost, doi:10.1111/j.1365-2362.2010.02455.x.
+#+end_quote
+** A brief summary of the text
+Coffee consumption has been shown to be inversely associated to type 2 diabetes mellitus (T2DM), but evidence in Chinese populations is limited. They investigated the relationship between coffee consumption and T2DM in a population-based cohort of middle-aged Chinese. After adjustment for age, body mass index, blood pressure, smoking and other factors, coffee intake was  inversely associated with t2DM. Habitual coffee drinkers had 38-46% lower risk of T2 DM than nondrinkers.
+** Comment on the authority or credibility of the author;
+Wen-yuan Lin is a Research Chemist at ToKai Carbon CB, and is experienced in the topic. He also has other reputable articles published to well known journals such as Nature.
+** Comment on strengths and weaknesses of their argument;
+The author is purely alternative, and presents data in a well thought out manner. There is no argument, and the author summarises and analysis the data well.
+** The author’s point of view; and
+The author is a neutral writer, in that this is a purely informative piece
+** How the text relates to your question or thesis.
+Similar to the previous 3, this supports my hypothesis that coffee consumption may be beneficial for middle aged men and women,
+* Article 6: Increased coffee, tea, or other sugar-sweetened beverage consumption in adolescents is associated with less satisfactory dietary quality, body fatness and serum uric acid profiles over the past 18 years in Taiwan.
+** PDF :ATTACH:
+:PROPERTIES:
+:ID:       d09b3015-3ae5-4b1c-a7c4-6dbe9a7f0603
+:END:
+
+[[attachment:_20211026_193127CoffeeFatVietnam.png]]
+
+** MLA Citation
+#+begin_quote
+Ya-Hui Shih, et al. “Increased Coffee, Tea, or Other Sugar-Sweetened Beverage Consumption in Adolescents Is Associated with Less Satisfactory Dietary Quality, Body Fatness and Serum Uric Acid Profiles over the Past 18 Years in Taiwan.” Asia Pacific Journal of Clinical Nutrition, vol. 28, no. 2, Apr. 2019, pp. 371–382. EBSCOhost, doi:10.6133/apjcn.201906_28(2).0020.
+#+end_quote
+** A brief summary of the text
+Taiwan has a high density of convenience stores and beverage shops, which makes sugar-sweetened beverages (SSBs) very accessible to teenager. This study examined the changes and the association between SSBs and biomarkers and nutrient intake, for teenagers over the course of 18 years. Intake of coffee or tea increased significantly in the 18 years of this study (p<0.01), whereas intake of SSBs decreased significantly (p=0.05). Intake was significantly higher among second survey participants and those with high total energy intakes.
+** Comment on the authority or credibility of the author;
+Ya-Hui Shih is a student at the National Health Research Institutes, Division of Preventive Medicine and Health Service Research. He has multiple other papers published to reputable journals, and is an expert in evidence-based-medicine.
+** Comment on strengths and weaknesses of their argument;
+The article is slightly vague, and lacks proper control of the experiment. The methodology could be better, and the experiment could be fine tuned to further eliminate human error. I will likely use this source to write about the cultural aspect of coffee consumption in adolescents
+** The author’s point of view; and
+The author is a neutral writer, in that this is a purely informative piece
+** How the text relates to your question or thesis.
+Once again, my research relates to coffee consumption and the risk of Diabetes. While this article doesn't focus on any age groups, it provides accurate data on the results of coffee on diabetes risk. Similar to Finland, the issue with Taiwan is that coffee is very accessible, similar to America. This raises issues with early onset coffee addiction in adolescents, something I want to study in my paper.
+* Article 7: Weight Gain in Older Adolescent Females: The Internet, Sleep, Coffee, and Alcohol
+** PDF
+[[./citations/WeightGainIn.pdf]]
+** MLA Citation
+#+begin_quote
+Berkey, Catherine S., et al. “Weight Gain in Older Adolescent Females: The Internet, Sleep, Coffee, and Alcohol.” The Journal of Pediatrics, vol. 153, no. 5, Nov. 2008, pp. 635-639.e1. DOI.org (Crossref), https://doi.org/10.1016/j.jpeds.2008.04.072.
+#+end_quote
+** A brief summary of the text
+More Internet time, more alcohol, and less sleep were all associated with same-year increases in body mass index. The exposures were highly (P <.0001) correlated with each other, except for coffee with Internet time (P >.50). Older girls may benefit from replacing recreational Internet time with sleep and by avoiding alcohol. Younger girls may benefit from avoiding both alcohol and coffee.
+** Comment on the authority or credibility of the author;
+Catherine S. Berkey, DSc is a Research Associate in Medicine at Brigham and Women's Hospital and Harvard Medical School. She is a well-known expert in her field, and has done similar studies in the past. She has multiple studies published to reputable peer-reviewed journals
+** Comment on strengths and weaknesses of their argument;
+The information in the article is outdated, and internet usage has likely changed since then. Additionally, the data is not properly presented, with a lack of visuals. I would like to replace this source in the future, with one of a similar idea but with newer and better visualized data.
+** The author’s point of view; and
+The author is a neutral writer, in that this is a purely informative piece
+** How the text relates to your question or thesis.
+Similar to Taiwan, the issue is that coffee is very accessible, similar to America. This raises issues with early onset coffee addiction in adolescents. Additionally, the internet can amplify this behavior, sleeping late and drinking coffee is an unnoticed detrimental sideeffect of adolescent coffee culture, something I want to study in my paper.

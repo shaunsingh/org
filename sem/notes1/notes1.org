@@ -1,0 +1,29 @@
+#+title: UAC 2: Build your arguement
+#+author: Shaurya Singh
+#+startup: fold
+#+startup: preview
+#+options: toc:2
+#+latex_class: chameleon
+
+* Parts of an arguement 
+  Knowing Each of the parts of an arguement is beneficial to reading the arguements of others and for composing our own complelling arguements
+
+  1. Introduction
+  2. Background Information 
+  3. Confirmation
+  4. Counter arguement and Refutation/Rebuttal
+  5. Conclusion
+
+* Introduction 
+  An introduction should be 
+  1. Relateable 
+    This can be done through anecdotes, shared experiences, or shared values
+  2. Establish a sense of urgency 
+    This can be done by presenting stastics and using dramatic descriptions
+  3. Challenging common conceptions
+    You can go against common sense or current events
+
+  Last but not least, this should state or at least imply the thesis of your paper 
+
+  Example: 
+
