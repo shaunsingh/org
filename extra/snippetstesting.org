@@ -1,5 +1,5 @@
 #+title: Testing
-#+author: Shaurya Singh
+#+author: shhh
 #+startup: preview
 
 \(3x-1=1.03^{x}\)
@@ -18,5 +18,5 @@
 find \(\frac{1}{2}(0.75)(f(7))^{2}\)
    a. =2x^3-3x-33=>f(x)=
       =(0.5)(0.75)(f(7))^2=
-      (dm42 gives the same)
+      (dm42 gives the same) sdflkjsdlfkjslkfjlsdkjflsjflsjflksjlfjslj
       -> [4, -2, 3]

@@ -1,0 +1,25 @@
+@document.meta
+    title: test
+    description: 
+    author: shauryasingh
+    categories: 
+    created: 2021-11-05
+    version: 0.1
+@end
+
+* break
+** algebra [0%]
+  *** aleks topic goals
+** biology [0%]
+  *** - [*] biology project (organic molecules)
+*** - [ ] pg 40-44 in textbook 
+*** - [ ] organic molecules lab 
+*** - [ ] ph lab 
+** seminar [0%]
+  *** - [*] video and notes
+  *** - [*] create a question
+** chem [0%]
+  *** - [*] chapter 2 daily vid notes
+*** - [ ] myap work
+** csp [0%]
+  *** - [*] everything

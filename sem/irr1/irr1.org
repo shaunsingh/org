@@ -1,0 +1,42 @@
+#+title: IRR 1
+#+author: Shaurya Singh
+#+startup: fold
+#+startup: preview
+#+options: toc:nil
+#+bibliography: ~/org/references.bib
+
+* Introduction
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+Diabetes is becoming one of the most widespread health-burning problems in the middle-aged and elderly. The worldwide prevalence of diabetes among subjects over 65 years was 135.6 million in 2019, a number that is expected to double in 2045 [cite:@2020]. More than 150 million Americans account for 140 billion cups of consumed coffee per year. Nearly four in 10 American teens drink coffee. Caffeine intake in teenagers has exponentially grown since 2004, yet it has gone largely unnoticed. However, growing concerns over the adverse health effects of caffeine suggest a comprehensive study. Previous studies have shown a link between adolescent coffee consumption and a decrease in the rate of middle-aged type 2 diabetes in those subjects [cite:@2019]. In a double-blind randomized trial, coffee intake was shown to decrease fat mass in healthy overweight adults, suggesting coffee could be modulating lower type 2 diabetes mellitus(T2DM) risk among adults, but research done by the National Health Research Institute of Taiwan states otherwise. The institute believes the ease of access to Sugar-Sweetened-Beverages (SSB’s) such as coffee and tea in Taiwan have caused an increase in adolescent obesity, diabetes, and resulted in less satisfactory health overall [cite:@2011], which prompts us: what is the influence of adolescent coffee consumption and coffee culture on future risk of type 2 diabetes mellitus in middle-aged men and women?
+
+* Caffeine Addiction and its Effect on Our World
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :ID:       57bc0be2-0dc2-4cbb-8c47-4ed807c83352
+  :END:
+
+Caffeine is now the most commonly used drug in the world [cite:@gilbert1984caffeine]. Although caffeine consumed in moderation is generally safe, an increasing number of clinical studies are showing how easy it is to get addicted. Users dependant on the drug are often unable to reduce their consumption, despite knowing the recurring health problems and consequence of excess caffeine and sugar consumption. The WHO now recognizes caffeine dependence as a clinical disorder, as caffeine use in excess can result in serious health hazards and in rare cases even death [cite:@brockwell1991caffeine].
+
+Unlike other drugs, caffeine is legal, easy to obtain, and socially acceptable to consume. Although before the mid 2000's caffeinated beverages were generally used by adults, such drinks are now consumed regularly by children. Additionally, these caffeinated drinks are specifically marketed to children, some as young as 5 years of age. Historically, soda and tea have been the main sources of caffeine in the diets of children and adolescents; however, the availability and sales of energy drinks, coffee drinks, and food products containing caffeine have dramatically increased over the past decade and are often marketed toward children and adolescents [cite:@heckman2010energy]. In addition, the caffeine content of energy drinks is not currently regulated by the FDA because the former are marketed as and considered dietary supplements [cite:@heckman2010energy]. Excess consumption of caffeine can result in tachycardia, arrhythmia, hypertension, hyperactivity, anxiety, and increased blood sugar concentrations because many energy drinks, coffee drinks, and other drinks that contain large amounts of caffeine often also contain high amounts of sugar [cite:@seifert2011health].
+
+* The Growing Worldwide Prevalence of Diabetes
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :ID:       57bc0be2-0dc2-4cbb-8c47-4ed807c83352
+  :END:
+
+Diabetes millitus is a chronic metabolic disorder, characterized by persistent hyperglycemia. Its often linked to impaired insulin secretion, resistance to peripheral actinos of insulin, or both. According to the International Diabetes Federation (IDF), approximately 415 million adults between the ages of 20 to 79 years had diabetes mellitus in 2015 [cite:@2017]. DM is proving to be a global public health burden as this number is expected to rise to another 200 million by 2040 [cite:@2017]. Chronic hyperglycemia in synergy with the other metabolic aberrations in patients with diabetes mellitus can cause damage to various organ systems, leading to the development of disabling and life-threatening health complications, most prominent of which are microvascular (retinopathy, nephropathy, and neuropathy).
+
+The association between coffee consumption and risk of some chronic diseases including cardiovascular disease and cancer has been reported [cite:@van2008coffee]. Several recent studies reported that coffee consumption is inversely related to the risk of type 2 diabetes [cite:@tuomilehto2004coffee]. Different components in coffee such as antioxidants, phenol chlorogenic acid, magnesium, and caffeine have been proposed to be involved in the process of developing type 2 diabetes [cite:@van2005coffee].
+
+#+attr_html: :alt Comparison between Incidence of Diabetes and Cups of coffee consumed per day
+[[attachment:_20211112_222930nihms160871f1.jpg]]
+
+
+* References
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+#+print_bibliography:

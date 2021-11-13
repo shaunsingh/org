@@ -16,7 +16,6 @@ while babies < 100:
 def greet(name):
     print("Hello", name)
 
-
 greet("Jack")
 greet("Jill")
 greet("Bob")
@@ -121,3 +120,4 @@ def add_queen(queens):
 queens = add_queen([])
 print(queens)
 print("\n".join(". " * q + "Q " + ". " * (BOARD_SIZE - q - 1) for q in queens))
+
