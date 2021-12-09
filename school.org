@@ -251,7 +251,8 @@ CLOSED: [2021-10-03 Sun 23:33]
 **** STRT Register for Chem Olympiad
 **** DONE Finish Practice PSAT Test
 CLOSED: [2021-10-03 Sun 23:33]
-**** TODO Finish Aeronautics Club Stuff
+**** DONE Finish Aeronautics Club Stuff
+CLOSED: [2021-12-09 Thu 14:33]
 **** DONE Finalize Student Council Speech/Presentation
 CLOSED: [2021-10-04 Mon 13:27]
 
@@ -407,16 +408,58 @@ CLOSED: [2021-11-05 Fri 16:51]
 * Break
 ** Algebra [0%]
 *** HOLD aleks topic goals
-** Biology [0%]
-*** TODO biology project (organic molecules)
-*** TODO pg 40-44 in textbook
-*** TODO organic molecules lab
-*** TODO ph lab
+** Biology [100%]
+*** DONE biology project (organic molecules)
+CLOSED: [2021-12-09 Thu 14:32]
+*** DONE pg 40-44 in textbook
+CLOSED: [2021-12-09 Thu 14:32]
+*** DONE organic molecules lab
+CLOSED: [2021-12-09 Thu 14:32]
+*** DONE ph lab
+CLOSED: [2021-12-09 Thu 14:32]
+** Seminar [100%]
+*** DONE video and notes
+CLOSED: [2021-12-09 Thu 14:32]
+*** DONE create a question
+CLOSED: [2021-12-09 Thu 14:33]
+** Chem [100%]
+*** DONE chapter 2 daily vid notes
+CLOSED: [2021-12-09 Thu 14:33]
+*** DONE myap work
+CLOSED: [2021-12-09 Thu 14:33]
+** Csp [100%]
+*** DONE everything
+CLOSED: [2021-12-09 Thu 14:33]
+
+* 2 weeks before winter break (idk its been so long)
+** Algebra [0%]
+*** TODO Aleks Topic Goals
+Work on Aleks topic goals throughout the week
+DEADLINE: <2021-12-16 Thu>
+*** TODO 4.5 PT. 2 more squaring
+38 - 52 even:[[https://docs.google.com/presentation/d/1R72gToxEqTzNP_fffuOCAB9ZnFBCjiVGNNgkbLKYrIQ/edit#slide=id.p1][ slides]]
+DEADLINE: <2021-12-10 Fri>
+** Spanish [0%]
+*** TODO Tarea 14 & 15
+DEADLINE: <2021-12-10 Fri>
 ** Seminar [0%]
-*** TODO video and notes
-*** TODO create a question
+*** TODO Finish IRR1
+DEADLINE: <2021-12-10 Fri>
+*** TODO Start working on presentation
+DEADLINE: <2021-12-13 Mon>
 ** Chem [0%]
-*** TODO chapter 2 daily vid notes
-*** TODO myap work
+*** TODO Chapter 4 daily vid notes
+DEADLINE: <2021-12-16 Thu>
+*** TODO MYAP Progress Checks
+        * Note: Assigned throughout the week, keep track of it
+             DEADLINE: <2021-12-16 Thu>
 ** Csp [0%]
-*** TODO everything
+*** TODO 3.8 Big Picture
+[[https://apollo.codio.com/classroom/assignment/b18e7c44-b49a-436a-9c8c-fb5b4e421dcd][Link To Assignment]]
+              DEADLINE: <2021-12-13 Mon>
+*** TODO 3.9 Lists
+[[https://apollo.codio.com/classroom/assignment/87e003a0-2f0f-4abb-a22d-8d3a46b30dab][Link To Assignment]]
+              DEADLINE: <2021-12-14 Tue>
+*** TODO 3.10 Processing Lists
+[[https://apollo.codio.com/classroom/assignment/cb8c50ac-cf98-44c2-ad5b-6880296eda1b][Link To Assignment]]
+              DEADLINE: <2021-12-15 Wed>

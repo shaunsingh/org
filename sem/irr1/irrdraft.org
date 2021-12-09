@@ -1,6 +1,0 @@
-#+title: IRR 1 Draft
-#+author: Shaurya Singh
-#+startup: fold
-#+startup: preview
-#+options: toc:2
-#+latex_class: chameleon

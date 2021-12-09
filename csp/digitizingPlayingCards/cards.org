@@ -1,0 +1,7 @@
+#+title: 4.5: Solving by completing the square
+#+subtitle: 14-36 even
+#+author: Shaurya Singh
+#+latex_class: chameleon
+#+startup: fold
+#+startup: preview
+

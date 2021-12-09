@@ -15,7 +15,6 @@
     "2017"
     "van2008coffee"
     "tuomilehto2004coffee"
-    "van2005coffee"
     "heckman2010energy"
     "seifert2011health"))
  :bibtex)

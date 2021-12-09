@@ -1,0 +1,228 @@
+% Created 2021-12-06 Mon 00:18
+% Intended LaTeX compiler: pdflatex
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
+% features: (custom-font acronym .alegreya-tabular-figures underline par-sep alegreya-typeface table)
+\usepackage[osf]{Alegreya}
+\usepackage{AlegreyaSans}
+\usepackage[scale=0.88]{sourcecodepro}
+
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
+
+\makeatletter
+% tabular lining figures in tables
+\renewcommand{\tabular}{\AlegreyaTLF\let\@halignto\@empty\@tabular}
+\makeatother
+
+\usepackage[normalem]{ulem}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+% end features
+
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{ffffff}
+\definecolor{ofg}{HTML}{000000}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{4078f2}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
+
+\definecolor{documentTitle}{HTML}{a626a4}
+\definecolor{documentInfo}{HTML}{a626a4}
+\definecolor{level1}{HTML}{e45649}
+\definecolor{level2}{HTML}{da8548}
+\definecolor{level3}{HTML}{b751b6}
+\definecolor{level4}{HTML}{6f99f5}
+\definecolor{level5}{HTML}{bc5cba}
+\definecolor{level6}{HTML}{9fbbf8}
+\definecolor{level7}{HTML}{d292d1}
+\definecolor{level8}{HTML}{d8e4fc}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+% textual elements
+
+\definecolor{link}{HTML}{4078f2}
+\definecolor{cite}{HTML}{4aa8b0}
+\definecolor{itemlabel}{HTML}{4078f2}
+\definecolor{code}{HTML}{da8548}
+\definecolor{verbatim}{HTML}{50a14f}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{f6f6f6}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+%% end customisations
+
+\author{Shaurya Singh}
+\date{\today}
+\title{Unit 3: Intermolecular Forces and Properties\\\medskip
+\large AP Chem: College Board Daily Video Notes}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
+\hypersetup{
+  pdfauthor={Shaurya Singh},
+  pdftitle={Unit 3: Intermolecular Forces and Properties},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 29.0.50 (Org mode 9.6)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
+\usepackage[notquote]{hanging}
+\begin{document}\makeatletter
+\newcommand{\citeprocitem}[2]{\hyper@linkstart{cite}{citeproc_bib_item_#1}#2\hyper@linkend}
+\makeatother
+
+
+
+\maketitle
+\tableofcontents
+
+
+\section{3.1.1 - Intermolecular Forces}
+\label{sec:org974cdcb}
+\subsection{What happens to waters IMFs when the water is boiled?}
+\label{sec:org2d6c8a6}
+When water is boiled, instead of separating the molecule into \(\ce{H+}\) and \(\ce{O^{2-}}\) ions, instead the intermolecular forces between water molecule breaks. The atoms of each molecule remain bonded to each other
+\begin{itemize}
+\item Chemical Equation: \(\ce{H_2O(l)}\rightarrow\ce{H_2O(g)}\)
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.1\linewidth]{/Users/shauryasingh/documents/Screen Shot 2021-12-05 at 11.47.30 PM.png}
+\end{center}
+\subsection{Inter vs Intra -molecular forces}
+\label{sec:org36f3c82}
+\textbf{Intermolecular Force} is the interaction within a single molecule (covalent bond). \textbf{Intramolecular Force} is interaction between 2 different molecules. Water is a polar molecule with a partial negative side on the oxygen, and a partial positive side on the hydrogen.
+
+Intramolecular forces are also Coulombic forces but much weaker than covalent bonds.
+\subsection{Dipole-Dipole Interaction}
+\label{sec:org779e455}
+\begin{itemize}
+\item Occurs between 2 polar molecules
+\end{itemize}
+There can be attractiveness or repulsion. but the molecules will orient themselves to maximize attraction. The strength of the interactions depend on the magnitude of the dipole, \textbf{the greater the dipole moment, the greater the interaction}.
+\subsection{Intermolecular forces between non-polar molecules and polar molecules}
+\label{sec:org6fdcff6}
+When a dipole of water gets close to the nonpolar oxygen molecules, the electrons of Oxygen are repelled by the negative parts of water, and oxygen has a dipole (induced dipole). This dipole is \emph{temporary}, the interaction is always attractive.
+\begin{itemize}
+\item \textbf{Known as LDF: London Dispersion Forces}
+\end{itemize}
+\subsubsection{LDF}
+\label{sec:org1f76ae0}
+\begin{itemize}
+\item All molecules exhibit LDF, even polar ones
+\item Primary type of interactions between non-polar molecules
+\end{itemize}
+The strength of the LDF depends on how easily the electrons can disperse, the larger the electron cloud the more polar and the greater the strength of the interactions. LDF's are strong if the molecules is large enough.
+\subsection{Molecule Comparison}
+\label{sec:org9fd0ec2}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Element & Boiling Point\\
+\midrule
+\(\ce{F_2}\) & 188.1\textdegree{} C\\
+\(\ce{B_2}\) & 58.8\textdegree{} C\\
+\(\ce{I_2}\) & 184.3\textdegree{} C\\
+\bottomrule
+\end{tabular}
+\end{center}
+\(\ce{I_2}\) has the highest boiling point due to the energy needed to break its bonds. Since \(\ce{I_2}\) is the largest molecule in size, it has stronger LDF requiring a lot of energy to break its bonds.
+\subsection{Strength of Intermolecular Force}
+\label{sec:orgf078507}
+What accounts for the difference in enthalpy of vaporization
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Substance & \(\Delta\) H\textsubscript{vaporization} & Dipole Moment\\
+\midrule
+\(\ce{Cl2}\) & 24.4 & 0\\
+\(\ce{HCl}\) & 162 & 105\\
+\bottomrule
+\end{tabular}
+\end{center}
+\(\ce{Cl2}\) has a high vaporization, so its LDF is stronger. \(\ce{HCL}\)'s electron cloud is much larger and more polarizable'
+\subsection{Chapter Summary}
+\label{sec:org55b6554}
+\begin{itemize}
+\item The molecular forces that form between different types of compounds depends on whether or not the molecules themselves are polar or not.
+\item Intermolecular forces are covalent bonds between different atoms in a compound
+\end{itemize}
+\section{References}
+\label{sec:org3003daf}
+\begin{hangparas}{1.5em}{1}
+
+\end{hangparas}
+\end{document}

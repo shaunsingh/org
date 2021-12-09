@@ -1,0 +1,210 @@
+% Created 2021-12-08 Wed 00:34
+% Intended LaTeX compiler: pdflatex
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Blue, citecolor=BrickRed, urlcolor=PineGreen]{hyperref}
+\usepackage{indentfirst}
+% features: (custom-font acronym par-sep alegreya-typeface engraved-code-setup)
+\usepackage[osf]{Alegreya}
+\usepackage{AlegreyaSans}
+\usepackage[scale=0.88]{sourcecodepro}
+
+\newcommand{\acr}[1]{\protect\textls*[110]{\scshape #1}}
+\newcommand{\acrs}{\protect\scalebox{.91}[.84]\hspace{0.15ex}s}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+
+\usepackage{fvextra}
+\fvset{
+  commandchars=\\\{\},
+  highlightcolor=white!95!black!80!blue,
+  breaklines=true,
+  breaksymbol=\color{white!60!black}\tiny\ensuremath{\hookrightarrow}}
+\renewcommand\theFancyVerbLine{\footnotesize\color{black!40!white}\arabic{FancyVerbLine}}
+
+\definecolor{codebackground}{HTML}{f7f7f7}
+\definecolor{codeborder}{HTML}{f0f0f0}
+
+% TODO have code boxes keep line vertical alignment
+\usepackage[breakable,xparse]{tcolorbox}
+\DeclareTColorBox[]{Code}{o}%
+{colback=codebackground, colframe=codeborder,
+  fontupper=\footnotesize,
+  colupper=EFD,
+  IfNoValueTF={#1}%
+  {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
+    boxrule=0.5pt, left=2pt}%
+  {boxsep=2.5pt, arc=0pt, outer arc=0pt,
+    boxrule=0pt, leftrule=1.5pt, left=0.5pt},
+  right=2pt, top=1pt, bottom=0.5pt,
+  breakable}
+
+% end features
+
+%% make document follow Emacs theme
+
+\definecolor{obg}{HTML}{f7f3ee}
+\definecolor{ofg}{HTML}{000000}
+
+\pagecolor{obg}
+\color{ofg}
+
+% list labels
+
+\definecolor{itemlabel}{HTML}{7382a0}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+% structural elements
+
+\definecolor{documentTitle}{HTML}{9c739c}
+\definecolor{documentInfo}{HTML}{9c739c}
+\definecolor{level1}{HTML}{955f5f}
+\definecolor{level2}{HTML}{957f5f}
+\definecolor{level3}{HTML}{9c739c}
+\definecolor{level4}{HTML}{96a1b7}
+\definecolor{level5}{HTML}{b496b4}
+\definecolor{level6}{HTML}{b9c0cf}
+\definecolor{level7}{HTML}{cdb9cd}
+\definecolor{level8}{HTML}{e3e6ec}
+
+\addtokomafont{title}{\color{documentTitle}}
+\addtokomafont{author}{\color{documentInfo}}
+\addtokomafont{date}{\color{documentInfo}}
+\addtokomafont{section}{\color{level1}}
+\newkomafont{sectionprefix}{\color{level1}}
+\addtokomafont{subsection}{\color{level2}}
+\newkomafont{subsectionprefix}{\color{level2}}
+\addtokomafont{subsubsection}{\color{level3}}
+\newkomafont{subsubsectionprefix}{\color{level3}}
+\addtokomafont{paragraph}{\color{level4}}
+\newkomafont{paragraphprefix}{\color{level4}}
+\addtokomafont{subparagraph}{\color{level5}}
+\newkomafont{subparagraphprefix}{\color{level5}}
+
+% textual elements
+
+\definecolor{link}{HTML}{7382a0}
+\definecolor{cite}{HTML}{5f8778}
+\definecolor{itemlabel}{HTML}{7382a0}
+\definecolor{code}{HTML}{957f5f}
+\definecolor{verbatim}{HTML}{81895d}
+
+\renewcommand{\labelitemi}{\textcolor{itemlabel}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{itemlabel}{\normalfont\bfseries \textendash}}
+\renewcommand{\labelitemiii}{\textcolor{itemlabel}{\textasteriskcentered}}
+\renewcommand{\labelitemiv}{\textcolor{itemlabel}{\textperiodcentered}}
+
+\renewcommand{\labelenumi}{\textcolor{itemlabel}{\theenumi.}}
+\renewcommand{\labelenumii}{\textcolor{itemlabel}{(\theenumii)}}
+\renewcommand{\labelenumiii}{\textcolor{itemlabel}{\theenumiii.}}
+\renewcommand{\labelenumiv}{\textcolor{itemlabel}{\theenumiv.}}
+
+\DeclareTextFontCommand{\texttt}{\color{code}\ttfamily}
+\makeatletter
+\def\verbatim@font{\color{verbatim}\normalfont\ttfamily}
+\makeatother
+
+% code blocks
+
+\definecolor{codebackground}{HTML}{f3efea}
+\colorlet{EFD}{ofg}
+\definecolor{codeborder}{HTML}{efebe6}
+
+%% end customisations
+
+\author{Shaurya \& Davide}
+\date{\today}
+\title{3.6: Digitization Project}
+\colorlet{greenyblue}{blue!70!green}
+\colorlet{blueygreen}{blue!40!green}
+\providecolor{link}{named}{greenyblue}
+\providecolor{cite}{named}{blueygreen}
+\hypersetup{
+  pdfauthor={Shaurya \& Davide},
+  pdftitle={3.6: Digitization Project},
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 29.0.50 (Org mode 9.6)},
+  pdflang={English},
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=,
+  urlcolor=link,
+  citecolor=cite
+}
+\urlstyle{same}
+\usepackage[notquote]{hanging}
+\begin{document}\makeatletter
+\newcommand{\citeprocitem}[2]{\hyper@linkstart{cite}{citeproc_bib_item_#1}#2\hyper@linkend}
+\makeatother
+
+
+
+\maketitle
+\tableofcontents
+
+
+\section{Algorithm:}
+\label{sec:org83837e4}
+\begin{Code}[alt]
+\begin{verbatim}
+# The first two bits denote the suit.
+if the suit clubs then set first two bits = =00=
+    if suit is diamonds set first two bits = =11=
+    if suit is hearts set first two bits = =10=
+    if suit is spades set first two bits =01=.
+# The next four bits denote the rank
+if rank is a symbol then:
+    if the rank is ace, set last 4 bits to =0001=
+        if the rank is king set last 4 bits to =1100=
+        if the rank is jack set last 4 bits to =1010=
+        if the rank is queen set last 4 bits to =1011=
+    if the rank is a number then:
+        use the binary equivalent (e.g. 10 of spades is the 9th number from 2-10, therefore it will end in =1001= (9 in binary))
+\end{verbatim}
+\end{Code}
+
+\section{Example: 9 of Hearts}
+\label{sec:org7fd7258}
+First two bits = \texttt{10}
+Last four bits = \texttt{1000} (8 in binary)
+Encoded result: \texttt{101000}
+
+Theoretically, 52 cards with each needing a unique code in bits. would only require \(5.70044\) bits (\(2^x = 52\)), but since each bit needs to be either one or zero, a practical minimum of 6 bits is required
+
+We chose a fixed length encoding, since there are few enough cards that we can fit all possible choices 6 bits. The algorithm encodes the following information:
+\begin{itemize}
+\item Suit of card (first two bits)
+\item Color of card (first bit, 0 \texttt{= black, 1 =} red)
+\item Rank of card (2-10, Ace, Queen, King, Jack)
+\end{itemize}
+
+\section{Effeciency of the encoding:}
+\label{sec:org4b67df7}
+The algorithm is efficient, and takes up the least space possible while staying simple and quick to execute. However, the algorithm doesn't scale very well (e.g. if we add the two joker cards as a suit for a total of 54 cards, using this method we would have to use 3 bits to determine the suit of card, resulting in a minimum 7 bits).
+
+An alternate solution would be to assign each card an arbitrary (but unique) 6 bits (similar to ASCII 32), we could theoretically handle 64 cards  (\(2^6 = 64\)) while still using 6 bits of space, at the cost of being harder to decode by humans.
+\end{document}

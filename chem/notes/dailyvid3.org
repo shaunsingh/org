@@ -1,0 +1,47 @@
+#+title: Unit 3: Intermolecular Forces and Properties
+#+subtitle: AP Chem: College Board Daily Video Notes
+#+author: Shaurya Singh
+#+latex_class: chameleon
+#+startup: preview
+#+startup: fold
+#+bibliography: ~/org/references.bib
+
+* 3.1.1 - Intermolecular Forces
+** What happens to waters IMFs when the water is boiled?
+When water is boiled, instead of separating the molecule into \(\ce{H+}\) and \(\ce{O^{2-}}\) ions, instead the intermolecular forces between water molecule breaks. The atoms of each molecule remain bonded to each other
+- Chemical Equation: \(\ce{H_2O(l)}\rightarrow\ce{H_2O(g)}\)
+#+attr_latex: :width 0.1\linewidth
+[[~/documents/Screen Shot 2021-12-05 at 11.47.30 PM.png]]
+** Inter vs Intra -molecular forces
+*Intermolecular Force* is the interaction within a single molecule (covalent bond). *Intramolecular Force* is interaction between 2 different molecules. Water is a polar molecule with a partial negative side on the oxygen, and a partial positive side on the hydrogen.
+
+Intramolecular forces are also Coulombic forces but much weaker than covalent bonds.
+** Dipole-Dipole Interaction
+- Occurs between 2 polar molecules
+There can be attractiveness or repulsion. but the molecules will orient themselves to maximize attraction. The strength of the interactions depend on the magnitude of the dipole, *the greater the dipole moment, the greater the interaction*.
+** Intermolecular forces between non-polar molecules and polar molecules
+When a dipole of water gets close to the nonpolar oxygen molecules, the electrons of Oxygen are repelled by the negative parts of water, and oxygen has a dipole (induced dipole). This dipole is /temporary/, the interaction is always attractive.
+- *Known as LDF: London Dispersion Forces*
+*** LDF
+- All molecules exhibit LDF, even polar ones
+- Primary type of interactions between non-polar molecules
+The strength of the LDF depends on how easily the electrons can disperse, the larger the electron cloud the more polar and the greater the strength of the interactions. LDF's are strong if the molecules is large enough.
+** Molecule Comparison
+| Element      | Boiling Point |
+|--------------+---------------|
+| \(\ce{F_2}\) | 188.1\deg C      |
+| \(\ce{B_2}\) | 58.8\deg C       |
+| \(\ce{I_2}\) | 184.3\deg C      |
+\(\ce{I_2}\) has the highest boiling point due to the energy needed to break its bonds. Since \(\ce{I_2}\) is the largest molecule in size, it has stronger LDF requiring a lot of energy to break its bonds.
+** Strength of Intermolecular Force
+What accounts for the difference in enthalpy of vaporization
+| Substance    | \Delta H_{vaporization} | Dipole Moment |
+|--------------+--------------------+---------------|
+| \(\ce{Cl2}\) |               24.4 |             0 |
+| \(\ce{HCl}\) |                162 |           105 |
+\(\ce{Cl2}\) has a high vaporization, so its LDF is stronger. \(\ce{HCL}\)'s electron cloud is much larger and more polarizable
+** Chapter Summary
+- The molecular forces that form between different types of compounds depends on whether or not the molecules themselves are polar or not.
+- Intermolecular forces are covalent bonds between different atoms in a compound
+* References
+#+print_bibliography:
