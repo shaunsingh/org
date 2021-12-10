@@ -217,7 +217,6 @@ CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
 CLOSED: [2021-10-02 Sat 23:15] DEADLINE: <2021-09-28 Tue>
 
 ** Weekend
-DEADLINE: <2021-10-04 Mon>
 *** Algebra [100%]
 **** DONE 2.2 Linear Functions
 CLOSED: [2021-10-03 Sun 18:24]
@@ -248,7 +247,8 @@ CLOSED: [2021-10-03 Sun 18:20]
 *** Other
 **** DONE Setup Robotics Programs
 CLOSED: [2021-10-03 Sun 23:33]
-**** STRT Register for Chem Olympiad
+**** DONE Register for Chem Olympiad
+CLOSED: [2021-12-09 Thu 15:29]
 **** DONE Finish Practice PSAT Test
 CLOSED: [2021-10-03 Sun 23:33]
 **** DONE Finish Aeronautics Club Stuff
@@ -406,8 +406,9 @@ CLOSED: [2021-10-21 Thu 00:32]
 CLOSED: [2021-11-05 Fri 16:51]
 
 * Break
-** Algebra [0%]
-*** HOLD aleks topic goals
+** Algebra [100%]
+*** DONE aleks topic goals
+CLOSED: [2021-12-09 Thu 22:18]
 ** Biology [100%]
 *** DONE biology project (organic molecules)
 CLOSED: [2021-12-09 Thu 14:32]
@@ -431,14 +432,14 @@ CLOSED: [2021-12-09 Thu 14:33]
 *** DONE everything
 CLOSED: [2021-12-09 Thu 14:33]
 
-* 2 weeks before winter break (idk its been so long)
+* 2 weeks before winter break
 ** Algebra [0%]
 *** TODO Aleks Topic Goals
-Work on Aleks topic goals throughout the week
 DEADLINE: <2021-12-16 Thu>
+Work on Aleks topic goals throughout the week
 *** TODO 4.5 PT. 2 more squaring
-38 - 52 even:[[https://docs.google.com/presentation/d/1R72gToxEqTzNP_fffuOCAB9ZnFBCjiVGNNgkbLKYrIQ/edit#slide=id.p1][ slides]]
 DEADLINE: <2021-12-10 Fri>
+38 - 52 even:[[https://docs.google.com/presentation/d/1R72gToxEqTzNP_fffuOCAB9ZnFBCjiVGNNgkbLKYrIQ/edit#slide=id.p1][ slides]]
 ** Spanish [0%]
 *** TODO Tarea 14 & 15
 DEADLINE: <2021-12-10 Fri>
@@ -451,15 +452,18 @@ DEADLINE: <2021-12-13 Mon>
 *** TODO Chapter 4 daily vid notes
 DEADLINE: <2021-12-16 Thu>
 *** TODO MYAP Progress Checks
-        * Note: Assigned throughout the week, keep track of it
-             DEADLINE: <2021-12-16 Thu>
+Note: Assigned throughout the week, keep track of it
+DEADLINE: <2021-12-16 Thu>
 ** Csp [0%]
 *** TODO 3.8 Big Picture
+DEADLINE: <2021-12-13 Mon>
 [[https://apollo.codio.com/classroom/assignment/b18e7c44-b49a-436a-9c8c-fb5b4e421dcd][Link To Assignment]]
-              DEADLINE: <2021-12-13 Mon>
 *** TODO 3.9 Lists
+DEADLINE: <2021-12-14 Tue>
 [[https://apollo.codio.com/classroom/assignment/87e003a0-2f0f-4abb-a22d-8d3a46b30dab][Link To Assignment]]
-              DEADLINE: <2021-12-14 Tue>
 *** TODO 3.10 Processing Lists
+DEADLINE: <2021-12-15 Wed>
 [[https://apollo.codio.com/classroom/assignment/cb8c50ac-cf98-44c2-ad5b-6880296eda1b][Link To Assignment]]
-              DEADLINE: <2021-12-15 Wed>
+** Other [0%]
+*** TODO Olympiad
+DEADLINE: <2021-12-10 Fri>

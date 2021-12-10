@@ -1,6 +1,6 @@
 #+title: IRR 1
 #+author: Shaurya Singh
-#+latex_class: cb-doc
+#+latex_class: chameleon
 #+startup: fold
 #+startup: preview
 #+options: toc:nil
